@@ -49,16 +49,34 @@ function truncate(s: string, n: number): string {
   return s.length <= n ? s : s.slice(0, n).replace(/\s+\S*$/, '') + '…';
 }
 
+function safeImageUrl(raw: string | undefined, base?: string): string | undefined {
+  if (!raw) return undefined;
+  try {
+    const u = base ? new URL(raw, base) : new URL(raw);
+    // Only allow https (and http) — reject javascript:, data:, file:, etc.
+    if (u.protocol !== 'https:' && u.protocol !== 'http:') return undefined;
+    return u.toString();
+  } catch {
+    return undefined;
+  }
+}
+
 function extractHeroImage(item: Parser.Item & Record<string, unknown>): string | undefined {
+  // Article URL is the natural base for resolving relative image paths
+  // found inside the article's HTML content.
+  const base = item.link;
+
   const enclosure = item.enclosure as { url?: string } | undefined;
-  if (enclosure?.url) return enclosure.url;
+  const fromEnclosure = safeImageUrl(enclosure?.url, base);
+  if (fromEnclosure) return fromEnclosure;
 
   const media = item['media:content'] as { $?: { url?: string } } | undefined;
-  if (media?.$?.url) return media.$.url;
+  const fromMedia = safeImageUrl(media?.$?.url, base);
+  if (fromMedia) return fromMedia;
 
   const html = (item['content:encoded'] as string | undefined) ?? item.content ?? '';
   const match = /<img[^>]+src=["']([^"']+)["']/i.exec(html);
-  return match?.[1];
+  return safeImageUrl(match?.[1], base);
 }
 
 async function fetchFeed(
