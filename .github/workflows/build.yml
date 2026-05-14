@@ -14,11 +14,9 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: pages-deploy
   cancel-in-progress: false
 
 jobs:
@@ -63,27 +61,19 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: npm run pipeline
 
-      - name: Check for changes
-        id: diff
+      - name: Commit updated articles
         run: |
           if git diff --quiet data/ public/images 2>/dev/null; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No new articles."
           else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-            echo "New articles detected."
+            git config user.name "newsfeed-bot"
+            git config user.email "newsfeed-bot@users.noreply.github.com"
+            git add data/articles.json public/images 2>/dev/null || true
+            git commit -m "data: refresh articles ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
           fi
 
-      - name: Commit updated articles
-        if: steps.diff.outputs.changed == 'true'
-        run: |
-          git config user.name "newsfeed-bot"
-          git config user.email "newsfeed-bot@users.noreply.github.com"
-          git add data/articles.json public/images 2>/dev/null || true
-          git commit -m "data: refresh articles ($(date -u +%Y-%m-%dT%H:%MZ))"
-          git push
-
-  build:
+  deploy:
     needs: [pipeline]
     if: always() && (needs.pipeline.result == 'success' || needs.pipeline.result == 'skipped')
     runs-on: ubuntu-latest
@@ -100,24 +90,16 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Configure Pages (auto-enable)
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
       - name: Build site
         run: npm run build
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: true
+          user_name: 'newsfeed-bot'
+          user_email: 'newsfeed-bot@users.noreply.github.com'
+          commit_message: ${{ github.event.head_commit.message }}
