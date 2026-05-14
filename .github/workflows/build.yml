@@ -1,0 +1,123 @@
+name: Build & Deploy
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      skip_pipeline:
+        description: 'Skip pipeline (build & deploy only)'
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  pipeline:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Detect AI auth
+        id: auth
+        env:
+          OAUTH: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          APIKEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -n "$OAUTH" ] || [ -n "$APIKEY" ]; then
+            echo "has_auth=true" >> "$GITHUB_OUTPUT"
+            echo "✓ AI auth detected"
+          else
+            echo "has_auth=false" >> "$GITHUB_OUTPUT"
+            echo "⚠ No CLAUDE_CODE_OAUTH_TOKEN or ANTHROPIC_API_KEY set — skipping enrichment"
+          fi
+
+      - name: Install Claude CLI
+        if: ${{ inputs.skip_pipeline != true && steps.auth.outputs.has_auth == 'true' }}
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Run pipeline
+        if: ${{ inputs.skip_pipeline != true && steps.auth.outputs.has_auth == 'true' }}
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run pipeline
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet data/ public/images 2>/dev/null; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No new articles."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "New articles detected."
+          fi
+
+      - name: Commit updated articles
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "newsfeed-bot"
+          git config user.email "newsfeed-bot@users.noreply.github.com"
+          git add data/articles.json public/images 2>/dev/null || true
+          git commit -m "data: refresh articles ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git push
+
+  build:
+    needs: [pipeline]
+    if: always() && (needs.pipeline.result == 'success' || needs.pipeline.result == 'skipped')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Configure Pages (auto-enable)
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Build site
+        run: npm run build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

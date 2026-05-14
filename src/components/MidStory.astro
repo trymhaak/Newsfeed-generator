@@ -1,0 +1,19 @@
+---
+import type { EnrichedArticle } from '../lib/types.ts';
+import TopicPill from './TopicPill.astro';
+
+interface Props { article: EnrichedArticle; }
+const { article } = Astro.props;
+const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
+const href = `${base}/artikkel/${article.id}`;
+---
+<article class="mid-story">
+  <a href={href} aria-label={article.headline_no}>
+    {article.hero_image
+      ? <img src={article.hero_image} alt="" loading="lazy" />
+      : <div class="placeholder" aria-hidden="true"></div>}
+  </a>
+  <TopicPill topic={article.topic} />
+  <h2><a href={href}>{article.headline_no}</a></h2>
+  <p>{article.summary_no}</p>
+</article>

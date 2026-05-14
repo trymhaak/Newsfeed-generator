@@ -1,0 +1,29 @@
+# Build output
+dist/
+.astro/
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Claude local
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Pipeline artifacts
+data/_raw.json
+data/_pending.json

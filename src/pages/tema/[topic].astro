@@ -1,0 +1,46 @@
+---
+import Newspaper from '../../layouts/Newspaper.astro';
+import MidStory from '../../components/MidStory.astro';
+import { loadStore, articlesByTopic } from '../../lib/store.ts';
+import { TOPICS, TOPIC_LABELS, type Topic } from '../../lib/types.ts';
+
+export async function getStaticPaths() {
+  return TOPICS.map((t) => ({ params: { topic: t } }));
+}
+
+const { topic } = Astro.params as { topic: Topic };
+const store = await loadStore();
+const articles = articlesByTopic(store.articles, topic);
+
+const blurbs: Record<Topic, string> = {
+  identitet: 'Entra ID, Conditional Access, PIM, MFA og alt rundt identitet og tilgang.',
+  sikkerhet: 'Defender, Purview, Sentinel, MSRC og sårbarheter.',
+  endpoint: 'Intune, MDM, Autopilot, Windows 365, Cloud PC og enhetsadministrasjon.',
+  ai: 'M365 Copilot, Copilot Studio og AI-funksjoner i admin-konsoller.',
+};
+---
+<Newspaper
+  title={`${TOPIC_LABELS[topic]} — Nyhetsfeed`}
+  description={blurbs[topic]}
+  generated={store.generated}
+>
+  <div class="container">
+    <header class="topic-page-header">
+      <h1>{TOPIC_LABELS[topic]}</h1>
+      <p>{blurbs[topic]}</p>
+    </header>
+
+    {articles.length === 0
+      ? (
+        <div class="empty-state">
+          <h2>Ingen saker innen {TOPIC_LABELS[topic]} enda</h2>
+          <p>Sjekk tilbake senere.</p>
+        </div>
+      )
+      : (
+        <section class="topic-list">
+          {articles.map((a) => <MidStory article={a} />)}
+        </section>
+      )}
+  </div>
+</Newspaper>

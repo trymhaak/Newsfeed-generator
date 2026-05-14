@@ -1,0 +1,27 @@
+---
+import type { EnrichedArticle } from '../lib/types.ts';
+
+interface Props { articles: EnrichedArticle[]; }
+const { articles } = Astro.props;
+const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
+
+function relativeTime(iso: string): string {
+  const minutes = Math.round((Date.now() - +new Date(iso)) / 60000);
+  if (minutes < 60) return `${minutes} min`;
+  const hours = Math.round(minutes / 60);
+  if (hours < 24) return `${hours} t`;
+  const days = Math.round(hours / 24);
+  return `${days} d`;
+}
+---
+<section class="latest">
+  <h2 class="section-title">Siste nytt</h2>
+  <ul>
+    {articles.map((a) => (
+      <li>
+        <span class="time">{relativeTime(a.published)}</span>
+        <a class="title" href={`${base}/artikkel/${a.id}`}>{a.headline_no}</a>
+      </li>
+    ))}
+  </ul>
+</section>
