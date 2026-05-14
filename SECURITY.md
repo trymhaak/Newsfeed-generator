@@ -5,10 +5,12 @@
 Hvis du oppdager en sikkerhetssårbarhet i Newsfeed-generator, vennligst
 **ikke** rapporter den via offentlig issue. I stedet, bruk én av disse:
 
-- **GitHub privat advisory**: Gå til
+- **GitHub privat advisory** (foretrukket): Gå til
   https://github.com/trymhaak/Newsfeed-generator/security/advisories
-  og klikk "Report a vulnerability"
-- **E-post**: Bruk noreply-adressen på din GitHub-profil for kontakt
+  og klikk "Report a vulnerability". Dette er en kryptert,
+  privat kanal direkte til repoeier.
+- **E-post**: Hvis du ikke kan bruke GitHub-advisories, send til den
+  offentlige e-postadressen på https://github.com/trymhaak
 
 Inkluder i rapporten:
 - Beskrivelse av sårbarheten
