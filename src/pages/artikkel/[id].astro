@@ -1,0 +1,49 @@
+---
+import Newspaper from '../../layouts/Newspaper.astro';
+import TopicPill from '../../components/TopicPill.astro';
+import { loadStore } from '../../lib/store.ts';
+
+export async function getStaticPaths() {
+  const store = await loadStore();
+  return store.articles.map((a) => ({
+    params: { id: a.id },
+    props: { article: a },
+  }));
+}
+
+const { article } = Astro.props;
+
+const dateFmt = new Intl.DateTimeFormat('nb-NO', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+});
+---
+<Newspaper title={`${article.headline_no} — Nyhetsfeed`} description={article.summary_no}>
+  <article class="article">
+    <TopicPill topic={article.topic} />
+    <h1>{article.headline_no}</h1>
+    <p class="meta">
+      <strong>{article.source_name}</strong> · {dateFmt.format(new Date(article.published))}
+    </p>
+    {article.hero_image && <img class="hero" src={article.hero_image} alt="" />}
+    <p class="lede">{article.summary_no}</p>
+
+    <p style="font-size: 14px; color: var(--ink-soft);">
+      Original tittel: <em>{article.title_original}</em>
+    </p>
+
+    <div class="original-link">
+      <strong>Les hele saken hos kilden:</strong><br />
+      <a href={article.url} rel="noopener noreferrer" target="_blank">{article.url}</a>
+    </div>
+
+    {article.tags.length > 0 && (
+      <div class="tags">
+        {article.tags.map((t) => <span>#{t}</span>)}
+      </div>
+    )}
+  </article>
+</Newspaper>

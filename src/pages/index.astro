@@ -1,0 +1,45 @@
+---
+import Newspaper from '../layouts/Newspaper.astro';
+import HeroStory from '../components/HeroStory.astro';
+import MidStory from '../components/MidStory.astro';
+import LatestList from '../components/LatestList.astro';
+import TopicBlock from '../components/TopicBlock.astro';
+import { loadStore, selectFrontPage } from '../lib/store.ts';
+import { TOPICS } from '../lib/types.ts';
+
+const store = await loadStore();
+const { hero, mid, latest, byTopic } = selectFrontPage(store.articles);
+const empty = store.articles.length === 0;
+---
+<Newspaper
+  title="Nyhetsfeed — Microsoft-økosystemet"
+  description="VG-style nyhetsoversikt for Microsoft Intune, Entra, Defender, Copilot og mer."
+  generated={store.generated}
+>
+  <div class="container">
+    {empty
+      ? (
+        <div class="empty-state">
+          <h2>Ingen saker enda</h2>
+          <p>Pipelinen har ikke kjørt enda. Kjør <code>npm run pipeline</code> eller vent på neste cron-trigger.</p>
+        </div>
+      )
+      : (
+        <>
+          {hero && <HeroStory article={hero} />}
+
+          {mid.length > 0 && (
+            <section class="mid-grid">
+              {mid.map((a) => <MidStory article={a} />)}
+            </section>
+          )}
+
+          {latest.length > 0 && <LatestList articles={latest} />}
+
+          <section class="topic-grid">
+            {TOPICS.map((t) => <TopicBlock topic={t} articles={byTopic[t]} />)}
+          </section>
+        </>
+      )}
+  </div>
+</Newspaper>

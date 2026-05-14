@@ -1,0 +1,67 @@
+---
+import '../styles/global.css';
+import { TOPIC_LABELS, TOPICS } from '../lib/types.ts';
+
+interface Props {
+  title: string;
+  description?: string;
+  generated?: string;
+}
+
+const { title, description, generated } = Astro.props;
+const today = new Intl.DateTimeFormat('nb-NO', {
+  weekday: 'long',
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+}).format(new Date());
+
+const pathname = Astro.url.pathname.replace(/\/$/, '');
+const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
+const isHome = pathname === base || pathname === '' || pathname === '/';
+---
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23c8102e'/%3E%3Ctext x='8' y='12' text-anchor='middle' font-family='Georgia' font-weight='900' font-size='12' fill='white'%3EN%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div class="meta-bar">
+      <div class="container">
+        <span>{today}</span>
+        {generated && <span>Oppdatert {new Intl.DateTimeFormat('nb-NO', { hour: '2-digit', minute: '2-digit' }).format(new Date(generated))}</span>}
+      </div>
+    </div>
+    <header class="masthead">
+      <div class="masthead-inner container">
+        <a href={`${base}/`} class="brand" aria-label="Til forsiden">
+          <span class="brand-mark">N</span>yhetsfeed
+        </a>
+        <nav class="nav" aria-label="Hovedmeny">
+          <a href={`${base}/`} aria-current={isHome ? 'page' : undefined}>Forsiden</a>
+          {TOPICS.map((t) => (
+            <a
+              href={`${base}/tema/${t}`}
+              aria-current={pathname.endsWith(`/tema/${t}`) ? 'page' : undefined}
+            >{TOPIC_LABELS[t]}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-foot">
+      <div class="container">
+        <span>Generert automatisk fra offisielle Microsoft-feeds. Klikk gjennom til kilden for full artikkel.</span>
+        <span>Newsfeed-generator</span>
+      </div>
+    </footer>
+  </body>
+</html>

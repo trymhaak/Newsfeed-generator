@@ -1,0 +1,111 @@
+name: Build & Deploy
+
+on:
+  schedule:
+    # Every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      skip_pipeline:
+        description: 'Skip pipeline (build & deploy only)'
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'astro.config.mjs'
+      - 'package.json'
+      - 'config/feeds.yaml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  pipeline:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.diff.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Claude CLI
+        if: ${{ inputs.skip_pipeline != true }}
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Run pipeline
+        if: ${{ inputs.skip_pipeline != true }}
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: npm run pipeline
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet data/articles.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No new articles."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "New articles detected."
+          fi
+
+      - name: Commit updated articles
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "newsfeed-bot"
+          git config user.email "newsfeed-bot@users.noreply.github.com"
+          git add data/articles.json public/images
+          git commit -m "data: refresh articles ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git push
+
+  build:
+    needs: [pipeline]
+    if: always() && (needs.pipeline.result == 'success' || needs.pipeline.result == 'skipped')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
