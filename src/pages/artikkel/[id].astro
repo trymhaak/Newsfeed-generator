@@ -1,17 +1,18 @@
 ---
 import Newspaper from '../../layouts/Newspaper.astro';
-import TopicPill from '../../components/TopicPill.astro';
 import { loadStore } from '../../lib/store.ts';
+import { TOPIC_LABELS } from '../../lib/types.ts';
 
 export async function getStaticPaths() {
   const store = await loadStore();
   return store.articles.map((a) => ({
     params: { id: a.id },
-    props: { article: a },
+    props: { article: a, allArticles: store.articles },
   }));
 }
 
-const { article } = Astro.props;
+const { article, allArticles } = Astro.props;
+const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
 
 const dateFmt = new Intl.DateTimeFormat('nb-NO', {
   day: 'numeric',
@@ -20,23 +21,46 @@ const dateFmt = new Intl.DateTimeFormat('nb-NO', {
   hour: '2-digit',
   minute: '2-digit',
 });
+
+// Estimate read time from summary words (we don't have full body)
+const wordCount = article.summary_no.trim().split(/\s+/).length;
+const readMin = Math.max(1, Math.round(wordCount / 200));
+
+// Related: 4 latest articles in same topic, excluding current
+const related = allArticles
+  .filter((a) => a.topic === article.topic && a.id !== article.id)
+  .slice(0, 4);
 ---
 <Newspaper title={`${article.headline_no} — Nyhetsfeed`} description={article.summary_no}>
   <article class="article">
-    <TopicPill topic={article.topic} />
+    <p class={`kicker ${article.topic}`}>{TOPIC_LABELS[article.topic]}</p>
     <h1>{article.headline_no}</h1>
-    <p class="meta">
-      <strong>{article.source_name}</strong> · {dateFmt.format(new Date(article.published))}
-    </p>
-    {article.hero_image && <img class="hero" src={article.hero_image} alt="" />}
     <p class="lede">{article.summary_no}</p>
 
-    <p style="font-size: 14px; color: var(--ink-soft);">
+    <div class="byline">
+      <span class="source">{article.source_name}</span>
+      <span class="time">{dateFmt.format(new Date(article.published))}</span>
+      <span class="read">{readMin} min lesetid</span>
+    </div>
+
+    {article.hero_image && (
+      <figure class="hero">
+        <img src={article.hero_image} alt="" loading="eager" />
+        <figcaption>Foto: {article.source_name}</figcaption>
+      </figure>
+    )}
+
+    <div class="kortversjonen">
+      <span class="label">Kortversjonen</span>
+      <p>{article.summary_no}</p>
+    </div>
+
+    <p style="font-size: 14px; color: var(--c-muted); margin: 16px 0 0;">
       Original tittel: <em>{article.title_original}</em>
     </p>
 
-    <div class="original-link">
-      <strong>Les hele saken hos kilden:</strong><br />
+    <div class="read-original">
+      <strong>Les hele saken hos kilden</strong>
       <a href={article.url} rel="noopener noreferrer" target="_blank">{article.url}</a>
     </div>
 
@@ -44,6 +68,19 @@ const dateFmt = new Intl.DateTimeFormat('nb-NO', {
       <div class="tags">
         {article.tags.map((t) => <span>#{t}</span>)}
       </div>
+    )}
+
+    {related.length > 0 && (
+      <section class="related" aria-label={`Mer fra ${TOPIC_LABELS[article.topic]}`}>
+        <h2>Mer fra {TOPIC_LABELS[article.topic]}</h2>
+        <ul>
+          {related.map((r) => (
+            <li>
+              <a href={`${base}/artikkel/${r.id}`}>{r.headline_no}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
     )}
   </article>
 </Newspaper>

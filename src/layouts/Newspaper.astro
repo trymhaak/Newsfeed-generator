@@ -1,14 +1,16 @@
 ---
 import '../styles/global.css';
-import { TOPIC_LABELS, TOPICS } from '../lib/types.ts';
+import { TOPIC_LABELS, TOPICS, type Topic } from '../lib/types.ts';
 
 interface Props {
   title: string;
   description?: string;
   generated?: string;
+  topicCounts?: Record<Topic, number>;
 }
 
-const { title, description, generated } = Astro.props;
+const { title, description, generated, topicCounts } = Astro.props;
+
 const today = new Intl.DateTimeFormat('nb-NO', {
   weekday: 'long',
   day: 'numeric',
@@ -16,51 +18,84 @@ const today = new Intl.DateTimeFormat('nb-NO', {
   year: 'numeric',
 }).format(new Date());
 
+const timeFmt = new Intl.DateTimeFormat('nb-NO', { hour: '2-digit', minute: '2-digit' });
+
 const pathname = Astro.url.pathname.replace(/\/$/, '');
 const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
 const isHome = pathname === base || pathname === '' || pathname === '/';
+const onTopic = (t: Topic) => pathname.endsWith(`/tema/${t}`);
 ---
 <!DOCTYPE html>
 <html lang="nb">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#e10a1a" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23c8102e'/%3E%3Ctext x='8' y='12' text-anchor='middle' font-family='Georgia' font-weight='900' font-size='12' fill='white'%3EN%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23e10a1a'/%3E%3Ctext x='8' y='12' text-anchor='middle' font-family='Helvetica' font-weight='900' font-size='12' fill='white'%3EN%3C/text%3E%3C/svg%3E" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Hopp til hovedinnholdet</a>
+
     <div class="meta-bar">
       <div class="container">
         <span>{today}</span>
-        {generated && <span>Oppdatert {new Intl.DateTimeFormat('nb-NO', { hour: '2-digit', minute: '2-digit' }).format(new Date(generated))}</span>}
+        {generated && <span>Oppdatert kl. {timeFmt.format(new Date(generated))}</span>}
       </div>
     </div>
+
     <header class="masthead">
-      <div class="masthead-inner container">
+      <div class="container masthead-inner">
         <a href={`${base}/`} class="brand" aria-label="Til forsiden">
-          <span class="brand-mark">N</span>yhetsfeed
+          <span class="brand-mark">N</span>
+          <span class="brand-text">yhetsfeed</span>
         </a>
         <nav class="nav" aria-label="Hovedmeny">
           <a href={`${base}/`} aria-current={isHome ? 'page' : undefined}>Forsiden</a>
           {TOPICS.map((t) => (
-            <a
-              href={`${base}/tema/${t}`}
-              aria-current={pathname.endsWith(`/tema/${t}`) ? 'page' : undefined}
-            >{TOPIC_LABELS[t]}</a>
+            <a href={`${base}/tema/${t}`} aria-current={onTopic(t) ? 'page' : undefined}>{TOPIC_LABELS[t]}</a>
           ))}
         </nav>
+        <a href="#mobile-nav" class="nav-toggle" aria-label="Åpne meny">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+          Meny
+        </a>
+      </div>
+      <div class="nav-mobile" id="mobile-nav" role="navigation" aria-label="Mobilmeny">
+        <ul>
+          <li><a href={`${base}/`} aria-current={isHome ? 'page' : undefined}>Forsiden</a></li>
+          {TOPICS.map((t) => (
+            <li><a href={`${base}/tema/${t}`} aria-current={onTopic(t) ? 'page' : undefined}>{TOPIC_LABELS[t]}</a></li>
+          ))}
+        </ul>
       </div>
     </header>
 
-    <main>
+    {topicCounts && (
+      <div class="ticker" aria-label="Tema-status">
+        <div class="container ticker-inner">
+          {TOPICS.map((t) => (
+            <a href={`${base}/tema/${t}`} class={`ticker-item ${t}`}>
+              <span class="dot" aria-hidden="true"></span>
+              <span>{TOPIC_LABELS[t]}</span>
+              <span class="count">{topicCounts[t]}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <main id="main">
       <slot />
     </main>
 
     <footer class="site-foot">
       <div class="container">
-        <span>Generert automatisk fra offisielle Microsoft-feeds. Klikk gjennom til kilden for full artikkel.</span>
-        <span>Newsfeed-generator</span>
+        <span><strong>Nyhetsfeed</strong> — automatisk-generert oversikt over Microsoft-økosystemet.</span>
+        <span>Klikk gjennom til kilden for full artikkel.</span>
       </div>
     </footer>
   </body>
