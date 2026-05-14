@@ -1,8 +1,0 @@
----
-import type { Topic } from '../lib/types.ts';
-import { TOPIC_LABELS } from '../lib/types.ts';
-
-interface Props { topic: Topic; }
-const { topic } = Astro.props;
----
-<span class={`topic-pill ${topic}`}>{TOPIC_LABELS[topic]}</span>

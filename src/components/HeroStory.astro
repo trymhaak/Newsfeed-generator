@@ -1,25 +1,35 @@
 ---
 import type { EnrichedArticle } from '../lib/types.ts';
-import TopicPill from './TopicPill.astro';
+import { TOPIC_LABELS } from '../lib/types.ts';
 
 interface Props { article: EnrichedArticle; }
 const { article } = Astro.props;
 const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
 const href = `${base}/artikkel/${article.id}`;
 const initial = article.headline_no.charAt(0).toUpperCase();
+
+const timeFmt = new Intl.DateTimeFormat('nb-NO', {
+  day: 'numeric',
+  month: 'short',
+  hour: '2-digit',
+  minute: '2-digit',
+});
+const breaking = article.score >= 88;
 ---
 <article class="hero">
-  <a href={href} aria-label={article.headline_no}>
-    {article.hero_image
-      ? <img class="hero-image" src={article.hero_image} alt="" loading="eager" />
-      : <div class="hero-image-placeholder" aria-hidden="true">{initial}</div>}
-  </a>
-  <div class="hero-body">
-    <TopicPill topic={article.topic} />
+  <div class="container">
+    <a href={href} class="hero-figure" aria-hidden="true" tabindex="-1">
+      {article.hero_image
+        ? <img src={article.hero_image} alt="" loading="eager" fetchpriority="high" width="1280" height="720" />
+        : <div class="placeholder">{initial}</div>}
+    </a>
+    {breaking
+      ? <span class="label live">DIREKTE</span>
+      : <span class={`label ${article.topic}`}>{TOPIC_LABELS[article.topic]}</span>}
     <h1><a href={href}>{article.headline_no}</a></h1>
     <p class="lede">{article.summary_no}</p>
-    <p style="font-size: 13px; color: var(--ink-mute); margin: 0;">
-      {article.source_name}
+    <p class="meta">
+      <strong>{article.source_name}</strong> · {timeFmt.format(new Date(article.published))}
     </p>
   </div>
 </article>

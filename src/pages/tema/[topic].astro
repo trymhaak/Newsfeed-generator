@@ -1,6 +1,5 @@
 ---
 import Newspaper from '../../layouts/Newspaper.astro';
-import MidStory from '../../components/MidStory.astro';
 import { loadStore, articlesByTopic } from '../../lib/store.ts';
 import { TOPICS, TOPIC_LABELS, type Topic } from '../../lib/types.ts';
 
@@ -11,21 +10,38 @@ export async function getStaticPaths() {
 const { topic } = Astro.params as { topic: Topic };
 const store = await loadStore();
 const articles = articlesByTopic(store.articles, topic);
+const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
+
+const topicCounts = Object.fromEntries(
+  TOPICS.map((t) => [t, articlesByTopic(store.articles, t).length]),
+) as Record<Topic, number>;
 
 const blurbs: Record<Topic, string> = {
-  identitet: 'Entra ID, Conditional Access, PIM, MFA og alt rundt identitet og tilgang.',
-  sikkerhet: 'Defender, Purview, Sentinel, MSRC og sårbarheter.',
-  endpoint: 'Intune, MDM, Autopilot, Windows 365, Cloud PC og enhetsadministrasjon.',
-  ai: 'M365 Copilot, Copilot Studio og AI-funksjoner i admin-konsoller.',
+  identitet: 'Entra ID, Conditional Access, PIM, MFA og alt rundt identitet og tilgang. Oppdateres når noe nytt lander.',
+  sikkerhet: 'Defender, Purview, Sentinel, MSRC og sårbarheter — fra zero-days til policy-endringer.',
+  endpoint: 'Intune, MDM, Autopilot, Windows 365, Cloud PC og enhetsadministrasjon i M365.',
+  ai: 'M365 Copilot, Copilot Studio og AI-funksjoner i admin-konsoller — fra preview til GA.',
 };
+
+function relativeTime(iso: string): string {
+  const m = Math.round((Date.now() - +new Date(iso)) / 60000);
+  if (m < 60) return `${m} min siden`;
+  const h = Math.round(m / 60);
+  if (h < 24) return `${h} t siden`;
+  const d = Math.round(h / 24);
+  if (d < 7) return `${d} d siden`;
+  return new Intl.DateTimeFormat('nb-NO', { day: 'numeric', month: 'short' }).format(new Date(iso));
+}
 ---
 <Newspaper
   title={`${TOPIC_LABELS[topic]} — Nyhetsfeed`}
   description={blurbs[topic]}
   generated={store.generated}
+  topicCounts={topicCounts}
 >
   <div class="container">
     <header class="topic-page-header">
+      <p class="kicker">Tema</p>
       <h1>{TOPIC_LABELS[topic]}</h1>
       <p>{blurbs[topic]}</p>
     </header>
@@ -34,13 +50,29 @@ const blurbs: Record<Topic, string> = {
       ? (
         <div class="empty-state">
           <h2>Ingen saker innen {TOPIC_LABELS[topic]} enda</h2>
-          <p>Sjekk tilbake senere.</p>
+          <p>Sjekk tilbake senere — pipelinen oppdaterer hver 6. time.</p>
         </div>
       )
       : (
-        <section class="topic-list">
-          {articles.map((a) => <MidStory article={a} />)}
-        </section>
+        <ul class="topic-feed">
+          {articles.map((a, i) => {
+            const initial = a.headline_no.charAt(0).toUpperCase();
+            return (
+              <li>
+                <a href={`${base}/artikkel/${a.id}`} aria-hidden="true" tabindex="-1">
+                  {a.hero_image
+                    ? <img class="thumb" src={a.hero_image} alt="" loading={i < 4 ? 'eager' : 'lazy'} />
+                    : <div class="thumb-placeholder">{initial}</div>}
+                </a>
+                <div>
+                  <h2><a href={`${base}/artikkel/${a.id}`}>{a.headline_no}</a></h2>
+                  <p class="deck">{a.summary_no}</p>
+                  <p class="meta">{a.source_name} · {relativeTime(a.published)}</p>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
       )}
   </div>
 </Newspaper>

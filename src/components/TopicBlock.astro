@@ -2,17 +2,17 @@
 import type { EnrichedArticle, Topic } from '../lib/types.ts';
 import { TOPIC_LABELS } from '../lib/types.ts';
 
-interface Props {
-  topic: Topic;
-  articles: EnrichedArticle[];
-}
+interface Props { topic: Topic; articles: EnrichedArticle[]; }
 const { topic, articles } = Astro.props;
 const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
 ---
 <div class={`topic-block ${topic}`}>
-  <h3><a href={`${base}/tema/${topic}`} style="color: inherit;">{TOPIC_LABELS[topic]}</a></h3>
+  <header class="topic-block-header">
+    <span class="dot" aria-hidden="true"></span>
+    <h3><a href={`${base}/tema/${topic}`}>{TOPIC_LABELS[topic]}</a></h3>
+  </header>
   {articles.length === 0
-    ? <p style="color: var(--ink-mute); font-size: 14px;">Ingen saker enda</p>
+    ? <p class="none">Ingen saker enda</p>
     : (
       <ul>
         {articles.map((a) => (
