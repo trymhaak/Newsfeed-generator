@@ -59,12 +59,31 @@ function buildPrompt(batch: RawArticle[]): string {
 }
 
 function extractJsonArray(s: string): string {
-  const start = s.indexOf('[');
-  const end = s.lastIndexOf(']');
-  if (start === -1 || end === -1 || end < start) {
-    throw new Error('no JSON array found in Claude output');
+  const trimmed = s.trim();
+  if (trimmed.startsWith('[') && trimmed.endsWith(']')) return trimmed;
+
+  let depth = 0;
+  let start = -1;
+  let inString = false;
+  let escape = false;
+  for (let i = 0; i < s.length; i++) {
+    const ch = s[i];
+    if (escape) { escape = false; continue; }
+    if (inString) {
+      if (ch === '\\') escape = true;
+      else if (ch === '"') inString = false;
+      continue;
+    }
+    if (ch === '"') { inString = true; continue; }
+    if (ch === '[') {
+      if (depth === 0) start = i;
+      depth++;
+    } else if (ch === ']') {
+      depth--;
+      if (depth === 0 && start !== -1) return s.slice(start, i + 1);
+    }
   }
-  return s.slice(start, end + 1);
+  throw new Error('no balanced JSON array found in Claude output');
 }
 
 async function callClaude(prompt: string): Promise<string> {
@@ -98,14 +117,15 @@ function validateEnrichment(e: unknown, knownIds: Set<string>): ClaudeEnrichment
   if (typeof o.id !== 'string' || !knownIds.has(o.id)) return null;
   if (typeof o.headline_no !== 'string' || typeof o.summary_no !== 'string') return null;
   if (typeof o.topic !== 'string' || !TOPICS.includes(o.topic as Topic)) return null;
-  if (typeof o.score !== 'number' || o.score < 0 || o.score > 100) return null;
+  const score = Number(o.score);
+  if (!Number.isFinite(score) || score < 0 || score > 100) return null;
   if (!Array.isArray(o.tags)) return null;
   return {
     id: o.id,
-    headline_no: o.headline_no.slice(0, 200),
-    summary_no: o.summary_no,
+    headline_no: o.headline_no.trim().slice(0, 100),
+    summary_no: o.summary_no.trim(),
     topic: o.topic as Topic,
-    score: Math.round(o.score),
+    score: Math.round(score),
     tags: o.tags.filter((t): t is string => typeof t === 'string').slice(0, 5),
   };
 }
@@ -135,6 +155,14 @@ async function main() {
   const raw: RawArticle[] = JSON.parse(await readFile(RAW_IN, 'utf8'));
   if (raw.length === 0) {
     console.log('no new articles to enrich');
+    await writeFile(PENDING_OUT, '[]\n', 'utf8');
+    return;
+  }
+
+  if (!process.env.CLAUDE_CODE_OAUTH_TOKEN && !process.env.ANTHROPIC_API_KEY) {
+    console.log(
+      'no CLAUDE_CODE_OAUTH_TOKEN or ANTHROPIC_API_KEY set — skipping enrichment',
+    );
     await writeFile(PENDING_OUT, '[]\n', 'utf8');
     return;
   }

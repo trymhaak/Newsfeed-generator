@@ -30,12 +30,17 @@ function stripHtml(html: string): string {
     .replace(/<script[\s\S]*?<\/script>/gi, '')
     .replace(/<style[\s\S]*?<\/style>/gi, '')
     .replace(/<[^>]+>/g, ' ')
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(parseInt(n, 10)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCharCode(parseInt(h, 16)))
     .replace(/&nbsp;/g, ' ')
     .replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
+    .replace(/&apos;/g, "'")
+    .replace(/&ndash;/g, '–')
+    .replace(/&mdash;/g, '—')
+    .replace(/&hellip;/g, '…')
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -70,8 +75,9 @@ async function fetchFeed(
     const id = articleId(source.id, item.link);
     if (knownIds.has(id)) continue;
 
-    const published = item.isoDate ?? item.pubDate ?? new Date().toISOString();
-    if (+new Date(published) < cutoff) continue;
+    const parsedDate = new Date(item.isoDate ?? item.pubDate ?? Date.now());
+    if (isNaN(parsedDate.getTime()) || parsedDate.getTime() < cutoff) continue;
+    const published = parsedDate.toISOString();
 
     const rawContent =
       (item['content:encoded'] as string | undefined) ??
@@ -87,7 +93,7 @@ async function fetchFeed(
       title: item.title.trim(),
       url: item.link,
       content: truncate(stripHtml(rawContent), 1500),
-      published: new Date(published).toISOString(),
+      published,
       hero_image: extractHeroImage(item),
       default_topic: source.topic as Topic,
       source_weight: source.weight,

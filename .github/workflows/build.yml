@@ -2,7 +2,6 @@ name: Build & Deploy
 
 on:
   schedule:
-    # Every 6 hours
     - cron: '0 */6 * * *'
   workflow_dispatch:
     inputs:
@@ -12,11 +11,6 @@ on:
         default: false
   push:
     branches: [main]
-    paths:
-      - 'src/**'
-      - 'astro.config.mjs'
-      - 'package.json'
-      - 'config/feeds.yaml'
 
 permissions:
   contents: write
@@ -31,8 +25,6 @@ jobs:
   pipeline:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
-    outputs:
-      changed: ${{ steps.diff.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -46,20 +38,35 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Detect AI auth
+        id: auth
+        env:
+          OAUTH: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          APIKEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -n "$OAUTH" ] || [ -n "$APIKEY" ]; then
+            echo "has_auth=true" >> "$GITHUB_OUTPUT"
+            echo "✓ AI auth detected"
+          else
+            echo "has_auth=false" >> "$GITHUB_OUTPUT"
+            echo "⚠ No CLAUDE_CODE_OAUTH_TOKEN or ANTHROPIC_API_KEY set — skipping enrichment"
+          fi
+
       - name: Install Claude CLI
-        if: ${{ inputs.skip_pipeline != true }}
+        if: ${{ inputs.skip_pipeline != true && steps.auth.outputs.has_auth == 'true' }}
         run: npm install -g @anthropic-ai/claude-code
 
       - name: Run pipeline
-        if: ${{ inputs.skip_pipeline != true }}
+        if: ${{ inputs.skip_pipeline != true && steps.auth.outputs.has_auth == 'true' }}
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: npm run pipeline
 
       - name: Check for changes
         id: diff
         run: |
-          if git diff --quiet data/articles.json; then
+          if git diff --quiet data/ public/images 2>/dev/null; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No new articles."
           else
@@ -72,7 +79,7 @@ jobs:
         run: |
           git config user.name "newsfeed-bot"
           git config user.email "newsfeed-bot@users.noreply.github.com"
-          git add data/articles.json public/images
+          git add data/articles.json public/images 2>/dev/null || true
           git commit -m "data: refresh articles ($(date -u +%Y-%m-%dT%H:%MZ))"
           git push
 
@@ -92,6 +99,11 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Configure Pages (auto-enable)
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Build site
         run: npm run build

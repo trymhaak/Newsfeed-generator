@@ -23,15 +23,31 @@ npm run build     # Statisk build → dist/
 npm run pipeline  # Hent feeds → berik via Claude → oppdater data/articles.json
 ```
 
-For å kjøre `pipeline` lokalt må du ha `claude` CLI installert og innlogget.
+For å kjøre `pipeline` lokalt må du ha `claude` CLI installert og innlogget,
+eller sette `ANTHROPIC_API_KEY` i miljøet.
 
-## Oppsett av GitHub Pages
+## Oppsett
 
-1. Push branch til GitHub
-2. Settings → Pages → Source: "GitHub Actions"
-3. Settings → Secrets → Actions: legg til `CLAUDE_CODE_OAUTH_TOKEN`
-   (genereres ved `/install-github-app` i Claude Code lokalt)
-4. Workflowen kjører cron hver 6. time, eller manuelt via "Run workflow"
+GitHub Pages aktiveres automatisk av workflowen første gang den kjører
+(`actions/configure-pages` med `enablement: true`) — ingen manuell UI-config
+nødvendig.
+
+Workflowen kjører cron hver 6. time. Første kjøring trigges automatisk når
+PR merges til `main` (push-trigger), eller manuelt via Actions-fanen → "Run
+workflow".
+
+### AI-auth (valgfritt)
+
+Pipelinen kjører i to moduser:
+
+- **Med auth**: Henter feeds + beriker via Claude. Trenger én av:
+  - `CLAUDE_CODE_OAUTH_TOKEN` — generer ved å kjøre `/install-github-app` i
+    Claude Code lokalt; tokenet legges automatisk inn som repo-secret.
+  - `ANTHROPIC_API_KEY` — legg inn manuelt i Settings → Secrets → Actions.
+
+- **Uten auth**: Workflowen detekterer at ingen nøkkel er satt, hopper over
+  enrichment-steget, og bygger siden med eksisterende data. Bra for å teste
+  byggeflyt før du legger inn nøkkelen.
 
 ## Struktur
 
