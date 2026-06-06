@@ -66,12 +66,12 @@ jobs:
 
       - name: Commit updated articles
         run: |
-          if git diff --quiet data/ public/images 2>/dev/null; then
+          git add data/articles.json
+          if git diff --staged --quiet; then
             echo "No new articles."
           else
             git config user.name "newsfeed-bot"
             git config user.email "newsfeed-bot@users.noreply.github.com"
-            git add data/articles.json public/images 2>/dev/null || true
             git commit -m "data: refresh articles ($(date -u +%Y-%m-%dT%H:%MZ))"
             git push
           fi
