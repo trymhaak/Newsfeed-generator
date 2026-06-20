@@ -1,26 +1,6 @@
 {
-  "generated_at": "2026-06-20T18:46:06.845Z",
+  "generated_at": "2026-06-20T17:34:12.630Z",
   "articles": [
-    {
-      "id": "e2e-probe-1781981066",
-      "source_id": "e2e-test-probe",
-      "source_name": "[TEST] E2E Deploy Probe",
-      "url": "https://example.com/e2e-probe/1781981066",
-      "published": "2026-06-20T18:44:26.000Z",
-      "ingested": "2026-06-20T18:45:06.556Z",
-      "title_original": "Microsoft addresses elevation-of-privilege vulnerability in Windows Print Spooler service",
-      "headline_no": "Print Spooler-hull gir lokal angriper SYSTEM-rettigheter — patch ute nå",
-      "summary_no": "Microsoft har gitt ut en sikkerhetsoppdatering som tetter et rettighetshull (elevation-of-privilege) i Windows Print Spooler. En autentisert lokal angriper kunne utnytte feilen til å skaffe seg SYSTEM-rettigheter på verten. Oppdateringen distribueres via Windows Update, og admins som styrer endepunkter med Intune eller Configuration Manager bør rulle den ut raskt — selv om aktiv utnyttelse ikke er observert ennå.",
-      "topic": "sikkerhet",
-      "score": 36,
-      "tags": [
-        "print-spooler",
-        "eop",
-        "windows",
-        "intune",
-        "patch"
-      ]
-    },
     {
       "id": "msrc-update-guide-4cd64470e8",
       "source_id": "msrc-update-guide",
