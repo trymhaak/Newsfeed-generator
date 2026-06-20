@@ -101,3 +101,369 @@ feeds:
     url: https://www.microsoft.com/releasecommunications/api/v2/m365/rss
     topic: endpoint
     weight: 0.7
+
+  # === Lagt til 2026-06-20 fra research/microsoft-sources (49 validerte MS-kilder) ===
+  # =====================================================================
+  # IDENTITET  (Entra ID, CA, PIM, B2B/B2C, MFA, hybrid identity)
+  # =====================================================================
+
+  # -- Official Microsoft --
+  - id: entra-identity-platform
+    name: Microsoft Entra Identity Platform (devblogs)
+    # Auth/MSAL/External ID/token & Conditional Access platform changes. Dev-leaning but authoritative.
+    url: https://devblogs.microsoft.com/identity/feed/
+    topic: identitet
+    weight: 0.8
+
+  # -- Community / MVP --
+  - id: office365-itpros
+    name: Office 365 for IT Pros (Tony Redmond)
+    # Daily, deep M365/Entra/Teams/PowerShell/Copilot analysis. Top-tier. 100-item feed.
+    url: https://office365itpros.com/feed/
+    topic: identitet
+    weight: 0.75
+
+  - id: vasil-michev
+    name: Vasil Michev — Michev.info
+    # M365/Graph/Exchange/Entra PowerShell deep-dives from the "Michev" MVP.
+    url: https://www.michev.info/feed/
+    topic: identitet
+    weight: 0.75
+
+  - id: dirteam-berkouwer
+    name: Sander Berkouwer — The things that are better left unspoken
+    # Entra/AD/hybrid identity. NB use non-www host (www has a TLS SAN mismatch).
+    url: https://dirteam.com/sander/feed/
+    topic: identitet
+    weight: 0.75
+
+  - id: ourcloudnetwork
+    name: Our Cloud Network (Daniel Bradley)
+    # Entra/Intune/Graph PowerShell how-tos and news.
+    url: https://ourcloudnetwork.com/feed/
+    topic: identitet
+    weight: 0.7
+
+  - id: janbakker
+    name: JanBakker.tech
+    # Entra ID deep-dives: Conditional Access, passkeys, External ID, Graph.
+    url: https://janbakker.tech/feed/
+    topic: identitet
+    weight: 0.7
+
+  - id: alitajran
+    name: ALI TAJRAN
+    # Exchange / Active Directory / Entra step-by-step guides.
+    url: https://alitajran.com/feed/
+    topic: identitet
+    weight: 0.7
+
+  - id: hybridbrothers
+    name: Hybrid Brothers
+    # Entra / hybrid identity / Defender security. Static-site feed at /index.xml.
+    url: https://hybridbrothers.com/index.xml
+    topic: identitet
+    weight: 0.7
+
+  - id: goodworkaround
+    name: Good Workaround! (Marius Solbakken)
+    # Entra ID provisioning/SCIM/Graph internals. Lower cadence (~monthly).
+    url: https://goodworkaround.com/feed/
+    topic: identitet
+    weight: 0.7
+
+  - id: smbtothecloud
+    name: SMBtotheCloud
+    # M365/Entra/Intune automation for SMB; practical PowerShell.
+    url: https://smbtothecloud.com/feed/
+    topic: identitet
+    weight: 0.65
+
+  - id: damienbod
+    name: damienbod — Software Engineering
+    # Entra/OAuth/OIDC/ASP.NET auth. Developer-leaning identity-security.
+    url: https://damienbod.com/feed/
+    topic: identitet
+    weight: 0.6
+
+  - id: thatlazyadmin
+    name: ThatLazyAdmin
+    # M365/Entra/PowerShell admin how-tos.
+    url: https://thatlazyadmin.com/feed/
+    topic: identitet
+    weight: 0.6
+
+  - id: admindroid
+    name: AdminDroid Blog
+    # M365/Entra/Defender admin & reporting. Vendor blog (AdminDroid).
+    url: https://blog.admindroid.com/feed/
+    topic: identitet
+    weight: 0.6
+
+  - id: o365reports
+    name: Office 365 Reports (AdminDroid)
+    # M365 reporting/PowerShell. Sister site to AdminDroid (same vendor) — some overlap.
+    url: https://o365reports.com/feed/
+    topic: identitet
+    weight: 0.6
+
+  # =====================================================================
+  # SIKKERHET  (Defender, Sentinel, Purview, MSRC, vulns, baselines)
+  # =====================================================================
+
+  # -- Official Microsoft --
+  - id: defender-endpoint
+    name: Microsoft Defender for Endpoint Blog
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=MicrosoftDefenderATPBlog
+    topic: sikkerhet
+    weight: 0.9
+
+  - id: defender-office365
+    name: Microsoft Defender for Office 365 Blog
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=MicrosoftDefenderforOffice365Blog
+    topic: sikkerhet
+    weight: 0.9
+
+  - id: msrc-update-guide
+    name: MSRC Security Update Guide (RSS)
+    # Authoritative CVE feed (plain RSS, no auth). HIGH VOLUME (4000+ items, incl.
+    # some third-party CVEs MSRC tracks) — consider enabled:false until tuned.
+    url: https://api.msrc.microsoft.com/update-guide/rss
+    topic: sikkerhet
+    weight: 0.9
+
+  - id: core-infra-security
+    name: Core Infrastructure and Security Blog
+    # Windows Server/AD/PKI/security "Check This Out" roundups. Board.id is camelCase.
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=CoreInfrastructureandSecurityBlog
+    topic: sikkerhet
+    weight: 0.85
+
+  - id: security-baselines
+    name: Microsoft Security Baselines Blog
+    # Official security baseline releases (Windows, Edge, M365).
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoft-security-baselines
+    topic: sikkerhet
+    weight: 0.85
+
+  - id: defender-vuln-mgmt
+    name: Microsoft Defender Vulnerability Management Blog
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=Vulnerability-Management
+    topic: sikkerhet
+    weight: 0.85
+
+  - id: security-copilot
+    name: Microsoft Security Copilot Blog
+    # AI for SecOps (Copilot for Security). Could alternatively map to `ai`.
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=securitycopilotblog
+    topic: sikkerhet
+    weight: 0.85
+
+  - id: azure-network-security
+    name: Azure Network Security Blog
+    # Azure Firewall / DDoS / Bastion / WAF.
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=AzureNetworkSecurityBlog
+    topic: sikkerhet
+    weight: 0.8
+
+  - id: security-experts
+    name: Microsoft Security Experts Blog
+    # MDR / Defender Experts / incident-response practice.
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=MicrosoftSecurityExperts
+    topic: sikkerhet
+    weight: 0.8
+
+  - id: security-community
+    name: Microsoft Security Community Blog
+    # New post-migration umbrella security blog (replaces old Sec & Compliance landing).
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoft-security-blog
+    topic: sikkerhet
+    weight: 0.8
+
+  # -- Community / MVP --
+  - id: jeffrey-appel
+    name: Jeffrey Appel — Microsoft Security
+    # Defender XDR / Sentinel / Entra security, hands-on. Strong.
+    url: https://jeffreyappel.nl/feed/
+    topic: sikkerhet
+    weight: 0.75
+
+  - id: albert-hoitingh
+    name: Albert Hoitingh — Information Security & Compliance
+    # Purview / sensitivity labels / compliance / AI governance.
+    url: https://www.alberthoitingh.com/feed/
+    topic: sikkerhet
+    weight: 0.7
+
+  - id: cloudbrothers
+    name: Cloudbrothers (Fabian Bader)
+    # Defender / Entra / KQL detection engineering. Static-site feed at /index.xml.
+    url: https://cloudbrothers.info/index.xml
+    topic: sikkerhet
+    weight: 0.7
+
+  # =====================================================================
+  # ENDPOINT  (Intune, MDM, Autopilot, Windows, Cloud PC, Surface, infra)
+  # =====================================================================
+
+  # -- Official Microsoft --
+  - id: azure-virtual-desktop
+    name: Azure Virtual Desktop Blog
+    # AVD / Cloud PC session-host news — squarely endpoint.
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=azurevirtualdesktopblog
+    topic: endpoint
+    weight: 0.9
+
+  - id: surface-it-pro
+    name: Surface IT Pro Blog
+    # Surface device firmware/management for IT. Board.id is camelCase (SurfaceITPro).
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=SurfaceITPro
+    topic: endpoint
+    weight: 0.85
+
+  - id: windows-os-platform
+    name: Windows OS Platform Blog
+    # Windows client OS platform features/servicing.
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=windowsosplatform
+    topic: endpoint
+    weight: 0.85
+
+  - id: windows-insider
+    name: Windows Insider Blog
+    # Windows Insider Preview build announcements. HIGH VOLUME (300-item feed).
+    url: https://blogs.windows.com/windows-insider/feed/
+    topic: endpoint
+    weight: 0.8
+
+  - id: windows-server
+    name: Windows Server News and Best Practices
+    # Windows Server feature updates/guidance. Infra-leaning (maps loosely to endpoint).
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=windowsservernewsandbestpractices
+    topic: endpoint
+    weight: 0.8
+
+  - id: windows-networking
+    name: Windows Networking Blog (Core Networking)
+    # Windows DNS/DHCP/DoH/core networking. Infra-leaning.
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=networkingblog
+    topic: endpoint
+    weight: 0.8
+
+  - id: fasttrack
+    name: Microsoft FastTrack Blog
+    # M365 deployment/adoption guidance across endpoint/security/Copilot.
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=fasttrackblog
+    topic: endpoint
+    weight: 0.8
+
+  - id: windows-admin-center
+    name: Windows Admin Center Blog
+    # WAC server-management tooling. Infra-leaning.
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=windows-admin-center-blog
+    topic: endpoint
+    weight: 0.75
+
+  # -- Community / MVP --
+  - id: msendpointmgr
+    name: MSEndpointMgr
+    # Intune / ConfigMgr / Endpoint Privilege Mgmt. Top-tier endpoint community.
+    url: https://msendpointmgr.com/feed/
+    topic: endpoint
+    weight: 0.75
+
+  - id: oofhours
+    name: Out of Office Hours (Michael Niehaus)
+    # Autopilot / Windows / Intune from the Autopilot creator.
+    url: https://oofhours.com/feed/
+    topic: endpoint
+    weight: 0.75
+
+  - id: petervanderwoude
+    name: All about Microsoft Intune (Peter van der Woude)
+    # Intune / Autopilot / ConfigMgr deep-dives. Top MVP.
+    url: https://www.petervanderwoude.nl/feed/
+    topic: endpoint
+    weight: 0.75
+
+  - id: call4cloud
+    name: Call4Cloud (Rudy Ooms)
+    # Intune / Autopilot / Autopatch troubleshooting.
+    url: https://call4cloud.nl/feed/
+    topic: endpoint
+    weight: 0.7
+
+  - id: mobile-jon
+    name: Mobile Jon's Blog
+    # Intune / AVD / endpoint / PIM architecture.
+    url: https://mobile-jon.com/feed/
+    topic: endpoint
+    weight: 0.7
+
+  - id: niallbrady
+    name: Just Another Windows Noob (Niall Brady)
+    # ConfigMgr / Intune / OSD / Windows 365.
+    url: https://niallbrady.com/feed/
+    topic: endpoint
+    weight: 0.7
+
+  - id: ccmexec
+    name: CCMEXEC (Jörgen Nilsson)
+    # ConfigMgr / Intune / Enterprise Mobility.
+    url: https://ccmexec.com/feed/
+    topic: endpoint
+    weight: 0.7
+
+  - id: mikemdm
+    name: Mike's MDM Blog
+    # Intune / MDM automation and inventory.
+    url: https://mikemdm.de/feed/
+    topic: endpoint
+    weight: 0.7
+
+  - id: andrew-taylor
+    name: Andrew Taylor (andrewstaylor.com)
+    # Intune / Graph PowerShell + weekly Intune newsletter.
+    url: https://andrewstaylor.com/feed/
+    topic: endpoint
+    weight: 0.65
+
+  - id: prajwal-desai
+    name: Prajwal Desai
+    # Intune / SCCM / Windows 11 how-tos and patch news.
+    url: https://www.prajwaldesai.com/feed/
+    topic: endpoint
+    weight: 0.65
+
+  - id: thomas-maurer
+    name: Thomas Maurer
+    # Azure / Arc / Windows Server / Azure Local. Infra-leaning; some personal posts.
+    url: https://www.thomasmaurer.ch/feed/
+    topic: endpoint
+    weight: 0.6
+
+  - id: danielengberg
+    name: Daniel Engberg — Endpoint Management
+    # Biweekly Endpoint Management newsletter (Intune/ConfigMgr roundup) — meta-aggregator.
+    url: https://danielengberg.com/feed/
+    topic: endpoint
+    weight: 0.6
+
+  # =====================================================================
+  # AI  (M365 Copilot, Copilot Studio, AI in admin consoles)
+  # =====================================================================
+
+  # -- Official Microsoft --
+  - id: m365-blog
+    name: Microsoft 365 Blog (official)
+    # Broad M365 announcements; currently Copilot-heavy ("Copilot Cowork GA" etc.).
+    url: https://www.microsoft.com/en-us/microsoft-365/blog/feed/
+    topic: ai
+    weight: 0.8
+
+  # -- Community / MVP --
+  - id: handsontek
+    name: HANDS ON tek (João Ferreira)
+    # SharePoint / Teams / Copilot extensibility and pricing analysis.
+    url: https://www.handsontek.net/feed/
+    topic: ai
+    weight: 0.7
