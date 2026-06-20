@@ -5,11 +5,11 @@ import { TOPIC_LABELS, TOPICS, type Topic } from '../lib/types.ts';
 interface Props {
   title: string;
   description?: string;
-  generated?: string;
+  generatedAt?: string;
   topicCounts?: Record<Topic, number>;
 }
 
-const { title, description, generated, topicCounts } = Astro.props;
+const { title, description, generatedAt, topicCounts } = Astro.props;
 
 const today = new Intl.DateTimeFormat('nb-NO', {
   weekday: 'long',
@@ -18,7 +18,17 @@ const today = new Intl.DateTimeFormat('nb-NO', {
   year: 'numeric',
 }).format(new Date());
 
-const timeFmt = new Intl.DateTimeFormat('nb-NO', { hour: '2-digit', minute: '2-digit' });
+// Full date + time so a stale feed is obvious (showing only the clock time made
+// 5-week-old data look fresh — see PRODUCTION-READINESS B3/P0.3).
+const updatedFmt = new Intl.DateTimeFormat('nb-NO', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+});
+const updatedDate = generatedAt ? new Date(generatedAt) : null;
+const updatedValid = updatedDate && !Number.isNaN(updatedDate.getTime());
 
 const pathname = Astro.url.pathname.replace(/\/$/, '');
 const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
@@ -43,7 +53,7 @@ const onTopic = (t: Topic) => pathname.endsWith(`/tema/${t}`);
     <div class="meta-bar">
       <div class="container">
         <span>{today}</span>
-        {generated && <span>Oppdatert kl. {timeFmt.format(new Date(generated))}</span>}
+        {updatedValid && <span>Sist oppdatert {updatedFmt.format(updatedDate)}</span>}
       </div>
     </div>
 

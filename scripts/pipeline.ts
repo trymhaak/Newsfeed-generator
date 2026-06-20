@@ -33,6 +33,10 @@ async function main() {
   await saveStore(next);
   console.log(`merged ${added} new articles (store now has ${next.articles.length})`);
 
+  // IMPORTANT: only clean up _raw/_pending AFTER a successful merge. run()
+  // throws on any non-zero sub-step (e.g. enrich aborting on quota), so we
+  // never reach this point on failure — that is exactly what keeps _raw.json
+  // around for the next run instead of losing the unenriched articles.
   if (existsSync(RAW)) await unlink(RAW);
   if (existsSync(PENDING)) await unlink(PENDING);
 }

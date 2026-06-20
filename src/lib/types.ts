@@ -55,6 +55,12 @@ export interface EnrichedArticle {
 }
 
 export interface ArticleStore {
-  generated: string;
+  /**
+   * Top-level freshness stamp — UTC ISO-8601, bumped only when new articles
+   * are merged. Read by the UI ("sist oppdatert") and by the out-of-band
+   * Cloudflare staleness monitor. Legacy stores used `generated`; loadStore
+   * normalises that to `generated_at` on read.
+   */
+  generated_at: string;
   articles: EnrichedArticle[];
 }

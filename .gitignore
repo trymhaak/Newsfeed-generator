@@ -27,3 +27,5 @@ CLAUDE.local.md
 # Pipeline artifacts
 data/_raw.json
 data/_pending.json
+# Atomic-write temp files (store.ts writes data/articles.json.tmp-<pid> then renames)
+data/*.tmp-*

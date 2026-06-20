@@ -85,6 +85,12 @@ async function fetchFeed(
   knownIds: Set<string>,
 ): Promise<RawArticle[]> {
   const feed = await parser.parseURL(source.url);
+  // A renamed/dead board returns HTTP 200 with a valid-but-empty "Resource Not
+  // Found" feed (0 items). Treat that as a failure so it counts against the
+  // okCount threshold instead of silently masquerading as "a quiet news day".
+  if (!feed.items || feed.items.length === 0) {
+    throw new Error('feed returned 0 items (dead or renamed board?)');
+  }
   const cutoff = Date.now() - MAX_AGE_DAYS * 86400_000;
   const out: RawArticle[] = [];
 
@@ -127,7 +133,13 @@ async function main() {
 
   const parser = new Parser({
     timeout: 20_000,
-    headers: { 'user-agent': 'newsfeed-generator/0.1 (+github.com/trymhaak/newsfeed-generator)' },
+    headers: {
+      // Tech Community returns 403 to non-browser agents (this is why the old
+      // feeds looked dead). These are public RSS endpoints meant for readers, so
+      // present a real browser User-Agent.
+      'user-agent':
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+    },
     customFields: {
       item: [
         ['content:encoded', 'content:encoded'],
@@ -159,6 +171,19 @@ async function main() {
 
   console.log(`\nfetched ${raw.length} new articles from ${okCount}/${sources.length} feeds`);
   console.log(`wrote ${RAW_OUT}`);
+
+  // Fail loudly on mass source death: if fewer than half the feeds responded,
+  // the supply is structurally broken (e.g. a platform migration like the dead
+  // Tech Community feeds) and must not look like a quiet news day. Non-zero
+  // exit aborts the pipeline before enrichment so we never publish off a
+  // half-dead feed set; the out-of-band monitor then flags the staleness.
+  const minOk = Math.ceil(sources.length / 2);
+  if (okCount < minOk) {
+    console.error(
+      `only ${okCount}/${sources.length} feeds OK (need >= ${minOk}) — failing loudly`,
+    );
+    process.exitCode = 1;
+  }
 }
 
 main().catch((err) => {

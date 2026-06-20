@@ -1,0 +1,2 @@
+# Keeps the logs/ directory in git so launchd can write pipeline.out.log /
+# pipeline.err.log here. The log files themselves are gitignored (*.log).

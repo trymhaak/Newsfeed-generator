@@ -1,0 +1,22 @@
+# Newsfeed freshness monitor — Cloudflare Worker (Cron).
+# NOT deployed by this repo. Deploy + secret steps: CUTOVER-RUNBOOK.md §B.
+name = "newsfeed-monitor"
+main = "src/index.ts"
+compatibility_date = "2026-06-01"
+
+# Every 3 hours, out-of-band and independent of the Mac. Cloudflare free tier
+# allows up to 5 cron triggers per account.
+[triggers]
+crons = ["0 */3 * * *"]
+
+[vars]
+# Where to read the published articles.json. Default = the canonical file on
+# `main` via raw GitHub: works today, hosting-independent, and goes stale exactly
+# when the Mac stops pushing. Switch to the Cloudflare Pages URL once
+# articles.json is published there (see ops/cloudflare/pages/README.md).
+ARTICLES_URL = "https://raw.githubusercontent.com/trymhaak/Newsfeed-generator/main/data/articles.json"
+STALE_HOURS = "12"
+WEBHOOK_KIND = "discord"   # or "slack"
+
+# WEBHOOK_URL is a SECRET — never commit it. Set it after deploy with:
+#   wrangler secret put WEBHOOK_URL

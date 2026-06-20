@@ -11,69 +11,81 @@
 #           Reputable MVPs/community: 0.6-0.8
 #           Aggregators/news: 0.4-0.6
 #   enabled: optional, defaults to true. Set false to temporarily disable.
+#
+# NOTE (2026-06-20 source repair): Microsoft Tech Community migrated off its old
+# Khoros/Lithium platform; the old `/gxcuf89792/rss/board?...` URLs now 404. The
+# current pattern is `/t5/s/gxcuf89792/rss/board?board.id=<BoardId>`. Two gotchas
+# the fetcher handles: (1) a browser User-Agent is required or TC returns 403;
+# (2) an unknown board returns HTTP 200 with a valid-but-empty "Resource Not
+# Found" feed (0 items) — fetch-feeds.ts treats a 0-item feed as a failure.
+# Every URL below was curl-verified 200 + valid RSS + >=10 items on 2026-06-20.
 
 feeds:
   # --- Endpoint Management ---
   - id: intune-blog
     name: Microsoft Intune Customer Success Blog
-    url: https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=MicrosoftIntuneBlog
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=MicrosoftIntuneBlog
     topic: endpoint
     weight: 0.95
 
   - id: windows-it-pro
     name: Windows IT Pro Blog
-    url: https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=Windows-ITPro-Blog
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=Windows-ITPro-Blog
     topic: endpoint
     weight: 0.9
 
-  - id: windows-365
-    name: Windows 365 Blog
-    url: https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=Windows365Blog
-    topic: endpoint
-    weight: 0.85
+  # NOTE: windows-365 dropped during the source repair — its blog board was not
+  # carried over in the Tech Community migration and has no working RSS (every
+  # candidate board id returns a 0-item "Resource Not Found" feed). Windows 365 /
+  # Cloud PC announcements still surface via windows-it-pro and m365-roadmap.
 
   # --- Identity & Access ---
   - id: entra-blog
     name: Microsoft Entra Blog
-    url: https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=Identity
+    # Board renamed in the migration: Identity -> Microsoft-Entra-Blog.
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=Microsoft-Entra-Blog
     topic: identitet
     weight: 0.95
 
   # --- Security ---
   - id: msrc-blog
-    name: Microsoft Security Response Center
-    url: https://msrc.microsoft.com/blog/feed
+    name: Microsoft Security Blog
+    # MSRC blog has no working RSS (all /blog/feed variants serve HTML, the
+    # update-guide API feed is empty). Replaced with the official Microsoft
+    # Security Blog — same vendor, same topic, authority 1.0.
+    url: https://www.microsoft.com/en-us/security/blog/feed/
     topic: sikkerhet
     weight: 1.0
 
   - id: defender-xdr
     name: Microsoft Defender XDR Blog
-    url: https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=MicrosoftThreatProtectionBlog
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=MicrosoftThreatProtectionBlog
     topic: sikkerhet
     weight: 0.9
 
   - id: defender-cloud
     name: Microsoft Defender for Cloud Blog
-    url: https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=MicrosoftDefenderCloudBlog
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=MicrosoftDefenderCloudBlog
     topic: sikkerhet
     weight: 0.9
 
   - id: purview-blog
     name: Microsoft Purview Blog
-    url: https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=MicrosoftSecurityandCompliance
+    # Board renamed in the migration: MicrosoftSecurityandCompliance -> Microsoft-Purview-Blog.
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=Microsoft-Purview-Blog
     topic: sikkerhet
     weight: 0.85
 
   - id: sentinel-blog
     name: Microsoft Sentinel Blog
-    url: https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=MicrosoftSentinelBlog
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=MicrosoftSentinelBlog
     topic: sikkerhet
     weight: 0.85
 
   # --- AI & Copilot ---
   - id: m365-copilot
     name: Microsoft 365 Copilot Blog
-    url: https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=Microsoft365CopilotBlog
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=Microsoft365CopilotBlog
     topic: ai
     weight: 0.9
 

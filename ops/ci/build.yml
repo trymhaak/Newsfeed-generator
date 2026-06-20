@@ -1,0 +1,82 @@
+name: Build & Deploy
+
+# Enrichment now runs on the Mac mini via launchd (see ops/launchd/ and
+# CUTOVER-RUNBOOK.md), which commits refreshed data/articles.json to main. This
+# workflow is build + deploy ONLY — it publishes whatever is on main to GitHub
+# Pages.
+#
+# Removed in the production-readiness pass:
+#   - the auth-gated `pipeline` job: it had no repo secrets, so its enrichment
+#     steps were ALWAYS [skipped] — dead code that made CI look like it ran the
+#     pipeline when it did not (audit B1 / Ledd 5).
+#   - the every-6-hours `schedule`: a cron deploy that republished identical
+#     static data was always green and masked 5 weeks of staleness (audit B3).
+#     Deploys now happen on a real data push; staleness is caught out-of-band by
+#     the Cloudflare monitor instead.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+# Least-privilege default — the deploy job overrides for gh-pages.
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # peaceiris pushes the built site to the gh-pages branch
+    steps:
+      - uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871  # v4.2.1
+        with:
+          ref: main
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020  # v4.4.0
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      # Sanitize commit message — never interpolate untrusted GitHub context
+      # directly into action inputs (script-injection risk). head_commit is null
+      # on workflow_dispatch, so the empty-string fallback below covers that.
+      - name: Prepare commit message
+        id: msg
+        env:
+          HEAD_MSG: ${{ github.event.head_commit.message }}
+        run: |
+          # Take only the first line, strip any backticks/$(...) substitutions
+          # by replacing them with their literal characters.
+          first_line=$(printf '%s\n' "$HEAD_MSG" | head -n1)
+          safe=$(printf '%s' "$first_line" | tr -d '\r' | sed 's/[`$]/_/g')
+          # Bound length defensively.
+          safe=${safe:0:200}
+          if [ -z "$safe" ]; then
+            safe="deploy site"
+          fi
+          {
+            echo "msg<<__EOF__"
+            echo "$safe"
+            echo "__EOF__"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453  # v4.1.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: true
+          user_name: 'newsfeed-bot'
+          user_email: 'newsfeed-bot@users.noreply.github.com'
+          commit_message: ${{ steps.msg.outputs.msg }}

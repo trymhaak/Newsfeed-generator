@@ -11,6 +11,9 @@ import { TOPICS } from '../src/lib/types.ts';
 const RAW_IN = 'data/_raw.json';
 const PENDING_OUT = 'data/_pending.json';
 const BATCH_SIZE = 8;
+const CLAUDE_TIMEOUT_MS = 120_000; // hard per-call cap (was unbounded → could hang forever)
+const MAX_RETRIES = 2; // up to 3 attempts total for transient (non-quota) failures
+const RETRY_BASE_MS = 2_000;
 
 interface ClaudeEnrichment {
   id: string;
@@ -86,7 +89,25 @@ function extractJsonArray(s: string): string {
   throw new Error('no balanced JSON array found in Claude output');
 }
 
-async function callClaude(prompt: string): Promise<string> {
+/**
+ * Thrown when claude reports a quota / rate-limit condition. It bubbles all the
+ * way up so the run aborts WITHOUT writing _pending — the pipeline then never
+ * reaches its unlink step and data/_raw.json survives for the next run, so the
+ * unenriched articles are not lost (PRODUCTION-READINESS Ledd 1, P1).
+ */
+class QuotaError extends Error {}
+
+function sleep(ms: number): Promise<void> {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
+function isQuotaOrRateLimit(text: string): boolean {
+  return /quota|rate.?limit|\b429\b|overloaded|too many requests|usage limit|insufficient.*credit/i.test(
+    text,
+  );
+}
+
+function callClaudeOnce(prompt: string): Promise<string> {
   return new Promise((resolve, reject) => {
     const child = spawn(
       'claude',
@@ -96,19 +117,66 @@ async function callClaude(prompt: string): Promise<string> {
 
     let stdout = '';
     let stderr = '';
+    let timedOut = false;
+    const timer = setTimeout(() => {
+      timedOut = true;
+      child.kill('SIGKILL');
+    }, CLAUDE_TIMEOUT_MS);
+
     child.stdout.on('data', (d) => (stdout += d.toString()));
     child.stderr.on('data', (d) => (stderr += d.toString()));
-    child.on('error', reject);
+    child.on('error', (err) => {
+      clearTimeout(timer);
+      reject(err);
+    });
     child.on('close', (code) => {
-      if (code !== 0) {
-        reject(new Error(`claude exited ${code}: ${stderr}`));
+      clearTimeout(timer);
+      if (timedOut) {
+        reject(new Error(`claude timed out after ${CLAUDE_TIMEOUT_MS}ms`));
+      } else if (code !== 0) {
+        const detail = `claude exited ${code}: ${stderr}`;
+        reject(
+          isQuotaOrRateLimit(stderr) || isQuotaOrRateLimit(stdout)
+            ? new QuotaError(detail)
+            : new Error(detail),
+        );
       } else {
         resolve(stdout);
       }
     });
+    // The child can die before stdin is fully written (SIGKILL on timeout, or a
+    // fast crash), which makes Node emit 'error' (EPIPE) on the stdin stream. An
+    // unhandled stream error would throw past the retry/quota guards and crash
+    // the process — swallow it; the 'close' handler still reports the real status.
+    child.stdin.on('error', () => {});
     child.stdin.write(prompt);
     child.stdin.end();
   });
+}
+
+/**
+ * Call claude with a per-call timeout and bounded exponential-backoff retry.
+ * Quota/rate-limit errors are NOT retried — they abort the run immediately so
+ * _raw.json is preserved.
+ */
+async function callClaude(prompt: string): Promise<string> {
+  let lastErr: unknown;
+  for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      return await callClaudeOnce(prompt);
+    } catch (err) {
+      if (err instanceof QuotaError) throw err;
+      lastErr = err;
+      if (attempt < MAX_RETRIES) {
+        const wait = RETRY_BASE_MS * 2 ** attempt;
+        console.warn(
+          `  claude attempt ${attempt + 1}/${MAX_RETRIES + 1} failed (${err}); retrying in ${wait}ms`,
+        );
+        await sleep(wait);
+      }
+    }
+  }
+  throw lastErr;
 }
 
 function validateEnrichment(e: unknown, knownIds: Set<string>): ClaudeEnrichment | null {
@@ -159,11 +227,15 @@ async function main() {
     return;
   }
 
+  // We have articles to enrich. Missing auth is a hard failure: in the Mac
+  // mini / launchd architecture the Claude Max session is always present, so
+  // no-auth means misconfiguration, not "a quiet news day". Exit non-zero
+  // WITHOUT writing _pending so the pipeline keeps _raw for the next run.
   if (!process.env.CLAUDE_CODE_OAUTH_TOKEN && !process.env.ANTHROPIC_API_KEY) {
-    console.log(
-      'no CLAUDE_CODE_OAUTH_TOKEN or ANTHROPIC_API_KEY set — skipping enrichment',
+    console.error(
+      `cannot enrich ${raw.length} articles: no CLAUDE_CODE_OAUTH_TOKEN or ANTHROPIC_API_KEY set`,
     );
-    await writeFile(PENDING_OUT, '[]\n', 'utf8');
+    process.exitCode = 1;
     return;
   }
 
@@ -196,8 +268,29 @@ async function main() {
         });
       }
     } catch (err) {
+      if (err instanceof QuotaError) {
+        // Abort the whole run on quota/rate-limit. Returning WITHOUT writing
+        // _pending means the pipeline never reaches merge/unlink, so _raw.json
+        // survives and the unenriched articles are retried next run.
+        console.error(
+          `  quota/rate-limit hit — aborting without losing _raw: ${err.message}`,
+        );
+        process.exitCode = 2;
+        return;
+      }
       console.warn(`  batch failed: ${err}`);
     }
+  }
+
+  // Fail loudly: raw articles in, zero enriched out means enrichment is broken
+  // (auth, model, parsing) — not a quiet news day. Exit non-zero and DON'T
+  // write _pending, so the pipeline aborts before deleting _raw.
+  if (enriched.length === 0) {
+    console.error(
+      `enrichment produced 0/${raw.length} articles — failing loudly`,
+    );
+    process.exitCode = 1;
+    return;
   }
 
   await writeFile(PENDING_OUT, JSON.stringify(enriched, null, 2) + '\n', 'utf8');

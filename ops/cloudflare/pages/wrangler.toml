@@ -1,0 +1,15 @@
+# Cloudflare Pages config TEMPLATE for the Astro site.
+#
+# OPTIONAL — only needed for the Git-integration deploy path. The direct-upload
+# path (`wrangler pages deploy ./dist`) needs no toml at all. If you use Git
+# integration, copy this to the REPO ROOT as `wrangler.toml` and set the name.
+#
+# NOT deployed by this repo. See CUTOVER-RUNBOOK.md §C.
+name = "newsfeed"                  # Cloudflare Pages project name (choose yours)
+compatibility_date = "2026-06-01"
+pages_build_output_dir = "dist"
+
+# Build-time env (base '/' + canonical URL) is NOT set here — set it in the build
+# command or the Pages project's build settings:
+#   SITE_BASE=/ SITE_URL=https://<your-domain> npm run build
+# astro.config.mjs reads SITE_BASE / SITE_URL (defaults keep GitHub Pages working).

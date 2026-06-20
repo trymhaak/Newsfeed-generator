@@ -1,0 +1,15 @@
+{
+  "name": "newsfeed-monitor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Out-of-band Cloudflare cron worker that alarms on newsfeed staleness.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250101.0",
+    "wrangler": "^4.0.0"
+  }
+}
