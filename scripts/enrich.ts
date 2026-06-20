@@ -111,7 +111,14 @@ function callClaudeOnce(prompt: string): Promise<string> {
   return new Promise((resolve, reject) => {
     const child = spawn(
       'claude',
-      ['--print', '--permission-mode', 'bypassPermissions'],
+      [
+        '--print',
+        '--strict-mcp-config',
+        '--mcp-config',
+        '{"mcpServers":{}}',
+        '--permission-mode',
+        'bypassPermissions',
+      ],
       { stdio: ['pipe', 'pipe', 'pipe'] },
     );
 
@@ -236,7 +243,10 @@ async function main() {
   // var is NOT required — we probe the actual CLI instead. Only "no env token
   // AND `claude` not logged in" is a hard, fail-fast error.
   if (!process.env.CLAUDE_CODE_OAUTH_TOKEN && !process.env.ANTHROPIC_API_KEY) {
-    const probe = spawnSync('claude', ['-p', 'Reply with the single word OK'], {
+    const probe = spawnSync(
+      'claude',
+      ['-p', '--strict-mcp-config', '--mcp-config', '{"mcpServers":{}}', 'Reply with the single word OK'],
+      {
       encoding: 'utf8',
       timeout: 30_000,
       input: '',
