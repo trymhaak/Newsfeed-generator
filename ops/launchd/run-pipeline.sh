@@ -44,6 +44,7 @@ npm run pipeline
 # Commit + push ONLY the data file, and only when it actually changed. A no-op
 # run is byte-identical (generated_at only moves when articles were added), so
 # `git status --porcelain` is empty and we skip the commit entirely.
+DATA_CHANGED=0
 if [[ -n "$(git status --porcelain -- data/articles.json)" ]]; then
   git add data/articles.json
   git -c user.name="newsfeed-bot" \
@@ -51,8 +52,32 @@ if [[ -n "$(git status --porcelain -- data/articles.json)" ]]; then
       commit -m "data: refresh articles ($(date -u +%Y-%m-%dT%H:%MZ))"
   git push origin "$BRANCH"
   echo "[$(stamp)] pushed refreshed data/articles.json"
+  DATA_CHANGED=1
 else
   echo "[$(stamp)] no change to data/articles.json — nothing to commit (idempotent no-op)"
+fi
+
+# Publish the rebuilt site to Cloudflare Pages. IMPORTANT: the data push above
+# does NOT auto-deploy — this Pages project has no Git integration, so without
+# this the live site at newsfeed.trym.cloud freezes at the last manual deploy
+# while git keeps moving. Rebuild + deploy here so the 5-min cadence keeps the
+# published site fresh. Only runs when data actually changed.
+#
+# NON-FATAL BY DESIGN: every failure path is caught (if-conditions suppress
+# set -e) and degrades to a WARN — a broken build or a Cloudflare/Infisical
+# hiccup must never abort the run or undo the data already pushed. The CF token
+# comes from Infisical via load-secrets.sh (verified reachable under launchd).
+if [[ "$DATA_CHANGED" == "1" ]]; then
+  if SITE_BASE=/ SITE_URL=https://newsfeed.trym.cloud npm run build >/dev/null 2>&1; then
+    eval "$(bash "$HOME/Claude/politipuls/scripts/load-secrets.sh" 2>/dev/null)" 2>/dev/null || true
+    if [[ -n "${CLOUDFLARE_API_TOKEN:-}" ]] && npx --yes wrangler@3 pages deploy dist --project-name=newsfeed --branch="$BRANCH" --commit-dirty=true >/dev/null 2>&1; then
+      echo "[$(stamp)] deployed rebuilt site to Cloudflare Pages (newsfeed.trym.cloud)"
+    else
+      echo "[$(stamp)] WARN: site deploy failed or CF token missing — data pushed; site publishes on next successful deploy"
+    fi
+  else
+    echo "[$(stamp)] WARN: astro build failed — skipped deploy (data pushed OK)"
+  fi
 fi
 
 echo "[$(stamp)] newsfeed pipeline done"
