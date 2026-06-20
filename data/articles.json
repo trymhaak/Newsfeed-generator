@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T17:00:31.458Z",
+  "generated_at": "2026-06-20T17:34:12.630Z",
   "articles": [
     {
       "id": "msrc-update-guide-4cd64470e8",
@@ -56,6 +56,25 @@
         "asn1",
         "minnelekkasje",
         "parsing"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-1baf565271",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7383",
+      "published": "2026-06-20T08:43:24.000Z",
+      "ingested": "2026-06-20T17:34:12.585Z",
+      "title_original": "CVE-2026-7383 Possible Heap Buffer Overflow in ASN.1 Multibyte String Conversion",
+      "headline_no": "Heap-overflow i OpenSSLs ASN.1-parsing kan gi kodekjøring",
+      "summary_no": "OpenSSL har en mulig heap buffer overflow ved konvertering av multibyte ASN.1-strenger. Siden ASN.1 brukes bredt i sertifikat- og kryptohåndtering, kan overflyten i verste fall gi kodekjøring og rammer mange produkter. Dette bør prioriteres høyt i patch-syklusen.",
+      "topic": "sikkerhet",
+      "score": 61,
+      "tags": [
+        "cve-2026-7383",
+        "openssl",
+        "asn1",
+        "buffer-overflow"
       ]
     },
     {
@@ -132,6 +151,100 @@
         "cms",
         "kryptografi",
         "minnelekkasje"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-690fcb928b",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42768",
+      "published": "2026-06-20T08:41:45.000Z",
+      "ingested": "2026-06-20T17:34:12.585Z",
+      "title_original": "CVE-2026-42768 Multi-RecipientInfo Bleichenbacher Oracle in CMS_decrypt() and PKCS7_decrypt()",
+      "headline_no": "Bleichenbacher-orakel i OpenSSLs CMS_decrypt() truer kryptert data",
+      "summary_no": "En Bleichenbacher-padding-orakel-sårbarhet i OpenSSLs CMS_decrypt() og PKCS7_decrypt() med flere RecipientInfo kan la angripere dekryptere RSA-kryptert innhold. Feilen rammer meldings- og sertifikathåndtering i produkter som bygger på OpenSSL. Oppdater berørte biblioteker.",
+      "topic": "sikkerhet",
+      "score": 59,
+      "tags": [
+        "cve-2026-42768",
+        "openssl",
+        "kryptografi",
+        "bleichenbacher"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-e45ae90447",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34183",
+      "published": "2026-06-20T08:41:20.000Z",
+      "ingested": "2026-06-20T17:34:12.585Z",
+      "title_original": "CVE-2026-34183 Unbounded Memory Growth in the QUIC PATH_CHALLENGE Handler",
+      "headline_no": "Ubegrenset minnevekst i QUIC-håndtering åpner for tjenestenekt",
+      "summary_no": "En sårbarhet i håndteringen av QUIC PATH_CHALLENGE gir ubegrenset minnevekst som kan utnyttes til tjenestenekt (DoS). Servere og tjenester som bruker det berørte QUIC-biblioteket kan tvinges til å bruke opp minnet. Berørte komponenter bør patches snarest.",
+      "topic": "sikkerhet",
+      "score": 52,
+      "tags": [
+        "cve-2026-34183",
+        "quic",
+        "tjenestenekt",
+        "dos"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-7bc982a538",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45445",
+      "published": "2026-06-20T08:40:55.000Z",
+      "ingested": "2026-06-20T17:34:12.585Z",
+      "title_original": "CVE-2026-45445 AES-OCB IV Ignored on EVP_Cipher() Path",
+      "headline_no": "OpenSSL ignorerer IV-en i AES-OCB og svekker krypteringen",
+      "summary_no": "En feil i OpenSSLs EVP_Cipher()-sti gjør at IV-en ignoreres for AES-OCB, noe som kan svekke krypteringen og gjøre kryptert data mer forutsigbar. Feilen rammer applikasjoner og Microsoft-produkter som benytter OpenSSL til kryptering. Prioriter patching av berørte komponenter.",
+      "topic": "sikkerhet",
+      "score": 54,
+      "tags": [
+        "cve-2026-45445",
+        "openssl",
+        "kryptografi",
+        "aes"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-d8bbed3683",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-5791",
+      "published": "2026-06-20T08:40:10.000Z",
+      "ingested": "2026-06-20T17:34:12.582Z",
+      "title_original": "CVE-2025-5791 Users: `root` appended to group listings",
+      "headline_no": "«root» legges feilaktig til i gruppelister (CVE-2025-5791)",
+      "summary_no": "En sårbarhet fører til at brukeren «root» feilaktig dukker opp i gruppeoppføringer, noe som kan gi misvisende oversikt over tilganger. MSRC har publisert informasjon om feilen i en berørt komponent. IT-admins bør verifisere gruppemedlemskap og følge med på kommende oppdateringer.",
+      "topic": "sikkerhet",
+      "score": 41,
+      "tags": [
+        "cve-2025-5791",
+        "tilgangsstyring",
+        "sårbarhet"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-ad321f25ee",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-4574",
+      "published": "2026-06-20T08:39:58.000Z",
+      "ingested": "2026-06-20T17:34:12.585Z",
+      "title_original": "CVE-2025-4574 Crossbeam-channel: crossbeam-channel vulnerable to double free on drop",
+      "headline_no": "Double-free i Rust-biblioteket crossbeam-channel ved drop",
+      "summary_no": "Rust-crate-en crossbeam-channel har en double-free-feil ved drop som kan føre til minnekorrupsjon og krasj. Microsoft-produkter og -tjenester som bygger på biblioteket kan være berørt. Hold øye med oppdateringer til komponenter som bruker crossbeam-channel.",
+      "topic": "sikkerhet",
+      "score": 50,
+      "tags": [
+        "cve-2025-4574",
+        "rust",
+        "crossbeam",
+        "minnesikkerhet"
       ]
     },
     {
