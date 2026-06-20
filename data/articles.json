@@ -1,6 +1,815 @@
 {
-  "generated": "2026-05-14T08:00:00.000Z",
+  "generated_at": "2026-06-20T13:57:05.530Z",
   "articles": [
+    {
+      "id": "m365-roadmap-ddffff6204",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566317",
+      "published": "2026-06-19T22:15:36.000Z",
+      "ingested": "2026-06-20T13:55:30.839Z",
+      "title_original": "Microsoft Viva: Create and customize PBI reports",
+      "headline_no": "Viva Insights lar ledere skreddersy egne Power BI-rapporter",
+      "summary_no": "Ledere og analytikere i Viva Insights får åpne en Power BI-rapport og selv endre tidsrom, filtre, attributter og visualiseringer, for så å lagre den til senere bruk. Gir mer fleksibel arbeidsplassanalyse uten å bygge rapporter fra bunnen, men er en nokså perifer sak for sikkerhets- og endpoint-admins. Planlagt GA juli 2026.",
+      "topic": "endpoint",
+      "score": 25,
+      "tags": [
+        "viva-insights",
+        "power-bi",
+        "rapporter",
+        "roadmap"
+      ]
+    },
+    {
+      "id": "m365-roadmap-b928ca52e1",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566302",
+      "published": "2026-06-19T22:15:36.000Z",
+      "ingested": "2026-06-20T13:55:30.839Z",
+      "title_original": "Microsoft Viva: Copilot Analytics - Insights in Cowork and WorkIQ spend and usage",
+      "headline_no": "Viva Insights sporer nå Copilot-forbruket ned til teamnivå",
+      "summary_no": "Viva Insights får et dashboard som viser Copilot-kredittforbruk (AI-spend) på gruppe- og teamnivå for Cowork og WorkIQ API. Det er på som standard for ledere med minst fem direkterapporter, analytikere og globale admins, og krever forbruksbasert fakturering satt opp via Cost Management i M365 admin center. Nyttig for å holde AI-kostnadene under kontroll. GA juni 2026.",
+      "topic": "ai",
+      "score": 36,
+      "tags": [
+        "copilot",
+        "viva-insights",
+        "ai-kostnader",
+        "cowork",
+        "workiq"
+      ]
+    },
+    {
+      "id": "windows-it-pro-8a6f644798",
+      "source_id": "windows-it-pro",
+      "source_name": "Windows IT Pro Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/get-ready-for-windows-11-version-26h2/ba-p/4529367",
+      "published": "2026-06-19T17:05:18.000Z",
+      "ingested": "2026-06-20T13:44:12.222Z",
+      "title_original": "Get ready for Windows 11, version 26H2",
+      "headline_no": "Windows 11 26H2 kommer som lett enablement-pakke — Insiders har den nå",
+      "summary_no": "Windows 11 versjon 26H2 er den neste årlige oppdateringen og er allerede tilgjengelig for Windows Insiders. For enheter på 24H2 eller 25H2 leveres den som en liten enablement-pakke, omtrent som en vanlig månedlig oppdatering, uten reimaging eller kompleks utrulling. Merk at enheter på 26H1 ikke kan oppdatere direkte til 26H2, fordi de bygger på en annen Windows-kjerne.",
+      "topic": "endpoint",
+      "score": 61,
+      "tags": [
+        "windows-11",
+        "26h2",
+        "oppdatering",
+        "enablement-package"
+      ]
+    },
+    {
+      "id": "msrc-blog-90bc6b5ecd",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/18/autojack-single-page-rce-host-running-ai-agent/",
+      "published": "2026-06-19T00:17:54.000Z",
+      "ingested": "2026-06-20T13:47:15.344Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-43.webp",
+      "title_original": "AutoJack: How a single page can RCE the host running your AI agent",
+      "headline_no": "AutoJack: Én nettside kan kapre AI-agenten og kjøre kode på verten",
+      "summary_no": "Microsoft-forskere avdekket en angrepskjede de kaller AutoJack i AutoGen Studio, der ondsinnet nettinnhold en surfe-agent åpner kan nå en lokal MCP-WebSocket og starte vilkårlige prosesser på vertsmaskinen. Hullet ble tettet i upstream-koden før det nådde en PyPI-utgivelse, så vanlige installasjoner er ikke eksponert for akkurat denne kjeden. Saken er likevel en påminnelse om at agenter som surfer på utrygt innhold kan bryte localhost-tillitsgrensen — vurder hvilke lokale tjenester agent-rammeverk får snakke med.",
+      "topic": "sikkerhet",
+      "score": 70,
+      "tags": [
+        "autogen",
+        "mcp",
+        "rce",
+        "ai-agenter",
+        "msrc"
+      ]
+    },
+    {
+      "id": "m365-roadmap-0f4e7e7421",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566324",
+      "published": "2026-06-18T23:00:06.000Z",
+      "ingested": "2026-06-20T13:56:26.314Z",
+      "title_original": "Microsoft Purview: Data Lifecycle Management - Adaptive Protection integration with Data Lifecycle Management",
+      "headline_no": "Purview kobler innsiderisiko til oppbevaring av slettede data",
+      "summary_no": "Adaptive Protection i Purview integreres med Data Lifecycle Management slik at oppbevaringsetiketter automatisk settes på slettede e-poster og filer ut fra brukerens innsiderisikonivå. For IT-admin betyr det at data fra høyrisikobrukere bevares automatisk når risikoen stiger, uten manuell policy-styring. Lansering er ventet i august 2026.",
+      "topic": "sikkerhet",
+      "score": 42,
+      "tags": [
+        "purview",
+        "adaptive-protection",
+        "innsiderisiko",
+        "oppbevaring"
+      ]
+    },
+    {
+      "id": "m365-roadmap-5ab2db6160",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566323",
+      "published": "2026-06-18T23:00:06.000Z",
+      "ingested": "2026-06-20T13:56:26.314Z",
+      "title_original": "Microsoft Purview: Data Loss Prevention - File Testing Against Sensitive Information Classifiers",
+      "headline_no": "Purview lar deg teste filer mot alle klassifiserere på én gang",
+      "summary_no": "En ny funksjon på klassifiseringssiden i Purview lar deg teste filer mot en enkelt klassifiserer eller alle samtidig for å se hva som trigger på sensitivt innhold. Det gjør feilsøking av feilklassifisering raskere for admins som finjusterer DLP- og merkeregler. Lansering er ventet i august 2026.",
+      "topic": "sikkerhet",
+      "score": 34,
+      "tags": [
+        "purview",
+        "dlp",
+        "klassifisering",
+        "feilsoking"
+      ]
+    },
+    {
+      "id": "m365-roadmap-2a10846041",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566322",
+      "published": "2026-06-18T23:00:06.000Z",
+      "ingested": "2026-06-20T13:56:26.314Z",
+      "title_original": "OneNote: Multimodal Capture in Copilot Notebooks (Windows)",
+      "headline_no": "OneNote-Copilot fanger lyd og bilder og lager strukturerte notater",
+      "summary_no": "Multimodal Capture lar Copilot Notebooks på Windows fange lyd, bilder og notater fra møter og idémyldring, og gjøre dem om til strukturerte notater med innsikter, beslutninger og oppgaver. Funksjonen retter seg mot sluttbrukere, men IT-admin bør vurdere datahåndtering når møtelyd havner i Copilot. Lansering er ventet i juli 2026.",
+      "topic": "ai",
+      "score": 36,
+      "tags": [
+        "onenote",
+        "copilot",
+        "windows",
+        "ai"
+      ]
+    },
+    {
+      "id": "m365-roadmap-8538c827a5",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566321",
+      "published": "2026-06-18T23:00:06.000Z",
+      "ingested": "2026-06-20T13:56:26.314Z",
+      "title_original": "Microsoft Purview: Data Loss Prevention - Export DLP and Label Policy Configurations",
+      "headline_no": "Purview lar deg eksportere DLP- og etikettpolicyer som ZIP",
+      "summary_no": "Purview får en eksportfunksjon for DLP-policyer og policyer for merkepublisering, inkludert skjema, som en nedlastbar ZIP-fil. Filen kan legges ved supportsaker for å fremskynde feilsøking. En liten, men kjærkommen forbedring for admins som jobber mye mot Microsoft support. Lansering er ventet i august 2026.",
+      "topic": "sikkerhet",
+      "score": 35,
+      "tags": [
+        "purview",
+        "dlp",
+        "eksport",
+        "policy",
+        "support"
+      ]
+    },
+    {
+      "id": "m365-roadmap-e4188c5c54",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566318",
+      "published": "2026-06-18T23:00:06.000Z",
+      "ingested": "2026-06-20T13:57:05.503Z",
+      "title_original": "Microsoft 365 app: Updated light-weight Notebooks experience in the Microsoft 365 Copilot App (iOS)",
+      "headline_no": "Copilot Notebooks får vedvarende arbeidsområde i iOS-appen",
+      "summary_no": "Copilot Notebooks i Microsoft 365 Copilot-appen for iOS lar nå brukere samle relaterte chatter, resultater og referanser i ett vedvarende AI-arbeidsområde. Copilot bruker den oppsamlede konteksten til å forankre svarene sine, slik at arbeidet fortsetter på tvers av økter i stedet for å starte på nytt hver gang. For IT-admins som ruller ut Copilot på mobil er dette en ny produktivitetsflate å forberede brukerne på — GA er satt til august 2026.",
+      "topic": "ai",
+      "score": 35,
+      "tags": [
+        "copilot",
+        "m365-copilot",
+        "ios",
+        "notebooks"
+      ]
+    },
+    {
+      "id": "msrc-blog-7dffbd88fc",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/18/new-forrester-study-shows-customers-who-unified-with-microsoft-security-benefited-from-124-roi/",
+      "published": "2026-06-18T19:36:08.000Z",
+      "ingested": "2026-06-20T13:47:15.344Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/05/Picture1-4.webp",
+      "title_original": "New Forrester study shows customers who unified with Microsoft Security benefited from 124% ROI",
+      "headline_no": "Forrester: Samlet Microsoft-sikkerhet ga 124 % ROI på tre år",
+      "summary_no": "En Forrester TEI-studie bestilt av Microsoft anslår at en modellert organisasjon med 10 000 ansatte kan oppnå 124 % avkastning over tre år ved å samle sikkerheten hos Microsoft. Studien fremhever opptil 30 % lavere sannsynlighet for brudd og 25 % lavere utbedringskostnader. Tallene er bestilt og modellert av Microsoft selv, så les dem som markedsføring og ikke uavhengig måling.",
+      "topic": "sikkerhet",
+      "score": 28,
+      "tags": [
+        "forrester",
+        "roi",
+        "microsoft-security",
+        "markedsføring"
+      ]
+    },
+    {
+      "id": "sentinel-blog-e11e390756",
+      "source_id": "sentinel-blog",
+      "source_name": "Microsoft Sentinel Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/detection-and-automation-reimagined/ba-p/4527933",
+      "published": "2026-06-18T18:31:03.000Z",
+      "ingested": "2026-06-20T13:51:41.564Z",
+      "title_original": "Detection and automation, reimagined",
+      "headline_no": "Sentinel-deteksjon flytter til Defender — regler og playbooks følger med",
+      "summary_no": "Microsoft flytter deteksjonsarbeidet inn i Defender, der eksisterende analyseregler, playbooks og workbooks fortsetter å virke uendret. Til gjengjeld kan analytikere nå jakte på tvers av endepunkt-, identitets-, e-post- og Sentinel-data i én KQL-flate, med near-real-time deteksjoner og Security Copilot som genererer playbooks. SOC-team bør sette seg inn i den nye verktøykassa før migreringen.",
+      "topic": "sikkerhet",
+      "score": 49,
+      "tags": [
+        "sentinel",
+        "defender",
+        "detection-engineering",
+        "kql",
+        "security-copilot"
+      ]
+    },
+    {
+      "id": "intune-blog-5b96561782",
+      "source_id": "intune-blog",
+      "source_name": "Microsoft Intune Customer Success Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-intune-blog/it-experts-weigh-in-advanced-intune-capabilities-coming-to/ba-p/4516898",
+      "published": "2026-06-18T16:00:00.000Z",
+      "ingested": "2026-06-20T13:44:12.220Z",
+      "title_original": "IT experts weigh in: Advanced Intune capabilities coming to Microsoft 365 E3 and E5",
+      "headline_no": "Intune Suite-funksjoner inkluderes i Microsoft 365 E3 og E5 fra 1. juli",
+      "summary_no": "Fra 1. juli inkluderes avanserte Intune Suite-funksjoner som Endpoint Privilege Management, Advanced Analytics og Remote Help i Microsoft 365 E3 og E5, uten ekstra lisenskostnad. Eksisterende kvalifiserte kunder får funksjonene i tenanten innen 1. august. Admins bør kartlegge hvordan de nye funksjonene passer inn i eksisterende oppsett før utrulling.",
+      "topic": "endpoint",
+      "score": 59,
+      "tags": [
+        "intune",
+        "lisensiering",
+        "m365",
+        "endpoint-privilege-management"
+      ]
+    },
+    {
+      "id": "windows-it-pro-275293f7b3",
+      "source_id": "windows-it-pro",
+      "source_name": "Windows IT Pro Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-365-and-azure-virtual-desktop-expanding-access/ba-p/4515931",
+      "published": "2026-06-18T13:31:22.000Z",
+      "ingested": "2026-06-20T13:45:30.158Z",
+      "title_original": "Windows 365 and Azure Virtual Desktop: Expanding access",
+      "headline_no": "Windows 365 Business blir 20 % billigere fra 1. mai",
+      "summary_no": "Microsoft setter ned listeprisen på Windows 365 Business med 20 % på alle Cloud PC-konfigurasjoner fra 1. mai 2026, og nye kvalifiserte kunder får ytterligere 20 % rabatt ut juni. Endringen senker terskelen for små og mellomstore bedrifter (opptil 300 seter) som vil ha ferdige Cloud PC-er uten å måtte kjøpe andre Microsoft-lisenser først. Relevant for IT-ansvarlige som vurderer skybasert Windows for mindre miljøer.",
+      "topic": "endpoint",
+      "score": 54,
+      "tags": [
+        "windows-365",
+        "cloud-pc",
+        "azure-virtual-desktop",
+        "lisensiering",
+        "smb"
+      ]
+    },
+    {
+      "id": "msrc-blog-9658f03bb1",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/17/postinstall-payload-inside-mastra-npm-supply-chain-compromise/",
+      "published": "2026-06-18T03:43:04.000Z",
+      "ingested": "2026-06-20T13:47:15.344Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-30.webp",
+      "title_original": "From package to postinstall payload: Inside the Mastra npm supply chain compromise by Sapphire Sleet",
+      "headline_no": "Nordkoreansk Sapphire Sleet kompromitterte 140+ npm-pakker i Mastra-angrep",
+      "summary_no": "Microsoft Threat Intelligence knytter et storstilt npm-forsyningskjedeangrep mot over 140 pakker i mastra- og @mastra-scopene til den nordkoreanske statsaktøren Sapphire Sleet. Angriperne kapret vedlikeholderkontoen ehindero og publiserte forgiftede versjoner som trakk inn easy-day-js, en ondsinnet typosquat av populære dayjs. Pakkene er fjernet og publiseringstilgangen trukket, men angrepet viser hvorfor utviklere må låse avhengigheter og granske postinstall-skript.",
+      "topic": "sikkerhet",
+      "score": 84,
+      "tags": [
+        "npm",
+        "supply-chain",
+        "sapphire-sleet",
+        "typosquat",
+        "nord-korea"
+      ]
+    },
+    {
+      "id": "msrc-blog-603762b505",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/17/crypto-clipper-uses-tor-worm-like-propagation-for-persistence-control/",
+      "published": "2026-06-17T23:11:43.000Z",
+      "ingested": "2026-06-20T13:47:15.344Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-21.webp",
+      "title_original": "Crypto Clipper uses Tor and worm-like propagation for persistence and control",
+      "headline_no": "Crypto-clipper bruker Tor og ormespredning for å stjele kryptolommebøker",
+      "summary_no": "Microsoft Threat Intelligence har sporet en Windows-basert crypto-clipper som har vært aktiv siden februar 2026, og som bytter ut kryptoadresser i utklippstavlen, tar skjermbilder og fungerer som en lett bakdør. Skadevaren bruker Windows Script Host og ActiveX til å starte en innebygd Tor-proxy mot en skjult C2-tjeneste, uten tradisjonell installer eller IP-basert infrastruktur. Defender oppdager den som Trojan:Win32/CryptoBandits.A, og de sterkeste sporene for forsvarere er atferdsbaserte, som skripttolkere som starter mistenkelige barneprosesser og trafikk mot localhost:9050.",
+      "topic": "sikkerhet",
+      "score": 73,
+      "tags": [
+        "malware",
+        "crypto-clipper",
+        "tor",
+        "defender",
+        "windows"
+      ]
+    },
+    {
+      "id": "msrc-blog-d6222874ee",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/17/beyond-the-benchmark-advancing-security-at-ai-speed/",
+      "published": "2026-06-17T19:30:00.000Z",
+      "ingested": "2026-06-20T13:48:24.074Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/MDASH-diagram-1.webp",
+      "title_original": "Beyond the benchmark: Advancing security at AI speed",
+      "headline_no": "Microsofts AI-agenter jakter sårbarheter i Windows, Hyper-V og Azure",
+      "summary_no": "Microsoft løfter AI-systemet MDASH fra forskningsprosjekt til produksjon for å oppdage, verifisere og utbedre sårbarheter i egne plattformer som Windows, Hyper-V, Azure og identitetssystemer. Systemet orkestrerer et panel av spesialiserte AI-agenter framfor å lene seg på én modell, og åpner nå for preview. For sikkerhetsteam betyr det raskere funn av vanskelige feil før angriperne rekker først.",
+      "topic": "sikkerhet",
+      "score": 70,
+      "tags": [
+        "mdash",
+        "ai",
+        "sårbarheter",
+        "preview"
+      ]
+    },
+    {
+      "id": "msrc-blog-7d2201bbda",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/17/forrester-names-microsoft-a-leader-in-the-2026-extended-detection-and-response-platforms-wave-report/",
+      "published": "2026-06-17T18:30:00.000Z",
+      "ingested": "2026-06-20T13:48:24.074Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/Picture1-2.webp",
+      "title_original": "​​Forrester names Microsoft a Leader in the 2026 Extended Detection and Response Platforms Wave™ report",
+      "headline_no": "Forrester kårer Microsoft til leder innen XDR-plattformer i 2026",
+      "summary_no": "Microsoft topper Forresters XDR Wave for Q2 2026 og scorer høyest av alle leverandører på både strategi og visjon. Rapporten trekker fram Defenders dekning på tvers av identitet, endepunkt, e-post, SaaS og skyworkloads, samt toppscore på blant annet SIEM-erstatning og trusseljakt. Mest relevant som beslutningsstøtte hvis du vurderer XDR-leverandør.",
+      "topic": "sikkerhet",
+      "score": 30,
+      "tags": [
+        "xdr",
+        "forrester",
+        "defender"
+      ]
+    },
+    {
+      "id": "msrc-blog-88c53ed1af",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/ai-is-accelerating-cyberattacks%E2%80%94here%E2%80%99s-how-to-stay-ahead/4528592",
+      "published": "2026-06-17T17:00:00.000Z",
+      "ingested": "2026-06-20T13:48:24.074Z",
+      "hero_image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI4NTkyLXBpcTBYRw?image-dimensions=999x474&amp;revision=11",
+      "title_original": "AI is accelerating cyberattacks—here’s how to stay ahead",
+      "headline_no": "AI gir cyberangrep fart — identitet er det nye trykkpunktet",
+      "summary_no": "Microsoft advarer om at AI lar angripere skalere sosial manipulering, automatisere rekognosering og utnytte lekkede passord raskere enn før. Identitet er fortsatt den vanligste inngangen, og selv små forsinkelser mellom deteksjon og handling kan skille en kontrollert hendelse fra et forretningskritisk brudd. Admins bør samle identitets- og sikkerhetssignaler framfor å jobbe i siloer.",
+      "topic": "sikkerhet",
+      "score": 45,
+      "tags": [
+        "ai",
+        "identitet",
+        "trusler",
+        "social-engineering"
+      ]
+    },
+    {
+      "id": "entra-blog-24539916d2",
+      "source_id": "entra-blog",
+      "source_name": "Microsoft Entra Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/microsoft-entra-id-security-updates-what-organizations-need-to/ba-p/4522024",
+      "published": "2026-06-17T16:38:05.000Z",
+      "ingested": "2026-06-20T13:45:30.158Z",
+      "title_original": "Microsoft Entra ID security updates: What organizations need to do now",
+      "headline_no": "Entra ID strammer inn MFA, Conditional Access og SSPR fra juli",
+      "summary_no": "Microsoft pensjonerer flere eldre Entra ID-funksjoner: Custom controls erstattes av External MFA (utfases 30. september 2026, end of life mai 2027), Conditional Access håndheves konsekvent ved registrering av sikkerhetsinfo fra 6. juli, og SSPR vil kun godta eksplisitt registrerte metoder fra 7. september. IT-admins bør teste policyer i report-only-modus og rydde opp i katalog-baserte telefonnumre og e-postadresser før fristene. Manglende handling kan blokkere både brukerregistrering og selvbetjent passordtilbakestilling.",
+      "topic": "identitet",
+      "score": 76,
+      "tags": [
+        "entra-id",
+        "conditional-access",
+        "sspr",
+        "mfa",
+        "deprecation"
+      ]
+    },
+    {
+      "id": "entra-blog-7d44586e34",
+      "source_id": "entra-blog",
+      "source_name": "Microsoft Entra Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/ai-is-accelerating-cyberattacks-here-s-how-to-stay-ahead/ba-p/4528592",
+      "published": "2026-06-17T16:37:33.000Z",
+      "ingested": "2026-06-20T13:45:30.158Z",
+      "title_original": "AI is accelerating cyberattacks—here’s how to stay ahead",
+      "headline_no": "AI gjør cyberangrep raskere — identitet er det nye trykkpunktet",
+      "summary_no": "Microsoft advarer om at AI akselererer angrep gjennom automatisert rekognosering, skreddersydd sosial manipulering og tilpasning i sanntid, mens identitet fortsatt er den vanligste inngangsporten. Budskapet er at identitets- og sikkerhetsteam ikke lenger kan jobbe i siloer, men trenger helhetlig innsyn og integrerte verktøy for å oppdage og stanse trusler raskt. Lite konkret nytt, men en pekepinn på Microsofts retning for identitetssikkerhet.",
+      "topic": "identitet",
+      "score": 30,
+      "tags": [
+        "ai",
+        "identitet",
+        "trusler",
+        "sosial-manipulering"
+      ]
+    },
+    {
+      "id": "sentinel-blog-44f48fc3cb",
+      "source_id": "sentinel-blog",
+      "source_name": "Microsoft Sentinel Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/anatomy-of-the-change/ba-p/4527934",
+      "published": "2026-06-17T16:00:00.000Z",
+      "ingested": "2026-06-20T13:51:41.564Z",
+      "title_original": "Anatomy of the change",
+      "headline_no": "Sentinel i Defender gir SOC-team én samlet hendelseskø og angrepshistorie",
+      "summary_no": "Når Sentinel flyttes fra Azure-portalen inn i Defender, samles hendelser, varsler, korrelasjon og automatisering ett sted — med én incident-kø og én sammenhengende angrepshistorie. Den underliggende dataarkitekturen og innholdet fra Content hub består, så eksisterende investeringer videreføres. Microsoft inkluderer en konkret sjekkliste for hva SOC-team bør gjøre allerede denne uka.",
+      "topic": "sikkerhet",
+      "score": 48,
+      "tags": [
+        "sentinel",
+        "defender",
+        "incident-queue",
+        "soc",
+        "migration"
+      ]
+    },
+    {
+      "id": "sentinel-blog-13207ada73",
+      "source_id": "sentinel-blog",
+      "source_name": "Microsoft Sentinel Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/introducing-new-additions-to-microsoft-sentinel-normalization/ba-p/4524584",
+      "published": "2026-06-17T15:00:00.000Z",
+      "ingested": "2026-06-20T13:51:41.564Z",
+      "title_original": "Introducing New Additions to Microsoft Sentinel Normalization and ASIM",
+      "headline_no": "Nye ASIM-parsere for Azure Firewall og AWS — og en brytende endring i vente",
+      "summary_no": "Microsoft har sluppet en bølge nye ASIM-parsere for blant annet Azure Firewall, Key Vault og AWS CloudTrail (EC2, S3, IAM), pluss 10+ tredjepartsprodukter. To nye skjemaer kommer til — Asset Entities og AI Agent Events — slik at én analyseregel kan dekke flere kilder. Viktigst for detection engineers: en brytende endring i ProcessEvent-parserne er på vei, så sjekk changelogene på GitHub.",
+      "topic": "sikkerhet",
+      "score": 54,
+      "tags": [
+        "sentinel",
+        "asim",
+        "parsers",
+        "normalization",
+        "breaking-change"
+      ]
+    },
+    {
+      "id": "defender-xdr-55694c4985",
+      "source_id": "defender-xdr",
+      "source_name": "Microsoft Defender XDR Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/securing-the-invisible-workforce/ba-p/4528611",
+      "published": "2026-06-17T12:35:52.000Z",
+      "ingested": "2026-06-20T13:50:23.533Z",
+      "title_original": "Securing the invisible workforce",
+      "headline_no": "Maskinidentiteter dominerer miljøet ditt — og angriperne utnytter det",
+      "summary_no": "Ikke-menneskelige identiteter som tjenesteprincipaler, tjenestekontoer, OAuth-apper og AI-agenter er nå i flertall i de fleste virksomheter, men de færreste har oversikt over hvilke som finnes. De har ofte høye, stående rettigheter og kan ikke beskyttes av MFA — slik Midnight Blizzard utnyttet til å bevege seg lateralt uten å utløse brukerkontroller. Med økende AI-bruk trenger admins en formell prosess for å oppdage, styre og sikre disse identitetene.",
+      "topic": "identitet",
+      "score": 54,
+      "tags": [
+        "nhi",
+        "service-principals",
+        "oauth",
+        "entra",
+        "ai-agenter"
+      ]
+    },
+    {
+      "id": "defender-cloud-ba7886c1a3",
+      "source_id": "defender-cloud",
+      "source_name": "Microsoft Defender for Cloud Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/closing-the-loop-on-container-security-from-code-to-runtime-in/ba-p/4528599",
+      "published": "2026-06-16T23:15:21.000Z",
+      "ingested": "2026-06-20T13:50:23.533Z",
+      "title_original": "Closing the loop on container security: \r\nFrom code to runtime in the AI era",
+      "headline_no": "Defender for Cloud lukker containersikkerheten fra kode til runtime",
+      "summary_no": "Microsoft Defender for Cloud samler containersikkerhet i én kontinuerlig sløyfe på tvers av posture, shift-left, runtime og multicloud i Azure, AWS og GCP. Bakteppet er at 31 % av brudd nå starter med utnyttelse av en sårbarhet, og at containere i økende grad er der AI-arbeidslaster kjører. For admins betyr det at punktvise sjekker ikke lenger holder — sikkerheten må følge koden helt inn i kjørende pods.",
+      "topic": "sikkerhet",
+      "score": 50,
+      "tags": [
+        "containers",
+        "defender-for-cloud",
+        "runtime",
+        "multicloud",
+        "devsecops"
+      ]
+    },
+    {
+      "id": "m365-copilot-fbfbb0d03e",
+      "source_id": "m365-copilot",
+      "source_name": "Microsoft 365 Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/co-work-in-progress/ba-p/4511672",
+      "published": "2026-06-16T20:29:43.000Z",
+      "ingested": "2026-06-20T13:54:04.559Z",
+      "title_original": "(Co)work in Progress",
+      "headline_no": "Copilot Cowork blir GA: Microsofts agentsystem for komplekst arbeid",
+      "summary_no": "Copilot Cowork, Microsofts agentbaserte system som planlegger og utfører arbeid i flere steg, er nå allment tilgjengelig (GA) verden over. Det er drevet av WorkIQ, integrert med M365-appene og bygget multimodell – med OpenAI GPT-5.5 Thinking (Frontier) på vei og en egen, rimeligere Cowork 1-modell på trappene. En ny startside og toggle i Copilot-appen gjør det enklere å veksle mellom vanlig chat og dypere arbeidsoppgaver.",
+      "topic": "ai",
+      "score": 72,
+      "tags": [
+        "copilot",
+        "cowork",
+        "agentic",
+        "ga",
+        "workiq"
+      ]
+    },
+    {
+      "id": "sentinel-blog-a32038dbf7",
+      "source_id": "sentinel-blog",
+      "source_name": "Microsoft Sentinel Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/announcing-public-preview-agent-identities-asset-connector-for/ba-p/4527960",
+      "published": "2026-06-16T17:00:01.000Z",
+      "ingested": "2026-06-20T13:52:59.941Z",
+      "title_original": "Announcing Public Preview: Agent Identities Asset Connector for Microsoft Sentinel",
+      "headline_no": "Ny Sentinel-kobling gir identitetskontekst på AI-agenter",
+      "summary_no": "Microsoft lanserer Agent Identities Asset Connector i public preview, som henter agentenes identitetsdata inn i Sentinels data lake. Det lar sikkerhetsteam koble agentaktivitet mot eierskap, tillatelser og styring — og endelig svare på hvem som står bak en agent. For SOC-er som allerede sliter med agent-spredning, lukker dette et viktig synlighetsgap.",
+      "topic": "sikkerhet",
+      "score": 58,
+      "tags": [
+        "sentinel",
+        "ai-agenter",
+        "identitet",
+        "public-preview",
+        "soc"
+      ]
+    },
+    {
+      "id": "sentinel-blog-b0f62d4d23",
+      "source_id": "sentinel-blog",
+      "source_name": "Microsoft Sentinel Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/transform-your-security-operation-with-a-unified-experience-in/ba-p/4527932",
+      "published": "2026-06-16T16:00:00.000Z",
+      "ingested": "2026-06-20T13:52:59.941Z",
+      "title_original": "Transform your security operation with a unified experience in Defender",
+      "headline_no": "Alle Sentinel-kunder flyttes til Defender innen 31. mars 2027",
+      "summary_no": "Microsoft samler Sentinel og Defender i én portal, og alle Sentinel-kunder blir automatisk flyttet over innen 31. mars 2027. Overgangen påvirker incidents, RBAC, automatisering og datalagring, så SOC-team bør planlegge migreringen i god tid. Dette er første del i en seks-delers bloggserie som forklarer hva som faktisk endres.",
+      "topic": "sikkerhet",
+      "score": 63,
+      "tags": [
+        "sentinel",
+        "defender",
+        "siem",
+        "migrering",
+        "soc"
+      ]
+    },
+    {
+      "id": "m365-roadmap-2389989f33",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=565869",
+      "published": "2026-06-15T23:00:45.000Z",
+      "ingested": "2026-06-20T13:55:30.839Z",
+      "title_original": "Microsoft Teams: Personal message reminders for chat and channels",
+      "headline_no": "Teams lar deg sette påminnelser rett på chat- og kanalmeldinger",
+      "summary_no": "Teams lar deg nå opprette, redigere, fullføre og slette påminnelser direkte på chat- og kanalmeldinger, med egen påminnelsesvisning og varsler når de forfaller. Påminnelsene er private og beholder meldingskonteksten. En liten produktivitetsforbedring uten administrativ betydning; planlagt GA august 2026.",
+      "topic": "endpoint",
+      "score": 21,
+      "tags": [
+        "teams",
+        "påminnelser",
+        "samhandling",
+        "roadmap"
+      ]
+    },
+    {
+      "id": "windows-it-pro-d2558aeb6d",
+      "source_id": "windows-it-pro",
+      "source_name": "Windows IT Pro Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/adaptive-data-protection-with-context-based-redirections-in/ba-p/4521366",
+      "published": "2026-06-15T20:31:33.000Z",
+      "ingested": "2026-06-20T13:44:12.222Z",
+      "title_original": "Adaptive data protection with context-based redirections in Windows 365, now in public preview",
+      "headline_no": "Kontekstbaserte omdirigeringer i Windows 365 nå i offentlig forhåndsvisning",
+      "summary_no": "Windows 365 får kontekstbaserte omdirigeringer i offentlig forhåndsvisning, som lar admins styre enhets- og ressursomdirigering basert på signaler som compliance-status, gruppemedlemskap og nettverksforhold. Funksjonen bruker Entra betinget tilgang sammen med Windows 365 og Azure Virtual Desktop for å tilpasse tilgang etter sesjonens tillitsnivå. Dette styrker BYOD-sikkerheten ved å begrense risikofylte dataveier på uadministrerte enheter.",
+      "topic": "endpoint",
+      "score": 58,
+      "tags": [
+        "windows-365",
+        "byod",
+        "conditional-access",
+        "preview"
+      ]
+    },
+    {
+      "id": "entra-blog-d58a53101d",
+      "source_id": "entra-blog",
+      "source_name": "Microsoft Entra Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/tools-for-azure-ad-b2c-migration-now-available/ba-p/4525678",
+      "published": "2026-06-15T18:39:00.000Z",
+      "ingested": "2026-06-20T13:45:30.158Z",
+      "title_original": "Tools for Azure AD B2C migration now available",
+      "headline_no": "Azure AD B2C fases ut — migreringsverktøy til External ID er klare",
+      "summary_no": "Azure AD B2C får ikke flere nye funksjoner, og Microsoft har nå gjort migreringsverktøy til Entra External ID generelt tilgjengelig — inkludert JIT-migrering, High-Scale Compatibility-modus og en publisert arkitekturblåkopi. Samtidig har flere native auth-funksjoner i External ID nådd GA, som OTP-MFA på e-post og SMS, sosiale identitetsleverandører og SSPR med SMS. Kunder som bruker B2C for kundeidentitet bør starte migreringsplanleggingen nå.",
+      "topic": "identitet",
+      "score": 68,
+      "tags": [
+        "azure-ad-b2c",
+        "entra-external-id",
+        "migrering",
+        "ciam",
+        "deprecation"
+      ]
+    },
+    {
+      "id": "msrc-blog-186d7512e9",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/15/microsoft-defender-email-security-benchmarking-key-insights-from-one-year-of-data/",
+      "published": "2026-06-15T16:00:00.000Z",
+      "ingested": "2026-06-20T13:48:24.074Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/Picture1.webp",
+      "title_original": "Microsoft Defender email security benchmarking: Key insights from one year of data",
+      "headline_no": "Ett år med tall: Defender slår e-postgateways på deteksjon før levering",
+      "summary_no": "Microsoft oppsummerer ett år med kvartalsvise benchmarktall som måler Defender mot SEG- og ICES-leverandører på reell trusseltelemetri. Defender har bommet på færre alvorlige trusler før levering enn alle SEG-leverandørene i hvert kvartal siden juli 2025, der nest beste SEG hadde 2,5 ganger flere bom. Nyttig dokumentasjon hvis du vurderer lagdelt eller flerleverandør e-postsikkerhet.",
+      "topic": "sikkerhet",
+      "score": 48,
+      "tags": [
+        "defender",
+        "e-postsikkerhet",
+        "benchmark",
+        "ices"
+      ]
+    },
+    {
+      "id": "windows-it-pro-bc9b7d7599",
+      "source_id": "windows-it-pro",
+      "source_name": "Windows IT Pro Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-windows-ready-print-and-modernized-driver-selection/ba-p/4527563",
+      "published": "2026-06-12T16:00:00.000Z",
+      "ingested": "2026-06-20T13:44:12.222Z",
+      "title_original": "Introducing Windows Ready Print and Modernized Driver Selection",
+      "headline_no": "Nye skriverinstallasjoner får Windows Ready Print som standard fra juli 2026",
+      "summary_no": "Microsoft gir Modern Print Platform nytt navn — Windows Ready Print — og flytter utskrift mot standardbasert IPP med den innebygde Windows-driveren. Fra juli 2026 settes nye skriverinstallasjoner som standard til Windows Ready Print der det støttes, noe som reduserer behovet for tredjeparts driverhåndtering. Admins i miljøer som er avhengige av eldre drivere bør planlegge overgangen.",
+      "topic": "endpoint",
+      "score": 57,
+      "tags": [
+        "windows",
+        "utskrift",
+        "ipp",
+        "drivere"
+      ]
+    },
+    {
+      "id": "m365-copilot-5a2771d812",
+      "source_id": "m365-copilot",
+      "source_name": "Microsoft 365 Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/what-s-new-in-notebooks-may-2026/ba-p/4519838",
+      "published": "2026-06-12T14:34:37.000Z",
+      "ingested": "2026-06-20T13:54:04.559Z",
+      "title_original": "What’s New in Notebooks | May 2026",
+      "headline_no": "Copilot Notebooks får ny opplevelse og dypere forankring i arbeidsdata",
+      "summary_no": "Copilot Notebooks får en oppfrisket opplevelse i Microsoft 365 Copilot-appen, der chat, utdata og referanser samles på ett sted og synkroniseres med OneNote. Oppdateringene gir dypere forankring i arbeidsdata og enklere mobil-fangst av notater. Den lettvektige opplevelsen kommer til Frontier-programmet i sommer.",
+      "topic": "ai",
+      "score": 41,
+      "tags": [
+        "copilot",
+        "notebooks",
+        "onenote",
+        "preview"
+      ]
+    },
+    {
+      "id": "m365-copilot-5fe9a3d1fe",
+      "source_id": "m365-copilot",
+      "source_name": "Microsoft 365 Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/available-today-anthropic-claude-fable-5-in-microsoft-365/ba-p/4526832",
+      "published": "2026-06-11T20:58:32.000Z",
+      "ingested": "2026-06-20T13:54:04.559Z",
+      "title_original": "Available today: Anthropic Claude Fable 5 in Microsoft 365 Copilot",
+      "headline_no": "Claude Fable 5 ute som forhåndsvisning i Microsoft 365 Copilot",
+      "summary_no": "Anthropics nye Claude Fable 5 er nå tilgjengelig som forhåndsvisningsmodell – avslått som standard – i Microsoft 365 Copilot, foreløpig i Copilot Cowork (Frontier) og som privat preview i Excel og PowerPoint. Modellen er rettet mot lengre arbeidsflyter i flere steg. IT-admins må aktivt skru på tilgang per policy, og bør merke seg at bruk omfattes av Anthropics dataoppbevaring før de aktiverer.",
+      "topic": "ai",
+      "score": 63,
+      "tags": [
+        "copilot",
+        "anthropic",
+        "claude-fable-5",
+        "preview"
+      ]
+    },
+    {
+      "id": "copilot-studio-6f261ee6dd",
+      "source_id": "copilot-studio",
+      "source_name": "Microsoft Copilot Studio Blog",
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/who-evaluates-the-evaluators-the-data-science-behind-agent-evals/",
+      "published": "2026-06-11T16:00:00.000Z",
+      "ingested": "2026-06-20T13:55:30.839Z",
+      "hero_image": "https://www.microsoft.com/en-us/microsoft-copilot/blog/wp-content/uploads/2024/08/THE-QUALITY-QUESTION-1920px-1024x412.webp",
+      "title_original": "Who evaluates the evaluators? The data science behind agent evals",
+      "headline_no": "Slik avgjør Copilot Studio om AI-agenten din faktisk blir bedre",
+      "summary_no": "Microsoft åpner opp data science-metodikken bak agentevaluering i Copilot Studio: hvordan genererte testdatasett, graders og metrikker valideres for å gi pålitelige kvalitetssignaler. For team som bygger agenter er poenget å fange opp regresjoner før brukerne gjør det, og å kunne stole på at en endring faktisk forbedrer agenten – ikke bare ser sånn ut.",
+      "topic": "ai",
+      "score": 41,
+      "tags": [
+        "copilot-studio",
+        "ai-agenter",
+        "evaluering",
+        "data-science"
+      ]
+    },
+    {
+      "id": "m365-copilot-28fe511678",
+      "source_id": "m365-copilot",
+      "source_name": "Microsoft 365 Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/what-s-new-in-notebooks-june-2026/ba-p/4525625",
+      "published": "2026-06-11T15:03:45.000Z",
+      "ingested": "2026-06-20T13:52:59.941Z",
+      "title_original": "What’s New in Notebooks | June 2026",
+      "headline_no": "Copilot Notebooks blir tilgjengelig for alle Copilot Chat-brukere",
+      "summary_no": "Copilot Notebooks, som tidligere krevde full M365 Copilot-lisens, rulles nå ut til Copilot Chat-brukere i både Copilot-appen og OneNote. Brukere kan samle Word-, PowerPoint-, Excel- og Outlook-innhold i delte notatbøker og stille spørsmål på tvers av kildene. For IT-admins betyr det bredere tilgang til delt kunnskapsarbeid i blandede lisensmiljøer.",
+      "topic": "ai",
+      "score": 50,
+      "tags": [
+        "copilot",
+        "notebooks",
+        "m365",
+        "onenote",
+        "rollout"
+      ]
+    },
+    {
+      "id": "msrc-blog-d55f53d5c5",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://commandline.microsoft.com/assert-written-intent-executable-evals/",
+      "published": "2026-06-10T16:00:00.000Z",
+      "ingested": "2026-06-20T13:50:23.533Z",
+      "hero_image": "https://commandline.microsoft.com/wp-content/uploads/2026/06/UPDATED_ASSERT_Evaluation_Framework.jpg-1024x591.jpeg",
+      "title_original": "Turn specs into evals for any agent with ASSERT",
+      "headline_no": "ASSERT gjør tekstkrav om til kjørbare AI-tester automatisk",
+      "summary_no": "Microsoft har sluppet ASSERT, et åpen kildekode-rammeverk som omsetter krav skrevet i naturlig språk til ferdige evalueringer for AI-systemer. Det genererer testscenarier, datasett, metrikker og scorekort automatisk, slik at team kan måle om agenter oppfører seg som tiltenkt. Nyttig for alle som bygger eller drifter AI-løsninger og sliter med å holde evalueringene oppdaterte når krav og modeller endrer seg.",
+      "topic": "ai",
+      "score": 52,
+      "tags": [
+        "ai",
+        "eval",
+        "open-source",
+        "agenter",
+        "testing"
+      ]
+    },
+    {
+      "id": "purview-blog-3a68904a40",
+      "source_id": "purview-blog",
+      "source_name": "Microsoft Purview Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/extend-microsoft-purview-data-protection-to-aws-bedrock-agents/ba-p/4525984",
+      "published": "2026-06-09T21:17:12.000Z",
+      "ingested": "2026-06-20T13:51:41.564Z",
+      "title_original": "Extend Microsoft Purview data protection to AWS Bedrock agents for cross-cloud AI governance",
+      "headline_no": "Purview strekker DLP-policyer ut til AI-agenter på AWS Bedrock",
+      "summary_no": "Microsoft Purview kan nå håndheve DLP-policyer for AI-agenter som kjører utenfor Azure, som på AWS Bedrock og Google Cloud. Det gir IT-admins ett felles styringslag for sensitive data på tvers av skyer, i stedet for separate kontroller per plattform. Posten demonstrerer det med en utgiftsgodkjennings-agent på Bedrock beskyttet av Purview-policyer.",
+      "topic": "sikkerhet",
+      "score": 54,
+      "tags": [
+        "purview",
+        "dlp",
+        "aws-bedrock",
+        "ai-governance",
+        "multi-cloud"
+      ]
+    },
+    {
+      "id": "msrc-blog-fff4a92874",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/09/reconstructing-ai-activity-investigations/",
+      "published": "2026-06-09T17:35:06.000Z",
+      "ingested": "2026-06-20T13:50:23.533Z",
+      "title_original": "Reconstructing AI activity in investigations",
+      "headline_no": "Ny playbook viser hvordan du etterforsker Copilot- og Azure AI-hendelser",
+      "summary_no": "Microsoft har publisert en etterforskningsplaybook for Microsoft 365 Copilot og Azure AI-tjenester som bruker telemetri du allerede har i Purview, Defender og Sentinel. Den følger en scope–context–signal-metodikk for å kartlegge hvem som gjorde hva, hvilke data som ble berørt, og om signaler som prompt-injection er reelle. Gir SOC-team en konkret ramme for å granske AI-relatert aktivitet i stedet for løsrevne enkeltsignaler.",
+      "topic": "sikkerhet",
+      "score": 57,
+      "tags": [
+        "copilot",
+        "purview",
+        "sentinel",
+        "defender",
+        "etterforskning"
+      ]
+    },
+    {
+      "id": "m365-copilot-92c05a371b",
+      "source_id": "m365-copilot",
+      "source_name": "Microsoft 365 Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/what-s-new-in-microsoft-365-copilot-may-2026/ba-p/4522010",
+      "published": "2026-06-08T21:52:59.000Z",
+      "ingested": "2026-06-20T13:54:04.559Z",
+      "title_original": "What’s New in Microsoft 365 Copilot | May 2026",
+      "headline_no": "Mai-oppdateringen for M365 Copilot: Claude Opus 4.8 og GPT-5.5 inn",
+      "summary_no": "Microsofts månedlige Copilot-oppsummering for mai bringer blant annet Anthropics Claude Opus 4.8 og GPT-5.5 Instant til Copilot Chat og Copilot Studio, sammen med en rekke app-forbedringer i Teams, Word, PowerPoint og Outlook. På admin-siden kommer utvidede ISO-sertifiseringer, en ny Copilot Adoption Hub og vannmerking av sensitivt innhold. Verdt å skumme for å holde tritt med hva som rulles ut til brukerne.",
+      "topic": "ai",
+      "score": 50,
+      "tags": [
+        "copilot",
+        "claude-opus-4-8",
+        "gpt-5.5",
+        "rollout"
+      ]
+    },
+    {
+      "id": "sentinel-blog-fdc76b40b9",
+      "source_id": "sentinel-blog",
+      "source_name": "Microsoft Sentinel Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/the-worm-in-the-supply-chain-how-defender-for-endpoint-and/ba-p/4526246",
+      "published": "2026-06-08T10:52:16.000Z",
+      "ingested": "2026-06-20T13:52:59.941Z",
+      "title_original": "The Worm in the Supply Chain: How Defender for Endpoint and Sentinel for SAP BTP Caught Shai-Hulud",
+      "headline_no": "Slik fanget Defender og Sentinel Shai-Hulud-ormen i SAP-npm-pakker",
+      "summary_no": "29. april 2026 ble fire offisielle SAP CAP npm-pakker kortvarig erstattet med ondsinnede versjoner som kjørte en legitimasjonstyver i utviklermiljøer og CI/CD-pipelines. Kampanjen «Mini Shai-Hulud» viser at også SAP-økosystemet nå er et mål for supply chain-angrep. Microsoft beskriver hvordan Defender for Endpoint og Sentinel for SAP BTP oppdaget angrepet — nyttig deteksjonslogikk for alle som driver SAP-utvikling.",
+      "topic": "sikkerhet",
+      "score": 68,
+      "tags": [
+        "supply-chain",
+        "npm",
+        "sap",
+        "defender-for-endpoint",
+        "shai-hulud"
+      ]
+    },
     {
       "id": "seed-msrc-001",
       "source_id": "msrc-blog",
@@ -13,7 +822,12 @@
       "summary_no": "Microsoft har lansert en out-of-band-oppdatering som fikser en alvorlig sårbarhet i Exchange Server som lar uautoriserte angripere kjøre kode på serveren. Alle on-prem Exchange-miljøer bør patches innen 72 timer. Cloud-mailbokser er ikke berørt.",
       "topic": "sikkerhet",
       "score": 92,
-      "tags": ["exchange", "cve-2026-xxxx", "patch-now", "rce"]
+      "tags": [
+        "exchange",
+        "cve-2026-xxxx",
+        "patch-now",
+        "rce"
+      ]
     },
     {
       "id": "seed-intune-001",
@@ -27,7 +841,12 @@
       "summary_no": "Intune Plan 2 er nå allment tilgjengelig med utvidet avansert endpoint analytics og Endpoint Privilege Management inkludert. Eksisterende Plan 1-kunder må vurdere oppgradering for å beholde funksjoner som tidligere lå i Suite. Prisendringene trer i kraft 1. juli.",
       "topic": "endpoint",
       "score": 78,
-      "tags": ["intune", "lisensiering", "plan-2", "epm"]
+      "tags": [
+        "intune",
+        "lisensiering",
+        "plan-2",
+        "epm"
+      ]
     },
     {
       "id": "seed-entra-001",
@@ -41,7 +860,12 @@
       "summary_no": "Microsoft har lansert seks nye Conditional Access-maler som dekker vanlige hybride scenarier som BYOD og kontraktørtilgang. Malene kan deployes i report-only-modus først for å se påvirkning før de slås på i prod.",
       "topic": "identitet",
       "score": 64,
-      "tags": ["entra", "conditional-access", "hybrid", "templates"]
+      "tags": [
+        "entra",
+        "conditional-access",
+        "hybrid",
+        "templates"
+      ]
     },
     {
       "id": "seed-copilot-001",
@@ -55,7 +879,12 @@
       "summary_no": "M365 Copilot-agenter støtter nå Graph connectors for å hente data fra interne systemer som ServiceNow, Salesforce og custom SharePoint-libraries. Tilgangsstyring følger eksisterende Graph-rettigheter, så ingen ekstra setup for autorisasjon er nødvendig.",
       "topic": "ai",
       "score": 71,
-      "tags": ["copilot", "agents", "graph-connectors", "rag"]
+      "tags": [
+        "copilot",
+        "agents",
+        "graph-connectors",
+        "rag"
+      ]
     },
     {
       "id": "seed-defender-001",
@@ -69,7 +898,13 @@
       "summary_no": "Automatic Attack Disruption er utvidet til Linux og kan isolere kompromitterte servere uten SOC-inngripen ved høy konfidens på ransomware-aktivitet. Funksjonen kjører i shadow-mode først så team kan validere før de slår på full håndhevelse.",
       "topic": "sikkerhet",
       "score": 75,
-      "tags": ["defender", "xdr", "linux", "ransomware", "auto-response"]
+      "tags": [
+        "defender",
+        "xdr",
+        "linux",
+        "ransomware",
+        "auto-response"
+      ]
     },
     {
       "id": "seed-windows365-001",
@@ -83,7 +918,12 @@
       "summary_no": "Flere kunder rapporterer at Cloud PC-tilgang fra uregistrerte enheter feiler etter en backend-endring 6. mai. Microsoft har bekreftet problemet og anbefaler å sette CA-policyen til 'require compliant device' midlertidig.",
       "topic": "endpoint",
       "score": 68,
-      "tags": ["windows-365", "byod", "cloud-pc", "incident"]
+      "tags": [
+        "windows-365",
+        "byod",
+        "cloud-pc",
+        "incident"
+      ]
     },
     {
       "id": "seed-purview-001",
@@ -97,7 +937,12 @@
       "summary_no": "Purview DLP-policyer kan nå evaluere innholdet i Copilot-prompter og blokkere meldinger som inneholder sensitiv data før de når modellen. Funksjonen er i public preview og krever E5 Compliance-lisens.",
       "topic": "sikkerhet",
       "score": 62,
-      "tags": ["purview", "dlp", "copilot", "preview"]
+      "tags": [
+        "purview",
+        "dlp",
+        "copilot",
+        "preview"
+      ]
     },
     {
       "id": "seed-entra-002",
@@ -111,7 +956,12 @@
       "summary_no": "Privileged Identity Management for grupper støtter nå Azure-ressursroller, ikke bare Entra-roller. Det betyr at midlertidig tilgang til subscription-nivå kan gis via gruppe-medlemskap med just-in-time-aktivering.",
       "topic": "identitet",
       "score": 58,
-      "tags": ["entra", "pim", "azure", "groups"]
+      "tags": [
+        "entra",
+        "pim",
+        "azure",
+        "groups"
+      ]
     },
     {
       "id": "seed-sentinel-001",
@@ -125,7 +975,12 @@
       "summary_no": "Summary Rules går fra preview til GA og lar Sentinel aggregere høy-volum-logger til kompakt summary-data før indeksering. Tidlige brukere rapporterer 40-60% reduksjon i ingestion-kost for nettverkslogger.",
       "topic": "sikkerhet",
       "score": 60,
-      "tags": ["sentinel", "summary-rules", "kostnad", "ga"]
+      "tags": [
+        "sentinel",
+        "summary-rules",
+        "kostnad",
+        "ga"
+      ]
     }
   ]
 }
