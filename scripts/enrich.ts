@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
-import { spawn } from 'node:child_process';
+import { spawn, spawnSync } from 'node:child_process';
 import type {
   EnrichedArticle,
   RawArticle,
@@ -231,12 +231,23 @@ async function main() {
   // mini / launchd architecture the Claude Max session is always present, so
   // no-auth means misconfiguration, not "a quiet news day". Exit non-zero
   // WITHOUT writing _pending so the pipeline keeps _raw for the next run.
+  // Auth check. CI uses an env token; the Mac mini / launchd path authenticates
+  // `claude` via the login Keychain (Claude Max) with NO env token, so an env
+  // var is NOT required — we probe the actual CLI instead. Only "no env token
+  // AND `claude` not logged in" is a hard, fail-fast error.
   if (!process.env.CLAUDE_CODE_OAUTH_TOKEN && !process.env.ANTHROPIC_API_KEY) {
-    console.error(
-      `cannot enrich ${raw.length} articles: no CLAUDE_CODE_OAUTH_TOKEN or ANTHROPIC_API_KEY set`,
-    );
-    process.exitCode = 1;
-    return;
+    const probe = spawnSync('claude', ['-p', 'Reply with the single word OK'], {
+      encoding: 'utf8',
+      timeout: 30_000,
+      input: '',
+    });
+    if (probe.status !== 0 || !/\S/.test(probe.stdout ?? '')) {
+      console.error(
+        `cannot enrich ${raw.length} articles: no env token and \`claude\` is not authenticated`,
+      );
+      process.exitCode = 1;
+      return;
+    }
   }
 
   console.log(`enriching ${raw.length} articles in batches of ${BATCH_SIZE}...`);
