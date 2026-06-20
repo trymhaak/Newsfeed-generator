@@ -1,6 +1,139 @@
 {
-  "generated_at": "2026-06-20T13:57:05.530Z",
+  "generated_at": "2026-06-20T17:00:31.458Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-4cd64470e8",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44967",
+      "published": "2026-06-20T08:43:49.000Z",
+      "ingested": "2026-06-20T16:32:56.544Z",
+      "title_original": "CVE-2026-44967 opentelemetry-cpp: OTLP HTTP exporters read unbounded HTTP response",
+      "headline_no": "OpenTelemetry-C++ leser ubegrenset HTTP-svar — fare for ressursutmatting",
+      "summary_no": "OTLP HTTP-eksportørene i opentelemetry-cpp leser HTTP-svar uten størrelsesgrense, slik at et ondsinnet eller kompromittert telemetri-endepunkt kan tvinge fram minneoppblåsing og tjenestenekt. Team som sender telemetri via OTLP/HTTP bør oppgradere biblioteket til en rettet versjon.",
+      "topic": "sikkerhet",
+      "score": 45,
+      "tags": [
+        "cve-2026-44967",
+        "opentelemetry",
+        "otlp",
+        "dos"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-bd6e27884f",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46331",
+      "published": "2026-06-20T08:43:41.000Z",
+      "ingested": "2026-06-20T16:39:08.195Z",
+      "title_original": "CVE-2026-46331 net/sched: fix pedit partial COW leading to page cache corruption",
+      "headline_no": "Linux-kjernefeil i net/sched kan korrumpere minne på Azure-VM-er",
+      "summary_no": "Microsoft har publisert CVE-2026-46331, en sårbarhet i Linux-kjernens net/sched-subsystem der en delvis copy-on-write i pedit kan korrumpere page cache. Feilen er relevant for Azure Linux-VM-er og AKS-noder, og bør patches så snart oppdateringen er tilgjengelig. Detaljene i MSRC-guiden er foreløpig sparsomme.",
+      "topic": "sikkerhet",
+      "score": 59,
+      "tags": [
+        "cve-2026-46331",
+        "linux-kernel",
+        "azure",
+        "net-sched"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-4fb19c2d92",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34180",
+      "published": "2026-06-20T08:43:31.000Z",
+      "ingested": "2026-06-20T16:32:56.544Z",
+      "title_original": "CVE-2026-34180 Heap Buffer Over-read in ASN.1 Content Parsing",
+      "headline_no": "Heap-overlesing i ASN.1-parsing kan eksponere minne (CVE-2026-34180)",
+      "summary_no": "En heap-buffer-overlesing under parsing av ASN.1-innhold kan la en angriper lese tilstøtende minne via manipulerte strukturer, med risiko for informasjonslekkasje eller krasj. ASN.1 brukes bredt i sertifikat- og kryptohåndtering, så admins bør rulle ut oppdateringen raskt.",
+      "topic": "sikkerhet",
+      "score": 56,
+      "tags": [
+        "cve-2026-34180",
+        "asn1",
+        "minnelekkasje",
+        "parsing"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-a50408872f",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42767",
+      "published": "2026-06-20T08:43:00.000Z",
+      "ingested": "2026-06-20T16:32:56.544Z",
+      "title_original": "CVE-2026-42767 NULL Pointer Dereference in CRMF EncryptedValue Decryption",
+      "headline_no": "NULL-peker i CRMF-dekryptering åpner for tjenestenekt (CVE-2026-42767)",
+      "summary_no": "Dekryptering av CRMF EncryptedValue kan utløse en NULL-pekerdereferanse og krasje prosessen som behandler sertifikatforespørsler. Miljøer med sertifikatregistrering via CRMF bør patche når Microsoft publiserer rettelsen.",
+      "topic": "sikkerhet",
+      "score": 45,
+      "tags": [
+        "cve-2026-42767",
+        "crmf",
+        "dos",
+        "sertifikater"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-522fdc8d13",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42766",
+      "published": "2026-06-20T08:42:43.000Z",
+      "ingested": "2026-06-20T16:32:56.544Z",
+      "title_original": "CVE-2026-42766 Possible NULL Dereference in Password-Based CMS Decryption",
+      "headline_no": "NULL-dereferanse i CMS-dekryptering kan krasje tjenester (CVE-2026-42766)",
+      "summary_no": "En mulig NULL-pekerdereferanse i passordbasert CMS-dekryptering kan utløses av spesialutformede data og føre til tjenestenektkrasj. Admins bør prioritere oppdatering på systemer som dekrypterer CMS-meldinger fra upålitelige kilder.",
+      "topic": "sikkerhet",
+      "score": 47,
+      "tags": [
+        "cve-2026-42766",
+        "cms",
+        "dos",
+        "kryptografi"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-36d61cb569",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45446",
+      "published": "2026-06-20T08:42:18.000Z",
+      "ingested": "2026-06-20T16:32:56.544Z",
+      "title_original": "CVE-2026-45446 Incorrect Tag Processing for Empty Messages in AES-GCM-SIV and AES-SIV modes",
+      "headline_no": "Feil tag-håndtering i AES-GCM-SIV svekker integritet for tomme meldinger",
+      "summary_no": "Feil i tag-prosesseringen for tomme meldinger i AES-GCM-SIV- og AES-SIV-modus kan svekke autentiseringsgarantien slik at manipulerte meldinger godtas. Utviklere og admins som bruker disse AEAD-modusene bør oppdatere berørte kryptobiblioteker når rettelsen kommer.",
+      "topic": "sikkerhet",
+      "score": 54,
+      "tags": [
+        "cve-2026-45446",
+        "aes-gcm-siv",
+        "aes-siv",
+        "kryptografi"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-ac8066d5f1",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9076",
+      "published": "2026-06-20T08:42:01.000Z",
+      "ingested": "2026-06-20T16:32:56.544Z",
+      "title_original": "CVE-2026-9076 Out-of-Bounds Read in CMS Password-Based Decryption",
+      "headline_no": "Lesefeil utenfor minnet i CMS-dekryptering kan lekke data (CVE-2026-9076)",
+      "summary_no": "En out-of-bounds-lesefeil i passordbasert CMS-dekryptering kan la en angriper lese minne utenfor tiltenkt buffer, med fare for informasjonslekkasje. IT-admins bør følge MSRC og rulle ut oppdateringen så snart den er tilgjengelig for berørte komponenter.",
+      "topic": "sikkerhet",
+      "score": 52,
+      "tags": [
+        "cve-2026-9076",
+        "cms",
+        "kryptografi",
+        "minnelekkasje"
+      ]
+    },
     {
       "id": "m365-roadmap-ddffff6204",
       "source_id": "m365-roadmap",
@@ -41,6 +174,45 @@
       ]
     },
     {
+      "id": "oofhours-16e64992b1",
+      "source_id": "oofhours",
+      "source_name": "Out of Office Hours (Michael Niehaus)",
+      "url": "https://oofhours.com/2026/06/19/windows-11-26h2-will-be-an-enablement-package/",
+      "published": "2026-06-19T19:35:48.000Z",
+      "ingested": "2026-06-20T16:51:06.456Z",
+      "hero_image": "https://oofhours.com/wp-content/uploads/2026/06/out-of-office-hours-6a3599e7428e8.png",
+      "title_original": "Windows 11 26H2 will be an enablement package",
+      "headline_no": "Windows 11 26H2 blir enablement-pakke — slipper full oppgradering",
+      "summary_no": "Microsoft har bekreftet at Windows 11 26H2 leveres som en enablement-pakke, på samme måte som 25H2. Det betyr at oppgraderingen aktiveres med en liten pakke i stedet for en full funksjonsoppgradering, noe som gir kortere nedetid og enklere utrulling. Merk at ARM64-baserte 26H1-enheter ikke kan oppgraderes direkte til 26H2.",
+      "topic": "endpoint",
+      "score": 47,
+      "tags": [
+        "windows-11",
+        "26h2",
+        "enablement-package",
+        "servicing"
+      ]
+    },
+    {
+      "id": "windows-insider-3b7f2a2416",
+      "source_id": "windows-insider",
+      "source_name": "Windows Insider Blog",
+      "url": "https://blogs.windows.com/windows-insider/2026/06/19/announcing-new-builds-for-19-june-2026-26h2-for-experimental/",
+      "published": "2026-06-19T17:07:42.000Z",
+      "ingested": "2026-06-20T16:48:55.360Z",
+      "title_original": "Announcing new builds for 19 June 2026, version 26H2 for Experimental",
+      "headline_no": "Windows 11 26H2 til Insider — oppdateres med én omstart via eKB",
+      "summary_no": "Windows 11 versjon 26H2 er nå tilgjengelig i Experimental-kanalen som årets andre halvårsoppdatering. Fordi 26H2 deler servicing-gren med 25H2, leveres den som en enablement package (eKB) — altså én enkelt omstart. IT-avdelinger bør merke seg den lette oppdateringsmodellen når de planlegger utrulling.",
+      "topic": "endpoint",
+      "score": 42,
+      "tags": [
+        "windows-11",
+        "26h2",
+        "insider",
+        "ekb"
+      ]
+    },
+    {
       "id": "windows-it-pro-8a6f644798",
       "source_id": "windows-it-pro",
       "source_name": "Windows IT Pro Blog",
@@ -57,6 +229,84 @@
         "26h2",
         "oppdatering",
         "enablement-package"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-eed188bcfd",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45469",
+      "published": "2026-06-19T14:00:00.000Z",
+      "ingested": "2026-06-20T16:39:08.195Z",
+      "title_original": "CVE-2026-45469 Microsoft Excel Remote Code Execution Vulnerability",
+      "headline_no": "RCE-sårbarhet i Excel for Mac lar angripere kjøre vilkårlig kode",
+      "summary_no": "CVE-2026-45469 er en sårbarhet for ekstern kjøring av kode i Microsoft Excel, og Microsoft har gitt ut sikkerhetsoppdateringer for Office for Mac. IT-admins bør rulle ut oppdateringen til alle berørte Mac-klienter umiddelbart. Andre Office-versjoner er ikke berørt og krever ingen handling.",
+      "topic": "sikkerhet",
+      "score": 72,
+      "tags": [
+        "cve-2026-45469",
+        "excel",
+        "office-for-mac",
+        "rce"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-67ef331ea1",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45475",
+      "published": "2026-06-19T14:00:00.000Z",
+      "ingested": "2026-06-20T16:39:08.195Z",
+      "title_original": "CVE-2026-45475 Microsoft Office Remote Code Execution Vulnerability",
+      "headline_no": "Ny RCE-sårbarhet i Office for Mac krever umiddelbar oppdatering",
+      "summary_no": "CVE-2026-45475 er en sårbarhet for ekstern kjøring av kode i Microsoft Office, og rettes i sikkerhetsoppdateringene for Office for Mac. Kunder med berørt Mac-programvare bør installere oppdateringen for å være beskyttet. Andre Office-installasjoner trenger ingen tiltak.",
+      "topic": "sikkerhet",
+      "score": 72,
+      "tags": [
+        "cve-2026-45475",
+        "office-for-mac",
+        "rce"
+      ]
+    },
+    {
+      "id": "andrew-taylor-cf985b6a2a",
+      "source_id": "andrew-taylor",
+      "source_name": "Andrew Taylor (andrewstaylor.com)",
+      "url": "https://andrewstaylor.com/2026/06/19/intune-newsletter-19th-june-2026/",
+      "published": "2026-06-19T10:59:19.000Z",
+      "ingested": "2026-06-20T16:56:34.724Z",
+      "title_original": "Intune Newsletter – 19th June 2026",
+      "headline_no": "Intune Suite lander i E5 og E3 – ukens nyhetsbrev oppsummerer hva du får",
+      "summary_no": "Andrew Taylors ukentlige nyhetsbrev samler community-dekningen av at Intune Suite nå rulles ut til E5 og deler til E3. Utgaven lenker til guider om Endpoint Privilege Management, Remote Help med uovervåket tilgang og Advanced Analytics. Et greit utgangspunkt for admins som vil forstå hvilke Suite-funksjoner de plutselig har tilgang til.",
+      "topic": "endpoint",
+      "score": 34,
+      "tags": [
+        "intune-suite",
+        "nyhetsbrev",
+        "epm",
+        "remote-help",
+        "lisensiering"
+      ]
+    },
+    {
+      "id": "office365-itpros-c9ba61edca",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/06/19/baseline-scopes-ca/?utm_source=rss&utm_medium=rss&utm_campaign=baseline-scopes-ca",
+      "published": "2026-06-19T07:00:00.000Z",
+      "ingested": "2026-06-20T16:23:25.526Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Entra-low-priority-permissions.jpg?resize=840%2C365&#038;ssl=1",
+      "title_original": "Entra ID Tightens Conditional Access Processing for Baseline Scopes",
+      "headline_no": "Conditional Access fanger nå apper som ber om baseline-scopes i Entra ID",
+      "summary_no": "Microsoft endrer Entra ID (MC1223829) slik at apper som kun ber om såkalte baseline-scopes — openid, email, profile, User.Read med flere — nå omfattes av Conditional Access-policyer. Utrullingen startet 15. juni og er ferdig globalt midt i august 2026. Gjennomgå aktive CA-policyer nå, for apper som tidligere slapp gjennom kan bli blokkert eller møte nye betingelser.",
+      "topic": "identitet",
+      "score": 54,
+      "tags": [
+        "entra-id",
+        "conditional-access",
+        "baseline-scopes",
+        "oidc",
+        "mc1223829"
       ]
     },
     {
@@ -177,6 +427,44 @@
       ]
     },
     {
+      "id": "core-infra-security-7009183a4f",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/check-this-out-cto-guide-may-june-2026/ba-p/4529349",
+      "published": "2026-06-18T21:36:23.000Z",
+      "ingested": "2026-06-20T16:39:08.195Z",
+      "title_original": "Check This Out! (CTO!) Guide (May/June 2026)",
+      "headline_no": "Månedens Azure-tips: Event Grid-triggere og TLS-pinning i praksis",
+      "summary_no": "Core Infrastructure and Security-bloggen samler månedens beste community-artikler, blant annet hvordan du trigger Azure Functions fra Blob Storage via Event Grid og hvorfor TLS-sertifikatpinning frarådes for Azure-baserte PostgreSQL- og MySQL-databaser. En lettlest faglig oppdatering for Azure-driftere. Lite nytt av kritisk betydning.",
+      "topic": "sikkerhet",
+      "score": 27,
+      "tags": [
+        "azure",
+        "event-grid",
+        "tls",
+        "roundup"
+      ]
+    },
+    {
+      "id": "core-infra-security-d7fa7bbfc8",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/microsoft-security-copilot-ai-driven-security-operations-at/ba-p/4528912",
+      "published": "2026-06-18T20:49:10.000Z",
+      "ingested": "2026-06-20T16:39:08.195Z",
+      "title_original": "Microsoft Security Copilot: AI-Driven Security Operations at Greater Scale",
+      "headline_no": "Security Copilot skalerer SOC-arbeidet med AI på maskinhastighet",
+      "summary_no": "Microsoft beskriver hvordan Security Copilot skal forsterke trusseldeteksjon, etterforskning og respons ved å tolke skytelemetri og trusseletterretning til konkrete anbefalinger. Innlegget fremhever utvidbarhet via tredjeparts-plugins og dyp integrasjon med Defender, Sentinel og Entra. Mer en kapabilitetsoversikt enn en nyhet, men nyttig kontekst for SOC-team som vurderer verktøyet.",
+      "topic": "ai",
+      "score": 38,
+      "tags": [
+        "security-copilot",
+        "soc",
+        "ai",
+        "threat-detection"
+      ]
+    },
+    {
       "id": "msrc-blog-7dffbd88fc",
       "source_id": "msrc-blog",
       "source_name": "Microsoft Security Blog",
@@ -217,6 +505,26 @@
       ]
     },
     {
+      "id": "defender-office365-b1d096df17",
+      "source_id": "defender-office365",
+      "source_name": "Microsoft Defender for Office 365 Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/microsoft-defender-for-office-365-plan-1-is-now-rolling-out-to/ba-p/4527287",
+      "published": "2026-06-18T16:29:24.000Z",
+      "ingested": "2026-06-20T16:29:50.126Z",
+      "title_original": "Microsoft Defender for Office 365 Plan 1 is now rolling out to Microsoft 365 E3 and Office 365 E3",
+      "headline_no": "Defender for Office 365 Plan 1 rulles ut til alle E3-kunder",
+      "summary_no": "Microsoft 365 E3/G3 og Office 365 E3/G3 får nå automatisk Defender for Office 365 Plan 1, med full utrulling innen høsten 2026. Safe Links, Safe Attachments og avansert anti-phishing slås på automatisk, så admins bør gjennomgå policyer, mail flow og sluttbrukeropplevelse før beskyttelsen aktiveres.",
+      "topic": "sikkerhet",
+      "score": 65,
+      "tags": [
+        "defender-office-365",
+        "e3",
+        "safe-links",
+        "anti-phishing",
+        "utrulling"
+      ]
+    },
+    {
       "id": "intune-blog-5b96561782",
       "source_id": "intune-blog",
       "source_name": "Microsoft Intune Customer Success Blog",
@@ -233,6 +541,48 @@
         "lisensiering",
         "m365",
         "endpoint-privilege-management"
+      ]
+    },
+    {
+      "id": "handsontek-e85bdfe683",
+      "source_id": "handsontek",
+      "source_name": "HANDS ON tek (João Ferreira)",
+      "url": "https://handsontek.net/copilot-cowork-pricing-real-costs-risks-free-alternatives/",
+      "published": "2026-06-18T15:40:15.000Z",
+      "ingested": "2026-06-20T17:00:31.434Z",
+      "hero_image": "https://handsontek.net/images/hot2/Cowork/hero.png",
+      "title_original": "Copilot Cowork Pricing: Real Costs, Risks & Free Alternatives",
+      "headline_no": "Copilot Cowork går GA — men koster nå ekstra per forbruk",
+      "summary_no": "Microsoft gjorde Copilot Cowork allment tilgjengelig globalt 16. juni 2026, men flyttet funksjonen ut av M365 Copilot-lisensen og over på forbruksbasert fakturering — på toppen av de 30 dollarene per bruker per måned. Cowork kjører autonome, langvarige oppgaver på tvers av M365-data og bruker Anthropic Opus 4.8 og Sonnet 4.6. IT-admins bør sette kostnadstak og klar styring før forbruket løper løpsk.",
+      "topic": "ai",
+      "score": 57,
+      "tags": [
+        "copilot",
+        "cowork",
+        "ai-agenter",
+        "lisensiering",
+        "m365"
+      ]
+    },
+    {
+      "id": "admindroid-2e823e809e",
+      "source_id": "admindroid",
+      "source_name": "AdminDroid Blog",
+      "url": "https://blog.admindroid.com/service-plans-for-agent-conditional-access-and-identity-protection/",
+      "published": "2026-06-18T13:45:10.000Z",
+      "ingested": "2026-06-20T16:28:30.747Z",
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/Agent-CA-Identity-Protection-Get-New-Service-Plans-150x150.png",
+      "title_original": "Entra ID Adds New Service Plans for Agent Conditional Access and Identity Protection",
+      "headline_no": "Entra flytter agent-sikkerhet til egne lisensplaner i M365 E7",
+      "summary_no": "Microsoft skiller ut Conditional Access og Identity Protection for AI-agenter i to nye tjenesteplaner under Microsoft 365 Agent og M365 E7. Funksjonene lå tidligere under Entra ID P1/P2, så admins bør kontrollere lisensieringen for å unngå avbrudd i agent-sikkerheten.",
+      "topic": "identitet",
+      "score": 37,
+      "tags": [
+        "entra",
+        "conditional-access",
+        "identity-protection",
+        "ai-agenter",
+        "lisensiering"
       ]
     },
     {
@@ -253,6 +603,47 @@
         "azure-virtual-desktop",
         "lisensiering",
         "smb"
+      ]
+    },
+    {
+      "id": "prajwal-desai-a545e11010",
+      "source_id": "prajwal-desai",
+      "source_name": "Prajwal Desai",
+      "url": "https://www.prajwaldesai.com/kb38232642-security-update-for-confimgr-console-extension/",
+      "published": "2026-06-18T07:01:07.000Z",
+      "ingested": "2026-06-20T16:58:05.721Z",
+      "title_original": "KB38232642 Security Update for Configuration Manager Console Extension",
+      "headline_no": "Ny ConfigMgr-hotfix sikrer import av konsollutvidelser (KB38232642)",
+      "summary_no": "Microsoft har gitt ut hotfix KB38232642 for Configuration Manager 2603, 2509 og 2503 som styrker sikkerheten rundt import av console extensions. Oppdateringen reduserer risikoen ved tredjeparts konsollutvidelser, og admins bør installere den for å bevare systemintegriteten.",
+      "topic": "endpoint",
+      "score": 42,
+      "tags": [
+        "configmgr",
+        "sccm",
+        "hotfix",
+        "kb38232642",
+        "sikkerhet"
+      ]
+    },
+    {
+      "id": "office365-itpros-b93d853a5a",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/06/18/copilot-interaction-app/?utm_source=rss&utm_medium=rss&utm_campaign=copilot-interaction-app",
+      "published": "2026-06-18T07:00:00.000Z",
+      "ingested": "2026-06-20T16:23:25.528Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Copilot-Interactions-in-Out-GridView.jpg?resize=840%2C152&#038;ssl=1",
+      "title_original": "Microsoft Blocks Graph Access to Non-IPM Folders",
+      "headline_no": "Graph blokkerer nå tilgang til skjulte mapper med Copilot- og Teams-logger",
+      "summary_no": "Microsoft har stille blokkert Graph-tilgang til ikke-IPM-mapper som TeamsMessagesData, der compliance-data for Copilot-prompter og Teams-chat lagres. Get-MgUserMailFolderMessage gir nå 403 Forbidden mot disse skjulte mappene. Admins med skript som henter slike compliance-poster via Graph må finne nye metoder.",
+      "topic": "sikkerhet",
+      "score": 44,
+      "tags": [
+        "microsoft-graph",
+        "compliance",
+        "copilot",
+        "teams",
+        "non-ipm"
       ]
     },
     {
@@ -295,6 +686,25 @@
         "tor",
         "defender",
         "windows"
+      ]
+    },
+    {
+      "id": "windows-networking-203ba54cec",
+      "source_id": "windows-networking",
+      "source_name": "Windows Networking Blog (Core Networking)",
+      "url": "https://techcommunity.microsoft.com/t5/networking-blog/announcing-windows-clat-public-preview/ba-p/4506046",
+      "published": "2026-06-17T22:30:50.000Z",
+      "ingested": "2026-06-20T16:48:55.360Z",
+      "title_original": "Announcing Windows CLAT Public Preview",
+      "headline_no": "Windows CLAT i offentlig forhåndsvisning baner vei for IPv6-only nett",
+      "summary_no": "Windows CLAT er nå i offentlig forhåndsvisning, med start i Canary-bygg 29599-1000 og utrulling til flere Insider-kanaler i ukene som kommer. Funksjonen lar IPv4-only-apper fungere på IPv6-only-nettverk, og preview-en støtter nå konfigurasjon via Group Policy. Relevant for virksomheter som planlegger overgang til IPv6-only.",
+      "topic": "endpoint",
+      "score": 50,
+      "tags": [
+        "clat",
+        "ipv6",
+        "networking",
+        "public-preview"
       ]
     },
     {
@@ -436,6 +846,43 @@
       ]
     },
     {
+      "id": "prajwal-desai-a3f2d357d7",
+      "source_id": "prajwal-desai",
+      "source_name": "Prajwal Desai",
+      "url": "https://www.prajwaldesai.com/import-notepad-admx-templates-intune-active-directory/",
+      "published": "2026-06-17T13:12:04.000Z",
+      "ingested": "2026-06-20T16:58:05.721Z",
+      "title_original": "Import Notepad ADMX Templates into Intune and Active Directory",
+      "headline_no": "Slik administrerer du Notepad i Intune med ADMX-maler",
+      "summary_no": "En guide viser hvordan du laster ned og importerer ADMX-maler for Notepad i Intune og Active Directory. Med malene kan admins styre innstillinger og policyer for Notepad sentralt på Windows-enheter. Lavt nyhetsnivå, men praktisk for de som vil låse ned eller standardisere appen.",
+      "topic": "endpoint",
+      "score": 25,
+      "tags": [
+        "intune",
+        "admx",
+        "notepad",
+        "group-policy"
+      ]
+    },
+    {
+      "id": "thomas-maurer-17f70a7e3d",
+      "source_id": "thomas-maurer",
+      "source_name": "Thomas Maurer",
+      "url": "https://www.thomasmaurer.ch/2026/06/speaking-at-the-microsoft-digital-sovereignty-day-zurich-switzerland-2026/",
+      "published": "2026-06-17T12:56:57.000Z",
+      "ingested": "2026-06-20T16:59:37.987Z",
+      "title_original": "Speaking at the Microsoft Digital Sovereignty Day – Zurich, Switzerland 2026",
+      "headline_no": "Thomas Maurer taler på Microsoft Digital Sovereignty Day i Zürich",
+      "summary_no": "Thomas Maurer skal holde foredrag på Microsoft Digital Sovereignty Day i Zürich 9. juli 2026. Arrangementet samler arkitekter, sikkerhetsledere og IT-beslutningstakere om praktisk gjennomføring av digital suverenitet. Lite konkret produktnyhet, men et tips for dem som følger suverenitetsdebatten.",
+      "topic": "endpoint",
+      "score": 15,
+      "tags": [
+        "konferanse",
+        "suverenitet",
+        "azure"
+      ]
+    },
+    {
       "id": "defender-xdr-55694c4985",
       "source_id": "defender-xdr",
       "source_name": "Microsoft Defender XDR Blog",
@@ -453,6 +900,105 @@
         "oauth",
         "entra",
         "ai-agenter"
+      ]
+    },
+    {
+      "id": "azure-network-security-60bbc396fd",
+      "source_id": "azure-network-security",
+      "source_name": "Azure Network Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/designing-cloud-landing-zones-by-traffic-flow-a-defence-in-depth/ba-p/4524280",
+      "published": "2026-06-17T12:17:58.000Z",
+      "ingested": "2026-06-20T16:42:52.739Z",
+      "title_original": "Designing Cloud Landing Zones by Traffic Flow: A Defence‑in‑Depth, DMZ‑First Architecture",
+      "headline_no": "DMZ-først: slik bør Azure-landingssoner bygges etter trafikkflyt",
+      "summary_no": "Microsoft skisserer en DMZ-først-arkitektur for Azure-landingssoner der sikkerhetskontroller styres av trafikkens tillitsgrense, ikke bare av tilkobling. Modellen klassifiserer nord-sør-, øst-vest- og hybridtrafikk hver for seg og legger inspeksjon før tilgang. Nyttig referanse for arkitekter som bygger regulerte arbeidslaster i en distribuert hub-modell.",
+      "topic": "sikkerhet",
+      "score": 38,
+      "tags": [
+        "azure",
+        "landing-zone",
+        "nettverk",
+        "arkitektur",
+        "dmz"
+      ]
+    },
+    {
+      "id": "ourcloudnetwork-aa72d1fec3",
+      "source_id": "ourcloudnetwork",
+      "source_name": "Our Cloud Network (Daniel Bradley)",
+      "url": "https://ourcloudnetwork.com/one-person-one-license-philosophy-for-microsoft-entra-update/?utm_source=rss&utm_medium=rss&utm_campaign=one-person-one-license-philosophy-for-microsoft-entra-update",
+      "published": "2026-06-17T12:07:31.000Z",
+      "ingested": "2026-06-20T16:24:58.516Z",
+      "title_original": "One Person One License philosophy for Microsoft Entra Update",
+      "headline_no": "«Én person, én lisens»: Entra-regelen for admin-kontoer avklart",
+      "summary_no": "Microsoft har endelig presisert «én person, én lisens»-prinsippet for Entra ID, som påvirker hvordan du lisensierer ansattes admin-kontoer. Daniel Bradley forklarer hvordan du håndterer lisensieringen uten å bryte reglene. Relevant for alle som driver separate admin-identiteter og vil holde seg compliant.",
+      "topic": "identitet",
+      "score": 35,
+      "tags": [
+        "entra-id",
+        "lisensiering",
+        "admin-kontoer",
+        "compliance"
+      ]
+    },
+    {
+      "id": "core-infra-security-698e80f878",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/security-copilot-rbac-for-embedded-experience-in-unified/ba-p/4528833",
+      "published": "2026-06-17T11:10:30.000Z",
+      "ingested": "2026-06-20T16:39:08.195Z",
+      "title_original": "Security Copilot RBAC for Embedded Experience in Unified Security Platform",
+      "headline_no": "Slik styrer du tilgang til Security Copilot i Defender og Sentinel",
+      "summary_no": "Microsoft forklarer RBAC-modellen som styrer Security Copilots innebygde opplevelse i Defender XDR, Sentinel og Entra. Modellen bygger på On-Behalf-Of-tilgang slik at Copilot kun ser data brukeren allerede har tilgang til, og utvider ikke tilgangsgrensene. Nyttig for SOC-team som vil rulle ut Copilot etter minste-privilegium-prinsippet.",
+      "topic": "ai",
+      "score": 41,
+      "tags": [
+        "security-copilot",
+        "rbac",
+        "defender-xdr",
+        "sentinel"
+      ]
+    },
+    {
+      "id": "admindroid-86de2b275b",
+      "source_id": "admindroid",
+      "source_name": "AdminDroid Blog",
+      "url": "https://blog.admindroid.com/custom-account-correlation-rules-in-microsoft-defender/",
+      "published": "2026-06-17T10:28:46.000Z",
+      "ingested": "2026-06-20T16:28:30.747Z",
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/Automatically-Link-Related-Identities-Using-Custom-Account-Correlation-Rules-in-Microsoft-Defender-2-150x150.png",
+      "title_original": "Automatically Link Related Identities Using Custom Account Correlation Rules in Microsoft Defender",
+      "headline_no": "Defender kobler nå brukerens admin- og hverdagskonto automatisk",
+      "summary_no": "En ny forhåndsvisning i Microsoft Defender lar deg lage egne korrelasjonsregler som knytter en brukers flere kontoer sammen. Det tetter et synlighetshull der admin- og vanlig konto ellers utløser separate hendelser, slik at analytikere ser hele angrepskjeden i én sak.",
+      "topic": "sikkerhet",
+      "score": 38,
+      "tags": [
+        "defender",
+        "account-correlation",
+        "preview",
+        "incident-response"
+      ]
+    },
+    {
+      "id": "office365-itpros-c1732947a3",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/06/17/sspr-authentication-methods/?utm_source=rss&utm_medium=rss&utm_campaign=sspr-authentication-methods",
+      "published": "2026-06-17T07:00:00.000Z",
+      "ingested": "2026-06-20T16:23:25.528Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Security-Info-Page.jpg?resize=840%2C628&#038;ssl=1",
+      "title_original": "Microsoft Tightens Security for Self-Service Password Reset",
+      "headline_no": "SSPR krever snart registrerte autentiseringsmetoder — slutt på telefon-fallback",
+      "summary_no": "MC1325414: Entra ID Self-Service Password Reset slutter å stole på katalogattributter som mobilnummer og alternativ e-post ved identitetsverifisering, fordi disse lett kan endres av en angriper. I stedet må brukere registrere en eksplisitt autentiseringsmetode på Security Info-siden. Admins bør forberede brukerne, slik at ingen mister muligheten til å tilbakestille passordet selv.",
+      "topic": "identitet",
+      "score": 51,
+      "tags": [
+        "sspr",
+        "entra-id",
+        "mfa",
+        "authentication",
+        "mc1325414"
       ]
     },
     {
@@ -516,6 +1062,26 @@
       ]
     },
     {
+      "id": "security-community-6047360268",
+      "source_id": "security-community",
+      "source_name": "Microsoft Security Community Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/microsoft-leads-a-new-era-of-software-supply-chain-transparency/ba-p/4528369",
+      "published": "2026-06-16T16:41:20.000Z",
+      "ingested": "2026-06-20T16:42:52.739Z",
+      "title_original": "Microsoft Leads a New Era of Software Supply Chain Transparency",
+      "headline_no": "Microsoft åpner offentlig hovedbok som beviser hvordan skytjenester bygges",
+      "summary_no": "Microsoft har gjort Signing Transparency (MST) generelt tilgjengelig — en åpen, manipuleringssikker hovedbok som logger hvert produksjonsbygg av kritiske skytjenester som Azure Attestation og Managed HSM. Bare bygg som finnes i loggen settes i produksjon, slik at kunder kan revidere forsyningskjeden når som helst. Bygget på den fremvoksende IETF SCITT-standarden og helt åpen kildekode.",
+      "topic": "sikkerhet",
+      "score": 58,
+      "tags": [
+        "supply-chain",
+        "scitt",
+        "azure",
+        "mst",
+        "transparens"
+      ]
+    },
+    {
       "id": "sentinel-blog-b0f62d4d23",
       "source_id": "sentinel-blog",
       "source_name": "Microsoft Sentinel Blog",
@@ -533,6 +1099,85 @@
         "siem",
         "migrering",
         "soc"
+      ]
+    },
+    {
+      "id": "m365-blog-8149b2cc8c",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog (official)",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/",
+      "published": "2026-06-16T15:00:00.000Z",
+      "ingested": "2026-06-20T16:59:37.987Z",
+      "title_original": "Copilot Cowork is now generally available",
+      "headline_no": "Copilot Cowork er nå allment tilgjengelig — Frontiers heteste funksjon",
+      "summary_no": "Microsoft har gjort Copilot Cowork allment tilgjengelig (GA). Cowork er den raskest voksende funksjonen i Frontier-programmet og har blant de høyeste tilfredshetsskårene av alle Copilot-opplevelser Microsoft har sluppet. IT-admins bør vurdere utrulling og lisensiering for sluttbrukere.",
+      "topic": "ai",
+      "score": 66,
+      "tags": [
+        "copilot",
+        "cowork",
+        "m365",
+        "ga"
+      ]
+    },
+    {
+      "id": "o365reports-9970bed6e1",
+      "source_id": "o365reports",
+      "source_name": "Office 365 Reports (AdminDroid)",
+      "url": "https://o365reports.com/get-active-directory-users-last-password-change-and-expiry-reports/?utm_source=rss&utm_medium=rss&utm_campaign=get-active-directory-users-last-password-change-and-expiry-reports",
+      "published": "2026-06-16T10:29:14.000Z",
+      "ingested": "2026-06-20T16:28:30.747Z",
+      "hero_image": "https://o365reports.com/wp-content/uploads/2026/06/Active-Directory-users-password-expiry-report-using-PowerShell.png",
+      "title_original": "Get Active Directory Users’ Password Expiration Date Using PowerShell",
+      "headline_no": "PowerShell-skript henter passordutløp for alle AD-brukere",
+      "summary_no": "Office 365 Reports deler et PowerShell-skript som henter passordutløp, sist endret-dato og snart utløpende kontoer for hele Active Directory. Nyttig for å unngå kontolåsing og fange opp kontoer med passord som aldri utløper.",
+      "topic": "identitet",
+      "score": 20,
+      "tags": [
+        "active-directory",
+        "powershell",
+        "passord",
+        "rapportering"
+      ]
+    },
+    {
+      "id": "prajwal-desai-d14eed4f34",
+      "source_id": "prajwal-desai",
+      "source_name": "Prajwal Desai",
+      "url": "https://www.prajwaldesai.com/enable-clients-to-download-delta-content-when-available/",
+      "published": "2026-06-16T09:38:12.000Z",
+      "ingested": "2026-06-20T16:58:05.721Z",
+      "title_original": "Enable Clients to Download Delta Content When Available",
+      "headline_no": "Reduser nettverkstrafikk: aktiver delta-nedlasting i ConfigMgr",
+      "summary_no": "Configuration Manager kan konfigureres til å laste ned kun delta-innhold når det er tilgjengelig, i stedet for hele pakker på nytt. Det gir raskere programdistribusjon og lavere nettverksbelastning, noe som er spesielt nyttig for klienter på trege eller målte forbindelser.",
+      "topic": "endpoint",
+      "score": 27,
+      "tags": [
+        "configmgr",
+        "sccm",
+        "delta-content",
+        "content-distribution"
+      ]
+    },
+    {
+      "id": "office365-itpros-dfed4c6927",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/06/16/monthly-license-increase-july-2026/?utm_source=rss&utm_medium=rss&utm_campaign=monthly-license-increase-july-2026",
+      "published": "2026-06-16T07:00:00.000Z",
+      "ingested": "2026-06-20T16:23:25.528Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/LIcense-Price-Increases.jpg?resize=840%2C199&#038;ssl=1",
+      "title_original": "How Much Will the July 2026 License Increases Cost Your Tenant?",
+      "headline_no": "EMS og Entra-lisenser stiger opptil 16 % fra 1. juli — slik beregner du smellen",
+      "summary_no": "Fra 1. juli 2026 øker Microsoft prisene på mer enn bare M365: EMS E3 +13 %, E5 +10 %, og Entra P1 og P2 — nødvendig for Conditional Access — med henholdsvis 16 % og 11 %. Tony Redmond viser et PowerShell-skript som henter lisensdata fra Entra ID og beregner merkostnaden for din tenant. En god anledning til å rydde i ubrukte lisenser før prisene slår inn.",
+      "topic": "identitet",
+      "score": 41,
+      "tags": [
+        "licensing",
+        "ems",
+        "entra-p1",
+        "entra-p2",
+        "pricing"
       ]
     },
     {
@@ -574,6 +1219,26 @@
       ]
     },
     {
+      "id": "jeffrey-appel-86a069c199",
+      "source_id": "jeffrey-appel",
+      "source_name": "Jeffrey Appel — Microsoft Security",
+      "url": "https://jeffreyappel.nl/closing-the-azure-ad-graph-visibility-gap-why-aadgraphactivitylogs-is-important-for-defenders/",
+      "published": "2026-06-15T18:53:08.000Z",
+      "ingested": "2026-06-20T16:42:52.739Z",
+      "title_original": "Closing the Azure AD Graph Visibility Gap: Why AADGraphActivityLogs is important for Defenders",
+      "headline_no": "Ny loggtabell tetter blindsone i Entra ID for sikkerhetsteam",
+      "summary_no": "AADGraphActivityLogs gir endelig defenders innsyn i kall mot det eldre Azure AD Graph-APIet, som MicrosoftGraphActivityLogs ikke fanget opp. Gapet har latt aktivitet mot legacy-endepunktet passere uten logging. Jeffrey Appel forklarer hvorfor tabellen er viktig for deteksjon og hvordan den tas i bruk.",
+      "topic": "sikkerhet",
+      "score": 41,
+      "tags": [
+        "entra-id",
+        "aadgraph",
+        "logging",
+        "deteksjon",
+        "sentinel"
+      ]
+    },
+    {
       "id": "entra-blog-d58a53101d",
       "source_id": "entra-blog",
       "source_name": "Microsoft Entra Blog",
@@ -594,6 +1259,25 @@
       ]
     },
     {
+      "id": "petervanderwoude-a784b65ff0",
+      "source_id": "petervanderwoude",
+      "source_name": "All about Microsoft Intune (Peter van der Woude)",
+      "url": "https://petervanderwoude.nl/post/turning-off-account-notifications-in-start-and-multi-app-kiosk-mode/",
+      "published": "2026-06-15T17:45:00.000Z",
+      "ingested": "2026-06-20T16:51:06.456Z",
+      "title_original": "Turning off account notifications in Start and multi-app kiosk mode",
+      "headline_no": "Slå av kontovarsler i Start for kiosk-enheter med lokale kontoer",
+      "summary_no": "Peter van der Woude viser hvordan du slår av kontovarsler for Microsoft-kontoer og lokale brukere i Start-menyens brukerflis. Konfigurasjonen er særlig relevant for multi-app kiosk med lokale kontoer, der slike varsler kan friste brukere til å logge på med MSA eller endre innstillinger som ikke hører hjemme på administrerte enheter. Et lite, men nyttig grep for å rydde opp i kiosk-opplevelsen.",
+      "topic": "endpoint",
+      "score": 35,
+      "tags": [
+        "intune",
+        "kiosk",
+        "start-meny",
+        "konfigurasjon"
+      ]
+    },
+    {
       "id": "msrc-blog-186d7512e9",
       "source_id": "msrc-blog",
       "source_name": "Microsoft Security Blog",
@@ -611,6 +1295,264 @@
         "e-postsikkerhet",
         "benchmark",
         "ices"
+      ]
+    },
+    {
+      "id": "handsontek-acfa6335c2",
+      "source_id": "handsontek",
+      "source_name": "HANDS ON tek (João Ferreira)",
+      "url": "https://handsontek.net/hands-microsoft-365-pulse-weekly-updates-week-23-24/",
+      "published": "2026-06-15T15:40:33.000Z",
+      "ingested": "2026-06-20T17:00:31.434Z",
+      "hero_image": "https://handsontek.net/images/hot2/Week%2023%2024%202026/hero.png",
+      "title_original": "Hands-On Microsoft 365 Pulse – Weekly Updates (Week 23 & 24)",
+      "headline_no": "Microsoft Scout varsler en ny klasse «autopilot-agenter»",
+      "summary_no": "Ukentlig oppsummering fra Hands-On tek som samler nyheter fra uke 23 og 24, inkludert Microsoft Build. Hovedsaken er Microsoft Scout — en alltid-på agent som kan handle asynkront på dine vegne og krever nye intent-policyer og styringstenkning. Også omtalt: Anthropics Cloud Fable 5 dukket kort opp i Copilot, men er avslått som standard på grunn av avveininger rundt datadeling.",
+      "topic": "ai",
+      "score": 35,
+      "tags": [
+        "microsoft-scout",
+        "copilot",
+        "ai-agenter",
+        "governance",
+        "build"
+      ]
+    },
+    {
+      "id": "call4cloud-2c20f601ce",
+      "source_id": "call4cloud",
+      "source_name": "Call4Cloud (Rudy Ooms)",
+      "url": "https://patchmypc.com/blog/autopatch-client-broker-fails-during-autopilot-pre-provisioning/",
+      "published": "2026-06-15T13:59:26.000Z",
+      "ingested": "2026-06-20T16:56:34.724Z",
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/06/image-10.png",
+      "title_original": "Autopatch Client Broker Fails During Autopilot Pre-Provisioning",
+      "headline_no": "Autopatch-broker som blokkerende ESP-app knekker Autopilot-provisjonering",
+      "summary_no": "Rudy Ooms viser hvordan det å sette Autopatch Client Broker som en blokkerende app i Enrollment Status Page kan stoppe Autopilot pre-provisjonering. Problemet ligger ikke i selve brokeren, men i hvordan ESP håndterer den i systemkontekst. Admins som bygger Autopilot-profiler bør unngå denne konfigurasjonen.",
+      "topic": "endpoint",
+      "score": 39,
+      "tags": [
+        "autopilot",
+        "autopatch",
+        "esp",
+        "intune"
+      ]
+    },
+    {
+      "id": "core-infra-security-2c835f1c17",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/tls-certificate-pinning-and-best-practices-in-azure-open-source/ba-p/4519531",
+      "published": "2026-06-15T13:42:38.000Z",
+      "ingested": "2026-06-20T16:41:20.332Z",
+      "title_original": "TLS Certificate Pinning and Best Practices in Azure Open-Source Relational Databases",
+      "headline_no": "TLS-pinning mot Azure-databaser: derfor kan serveren ikke oppdage det",
+      "summary_no": "Sertifikat-pinning i Azure Database for PostgreSQL og MySQL er ren klientside-logikk, og serveren kan ikke se om en klient pinner — derfor kan enhver sertifikatrotasjon brekke tilkoblinger uten forvarsel. Microsoft forklarer hvorfor pinning ikke kan oppdages serverside, og hva som er beste praksis for å unngå brutte forbindelser.",
+      "topic": "sikkerhet",
+      "score": 34,
+      "tags": [
+        "tls",
+        "postgresql",
+        "mysql",
+        "azure-database",
+        "certificates"
+      ]
+    },
+    {
+      "id": "core-infra-security-4e8535bd73",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/automating-daily-mde-compliance-monitoring-across-azure-vms/ba-p/4528274",
+      "published": "2026-06-15T11:52:45.000Z",
+      "ingested": "2026-06-20T16:41:20.332Z",
+      "title_original": "Automating Daily MDE Compliance Monitoring Across Azure VMs",
+      "headline_no": "Logic App fanger Azure-VMer som faller ut av Defender-dekning",
+      "summary_no": "En Logic App sjekker daglig alle kjørende Azure-VMer og varsler eieren automatisk når en maskin ikke er onboardet til Defender for Endpoint eller har sluttet å rapportere. Den skiller «onboardet, men rapporterer ikke» fra «ikke onboardet» og legger ved en CSV-rapport til IT, slik at hull i MDE-dekningen fanges innen 24 timer i stedet for uker.",
+      "topic": "sikkerhet",
+      "score": 44,
+      "tags": [
+        "defender",
+        "mde",
+        "logic-apps",
+        "azure",
+        "compliance"
+      ]
+    },
+    {
+      "id": "office365-itpros-c0049769fd",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/06/15/delete-teams-chat-threads/?utm_source=rss&utm_medium=rss&utm_campaign=delete-teams-chat-threads",
+      "published": "2026-06-15T07:00:00.000Z",
+      "ingested": "2026-06-20T16:23:25.528Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/05/Teams-Chat-Thread-Deletions.jpg?resize=840%2C396&#038;ssl=1",
+      "title_original": "How to Remove Teams Chat Threads with PowerShell",
+      "headline_no": "Slik fjerner du spam-chatter i Teams med Remove-MgChat og PowerShell",
+      "summary_no": "Etter at noen opprettet en organisasjonsbred gruppechat og spammet den, trengte en MVP en måte å rydde opp på. Tony Redmond oppdaterer en gammel Azure Automation-runbook som bruker Remove-MgChat til å finne og slette problematiske Teams-chattetråder — nå med bedre feilhåndtering og søk i selve meldingsteksten. Et nyttig mønster for admins som må fjerne uønsket innhold i skala.",
+      "topic": "identitet",
+      "score": 33,
+      "tags": [
+        "teams",
+        "powershell",
+        "remove-mgchat",
+        "graph-sdk",
+        "automation"
+      ]
+    },
+    {
+      "id": "thomas-maurer-262dec8866",
+      "source_id": "thomas-maurer",
+      "source_name": "Thomas Maurer",
+      "url": "https://www.thomasmaurer.ch/2026/06/azure-local-multi-rack-deployments-scaling-hybrid-infrastructure-in-the-datacenter/",
+      "published": "2026-06-15T06:55:48.000Z",
+      "ingested": "2026-06-20T16:59:37.987Z",
+      "title_original": "Azure Local Multi-Rack Deployments: Scaling Hybrid Infrastructure in the Datacenter",
+      "headline_no": "Azure Local skalerer til multi-rack — hybrid infrastruktur i datasenteret",
+      "summary_no": "Azure Local støtter nå multi-rack-utrullinger for store on-prem-fotavtrykk i datasenteret, med samme Azure-konsistente opplevelse som mindre oppsett. Plattformen skalerer fra én maskin i butikk til store klynger og frakoblede, suverene miljøer. Relevant for organisasjoner som kjører hybrid infrastruktur i stor skala.",
+      "topic": "endpoint",
+      "score": 31,
+      "tags": [
+        "azure-local",
+        "hybrid",
+        "datasenter"
+      ]
+    },
+    {
+      "id": "msendpointmgr-06351b1255",
+      "source_id": "msendpointmgr",
+      "source_name": "MSEndpointMgr",
+      "url": "https://msendpointmgr.com/2026/06/15/epm-part-1-the-end-of-local-admin-how-intune-endpoint-privilege-management-solves-a-problem-it-has-lived-with-for-decades/",
+      "published": "2026-06-15T06:00:00.000Z",
+      "ingested": "2026-06-20T16:51:06.456Z",
+      "hero_image": "https://msendpointmgr.com/wp-content/uploads/2026/06/Designer-10.png",
+      "title_original": "EPM Part 1: The End of Local Admin: How Intune Endpoint Privilege Management solves a problem IT has lived with for decades",
+      "headline_no": "Intune EPM blir del av M365-lisensen fra 1. juli 2026",
+      "summary_no": "MSEndpointMgr starter en bloggserie om Intune Endpoint Privilege Management (EPM), som lar brukere kjøre utvalgte oppgaver med forhøyede rettigheter uten å være lokale administratorer. Det viktigste for admins: fra 1. juli 2026 er EPM inkludert i den eksisterende Microsoft 365-lisensen, noe som fjerner behovet for dyre tredjepartsverktøy. Det gir en konkret vei bort fra utdelt lokaladmin uten å ofre produktivitet.",
+      "topic": "endpoint",
+      "score": 45,
+      "tags": [
+        "intune",
+        "epm",
+        "lokaladmin",
+        "lisensiering",
+        "sikkerhet"
+      ]
+    },
+    {
+      "id": "ourcloudnetwork-a0da2b293b",
+      "source_id": "ourcloudnetwork",
+      "source_name": "Our Cloud Network (Daniel Bradley)",
+      "url": "https://ourcloudnetwork.com/how-to-enable-baseline-scope-settings-in-conditional-access/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-enable-baseline-scope-settings-in-conditional-access",
+      "published": "2026-06-15T05:16:46.000Z",
+      "ingested": "2026-06-20T16:26:52.164Z",
+      "title_original": "How to Enable Baseline Scope Settings in Conditional Access",
+      "headline_no": "Slik aktiverer du Baseline Scope før endringen i Conditional Access",
+      "summary_no": "Microsoft endrer snart hvordan Conditional Access-policyer håndheves, og admins bør aktivere Baseline Scope-innstillinger nå for å unngå overraskelser. Innstillingene styrer hvilke pålogginger som omfattes av policyene dine. Test før endringen trer i kraft slik at du ikke utilsiktet låser ute brukere.",
+      "topic": "identitet",
+      "score": 41,
+      "tags": [
+        "conditional-access",
+        "entra",
+        "baseline-scope"
+      ]
+    },
+    {
+      "id": "damienbod-593bcff35a",
+      "source_id": "damienbod",
+      "source_name": "damienbod — Software Engineering",
+      "url": "https://damienbod.com/2026/06/15/software-development-and-ai/",
+      "published": "2026-06-15T04:59:28.000Z",
+      "ingested": "2026-06-20T16:26:52.164Z",
+      "hero_image": "https://damienbod.com/wp-content/uploads/2026/03/image-ai.png",
+      "title_original": "Software development and AI",
+      "headline_no": "AI gjør gode utviklere bedre — men noen må betale for verktøyene",
+      "summary_no": "Et meningsinnlegg om hvordan AI-verktøy passer inn i programvareutvikling, og hvorfor effektivitetsgevinsten må dekke de økende kostnadene. Forfatteren mener AI hjelper dyktige utviklere mest, mens hypen om fart ofte er overdrevet. Mer bransjebetraktning enn konkret nytte for IT-drift.",
+      "topic": "ai",
+      "score": 12,
+      "tags": [
+        "ai",
+        "softwareutvikling",
+        "meningsinnlegg"
+      ]
+    },
+    {
+      "id": "danielengberg-963a2b6998",
+      "source_id": "danielengberg",
+      "source_name": "Daniel Engberg — Endpoint Management",
+      "url": "https://www.danielengberg.com/endpoint-management-newsletter-june-1-june-14-2026/",
+      "published": "2026-06-14T17:45:22.000Z",
+      "ingested": "2026-06-20T16:59:37.987Z",
+      "title_original": "Endpoint Management Newsletter – June 1 – June 14, 2026",
+      "headline_no": "Endpoint-nyhetsbrevet oppsummerer Build og en heftig Patch Tuesday",
+      "summary_no": "Daniel Engbergs todelte nyhetsbrev oppsummerer endpoint-nyhetene fra 1.–14. juni 2026, inkludert nyheter fra Build og en omfattende Patch Tuesday. En grei digest for Intune- og endpoint-admins som vil ta igjen på to ukers utvikling. Lenker videre til de underliggende kildene.",
+      "topic": "endpoint",
+      "score": 29,
+      "tags": [
+        "nyhetsbrev",
+        "endpoint",
+        "patch-tuesday",
+        "build"
+      ]
+    },
+    {
+      "id": "ccmexec-eee1e12ea7",
+      "source_id": "ccmexec",
+      "source_name": "CCMEXEC (Jörgen Nilsson)",
+      "url": "https://ccmexec.com/2026/06/microsoft-intune-endpoint-privilege-management-overview/",
+      "published": "2026-06-14T14:44:18.000Z",
+      "ingested": "2026-06-20T16:56:34.724Z",
+      "hero_image": "https://ccmexec.com/wp-content/uploads/2026/06/Screenshot-2026-06-14-144525.png",
+      "title_original": "Microsoft Intune Endpoint Privilege Management – Overview",
+      "headline_no": "Intune Endpoint Privilege Management inkluderes i Microsoft 365 E5 til sommeren",
+      "summary_no": "Microsoft annonserte i desember 2025 at Endpoint Privilege Management legges inn i Microsoft 365 E5-lisensen sommeren 2026. Det betyr at mange organisasjoner kan fjerne lokale admin-rettigheter og styre rettighetshevning uten å kjøpe Intune Suite separat. Jörgen Nilsson går gjennom virtuell admin-konto, hevningsregler og rapportering.",
+      "topic": "endpoint",
+      "score": 46,
+      "tags": [
+        "epm",
+        "intune",
+        "lisensiering",
+        "m365-e5",
+        "local-admin"
+      ]
+    },
+    {
+      "id": "mikemdm-185b90d27e",
+      "source_id": "mikemdm",
+      "source_name": "Mike's MDM Blog",
+      "url": "https://mikemdm.de/2026/06/14/inventory-locally-running-vms-in-vmware-or-hyper-v/",
+      "published": "2026-06-14T12:36:58.000Z",
+      "ingested": "2026-06-20T16:56:34.724Z",
+      "hero_image": "https://mikemdm.de/wp-content/uploads/2026/06/grafik-1024x701.png",
+      "title_original": "Inventory locally running VMs in VMware or Hyper-V",
+      "headline_no": "PowerShell-skript gir oversikt over lokale VMer i VMware og Hyper-V",
+      "summary_no": "Mike Meier deler et proactive remediation-skript som inventarfører lokalt kjørende VMer fra VMware Player/Workstation og Hyper-V. Dataene lastes opp til Azure Cosmos DB og visualiseres i Power BI sammen med øvrig klientinventar. Nyttig for admins som trenger kontroll på utvikleres og testeres VM-flåte.",
+      "topic": "endpoint",
+      "score": 31,
+      "tags": [
+        "inventory",
+        "powershell",
+        "proactive-remediation",
+        "power-bi",
+        "hyper-v"
+      ]
+    },
+    {
+      "id": "windows-insider-252186b2cc",
+      "source_id": "windows-insider",
+      "source_name": "Windows Insider Blog",
+      "url": "https://blogs.windows.com/windows-insider/2026/06/12/announcing-new-builds-for-12-june-2026/",
+      "published": "2026-06-12T17:05:12.000Z",
+      "ingested": "2026-06-20T16:48:55.360Z",
+      "title_original": "Announcing new builds for 12 June 2026",
+      "headline_no": "Innebygde Windows-apper får egne utgivelsesnotater i Insider-programmet",
+      "summary_no": "Microsoft slipper nye bygg på tvers av Beta, Experimental og Release Preview, og lanserer en egen seksjon med utgivelsesnotater for innebygde Windows 11-apper som Kalkulator, Kamera og Bilder. Feilen som rammet AMD-maskiner med System Guard er også løst. For IT-folk gjør de dedikerte appnotatene det enklere å spore hva som faktisk endrer seg.",
+      "topic": "endpoint",
+      "score": 34,
+      "tags": [
+        "windows-11",
+        "insider",
+        "release-notes",
+        "apper"
       ]
     },
     {
@@ -652,6 +1594,67 @@
       ]
     },
     {
+      "id": "office365-itpros-f2fd0a3b31",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/06/12/unlicensed-onedrive-for-business-2/?utm_source=rss&utm_medium=rss&utm_campaign=unlicensed-onedrive-for-business-2",
+      "published": "2026-06-12T07:00:00.000Z",
+      "ingested": "2026-06-20T16:23:25.528Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Unlicensed-OneDrive-Accounts-Report-Detail.jpg?resize=840%2C536&#038;ssl=1",
+      "title_original": "Microsoft to Delete Unlicensed OneDrive for Business Accounts",
+      "headline_no": "Microsoft sletter ubetalte OneDrive-kontoer etter 365 dager",
+      "summary_no": "Microsoft varsler (MC1381110) at ulisensierte OneDrive for Business-kontoer slettes etter 365 dager uten betaling for lagringen. Det er neste steg etter at slike kontoer for to år siden ble flyttet til Microsoft 365 Archive, og endringen gjelder ikke utdannings- eller offentlige tenanter. Bruk rapporten i SharePoint admin center til å gå gjennom ulisensierte kontoer før data går tapt.",
+      "topic": "sikkerhet",
+      "score": 48,
+      "tags": [
+        "onedrive",
+        "m365-archive",
+        "retention",
+        "mc1381110",
+        "sharepoint"
+      ]
+    },
+    {
+      "id": "ourcloudnetwork-c9dafb7a9b",
+      "source_id": "ourcloudnetwork",
+      "source_name": "Our Cloud Network (Daniel Bradley)",
+      "url": "https://ourcloudnetwork.com/stop-wasting-time-and-use-custom-extensions-for-pim-approvals/?utm_source=rss&utm_medium=rss&utm_campaign=stop-wasting-time-and-use-custom-extensions-for-pim-approvals",
+      "published": "2026-06-12T06:31:51.000Z",
+      "ingested": "2026-06-20T16:26:52.164Z",
+      "title_original": "Stop wasting time and use Custom Extensions for PIM approvals",
+      "headline_no": "Automatiser PIM-godkjenninger med custom extensions og sakssystemet ditt",
+      "summary_no": "Entra PIM kan kobles mot ticketing-systemet via custom extensions slik at rolleaktiveringer valideres automatisk. Det fjerner manuelt godkjenningsarbeid og sikrer at privilegert tilgang alltid har en sak bak seg. Nyttig for team som vil stramme inn governance uten å bremse driften.",
+      "topic": "identitet",
+      "score": 35,
+      "tags": [
+        "pim",
+        "entra",
+        "automatisering",
+        "custom-extensions"
+      ]
+    },
+    {
+      "id": "andrew-taylor-c3d593d024",
+      "source_id": "andrew-taylor",
+      "source_name": "Andrew Taylor (andrewstaylor.com)",
+      "url": "https://andrewstaylor.com/2026/06/12/intune-newsletter-12th-june-2026/",
+      "published": "2026-06-11T23:33:12.000Z",
+      "ingested": "2026-06-20T16:58:05.721Z",
+      "hero_image": "https://andrewstaylor.com/wp-content/uploads/2026/06/intune-session.jpeg",
+      "title_original": "Intune Newsletter – 12th June 2026",
+      "headline_no": "Ukens Intune-tips: Windows 365 via Graph og Lenovo-drivere i pre-prov",
+      "summary_no": "Andrew Taylors ukentlige Intune-nyhetsbrev fra Experts Live UK samler community-tips, blant annet en guide for å konvertere Azure VM-er til Windows 365-images med kun Graph-kommandoer og en metode for å gjenbruke Autopatch sine oppdateringsringer. Lenovos LCU PowerShell-modul kan nå oppdatere drivere under Autopilot pre-provisioning, slik at brukerne slipper driveroppdateringer etter utlevering. Nyttig praktisk lesning for cloud-native endpoint-admins.",
+      "topic": "endpoint",
+      "score": 31,
+      "tags": [
+        "intune",
+        "windows-365",
+        "autopilot",
+        "autopatch",
+        "nyhetsbrev"
+      ]
+    },
+    {
       "id": "m365-copilot-5fe9a3d1fe",
       "source_id": "m365-copilot",
       "source_name": "Microsoft 365 Copilot Blog",
@@ -668,6 +1671,122 @@
         "anthropic",
         "claude-fable-5",
         "preview"
+      ]
+    },
+    {
+      "id": "azure-network-security-994807195a",
+      "source_id": "azure-network-security",
+      "source_name": "Azure Network Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/a-deep-dive-into-azure-bastion-session-recording/ba-p/4527583",
+      "published": "2026-06-11T19:38:25.000Z",
+      "ingested": "2026-06-20T16:41:20.332Z",
+      "title_original": "A deep dive into Azure Bastion session recording",
+      "headline_no": "Azure Bastion får Managed Identity for opptak av RDP- og SSH-økter",
+      "summary_no": "Azure Bastion Premium kan ta opp grafiske RDP- og SSH-økter som avspillbar video for revisjon og etterforskning. En ny public preview lar deg bruke Managed Identity i stedet for SAS-tokens for å lagre opptakene, noe som fjerner manuell tokenhåndtering og utløpsproblemer i produksjonsmiljøer.",
+      "topic": "sikkerhet",
+      "score": 46,
+      "tags": [
+        "azure-bastion",
+        "session-recording",
+        "managed-identity",
+        "rdp",
+        "ssh"
+      ]
+    },
+    {
+      "id": "security-community-7e80afd29e",
+      "source_id": "security-community",
+      "source_name": "Microsoft Security Community Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/level-up-your-azure-network-security-skills-with-our-upcoming/ba-p/4525584",
+      "published": "2026-06-11T18:09:16.000Z",
+      "ingested": "2026-06-20T16:42:52.739Z",
+      "title_original": "Level up your Azure Network Security Skills with our Upcoming Webinar Series",
+      "headline_no": "Azure-teamet inviterer til webinarserie om nettverkssikkerhet",
+      "summary_no": "Azure Network Security-teamet kjører en serie tekniske webinarer om WAF, Azure Firewall, DDoS Protection og Bastion, med demoer og de nyeste forbedringene. Sesjonene retter seg mot sikkerhetsarkitekter, nettverksteam og SOC-analytikere som sikrer Azure-miljøer. Mest relevant som kompetansepåfyll, ikke en produktnyhet.",
+      "topic": "sikkerhet",
+      "score": 22,
+      "tags": [
+        "webinar",
+        "azure",
+        "waf",
+        "firewall",
+        "ddos"
+      ]
+    },
+    {
+      "id": "windows-networking-fd868f6675",
+      "source_id": "windows-networking",
+      "source_name": "Windows Networking Blog (Core Networking)",
+      "url": "https://techcommunity.microsoft.com/t5/networking-blog/doh-is-now-generally-available-on-windows-dns-server/ba-p/4526839",
+      "published": "2026-06-11T17:27:51.000Z",
+      "ingested": "2026-06-20T16:48:55.360Z",
+      "title_original": "DoH is now generally available on Windows DNS Server",
+      "headline_no": "DNS over HTTPS blir allment tilgjengelig i Windows Server 2025",
+      "summary_no": "DNS over HTTPS (DoH) for Windows DNS Server er nå generelt tilgjengelig på Windows Server 2025 for klient-til-server-trafikk. Det gir kryptert og autentisert DNS direkte i eksisterende on-prem-infrastruktur, og reduserer risiko for avlytting og spoofing. For sikkerhetsteam er dette et konkret steg mot Zero Trust DNS uten å bytte ut resolver-arkitekturen.",
+      "topic": "sikkerhet",
+      "score": 61,
+      "tags": [
+        "doh",
+        "dns",
+        "windows-server-2025",
+        "zero-trust"
+      ]
+    },
+    {
+      "id": "windows-admin-center-0fc3b4f3e1",
+      "source_id": "windows-admin-center",
+      "source_name": "Windows Admin Center Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-admin-center-blog/virtualization-mode-unlocked/ba-p/4487896",
+      "published": "2026-06-11T16:28:36.000Z",
+      "ingested": "2026-06-20T16:51:06.455Z",
+      "title_original": "Virtualization Mode Unlocked",
+      "headline_no": "Ny virtualiseringsmodus samler Hyper-V, lagring og nettverk ett sted",
+      "summary_no": "Microsoft har lansert Windows Admin Center: Virtualiseringsmodus i offentlig forhåndsvisning — et nytt verktøy for å styre Hyper-V-klynger, lagring (SAN, NAS, HCI) og nettverk fra ett grensesnitt. Verktøyet installeres på under fem minutter og posisjoneres som et fullverdig alternativ til tredjeparts virtualiseringsplattformer. Admins som drifter Hyper-V bør se nærmere på dette som erstatning for eldre styringsverktøy.",
+      "topic": "endpoint",
+      "score": 50,
+      "tags": [
+        "windows-admin-center",
+        "hyper-v",
+        "virtualisering",
+        "lagring",
+        "preview"
+      ]
+    },
+    {
+      "id": "windows-admin-center-5415cfa1d3",
+      "source_id": "windows-admin-center",
+      "source_name": "Windows Admin Center Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-admin-center-blog/the-windows-admin-center-virtualization-mode-public-preview/ba-p/4527304",
+      "published": "2026-06-11T16:24:28.000Z",
+      "ingested": "2026-06-20T16:48:55.360Z",
+      "title_original": "The Windows Admin Center: Virtualization Mode public preview build has been updated!",
+      "headline_no": "Windows Admin Center vMode-preview oppdatert med feilrettinger og Angular 20",
+      "summary_no": "Public preview-byggen av Virtualization Mode i Windows Admin Center er oppdatert til 2.7.1.8, med rettelser for installasjon på ikke-engelske systemer, «access denied»-feil mot gateway og feil i nettverksintent. Alle WAC-utvidelser er oppgradert til Angular 20 for bedre ytelse og sikkerhet. Admins som tester vMode bør oppdatere for å unngå de kjente feilene.",
+      "topic": "endpoint",
+      "score": 32,
+      "tags": [
+        "windows-admin-center",
+        "vmode",
+        "public-preview",
+        "bugfix"
+      ]
+    },
+    {
+      "id": "defender-endpoint-697dbd414c",
+      "source_id": "defender-endpoint",
+      "source_name": "Microsoft Defender for Endpoint Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/reduce-unnecessary-internet-exposure-with-microsoft-defender/ba-p/4525654",
+      "published": "2026-06-11T16:00:00.000Z",
+      "ingested": "2026-06-20T16:29:50.126Z",
+      "title_original": "Reduce unnecessary internet exposure with Microsoft Defender",
+      "headline_no": "Defender får ny anbefaling som avslører unødvendig internett-eksponering",
+      "summary_no": "Microsoft Defender introduserer en ny sikkerhetsanbefaling som identifiserer enheter med innkommende tilkobling fra det åpne internett. Den hjelper sikkerhetsteam å skille tilsiktet eksponering fra unødvendig angrepsflate, slik at de kan prioritere og redusere risikoen for initial access og lateral bevegelse.",
+      "topic": "sikkerhet",
+      "score": 56,
+      "tags": [
+        "defender",
+        "angrepsflate",
+        "exposure-management"
       ]
     },
     {
@@ -711,6 +1830,142 @@
       ]
     },
     {
+      "id": "admindroid-a332054dcc",
+      "source_id": "admindroid",
+      "source_name": "AdminDroid Blog",
+      "url": "https://blog.admindroid.com/how-to-prevent-users-from-modifying-outlook-signatures-in-microsoft-365/",
+      "published": "2026-06-11T14:39:26.000Z",
+      "ingested": "2026-06-20T16:28:30.747Z",
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/Prevent-Users-from-Modifying-Outlook-Signatures-150x150.png",
+      "title_original": "How to Prevent Users from Modifying Outlook Signatures in Microsoft 365",
+      "headline_no": "Slik hindrer du brukere i å endre Outlook-signaturen i Microsoft 365",
+      "summary_no": "AdminDroid går gjennom to måter å låse Outlook-signaturer på, siden Microsoft 365 mangler en innebygd bryter for det: server-side signatur som hard lås, eller et planlagt PowerShell-skript som myk lås. Nyttig for å holde branding og juridisk ansvarsfraskrivelse konsistent.",
+      "topic": "endpoint",
+      "score": 20,
+      "tags": [
+        "outlook",
+        "signaturer",
+        "microsoft-365",
+        "powershell"
+      ]
+    },
+    {
+      "id": "core-infra-security-42973164b2",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/analyse-intune-diagnostics-logs-with-github-copilot/ba-p/4527500",
+      "published": "2026-06-11T12:15:59.000Z",
+      "ingested": "2026-06-20T16:41:20.332Z",
+      "title_original": "Analyse Intune Diagnostics Logs with GitHub Copilot",
+      "headline_no": "GitHub Copilot leser Intune-diagnoselogger og finner rotårsaken raskere",
+      "summary_no": "En Microsoft-arkitekt viser hvordan GitHub Copilot CLI kan analysere Intune-diagnoselogger og nettverkstrace for å spore feil på minutter i stedet for timer. Oppsettet tar to minutter, men tolkningen krever fortsatt solid Intune-kompetanse — Copilot peker mot rotårsaken, du verifiserer den.",
+      "topic": "endpoint",
+      "score": 43,
+      "tags": [
+        "intune",
+        "copilot",
+        "troubleshooting",
+        "diagnostics"
+      ]
+    },
+    {
+      "id": "office365-itpros-d002240bc8",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/06/11/sensitivity-label-ps/?utm_source=rss&utm_medium=rss&utm_campaign=sensitivity-label-ps",
+      "published": "2026-06-11T07:00:00.000Z",
+      "ingested": "2026-06-20T16:24:58.516Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/05/Sensitivity-Labels-List.jpg?resize=840%2C530&#038;ssl=1",
+      "title_original": "Primer: Finding Sensitivity Labels with PowerShell",
+      "headline_no": "Slik finner du sensitivitetsetiketter med PowerShell",
+      "summary_no": "Tony Redmond går gjennom tre måter å hente ut sensitivitetsetiketter og egenskapene deres i en Microsoft 365-tenant via PowerShell. Du trenger etikett-ID-en for å automatisere merking av filer, og artikkelen viser hvordan Get-Label skiller seg fra de Graph-baserte metodene. Nyttig grunnlag for admins som bygger skript rundt Purview-merking.",
+      "topic": "sikkerhet",
+      "score": 34,
+      "tags": [
+        "powershell",
+        "purview",
+        "sensitivity-labels",
+        "compliance"
+      ]
+    },
+    {
+      "id": "core-infra-security-34295d7f43",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/at-scale-failure-reporting-for-azure-update-manager/ba-p/4527378",
+      "published": "2026-06-11T06:32:42.000Z",
+      "ingested": "2026-06-20T16:41:20.332Z",
+      "title_original": "At-Scale Failure Reporting for Azure Update Manager",
+      "headline_no": "Én ARG-spørring henter alle patch-feil i Azure Update Manager",
+      "summary_no": "Azure Update Manager viser patch-feil kun per maskin i portalen, noe som blir uhåndterlig i store flåter. En enkelt Azure Resource Graph-spørring kan i stedet trekke ut alle feilede maskiner med feilkoder og -meldinger for en gitt vedlikeholdskjøring, på tvers av abonnementer og regioner.",
+      "topic": "sikkerhet",
+      "score": 43,
+      "tags": [
+        "azure-update-manager",
+        "patching",
+        "azure-resource-graph",
+        "azure"
+      ]
+    },
+    {
+      "id": "ourcloudnetwork-fcc052a9f8",
+      "source_id": "ourcloudnetwork",
+      "source_name": "Our Cloud Network (Daniel Bradley)",
+      "url": "https://ourcloudnetwork.com/how-to-stop-guests-from-inviting-more-guests-in-microsoft-entra/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-stop-guests-from-inviting-more-guests-in-microsoft-entra",
+      "published": "2026-06-11T05:44:20.000Z",
+      "ingested": "2026-06-20T16:26:52.164Z",
+      "title_original": "How to Stop Guests From Inviting More Guests in Microsoft Entra",
+      "headline_no": "Slik hindrer du at gjester inviterer flere gjester i Entra",
+      "summary_no": "Som standard kan eksterne gjester invitere enda flere gjester inn i tenanten din, noe som raskt sprer tilgang utenfor kontroll. Guiden viser hvordan du strammer inn external collaboration-innstillingene i Entra. En enkel herdingsgevinst for å holde gjestelisten ryddig.",
+      "topic": "identitet",
+      "score": 36,
+      "tags": [
+        "entra",
+        "b2b",
+        "gjester",
+        "external-collaboration"
+      ]
+    },
+    {
+      "id": "windows-admin-center-053cffee74",
+      "source_id": "windows-admin-center",
+      "source_name": "Windows Admin Center Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-admin-center-blog/announcing-windows-admin-center-virtualization-mode-public/ba-p/4508937",
+      "published": "2026-06-10T22:03:51.000Z",
+      "ingested": "2026-06-20T16:51:06.455Z",
+      "title_original": "Announcing Windows Admin Center: Virtualization Mode Public Preview 2!",
+      "headline_no": "Windows Admin Center: andre preview av virtualiseringsmodus er ute",
+      "summary_no": "Windows Admin Center: Virtualiseringsmodus er ute i Public Preview 2 med en rekke forbedringer på vei mot generell tilgjengelighet. Nyhetene denne runden er blant annet uattendert installasjon via INI-filer og raskere oppdateringer. For admins som vurderer å forlate VMware er dette en sjanse til å teste Microsofts nye Hyper-V-styringsverktøy før lansering.",
+      "topic": "endpoint",
+      "score": 47,
+      "tags": [
+        "windows-admin-center",
+        "hyper-v",
+        "virtualisering",
+        "preview",
+        "installasjon"
+      ]
+    },
+    {
+      "id": "defender-endpoint-3ac428ce0b",
+      "source_id": "defender-endpoint",
+      "source_name": "Microsoft Defender for Endpoint Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/introducing-scheduled-antivirus-scans-on-microsoft-defender/ba-p/4524578",
+      "published": "2026-06-10T16:00:00.000Z",
+      "ingested": "2026-06-20T16:29:50.126Z",
+      "title_original": "Introducing scheduled antivirus scans on Microsoft Defender Linux",
+      "headline_no": "Defender for Linux får sentralstyrte planlagte antivirus-skann",
+      "summary_no": "Microsoft Defender støtter nå sentralt administrerte, planlagte antivirus-skann på Linux i public preview. Admins kan sette opp time-, dags- eller ukesskann via security settings-policyer eller JSON deployet med Ansible, Puppet eller Chef — slutt på skjøre, egendefinerte cron-skript.",
+      "topic": "sikkerhet",
+      "score": 56,
+      "tags": [
+        "defender",
+        "linux",
+        "antivirus",
+        "public-preview"
+      ]
+    },
+    {
       "id": "msrc-blog-d55f53d5c5",
       "source_id": "msrc-blog",
       "source_name": "Microsoft Security Blog",
@@ -729,6 +1984,145 @@
         "open-source",
         "agenter",
         "testing"
+      ]
+    },
+    {
+      "id": "security-community-39922fcb1a",
+      "source_id": "security-community",
+      "source_name": "Microsoft Security Community Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/new-exchange-online-mailbox-auditing-signal-visibility-into-ipm/ba-p/4526914",
+      "published": "2026-06-10T15:00:00.000Z",
+      "ingested": "2026-06-20T16:42:52.739Z",
+      "title_original": "New Exchange Online Mailbox Auditing Signal: Visibility into IPM to Non-IPM Copy Activity",
+      "headline_no": "Exchange Online avslører skjult triks angripere bruker for å stjele e-post",
+      "summary_no": "Exchange Online logger nå et MailItemsAccessed-event når e-post kopieres fra den synlige IPM-mappen til skjulte non-IPM-mapper — en kjent teknikk angripere har brukt for å iscenesette exfiltrering uten spor. Den nye AccessType-verdien CopyFromIPM lukker et revisjonshull som tidligere lot kopiering skje usynlig. SOC-team bør oppdatere jaktspørringer for å fange opp signalet.",
+      "topic": "sikkerhet",
+      "score": 56,
+      "tags": [
+        "exchange-online",
+        "audit",
+        "exfiltrering",
+        "mailitemsaccessed",
+        "soc"
+      ]
+    },
+    {
+      "id": "dirteam-berkouwer-b1b5f01651",
+      "source_id": "dirteam-berkouwer",
+      "source_name": "Sander Berkouwer — The things that are better left unspoken",
+      "url": "https://dirteam.com/sander/2026/06/10/a-critical-vulnerability-was-resolved-in-veeam-backup-replication-v12-3-2-4854/",
+      "published": "2026-06-10T14:43:15.000Z",
+      "ingested": "2026-06-20T16:24:58.516Z",
+      "hero_image": "https://dirteam.com/sander/wp-content/uploads/sites/2/2026/06/VeeamBR-530x277.jpg",
+      "title_original": "A critical vulnerability was resolved in Veeam Backup & Replication v12.3.2.4854",
+      "headline_no": "Kritisk RCE-hull i Veeam Backup rammer domenetilknyttede servere",
+      "summary_no": "Veeam har tettet en kritisk sårbarhet (CVE-2026-44963, CVSS 9.4) som lar en autentisert domenebruker kjøre vilkårlig kode på backup-serveren. Hullet rammer kun backup-servere som er domenetilknyttet, men berører en lang rekke v12-versjoner. Oppgrader til v12.3.2.4854 (sluppet 9. juni 2026) umiddelbart.",
+      "topic": "sikkerhet",
+      "score": 62,
+      "tags": [
+        "cve-2026-44963",
+        "veeam",
+        "rce",
+        "backup",
+        "sårbarhet"
+      ]
+    },
+    {
+      "id": "thomas-maurer-57e025a903",
+      "source_id": "thomas-maurer",
+      "source_name": "Thomas Maurer",
+      "url": "https://www.thomasmaurer.ch/2026/06/laps-for-azure-arc-local-admin-password-security-across-hybrid-at-scale/",
+      "published": "2026-06-10T12:25:56.000Z",
+      "ingested": "2026-06-20T16:59:37.987Z",
+      "title_original": "LAPS for Azure Arc: Local Admin Password Security Across Hybrid—at Scale",
+      "headline_no": "LAPS for Azure Arc roterer lokale admin-passord på tvers av hybridmiljøet",
+      "summary_no": "LAPS for Azure Arc lar deg rotere og sikre lokale administrator-passord på tvers av hybride Windows-maskiner i stor skala. Lokale admin-kontoer med samme, sjelden roterte passord er en klassisk inngang for lateral bevegelse i angrep. For sikkerhetsteam lukker dette et ofte oversett, men kritisk risikohull.",
+      "topic": "sikkerhet",
+      "score": 35,
+      "tags": [
+        "laps",
+        "azure-arc",
+        "lokal-admin",
+        "lateral-bevegelse"
+      ]
+    },
+    {
+      "id": "admindroid-1e2290957e",
+      "source_id": "admindroid",
+      "source_name": "AdminDroid Blog",
+      "url": "https://blog.admindroid.com/secure-microsoft-entra-workload-identities-from-modern-attacks/",
+      "published": "2026-06-10T10:34:45.000Z",
+      "ingested": "2026-06-20T16:28:30.747Z",
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/Work-identity-The-New-Cloud-Attack-Surface-in-Microsoft-365-2-1-150x150.png",
+      "title_original": "Secure Workload Identities in Microsoft Entra ID Against Modern Attacks",
+      "headline_no": "Storm-2949 jaktet på arbeidslast-identiteter — slik sikrer du Entra",
+      "summary_no": "Storm-2949-kampanjen forsøkte å etablere varig fotfeste via en service principal etter å ha kompromittert en brukerkonto, og lyktes ikke bare fordi kontoen manglet rettigheter. AdminDroid forklarer hvorfor arbeidslast-identiteter blir et hovedmål, og hvordan du oppdager og rydder opp i risiko i Entra ID.",
+      "topic": "identitet",
+      "score": 32,
+      "tags": [
+        "entra",
+        "workload-identity",
+        "service-principal",
+        "storm-2949"
+      ]
+    },
+    {
+      "id": "alitajran-6d1268b594",
+      "source_id": "alitajran",
+      "source_name": "ALI TAJRAN",
+      "url": "https://www.alitajran.com/remove-unlock-teams-premium-button/",
+      "published": "2026-06-10T09:00:05.000Z",
+      "ingested": "2026-06-20T16:26:52.164Z",
+      "hero_image": "https://www.alitajran.com/wp-content/uploads/2026/05/Remove-Unlock-Teams-Premium-Button-in-Microsoft-Teams-01.png",
+      "title_original": "How to Remove Unlock Teams Premium Button in Microsoft Teams",
+      "headline_no": "Slik fjerner du «Unlock Teams Premium»-knappen som starter prøveperioder",
+      "summary_no": "Teams viser en «Unlock Teams Premium»-knapp som lar vanlige brukere starte en gratis prøveperiode på egen hånd. Du skrur den av via Microsoft 365 admin center eller med PowerShell. Anbefalt for organisasjoner som vil blokkere self-service-prøver og -kjøp.",
+      "topic": "identitet",
+      "score": 31,
+      "tags": [
+        "teams",
+        "teams-premium",
+        "self-service-trials",
+        "m365-admin"
+      ]
+    },
+    {
+      "id": "office365-itpros-1ab83dae91",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/06/10/microsoft-365-copilot-prep/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-365-copilot-prep",
+      "published": "2026-06-10T07:00:00.000Z",
+      "ingested": "2026-06-20T16:24:58.516Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/05/Slaart-and-Copilot.jpg?resize=840%2C664&#038;ssl=1",
+      "title_original": "Restricting Access is The Most Important Step in a Microsoft 365 Copilot Deployment",
+      "headline_no": "Begrens tilgang før du ruller ut Microsoft 365 Copilot",
+      "summary_no": "Redmond argumenterer for at tilgangskontroll er det aller viktigste steget før en Copilot-utrulling, fordi AI-en eksponerer alt innhold brukeren teknisk har tilgang til. Han anbefaler å starte med få lisenser via gruppebasert lisensiering og validere tilgangsstyringen med ekte brukeraktivitet. Microsoft melder om 20 millioner betalte Copilot-seter, men de fleste tenants er fortsatt uforberedt på datalekkasje.",
+      "topic": "ai",
+      "score": 39,
+      "tags": [
+        "copilot",
+        "tilgangskontroll",
+        "purview",
+        "deployment"
+      ]
+    },
+    {
+      "id": "ccmexec-f67be741ba",
+      "source_id": "ccmexec",
+      "source_name": "CCMEXEC (Jörgen Nilsson)",
+      "url": "https://ccmexec.com/2026/06/mmugse-summer-2026-meetup/",
+      "published": "2026-06-10T06:03:41.000Z",
+      "ingested": "2026-06-20T16:56:34.724Z",
+      "title_original": "MMUGSE – Summer 2026 meetup",
+      "headline_no": "MMUGSE samler device management-miljøet til sommermøte 18. juni",
+      "summary_no": "Microsoft Management User Group i Sverige holder meetup 18. juni 2026 med sesjoner om device management, Mac-håndtering i Intune og passordløs autentisering. Arrangementet retter seg mot Intune- og Windows-administratorer som vil holde seg oppdatert. Mest relevant for de som følger det nordiske Intune-miljøet.",
+      "topic": "endpoint",
+      "score": 18,
+      "tags": [
+        "event",
+        "mmugse",
+        "intune",
+        "community"
       ]
     },
     {
@@ -752,6 +2146,25 @@
       ]
     },
     {
+      "id": "prajwal-desai-a03296e446",
+      "source_id": "prajwal-desai",
+      "source_name": "Prajwal Desai",
+      "url": "https://www.prajwaldesai.com/windows-11-kb5094126-cumulative-update-released-for-june-2026/",
+      "published": "2026-06-09T19:04:17.000Z",
+      "ingested": "2026-06-20T16:58:05.721Z",
+      "title_original": "Windows 11 KB5094126 Cumulative Update Released for June 2026",
+      "headline_no": "Windows 11 juni-oppdatering KB5094126 gir delt lyd og multi-app kamera",
+      "summary_no": "Junis Patch Tuesday-oppdatering KB5094126 for Windows 11 introduserer Low Latency Profile, delt lyd (Shared Audio), støtte for kamera i flere apper samtidig og forbedret Secure Boot-kompatibilitet. Admins bør teste og rulle ut oppdateringen, som kombinerer nye funksjoner med månedlige sikkerhetsfikser.",
+      "topic": "endpoint",
+      "score": 44,
+      "tags": [
+        "windows-11",
+        "patch-tuesday",
+        "kb5094126",
+        "cumulative-update"
+      ]
+    },
+    {
       "id": "msrc-blog-fff4a92874",
       "source_id": "msrc-blog",
       "source_name": "Microsoft Security Blog",
@@ -769,6 +2182,125 @@
         "sentinel",
         "defender",
         "etterforskning"
+      ]
+    },
+    {
+      "id": "defender-endpoint-67f9c43873",
+      "source_id": "defender-endpoint",
+      "source_name": "Microsoft Defender for Endpoint Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-now-monitors-rpc-activity/ba-p/4523368",
+      "published": "2026-06-09T16:55:28.000Z",
+      "ingested": "2026-06-20T16:29:50.126Z",
+      "title_original": "Microsoft Defender now monitors RPC activity",
+      "headline_no": "Defender overvåker nå RPC-trafikk for å stoppe lateral bevegelse",
+      "summary_no": "Microsoft Defender begynner å overvåke eksterne RPC-kall, forstyrre ondsinnet aktivitet og eksponere telemetri i advanced hunting. RPC misbrukes ofte til lateral bevegelse, oppretting av tjenester og DCSync-baserte credential theft-angrep, så ny synlighet her tetter et viktig hull for sikkerhetsteam.",
+      "topic": "sikkerhet",
+      "score": 61,
+      "tags": [
+        "defender",
+        "rpc",
+        "lateral-bevegelse",
+        "advanced-hunting"
+      ]
+    },
+    {
+      "id": "defender-endpoint-575476a1de",
+      "source_id": "defender-endpoint",
+      "source_name": "Microsoft Defender for Endpoint Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/elevate-your-telemetry-using-custom-data-collection-in-microsoft/ba-p/4512530",
+      "published": "2026-06-09T16:00:00.000Z",
+      "ingested": "2026-06-20T16:29:50.126Z",
+      "title_original": "Elevate your telemetry using custom data collection in Microsoft Defender",
+      "headline_no": "Custom data collection i Defender brukes til å avsløre C2-trafikk",
+      "summary_no": "Microsoft deler konkrete eksempler på hvordan custom data collection og dynamisk tagging i Defender kan brukes til å oppdage command-and-control-kommunikasjon. For SOC-team gir det rikere telemetri og dypere jakt-muligheter på angriperaktivitet uten å forlate Defender-portalen.",
+      "topic": "sikkerhet",
+      "score": 47,
+      "tags": [
+        "defender",
+        "c2",
+        "telemetri",
+        "threat-hunting"
+      ]
+    },
+    {
+      "id": "prajwal-desai-b4a6ecb940",
+      "source_id": "prajwal-desai",
+      "source_name": "Prajwal Desai",
+      "url": "https://www.prajwaldesai.com/windows-11-26h1-updates-in-wsus-and-sccm/",
+      "published": "2026-06-09T12:40:40.000Z",
+      "ingested": "2026-06-20T16:58:05.721Z",
+      "title_original": "Get Windows 11 26H1 updates in WSUS and SCCM",
+      "headline_no": "Windows 11 26H1 er klar for utrulling via WSUS og SCCM",
+      "summary_no": "Windows 11 26H1 kan nå synkroniseres og distribueres gjennom WSUS og SCCM. Admins må aktivere oppdateringene manuelt under produktkategorien for Windows 11 før de kan rulles ut til enhetene. Signaliserer at 26H1-feature-oppdateringen er tilgjengelig for bedriftsdistribusjon.",
+      "topic": "endpoint",
+      "score": 39,
+      "tags": [
+        "windows-11",
+        "26h1",
+        "wsus",
+        "sccm",
+        "feature-update"
+      ]
+    },
+    {
+      "id": "admindroid-bc61282c3b",
+      "source_id": "admindroid",
+      "source_name": "AdminDroid Blog",
+      "url": "https://blog.admindroid.com/microsoft-requires-registered-authentication-methods-for-sspr-verification/",
+      "published": "2026-06-09T11:23:52.000Z",
+      "ingested": "2026-06-20T16:28:30.747Z",
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/Microsoft-Entra-ID-to-Require-Registered-Authentication-Methods-for-SSPR-Verification-2-150x150.png",
+      "title_original": "Microsoft Entra Requires Registered Authentication Methods for SSPR Verification",
+      "headline_no": "Entra krever registrerte autentiseringsmetoder for SSPR fra september",
+      "summary_no": "Fra 7. september 2026 godtar ikke Entra lenger passordtilbakestilling basert på telefonnummer eller e-post som bare ligger i katalogprofilen uten å være registrert som autentiseringsmetode. Admins bør sikre at brukerne har registrerte metoder, ellers kan de miste selvbetjent passordreset.",
+      "topic": "identitet",
+      "score": 45,
+      "tags": [
+        "entra",
+        "sspr",
+        "passordreset",
+        "autentisering",
+        "breaking-change"
+      ]
+    },
+    {
+      "id": "o365reports-e560d0b279",
+      "source_id": "o365reports",
+      "source_name": "Office 365 Reports (AdminDroid)",
+      "url": "https://o365reports.com/change-history-reports-in-sharepoint-online/?utm_source=rss&utm_medium=rss&utm_campaign=change-history-reports-in-sharepoint-online",
+      "published": "2026-06-09T10:29:00.000Z",
+      "ingested": "2026-06-20T16:29:50.126Z",
+      "hero_image": "https://o365reports.com/wp-content/uploads/2026/06/Select-the-change-history-report-type.png",
+      "title_original": "Track SharePoint Site Activities and Tenant Configuration Changes with Change History Reports",
+      "headline_no": "Nye change history-rapporter sporer admin-endringer i SharePoint",
+      "summary_no": "SharePoint admin center har fått change history-rapporter som viser hvem som endret hva, når og hvorfra — på både site- og tenant-nivå, opptil 180 dager tilbake. For IT-admins betyr det enklere oversikt over endringer i ekstern deling, eierskap og tilgangsstyring uten å grave i Purview-logger eller PowerShell-skript.",
+      "topic": "identitet",
+      "score": 30,
+      "tags": [
+        "sharepoint",
+        "audit",
+        "governance",
+        "ekstern-deling"
+      ]
+    },
+    {
+      "id": "office365-itpros-eeb3ca83fe",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/06/09/find-inactive-accounts/?utm_source=rss&utm_medium=rss&utm_campaign=find-inactive-accounts",
+      "published": "2026-06-09T07:00:00.000Z",
+      "ingested": "2026-06-20T16:24:58.516Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Microsoft-365-Licensing-Report-196.jpg?resize=840%2C415&#038;ssl=1",
+      "title_original": "How to Find Inactive (Stale) User Accounts",
+      "headline_no": "Finn inaktive kontoer og kutt Microsoft 365-lisenskostnader",
+      "summary_no": "Med prisøkninger på mange Microsoft 365-lisenser fra 1. juli 2026 viser Redmond hvordan du finner inaktive kontoer for å frigjøre ubrukte lisenser. Det oppdaterte Licensing Report-skriptet (V1.96) rapporterer sist innlogging, lisenser på deaktiverte kontoer og rom-postbokser som har lisenser. En enkel måte å kutte kostnader på før budsjettet eroderer unødvendig.",
+      "topic": "identitet",
+      "score": 38,
+      "tags": [
+        "powershell",
+        "lisensiering",
+        "stale-accounts",
+        "entra-id"
       ]
     },
     {
@@ -791,6 +2323,83 @@
       ]
     },
     {
+      "id": "windows-insider-2a018ea470",
+      "source_id": "windows-insider",
+      "source_name": "Windows Insider Blog",
+      "url": "https://blogs.windows.com/windows-insider/2026/06/08/announcing-new-builds-8-june-2026-2/",
+      "published": "2026-06-08T21:15:32.000Z",
+      "ingested": "2026-06-20T16:48:55.360Z",
+      "title_original": "Announcing new builds 8 June 2026",
+      "headline_no": "Windows 11 26H1 får egen Beta-kanal og nytt 28100-byggtog",
+      "summary_no": "Insiders i Experimental (26H1) begynner nå å motta bygg i en ny 28100-serie, samtidig som Microsoft introduserer en egen Beta (26H1)-kanal basert på 28000-serien. Brukere kan bytte mellom Beta og Experimental for 26H1 via en in-place oppgradering, uten ren ominstallasjon. Gir 26H1-testere samme valgfrihet mellom utviklingsgrener som øvrige kanaler.",
+      "topic": "endpoint",
+      "score": 35,
+      "tags": [
+        "windows-11",
+        "26h1",
+        "insider",
+        "beta"
+      ]
+    },
+    {
+      "id": "petervanderwoude-d82dfd1c23",
+      "source_id": "petervanderwoude",
+      "source_name": "All about Microsoft Intune (Peter van der Woude)",
+      "url": "https://petervanderwoude.nl/post/hiding-the-recommended-section-from-the-start-layout-and-multi-app-kiosk-mode/",
+      "published": "2026-06-08T17:45:00.000Z",
+      "ingested": "2026-06-20T16:51:06.456Z",
+      "title_original": "Hiding the recommended section from the Start layout and multi-app kiosk mode",
+      "headline_no": "Skjul anbefalt-seksjonen i Start-menyen på multi-app kiosk",
+      "summary_no": "Peter van der Woude forklarer hvordan du skjuler anbefalt-seksjonen fra Start-oppsettet, en konfigurasjon som er spesielt nyttig i multi-app kiosk-modus. Uten den fjerner du blant annet en lenke til Innstillinger som ellers dukker opp når det ikke finnes anbefalinger, og dermed ett ekstra element brukerne kan klikke seg vill på. Mindre er mer når du bygger låste kiosk-enheter.",
+      "topic": "endpoint",
+      "score": 34,
+      "tags": [
+        "intune",
+        "kiosk",
+        "start-meny",
+        "konfigurasjon"
+      ]
+    },
+    {
+      "id": "security-baselines-0cc8561f29",
+      "source_id": "security-baselines",
+      "source_name": "Microsoft Security Baselines Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-review-for-microsoft-edge-version-149/ba-p/4526371",
+      "published": "2026-06-08T11:32:08.000Z",
+      "ingested": "2026-06-20T16:41:20.332Z",
+      "title_original": "Security Review for Microsoft Edge version 149",
+      "headline_no": "Edge 149 trenger ingen nye sikkerhetsinnstillinger — bruk 139-baseline",
+      "summary_no": "Microsoft har gjennomgått de 7 nye innstillingene i Microsoft Edge 149 og konkludert med at ingen krever håndheving. Den eksisterende Edge 139-baselinen forblir anbefalt konfigurasjon, så admins trenger ikke gjøre endringer — et regneark med de nye innstillingene er likevel tilgjengelig.",
+      "topic": "sikkerhet",
+      "score": 32,
+      "tags": [
+        "edge",
+        "security-baseline",
+        "sct",
+        "configuration"
+      ]
+    },
+    {
+      "id": "jeffrey-appel-285210859a",
+      "source_id": "jeffrey-appel",
+      "source_name": "Jeffrey Appel — Microsoft Security",
+      "url": "https://jeffreyappel.nl/disable-alert-generation-for-unsanctioned-apps-in-microsoft-defender-for-cloud-apps/",
+      "published": "2026-06-08T11:01:32.000Z",
+      "ingested": "2026-06-20T16:42:52.739Z",
+      "title_original": "Disable alert generation for Unsanctioned Apps in Microsoft Defender for Cloud Apps",
+      "headline_no": "Slik demper du alarmstøy for usanksjonerte apper i Defender for Cloud Apps",
+      "summary_no": "Jeffrey Appel viser hvordan du slår av alarmgenerering for usanksjonerte apper i Microsoft Defender for Cloud Apps når MDCA er integrert med Defender for Endpoint. Uten justering kan blokkering av apper utløse unødvendig støy i alarmkøen. En praktisk how-to for å holde Shadow IT-oppdagelsen ren.",
+      "topic": "sikkerhet",
+      "score": 34,
+      "tags": [
+        "mdca",
+        "defender",
+        "shadow-it",
+        "mde",
+        "apper"
+      ]
+    },
+    {
       "id": "sentinel-blog-fdc76b40b9",
       "source_id": "sentinel-blog",
       "source_name": "Microsoft Sentinel Blog",
@@ -808,6 +2417,85 @@
         "sap",
         "defender-for-endpoint",
         "shai-hulud"
+      ]
+    },
+    {
+      "id": "call4cloud-6deffe1ca7",
+      "source_id": "call4cloud",
+      "source_name": "Call4Cloud (Rudy Ooms)",
+      "url": "https://patchmypc.com/blog/company-portal-not-installing-during-autopilot-enrollment-0x87d1041c/",
+      "published": "2026-06-08T08:56:33.000Z",
+      "ingested": "2026-06-20T16:56:34.724Z",
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/06/image-2.jpg",
+      "title_original": "Company Portal Not Installing During Autopilot Enrollment 0x87D1041C",
+      "headline_no": "Company Portal feiler i Autopilot etter mai-oppdatering – kode 0x87D1041C",
+      "summary_no": "Etter mai-oppdateringen til Windows slutter Company Portal plutselig å installeres under Autopilot pre-provisjonering, og enheter blir stående med feilkode 0x87D1041C. Bloggen sporer endringen til hvordan installasjon i systemkontekst nå håndteres. Dette rammer pågående Autopilot-utrullinger og bør sjekkes før storskala enrollment.",
+      "topic": "endpoint",
+      "score": 43,
+      "tags": [
+        "autopilot",
+        "company-portal",
+        "intune",
+        "windows-update"
+      ]
+    },
+    {
+      "id": "prajwal-desai-666f728d36",
+      "source_id": "prajwal-desai",
+      "source_name": "Prajwal Desai",
+      "url": "https://www.prajwaldesai.com/configuration-manager-hotfix-kb37942646/",
+      "published": "2026-06-08T07:25:42.000Z",
+      "ingested": "2026-06-20T16:59:37.987Z",
+      "title_original": "ConfigMgr Hotfix KB37942646 for CMG VMSS Image Update",
+      "headline_no": "Ny ConfigMgr-hotfix oppdaterer CMG-image for skyadministrerte klienter",
+      "summary_no": "Microsoft ga 2. juni 2026 ut hotfix KB37942646 for image-en til Cloud Management Gateway sitt VM-skaleringssett (VMSS). Oppdateringen retter den CMG-komponenten som håndterer ConfigMgr-klienter over internett. Admins som bruker CMG bør oppdatere skaleringssett-image-en for å holde fjernadministrasjonen stabil.",
+      "topic": "endpoint",
+      "score": 38,
+      "tags": [
+        "configmgr",
+        "cmg",
+        "hotfix",
+        "sccm"
+      ]
+    },
+    {
+      "id": "office365-itpros-37b899b53a",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/06/08/blockcontentanalysisservices-label/?utm_source=rss&utm_medium=rss&utm_campaign=blockcontentanalysisservices-label",
+      "published": "2026-06-08T07:00:00.000Z",
+      "ingested": "2026-06-20T16:24:58.516Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/05/Edit-Sensitivity-Label.jpg?resize=840%2C467&#038;ssl=1",
+      "title_original": "Microsoft Extends Sensitivity Label Block for Connected Services",
+      "headline_no": "Ny etikettinnstilling blokkerer Copilot fra å lese filinnhold",
+      "summary_no": "Message center-varsel MC1297982 utvider en sensitivitetsetikett-innstilling som hindrer Microsoft 365 Copilot og andre tilkoblede tjenester i å analysere innhold i Word, Excel og PowerPoint. Innstillingen er en «advanced setting» som kun kan konfigureres via PowerShell — den finnes ikke i Purview-portalens grensesnitt. Admins som vil skjerme sensitivt innhold fra AI bør merke seg endringen.",
+      "topic": "sikkerhet",
+      "score": 45,
+      "tags": [
+        "purview",
+        "sensitivity-labels",
+        "copilot",
+        "mc1297982"
+      ]
+    },
+    {
+      "id": "damienbod-1a00400169",
+      "source_id": "damienbod",
+      "source_name": "damienbod — Software Engineering",
+      "url": "https://damienbod.com/2026/06/08/asp-net-core-background-tasks-with-ncronjob-and-signalr/",
+      "published": "2026-06-08T05:39:20.000Z",
+      "ingested": "2026-06-20T16:26:52.164Z",
+      "hero_image": "https://damienbod.com/wp-content/uploads/2026/05/2026-05-14-11_25_54-aspnetcorencronjob-running-nonconconcurrentjob.cs-microsoft-visual-studio.png",
+      "title_original": "ASP.NET Core background tasks with NCronJob and SignalR",
+      "headline_no": "Bakgrunnsjobber i ASP.NET Core med NCronJob og SignalR",
+      "summary_no": "En teknisk gjennomgang av hvordan du kjører planlagte bakgrunnsjobber i ASP.NET Core med NCronJob og pusher status til klienter via SignalR. Retter seg mot .NET-utviklere, ikke IT-administratorer. Faller utenfor kjerneområdet Microsoft-drift og -sikkerhet.",
+      "topic": "identitet",
+      "score": 7,
+      "tags": [
+        "aspnet-core",
+        "ncronjob",
+        "signalr",
+        "dotnet"
       ]
     },
     {
