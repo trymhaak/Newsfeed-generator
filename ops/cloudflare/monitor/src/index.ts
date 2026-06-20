@@ -25,6 +25,8 @@ export interface Env {
   WEBHOOK_URL?: string;
   /** "discord" (default) or "slack" — selects the JSON body shape. */
   WEBHOOK_KIND?: string;
+  /** Telegram chat id (secret) when WEBHOOK_KIND=telegram. */
+  TELEGRAM_CHAT_ID?: string;
 }
 
 interface Health {
@@ -97,7 +99,7 @@ async function alert(env: Env, text: string): Promise<void> {
   }
   const kind = (env.WEBHOOK_KIND ?? 'discord').toLowerCase();
   // Discord expects { content }, Slack expects { text }.
-  const body = kind === 'slack' ? { text } : { content: text };
+  const body = kind === 'telegram' ? { chat_id: env.TELEGRAM_CHAT_ID, text } : kind === 'slack' ? { text } : { content: text };
   const res = await fetch(env.WEBHOOK_URL, {
     method: 'POST',
     headers: { 'content-type': 'application/json' },

@@ -16,7 +16,7 @@ crons = ["0 */3 * * *"]
 # articles.json is published there (see ops/cloudflare/pages/README.md).
 ARTICLES_URL = "https://raw.githubusercontent.com/trymhaak/Newsfeed-generator/main/data/articles.json"
 STALE_HOURS = "12"
-WEBHOOK_KIND = "discord"   # or "slack"
+WEBHOOK_KIND = "telegram"   # discord | slack | telegram
 
 # WEBHOOK_URL is a SECRET — never commit it. Set it after deploy with:
 #   wrangler secret put WEBHOOK_URL

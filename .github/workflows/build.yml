@@ -1,18 +1,24 @@
 name: Build & Deploy
 
+# Enrichment now runs on the Mac mini via launchd (see ops/launchd/ and
+# CUTOVER-RUNBOOK.md), which commits refreshed data/articles.json to main. This
+# workflow is build + deploy ONLY — it publishes whatever is on main to GitHub
+# Pages.
+#
+# Removed in the production-readiness pass:
+#   - the auth-gated `pipeline` job: it had no repo secrets, so its enrichment
+#     steps were ALWAYS [skipped] — dead code that made CI look like it ran the
+#     pipeline when it did not (audit B1 / Ledd 5).
+#   - the every-6-hours `schedule`: a cron deploy that republished identical
+#     static data was always green and masked 5 weeks of staleness (audit B3).
+#     Deploys now happen on a real data push; staleness is caught out-of-band by
+#     the Cloudflare monitor instead.
 on:
-  schedule:
-    - cron: '0 */6 * * *'
   workflow_dispatch:
-    inputs:
-      skip_pipeline:
-        description: 'Skip pipeline (build & deploy only)'
-        type: boolean
-        default: false
   push:
     branches: [main]
 
-# Least-privilege default — jobs that need write override per-job.
+# Least-privilege default — the deploy job overrides for gh-pages.
 permissions:
   contents: read
 
@@ -21,67 +27,10 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  pipeline:
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write  # needed to commit refreshed articles back to main
-    steps:
-      - uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871  # v4.2.1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020  # v4.4.0
-        with:
-          node-version: '22'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Detect AI auth
-        id: auth
-        env:
-          OAUTH: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          APIKEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: |
-          if [ -n "$OAUTH" ] || [ -n "$APIKEY" ]; then
-            echo "has_auth=true" >> "$GITHUB_OUTPUT"
-            echo "✓ AI auth detected"
-          else
-            echo "has_auth=false" >> "$GITHUB_OUTPUT"
-            echo "⚠ No CLAUDE_CODE_OAUTH_TOKEN or ANTHROPIC_API_KEY set — skipping enrichment"
-          fi
-
-      - name: Install Claude CLI
-        if: ${{ inputs.skip_pipeline != true && steps.auth.outputs.has_auth == 'true' }}
-        run: npm install -g @anthropic-ai/claude-code
-
-      - name: Run pipeline
-        if: ${{ inputs.skip_pipeline != true && steps.auth.outputs.has_auth == 'true' }}
-        env:
-          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: npm run pipeline
-
-      - name: Commit updated articles
-        run: |
-          git add data/articles.json
-          if git diff --staged --quiet; then
-            echo "No new articles."
-          else
-            git config user.name "newsfeed-bot"
-            git config user.email "newsfeed-bot@users.noreply.github.com"
-            git commit -m "data: refresh articles ($(date -u +%Y-%m-%dT%H:%MZ))"
-            git push
-          fi
-
   deploy:
-    needs: [pipeline]
-    if: always() && (needs.pipeline.result == 'success' || needs.pipeline.result == 'skipped')
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # peaceiris pushes built site to gh-pages branch
+      contents: write  # peaceiris pushes the built site to the gh-pages branch
     steps:
       - uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871  # v4.2.1
         with:
@@ -99,7 +48,8 @@ jobs:
         run: npm run build
 
       # Sanitize commit message — never interpolate untrusted GitHub context
-      # directly into action inputs (script-injection risk).
+      # directly into action inputs (script-injection risk). head_commit is null
+      # on workflow_dispatch, so the empty-string fallback below covers that.
       - name: Prepare commit message
         id: msg
         env:
