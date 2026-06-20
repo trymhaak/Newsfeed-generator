@@ -21,6 +21,10 @@ cd "$REPO_DIR"
 # starts with a minimal environment). The plist also sets PATH; this is a backup.
 export PATH="$HOME/.claude/local:$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 
+# Long-lived Claude OAuth token (subscription auth) so enrichment authenticates
+# under launchd, which cannot reach the GUI login Keychain.
+set -a; . "$HOME/.config/claude/oauth-token.env" 2>/dev/null || true; set +a
+
 # If you change this, also update ARTICLES_URL in
 # ops/cloudflare/monitor/wrangler.toml — the monitor reads the published file
 # from a specific branch and would otherwise watch the wrong one.
