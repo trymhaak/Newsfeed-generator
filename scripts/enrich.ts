@@ -10,9 +10,9 @@ import { TOPICS } from '../src/lib/types.ts';
 
 const RAW_IN = 'data/_raw.json';
 const PENDING_OUT = 'data/_pending.json';
-const BATCH_SIZE = 8;
-const CLAUDE_TIMEOUT_MS = 120_000; // hard per-call cap (was unbounded → could hang forever)
-const MAX_RETRIES = 2; // up to 3 attempts total for transient (non-quota) failures
+const BATCH_SIZE = Number(process.env.ENRICH_BATCH_SIZE) || 6;
+const CLAUDE_TIMEOUT_MS = Number(process.env.CLAUDE_TIMEOUT_MS) || 240_000; // env-tunable per-call cap (slow inference under load)
+const MAX_RETRIES = Number(process.env.ENRICH_MAX_RETRIES) || 2; // env-tunable; N+1 attempts for transient failures
 const RETRY_BASE_MS = 2_000;
 
 interface ClaudeEnrichment {
