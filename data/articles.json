@@ -1,6 +1,25 @@
 {
-  "generated_at": "2026-06-22T17:17:59.771Z",
+  "generated_at": "2026-06-22T17:54:43.620Z",
   "articles": [
+    {
+      "id": "petervanderwoude-9ff2119633",
+      "source_id": "petervanderwoude",
+      "source_name": "All about Microsoft Intune (Peter van der Woude)",
+      "url": "https://petervanderwoude.nl/post/customizing-the-account-settings-in-start-layout/",
+      "published": "2026-06-22T17:45:00.000Z",
+      "ingested": "2026-06-22T17:54:43.576Z",
+      "title_original": "Customizing the account settings in Start layout",
+      "headline_no": "Slik styrer du kontoinnstillingene i Start-menyen på delte PC-er",
+      "summary_no": "Peter van der Woude viser hvordan IT-administratorer kan tilpasse kontoinnstillingene i Start-menyens layout, noe som er spesielt nyttig på delte enheter som kiosker og Shared PC-er. Innlegget er del av en serie som går gjennom de ulike delene av Start-layouten. På vanlige enheter bør valgene overlates til brukeren, men i kontrollerte miljøer gir dette admins ekstra styring.",
+      "topic": "endpoint",
+      "score": 35,
+      "tags": [
+        "intune",
+        "start-meny",
+        "shared-pc",
+        "kiosk"
+      ]
+    },
     {
       "id": "msrc-blog-927c3bc281",
       "source_id": "msrc-blog",
