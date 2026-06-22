@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-22T15:03:07.138Z",
+  "generated_at": "2026-06-22T17:17:59.771Z",
   "articles": [
+    {
+      "id": "msrc-blog-927c3bc281",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/22/one-intrusion-two-cyberattackers-uncovering-parallel-threat-activity/",
+      "published": "2026-06-22T16:00:00.000Z",
+      "ingested": "2026-06-22T17:17:59.722Z",
+      "title_original": "One intrusion, two cyberattackers: Uncovering parallel threat activity",
+      "headline_no": "Storm-2603 utnyttet lokal SharePoint — DART fant to angripere samtidig",
+      "summary_no": "Microsofts DART-team etterforsket et tilsynelatende rutinemessig ransomware-angrep og oppdaget at to urelaterte trusselaktører opererte i miljøet samtidig. Storm-2603 hadde utnyttet kjente sårbarheter i lokale SharePoint-servere siden midten av 2025, og brukte legitime verktøy som Velociraptor med SYSTEM-rettigheter for å etablere dyp og varig tilgang. Driver du SharePoint on-prem, bør du jakte på tegn til kompromittering og prioritere patching — overlappende angrep gjør deteksjon vanskeligere.",
+      "topic": "sikkerhet",
+      "score": 68,
+      "tags": [
+        "sharepoint",
+        "storm-2603",
+        "ransomware",
+        "dart",
+        "velociraptor"
+      ]
+    },
     {
       "id": "jeffrey-appel-ef8bbd21cb",
       "source_id": "jeffrey-appel",
