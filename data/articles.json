@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-06-22T17:54:43.620Z",
+  "generated_at": "2026-06-22T20:15:20.480Z",
   "articles": [
+    {
+      "id": "msrc-blog-8f4c502779",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/22/guarding-ai-memory/",
+      "published": "2026-06-22T19:07:28.000Z",
+      "ingested": "2026-06-22T20:15:20.431Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-48.webp",
+      "title_original": "Guarding AI memory",
+      "headline_no": "Angripere kan plante falske minner i AI-agenter for å styre dem",
+      "summary_no": "Microsoft beskriver en ny angrepsklasse der ondsinnede aktører gradvis former en AI-agents oppførsel eller planter falske «minner» som påvirker resonnementet lenge etter at den opprinnelige konteksten er borte og brukerens årvåkenhet er lavere. Når Copilot og agenter får varig minne, vokser angrepsflaten – og Microsoft svarer med dybdeforsvar på tvers av lagring, gjenfinning, modellinteraksjon og brukerkontroll. Relevant for alle som ruller ut agentbaserte AI-tjenester i Microsoft 365.",
+      "topic": "ai",
+      "score": 56,
+      "tags": [
+        "ai-sikkerhet",
+        "agenter",
+        "copilot",
+        "memory",
+        "microsoft-365"
+      ]
+    },
     {
       "id": "petervanderwoude-9ff2119633",
       "source_id": "petervanderwoude",
