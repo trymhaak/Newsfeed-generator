@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-22T06:01:47.374Z",
+  "generated_at": "2026-06-22T07:04:23.952Z",
   "articles": [
+    {
+      "id": "office365-itpros-083793d72e",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/06/22/powershell-woes-and-cmdlets/?utm_source=rss&utm_medium=rss&utm_campaign=powershell-woes-and-cmdlets",
+      "published": "2026-06-22T07:00:00.000Z",
+      "ingested": "2026-06-22T07:04:23.899Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/PowerShell-assembly-problems.jpg?resize=840%2C473&#038;ssl=1",
+      "title_original": "The Grief and Joys of New PowerShell Releases",
+      "headline_no": "Nyeste Graph SDK og Exchange Online-modul nekter å kjøre i samme økt",
+      "summary_no": "Etter oppdatering til Microsoft Graph PowerShell SDK V2.38 og Exchange Online Management V3.10 kolliderer modulenes delte assemblies, slik at Connect-MgGraph og Connect-ExchangeOnline ikke lenger kan kjøres i samme PowerShell-økt – uansett rekkefølge får du «Method not found» eller en NullReferenceException. Dette rammer drifts- og automatiseringsskript som logger inn mot både Entra/Graph og Exchange Online i samme sesjon. Test skriptene grundig før du ruller ut de nyeste modulversjonene.",
+      "topic": "identitet",
+      "score": 50,
+      "tags": [
+        "powershell",
+        "microsoft-graph",
+        "exchange-online",
+        "automation"
+      ]
+    },
     {
       "id": "msendpointmgr-010b946fff",
       "source_id": "msendpointmgr",
