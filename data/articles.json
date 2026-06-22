@@ -1,6 +1,25 @@
 {
-  "generated_at": "2026-06-22T20:15:20.480Z",
+  "generated_at": "2026-06-22T23:43:41.678Z",
   "articles": [
+    {
+      "id": "m365-roadmap-77f501dfae",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566201",
+      "published": "2026-06-22T23:00:47.000Z",
+      "ingested": "2026-06-22T23:43:41.442Z",
+      "title_original": "Microsoft Teams: Block all identified external bots automatically from joining your meetings",
+      "headline_no": "Teams blokkerer snart alle eksterne AI-bots fra møter automatisk",
+      "summary_no": "Microsoft utvider møtekontrollene i Teams med et nytt valg som automatisk blokkerer alle identifiserte eksterne bots fra å bli med i møter. For IT-admins gir det enklere styring av tredjeparts AI-notatverktøy og uvedkommende agenter som ellers kan logge sensitive møter. Funksjonen er ventet generelt tilgjengelig i august 2026.",
+      "topic": "sikkerhet",
+      "score": 46,
+      "tags": [
+        "teams",
+        "bots",
+        "møtesikkerhet",
+        "ai-agenter"
+      ]
+    },
     {
       "id": "msrc-blog-8f4c502779",
       "source_id": "msrc-blog",
@@ -2396,6 +2415,25 @@
         "aws-bedrock",
         "ai-governance",
         "multi-cloud"
+      ]
+    },
+    {
+      "id": "m365-roadmap-a8b8680fdd",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=565374",
+      "published": "2026-06-09T20:46:16.000Z",
+      "ingested": "2026-06-22T23:43:41.446Z",
+      "title_original": "Microsoft Purview: Endpoint Data Loss Prevention - Policy Sync & Device Health AI-Powered Investigation",
+      "headline_no": "Purview får AI-feilsøking for endpoint-DLP på enheter",
+      "summary_no": "Microsoft Purview får AI-drevet innsyn i hvordan endpoint-DLP-policyer rulles ut på enheter, slik at admins kan følge synkroniseringsstatus og dekningsgrad. Verktøyet peker ut berørte enheter, forklarer hvorfor synkroniseringen feiler og foreslår konkrete tiltak for å rette det. For DLP-admins betyr det raskere feilsøking når policyer ikke trer i kraft – GA ventes i september 2026.",
+      "topic": "sikkerhet",
+      "score": 42,
+      "tags": [
+        "purview",
+        "dlp",
+        "endpoint-dlp",
+        "ai"
       ]
     },
     {
