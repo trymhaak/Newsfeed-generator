@@ -1,6 +1,25 @@
 {
-  "generated_at": "2026-06-22T07:04:23.952Z",
+  "generated_at": "2026-06-22T07:41:08.101Z",
   "articles": [
+    {
+      "id": "thomas-maurer-a835a33dd3",
+      "source_id": "thomas-maurer",
+      "source_name": "Thomas Maurer",
+      "url": "https://www.thomasmaurer.ch/2026/06/azure-local-simplified-machine-provisioning/",
+      "published": "2026-06-22T07:38:56.000Z",
+      "ingested": "2026-06-22T07:41:08.038Z",
+      "title_original": "Azure Local Simplified Machine Provisioning",
+      "headline_no": "Azure Local lar deg rulle ut edge-servere uten IT-folk på stedet",
+      "summary_no": "Azure Local får forenklet maskinprovisjonering som fjerner mye av det manuelle arbeidet med å sette opp servere på avdelingskontorer, i butikker og på fjernlokasjoner. Tidligere krevde slik utrulling kvalifisert IT-personell fysisk på stedet — tregt, dyrt og feilutsatt. For admins som drifter hybride edge-miljøer betyr dette raskere og mer standardisert utrulling uten å sende folk ut.",
+      "topic": "endpoint",
+      "score": 28,
+      "tags": [
+        "azure-local",
+        "edge",
+        "provisjonering",
+        "hybrid"
+      ]
+    },
     {
       "id": "office365-itpros-083793d72e",
       "source_id": "office365-itpros",
