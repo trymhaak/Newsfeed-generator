@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-06-20T17:34:12.630Z",
+  "generated_at": "2026-06-22T06:01:47.374Z",
   "articles": [
+    {
+      "id": "msendpointmgr-010b946fff",
+      "source_id": "msendpointmgr",
+      "source_name": "MSEndpointMgr",
+      "url": "https://msendpointmgr.com/2026/06/22/epm-part-2-before-you-remove-local-admin-how-to-use-intune-endpoint-privilege-management-audit-mode-to-understand-your-environment/",
+      "published": "2026-06-22T06:00:00.000Z",
+      "ingested": "2026-06-22T06:01:47.307Z",
+      "hero_image": "https://msendpointmgr.com/wp-content/uploads/2026/06/Designer-12.png",
+      "title_original": "EPM Part 2: Before you remove local admin: How to use Intune Endpoint Privilege Management audit mode to understand your environment",
+      "headline_no": "Bruk Intune EPM-revisjonsmodus før du fjerner lokale admin-rettigheter",
+      "summary_no": "MSEndpointMgr viser hvordan revisjonsmodus i Intune Endpoint Privilege Management (EPM) kartlegger hva brukerne faktisk eleverer, før du fjerner lokale admin-rettigheter. Den vanligste tabben er å bygge eleveringsregler på antakelser i stedet for data, noe som gir blokkerte brukere, stadige unntak og en utrulling som stopper opp. Kjør audit-modus først, så får du treffsikre regler og en innstramming brukerne faktisk tåler.",
+      "topic": "endpoint",
+      "score": 41,
+      "tags": [
+        "intune",
+        "epm",
+        "local-admin",
+        "audit-mode",
+        "least-privilege"
+      ]
+    },
     {
       "id": "msrc-update-guide-4cd64470e8",
       "source_id": "msrc-update-guide",
