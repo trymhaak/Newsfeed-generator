@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-22T07:41:08.101Z",
+  "generated_at": "2026-06-22T15:03:07.138Z",
   "articles": [
+    {
+      "id": "jeffrey-appel-ef8bbd21cb",
+      "source_id": "jeffrey-appel",
+      "source_name": "Jeffrey Appel — Microsoft Security",
+      "url": "https://jeffreyappel.nl/configure-ai-agent-runtime-protection-preview-with-microsoft-defender-for-endpoint/",
+      "published": "2026-06-22T14:59:03.000Z",
+      "ingested": "2026-06-22T15:03:07.100Z",
+      "title_original": "Configure AI agent runtime protection (preview) with Microsoft Defender for Endpoint",
+      "headline_no": "Defender for Endpoint får sanntidsbeskyttelse for AI-agenter (preview)",
+      "summary_no": "Microsoft har lansert en forhåndsversjon av runtime-beskyttelse for AI-agenter i Defender for Endpoint. Funksjonen overvåker agenter som kan lese filer, kjøre kommandoer og kalle API-er på vegne av brukere – en raskt voksende angrepsflate. IT-admins får dermed et nytt verktøy for å oppdage og stanse misbruk av autonome AI-verktøy på endepunktene.",
+      "topic": "sikkerhet",
+      "score": 51,
+      "tags": [
+        "defender-for-endpoint",
+        "ai-agenter",
+        "preview",
+        "runtime-protection",
+        "endpoint"
+      ]
+    },
     {
       "id": "thomas-maurer-a835a33dd3",
       "source_id": "thomas-maurer",
