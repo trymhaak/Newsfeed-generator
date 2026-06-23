@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-06-23T10:38:26.034Z",
+  "generated_at": "2026-06-23T12:17:44.642Z",
   "articles": [
+    {
+      "id": "admindroid-e3494d9ecd",
+      "source_id": "admindroid",
+      "source_name": "AdminDroid Blog",
+      "url": "https://blog.admindroid.com/manually-create-incidents-or-alerts-in-microsoft-defender/",
+      "published": "2026-06-23T11:59:33.000Z",
+      "ingested": "2026-06-23T12:17:44.600Z",
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/Create-Incidents-and-Alerts-in-Microsoft-Defender-150x150.png",
+      "title_original": "Microsoft Defender Introduces Manual Incident and Alert Creation",
+      "headline_no": "Defender lar analytikere opprette hendelser og varsler manuelt",
+      "summary_no": "Microsoft Defender får i preview muligheten til å opprette hendelser og varsler manuelt, slik at analytikere kan starte og dokumentere undersøkelser direkte i portalen uten å vente på automatiske deteksjoner. Det dekker brukerrapporterte trusler, threat hunting-funn og eksterne varsler som tidligere måtte håndteres i separate sakssystemer. For SOC-team betyr det samlet sporing og eierskap på ett sted.",
+      "topic": "sikkerhet",
+      "score": 36,
+      "tags": [
+        "defender",
+        "incident response",
+        "soc",
+        "preview",
+        "threat hunting"
+      ]
+    },
     {
       "id": "o365reports-4de152e1bc",
       "source_id": "o365reports",
