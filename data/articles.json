@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-06-22T23:43:41.678Z",
+  "generated_at": "2026-06-23T07:05:19.890Z",
   "articles": [
+    {
+      "id": "office365-itpros-0ca69028c6",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/06/23/automating-microsoft-365-3rd/?utm_source=rss&utm_medium=rss&utm_campaign=automating-microsoft-365-3rd",
+      "published": "2026-06-23T07:00:00.000Z",
+      "ingested": "2026-06-23T07:05:19.853Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/2.-Automating-MS365-with-PowerShell-Cover-2027-Edition-212x300.jpg?resize=212%2C300&#038;ssl=1",
+      "title_original": "Automating Microsoft 365 with PowerShell (2027 Edition)",
+      "headline_no": "Tredje utgave av PowerShell-bok for Microsoft 365-automatisering ute nå",
+      "summary_no": "Office 365 for IT Pros-teamet har gitt ut tredje utgave av eBoken «Automating Microsoft 365 with PowerShell», med nye praktiske eksempler basert på Microsoft Graph PowerShell SDK. eBoken er tilgjengelig på Gumroad nå, og papirutgaven kommer 1. juli som del av Microsoft 365 for IT Pros (2027-utgaven). Nyttig oppslagsverk for admins som vil erstatte manuelle rutiner med skalerbare, skriptdrevne prosesser.",
+      "topic": "identitet",
+      "score": 23,
+      "tags": [
+        "powershell",
+        "automatisering",
+        "microsoft-365",
+        "graph-sdk",
+        "bok"
+      ]
+    },
     {
       "id": "m365-roadmap-77f501dfae",
       "source_id": "m365-roadmap",
