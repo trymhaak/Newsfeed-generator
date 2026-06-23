@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-23T10:22:09.628Z",
+  "generated_at": "2026-06-23T10:38:26.034Z",
   "articles": [
+    {
+      "id": "o365reports-4de152e1bc",
+      "source_id": "o365reports",
+      "source_name": "Office 365 Reports (AdminDroid)",
+      "url": "https://o365reports.com/identify-inactive-users-in-active-directory-using-powershell/?utm_source=rss&utm_medium=rss&utm_campaign=identify-inactive-users-in-active-directory-using-powershell",
+      "published": "2026-06-23T10:34:41.000Z",
+      "ingested": "2026-06-23T10:38:26.002Z",
+      "hero_image": "https://s.w.org/images/core/emoji/14.0.0/72x72/1f625.png",
+      "title_original": "Identify Dormant Users in Active Directory Using PowerShell",
+      "headline_no": "Slik finner du sovende AD-kontoer nøyaktig med PowerShell",
+      "summary_no": "Inaktive brukerkontoer hoper seg opp i Active Directory og blir både en sikkerhetsrisiko og rot i katalogen. AdminDroid forklarer hvorfor de vanlige attributtene LastLogonDate og lastLogonTimestamp kan bomme med opptil 14 dager på grunn av replikering, og viser hvordan du i stedet bruker lastLogon-attributtet via PowerShell for å hente faktisk siste pålogging. Det krever spørringer mot alle domenekontrollere, men gir et nøyaktig grunnlag for opprydding og tilgangsgjennomganger.",
+      "topic": "identitet",
+      "score": 28,
+      "tags": [
+        "active-directory",
+        "powershell",
+        "inaktive-brukere",
+        "offboarding"
+      ]
+    },
     {
       "id": "prajwal-desai-b226dd3421",
       "source_id": "prajwal-desai",
