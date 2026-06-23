@@ -1,6 +1,25 @@
 {
-  "generated_at": "2026-06-23T14:04:50.267Z",
+  "generated_at": "2026-06-23T17:48:13.737Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-c751a726ef",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45504",
+      "published": "2026-06-23T14:00:00.000Z",
+      "ingested": "2026-06-23T17:48:13.678Z",
+      "title_original": "CVE-2026-45504 Microsoft Exchange Server Elevation of Privilege Vulnerability",
+      "headline_no": "CVE-2026-45504: Exchange-sårbarhet får kun informasjonsendring",
+      "summary_no": "MSRC har oppdatert oppføringen for elevasjon-av-rettigheter-sårbarheten CVE-2026-45504 i Exchange Server, men endringen er rent informasjonell: kun en anerkjennelse er lagt til. Ingen ny teknisk informasjon eller sikkerhetsoppdatering følger med revisjonen, så IT-administratorer som allerede har vurdert sårbarheten trenger ikke å foreta seg noe nytt.",
+      "topic": "sikkerhet",
+      "score": 27,
+      "tags": [
+        "exchange",
+        "cve-2026-45504",
+        "privilege-escalation",
+        "msrc"
+      ]
+    },
     {
       "id": "msrc-update-guide-59317e3b83",
       "source_id": "msrc-update-guide",
