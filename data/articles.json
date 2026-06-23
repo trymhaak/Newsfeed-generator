@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-23T07:05:19.890Z",
+  "generated_at": "2026-06-23T10:22:09.628Z",
   "articles": [
+    {
+      "id": "prajwal-desai-b226dd3421",
+      "source_id": "prajwal-desai",
+      "source_name": "Prajwal Desai",
+      "url": "https://www.prajwaldesai.com/using-sql-query-to-monitor-collection-evaluation-in-sccm/",
+      "published": "2026-06-23T10:14:45.000Z",
+      "ingested": "2026-06-23T10:22:09.593Z",
+      "title_original": "Using SQL Query to Monitor Collection Evaluation in SCCM",
+      "headline_no": "Overvåk collection-evaluering i SCCM med én enkel SQL-spørring",
+      "summary_no": "Prajwal Desai viser hvordan en enkel SQL-spørring mot ConfigMgr-databasen lar deg se hvor lang tid collection-evalueringen faktisk tar. For admins med store eller nestede collection-strukturer kan dette avdekke flaskehalser som tynger konsollen og forsinker distribusjoner. Teknikken krever kun lesetilgang til site-databasen.",
+      "topic": "endpoint",
+      "score": 29,
+      "tags": [
+        "sccm",
+        "configmgr",
+        "sql",
+        "collections",
+        "overvåking"
+      ]
+    },
     {
       "id": "office365-itpros-0ca69028c6",
       "source_id": "office365-itpros",
