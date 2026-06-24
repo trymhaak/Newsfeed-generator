@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T07:06:56.840Z",
+  "generated_at": "2026-06-24T08:25:27.376Z",
   "articles": [
     {
       "id": "msrc-update-guide-d40538bae7",
@@ -18,6 +18,25 @@
         "linux-kernel",
         "use-after-free",
         "msrc"
+      ]
+    },
+    {
+      "id": "thomas-maurer-ab5a170188",
+      "source_id": "thomas-maurer",
+      "source_name": "Thomas Maurer",
+      "url": "https://www.thomasmaurer.ch/2026/06/how-to-deploy-azure-local-small-form-factor-sff-bringing-azure-to-the-edge/",
+      "published": "2026-06-24T08:22:18.000Z",
+      "ingested": "2026-06-24T08:25:27.335Z",
+      "title_original": "How to Deploy Azure Local Small Form Factor (SFF) – Bringing Azure to the Edge",
+      "headline_no": "Azure Local får kompakt Small Form Factor for edge-lokasjoner",
+      "summary_no": "Thomas Maurer forklarer hvordan du ruller ut Azure Local på kompakte Small Form Factor-enheter — et nytt deployment-alternativ for edge-scenarier med lite plass. SFF lar deg kjøre Azure-infrastruktur lokalt i butikker, filialer eller på fabrikkgulv, nær der dataene genereres. For IT-admins betyr det Azure-tjenester på edge uten å sette av plass til et fullt server-rack.",
+      "topic": "endpoint",
+      "score": 27,
+      "tags": [
+        "azure-local",
+        "edge",
+        "sff",
+        "infrastruktur"
       ]
     },
     {
