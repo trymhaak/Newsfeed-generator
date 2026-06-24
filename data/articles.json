@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-24T11:01:25.631Z",
+  "generated_at": "2026-06-24T11:23:10.091Z",
   "articles": [
+    {
+      "id": "admindroid-c319f2bd9e",
+      "source_id": "admindroid",
+      "source_name": "AdminDroid Blog",
+      "url": "https://blog.admindroid.com/cleanup-inactive-sharepoint-online-sites-using-power-automate/",
+      "published": "2026-06-24T11:14:07.000Z",
+      "ingested": "2026-06-24T11:23:10.016Z",
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/How-to-Automate-Inactive-SharePoint-Sites-Cleanup-Using-Power-Automate-150x150.png",
+      "title_original": "How to Automate Inactive SharePoint Sites Cleanup Using Power Automate",
+      "headline_no": "Slik rydder du inaktive SharePoint-sider automatisk med Power Automate",
+      "summary_no": "AdminDroid viser hvordan en godkjenningsbasert Power Automate-flyt automatisk finner inaktive SharePoint Online-sider og lar sideeierne selv avgjøre om de skal beholdes eller slettes. For IT-admins betyr det mindre manuell gjennomgang, bedre kontroll på lagringsforbruk og enklere livssyklusstyring i et voksende Microsoft 365-miljø.",
+      "topic": "sikkerhet",
+      "score": 26,
+      "tags": [
+        "sharepoint",
+        "power-automate",
+        "governance",
+        "m365"
+      ]
+    },
     {
       "id": "andrew-taylor-83761b180a",
       "source_id": "andrew-taylor",
