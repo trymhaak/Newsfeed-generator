@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T00:51:58.925Z",
+  "generated_at": "2026-06-24T01:03:19.939Z",
   "articles": [
     {
       "id": "m365-roadmap-ee978c4b0d",
@@ -74,6 +74,45 @@
         "m365-copilot",
         "copilot-search",
         "ai"
+      ]
+    },
+    {
+      "id": "windows-it-pro-7da7cb0128",
+      "source_id": "windows-it-pro",
+      "source_name": "Windows IT Pro Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/best-practices-for-deploying-secure-boot-certificate-updates/ba-p/4529884",
+      "published": "2026-06-23T21:00:00.000Z",
+      "ingested": "2026-06-24T01:03:19.875Z",
+      "title_original": "Best practices for deploying Secure Boot certificate updates",
+      "headline_no": "Secure Boot-sertifikater: slik fullfører du utrullingen trygt",
+      "summary_no": "Microsoft deler mønstrene som fungerer i praksis for utrulling av Secure Boot-sertifikatoppdateringer: start med piloter, kombiner OEM-firmware med Windows-sikkerhetsoppdateringer, og bruk verktøy som Intune, Group Policy, Azure og PowerShell. IT-admins som ennå ikke er ferdige med utrullingen, bør holde stø kurs før de gamle sertifikatene faller bort.",
+      "topic": "endpoint",
+      "score": 50,
+      "tags": [
+        "secure-boot",
+        "sertifikater",
+        "windows",
+        "intune",
+        "firmware"
+      ]
+    },
+    {
+      "id": "windows-it-pro-96e1bbe905",
+      "source_id": "windows-it-pro",
+      "source_name": "Windows IT Pro Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/point-in-time-restore-for-windows-11-is-now-generally-available/ba-p/4508101",
+      "published": "2026-06-23T16:00:00.000Z",
+      "ingested": "2026-06-24T01:03:19.877Z",
+      "title_original": "Point-in-time restore for Windows 11 is now generally available",
+      "headline_no": "Point-in-time restore for Windows 11 er nå GA — gjenopprett på minutter",
+      "summary_no": "Microsoft har gjort point-in-time restore allment tilgjengelig i Windows 11. Funksjonen tar automatisk jevnlige gjenopprettingspunkter lokalt på enheten og lar admins og brukere rulle PC-en tilbake til en tidligere tilstand — OS, apper, konfigurasjon, innstillinger og lokale filer — på minutter i stedet for timer. Den er tilgjengelig i Enterprise, Pro og Home, og kan kutte nedetid kraftig ved feil i stedet for full reinstallasjon.",
+      "topic": "endpoint",
+      "score": 68,
+      "tags": [
+        "windows-11",
+        "recovery",
+        "gjenoppretting",
+        "ga"
       ]
     },
     {
