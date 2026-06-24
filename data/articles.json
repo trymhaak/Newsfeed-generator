@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-24T08:25:27.376Z",
+  "generated_at": "2026-06-24T11:01:25.631Z",
   "articles": [
+    {
+      "id": "andrew-taylor-83761b180a",
+      "source_id": "andrew-taylor",
+      "source_name": "Andrew Taylor (andrewstaylor.com)",
+      "url": "https://andrewstaylor.com/2026/06/24/what-do-i-really-get-with-intune-suite/",
+      "published": "2026-06-24T10:56:19.000Z",
+      "ingested": "2026-06-24T11:01:25.584Z",
+      "title_original": "What do I really get with Intune Suite?",
+      "headline_no": "Intune Suite følger nå med E5 og E3 – dette får du",
+      "summary_no": "Intune Suite er nå inkludert i E5 og delvis i E3, slik at mange virksomheter får funksjoner som Remote Help, Endpoint Privilege Management, Enterprise App Management og Cloud PKI uten ekstra lisenskostnad. For IT-admins er dette en sjanse til å kutte tredjepartsverktøy og spare penger – men posten minner om begrensninger, blant annet at Remote Help mangler iOS-støtte.",
+      "topic": "endpoint",
+      "score": 35,
+      "tags": [
+        "intune",
+        "intune-suite",
+        "lisensiering",
+        "epm",
+        "remote-help"
+      ]
+    },
     {
       "id": "msrc-update-guide-d40538bae7",
       "source_id": "msrc-update-guide",
