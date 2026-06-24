@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-06-24T11:23:10.091Z",
+  "generated_at": "2026-06-24T13:07:26.598Z",
   "articles": [
+    {
+      "id": "msrc-blog-6d60dde7ba",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/24/stealc-and-amadey-breaking-down-infostealers-and-the-cybercrime-services-that-deliver-them/",
+      "published": "2026-06-24T12:30:00.000Z",
+      "ingested": "2026-06-24T13:07:26.560Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/attack-chain.webp",
+      "title_original": "StealC and Amadey: Breaking down infostealers and the cybercrime services that deliver them",
+      "headline_no": "StealC og Amadey: leie-infostealere omgår MFA via stjålne session-tokens",
+      "summary_no": "Microsoft Security analyserer infostealer-familien StealC og leveringstjenesten Amadey, som leies ut som råvarer i det kriminelle økosystemet. Infeksjoner på ansattes private enheter kan høste VPN-passord, SSO-tokens og session-cookies som lar angripere omgå MFA og nå rett inn i bedriftsnettet. Microsoft Defender har nye deteksjoner og IOC-er – admins bør stramme inn identitetsbeskyttelse, credential-hygiene og rask respons på kompromitterte kontoer.",
+      "topic": "sikkerhet",
+      "score": 64,
+      "tags": [
+        "infostealer",
+        "stealc",
+        "amadey",
+        "mfa-bypass",
+        "defender"
+      ]
+    },
     {
       "id": "admindroid-c319f2bd9e",
       "source_id": "admindroid",
