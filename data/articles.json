@@ -1,6 +1,81 @@
 {
-  "generated_at": "2026-06-23T17:48:13.737Z",
+  "generated_at": "2026-06-24T00:51:58.925Z",
   "articles": [
+    {
+      "id": "m365-roadmap-ee978c4b0d",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566531",
+      "published": "2026-06-23T23:15:39.000Z",
+      "ingested": "2026-06-24T00:51:58.861Z",
+      "title_original": "OneDrive: Find your group sites faster with the new My Sites tab in OneDrive for iOS",
+      "headline_no": "OneDrive for iOS får «Mine områder»-fane for kjappere SharePoint-tilgang",
+      "summary_no": "En ny «Mine områder»-fane i OneDrive-appen for iOS samler alle gruppekoblede SharePoint-områder du eier eller er medlem av på ett sted. Brukere kan bla gjennom hele lista og hoppe rett til dokumentbibliotekene uten å huske områdenavn eller søke. GA er satt til juli 2026.",
+      "topic": "endpoint",
+      "score": 31,
+      "tags": [
+        "onedrive",
+        "ios",
+        "sharepoint",
+        "m365"
+      ]
+    },
+    {
+      "id": "m365-roadmap-f9bb7c04c4",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566529",
+      "published": "2026-06-23T23:15:39.000Z",
+      "ingested": "2026-06-24T00:51:58.863Z",
+      "title_original": "Microsoft Purview: View only Role management enhancements",
+      "headline_no": "Ny les-kun-rolle i Purview gir innsyn i alle rolletildelinger",
+      "summary_no": "Microsoft introduserer en les-kun-rolle som lar administratorer se alle medlemstildelinger i Purview- og Defender-portalen. Rettigheten legges til Global Reader og Security Reader i både Purview og Entra, og gir bedre innsyn i hvem som har hvilke roller uten å utvide skrivetilgang. GA i juli 2026.",
+      "topic": "sikkerhet",
+      "score": 36,
+      "tags": [
+        "purview",
+        "defender",
+        "rbac",
+        "entra"
+      ]
+    },
+    {
+      "id": "m365-roadmap-adf32db8d1",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566470",
+      "published": "2026-06-23T23:15:39.000Z",
+      "ingested": "2026-06-24T00:51:58.863Z",
+      "title_original": "Microsoft Viva: Insights for GitHub Copilot spend and usage",
+      "headline_no": "Viva Insights får dashbord for GitHub Copilot-forbruk – på som standard",
+      "summary_no": "Viva Insights får et nytt dashbord for AI-forbruk og -bruk i GitHub Copilot, tilgjengelig for ledere med minst fem direkterapporterende, globale analytikere og globale administratorer. Dashbordet er skrudd på som standard, så IT bør være klar over hvem som får innsyn i forbruksdataene. GA i juli 2026.",
+      "topic": "ai",
+      "score": 38,
+      "tags": [
+        "viva-insights",
+        "github-copilot",
+        "kostnad",
+        "governance"
+      ]
+    },
+    {
+      "id": "m365-roadmap-2aa10613f4",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=562354",
+      "published": "2026-06-23T23:15:39.000Z",
+      "ingested": "2026-06-24T00:51:58.863Z",
+      "title_original": "Microsoft Copilot (Microsoft 365): Updated Copilot Answers",
+      "headline_no": "Copilot Answers blir mer konsis og løfter frem chat i sidepanelet",
+      "summary_no": "Copilot Answers i Copilot Search gir nå kortere og mer konsise svar i M365 Copilot-appen på web og skrivebord, og fremhever tydeligere muligheten til å fortsette samtalen i Copilot-chat i høyre sidepanel. En mindre justering av brukeropplevelsen for Copilot-søk. GA i juli 2026.",
+      "topic": "ai",
+      "score": 30,
+      "tags": [
+        "m365-copilot",
+        "copilot-search",
+        "ai"
+      ]
+    },
     {
       "id": "msrc-update-guide-c751a726ef",
       "source_id": "msrc-update-guide",
