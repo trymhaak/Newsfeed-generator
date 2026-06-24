@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-24T13:07:26.598Z",
+  "generated_at": "2026-06-24T15:07:16.671Z",
   "articles": [
+    {
+      "id": "call4cloud-6a8cd35a33",
+      "source_id": "call4cloud",
+      "source_name": "Call4Cloud (Rudy Ooms)",
+      "url": "https://patchmypc.com/blog/intune-multi-admin-approval-the-x-msft-approval-justification-error/",
+      "published": "2026-06-24T14:08:29.000Z",
+      "ingested": "2026-06-24T15:07:16.610Z",
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/06/image-13.jpg",
+      "title_original": "Intune Multi Admin Approval: The x-msft-approval-justification Error",
+      "headline_no": "Multi Admin Approval knekker Intune-appoppdateringer via Graph",
+      "summary_no": "Microsoft har utvidet Multi Admin Approval til også å gjelde app-basert Graph-automasjon, og dermed begynte Intune-appoppdateringer plutselig å feile med x-msft-approval-justification-feilen. Automasjon som før kjørte uhindret, krever nå godkjenning og en begrunnelse. IT-admins som oppdaterer apper via Graph må tilpasse skript og pipelines før de stopper opp.",
+      "topic": "endpoint",
+      "score": 46,
+      "tags": [
+        "intune",
+        "multi-admin-approval",
+        "graph-api",
+        "automasjon"
+      ]
+    },
     {
       "id": "msrc-blog-6d60dde7ba",
       "source_id": "msrc-blog",
