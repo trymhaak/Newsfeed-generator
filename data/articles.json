@@ -1,6 +1,45 @@
 {
-  "generated_at": "2026-06-24T01:03:19.939Z",
+  "generated_at": "2026-06-24T07:06:56.840Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-d40538bae7",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46285",
+      "published": "2026-06-24T09:43:33.000Z",
+      "ingested": "2026-06-24T07:06:56.797Z",
+      "title_original": "CVE-2026-46285 mtd: docg3: fix use-after-free in docg3_release()",
+      "headline_no": "Use-after-free i Linux-kjernens docg3-driver tettet (CVE-2026-46285)",
+      "summary_no": "MSRC har publisert CVE-2026-46285, en use-after-free-sårbarhet i docg3_release() i Linux-kjernens MTD-driver for DiskOnChip G3-flashminne. Feilen er rettet, men rammer svært gammel og lite brukt maskinvare, så praktisk risiko for de fleste Microsoft-miljøer er minimal. Mest relevant for de som kjører Azure Linux eller andre Linux-baserte Microsoft-tjenester.",
+      "topic": "sikkerhet",
+      "score": 18,
+      "tags": [
+        "cve-2026-46285",
+        "linux-kernel",
+        "use-after-free",
+        "msrc"
+      ]
+    },
+    {
+      "id": "office365-itpros-a7079689be",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/06/24/find-inactive-channels/?utm_source=rss&utm_medium=rss&utm_campaign=find-inactive-channels",
+      "published": "2026-06-24T07:00:00.000Z",
+      "ingested": "2026-06-24T07:06:56.795Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Teams-admin-center-collaboration-activity.jpg?resize=840%2C527&#038;ssl=1",
+      "title_original": "How to Identify Inactive Teams Channels",
+      "headline_no": "Slik avdekker du inaktive Teams-kanaler med PowerShell",
+      "summary_no": "Microsoft 365 mangler en innebygd rapport for å finne inaktive Teams-kanaler, og verken Teams admin-senter eller Copilot løser problemet. Tony Redmond viser hvordan PowerShell kan identifisere kanaler som har falt ut av bruk, slik at team-eiere kan arkivere eller rydde opp i kanal-rot. Nyttig for admins som forvalter store tenants med mange ubrukte kanaler.",
+      "topic": "identitet",
+      "score": 34,
+      "tags": [
+        "teams",
+        "powershell",
+        "governance",
+        "microsoft-365"
+      ]
+    },
     {
       "id": "m365-roadmap-ee978c4b0d",
       "source_id": "m365-roadmap",
