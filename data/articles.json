@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-24T15:07:16.671Z",
+  "generated_at": "2026-06-24T21:05:49.588Z",
   "articles": [
+    {
+      "id": "msrc-blog-bd8544c2da",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/24/cnapp-evolution-how-microsoft-aligns-with-leading-cloud-risk-management-platforms/",
+      "published": "2026-06-24T18:00:00.000Z",
+      "ingested": "2026-06-24T21:05:49.530Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/Security-2.webp",
+      "title_original": "CNAPP evolution: How Microsoft aligns with leading cloud risk management platforms",
+      "headline_no": "Frost Radar 2026: Microsoft blant ledende CNAPP-leverandører",
+      "summary_no": "Frost & Sullivans 2026 Frost Radar for CNAPP plasserer Microsoft blant de ledende leverandørene av skysikkerhetsplattformer. Rapporten peker på at CNAPP går fra ren synlighet og compliance til en operasjonell plattform som korrelerer signaler på tvers av kode, sky, kjøretid og SOC for å prioritere reell risiko. For sikkerhetsteam betyr dreiningen mindre alarmstøy og tydeligere prioritering av hvilke sårbarheter, identiteter og dataeksponeringer som faktisk kan utnyttes.",
+      "topic": "sikkerhet",
+      "score": 25,
+      "tags": [
+        "cnapp",
+        "skysikkerhet",
+        "defender-for-cloud",
+        "frost-radar"
+      ]
+    },
     {
       "id": "call4cloud-6a8cd35a33",
       "source_id": "call4cloud",
