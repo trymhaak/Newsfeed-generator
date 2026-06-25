@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-25T14:26:10.113Z",
+  "generated_at": "2026-06-25T14:32:13.781Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-c2d8c2c530",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41086",
+      "published": "2026-06-25T14:00:00.000Z",
+      "ingested": "2026-06-25T14:32:13.719Z",
+      "title_original": "CVE-2026-41086 Windows Admin Center in Azure Portal Elevation of Privilege Vulnerability",
+      "headline_no": "CVE-2026-41086: Rettighetseskalering i Windows Admin Center i Azure",
+      "summary_no": "Microsoft har oppdatert oppføringen for CVE-2026-41086, en sårbarhet for rettighetseskalering i Windows Admin Center i Azure-portalen. Endringen er kun en justering av en kreditering og inneholder ingen ny teknisk informasjon eller patch. IT-administratorer trenger ikke å foreta seg noe nytt utover eventuell utbedring som allerede er gjort.",
+      "topic": "sikkerhet",
+      "score": 25,
+      "tags": [
+        "cve-2026-41086",
+        "windows-admin-center",
+        "azure",
+        "rettighetseskalering",
+        "eop"
+      ]
+    },
     {
       "id": "msrc-update-guide-06637015e3",
       "source_id": "msrc-update-guide",
