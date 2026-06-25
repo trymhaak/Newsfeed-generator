@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-25T14:32:13.781Z",
+  "generated_at": "2026-06-25T16:58:07.089Z",
   "articles": [
+    {
+      "id": "msrc-blog-7660b25b1a",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/25/microsoft-a-leader-in-the-forrester-wave-for-endpoint-management-platforms/",
+      "published": "2026-06-25T16:00:00.000Z",
+      "ingested": "2026-06-25T16:58:07.026Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/01504eb9-9949-4b9b-8ece-29256a07173b-769x1024.webp",
+      "title_original": "Microsoft a Leader in The Forrester Wave™ for Endpoint Management Platforms",
+      "headline_no": "Forrester kårer Microsoft til leder innen endepunkthåndtering",
+      "summary_no": "Microsoft er utnevnt til leder i Forrester Wave: Endpoint Management Platforms, Q2 2026, der Intune ble vurdert mot åtte leverandører. Forrester trekker fram hvordan Intune binder sammen identitet (Entra), sikkerhet (Defender), Windows og Windows 365 i én admin-konsoll framfor løsrevne verktøy. For IT-admins er dette mest en bekreftelse på plattformretningen — lite konkret å handle på, men nyttig som beslutningsstøtte ved verktøyvalg.",
+      "topic": "endpoint",
+      "score": 25,
+      "tags": [
+        "intune",
+        "forrester",
+        "endpoint-management",
+        "windows-365"
+      ]
+    },
     {
       "id": "msrc-update-guide-c2d8c2c530",
       "source_id": "msrc-update-guide",
