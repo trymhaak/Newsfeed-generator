@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T10:31:44.274Z",
+  "generated_at": "2026-06-25T12:52:24.406Z",
   "articles": [
     {
       "id": "admindroid-53a06cfd41",
@@ -120,6 +120,25 @@
         "delta-query",
         "grupper",
         "rapportering"
+      ]
+    },
+    {
+      "id": "security-community-1b6256c481",
+      "source_id": "security-community",
+      "source_name": "Microsoft Security Community Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/how-karambit-ai-and-microsoft-bring-software-authenticity-to-14/ba-p/4528606",
+      "published": "2026-06-24T20:30:26.000Z",
+      "ingested": "2026-06-25T12:52:24.345Z",
+      "title_original": "How Karambit.AI and Microsoft Bring Software Authenticity to 14 Billion Files Per Month",
+      "headline_no": "Karambit.AI og Microsoft sjekker ektheten til 14 milliarder filer i måneden",
+      "summary_no": "Karambit.AI og Microsoft bruker kontekstbasert atferdsanalyse for å verifisere 14 milliarder filer hver måned. I stedet for å vurdere hver fil isolert, måles oppførselen mot normalmønstre i hele økosystemet, slik at pakket eller obfuskert kode flagges som et avvik. For IT-admins gir det bedre sjanse til å avsløre angrep som gjemmer seg i ellers legitim programvare.",
+      "topic": "sikkerhet",
+      "score": 40,
+      "tags": [
+        "malware",
+        "supply-chain",
+        "atferdsanalyse",
+        "karambit"
       ]
     },
     {
