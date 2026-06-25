@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-25T07:24:09.586Z",
+  "generated_at": "2026-06-25T08:52:33.813Z",
   "articles": [
+    {
+      "id": "prajwal-desai-690a103bb6",
+      "source_id": "prajwal-desai",
+      "source_name": "Prajwal Desai",
+      "url": "https://www.prajwaldesai.com/windows-11-kb5095093-out-with-new-features-and-improvements/",
+      "published": "2026-06-25T08:49:46.000Z",
+      "ingested": "2026-06-25T08:52:33.760Z",
+      "title_original": "Windows 11 KB5095093 out with New Features and Improvements",
+      "headline_no": "Windows 11 får nye funksjoner i valgfri oppdatering KB5095093",
+      "summary_no": "Microsoft har begynt å rulle ut KB5095093, en valgfri forhåndsoppdatering for Windows 11 versjon 24H2 og 25H2 som introduserer nye funksjoner og forbedringer. Disse endringene blir obligatoriske i neste måneds sikkerhetsoppdatering, så IT-administratorer bør teste pakken i et pilotmiljø nå for å fange opp problemer før bred utrulling.",
+      "topic": "endpoint",
+      "score": 39,
+      "tags": [
+        "windows-11",
+        "kb5095093",
+        "24h2",
+        "25h2",
+        "oppdatering"
+      ]
+    },
     {
       "id": "msrc-update-guide-17a6e2e2bb",
       "source_id": "msrc-update-guide",
