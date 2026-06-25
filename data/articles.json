@@ -1,6 +1,65 @@
 {
-  "generated_at": "2026-06-25T16:58:07.089Z",
+  "generated_at": "2026-06-25T18:06:46.469Z",
   "articles": [
+    {
+      "id": "windows-admin-center-e35becc614",
+      "source_id": "windows-admin-center",
+      "source_name": "Windows Admin Center Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-admin-center-blog/windows-admin-center-version-2606-is-now-generally-available/ba-p/4530811",
+      "published": "2026-06-25T16:15:20.000Z",
+      "ingested": "2026-06-25T18:06:46.431Z",
+      "title_original": "Windows Admin Center version 2606 is now generally available!",
+      "headline_no": "Windows Admin Center 2606 ute med vekt på stabilitet og sikkerhet",
+      "summary_no": "Windows Admin Center 2606 er nå allment tilgjengelig og er en ren Administration Mode-utgivelse. Oppdateringen fokuserer på pålitelighet, tilgjengelighet, sikkerhet og brukeropplevelse, med kvalitetsforbedringer og feilrettinger basert på kundetilbakemeldinger. Microsoft vurderer hyppigere utgivelser fremover.",
+      "topic": "endpoint",
+      "score": 39,
+      "tags": [
+        "windows-admin-center",
+        "wac",
+        "release",
+        "administration-mode"
+      ]
+    },
+    {
+      "id": "m365-copilot-a88f582cb7",
+      "source_id": "m365-copilot",
+      "source_name": "Microsoft 365 Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/learning-agent-now-generally-available-personalized-ai/ba-p/4524571",
+      "published": "2026-06-25T16:02:52.000Z",
+      "ingested": "2026-06-25T18:06:46.431Z",
+      "title_original": "Learning Agent now generally available — personalized AI upskilling for every employee",
+      "headline_no": "Copilot får Learning Agent som lærer ansatte AI i arbeidsflyten",
+      "summary_no": "Learning Agent i Microsoft 365 Copilot er nå allment tilgjengelig og gir personlige læringsanbefalinger basert på rolle, oppgaver og arbeidsmønster. Agenten er innebygd i Teams, Word, Excel og PowerPoint, slik at ansatte lærer AI mens de jobber. For IT- og opplæringsansvarlige er målet å gjøre AI-tilgang om til faktisk bruk og målbar effekt.",
+      "topic": "ai",
+      "score": 56,
+      "tags": [
+        "copilot",
+        "m365",
+        "learning-agent",
+        "ai-skilling",
+        "work-iq"
+      ]
+    },
+    {
+      "id": "intune-blog-20cc925cd9",
+      "source_id": "intune-blog",
+      "source_name": "Microsoft Intune Customer Success Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-intune-blog/what-s-new-in-microsoft-intune-june/ba-p/4491983",
+      "published": "2026-06-25T16:00:00.000Z",
+      "ingested": "2026-06-25T18:06:46.430Z",
+      "title_original": "What’s new in Microsoft Intune – June",
+      "headline_no": "Intune får automatiske app-oppdateringer og AI-agent mot sårbarheter",
+      "summary_no": "Intunes Enterprise Application Management får nå automatiske oppdateringer (GA), som holder administrerte apper på nyeste delversjon uten manuell pakking. Det krymper sårbarhetsvinduet mellom større oppgraderinger, og en ny Vulnerability Remediation Agent håndterer risiko som dukker opp mellom syklusene. For IT-admins betyr det mindre versjonsdrift og raskere utbedring på tvers av endepunkter.",
+      "topic": "endpoint",
+      "score": 65,
+      "tags": [
+        "intune",
+        "eam",
+        "app-management",
+        "sårbarheter",
+        "auto-update"
+      ]
+    },
     {
       "id": "msrc-blog-7660b25b1a",
       "source_id": "msrc-blog",
