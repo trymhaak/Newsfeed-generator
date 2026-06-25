@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-06-25T08:52:33.813Z",
+  "generated_at": "2026-06-25T10:31:44.274Z",
   "articles": [
+    {
+      "id": "admindroid-53a06cfd41",
+      "source_id": "admindroid",
+      "source_name": "AdminDroid Blog",
+      "url": "https://blog.admindroid.com/how-to-configure-retention-labels-in-microsoft-365/",
+      "published": "2026-06-25T10:29:52.000Z",
+      "ingested": "2026-06-25T10:31:44.225Z",
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/Create-Configure-Retention-Labels-in-Microsoft-365-for-Item-Level-Retention-150x150.png",
+      "title_original": "How to Configure Retention Labels in Microsoft 365",
+      "headline_no": "Slik styrer du hva som beholdes og slettes med oppbevaringsetiketter",
+      "summary_no": "AdminDroid går gjennom hvordan du oppretter, publiserer og bruker oppbevaringsetiketter i Microsoft 365 for å styre livssyklusen til innhold i Exchange, SharePoint, OneDrive og Teams. I motsetning til brede oppbevaringspolicyer kan etiketter gi ulik oppbevaring per enkeltelement – manuelt eller via auto-merking. Praktisk for admins som må håndtere datavekst og compliance-krav uten å miste oversikten.",
+      "topic": "sikkerhet",
+      "score": 25,
+      "tags": [
+        "purview",
+        "retention",
+        "compliance",
+        "microsoft-365",
+        "oppbevaring"
+      ]
+    },
     {
       "id": "prajwal-desai-690a103bb6",
       "source_id": "prajwal-desai",
