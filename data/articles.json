@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-06-25T07:01:12.104Z",
+  "generated_at": "2026-06-25T07:07:17.206Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-17a6e2e2bb",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4367",
+      "published": "2026-06-25T08:03:53.000Z",
+      "ingested": "2026-06-25T07:07:17.147Z",
+      "title_original": "CVE-2026-4367 Libxpm: libxpm: denial of service via out-of-bounds read in xpm file parsing",
+      "headline_no": "Libxpm-feil kan krasje programmer via manipulerte XPM-bildefiler",
+      "summary_no": "En out-of-bounds-lesefeil i libxpm (CVE-2026-4367) kan utløse tjenestenekt når biblioteket parser spesielt utformede XPM-bildefiler. Feilen rammer først og fremst Linux- og X11-miljøer og har begrenset betydning for rene Microsoft-flåter, men kan være relevant i blandede landskap. Publisert via Microsofts Security Update Guide.",
+      "topic": "sikkerhet",
+      "score": 36,
+      "tags": [
+        "libxpm",
+        "dos",
+        "cve-2026-4367",
+        "out-of-bounds",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-8f5311cd4f",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-11816",
+      "published": "2026-06-25T08:03:45.000Z",
+      "ingested": "2026-06-25T07:07:17.145Z",
+      "title_original": "CVE-2026-11816 Path Traversal in keras-team/keras",
+      "headline_no": "Path traversal i Keras lar angripere lese filer utenfor modellmappen",
+      "summary_no": "En path traversal-sårbarhet (CVE-2026-11816) i ML-rammeverket Keras gjør det mulig å lese filer utenfor tiltenkt katalog når modeller lastes inn. IT-admins som kjører Keras i egne AI- eller MLOps-pipelines bør følge med og oppgradere så snart en rettelse er tilgjengelig. Sårbarheten er publisert via Microsofts Security Update Guide.",
+      "topic": "sikkerhet",
+      "score": 47,
+      "tags": [
+        "keras",
+        "path-traversal",
+        "cve-2026-11816",
+        "ai",
+        "msrc"
+      ]
+    },
     {
       "id": "office365-itpros-1b583b5cdf",
       "source_id": "office365-itpros",
