@@ -1,6 +1,25 @@
 {
-  "generated_at": "2026-06-25T12:52:24.406Z",
+  "generated_at": "2026-06-25T14:26:10.113Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-06637015e3",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45637",
+      "published": "2026-06-25T14:00:00.000Z",
+      "ingested": "2026-06-25T14:26:10.051Z",
+      "title_original": "CVE-2026-45637 Microsoft DWM Core Library Elevation of Privilege Vulnerability",
+      "headline_no": "CVE-2026-45637 i DWM: kun anerkjennelse endret, ingen handling kreves",
+      "summary_no": "Microsoft har oppdatert MSRC-oppføringen for CVE-2026-45637, en rettighetseskalering i Windows DWM Core Library. Endringen gjelder bare en anerkjennelse og er rent informativ, uten ny oppdatering, kjent eksploitering eller endret alvorlighetsgrad. IT-admins trenger ikke foreta seg noe, og saken kan trygt nedprioriteres.",
+      "topic": "sikkerhet",
+      "score": 14,
+      "tags": [
+        "cve-2026-45637",
+        "dwm",
+        "msrc",
+        "rettighetseskalering"
+      ]
+    },
     {
       "id": "admindroid-53a06cfd41",
       "source_id": "admindroid",
