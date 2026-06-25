@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-25T03:28:41.215Z",
+  "generated_at": "2026-06-25T07:01:12.104Z",
   "articles": [
+    {
+      "id": "office365-itpros-1b583b5cdf",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/06/25/graph-delta-queries-entra-id-groups/?utm_source=rss&utm_medium=rss&utm_campaign=graph-delta-queries-entra-id-groups",
+      "published": "2026-06-25T07:00:00.000Z",
+      "ingested": "2026-06-25T07:01:12.062Z",
+      "title_original": "Using Graph Delta Queries with Entra ID Groups",
+      "headline_no": "Graph delta-spørringer egner seg til synk – ikke gruppe-rapportering",
+      "summary_no": "Microsoft Graphs delta-spørringer lar apper finne nye, endrede og slettede objekter – inkludert Entra ID-grupper – uten å lese alt på nytt. Men siden delta-tokenet maksimalt lever i syv dager, kan du ikke etablere en baseline 30 dager tilbake og rapportere gruppeendringer over tid. Admins som vil ha historisk gruppe-rapportering må derfor velge en annen metode enn ad hoc delta-spørringer.",
+      "topic": "identitet",
+      "score": 35,
+      "tags": [
+        "entra-id",
+        "microsoft-graph",
+        "delta-query",
+        "grupper",
+        "rapportering"
+      ]
+    },
     {
       "id": "msrc-blog-bd8544c2da",
       "source_id": "msrc-blog",
