@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T21:05:49.588Z",
+  "generated_at": "2026-06-25T03:28:41.215Z",
   "articles": [
     {
       "id": "msrc-blog-bd8544c2da",
@@ -253,6 +253,25 @@
         "windows",
         "intune",
         "firmware"
+      ]
+    },
+    {
+      "id": "sentinel-blog-6581a7be6a",
+      "source_id": "sentinel-blog",
+      "source_name": "Microsoft Sentinel Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/a-guide-to-innovating-threat-hunting-with-microsoft-sentinel/ba-p/4530287",
+      "published": "2026-06-23T20:35:15.000Z",
+      "ingested": "2026-06-25T03:28:41.159Z",
+      "title_original": "A guide to innovating threat hunting with Microsoft Sentinel custom graph",
+      "headline_no": "Sentinel-graf gir relasjonsbasert trusseljakt — egne grafer i public preview",
+      "summary_no": "Microsoft lanserer egendefinerte grafer i Sentinel (public preview), en relasjonsbasert måte å utforske sammenhenger mellom brukere, enheter, IP-er og applikasjoner i data lake-en. I stedet for kompliserte tabell-joins kan analytikere følge angrep over flere hopp og raskt se blast radius og skjulte pivoter. Grafene bygges i VS Code med GitHub Copilot og krever Sentinel data lake samt security operator- eller admin-rettigheter.",
+      "topic": "sikkerhet",
+      "score": 51,
+      "tags": [
+        "sentinel",
+        "trusseljakt",
+        "graf",
+        "copilot"
       ]
     },
     {
