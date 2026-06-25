@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T07:07:17.206Z",
+  "generated_at": "2026-06-25T07:24:09.586Z",
   "articles": [
     {
       "id": "msrc-update-guide-17a6e2e2bb",
@@ -39,6 +39,26 @@
         "cve-2026-11816",
         "ai",
         "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-d6fbcefd7b",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46140",
+      "published": "2026-06-25T08:03:39.000Z",
+      "ingested": "2026-06-25T07:24:09.519Z",
+      "title_original": "CVE-2026-46140 Bluetooth: btmtk: validate WMT event SKB length before struct access",
+      "headline_no": "Bluetooth-sårbarhet i MediaTeks Linux-driver tettet med ny lengdesjekk",
+      "summary_no": "CVE-2026-46140 retter en manglende lengdesjekk i MediaTeks btmtk-driver i Linux-kjernen, der WMT-hendelser ble tolket som en struct uten å verifisere at bufferet (SKB) var stort nok. En feilformet Bluetooth-hendelse kunne dermed utløse lesing utenfor minnegrensene. Relevansen for rene Microsoft-miljøer er begrenset, men team som drifter Azure Linux eller Linux-endepunkter bør ta med fiksen i neste kjernepatch.",
+      "topic": "sikkerhet",
+      "score": 32,
+      "tags": [
+        "cve-2026-46140",
+        "bluetooth",
+        "linux",
+        "mediatek",
+        "kjerne"
       ]
     },
     {
