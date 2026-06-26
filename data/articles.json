@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T07:11:21.219Z",
+  "generated_at": "2026-06-26T07:30:01.702Z",
   "articles": [
     {
       "id": "msrc-update-guide-cc69b599c8",
@@ -59,6 +59,82 @@
         "tun",
         "xdp",
         "azure-linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-3cdf365dbf",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45930",
+      "published": "2026-06-26T08:40:44.000Z",
+      "ingested": "2026-06-26T07:30:01.650Z",
+      "title_original": "CVE-2026-45930 net: mctp: ensure our nlmsg responses are initialised",
+      "headline_no": "Linux-kjernen tetter uinitialisert netlink-svar i MCTP-koden",
+      "summary_no": "Linux-kjernens MCTP-nettverkskode kunne returnere uinitialiserte netlink-svar og dermed lekke minneinnhold. CVE-en er publisert gjennom MSRC, men gjelder kun Linux-systemer – typisk relevant for Azure Linux-VM-er, ikke Windows-flåten – og rettes via ordinære kjernepatcher.",
+      "topic": "sikkerhet",
+      "score": 14,
+      "tags": [
+        "linux-kernel",
+        "mctp",
+        "netlink",
+        "cve-2026-45930"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-54fe50929b",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45850",
+      "published": "2026-06-26T08:40:31.000Z",
+      "ingested": "2026-06-26T07:30:01.650Z",
+      "title_original": "CVE-2026-45850 ipvs: skip ipv6 extension headers for csum checks",
+      "headline_no": "Linux IPVS hopper over IPv6-utvidelseshoder ved sjekksum-kontroll",
+      "summary_no": "En sjekksumfeil i Linux-kjernens IPVS-lastbalansering, der IPv6-utvidelseshoder ikke ble hoppet over, er nå rettet. Sårbarheten gjelder Linux-baserte lastbalanserere og er uten relevans for typiske Microsoft-økosystem-administratorer; berørte Linux-driftsmiljøer bør ta inn fiksen ved neste kjernepatch.",
+      "topic": "sikkerhet",
+      "score": 12,
+      "tags": [
+        "linux-kernel",
+        "ipvs",
+        "ipv6",
+        "cve-2026-45850"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-276c53dab6",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68736",
+      "published": "2026-06-26T08:39:56.000Z",
+      "ingested": "2026-06-26T07:30:01.648Z",
+      "title_original": "CVE-2025-68736 landlock: Fix handling of disconnected directories",
+      "headline_no": "Linux-kjernen retter Landlock-feil i håndtering av frakoblede kataloger",
+      "summary_no": "Microsoft har via MSRC publisert en Linux-kjerne-CVE som retter feilhåndtering av frakoblede kataloger i sikkerhetsmodulen Landlock. Fiksen angår kun Linux-baserte miljøer som Azure Linux eller Linux-endepunkter, ikke Windows- eller Intune-administrerte enheter, og kommer med ordinære kjerneoppdateringer fra distribusjonen.",
+      "topic": "sikkerhet",
+      "score": 13,
+      "tags": [
+        "linux-kernel",
+        "landlock",
+        "cve-2025-68736",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-44e333ab00",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68296",
+      "published": "2026-06-26T08:39:42.000Z",
+      "ingested": "2026-06-26T07:30:01.650Z",
+      "title_original": "CVE-2025-68296 drm, fbcon, vga_switcheroo: Avoid race condition in fbcon setup",
+      "headline_no": "Kappløpsfeil i Linux fbcon-oppsett tettet i ny kjerneoppdatering",
+      "summary_no": "En kappløpstilstand i Linux-kjernens framebuffer-konsoll (fbcon/DRM/vga_switcheroo) er rettet og tildelt CVE av Microsoft som CNA. Sårbarheten berører kun Linux-systemer og har ingen praktisk betydning for Microsoft 365- eller Intune-administratorer; oppdater kjernen via distribusjonens vanlige kanaler hvis du drifter Linux-servere.",
+      "topic": "sikkerhet",
+      "score": 10,
+      "tags": [
+        "linux-kernel",
+        "drm",
+        "fbcon",
+        "cve-2025-68296"
       ]
     },
     {
