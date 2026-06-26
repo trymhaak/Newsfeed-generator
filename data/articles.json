@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-06-26T09:04:44.881Z",
+  "generated_at": "2026-06-26T14:13:54.534Z",
   "articles": [
+    {
+      "id": "janbakker-c43b4fa5fc",
+      "source_id": "janbakker",
+      "source_name": "JanBakker.tech",
+      "url": "https://janbakker.tech/entra-id-saml-authnmethodsreferences-amr-now-supports-phishing-resistant-mfa/",
+      "published": "2026-06-26T14:12:37.000Z",
+      "ingested": "2026-06-26T14:13:54.464Z",
+      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/06/image.png",
+      "title_original": "Entra ID SAML authnmethodsreferences (AMR) now supports phishing-resistant MFA",
+      "headline_no": "Entra ID tar med AMR i SAML-tokens – Salesforce kan kreve phishing-sikker MFA",
+      "summary_no": "Fra 29. juni 2026 inkluderer Entra ID både amr- og acr-claims i SAML 2.0-tokens, slik at apper som Salesforce kan se nøyaktig hvilken autentiseringsmetode brukeren benyttet – ikke bare at de autentiserte seg. Det betyr at SAML-apper endelig kan håndheve krav om phishing-resistent MFA (FIDO2/passkeys) for administratorer. Bruker du Entra ID som IdP mot Salesforce, bør du verifisere at Entra-policyene treffer før Salesforce skrur på kravet 29. juni.",
+      "topic": "identitet",
+      "score": 49,
+      "tags": [
+        "entra-id",
+        "saml",
+        "mfa",
+        "fido2",
+        "salesforce"
+      ]
+    },
     {
       "id": "call4cloud-04ec0b9ecd",
       "source_id": "call4cloud",
