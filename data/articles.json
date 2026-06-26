@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T19:45:28.624Z",
+  "generated_at": "2026-06-26T21:04:21.575Z",
   "articles": [
     {
       "id": "msrc-update-guide-5ae18cee9d",
@@ -271,6 +271,26 @@
         "chromium",
         "cve-2026-13021",
         "dbsc"
+      ]
+    },
+    {
+      "id": "call4cloud-75d57d8e7d",
+      "source_id": "call4cloud",
+      "source_name": "Call4Cloud (Rudy Ooms)",
+      "url": "https://patchmypc.com/blog/five-eyes-intelligence-alliance-says-its-time-to-speed-up-patching/",
+      "published": "2026-06-26T18:41:24.000Z",
+      "ingested": "2026-06-26T21:04:21.522Z",
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/06/image-64.png",
+      "title_original": "Five Eyes Intelligence Alliance Says It’s Time to Speed Up Patching",
+      "headline_no": "Five Eyes ber bedrifter patche raskere og kvitte seg med utdaterte systemer",
+      "summary_no": "Etterretningsalliansen Five Eyes gikk 22. juni ut med en felles oppfordring: patch kjente sårbarheter raskere og fase ut systemer som ikke lenger får sikkerhetsoppdateringer. Budskapet treffer virksomheter som henger etter på patch-rutiner og fortsatt kjører programvare uten støtte. For IT-admins er det en påminnelse om å gå gjennom patch-kadens og inventaret over end-of-life-systemer før angripere rekker å utnytte hullene.",
+      "topic": "sikkerhet",
+      "score": 42,
+      "tags": [
+        "five-eyes",
+        "patching",
+        "sårbarheter",
+        "eol"
       ]
     },
     {
