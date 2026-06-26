@@ -1,6 +1,83 @@
 {
-  "generated_at": "2026-06-25T18:06:46.469Z",
+  "generated_at": "2026-06-26T00:25:32.485Z",
   "articles": [
+    {
+      "id": "andrew-taylor-a94b16d4fa",
+      "source_id": "andrew-taylor",
+      "source_name": "Andrew Taylor (andrewstaylor.com)",
+      "url": "https://andrewstaylor.com/2026/06/26/intune-newsletter-26th-june-2026/",
+      "published": "2026-06-25T23:23:26.000Z",
+      "ingested": "2026-06-26T00:25:32.419Z",
+      "title_original": "Intune Newsletter – 26th June 2026",
+      "headline_no": "Intune-ukebrev: 26H2 nærmer seg – på tide å starte testingen",
+      "summary_no": "Andrew Taylors ukentlige Intune-nyhetsbrev løfter frem at Windows 26H2 nærmer seg – på tide å begynne testingen. Utgaven samler også ferske community-bidrag: tilbakestilling med egne OSDCloud-gjenopprettingsbilder, web-basert enrollment for personlige Android-arbeidsprofiler, og AI-agent-beskyttelse i Defender for Endpoint. Nyttig oppsummering av ukens endpoint-nyheter.",
+      "topic": "endpoint",
+      "score": 31,
+      "tags": [
+        "intune",
+        "nyhetsbrev",
+        "26h2",
+        "android-enrollment",
+        "community"
+      ]
+    },
+    {
+      "id": "m365-roadmap-abbb936058",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566617",
+      "published": "2026-06-25T23:15:45.000Z",
+      "ingested": "2026-06-26T00:25:32.418Z",
+      "title_original": "Microsoft Purview: Data Loss Prevention - Endpoint DLP now detects sensitivity labels on files inside archives",
+      "headline_no": "Endpoint DLP oppdager nå sensitive filer inni zip-arkiver",
+      "summary_no": "Endpoint DLP klassifiserer og håndhever nå innhold inni arkivfiler som .zip, og kjenner igjen sensitivitetsetiketter på filer pakket inne i containere. Det gir mer presis deteksjon og finere kontroll over hvordan beskyttet innhold i arkiver behandles. Forhåndsvisning kommer i juli 2026, med GA i august.",
+      "topic": "sikkerhet",
+      "score": 41,
+      "tags": [
+        "purview",
+        "endpoint-dlp",
+        "dlp",
+        "arkivfiler"
+      ]
+    },
+    {
+      "id": "m365-roadmap-72a34ed840",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566527",
+      "published": "2026-06-25T23:15:45.000Z",
+      "ingested": "2026-06-26T00:25:32.419Z",
+      "title_original": "Microsoft Purview: Data Lifecycle Management - Ensure regulatory compliance by deleting inactive OneDrives and mailboxes for departing employees",
+      "headline_no": "Purview sletter automatisk OneDrive og postkasser for sluttede ansatte",
+      "summary_no": "Purview Data Lifecycle Management lar administratorer slette både innhold og containere – OneDrive og postkasser – for ansatte som har sluttet, i stor skala. Det automatiserer opprydding ved offboarding og holder tenanten regeletterlevende uten manuelt arbeid. GA er satt til september 2026.",
+      "topic": "sikkerhet",
+      "score": 39,
+      "tags": [
+        "purview",
+        "data-lifecycle",
+        "offboarding",
+        "compliance",
+        "onedrive"
+      ]
+    },
+    {
+      "id": "m365-roadmap-9b48bbd931",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566351",
+      "published": "2026-06-25T23:15:45.000Z",
+      "ingested": "2026-06-26T00:25:32.419Z",
+      "title_original": "PowerPoint: Create on brand presentations with additional brand assets",
+      "headline_no": "PowerPoint får egne merkevareressurser for enhetlige presentasjoner",
+      "summary_no": "PowerPoint får tilgang til virksomhetens merkevareressurser – farger, bilder, ikoner og logoer – direkte i appen for mer enhetlige presentasjoner. Dette er en sluttbrukerfunksjon med begrenset relevans for IT-administrasjon. Rulles ut til GA i juli 2026.",
+      "topic": "endpoint",
+      "score": 13,
+      "tags": [
+        "powerpoint",
+        "merkevare",
+        "office"
+      ]
+    },
     {
       "id": "windows-admin-center-e35becc614",
       "source_id": "windows-admin-center",
