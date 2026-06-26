@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-26T07:30:01.702Z",
+  "generated_at": "2026-06-26T09:04:44.881Z",
   "articles": [
+    {
+      "id": "call4cloud-04ec0b9ecd",
+      "source_id": "call4cloud",
+      "source_name": "Call4Cloud (Rudy Ooms)",
+      "url": "https://patchmypc.com/blog/intune-epm-system-settings-network-and-time-sync-elevation/",
+      "published": "2026-06-26T08:44:27.000Z",
+      "ingested": "2026-06-26T09:04:44.830Z",
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/06/image-9.jpg",
+      "title_original": "Intune EPM System Settings: Network and Time Sync Elevation",
+      "headline_no": "Intune EPM: standardbrukere kan snart endre nettverk og tid uten admin",
+      "summary_no": "Microsoft ser ut til å jobbe med en ny systeminnstillinger-opplevelse i Endpoint Privilege Management, med start i nettverksinnstillinger og tidssynkronisering. Funksjonen lar standardbrukere heve rettigheter for å justere utvalgte systeminnstillinger uten å få full lokal admin. For IT-admins betyr det mer finkornet kontroll over hvilke oppgaver vanlige brukere kan utføre selv.",
+      "topic": "endpoint",
+      "score": 40,
+      "tags": [
+        "intune",
+        "epm",
+        "privilege-management",
+        "preview"
+      ]
+    },
     {
       "id": "msrc-update-guide-cc69b599c8",
       "source_id": "msrc-update-guide",
