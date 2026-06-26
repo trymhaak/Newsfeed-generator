@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-06-26T14:13:54.534Z",
+  "generated_at": "2026-06-26T19:15:16.712Z",
   "articles": [
+    {
+      "id": "windows-insider-fb919178ea",
+      "source_id": "windows-insider",
+      "source_name": "Windows Insider Blog",
+      "url": "https://blogs.windows.com/windows-insider/2026/06/26/announcing-new-builds-for-26-june-2026-retail-launch-of-new-wip-improvements/",
+      "published": "2026-06-26T17:00:19.000Z",
+      "ingested": "2026-06-26T19:15:16.655Z",
+      "hero_image": "https://winblogs.thesourcemediaassets.com/sites/44/2026/06/taskbarsize2.png",
+      "title_original": "Announcing new builds for 26 June 2026, retail launch of new WIP improvements",
+      "headline_no": "Retail-brukere får bytte Insider-kanal uten full reinstallasjon",
+      "summary_no": "Microsoft begynner å rulle ut det nye Windows Insider-oppsettet til vanlige retail-Windows 11-bygg denne uken, slik at brukere ser de nye kanalvalgene under Innstillinger > Windows Update > Windows Insider Program. I de fleste tilfeller kan man nå bytte kanal eller forlate programmet uten å reinstallere hele Windows. Utrullingen er gradvis, og det kommer samtidig nye bygg i Beta- og Experimental-kanalene.",
+      "topic": "endpoint",
+      "score": 44,
+      "tags": [
+        "windows-11",
+        "windows-insider",
+        "wip",
+        "retail"
+      ]
+    },
+    {
+      "id": "handsontek-48301efed8",
+      "source_id": "handsontek",
+      "source_name": "HANDS ON tek (João Ferreira)",
+      "url": "https://handsontek.net/hands-microsoft-365-pulse-weekly-updates-week-25/",
+      "published": "2026-06-26T15:10:20.000Z",
+      "ingested": "2026-06-26T19:15:16.655Z",
+      "hero_image": "https://handsontek.net/images/hot2/Week%2025%202026/hero.png",
+      "title_original": "Hands-On Microsoft 365 Pulse – Weekly Updates (Week 25)",
+      "headline_no": "Ny Copilot Cowork-prising vekker reaksjoner — og rimeligere veier finnes",
+      "summary_no": "Ukens M365-oppsummering fra João Ferreira har Microsofts endrede lisensiering av Copilot Cowork som hovedsak, sammen med reaksjonene som fulgte. To anbefalte artikler går gjennom de reelle kostnadene og rimeligere alternativer som dekker rundt 80 % av behovet, samt hvordan slike lisensvalg avgjør hvem på arbeidsplassen som faktisk får bruke AI. Resten av utgaven samler øvrige nyheter fra blant annet SharePoint.",
+      "topic": "ai",
+      "score": 29,
+      "tags": [
+        "copilot",
+        "copilot-cowork",
+        "lisensiering",
+        "m365"
+      ]
+    },
     {
       "id": "janbakker-c43b4fa5fc",
       "source_id": "janbakker",
@@ -295,6 +335,45 @@
         "powershell",
         "c2",
         "threat-intel"
+      ]
+    },
+    {
+      "id": "entra-blog-ca579b06ad",
+      "source_id": "entra-blog",
+      "source_name": "Microsoft Entra Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/secure-ai-at-scale-join-the-microsoft-entra-purview-webinar/ba-p/4530257",
+      "published": "2026-06-25T20:17:14.000Z",
+      "ingested": "2026-06-26T19:15:16.653Z",
+      "title_original": "Secure AI at scale: Join the Microsoft Entra + Purview webinar series",
+      "headline_no": "Tredelt webinarserie skal lære deg å sikre AI med Entra og Purview",
+      "summary_no": "Microsoft Entra og Purview går sammen om en tredelt webinarserie, der produkteksperter viser hvordan du beskytter sensitive data, styrer tilgang for både brukere og AI-agenter, og reduserer risiko når organisasjonen skalerer AI. Første økt er 21. juli 2026, og påmelding er åpen nå. Relevant for dem som skal sette opp kontroller før AI-bruken løper fra styringen.",
+      "topic": "identitet",
+      "score": 24,
+      "tags": [
+        "entra",
+        "purview",
+        "ai-sikkerhet",
+        "webinar"
+      ]
+    },
+    {
+      "id": "sentinel-blog-85325e9762",
+      "source_id": "sentinel-blog",
+      "source_name": "Microsoft Sentinel Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/the-governance-shift-rbac-urbac-data-lake-and-mssp/ba-p/4528607",
+      "published": "2026-06-25T20:11:19.000Z",
+      "ingested": "2026-06-26T19:15:16.655Z",
+      "title_original": "The governance shift: RBAC, URBAC, data lake, and MSSP",
+      "headline_no": "Defender-overgangen snur opp ned på roller, datalagring og MSSP-drift",
+      "summary_no": "Overgangen til Defenders samlede SOC-portal innfører Unified RBAC (URBAC) ved siden av klassisk Azure RBAC, et tiered data lake som kutter analytics-kostnader på gammel historikk, og en multi-tenant-visning som dekker opptil 100 kundetenanter med én pålogging. Eksisterende RBAC-tildelinger, Sentinel-data og MSSP-delegeringer fungerer fra dag én. Arkitekter og SOC-ledere bør sette seg inn i hva som videreføres og hva som er nytt før de signerer på designet.",
+      "topic": "sikkerhet",
+      "score": 51,
+      "tags": [
+        "defender",
+        "sentinel",
+        "urbac",
+        "rbac",
+        "mssp"
       ]
     },
     {
