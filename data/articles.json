@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T00:25:32.485Z",
+  "generated_at": "2026-06-26T00:36:38.236Z",
   "articles": [
     {
       "id": "andrew-taylor-a94b16d4fa",
@@ -76,6 +76,27 @@
         "powerpoint",
         "merkevare",
         "office"
+      ]
+    },
+    {
+      "id": "msrc-blog-7d5c9895c3",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/25/photo-zip-campaign-targeting-hospitality-industry-delivers-node-js-implant-persistent-access/",
+      "published": "2026-06-25T22:30:29.000Z",
+      "ingested": "2026-06-26T00:36:38.178Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-52.webp",
+      "title_original": "Photo ZIP campaign targeting hospitality industry delivers Node.js implant for persistent access",
+      "headline_no": "Falske feriebilder smugler Node.js-bakdør inn i hotellnettverk",
+      "summary_no": "Microsoft Threat Intelligence har siden april 2026 sporet en pågående, flertrinns angrepskampanje mot hotell- og reiselivsbransjen i Europa og Asia. Ofre lures til å laste ned bilde-ZIP-er med falske snarveisfiler som starter obfuskert PowerShell, planter et Node.js-implantat og etablerer dobbel registerpersistens med C2 over uvanlige porter. Angriperne misbruker legitime tjenester som Calendly og Googles URL-omdirigering til phishing med flerspråklige lokkemeldinger – IT-admins i bransjen bør jakte på disse persistensmekanismene nå.",
+      "topic": "sikkerhet",
+      "score": 75,
+      "tags": [
+        "phishing",
+        "node.js",
+        "powershell",
+        "c2",
+        "threat-intel"
       ]
     },
     {
