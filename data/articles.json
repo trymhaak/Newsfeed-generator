@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T19:15:16.712Z",
+  "generated_at": "2026-06-26T19:21:11.585Z",
   "articles": [
     {
       "id": "windows-insider-fb919178ea",
@@ -453,6 +453,25 @@
         "forrester",
         "endpoint-management",
         "windows-365"
+      ]
+    },
+    {
+      "id": "security-community-4af4e3bc0b",
+      "source_id": "security-community",
+      "source_name": "Microsoft Security Community Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/security-community-spotlight-sathish-veerapandian/ba-p/4530697",
+      "published": "2026-06-25T15:00:00.000Z",
+      "ingested": "2026-06-26T19:21:11.507Z",
+      "title_original": "Security Community Spotlight: Sathish Veerapandian",
+      "headline_no": "Møt sikkerhetsarkitekten som former Microsofts sikkerhetsprodukter",
+      "summary_no": "Microsofts sikkerhetsblogg portretterer sikkerhetsarkitekt Sathish Veerapandian, som gjennom Security Advisors-programmet har gitt tilbakemeldinger på blant annet FIDO-støtte for on-prem-miljøer, malware-skanning i Defender for Storage og onboarding til Purview DSPM for AI. Saken er et community-portrett uten konkrete produktnyheter, men viser hvordan praktiker-feedback påvirker Microsofts sikkerhetsveikart.",
+      "topic": "sikkerhet",
+      "score": 18,
+      "tags": [
+        "community",
+        "purview",
+        "defender",
+        "fido"
       ]
     },
     {
