@@ -1,6 +1,66 @@
 {
-  "generated_at": "2026-06-26T07:03:32.289Z",
+  "generated_at": "2026-06-26T07:11:21.219Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-cc69b599c8",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46320",
+      "published": "2026-06-26T08:41:26.000Z",
+      "ingested": "2026-06-26T07:11:21.164Z",
+      "title_original": "CVE-2026-46320 tap: free page on error paths in tap_get_user_xdp()",
+      "headline_no": "tap-driver i Linux-kjernen frigjør minneside i feilbaner (CVE-2026-46320)",
+      "summary_no": "CVE-2026-46320 beskriver feilhåndtering i Linux-kjernens tap-driver der en minneside frigjøres på feilbaner i tap_get_user_xdp(). Som de øvrige tun/tap-XDP-feilene treffer dette virtualisert nettverk i Linux og angår mest Azure Linux og WSL2. Marginalt relevant for rene Windows-/Intune-miljøer.",
+      "topic": "sikkerhet",
+      "score": 18,
+      "tags": [
+        "linux-kernel",
+        "cve-2026-46320",
+        "tap",
+        "xdp",
+        "wsl2"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-c2e90aaf0f",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46322",
+      "published": "2026-06-26T08:41:18.000Z",
+      "ingested": "2026-06-26T07:11:21.164Z",
+      "title_original": "CVE-2026-46322 tun: free page on build_skb failure in tun_xdp_one()",
+      "headline_no": "Ny tun-sårbarhet: Linux-kjernen frigjør minneside når build_skb feiler",
+      "summary_no": "CVE-2026-46322 er nok en minnehåndteringsfeil i Linux-kjernens tun-driver, der en side frigjøres når build_skb() feiler i tun_xdp_one(). Det er den tredje nært beslektede tun/tap-XDP-feilen MSRC publiserer samtidig. Relevant for Azure Linux/WSL2-nettverk, men perifert for typiske Microsoft-admins.",
+      "topic": "sikkerhet",
+      "score": 20,
+      "tags": [
+        "linux-kernel",
+        "cve-2026-46322",
+        "tun",
+        "xdp",
+        "build-skb"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-97822a9c59",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46321",
+      "published": "2026-06-26T08:41:11.000Z",
+      "ingested": "2026-06-26T07:11:21.162Z",
+      "title_original": "CVE-2026-46321 tun: free page on short-frame rejection in tun_xdp_one()",
+      "headline_no": "tun-driver i Linux-kjernen frigjør minneside ved korte XDP-rammer",
+      "summary_no": "MSRC har publisert CVE-2026-46321, en feil i Linux-kjernens tun-driver der en minneside frigjøres feilaktig når en for kort ramme avvises i tun_xdp_one(). Bugen ligger i XDP-banen og er primært relevant for Azure Linux-VM-er og WSL2, ikke Windows-klienter. Lav prioritet for de fleste Microsoft 365-administratorer.",
+      "topic": "sikkerhet",
+      "score": 20,
+      "tags": [
+        "linux-kernel",
+        "cve-2026-46321",
+        "tun",
+        "xdp",
+        "azure-linux"
+      ]
+    },
     {
       "id": "office365-itpros-1fe43acb6b",
       "source_id": "office365-itpros",
