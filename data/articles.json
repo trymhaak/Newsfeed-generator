@@ -1,6 +1,278 @@
 {
-  "generated_at": "2026-06-26T19:21:11.585Z",
+  "generated_at": "2026-06-26T19:45:28.624Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-5ae18cee9d",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13038",
+      "published": "2026-06-27T00:46:45.000Z",
+      "ingested": "2026-06-26T19:45:28.563Z",
+      "title_original": "Chromium: CVE-2026-13038 Use after free in Autofill",
+      "headline_no": "Chromium fikser Autofill-sårbarhet – Edge oppdateres automatisk",
+      "summary_no": "En use-after-free-sårbarhet (CVE-2026-13038) i Chromiums Autofill-funksjon er rettet av Google, og Microsoft Edge arver rettelsen gjennom ordinære nettleseroppdateringer. Saken ble tildelt av Chrome og medfører ingen separat Microsoft-utbedring. Hold Edge oppdatert i organisasjonen for å lukke hullet, men den krever ingen hastetiltak utover vanlig patch-rutine.",
+      "topic": "sikkerhet",
+      "score": 42,
+      "tags": [
+        "chromium",
+        "edge",
+        "cve-2026-13038",
+        "use-after-free",
+        "autofill"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-0a9fe4e1d4",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13036",
+      "published": "2026-06-27T00:46:44.000Z",
+      "ingested": "2026-06-26T19:44:18.835Z",
+      "title_original": "Chromium: CVE-2026-13036 Use after free in Blink",
+      "headline_no": "Use-after-free i Blink rammer Edge – oppdater nettleseren",
+      "summary_no": "Chromium har rettet en use-after-free-sårbarhet i Blink-rendringsmotoren, og fiksen hentes inn i Microsoft Edge. Minnefeil av denne typen kan utnyttes til kjøring av vilkårlig kode via en ondsinnet nettside. Rull ut Edge-oppdateringen til alle klienter.",
+      "topic": "sikkerhet",
+      "score": 52,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-13036",
+        "blink",
+        "uaf"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-76ba6c7731",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13035",
+      "published": "2026-06-27T00:46:43.000Z",
+      "ingested": "2026-06-26T19:44:18.835Z",
+      "title_original": "Chromium: CVE-2026-13035 Use after free in Bluetooth",
+      "headline_no": "Edge arver Chromium use-after-free i Bluetooth-stakken",
+      "summary_no": "En use-after-free i Chromiums Bluetooth-komponent er rettet og kommer inn i Microsoft Edge. Slike minnefeil kan i verste fall gi kjøring av kode, men krever oftest spesifikke betingelser. Oppdater Edge for å lukke hullet.",
+      "topic": "sikkerhet",
+      "score": 49,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-13035",
+        "bluetooth",
+        "uaf"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-a5817b5a2c",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13034",
+      "published": "2026-06-27T00:46:41.000Z",
+      "ingested": "2026-06-26T19:44:18.835Z",
+      "title_original": "Chromium: CVE-2026-13034 Inappropriate implementation in Passwords",
+      "headline_no": "Chromium-feil i passordhåndtering treffer Edge",
+      "summary_no": "Chromium har rettet en feilimplementering i passordfunksjonen som også berører Microsoft Edge. Svakheter i nettleserens passordhåndtering kan undergrave hvordan lagrede legitimasjoner beskyttes. Distribuer Edge-oppdateringen til organisasjonen.",
+      "topic": "sikkerhet",
+      "score": 48,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-13034",
+        "passwords"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-59e1161366",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13033",
+      "published": "2026-06-27T00:46:40.000Z",
+      "ingested": "2026-06-26T19:44:18.835Z",
+      "title_original": "Chromium: CVE-2026-13033 Out of bounds read in Blink>InterestGroups",
+      "headline_no": "Out-of-bounds-lesing i Blink InterestGroups rammer Edge",
+      "summary_no": "Chromium har tettet en out-of-bounds-lesefeil i Blinks InterestGroups-komponent, og rettelsen hentes inn i Microsoft Edge. OOB-lesing kan lekke minneinnhold og brukes til å omgå beskyttelsesmekanismer. Oppdater Edge på alle administrerte enheter.",
+      "topic": "sikkerhet",
+      "score": 45,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-13033",
+        "blink",
+        "oob-read"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-2cc259cb93",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13031",
+      "published": "2026-06-27T00:46:39.000Z",
+      "ingested": "2026-06-26T19:44:18.835Z",
+      "title_original": "Chromium: CVE-2026-13031 Use after free in Blink",
+      "headline_no": "Nok en use-after-free i Blink lappes i Edge",
+      "summary_no": "Chromium har rettet enda en use-after-free i Blink-motoren som hentes inn i Microsoft Edge. Use-after-free er en klassisk minnefeil som kan lede til kodekjøring fra en preparert nettside. Sørg for at Edge-klientene får siste oppdatering.",
+      "topic": "sikkerhet",
+      "score": 51,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-13031",
+        "blink",
+        "uaf"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-38d0fd3195",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13029",
+      "published": "2026-06-27T00:46:38.000Z",
+      "ingested": "2026-06-26T19:45:28.563Z",
+      "title_original": "Chromium: CVE-2026-13029 Use after free in Web Authentication",
+      "headline_no": "Chromium tetter Web Authentication-hull – Edge arver rettelsen",
+      "summary_no": "Google har rettet en use-after-free-sårbarhet (CVE-2026-13029) i Chromiums Web Authentication-komponent, og Microsoft Edge får fiksen automatisk fordi nettleseren bygger på Chromium. Feilen ble tildelt av Chrome og krever ingen egen Microsoft-patch. IT-admins bør likevel passe på at Edge-flåten kjører siste versjon, siden minnefeil i autentiseringskomponenter i verste fall kan utnyttes til kjøring av kode.",
+      "topic": "sikkerhet",
+      "score": 45,
+      "tags": [
+        "chromium",
+        "edge",
+        "cve-2026-13029",
+        "use-after-free",
+        "webauthn"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-00e8f567c6",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13027",
+      "published": "2026-06-27T00:46:36.000Z",
+      "ingested": "2026-06-26T19:43:02.643Z",
+      "title_original": "Chromium: CVE-2026-13027 Use after free in FileSystem",
+      "headline_no": "Edge tetter use-after-free-hull i Chromiums FileSystem (CVE-2026-13027)",
+      "summary_no": "Google har rettet en use-after-free-sårbarhet i Chromiums FileSystem-komponent, og fiksen er nå hentet inn i den Chromium-baserte Microsoft Edge. Use-after-free-feil kan i verste fall utnyttes til kjøring av skadelig kode, så IT-admins bør sørge for at klientene kjører siste Edge-versjon.",
+      "topic": "sikkerhet",
+      "score": 45,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-13027",
+        "use-after-free"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-aa12215cd7",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13026",
+      "published": "2026-06-27T00:46:35.000Z",
+      "ingested": "2026-06-26T19:43:02.645Z",
+      "title_original": "Chromium: CVE-2026-13026 Use after free in Digital Credentials",
+      "headline_no": "Use-after-free i Digital Credentials fikset i Chromium-baserte Edge",
+      "summary_no": "En use-after-free-feil i Chromiums håndtering av Digital Credentials er rettet og ingestet i Edge. Sårbarheten kan føre til minnekorrupsjon; sørg for at Edge oppdateres automatisk eller via administrert utrulling.",
+      "topic": "sikkerhet",
+      "score": 45,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-13026",
+        "use-after-free"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-c9b60f503f",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13025",
+      "published": "2026-06-27T00:46:34.000Z",
+      "ingested": "2026-06-26T19:43:02.645Z",
+      "title_original": "Chromium: CVE-2026-13025 Insufficient validation of untrusted input in DevTools",
+      "headline_no": "Edge fikser DevTools-sårbarhet fra Chromium (CVE-2026-13025)",
+      "summary_no": "Chromium har tettet et hull der DevTools ikke validerte ikke-betrodd input godt nok, og rettelsen følger med inn i Edge. Lav til moderat risiko, men inngår i Edges løpende sikkerhetsoppdateringer admins bør bekrefte er utrullet.",
+      "topic": "sikkerhet",
+      "score": 40,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-13025",
+        "devtools"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-7e3f34b01c",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13024",
+      "published": "2026-06-27T00:46:33.000Z",
+      "ingested": "2026-06-26T19:43:02.645Z",
+      "title_original": "Chromium: CVE-2026-13024 Insufficient validation of untrusted input in Navigation",
+      "headline_no": "Chromium-feil i Navigation tettes i Edge (CVE-2026-13024)",
+      "summary_no": "Utilstrekkelig validering av ikke-betrodd input i Chromiums Navigation-komponent er rettet og inkludert i den Chromium-baserte Edge. Hold Edge oppdatert for å lukke svakheten i nettlesernavigasjonen.",
+      "topic": "sikkerhet",
+      "score": 41,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-13024",
+        "navigation"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-8bfe134a52",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13023",
+      "published": "2026-06-27T00:46:32.000Z",
+      "ingested": "2026-06-26T19:43:02.645Z",
+      "title_original": "Chromium: CVE-2026-13023 Uninitialized Use in GPU",
+      "headline_no": "Uinitialisert GPU-minnebruk fikset i Chromium-baserte Edge",
+      "summary_no": "En sårbarhet med uinitialisert minnebruk i Chromiums GPU-komponent er fikset og hentet inn i Edge. Slike feil kan lekke minneinnhold, så admins bør bekrefte at klientene kjører siste Edge-bygg.",
+      "topic": "sikkerhet",
+      "score": 42,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-13023",
+        "gpu"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-b79320cb59",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13022",
+      "published": "2026-06-27T00:46:31.000Z",
+      "ingested": "2026-06-26T19:43:02.645Z",
+      "title_original": "Chromium: CVE-2026-13022 Inappropriate implementation in Autofill",
+      "headline_no": "Autofill-svakhet i Chromium rettet i Edge (CVE-2026-13022)",
+      "summary_no": "Chromium har korrigert en uheldig implementasjon i Autofill, og rettelsen er nå inne i Edge. Risikoen er begrenset, men feilen inngår i Edges løpende sikkerhetsoppdateringer fra Chromium-strømmen.",
+      "topic": "sikkerhet",
+      "score": 40,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-13022",
+        "autofill"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-b25c8a7c61",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13021",
+      "published": "2026-06-27T00:46:29.000Z",
+      "ingested": "2026-06-26T19:44:18.835Z",
+      "title_original": "Chromium: CVE-2026-13021 Inappropriate implementation in DeviceBoundSessionCredentials",
+      "headline_no": "Edge-feil i DBSC svekker vernet mot øktkapring",
+      "summary_no": "En feilimplementering i Chromiums DeviceBoundSessionCredentials (DBSC) er rettet og hentes inn i Microsoft Edge. DBSC binder øktlegitimasjon til enheten for å stoppe tyveri av session-tokens, så IT-admins bør prioritere Edge-oppdateringen. CVE-en ble tildelt av Chrome-teamet.",
+      "topic": "sikkerhet",
+      "score": 47,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-13021",
+        "dbsc"
+      ]
+    },
     {
       "id": "windows-insider-fb919178ea",
       "source_id": "windows-insider",
