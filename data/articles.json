@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T21:04:21.575Z",
+  "generated_at": "2026-06-26T22:33:12.090Z",
   "articles": [
     {
       "id": "msrc-update-guide-5ae18cee9d",
@@ -271,6 +271,81 @@
         "chromium",
         "cve-2026-13021",
         "dbsc"
+      ]
+    },
+    {
+      "id": "m365-roadmap-94084578cc",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566703",
+      "published": "2026-06-26T22:01:51.000Z",
+      "ingested": "2026-06-26T22:33:12.040Z",
+      "title_original": "Microsoft Edge: Upgraded Copilot new tab page",
+      "headline_no": "Copilot tar over ny fane i Edge med søk, chat og jobbinnhold",
+      "summary_no": "Microsoft Edge får en oppgradert «ny fane»-side der Copilot samler søk, chat og kuratert jobbinnhold i ett søkefelt, med foreslåtte handlinger rett på startsiden. For IT-admins betyr det enda en Copilot-flate å forholde seg til i nettleseren. Preview kommer i juli 2026, generell tilgjengelighet i september.",
+      "topic": "ai",
+      "score": 31,
+      "tags": [
+        "edge",
+        "copilot",
+        "ny-fane",
+        "m365"
+      ]
+    },
+    {
+      "id": "m365-roadmap-1734f123da",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566699",
+      "published": "2026-06-26T22:01:51.000Z",
+      "ingested": "2026-06-26T22:33:12.042Z",
+      "title_original": "Microsoft Viva: Discussion Post Previews",
+      "headline_no": "Viva lar brukere forhåndsvise diskusjonsinnlegg før publisering",
+      "summary_no": "Microsoft Viva får forhåndsvisning av diskusjonsinnlegg, slik at brukere kan se hvordan innlegget ser ut før det publiseres. Funksjonen skal fange opp formateringsfeil og gi tryggere publisering. Generelt tilgjengelig fra juli 2026.",
+      "topic": "endpoint",
+      "score": 27,
+      "tags": [
+        "viva",
+        "m365",
+        "samarbeid"
+      ]
+    },
+    {
+      "id": "m365-roadmap-8cc591c60a",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566698",
+      "published": "2026-06-26T22:01:51.000Z",
+      "ingested": "2026-06-26T22:33:12.042Z",
+      "title_original": "SharePoint: Neutral-themed SharePoint UI in Page Editing and Property Panes",
+      "headline_no": "SharePoint får nøytralt tema i sideredigering og egenskapsruter",
+      "summary_no": "SharePoint utvider sitt nye nøytrale tema til sideredigering og egenskapsruter som del av en større visuell oppfriskning. Endringen skal gi et mer konsistent, tilgjengelig og moderne redigeringsmiljø, men er rent kosmetisk. Generelt tilgjengelig fra juli 2026.",
+      "topic": "endpoint",
+      "score": 25,
+      "tags": [
+        "sharepoint",
+        "ui",
+        "design",
+        "m365"
+      ]
+    },
+    {
+      "id": "m365-roadmap-7702f87b3e",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=565870",
+      "published": "2026-06-26T22:01:51.000Z",
+      "ingested": "2026-06-26T22:33:12.042Z",
+      "title_original": "Microsoft Purview: Data Loss Prevention - Data Loss Prevention to safeguard sensitive information from external web search in Microsoft 356 Copilot and Copilot Chat",
+      "headline_no": "Purview DLP stopper Copilot fra å lekke sensitive data til nettsøk",
+      "summary_no": "Microsoft Purview utvider DLP til å hindre at Microsoft 365 Copilot og Copilot Chat bruker sensitive data i eksterne nettsøk. Sanntidskontrollen skal redusere risiko for datalekkasje og oversharing, og gjelder også agenter bygd i Copilot Studio og publisert til M365 Copilot. Generelt tilgjengelig fra juli 2026.",
+      "topic": "sikkerhet",
+      "score": 49,
+      "tags": [
+        "purview",
+        "dlp",
+        "copilot",
+        "datalekkasje"
       ]
     },
     {
