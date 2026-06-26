@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-06-26T00:36:38.236Z",
+  "generated_at": "2026-06-26T07:03:32.289Z",
   "articles": [
+    {
+      "id": "office365-itpros-1fe43acb6b",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/06/26/dragonforce-attack-teams/?utm_source=rss&utm_medium=rss&utm_campaign=dragonforce-attack-teams",
+      "published": "2026-06-26T07:00:00.000Z",
+      "ingested": "2026-06-26T07:03:32.222Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Attack-hero.jpg?resize=300%2C300&#038;ssl=1",
+      "title_original": "What the DragonForce Attack Against Teams Is All About",
+      "headline_no": "DragonForce gjemmer C2-trafikk i Teams-relayer – ingen Teams-sårbarhet",
+      "summary_no": "DragonForce-gruppen rutet skadevaren Backdoor.Turn gjennom Microsofts TURN-relayservere i Teams, slik at C2-trafikken så ut som helt vanlig Teams-aktivitet og slapp uoppdaget forbi overvåkingen. Det finnes ingen sårbarhet i Teams og ingen patch – poenget er at legitim infrastruktur kan misbrukes til å skjule utgående trafikk. IT-admins bør derfor ikke stole blindt på at trafikk mot Microsoft-domener er trygg, men også inspisere mønster og volum mot betrodde destinasjoner.",
+      "topic": "sikkerhet",
+      "score": 47,
+      "tags": [
+        "dragonforce",
+        "ransomware",
+        "teams",
+        "c2",
+        "backdoor.turn"
+      ]
+    },
     {
       "id": "andrew-taylor-a94b16d4fa",
       "source_id": "andrew-taylor",
