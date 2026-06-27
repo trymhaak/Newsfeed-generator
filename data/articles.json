@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T22:33:12.090Z",
+  "generated_at": "2026-06-27T15:57:47.308Z",
   "articles": [
     {
       "id": "msrc-update-guide-5ae18cee9d",
@@ -386,6 +386,25 @@
         "windows-insider",
         "wip",
         "retail"
+      ]
+    },
+    {
+      "id": "security-community-a7f9be34c2",
+      "source_id": "security-community",
+      "source_name": "Microsoft Security Community Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/the-state-of-mcp-security-in-2026/ba-p/4531327",
+      "published": "2026-06-26T16:21:41.000Z",
+      "ingested": "2026-06-27T15:57:47.257Z",
+      "title_original": "The state of MCP security in 2026",
+      "headline_no": "MCP-sikkerhet i 2026: ny spec hever lista, men låsene må du sette selv",
+      "summary_no": "Microsofts sikkerhetsteam oppsummerer statusen for MCP-sikkerhet nå som protokollen har gått fra eksperiment til produksjon i mange virksomheter. Den ferskeste spesifikasjonen strammer identitetskontroll mellom klient og server og lar gatewayer inspisere hvert kall, men protokollen håndhever bevisst ikke sikkerheten for deg. For IT-admins betyr det at hver MCP-server blir en tillitsgrense der verktøy, skjemaer og legitimasjon må sikres aktivt.",
+      "topic": "sikkerhet",
+      "score": 44,
+      "tags": [
+        "mcp",
+        "ai-agenter",
+        "gateway",
+        "trust-boundary"
       ]
     },
     {
