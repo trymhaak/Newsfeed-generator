@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T15:57:47.308Z",
+  "generated_at": "2026-06-27T17:00:36.988Z",
   "articles": [
     {
       "id": "msrc-update-guide-5ae18cee9d",
@@ -366,6 +366,26 @@
         "patching",
         "sårbarheter",
         "eol"
+      ]
+    },
+    {
+      "id": "defender-xdr-0cb455ad38",
+      "source_id": "defender-xdr",
+      "source_name": "Microsoft Defender XDR Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/the-next-frontier-in-endpoint-security-securing-local-ai-agents/ba-p/4524651",
+      "published": "2026-06-26T17:49:18.000Z",
+      "ingested": "2026-06-27T17:00:36.939Z",
+      "title_original": "The next frontier in endpoint security: Securing local AI agents with Microsoft Defender",
+      "headline_no": "Defender sikrer lokale AI-agenter — oppdager, blokkerer, gransker",
+      "summary_no": "Microsoft utvider Defender til å oppdage, blokkere og granske lokale AI-agenter som kjører på administrerte Windows- og macOS-enheter. Slike agenter kjører som vanlige prosesser uten innsyn for SOC-teamet, og en skjult ondsinnet instruksjon i innhold de leser kan kapre dem og gi angriperen tilgang til alt brukerens identitet rekker. Defender oppdager nå 20+ agenttyper, stopper skadelig aktivitet i sanntid og lar deg etterforske hendelsene i Advanced hunting.",
+      "topic": "sikkerhet",
+      "score": 68,
+      "tags": [
+        "defender",
+        "ai-agenter",
+        "xdr",
+        "endepunkt",
+        "prompt-injection"
       ]
     },
     {
