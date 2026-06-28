@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-28T08:34:20.263Z",
+  "generated_at": "2026-06-28T08:52:12.741Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-5c0b04bf24",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21696",
+      "published": "2026-06-28T09:05:29.000Z",
+      "ingested": "2026-06-28T08:49:58.898Z",
+      "title_original": "CVE-2025-21696 mm: clear uffd-wp PTE/PMD state on mremap()",
+      "headline_no": "Linux-kjernen fikser minnefeil i userfaultfd ved mremap()",
+      "summary_no": "En feil i Linux-kjernens minnehåndtering (userfaultfd write-protect) etterlot feil PTE/PMD-tilstand etter mremap(). MSRC sporer CVE-en fordi den berører Azure Linux, AKS og WSL2 — men for rene M365-, Intune- og Entra-miljøer er den lite relevant. Patches kommer via ordinære kjerneoppdateringer.",
+      "topic": "sikkerhet",
+      "score": 23,
+      "tags": [
+        "cve-2025-21696",
+        "linux-kernel",
+        "azure-linux",
+        "msrc",
+        "memory"
+      ]
+    },
     {
       "id": "msrc-update-guide-955b2903a6",
       "source_id": "msrc-update-guide",
@@ -364,6 +384,103 @@
         "linux-kernel",
         "amd",
         "cve-2026-46245",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-f6718a9955",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21732",
+      "published": "2026-06-28T08:53:05.000Z",
+      "ingested": "2026-06-28T08:49:58.900Z",
+      "title_original": "CVE-2025-21732 RDMA/mlx5: Fix a race for an ODP MR which leads to CQE with error",
+      "headline_no": "Mellanox RDMA-feil i Linux-kjernen kan gi CQE-feil under race",
+      "summary_no": "En race-tilstand i Linux-kjernens RDMA/mlx5-driver (Mellanox, ODP MR) kunne gi CQE med feil. Gjelder spesialisert nettverksmaskinvare i Linux-workloads, typisk HPC/Azure, og er irrelevant for vanlige Microsoft 365-flåter. Speiles av MSRC som del av Linux-kjerne-CVE-strømmen.",
+      "topic": "sikkerhet",
+      "score": 14,
+      "tags": [
+        "cve-2025-21732",
+        "linux-kernel",
+        "rdma",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-f7f7a7dcc9",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-57976",
+      "published": "2026-06-28T08:52:01.000Z",
+      "ingested": "2026-06-28T08:49:58.900Z",
+      "title_original": "CVE-2024-57976 btrfs: do proper folio cleanup when cow_file_range() failed",
+      "headline_no": "Btrfs i Linux-kjernen rydder opp minne etter mislykket skriving",
+      "summary_no": "Btrfs-filsystemet i Linux ryddet ikke opp folios korrekt når cow_file_range() feilet, noe som kunne gi minnelekkasje. Berører kun Linux-systemer med Btrfs, ikke Windows eller M365-tjenester. Minimal betydning for typiske IT-admins i Microsoft-økosystemet.",
+      "topic": "sikkerhet",
+      "score": 16,
+      "tags": [
+        "cve-2024-57976",
+        "linux-kernel",
+        "btrfs",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-ee6ff948c9",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21801",
+      "published": "2026-06-28T08:50:42.000Z",
+      "ingested": "2026-06-28T08:49:58.900Z",
+      "title_original": "CVE-2025-21801 net: ravb: Fix missing rtnl lock in suspend/resume path",
+      "headline_no": "Linux-driver for Renesas-nett manglet lås i suspend/resume",
+      "summary_no": "Renesas Ethernet AVB-driveren (ravb) i Linux manglet rtnl-lås i suspend/resume-stien og kunne forårsake feil. Dette er maskinvarespesifikt og nær irrelevant for skybaserte Microsoft-miljøer. Tas kun med fordi MSRC speiler Linux-kjerne-CVE-er for Azure Linux.",
+      "topic": "sikkerhet",
+      "score": 14,
+      "tags": [
+        "cve-2025-21801",
+        "linux-kernel",
+        "driver",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-4390f657ee",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-57974",
+      "published": "2026-06-28T08:48:51.000Z",
+      "ingested": "2026-06-28T08:49:58.900Z",
+      "title_original": "CVE-2024-57974 udp: Deal with race between UDP socket address change and rehash",
+      "headline_no": "Race-feil i Linux UDP-stack fikset etter adresseendring",
+      "summary_no": "En race-tilstand i Linux-kjernens UDP-stack mellom adresseendring og rehash er rettet. Relevansen er begrenset til Linux-baserte Azure-workloads og WSL; Windows- og M365-flåter berøres ikke. Følges opp via ordinære kjernepatcher.",
+      "topic": "sikkerhet",
+      "score": 20,
+      "tags": [
+        "cve-2024-57974",
+        "linux-kernel",
+        "udp",
+        "azure-linux",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-2d9377369f",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21768",
+      "published": "2026-06-28T08:47:48.000Z",
+      "ingested": "2026-06-28T08:49:58.900Z",
+      "title_original": "CVE-2025-21768 net: ipv6: fix dst ref loops in rpl, seg6 and ioam6 lwtunnels",
+      "headline_no": "IPv6-tunnelfeil i Linux-kjernen kan lekke referanser",
+      "summary_no": "Linux-kjernens IPv6-stack hadde referanseløkker i RPL-, SEG6- og IOAM6-lettvektstunneler som kunne hindre opprydding og destabilisere nettverket. CVE-en gjelder Linux-workloads på Azure/AKS og WSL, ikke Windows-klienter. Lav prioritet for typiske Microsoft 365-administratorer.",
+      "topic": "sikkerhet",
+      "score": 20,
+      "tags": [
+        "cve-2025-21768",
+        "linux-kernel",
+        "ipv6",
+        "azure-linux",
         "msrc"
       ]
     },
