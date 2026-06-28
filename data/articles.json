@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T08:52:12.741Z",
+  "generated_at": "2026-06-28T09:17:16.923Z",
   "articles": [
     {
       "id": "msrc-update-guide-5c0b04bf24",
@@ -136,6 +136,26 @@
         "linux-kernel",
         "intel-ice",
         "xdp"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-d90d8367b1",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-42107",
+      "published": "2026-06-28T09:02:05.000Z",
+      "ingested": "2026-06-28T09:17:16.871Z",
+      "title_original": "CVE-2024-42107 ice: Don't process extts if PTP is disabled",
+      "headline_no": "Intel ice-driver: Linux-kjernefeil kan gi krasj når PTP er av",
+      "summary_no": "MSRC har speilet en Linux-kjerne-CVE i Intels ice-nettverksdriver, der ekstern tidsstempling (extts) ble behandlet selv når PTP var deaktivert – noe som kunne utløse en krasj. Fiksen gjelder først og fremst Linux-laster på Azure, AKS og WSL, ikke Windows-klienter. Lav alvorlighetsgrad og marginal relevans for typiske Microsoft-admins.",
+      "topic": "sikkerhet",
+      "score": 18,
+      "tags": [
+        "linux-kernel",
+        "cve-2024-42107",
+        "intel-ice",
+        "msrc",
+        "azure-linux"
       ]
     },
     {
@@ -637,6 +657,25 @@
       ]
     },
     {
+      "id": "msrc-update-guide-909757b995",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-42065",
+      "published": "2026-06-28T08:42:34.000Z",
+      "ingested": "2026-06-28T09:17:16.871Z",
+      "title_original": "CVE-2024-42065 drm/xe: Add a NULL check in xe_ttm_stolen_mgr_init",
+      "headline_no": "Intel Xe-grafikkdriver får NULL-sjekk mot Linux-kjernekrasj",
+      "summary_no": "MSRC har publisert en Linux-kjerne-CVE i Intels Xe-grafikkdriver, der en manglende NULL-sjekk i xe_ttm_stolen_mgr_init kunne gi en NULL-peker-dereferanse ved oppstart. Fiksen er en ren hardening-endring med lav alvorlighetsgrad, relevant for Linux på Azure og ikke Windows-flåten. Marginal nyhetsverdi for Microsoft-fokuserte IT-team.",
+      "topic": "sikkerhet",
+      "score": 17,
+      "tags": [
+        "linux-kernel",
+        "cve-2024-42065",
+        "intel-xe",
+        "msrc"
+      ]
+    },
+    {
       "id": "msrc-update-guide-00aeed6ae4",
       "source_id": "msrc-update-guide",
       "source_name": "MSRC Security Update Guide (RSS)",
@@ -653,6 +692,25 @@
         "linux-kernel",
         "rdma",
         "azure-linux",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-54e1c816d4",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-42064",
+      "published": "2026-06-28T08:41:27.000Z",
+      "ingested": "2026-06-28T09:17:16.871Z",
+      "title_original": "CVE-2024-42064 drm/amd/display: Skip pipe if the pipe idx not set properly",
+      "headline_no": "AMD-skjermdriver: Linux-kjernefiks stopper ugyldig pipe-tilgang",
+      "summary_no": "En Linux-kjerne-CVE i AMDs display-driver, speilet av MSRC, hopper nå over en pipe når pipe-indeksen ikke er satt riktig, og unngår dermed en ugyldig minnetilgang. Berører Linux-baserte Azure- og AKS-arbeidslaster, ikke Windows. Lav alvorlighetsgrad og lite å følge opp for de fleste Microsoft-admins.",
+      "topic": "sikkerhet",
+      "score": 17,
+      "tags": [
+        "linux-kernel",
+        "cve-2024-42064",
+        "amd-gpu",
         "msrc"
       ]
     },
