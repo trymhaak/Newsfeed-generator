@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T09:17:16.923Z",
+  "generated_at": "2026-06-28T09:46:18.817Z",
   "articles": [
     {
       "id": "msrc-update-guide-5c0b04bf24",
@@ -332,6 +332,26 @@
       ]
     },
     {
+      "id": "msrc-update-guide-25e9b2f135",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-46778",
+      "published": "2026-06-28T08:56:37.000Z",
+      "ingested": "2026-06-28T09:46:18.758Z",
+      "title_original": "CVE-2024-46778 drm/amd/display: Check UnboundedRequestEnabled's value",
+      "headline_no": "AMD-skjermdriver i Linux får manglende verdisjekk mot ustabilitet",
+      "summary_no": "En Linux-kjernefeil i AMDs display-driver mangler validering av UnboundedRequestEnabled, noe rettelsen nå legger til for å hindre ustabil oppførsel. Dette er en lavalvorlig grafikkdriver-CVE i Linux uten relevans for Microsoft 365-, endpoint- eller identitetsadministrasjon. Saken dukker opp via MSRC kun fordi Microsoft koordinerer CVE-er for Linux i Azure-økosystemet.",
+      "topic": "sikkerhet",
+      "score": 7,
+      "tags": [
+        "linux-kernel",
+        "cve-2024-46778",
+        "amd",
+        "drm",
+        "msrc"
+      ]
+    },
+    {
       "id": "msrc-update-guide-40ccad610e",
       "source_id": "msrc-update-guide",
       "source_name": "MSRC Security Update Guide (RSS)",
@@ -505,6 +525,26 @@
       ]
     },
     {
+      "id": "msrc-update-guide-735b7b19f4",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-46808",
+      "published": "2026-06-28T08:47:34.000Z",
+      "ingested": "2026-06-28T09:46:18.758Z",
+      "title_original": "CVE-2024-46808 drm/amd/display: Add missing NULL pointer check within dpcd_extend_address_range",
+      "headline_no": "Manglende NULL-sjekk i AMD-skjermdriver for Linux tettet",
+      "summary_no": "Rettelsen legger til en manglende NULL-sjekk i AMDs Linux-display-driver (dpcd_extend_address_range) for å unngå en mulig NULL-pekerdereferanse og krasj. Dette er en Linux-kjerne-CVE i grafikkstacken, ikke en Windows- eller skytjenestesårbarhet, og har minimal betydning for typiske Microsoft-admins. Den er tatt med her fordi MSRC-feeden inkluderer Linux-CVE-er Microsoft sporer for Azure.",
+      "topic": "sikkerhet",
+      "score": 7,
+      "tags": [
+        "linux-kernel",
+        "cve-2024-46808",
+        "amd",
+        "drm",
+        "msrc"
+      ]
+    },
+    {
       "id": "msrc-update-guide-4c75c4686e",
       "source_id": "msrc-update-guide",
       "source_name": "MSRC Security Update Guide (RSS)",
@@ -559,6 +599,26 @@
         "linux-kjerne",
         "selinux",
         "overlayfs"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-e35b46ebaa",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-46705",
+      "published": "2026-06-28T08:46:32.000Z",
+      "ingested": "2026-06-28T09:46:18.758Z",
+      "title_original": "CVE-2024-46705 drm/xe: reset mmio mappings with devm",
+      "headline_no": "Intel Xe-grafikkdriver i Linux tetter minnefeil ved enhetsavslutning",
+      "summary_no": "MSRC har republisert en Linux-kjerne-CVE der Intel Xe-grafikkdriveren nå nullstiller MMIO-mappinger via devm for å unngå tilgang til frigjort minne når enheten avsluttes. Feilen ligger i Linux DRM-subsystemet og berører ikke Windows, Intune eller Entra – den havner i MSRC-feeden fordi Microsoft tildeler CVE-er for Linux-komponenter i Azure. Admins i et rent Microsoft-miljø kan trygt nedprioritere denne.",
+      "topic": "sikkerhet",
+      "score": 9,
+      "tags": [
+        "linux-kernel",
+        "cve-2024-46705",
+        "intel-xe",
+        "drm",
+        "msrc"
       ]
     },
     {
