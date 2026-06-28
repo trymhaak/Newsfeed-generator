@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T07:20:37.382Z",
+  "generated_at": "2026-06-28T07:40:53.508Z",
   "articles": [
     {
       "id": "msrc-update-guide-b5086d93d1",
@@ -113,6 +113,234 @@
         "amd",
         "cve-2026-46245",
         "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-4c75c4686e",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45932",
+      "published": "2026-06-28T08:47:08.000Z",
+      "ingested": "2026-06-28T07:39:47.810Z",
+      "title_original": "CVE-2026-45932 bpf: Fix tcx/netkit detach permissions when prog fd isn't given",
+      "headline_no": "BPF-feil i Linux ga gal tillatelsessjekk ved tcx-frakobling",
+      "summary_no": "Linux-kjernen retter en tillatelsessjekk i BPF som slo feil ved frakobling av tcx/netkit-programmer når program-fd ikke var oppgitt. eBPF-tillatelsesfeil kan i verste fall misbrukes til rettighetseskalering på Linux-verter. Saken er sporet av MSRC og er lite relevant for Windows- og M365-administrasjon.",
+      "topic": "sikkerhet",
+      "score": 30,
+      "tags": [
+        "cve-2026-45932",
+        "linux-kjerne",
+        "ebpf",
+        "tcx"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-68dc125b4f",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45944",
+      "published": "2026-06-28T08:46:54.000Z",
+      "ingested": "2026-06-28T07:39:47.810Z",
+      "title_original": "CVE-2026-45944 iommu/vt-d: Clear Present bit before tearing down context entry",
+      "headline_no": "Linux retter VT-d IOMMU-feil ved nedriving av context-oppføring",
+      "summary_no": "I likhet med PASID-fiksen nullstiller Linux-kjernen nå Present-biten før en VT-d context-oppføring rives ned, for å unngå farlige DMA-tilstander. Dette er IOMMU-herding som mest angår Linux-virtualiseringsverter i Azure. MSRC har publisert oppføringen uten alvorlighetsgrad.",
+      "topic": "sikkerhet",
+      "score": 27,
+      "tags": [
+        "cve-2026-45944",
+        "linux-kjerne",
+        "iommu",
+        "intel-vt-d"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-36ebf45b25",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46054",
+      "published": "2026-06-28T08:46:39.000Z",
+      "ingested": "2026-06-28T07:39:47.810Z",
+      "title_original": "CVE-2026-46054 selinux: fix overlayfs mmap() and mprotect() access checks",
+      "headline_no": "SELinux-fiks strammer tilgangssjekk for overlayfs i Linux",
+      "summary_no": "Linux-kjernen retter hvordan SELinux håndhever tilgangssjekker for mmap() og mprotect() på overlayfs. Overlayfs brukes blant annet av containere, så feilen kan ha betydning for SELinux-baserte containeroppsett på Linux. Saken er sporet av MSRC og angår ikke Windows-endepunkter direkte.",
+      "topic": "sikkerhet",
+      "score": 29,
+      "tags": [
+        "cve-2026-46054",
+        "linux-kjerne",
+        "selinux",
+        "overlayfs"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-db58087581",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45894",
+      "published": "2026-06-28T08:45:51.000Z",
+      "ingested": "2026-06-28T07:39:47.810Z",
+      "title_original": "CVE-2026-45894 iommu/vt-d: Clear Present bit before tearing down PASID entry",
+      "headline_no": "Linux tetter IOMMU-feil i Intel VT-d ved riving av PASID",
+      "summary_no": "En feil i Intel VT-d IOMMU-koden, der Present-biten ikke ble nullstilt før en PASID-oppføring ble revet ned, er rettet i Linux-kjernen. IOMMU og PASID gjelder sikkert enhetsgjennomslipp (DMA) og er mest relevant for Linux-virtualiseringsverter i Azure. MSRC har kun publisert oppføringen uten ytterligere detaljer.",
+      "topic": "sikkerhet",
+      "score": 27,
+      "tags": [
+        "cve-2026-45894",
+        "linux-kjerne",
+        "iommu",
+        "intel-vt-d"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-fea4a43aaa",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45901",
+      "published": "2026-06-28T08:45:37.000Z",
+      "ingested": "2026-06-28T07:39:47.810Z",
+      "title_original": "CVE-2026-45901 netfilter: nf_tables: revert commit_mutex usage in reset path",
+      "headline_no": "Linux reverserer låse-endring i nf_tables-brannmuren",
+      "summary_no": "Linux-kjernen reverserer en commit_mutex-endring i reset-stien til nf_tables, kjernens pakkefilter og brannmur. Saken er sporet av MSRC og angår primært Linux-verter i Azure, ikke Windows- eller M365-administrasjon. Ingen alvorlighetsgrad er publisert ennå.",
+      "topic": "sikkerhet",
+      "score": 29,
+      "tags": [
+        "cve-2026-45901",
+        "linux-kjerne",
+        "netfilter",
+        "nftables"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-9c7165f9a8",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46059",
+      "published": "2026-06-28T08:45:21.000Z",
+      "ingested": "2026-06-28T07:39:47.810Z",
+      "title_original": "CVE-2026-46059 KVM: nSVM: Always use NextRIP as vmcb02's NextRIP after first L2 VMRUN",
+      "headline_no": "Linux-kjernen retter KVM-feil i nøstet AMD-virtualisering",
+      "summary_no": "En korrekthetsfeil i KVMs nøstede SVM-håndtering (AMD-virtualisering) er rettet i Linux-kjernen og sporet av MSRC. Den er mest relevant hvis du kjører Linux-baserte VM-er eller nøstet virtualisering i Azure; for rene Intune- og Entra-miljøer er den lite aktuell. MSRC har foreløpig kun publisert oppføringen uten detaljer om alvorlighetsgrad.",
+      "topic": "sikkerhet",
+      "score": 30,
+      "tags": [
+        "cve-2026-46059",
+        "linux-kjerne",
+        "kvm",
+        "virtualisering"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-82cdfd1356",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45917",
+      "published": "2026-06-28T08:44:37.000Z",
+      "ingested": "2026-06-28T07:37:46.676Z",
+      "title_original": "CVE-2026-45917 ipvs: do not keep dest_dst if dev is going down",
+      "headline_no": "Linux-kjernens IPVS-fiks hindrer bruk av nedlagt nettverksenhet",
+      "summary_no": "En Linux-kjernefiks i IPVS (IP Virtual Server) sørger for at dest_dst ikke beholdes når en nettverksenhet tas ned, noe som unngår bruk-etter-frigjøring-lignende feil. Dette er en nisje-fiks for Linux-lastbalansering. Marginal betydning for Microsoft 365- og Windows-administratorer.",
+      "topic": "sikkerhet",
+      "score": 29,
+      "tags": [
+        "cve-2026-45917",
+        "linux-kernel",
+        "ipvs",
+        "azure-linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-e4162147b2",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45877",
+      "published": "2026-06-28T08:44:21.000Z",
+      "ingested": "2026-06-28T07:37:46.676Z",
+      "title_original": "CVE-2026-45877 HID: intel-ish-hid: fix NULL-ptr-deref in ishtp_bus_remove_all_clients",
+      "headline_no": "NULL-peker-feil i Linux-kjernens intel-ish-hid-driver rettet",
+      "summary_no": "En NULL-peker-dereferanse i Linux-kjernens intel-ish-hid-driver (Intel Integrated Sensor Hub) er rettet i ishtp_bus_remove_all_clients. Dette er en kjernefiks for Linux-maskinvare, ikke en Windows-sårbarhet. Den vises i MSRC fordi Microsoft sporer kjerne-CVE-er for Azure Linux.",
+      "topic": "sikkerhet",
+      "score": 29,
+      "tags": [
+        "cve-2026-45877",
+        "linux-kernel",
+        "hid",
+        "azure-linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-02f74e32ab",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46598",
+      "published": "2026-06-28T08:41:12.000Z",
+      "ingested": "2026-06-28T07:37:46.676Z",
+      "title_original": "CVE-2026-46598 Invoking  pathological inputs can lead to client panic in golang.org/x/crypto/ssh/agent",
+      "headline_no": "Ondsinnet input kan krasje Go-klienter via x/crypto/ssh/agent",
+      "summary_no": "Spesielt utformet input kan utløse en panic (krasj) i Go-biblioteket golang.org/x/crypto/ssh/agent — en tjenestenekt-sårbarhet for klienter som bruker SSH-agenten. Relevant for Go-baserte verktøy og automatisering, men marginalt for typiske Microsoft-administratorer. Dukker opp i MSRC via Azure Linux-økosystemet.",
+      "topic": "sikkerhet",
+      "score": 32,
+      "tags": [
+        "cve-2026-46598",
+        "golang",
+        "ssh",
+        "dos"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-eeecb87b5e",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9149",
+      "published": "2026-06-28T08:40:54.000Z",
+      "ingested": "2026-06-28T07:37:46.676Z",
+      "title_original": "CVE-2026-9149 Libsolv: heap buffer overflow in libsolv repo_add_solv via negative maxsize from crafted .solv file",
+      "headline_no": "Manipulert .solv-fil gir heap-overflow i libsolv repo_add_solv",
+      "summary_no": "En manipulert .solv-fil med negativ maxsize kan utløse heap-bufferoverløp i libsolv-funksjonen repo_add_solv. Sårbarheten rammer Linux-pakkeverktøy som bygger på libsolv. MSRC tar den med på grunn av Azure Linux, men den er lite aktuell for rene Microsoft-flater.",
+      "topic": "sikkerhet",
+      "score": 36,
+      "tags": [
+        "cve-2026-9149",
+        "libsolv",
+        "heap-overflow",
+        "azure-linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-2bc5d7d8b2",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9150",
+      "published": "2026-06-28T08:40:36.000Z",
+      "ingested": "2026-06-28T07:37:46.676Z",
+      "title_original": "CVE-2026-9150 Libsolv: stack-based buffer overflow in libsolv's debian metadata parser when handling sha384/sha512 checksums",
+      "headline_no": "Stack-overflow i libsolv trigges av sha384/sha512 i Debian-metadata",
+      "summary_no": "Et stack-basert bufferoverløp i libsolv sin parser for Debian-metadata trigges av manipulerte sha384/sha512-sjekksummer. Libsolv er en avhengighetsløser brukt av pakkeverktøy på Linux, inkludert Azure Linux. Lav relevans for Windows- og M365-administratorer.",
+      "topic": "sikkerhet",
+      "score": 36,
+      "tags": [
+        "cve-2026-9150",
+        "libsolv",
+        "buffer-overflow",
+        "azure-linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-9b6799ea2b",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27136",
+      "published": "2026-06-28T08:40:16.000Z",
+      "ingested": "2026-06-28T07:37:46.675Z",
+      "title_original": "CVE-2026-27136 Invoking  duplicate attributes can cause XSS in golang.org/x/net/html",
+      "headline_no": "Dupliserte attributter gir XSS-hull i Go-biblioteket x/net/html",
+      "summary_no": "En sårbarhet i Go-biblioteket golang.org/x/net/html lar dupliserte HTML-attributter føre til cross-site scripting (XSS), og rammer apper som parser uklarert HTML med biblioteket. MSRC lister CVE-en fordi komponenten inngår i Azure-baserte tjenester, men for rene Microsoft 365- og Windows-miljøer er den lite aktuell.",
+      "topic": "sikkerhet",
+      "score": 34,
+      "tags": [
+        "cve-2026-27136",
+        "golang",
+        "xss",
+        "azure-linux"
       ]
     },
     {
