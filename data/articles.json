@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T09:46:18.817Z",
+  "generated_at": "2026-06-28T11:01:58.955Z",
   "articles": [
     {
       "id": "msrc-update-guide-5c0b04bf24",
@@ -237,6 +237,25 @@
       ]
     },
     {
+      "id": "msrc-update-guide-3c61115299",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23207",
+      "published": "2026-06-28T09:00:39.000Z",
+      "ingested": "2026-06-28T11:01:58.896Z",
+      "title_original": "CVE-2026-23207 spi: tegra210-quad: Protect curr_xfer check in IRQ handler",
+      "headline_no": "Linux SPI-driver for Nvidia Tegra tetter race i avbruddshåndtering",
+      "summary_no": "CVE-2026-23207 beskytter en curr_xfer-sjekk i avbruddshåndteringen til Linux-driveren for Nvidia Tegra210 Quad-SPI. Dette er en maskinvarespesifikk Linux-kjernefiks uten berøring med Microsofts økosystem, og er i praksis irrelevant for admins av Intune, Entra eller Defender.",
+      "topic": "sikkerhet",
+      "score": 7,
+      "tags": [
+        "cve-2026-23207",
+        "linux-kjerne",
+        "spi",
+        "tegra"
+      ]
+    },
+    {
       "id": "msrc-update-guide-a9f7ed1ab3",
       "source_id": "msrc-update-guide",
       "source_name": "MSRC Security Update Guide (RSS)",
@@ -291,6 +310,44 @@
         "linux-kernel",
         "ktls",
         "race-condition"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-fde6b698c8",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71227",
+      "published": "2026-06-28T08:59:10.000Z",
+      "ingested": "2026-06-28T11:01:58.896Z",
+      "title_original": "CVE-2025-71227 wifi: mac80211: don't WARN for connections on invalid channels",
+      "headline_no": "Linux-kjernens wifi-stack får fiks mot unødvendig kjernevarsel",
+      "summary_no": "CVE-2025-71227 retter Linux-kjernens mac80211-trådløsstack slik at tilkobling på ugyldige kanaler ikke lenger utløser et unødvendig WARN-kjernevarsel. Saken kommer via MSRC-feeden, men gjelder Linux-kjernen og har minimal relevans for administratorer som forvalter Intune, Entra eller Windows.",
+      "topic": "sikkerhet",
+      "score": 11,
+      "tags": [
+        "cve-2025-71227",
+        "linux-kjerne",
+        "wifi",
+        "mac80211"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-377e5ebcc9",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40213",
+      "published": "2026-06-28T08:58:16.000Z",
+      "ingested": "2026-06-28T11:01:58.896Z",
+      "title_original": "CVE-2025-40213 Bluetooth: MGMT: fix crash in set_mesh_sync and set_mesh_complete",
+      "headline_no": "Linux Bluetooth-stack får krasjfiks i mesh-synkronisering",
+      "summary_no": "CVE-2025-40213 retter en krasj i Linux-kjernens Bluetooth-håndtering (MGMT) i funksjonene set_mesh_sync og set_mesh_complete. Som de øvrige Linux-kjerne-CVE-ene i MSRC-feeden har den liten praktisk betydning for Microsoft-administratorer av endepunkter, identitet eller sikkerhet i Windows-miljøet.",
+      "topic": "sikkerhet",
+      "score": 9,
+      "tags": [
+        "cve-2025-40213",
+        "linux-kjerne",
+        "bluetooth",
+        "mesh"
       ]
     },
     {
