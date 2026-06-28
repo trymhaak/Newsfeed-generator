@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-06-28T08:24:50.207Z",
+  "generated_at": "2026-06-28T08:34:20.263Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-955b2903a6",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31419",
+      "published": "2026-06-28T09:05:24.000Z",
+      "ingested": "2026-06-28T08:34:20.202Z",
+      "title_original": "CVE-2026-31419 net: bonding: fix use-after-free in bond_xmit_broadcast()",
+      "headline_no": "Use-after-free i Linux nettverksbonding tettes (CVE-2026-31419)",
+      "summary_no": "En use-after-free i Linux-kjernens nettverksbonding (bond_xmit_broadcast) er rettet i CVE-2026-31419. Slike feil i nettverksstacken kan i prinsippet utnyttes til krasj eller rettighetseskalering, men fiksen gjelder Linux-noder videreformidlet via MSRC/Azure Linux og har lav relevans for rene Windows- og Intune-miljøer.",
+      "topic": "sikkerhet",
+      "score": 22,
+      "tags": [
+        "cve-2026-31419",
+        "linux-kernel",
+        "networking",
+        "use-after-free",
+        "azure-linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-a0008e063a",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21672",
+      "published": "2026-06-28T09:05:14.000Z",
+      "ingested": "2026-06-28T08:34:20.202Z",
+      "title_original": "CVE-2025-21672 afs: Fix merge preference rule failure condition",
+      "headline_no": "Linux-kjernen retter feiltilstand i afs-filsystemets merge-regler",
+      "summary_no": "En Linux-kjernefiks (CVE-2025-21672) korrigerer feilhåndtering i AFS-filsystemklienten der en merge-preferanseregel ikke fanget en feiltilstand riktig. CVE-en er republisert av MSRC via Azure Linux-vedlikehold og har lav betydning for Microsoft-driftsmiljøer som ikke bruker AFS.",
+      "topic": "sikkerhet",
+      "score": 13,
+      "tags": [
+        "cve-2025-21672",
+        "linux-kernel",
+        "afs",
+        "azure-linux",
+        "msrc"
+      ]
+    },
     {
       "id": "msrc-update-guide-86496bad6a",
       "source_id": "msrc-update-guide",
@@ -477,6 +517,26 @@
         "linux-kernel",
         "hid",
         "azure-linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-00aeed6ae4",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-57857",
+      "published": "2026-06-28T08:42:29.000Z",
+      "ingested": "2026-06-28T08:34:20.202Z",
+      "title_original": "CVE-2024-57857 RDMA/siw: Remove direct link to net_device",
+      "headline_no": "Linux-kjernen rydder opp i siw RDMA-drivers net_device-kobling",
+      "summary_no": "MSRC har videreformidlet en Linux-kjernefiks (CVE-2024-57857) som fjerner en direkte referanse til net_device i SoftiWARP-driveren (siw), trolig for å rette en livstids- eller referansefeil. CVE-en dukker opp via Azure Linux/AKS-vedlikehold og har minimal relevans for Microsoft-administratorer som ikke kjører RDMA på Linux-noder.",
+      "topic": "sikkerhet",
+      "score": 14,
+      "tags": [
+        "cve-2024-57857",
+        "linux-kernel",
+        "rdma",
+        "azure-linux",
+        "msrc"
       ]
     },
     {
