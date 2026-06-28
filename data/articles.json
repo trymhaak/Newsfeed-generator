@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T08:13:26.248Z",
+  "generated_at": "2026-06-28T08:24:50.207Z",
   "articles": [
     {
       "id": "msrc-update-guide-86496bad6a",
@@ -134,6 +134,45 @@
         "linux-kernel",
         "azure",
         "networking"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-57c3f7b6b2",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23278",
+      "published": "2026-06-28T09:00:53.000Z",
+      "ingested": "2026-06-28T08:24:50.148Z",
+      "title_original": "CVE-2026-23278 netfilter: nf_tables: always walk all pending catchall elements",
+      "headline_no": "Linux-kjernefeil i netfilter (nf_tables) kan gi lokal rettighetseskalering",
+      "summary_no": "En feil i Linux-kjernens nf_tables (netfilter) håndterte ikke alle ventende catchall-elementer riktig (CVE-2026-23278), noe som kan gi minnefeil og potensiell lokal rettighetseskalering. Relevant for admins som drifter Azure Linux-VMer, AKS-noder eller WSL2. Foreløpig finnes ingen CVSS-score eller utnyttelsesdetaljer fra MSRC.",
+      "topic": "sikkerhet",
+      "score": 41,
+      "tags": [
+        "cve-2026-23278",
+        "netfilter",
+        "linux-kjerne",
+        "azure-linux",
+        "lpe"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-a9f7ed1ab3",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3644",
+      "published": "2026-06-28T09:00:24.000Z",
+      "ingested": "2026-06-28T08:24:50.147Z",
+      "title_original": "CVE-2026-3644 Incomplete control character validation in http.cookies",
+      "headline_no": "Python-sårbarhet lar kontrolltegn snike seg gjennom cookie-validering",
+      "summary_no": "Python-modulen http.cookies validerer ikke kontrolltegn fullstendig (CVE-2026-3644), noe som kan misbrukes til cookie-injeksjon eller manipulering av HTTP-headere. Admins som drifter Python-tjenester eller Azure-arbeidslaster bør følge med på patchnivå når detaljene publiseres. MSRC har foreløpig bare lagt ut en plassholder uten alvorlighetsgrad.",
+      "topic": "sikkerhet",
+      "score": 38,
+      "tags": [
+        "cve-2026-3644",
+        "python",
+        "cookies",
+        "msrc"
       ]
     },
     {
