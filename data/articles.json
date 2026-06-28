@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T11:01:58.955Z",
+  "generated_at": "2026-06-28T11:23:42.100Z",
   "articles": [
     {
       "id": "msrc-update-guide-5c0b04bf24",
@@ -447,6 +447,25 @@
       ]
     },
     {
+      "id": "msrc-update-guide-5861aa532f",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21885",
+      "published": "2026-06-28T08:54:23.000Z",
+      "ingested": "2026-06-28T11:22:20.510Z",
+      "title_original": "CVE-2025-21885 RDMA/bnxt_re: Fix the page details for the srq created by kernel consumers",
+      "headline_no": "Linux-kjernen retter SRQ-minnefeil i Broadcom RDMA-driver (CVE-2025-21885)",
+      "summary_no": "Linux-kjernen retter feil i sidehåndtering for SRQ opprettet av kjernekonsumenter i Broadcom bnxt_re RDMA-driver. Microsoft lister CVE-en i Security Update Guide, men den gjelder Linux-kjernens RDMA-stack og er lite aktuell for de fleste Microsoft 365- og Azure-administratorer.",
+      "topic": "sikkerhet",
+      "score": 12,
+      "tags": [
+        "cve-2025-21885",
+        "linux-kernel",
+        "rdma",
+        "bnxt_re"
+      ]
+    },
+    {
       "id": "msrc-update-guide-5da91c3b9b",
       "source_id": "msrc-update-guide",
       "source_name": "MSRC Security Update Guide (RSS)",
@@ -463,6 +482,25 @@
         "regulator",
         "cve-2026-46252",
         "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-a7dffc0e99",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21892",
+      "published": "2026-06-28T08:53:51.000Z",
+      "ingested": "2026-06-28T11:22:20.510Z",
+      "title_original": "CVE-2025-21892 RDMA/mlx5: Fix the recovery flow of the UMR QP",
+      "headline_no": "Linux-kjernen retter gjenopprettingsflyt i mlx5 RDMA-driver (CVE-2025-21892)",
+      "summary_no": "En feilretting i Linux-kjernens mlx5-driver forbedrer gjenopprettingsflyten for UMR QP i RDMA-stacken. CVE-en er publisert via MSRC, men berører Mellanox/NVIDIA-nettverksdrivere i Linux og har minimal relevans for typiske Microsoft-driftsmiljøer.",
+      "topic": "sikkerhet",
+      "score": 13,
+      "tags": [
+        "cve-2025-21892",
+        "linux-kernel",
+        "rdma",
+        "mlx5"
       ]
     },
     {
@@ -519,6 +557,25 @@
         "cve-2024-57976",
         "linux-kernel",
         "btrfs",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-c8a3cbc56a",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-6606",
+      "published": "2026-06-28T08:51:57.000Z",
+      "ingested": "2026-06-28T11:22:20.508Z",
+      "title_original": "CVE-2023-6606 Kernel: out-of-bounds read vulnerability in smbcalcsize",
+      "headline_no": "Linux-kjernens SMB-kode har lesefeil utenfor minnegrenser (CVE-2023-6606)",
+      "summary_no": "En out-of-bounds-lesefeil i funksjonen smbcalcsize i Linux-kjernens SMB-implementasjon kan lekke minne eller krasje systemet. Microsoft har publisert CVE-en i Security Update Guide, men den gjelder Linux-kjernen og er lite relevant for rene Windows- og Microsoft 365-miljøer.",
+      "topic": "sikkerhet",
+      "score": 16,
+      "tags": [
+        "cve-2023-6606",
+        "linux-kernel",
+        "smb",
         "msrc"
       ]
     },
@@ -598,6 +655,25 @@
         "cve-2024-46808",
         "amd",
         "drm",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-d98bfdb3c1",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21825",
+      "published": "2026-06-28T08:47:13.000Z",
+      "ingested": "2026-06-28T11:22:20.510Z",
+      "title_original": "CVE-2025-21825 bpf: Cancel the running bpf_timer through kworker for PREEMPT_RT",
+      "headline_no": "Linux-kjernen fikser bpf_timer-feil under sanntidskjerne (CVE-2025-21825)",
+      "summary_no": "En feilretting i Linux-kjernens BPF-subsystem håndterer kansellering av bpf_timer via kworker på PREEMPT_RT-kjerner. Microsoft republiserer CVE-en via MSRC, men den berører Linux-kjernen og har ingen direkte betydning for Intune-, Entra- eller Defender-administratorer.",
+      "topic": "sikkerhet",
+      "score": 14,
+      "tags": [
+        "cve-2025-21825",
+        "linux-kernel",
+        "bpf",
         "msrc"
       ]
     },
@@ -774,6 +850,25 @@
       ]
     },
     {
+      "id": "msrc-update-guide-b0cd3e7de7",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21833",
+      "published": "2026-06-28T08:43:00.000Z",
+      "ingested": "2026-06-28T11:22:20.510Z",
+      "title_original": "CVE-2025-21833 iommu/vt-d: Avoid use of NULL after WARN_ON_ONCE",
+      "headline_no": "Linux-kjernen unngår NULL-bruk i Intel VT-d IOMMU-driver (CVE-2025-21833)",
+      "summary_no": "En feilretting i Linux-kjernens Intel VT-d IOMMU-kode hindrer bruk av en NULL-peker etter WARN_ON_ONCE. Saken er republisert via MSRC, men berører Linux-kjernens maskinvarevirtualisering og har ingen praktisk betydning for Entra-, Intune- eller Defender-drift.",
+      "topic": "sikkerhet",
+      "score": 12,
+      "tags": [
+        "cve-2025-21833",
+        "linux-kernel",
+        "iommu",
+        "intel-vt-d"
+      ]
+    },
+    {
       "id": "msrc-update-guide-909757b995",
       "source_id": "msrc-update-guide",
       "source_name": "MSRC Security Update Guide (RSS)",
@@ -848,6 +943,25 @@
         "golang",
         "ssh",
         "dos"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-8f0bddf15f",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-58089",
+      "published": "2026-06-28T08:41:08.000Z",
+      "ingested": "2026-06-28T11:22:20.510Z",
+      "title_original": "CVE-2024-58089 btrfs: fix double accounting race when btrfs_run_delalloc_range() failed",
+      "headline_no": "Btrfs i Linux-kjernen retter dobbel telling ved diskfeil (CVE-2024-58089)",
+      "summary_no": "Linux-kjernen retter en race-tilstand som førte til dobbel regnskapsføring når btrfs_run_delalloc_range() feiler i btrfs-filsystemet. Saken kommer fra MSRC, men gjelder Linux-kjernens filsystem og er utenfor kjerneområdet for Microsoft-administratorer.",
+      "topic": "sikkerhet",
+      "score": 13,
+      "tags": [
+        "cve-2024-58089",
+        "linux-kernel",
+        "btrfs",
+        "msrc"
       ]
     },
     {
