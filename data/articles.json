@@ -1,6 +1,120 @@
 {
-  "generated_at": "2026-06-27T17:00:36.988Z",
+  "generated_at": "2026-06-28T07:20:37.382Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-b5086d93d1",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46282",
+      "published": "2026-06-28T08:57:17.000Z",
+      "ingested": "2026-06-28T07:15:46.318Z",
+      "title_original": "CVE-2026-46282 iio: frequency: admv1013: fix NULL pointer dereference on str",
+      "headline_no": "NULL-pekerfeil i Linux IIO-driver for admv1013 RF-brikke rettet",
+      "summary_no": "Oppstrøms Linux-kjernefiks for en NULL-pekerdereferanse i IIO-driveren til admv1013, en RF-/mikrobølge-omformerbrikke. Dette er en embedded maskinvare-driver uten betydning for Microsoft 365-, endpoint- eller identitetsforvaltning. Saken finnes kun fordi MSRC speiler oppstrøms Linux-CVE-er.",
+      "topic": "sikkerhet",
+      "score": 9,
+      "tags": [
+        "linux-kernel",
+        "iio",
+        "cve-2026-46282",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-2069e39045",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46275",
+      "published": "2026-06-28T08:57:02.000Z",
+      "ingested": "2026-06-28T07:15:46.318Z",
+      "title_original": "CVE-2026-46275 Bluetooth: hci_uart: fix UAFs and race conditions in close and init paths",
+      "headline_no": "Use-after-free i Linux Bluetooth (hci_uart) tettet i kjernefiks",
+      "summary_no": "Oppstrøms Linux-kjernefiks for use-after-free og kappløp i hci_uart sine close- og init-stier. Minnekorrupsjon er en alvorlig klasse, men Bluetooth-over-UART er en nisje på servere og skytjenester. Flyter inn via MSRC og har liten relevans for endpoint- og identitetsadmins.",
+      "topic": "sikkerhet",
+      "score": 23,
+      "tags": [
+        "linux-kernel",
+        "bluetooth",
+        "use-after-free",
+        "cve-2026-46275"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-40ccad610e",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42504",
+      "published": "2026-06-28T08:55:04.000Z",
+      "ingested": "2026-06-28T07:15:46.318Z",
+      "title_original": "CVE-2026-42504 Quadratic complexity in WordDecoder.DecodeHeader in mime",
+      "headline_no": "DoS-hull i Go sin MIME-dekoder kan henge Go-baserte tjenester",
+      "summary_no": "Kvadratisk kompleksitet i Go-standardbibliotekets WordDecoder.DecodeHeader (mime) lar en ondsinnet MIME-header drive CPU-bruken i været og ta ned tjenesten. Rammer Go-baserte backender; oppdater Go-toolchain og avhengige tjenester. Publiseres via MSRC fordi Microsoft distribuerer Go.",
+      "topic": "sikkerhet",
+      "score": 34,
+      "tags": [
+        "golang",
+        "dos",
+        "mime",
+        "cve-2026-42504"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-3e6d761514",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46244",
+      "published": "2026-06-28T08:54:38.000Z",
+      "ingested": "2026-06-28T07:15:46.318Z",
+      "title_original": "CVE-2026-46244 netfilter: nft_inner: Fix IPv6 inner_thoff desync",
+      "headline_no": "Netfilter-feil i Linux kan desynke IPv6-inspeksjon i nftables",
+      "summary_no": "Oppstrøms Linux-kjernefiks for en inner_thoff-desync i netfilters nft_inner ved IPv6. Relevant kun hvis du kjører nftables på Azure Linux, AKS eller WSL2; for typiske Microsoft-admins er det lite å gjøre. Kommer via MSRC sin speiling av kjerne-CVE-er.",
+      "topic": "sikkerhet",
+      "score": 27,
+      "tags": [
+        "linux-kernel",
+        "netfilter",
+        "ipv6",
+        "cve-2026-46244"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-5da91c3b9b",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46252",
+      "published": "2026-06-28T08:54:22.000Z",
+      "ingested": "2026-06-28T07:15:46.318Z",
+      "title_original": "CVE-2026-46252 regulator: core: fix locking in regulator_resolve_supply() error path",
+      "headline_no": "Låsefeil i Linux regulator-subsystem rettet, speiles i MSRC",
+      "summary_no": "Oppstrøms Linux-kjernefiks som retter feil låsing i feilstien til regulator_resolve_supply(). Dette er strøm-/embedded-subsystemet i kjernen og har nær null operasjonell betydning for Microsoft 365-, identitets- eller endpoint-admins. Vises kun fordi MSRC speiler oppstrøms Linux-CVE-er.",
+      "topic": "sikkerhet",
+      "score": 11,
+      "tags": [
+        "linux-kernel",
+        "regulator",
+        "cve-2026-46252",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-1306308bca",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46245",
+      "published": "2026-06-28T08:53:37.000Z",
+      "ingested": "2026-06-28T07:15:46.317Z",
+      "title_original": "CVE-2026-46245 drm/amd/display: Fix dc_link NULL handling in HPD init",
+      "headline_no": "Linux-kjernefiks for AMD-skjermdriver havner i MSRC-feeden",
+      "summary_no": "En oppstrøms Linux-kjernefiks retter NULL-håndtering av dc_link i AMD-skjermdriverens HPD-init. Saken dukker opp i MSRC fordi Microsoft leverer en Linux-kjerne i bl.a. Azure Linux og WSL, men har minimal relevans for vanlige Microsoft 365- og endpoint-administratorer.",
+      "topic": "sikkerhet",
+      "score": 13,
+      "tags": [
+        "linux-kernel",
+        "amd",
+        "cve-2026-46245",
+        "msrc"
+      ]
+    },
     {
       "id": "msrc-update-guide-5ae18cee9d",
       "source_id": "msrc-update-guide",
