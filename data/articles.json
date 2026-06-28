@@ -1,6 +1,65 @@
 {
-  "generated_at": "2026-06-28T07:40:53.508Z",
+  "generated_at": "2026-06-28T08:05:23.928Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-86496bad6a",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5119",
+      "published": "2026-06-28T09:04:37.000Z",
+      "ingested": "2026-06-28T08:03:45.501Z",
+      "title_original": "CVE-2026-5119 Libsoup: libsoup: information disclosure via cleartext transmission of cookies during https tunnel establishment",
+      "headline_no": "Libsoup: cookies sendes i klartekst ved HTTPS-tunnel (CVE-2026-5119)",
+      "summary_no": "Libsoup kan sende cookies i klartekst mens en HTTPS-tunnel etableres, noe som gir informasjonslekkasje. Som de andre libsoup-sakene er dette en oppstrøms GNOME-/Linux-sårbarhet MSRC sporer for Azure Linux, og berører ikke kjernetjenester som Entra eller Intune.",
+      "topic": "sikkerhet",
+      "score": 20,
+      "tags": [
+        "libsoup",
+        "cve-2026-5119",
+        "cookies",
+        "info-disclosure",
+        "azure-linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-7f3729ac5d",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3632",
+      "published": "2026-06-28T09:01:38.000Z",
+      "ingested": "2026-06-28T08:03:45.501Z",
+      "title_original": "CVE-2026-3632 Libsoup: libsoup: http smuggling and server-side request forgery via malformed hostnames",
+      "headline_no": "Libsoup: misformede vertsnavn gir HTTP-smuggling og SSRF (CVE-2026-3632)",
+      "summary_no": "Misformede vertsnavn i libsoup kan utnyttes til HTTP request smuggling og server-side request forgery (SSRF). Som de øvrige libsoup-sakene er dette en oppstrøms-sårbarhet MSRC sporer for Azure Linux, og har liten praktisk betydning for et Microsoft 365-administrasjonsmiljø.",
+      "topic": "sikkerhet",
+      "score": 25,
+      "tags": [
+        "libsoup",
+        "cve-2026-3632",
+        "ssrf",
+        "http-smuggling",
+        "azure-linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-7c220485a8",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3634",
+      "published": "2026-06-28T09:01:23.000Z",
+      "ingested": "2026-06-28T08:03:45.501Z",
+      "title_original": "CVE-2026-3634 Libsoup: libsoup: http header injection and response splitting via crlf injection in content-type header",
+      "headline_no": "Libsoup: CRLF-injeksjon i Content-Type gir HTTP-response-splitting",
+      "summary_no": "En CRLF-injeksjon i Content-Type-headeren i GNOME-biblioteket libsoup gjør HTTP-header-injeksjon og response-splitting mulig. CVE-en ligger i MSRC-feeden fordi Microsoft sporer den for Azure Linux, og er perifer for et typisk miljø administrert med Intune, Entra og Defender.",
+      "topic": "sikkerhet",
+      "score": 22,
+      "tags": [
+        "libsoup",
+        "cve-2026-3634",
+        "crlf",
+        "azure-linux"
+      ]
+    },
     {
       "id": "msrc-update-guide-b5086d93d1",
       "source_id": "msrc-update-guide",
