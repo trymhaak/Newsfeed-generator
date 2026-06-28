@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T08:05:23.928Z",
+  "generated_at": "2026-06-28T08:13:26.248Z",
   "articles": [
     {
       "id": "msrc-update-guide-86496bad6a",
@@ -19,6 +19,63 @@
         "cookies",
         "info-disclosure",
         "azure-linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-bcee154200",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23371",
+      "published": "2026-06-28T09:03:44.000Z",
+      "ingested": "2026-06-28T08:13:26.188Z",
+      "title_original": "CVE-2026-23371 sched/deadline: Fix missing ENQUEUE_REPLENISH during PI de-boosting",
+      "headline_no": "Linux-planlegger: deadline-feil under prioritetsarv (CVE-2026-23371)",
+      "summary_no": "CVE-2026-23371 retter Linux-kjernens deadline-planlegger der ENQUEUE_REPLENISH manglet under PI de-boosting (priority inheritance). Kan gi feilaktig planlegging av sanntids- og deadline-arbeidslaster. Marginalt for typiske Microsoft-admin-miljøer, men relevant for Linux med RT-laster.",
+      "topic": "sikkerhet",
+      "score": 32,
+      "tags": [
+        "cve-2026-23371",
+        "linux-kernel",
+        "scheduler",
+        "realtime"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-9e4985cbf4",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23383",
+      "published": "2026-06-28T09:03:12.000Z",
+      "ingested": "2026-06-28T08:13:26.188Z",
+      "title_original": "CVE-2026-23383 bpf, arm64: Force 8-byte alignment for JIT buffer to prevent atomic tearing",
+      "headline_no": "BPF JIT på ARM64 tvinger 8-byte justering mot tearing (CVE-2026-23383)",
+      "summary_no": "CVE-2026-23383 retter BPF JIT-kompilatoren på ARM64 i Linux-kjernen, der manglende 8-byte justering av JIT-bufferet kunne gi «atomic tearing» ved atomiske operasjoner. Aktuelt for ARM-baserte Linux-servere, inkludert Azure ARM-VM-er. Rettes med kjerneoppdatering.",
+      "topic": "sikkerhet",
+      "score": 34,
+      "tags": [
+        "cve-2026-23383",
+        "linux-kernel",
+        "bpf",
+        "arm64"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-49231ef553",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23377",
+      "published": "2026-06-28T09:02:56.000Z",
+      "ingested": "2026-06-28T08:13:26.188Z",
+      "title_original": "CVE-2026-23377 ice: change XDP RxQ frag_size from DMA write length to xdp.frame_sz",
+      "headline_no": "Intel ice-driver brukte feil XDP-fragmentstørrelse (CVE-2026-23377)",
+      "summary_no": "CVE-2026-23377 retter Intels ice Ethernet-driver i Linux-kjernen, der XDP-mottakskøer beregnet fragmentstørrelse fra DMA-skrivelengde i stedet for xdp.frame_sz. Påvirker Linux-verter med Intel E800-nettverkskort som bruker XDP. Lav prioritet for rene Microsoft-admin-miljøer, mer aktuelt for bare-metal og enkelte Azure-oppsett.",
+      "topic": "sikkerhet",
+      "score": 34,
+      "tags": [
+        "cve-2026-23377",
+        "linux-kernel",
+        "intel-ice",
+        "xdp"
       ]
     },
     {
@@ -58,6 +115,63 @@
         "cve-2026-3634",
         "crlf",
         "azure-linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-c2df532e54",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23276",
+      "published": "2026-06-28T09:01:08.000Z",
+      "ingested": "2026-06-28T08:13:26.188Z",
+      "title_original": "CVE-2026-23276 net: add xmit recursion limit to tunnel xmit functions",
+      "headline_no": "Linux-kjernefeil lar tunnel-trafikk utløse rekursjon (CVE-2026-23276)",
+      "summary_no": "Microsoft har publisert CVE-2026-23276, en Linux-kjernefeil der tunnel-funksjonene for nettverkstrafikk manglet en rekursjonsgrense og kunne utløse ukontrollert rekursjon. Treffer Linux-verter med stablede/nestede tunneler, inkludert Azure Linux og AKS. Rettes via ordinære kjerneoppdateringer.",
+      "topic": "sikkerhet",
+      "score": 38,
+      "tags": [
+        "cve-2026-23276",
+        "linux-kernel",
+        "azure",
+        "networking"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-585d3d08dd",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23247",
+      "published": "2026-06-28T08:59:53.000Z",
+      "ingested": "2026-06-28T08:13:26.188Z",
+      "title_original": "CVE-2026-23247 tcp: secure_seq: add back ports to TS offset",
+      "headline_no": "TCP-feil i Linux svekket vern mot sekvens-spoofing (CVE-2026-23247)",
+      "summary_no": "CVE-2026-23247 retter Linux-kjernens TCP secure_seq, der porter ble lagt tilbake i timestamp-offseten. Feilen kunne gjøre sekvensnumre mer forutsigbare og svekke beskyttelsen mot enkelte off-path-angrep. Gjelder alle Linux-verter, inkludert Azure Linux.",
+      "topic": "sikkerhet",
+      "score": 41,
+      "tags": [
+        "cve-2026-23247",
+        "linux-kernel",
+        "tcp",
+        "spoofing"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-f9afd92865",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23240",
+      "published": "2026-06-28T08:59:39.000Z",
+      "ingested": "2026-06-28T08:13:26.188Z",
+      "title_original": "CVE-2026-23240 tls: Fix race condition in tls_sw_cancel_work_tx()",
+      "headline_no": "Kernel-TLS i Linux: kappløpstilstand rettet (CVE-2026-23240)",
+      "summary_no": "CVE-2026-23240 retter en kappløpstilstand i Linux-kjernens TLS-håndtering (tls_sw_cancel_work_tx). Kernel-TLS avlaster TLS-kryptering i kjernen, og feilen kan gi ustabilitet eller minnefeil. Relevant for Linux-servere som bruker kTLS, inkludert enkelte Azure-arbeidslaster.",
+      "topic": "sikkerhet",
+      "score": 39,
+      "tags": [
+        "cve-2026-23240",
+        "linux-kernel",
+        "ktls",
+        "race-condition"
       ]
     },
     {
