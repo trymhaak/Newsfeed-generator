@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T11:44:05.711Z",
+  "generated_at": "2026-06-28T17:57:45.997Z",
   "articles": [
     {
       "id": "msrc-update-guide-5c0b04bf24",
@@ -2051,6 +2051,25 @@
         "dwm",
         "msrc",
         "rettighetseskalering"
+      ]
+    },
+    {
+      "id": "m365-blog-8f02988b1b",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog (official)",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/25/copilot-in-excel-built-for-the-era-of-frontier-finance/",
+      "published": "2026-06-25T13:00:00.000Z",
+      "ingested": "2026-06-28T17:57:45.958Z",
+      "title_original": "Copilot in Excel: Built for the era of Frontier Finance",
+      "headline_no": "Copilot i Excel skreddersys for finansproffene",
+      "summary_no": "Microsoft markedsfører Copilot i Excel som skreddersydd for avansert finansarbeid, men bloggposten er tynn på konkrete funksjoner og tekniske detaljer. For IT-admins er dette først og fremst et signal om Microsofts satsing på Copilot i finans-workflows, med begrenset umiddelbar handlingsverdi.",
+      "topic": "ai",
+      "score": 26,
+      "tags": [
+        "copilot",
+        "excel",
+        "m365",
+        "finans"
       ]
     },
     {
