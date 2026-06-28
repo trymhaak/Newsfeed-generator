@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T11:23:42.100Z",
+  "generated_at": "2026-06-28T11:44:05.711Z",
   "articles": [
     {
       "id": "msrc-update-guide-5c0b04bf24",
@@ -313,6 +313,25 @@
       ]
     },
     {
+      "id": "msrc-update-guide-24827d4d7e",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21870",
+      "published": "2026-06-28T08:59:24.000Z",
+      "ingested": "2026-06-28T11:44:05.658Z",
+      "title_original": "CVE-2025-21870 ASoC: SOF: ipc4-topology: Harden loops for looking up ALH copiers",
+      "headline_no": "Linux-kjernen herder ALH-oppslag i SOF-lyddriver",
+      "summary_no": "Linux-kjernens lydsubsystem (ASoC SOF) herder løkkene som slår opp ALH-copiers i ipc4-topology, for å hindre lesing utenfor grensene. Dette er en driver-nær lydfiks uten praktisk relevans for drift av Microsoft-økosystemet.",
+      "topic": "sikkerhet",
+      "score": 14,
+      "tags": [
+        "cve-2025-21870",
+        "linux-kernel",
+        "asoc",
+        "sof"
+      ]
+    },
+    {
       "id": "msrc-update-guide-fde6b698c8",
       "source_id": "msrc-update-guide",
       "source_name": "MSRC Security Update Guide (RSS)",
@@ -329,6 +348,82 @@
         "linux-kjerne",
         "wifi",
         "mac80211"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-dd469aaa90",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21888",
+      "published": "2026-06-28T08:59:08.000Z",
+      "ingested": "2026-06-28T11:44:05.658Z",
+      "title_original": "CVE-2025-21888 RDMA/mlx5: Fix a WARN during dereg_mr for DM type",
+      "headline_no": "Linux-kjernefiks retter RDMA/mlx5-feil under minneavregistrering",
+      "summary_no": "Linux-kjernen retter en WARN i mlx5 RDMA-driveren som oppstod under avregistrering av minneregioner (dereg_mr) for DM-typen. Dette berører Linux-verter med NVIDIA/Mellanox RDMA-nettverk. Marginal relevans – aktuelt kun for Azure Linux- og HPC-scenarier, ikke typiske endpoint- eller identitetsadministratorer.",
+      "topic": "sikkerhet",
+      "score": 18,
+      "tags": [
+        "cve-2025-21888",
+        "linux-kernel",
+        "rdma",
+        "mlx5"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-c447f98f19",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23214",
+      "published": "2026-06-28T08:58:54.000Z",
+      "ingested": "2026-06-28T11:44:05.658Z",
+      "title_original": "CVE-2026-23214 btrfs: reject new transactions if the fs is fully read-only",
+      "headline_no": "Btrfs-fiks stopper nye transaksjoner på skrivebeskyttet filsystem",
+      "summary_no": "Btrfs i Linux-kjernen avviser nå nye transaksjoner når filsystemet er fullt skrivebeskyttet, for å unngå inkonsistens. Fiksen er relevant for Linux-lagring, men perifer for den typiske leseren som drifter Intune, Entra og Defender.",
+      "topic": "sikkerhet",
+      "score": 19,
+      "tags": [
+        "cve-2026-23214",
+        "linux-kernel",
+        "btrfs",
+        "filesystem"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-943c5c6211",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71225",
+      "published": "2026-06-28T08:58:39.000Z",
+      "ingested": "2026-06-28T11:44:05.658Z",
+      "title_original": "CVE-2025-71225 md: suspend array while updating raid_disks via sysfs",
+      "headline_no": "Linux RAID suspenderer array ved endring av raid_disks i sysfs",
+      "summary_no": "Linux' programvare-RAID (md) suspenderer nå arrayet mens raid_disks oppdateres via sysfs, for å unngå en kappløpstilstand. Dette er en lagrings-/RAID-fiks med marginal relevans for den typiske M365-administratoren.",
+      "topic": "sikkerhet",
+      "score": 19,
+      "tags": [
+        "cve-2025-71225",
+        "linux-kernel",
+        "raid",
+        "md"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-831687a6c7",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23213",
+      "published": "2026-06-28T08:58:23.000Z",
+      "ingested": "2026-06-28T11:44:05.658Z",
+      "title_original": "CVE-2026-23213 drm/amd/pm: Disable MMIO access during SMU Mode 1 reset",
+      "headline_no": "AMD GPU-driver i Linux sperrer MMIO under SMU Mode 1-reset",
+      "summary_no": "Linux-driveren for AMD-GPU deaktiverer MMIO-tilgang under SMU Mode 1-reset, slik at enheten ikke aksesseres i en ugyldig tilstand. Dette er en GPU-driverfiks med minimal relevans for administratorer i Microsoft-økosystemet.",
+      "topic": "sikkerhet",
+      "score": 16,
+      "tags": [
+        "cve-2026-23213",
+        "linux-kernel",
+        "amd-gpu",
+        "drm"
       ]
     },
     {
@@ -847,6 +942,25 @@
         "linux-kernel",
         "hid",
         "azure-linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-5df1b6e755",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-29923",
+      "published": "2026-06-28T08:43:15.000Z",
+      "ingested": "2026-06-28T11:44:05.656Z",
+      "title_original": "CVE-2025-29923 go-redis allows potential out of order responses when `CLIENT SETINFO` times out during connection establishment",
+      "headline_no": "go-redis kan gi svar i feil rekkefølge ved tidsavbrudd",
+      "summary_no": "En sårbarhet i Go-klienten go-redis gjør at svar kan komme i feil rekkefølge dersom CLIENT SETINFO får tidsavbrudd mens forbindelsen settes opp. En forespørsel kan da motta svaret på en annen kommando, noe som kan gi datafeil. Relevant for team som kjører Go-tjenester mot Redis i Azure, men perifert for rene M365-administratorer.",
+      "topic": "sikkerhet",
+      "score": 31,
+      "tags": [
+        "cve-2025-29923",
+        "go-redis",
+        "redis",
+        "azure"
       ]
     },
     {
