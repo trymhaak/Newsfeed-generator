@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-29T18:00:29.837Z",
+  "generated_at": "2026-06-29T22:05:16.579Z",
   "articles": [
+    {
+      "id": "security-community-ab1d21c572",
+      "source_id": "security-community",
+      "source_name": "Microsoft Security Community Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/understand-your-sentinel-tables-at-a-glance-monitor-with-table/ba-p/4530738",
+      "published": "2026-06-29T17:48:32.000Z",
+      "ingested": "2026-06-29T22:05:16.535Z",
+      "title_original": "Understand your Sentinel tables at a glance: Monitor with table insights",
+      "headline_no": "Ny «Table insights» i Sentinel avslører stille datakoblinger og kostnadshopp",
+      "summary_no": "Microsoft Sentinel har fått et Table insights-panel som rett på Tables-siden viser 30-dagers ingestion-volum per tier, daglig kostnadsestimat, topp 5 tabeller, sist mottatte data og volumavvik. Det gjør at SOC-team raskt ser datakoblinger som har sluttet å sende data, uten egne workbooks eller KQL. Panelet ligger nå i Defender-portalen under Sentinel → Configuration → Tables.",
+      "topic": "sikkerhet",
+      "score": 48,
+      "tags": [
+        "sentinel",
+        "soc",
+        "table-insights",
+        "logging",
+        "kostnad"
+      ]
+    },
     {
       "id": "petervanderwoude-b39c7ccef8",
       "source_id": "petervanderwoude",
@@ -2408,6 +2428,26 @@
       ]
     },
     {
+      "id": "hybridbrothers-d11492d823",
+      "source_id": "hybridbrothers",
+      "source_name": "Hybrid Brothers",
+      "url": "https://hybridbrothers.com/public-speaking/25-06-2025/",
+      "published": "2026-06-25T00:00:00.000Z",
+      "ingested": "2026-06-29T22:05:16.533Z",
+      "hero_image": "https://assets.hybridbrothers.com/images/public-speaking/25-06-2026/image-1.jpeg",
+      "title_original": "MC2MC Live - Zero Trust Rising",
+      "headline_no": "Hybrid Brothers advarer mot Azure Arc i standardmodus på MC2MC Live",
+      "summary_no": "Hybrid Brothers og Wim Matthyssen holdt foredrag for MC2MC-brukergruppen om sikkerhetsrisikoen ved å kjøre Azure Arc i standardoppsett, foran 130 deltakere. Innlegget er en ren eventoppsummering uten ny teknisk veiledning, men minner om at Arc-agentens standardkonfigurasjon bør herdes.",
+      "topic": "sikkerhet",
+      "score": 20,
+      "tags": [
+        "azure-arc",
+        "konferanse",
+        "mc2mc",
+        "herding"
+      ]
+    },
+    {
       "id": "security-community-1b6256c481",
       "source_id": "security-community",
       "source_name": "Microsoft Security Community Blog",
@@ -4306,6 +4346,26 @@
         "entra-p1",
         "entra-p2",
         "pricing"
+      ]
+    },
+    {
+      "id": "hybridbrothers-7392d7f98a",
+      "source_id": "hybridbrothers",
+      "source_name": "Hybrid Brothers",
+      "url": "https://hybridbrothers.com/public-speaking/16-06-2026/",
+      "published": "2026-06-16T00:00:00.000Z",
+      "ingested": "2026-06-29T22:05:16.535Z",
+      "hero_image": "https://assets.hybridbrothers.com/images/public-speaking/16-06-2026/image-1.png",
+      "title_original": "Dutch Microsoft Security Meetup",
+      "headline_no": "Azure Arc-advarselen gjentatt på nederlandsk Microsoft Security-meetup",
+      "summary_no": "Hybrid Brothers holdt for første gang foredrag på Microsoft Security-meetupen i Nederland, med samme tema om farene ved Azure Arc i standardmodus. Posten er ren eventomtale uten nye tekniske detaljer utover budskapet om at standardoppsettet kan misbrukes.",
+      "topic": "sikkerhet",
+      "score": 17,
+      "tags": [
+        "azure-arc",
+        "meetup",
+        "konferanse",
+        "sikkerhet"
       ]
     },
     {
