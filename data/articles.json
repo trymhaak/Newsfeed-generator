@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-29T07:17:09.513Z",
+  "generated_at": "2026-06-29T17:48:59.943Z",
   "articles": [
+    {
+      "id": "sentinel-blog-1fb6e495cd",
+      "source_id": "sentinel-blog",
+      "source_name": "Microsoft Sentinel Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/your-readiness-playbook-adoption-helper-costs-apis-and-the/ba-p/4528608",
+      "published": "2026-06-29T16:00:00.000Z",
+      "ingested": "2026-06-29T17:48:59.896Z",
+      "title_original": "Your readiness playbook: adoption helper, costs, APIs, and the checklist",
+      "headline_no": "Gratis verktøy scorer Sentinel-miljøet før overgangen til Defender",
+      "summary_no": "Microsoft har pakket overgangen fra Sentinel til den enhetlige Defender-portalen inn i en praktisk verktøykasse: et gratis PowerShell-skript som scorer hvor klart miljøet ditt er, en ny kostnadskalkulator og en tydelig API-migreringsplan. Prisingen er uendret, men SOC-team bør kartlegge integrasjonene nå – workspace-API-er, Defender-API-er og Graph Security har ulike tidshorisonter. Skriptet gir et visuelt dashboard så du vet nøyaktig hvor du står før du går i gang.",
+      "topic": "sikkerhet",
+      "score": 47,
+      "tags": [
+        "sentinel",
+        "defender",
+        "soc",
+        "migrering",
+        "siem"
+      ]
+    },
     {
       "id": "msrc-update-guide-b3a6beab6e",
       "source_id": "msrc-update-guide",
