@@ -1,6 +1,25 @@
 {
-  "generated_at": "2026-06-29T23:41:08.886Z",
+  "generated_at": "2026-06-29T23:57:41.922Z",
   "articles": [
+    {
+      "id": "m365-roadmap-eaf30ae1ca",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566701",
+      "published": "2026-06-29T23:02:39.000Z",
+      "ingested": "2026-06-29T23:57:41.881Z",
+      "title_original": "Microsoft Copilot (Microsoft 365): Edit your document with Copilot in PowerPoint in Government Clouds",
+      "headline_no": "Copilot-redigering av PowerPoint kommer til Government Clouds",
+      "summary_no": "Microsoft tar Copilot-assistert redigering av PowerPoint inn i Government Clouds, der brukere kan lage og finpusse presentasjoner med naturlig språk og merkevaretilpassede maler. Funksjonen krever Microsoft 365 Copilot Premium og har planlagt GA i september 2026. IT-admins i offentlig sektor bør merke seg lisenskravet og utrullingsdatoen for compliance-sensitive miljøer.",
+      "topic": "ai",
+      "score": 36,
+      "tags": [
+        "copilot",
+        "powerpoint",
+        "government-cloud",
+        "m365"
+      ]
+    },
     {
       "id": "m365-roadmap-1d08372014",
       "source_id": "m365-roadmap",
