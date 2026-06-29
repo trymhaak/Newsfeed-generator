@@ -1,6 +1,44 @@
 {
-  "generated_at": "2026-06-29T22:26:53.148Z",
+  "generated_at": "2026-06-29T23:41:08.886Z",
   "articles": [
+    {
+      "id": "m365-roadmap-1d08372014",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566702",
+      "published": "2026-06-29T23:02:39.000Z",
+      "ingested": "2026-06-29T23:41:08.845Z",
+      "title_original": "Microsoft Copilot (Microsoft 365): Edit your document with Copilot in PowerPoint in Government Clouds",
+      "headline_no": "Copilot redigerer snart PowerPoint i Government Clouds",
+      "summary_no": "Microsoft 365 Copilot i PowerPoint blir tilgjengelig i Government Clouds fra september 2026, med generering og redigering av lysbilder via naturlig språk og kobling mot merkevaresett for maler og bilder. Funksjonen krever Copilot Premium-lisens, så admins i offentlig sektor må planlegge lisensiering og styring før utrulling.",
+      "topic": "ai",
+      "score": 35,
+      "tags": [
+        "copilot",
+        "powerpoint",
+        "government-cloud",
+        "m365"
+      ]
+    },
+    {
+      "id": "m365-roadmap-c84fe5cf7e",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566700",
+      "published": "2026-06-29T23:02:39.000Z",
+      "ingested": "2026-06-29T23:41:08.847Z",
+      "title_original": "Microsoft Teams: IntelliFrame people labels in Teams Rooms on Windows",
+      "headline_no": "Teams Rooms setter navn på deltakerne i møterommet",
+      "summary_no": "Teams Rooms på Windows får IntelliFrame-navnelapper som identifiserer personer i rommet via stemme- og ansiktsprofiler, med kontaktkort ved hover. Det hjelper eksterne deltakere å følge hvem som snakker, men admins bør merke seg personvernsiden ved ansikts- og stemmegjenkjenning. Krever Teams Rooms Pro-lisens, GA august 2026.",
+      "topic": "endpoint",
+      "score": 31,
+      "tags": [
+        "teams",
+        "teams-rooms",
+        "intelliframe",
+        "møterom"
+      ]
+    },
     {
       "id": "security-community-ab1d21c572",
       "source_id": "security-community",
@@ -3516,6 +3554,25 @@
         "rce",
         "ai-agenter",
         "msrc"
+      ]
+    },
+    {
+      "id": "m365-roadmap-182616ab11",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=565425",
+      "published": "2026-06-18T23:00:06.000Z",
+      "ingested": "2026-06-29T23:41:08.847Z",
+      "title_original": "Microsoft Teams: Language selection by users in Teams Rooms on Android",
+      "headline_no": "Velg møtespråk selv i Teams Rooms på Android",
+      "summary_no": "Teams Rooms på Android lar nå brukere velge foretrukket møtespråk blant 69 språk direkte fra konsollen. Romsystemet må restartes etter at språket er valgt. En liten, men kjekk kvalitetsforbedring for flerspråklige arbeidsplasser; GA september 2026.",
+      "topic": "endpoint",
+      "score": 29,
+      "tags": [
+        "teams",
+        "teams-rooms",
+        "android",
+        "språk"
       ]
     },
     {
