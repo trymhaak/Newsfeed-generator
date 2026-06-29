@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-06-29T17:48:59.943Z",
+  "generated_at": "2026-06-29T18:00:29.837Z",
   "articles": [
+    {
+      "id": "petervanderwoude-b39c7ccef8",
+      "source_id": "petervanderwoude",
+      "source_name": "All about Microsoft Intune (Peter van der Woude)",
+      "url": "https://petervanderwoude.nl/post/getting-started-with-android-enterprise-personally-owned-devices-with-work-profile/",
+      "published": "2026-06-29T17:45:00.000Z",
+      "ingested": "2026-06-29T18:00:29.794Z",
+      "title_original": "Getting started with Android Enterprise personally owned devices with work profile",
+      "headline_no": "Intune flytter Android BYOD-enheter med jobbprofil til Googles AMAPI",
+      "summary_no": "Intune migrerer personlig eide Android-enheter med arbeidsprofil over til Android Management API (AMAPI) – samme API som allerede styrer bedriftseide Android-enheter. Med Googles companion-app Android Device Policy slipper man å vedlikeholde egen DPC, og nye funksjoner blir tilgjengelige raskere og mer konsistent på tvers av Android Enterprise-variantene. Admins som forvalter Android BYOD bør sette seg inn i overgangen og teste arbeidsprofil-flyten på AMAPI.",
+      "topic": "endpoint",
+      "score": 45,
+      "tags": [
+        "intune",
+        "android-enterprise",
+        "byod",
+        "amapi",
+        "work-profile"
+      ]
+    },
+    {
+      "id": "msrc-blog-dc401e0641",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/29/chromium-extension-uses-airelated-branding-redirect-browser-search/",
+      "published": "2026-06-29T16:27:46.000Z",
+      "ingested": "2026-06-29T18:00:29.792Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-56.webp",
+      "title_original": "Chromium extension uses AI‑related branding to redirect browser search",
+      "headline_no": "Skadelig utvidelse utga seg for Perplexity AI og kapret nettlesersøk",
+      "summary_no": "Microsoft Threat Intelligence avslørte en Chromium-utvidelse som etterligner Perplexity AI for å lure brukere til å installere den, og som i det skjulte omdirigerer søk i adressefeltet via MV3 og declarativeNetRequest-regler. Målet er å fange opp søketrafikk og samle inn data til profilering eller annonsering. Google har fjernet utvidelsen etter varsling, men saken minner om at nettleserutvidelser er en undervurdert angrepsflate – vurder allowlisting av utvidelser i bedriften.",
+      "topic": "sikkerhet",
+      "score": 55,
+      "tags": [
+        "chromium",
+        "nettleserutvidelse",
+        "mv3",
+        "perplexity"
+      ]
+    },
     {
       "id": "sentinel-blog-1fb6e495cd",
       "source_id": "sentinel-blog",
