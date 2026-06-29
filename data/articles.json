@@ -1,6 +1,140 @@
 {
-  "generated_at": "2026-06-29T07:04:24.356Z",
+  "generated_at": "2026-06-29T07:17:09.513Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-b3a6beab6e",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58058",
+      "published": "2026-06-29T08:06:47.000Z",
+      "ingested": "2026-06-29T07:16:27.373Z",
+      "title_original": "CVE-2026-58058 Nmap - Integer Underflow in IPv6 Extension Header Parsing",
+      "headline_no": "Nmap-feil: integer underflow ved parsing av IPv6-utvidelseshoder",
+      "summary_no": "CVE-2026-58058 retter en heltallsunderflyt i Nmap når verktøyet tolker IPv6-utvidelseshoder. Sikkerhetsteam som bruker Nmap til skanning bør oppgradere til rettet versjon for å unngå krasj eller uventet oppførsel mot fiendtlige svar.",
+      "topic": "sikkerhet",
+      "score": 33,
+      "tags": [
+        "cve-2026-58058",
+        "nmap",
+        "ipv6",
+        "scanning"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-69f7f6713c",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58055",
+      "published": "2026-06-29T08:06:34.000Z",
+      "ingested": "2026-06-29T07:17:09.459Z",
+      "title_original": "CVE-2026-58055 nghttp2 nghttpx - HTTP Request/Response Smuggling via Upgrade Request with Content-Length",
+      "headline_no": "Request smuggling-hull i nghttp2 rammer nghttpx-proxyer",
+      "summary_no": "En ny sårbarhet (CVE-2026-58055) i HTTP/2-biblioteket nghttp2 lar angripere smugle inn skjulte HTTP-forespørsler ved å kombinere en Upgrade-forespørsel med en Content-Length-header. Feilen kan utnyttes til å omgå sikkerhetskontroller, forgifte cache eller kapre økter bak nghttpx-proxyer. IT-admins som kjører nghttpx foran tjenester bør patche så snart oppdateringen er tilgjengelig.",
+      "topic": "sikkerhet",
+      "score": 59,
+      "tags": [
+        "cve-2026-58055",
+        "request-smuggling",
+        "nghttp2",
+        "nghttpx",
+        "http2"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-8a5e787601",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58051",
+      "published": "2026-06-29T08:06:18.000Z",
+      "ingested": "2026-06-29T07:16:27.373Z",
+      "title_original": "CVE-2026-58051 libssh2 - Free of Uninitialized Pointer in publickey List Cleanup",
+      "headline_no": "Ny libssh2-feil frigjør uinitialisert peker i publickey-opprydding",
+      "summary_no": "CVE-2026-58051 er en ny libssh2-svakhet: en uinitialisert peker kan frigjøres under opprydding av publickey-listen. Som med CVE-2026-58050 bør team som bruker libssh2-baserte SSH-verktøy følge med på oppdatert bibliotek og rulle det ut raskt.",
+      "topic": "sikkerhet",
+      "score": 37,
+      "tags": [
+        "cve-2026-58051",
+        "libssh2",
+        "ssh",
+        "memory-safety"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-4316ed597d",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58050",
+      "published": "2026-06-29T08:05:57.000Z",
+      "ingested": "2026-06-29T07:16:27.373Z",
+      "title_original": "CVE-2026-58050 libssh2 - Integer Overflow in publickey Subsystem Attribute Allocation",
+      "headline_no": "Integer overflow i libssh2 kan ramme SSH-klienter ved publickey-auth",
+      "summary_no": "CVE-2026-58050 beskriver en heltallsoverflyt i libssh2 sin allokering av attributter i publickey-subsystemet. libssh2 er bygget inn i mange verktøy og agenter, så admins bør kartlegge avhengigheter og oppdatere så snart et patchet bibliotek foreligger.",
+      "topic": "sikkerhet",
+      "score": 37,
+      "tags": [
+        "cve-2026-58050",
+        "libssh2",
+        "ssh",
+        "integer-overflow"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-cb381d28c2",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-52908",
+      "published": "2026-06-29T08:05:37.000Z",
+      "ingested": "2026-06-29T07:16:27.373Z",
+      "title_original": "CVE-2026-52908 RDMA: During rereg_mr ensure that REREG_ACCESS is compatible",
+      "headline_no": "Linux RDMA-feil: rereg_mr sjekket ikke tilgangsflagg riktig",
+      "summary_no": "CVE-2026-52908 retter en feil i Linux-kjernens RDMA-stack der rereg_mr ikke verifiserte at REREG_ACCESS var kompatibelt. Berører høyytelses-nettverk med InfiniBand eller RDMA, typisk HPC- og GPU-noder i Azure. Oppdater kjernen når fiksen er tilgjengelig.",
+      "topic": "sikkerhet",
+      "score": 27,
+      "tags": [
+        "cve-2026-52908",
+        "linux-kjerne",
+        "rdma",
+        "azure"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-1be2fb2662",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-52909",
+      "published": "2026-06-29T08:05:23.000Z",
+      "ingested": "2026-06-29T07:16:27.373Z",
+      "title_original": "CVE-2026-52909 ip6_vti: set netns_immutable on the fallback device.",
+      "headline_no": "Linux IPv6-tunnel: fallback-enhet manglet netns_immutable-flagg",
+      "summary_no": "CVE-2026-52909 setter netns_immutable på fallback-enheten i Linux-kjernens ip6_vti (IPv6-tunnel). Feilen er smal og treffer oppsett med IPv6-tunnelering på tvers av nettverksnavnerom, relevant for spesialiserte Linux-routere og container-nett. Oppdater kjernen ved anledning.",
+      "topic": "sikkerhet",
+      "score": 27,
+      "tags": [
+        "cve-2026-52909",
+        "linux-kjerne",
+        "ipv6",
+        "netns"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-69450a8298",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-52910",
+      "published": "2026-06-29T08:05:09.000Z",
+      "ingested": "2026-06-29T07:16:27.371Z",
+      "title_original": "CVE-2026-52910 bpf: Free reuseport cBPF prog after RCU grace period.",
+      "headline_no": "Use-after-free i Linux-kjernens BPF reuseport tettet i ny CVE",
+      "summary_no": "MSRC har lagt CVE-2026-52910 i oppdateringsguiden: en feil der en cBPF-prog i Linux-kjernens reuseport-håndtering kunne frigjøres før RCU-perioden var fullført. Memory-safety-feilen er mest relevant for team som drifter Linux-arbeidslast i Azure eller AKS, så planlegg kjerneoppdatering.",
+      "topic": "sikkerhet",
+      "score": 32,
+      "tags": [
+        "cve-2026-52910",
+        "linux-kjerne",
+        "bpf",
+        "azure"
+      ]
+    },
     {
       "id": "office365-itpros-64eab38036",
       "source_id": "office365-itpros",
