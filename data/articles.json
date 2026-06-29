@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T22:05:16.579Z",
+  "generated_at": "2026-06-29T22:26:53.148Z",
   "articles": [
     {
       "id": "security-community-ab1d21c572",
@@ -233,6 +233,26 @@
         "m365-copilot",
         "copilot-chat",
         "rollout"
+      ]
+    },
+    {
+      "id": "core-infra-security-7954d2e12d",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/authenticating-aws-workloads-to-azure-functions-using-workload/ba-p/4531603",
+      "published": "2026-06-29T04:38:32.000Z",
+      "ingested": "2026-06-29T22:26:53.106Z",
+      "title_original": "Authenticating AWS Workloads to Azure Functions using Workload Identity Federation",
+      "headline_no": "Slik kobler du AWS til Azure Functions uten å lagre hemmeligheter",
+      "summary_no": "En teknisk gjennomgang viser hvordan Workload Identity Federation i Microsoft Entra ID lar AWS-tjenester som Lambda og EC2 kalle Azure Functions uten lagrede klienthemmeligheter. I stedet for langlevde secrets validerer Entra ID AWS-ressursens egen OIDC-token, noe som fjerner behovet for hemmelighetsrotasjon og kutter lekkasjerisiko. For admins som drifter multisky betyr det mindre vedlikehold og en arkitektur tettere på Zero Trust.",
+      "topic": "identitet",
+      "score": 44,
+      "tags": [
+        "entra-id",
+        "workload-identity-federation",
+        "oidc",
+        "zero-trust",
+        "aws"
       ]
     },
     {
