@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-28T17:57:45.997Z",
+  "generated_at": "2026-06-29T07:04:24.356Z",
   "articles": [
+    {
+      "id": "office365-itpros-64eab38036",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/06/29/copilot-memory-updates/?utm_source=rss&utm_medium=rss&utm_campaign=copilot-memory-updates",
+      "published": "2026-06-29T07:00:00.000Z",
+      "ingested": "2026-06-29T07:04:24.304Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Copilot-memories.jpg?resize=785%2C646&#038;ssl=1",
+      "title_original": "Two Microsoft 365 Copilot Changes That Just Make Sense",
+      "headline_no": "Copilot Chat bevarer nå samtaler og får bedre minne",
+      "summary_no": "Tony Redmond fremhever to nylige endringer i Microsoft 365 Copilot Chat, varslet via message center-meldingene MC1174856 og MC1158329: samtaler tvinges nå til å lagres som sammenhengende tråder, og Copilots minne forbedres. Endringene er klientstyrte og krever ingen admin-handling, men IT-avdelinger bør kjenne dem siden de stadig flommes ned av Copilot-relaterte MC-varsler de ikke kan påvirke.",
+      "topic": "ai",
+      "score": 36,
+      "tags": [
+        "copilot",
+        "m365-copilot",
+        "copilot-chat",
+        "rollout"
+      ]
+    },
     {
       "id": "msrc-update-guide-5c0b04bf24",
       "source_id": "msrc-update-guide",
