@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-06-30T14:26:10.536Z",
+  "generated_at": "2026-06-30T17:20:15.538Z",
   "articles": [
+    {
+      "id": "msrc-blog-8db4e54de5",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/30/whats-new-in-microsoft-security-june-2026/",
+      "published": "2026-06-30T16:00:00.000Z",
+      "ingested": "2026-06-30T17:20:15.491Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/Picture1-4-1024x576.webp",
+      "title_original": "​​What’s new in Microsoft Security: June 2026",
+      "headline_no": "Ny AI-motor «MDASH» skal jakte skjulte sårbarheter i kode",
+      "summary_no": "Microsofts månedlige sikkerhetsoppdatering lanserer «MDASH» i privat preview – et agentbasert AI-system som skanner kompleks kode for å finne, validere og rute sårbarheter rett inn i Defender-arbeidsflyter. Samtidig utvider Defender endepunktsbeskyttelsen til lokale AI-agenter. For IT-admins betyr det nye verktøy mot sårbarheter, men også en voksende angrepsflate etter hvert som AI-agenter tas i bruk.",
+      "topic": "sikkerhet",
+      "score": 52,
+      "tags": [
+        "defender",
+        "mdash",
+        "ai-agenter",
+        "sårbarheter"
+      ]
+    },
+    {
+      "id": "msrc-blog-075d2f7a3a",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/30/securing-ai-agents-ai-tools-move-from-reading-acting/",
+      "published": "2026-06-30T15:57:11.000Z",
+      "ingested": "2026-06-30T17:20:15.493Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-62.webp",
+      "title_original": "Securing AI agents: When AI tools move from reading to acting",
+      "headline_no": "MCP-verktøy kan forgiftes og kapre AI-agenter som utfører handlinger",
+      "summary_no": "Microsoft Incident Response beskriver et angrepsmønster der ondsinnede MCP-verktøy (Model Context Protocol) manipulerer AI-agenter som ikke bare leser innhold, men også utfører handlinger som å sende e-post eller endre systemer. Posten gir en praktisk playbook for å oppdage, begrense og hindre angrepene med Microsofts sikkerhetskontroller. Når agenter i M365 Copilot, Copilot Studio og Azure AI Foundry får skrivetilgang, vokser angrepsflaten – og IT-admins må forstå risikoen.",
+      "topic": "sikkerhet",
+      "score": 64,
+      "tags": [
+        "mcp",
+        "ai-agenter",
+        "copilot",
+        "tool-poisoning"
+      ]
+    },
     {
       "id": "msrc-update-guide-b46e68626a",
       "source_id": "msrc-update-guide",
