@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-30T18:35:28.367Z",
+  "generated_at": "2026-06-30T18:46:27.371Z",
   "articles": [
+    {
+      "id": "entra-blog-ace17dcb8b",
+      "source_id": "entra-blog",
+      "source_name": "Microsoft Entra Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/microsoft-entra-backup-and-recovery-is-now-generally-available/ba-p/4521997",
+      "published": "2026-06-30T18:27:57.000Z",
+      "ingested": "2026-06-30T18:46:27.328Z",
+      "title_original": "Microsoft Entra Backup and Recovery is now generally available",
+      "headline_no": "Rull tilbake feil i Entra: innebygd backup og gjenoppretting er nå GA",
+      "summary_no": "Microsoft Entra Backup and Recovery er nå allment tilgjengelig for kunder med Entra ID P1 eller P2, og rulles ut til alle arbeidstenanter denne uken. Løsningen tar daglig sikkerhetskopi av kritiske katalogobjekter som brukere, grupper, tjenesteprinsipaler, managed identities og Conditional Access-policyer, slik at administratorer kan gjenopprette miljøet til en kjent god tilstand etter utilsiktede endringer eller kompromittering. Oppbevaringstiden er økt fra 5 til 7 dager siden public preview.",
+      "topic": "identitet",
+      "score": 78,
+      "tags": [
+        "entra-id",
+        "backup",
+        "disaster-recovery",
+        "conditional-access",
+        "ga"
+      ]
+    },
     {
       "id": "prajwal-desai-00020b7c67",
       "source_id": "prajwal-desai",
