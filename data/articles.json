@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-30T07:32:19.783Z",
+  "generated_at": "2026-06-30T10:30:33.565Z",
   "articles": [
+    {
+      "id": "o365reports-fa8f0cf335",
+      "source_id": "o365reports",
+      "source_name": "Office 365 Reports (AdminDroid)",
+      "url": "https://o365reports.com/cleanup-inactive-active-directory-user-accounts-using-powershell/?utm_source=rss&utm_medium=rss&utm_campaign=cleanup-inactive-active-directory-user-accounts-using-powershell",
+      "published": "2026-06-30T10:28:10.000Z",
+      "ingested": "2026-06-30T10:30:33.524Z",
+      "hero_image": "https://o365reports.com/wp-content/uploads/2026/06/Cleanup-inactive-user-accounts-in-Active-Directory-Sample-Output-300x75.png",
+      "title_original": "Cleanup Inactive Active Directory User Accounts Using PowerShell",
+      "headline_no": "Nytt PowerShell-skript rydder opp inaktive AD-kontoer automatisk",
+      "summary_no": "AdminDroid har publisert et PowerShell-skript som finner inaktive Active Directory-kontoer og automatiserer opprydding i én kontrollert arbeidsflyt: deaktiver, flytt til egen OU og slett etter en definert oppbevaringsperiode. Glemte kontoer beholder unødvendig tilgang og øker angrepsflaten, mens manuell opprydding med native verktøy er tregt og feilutsatt. Skriptet håndterer også svakheten der lastLogonTimestamp kan henge etter med opptil 14 dager.",
+      "topic": "identitet",
+      "score": 27,
+      "tags": [
+        "active-directory",
+        "powershell",
+        "inaktive-kontoer",
+        "opprydding"
+      ]
+    },
     {
       "id": "msrc-update-guide-0c9904f53a",
       "source_id": "msrc-update-guide",
