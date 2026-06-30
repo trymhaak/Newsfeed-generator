@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-29T23:57:41.922Z",
+  "generated_at": "2026-06-30T07:05:36.093Z",
   "articles": [
+    {
+      "id": "office365-itpros-79370d182a",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/06/30/incoming-teams-call-window/?utm_source=rss&utm_medium=rss&utm_campaign=incoming-teams-call-window",
+      "published": "2026-06-30T07:00:00.000Z",
+      "ingested": "2026-06-30T07:05:36.041Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Teams-Call-Small-Window.jpg?resize=840%2C365&#038;ssl=1",
+      "title_original": "Use the Small Window for Incoming Teams Calls",
+      "headline_no": "Innkommende Teams-anrop kan nå dukke opp i et lite vindu",
+      "summary_no": "En innstilling i Teams lar innkommende anrop vises i et lite vindu i stedet for det store standardvinduet, slik at de forstyrrer mindre. Brukere slipper å bytte mellom vinduer for å se hva de holdt på med før anropet kom. Funksjonen er valgfri og styres under Anrop i Teams-innstillingene, og er beskrevet i meldingssenter-varselet MC1045221.",
+      "topic": "endpoint",
+      "score": 32,
+      "tags": [
+        "teams",
+        "anrop",
+        "brukeropplevelse",
+        "mc1045221"
+      ]
+    },
     {
       "id": "m365-roadmap-eaf30ae1ca",
       "source_id": "m365-roadmap",
