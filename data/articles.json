@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T19:35:26.947Z",
+  "generated_at": "2026-06-30T21:14:42.185Z",
   "articles": [
     {
       "id": "msrc-blog-e3c87d41eb",
@@ -57,6 +57,26 @@
         "sccm",
         "asset-intelligence",
         "oppgradering"
+      ]
+    },
+    {
+      "id": "defender-cloud-086247ea0f",
+      "source_id": "defender-cloud",
+      "source_name": "Microsoft Defender for Cloud Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/microsoft-defender-for-cloud-expands-multicloud-coverage-across/ba-p/4532200",
+      "published": "2026-06-30T17:36:56.000Z",
+      "ingested": "2026-06-30T21:14:42.147Z",
+      "title_original": "Microsoft Defender for Cloud expands multicloud coverage across AWS and Google Cloud",
+      "headline_no": "Defender for Cloud dekker nå 90 nye AWS- og Google Cloud-ressurser",
+      "summary_no": "Microsoft har gjort cirka 90 nye AWS- og Google Cloud-ressurstyper og over 200 nye anbefalinger generelt tilgjengelige i Defender for Cloud. Utvidelsen dekker skynative apper, dataplattformer, identitetstjenester og nettverkskomponenter, slik at sikkerhetsteam kan vurdere mer av multisky-miljøet i én samlet flate. For IT-admins gir det bedre kontekst på tvers av ressurser, identiteter og eksponeringssignaler – og enklere prioritering av hva som faktisk reduserer risiko.",
+      "topic": "sikkerhet",
+      "score": 65,
+      "tags": [
+        "defender for cloud",
+        "multicloud",
+        "aws",
+        "gcp",
+        "cspm"
       ]
     },
     {
