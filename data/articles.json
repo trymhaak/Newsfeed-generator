@@ -1,6 +1,25 @@
 {
-  "generated_at": "2026-06-30T18:46:27.371Z",
+  "generated_at": "2026-06-30T19:13:04.785Z",
   "articles": [
+    {
+      "id": "msrc-blog-e3c87d41eb",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/30/microsoft-advances-quantum-safe-security-as-the-risk-timeline-shifts/",
+      "published": "2026-06-30T19:00:00.000Z",
+      "ingested": "2026-06-30T19:13:04.737Z",
+      "title_original": "Accelerating the quantum-safe timeline",
+      "headline_no": "Kvantetrusselen kommer raskere: Microsoft fremskynder kvantesikker krypto",
+      "summary_no": "Microsoft fremskynder tidslinjen i sitt Quantum Safe Program fordi kryptografisk relevante kvantedatamaskiner kan komme tidligere enn antatt. Amerikanske og franske myndigheter anbefaler allerede kvantesikker kryptografi i høyrisikosystemer innen 2030. IT-avdelinger bør begynne kartlegging og migrering til post-kvantekryptografi nå, ettersom overgangen er en flerårig jobb der utsettelse øker både kostnad og risiko.",
+      "topic": "sikkerhet",
+      "score": 61,
+      "tags": [
+        "pqc",
+        "kvantekryptografi",
+        "kryptografi",
+        "compliance"
+      ]
+    },
     {
       "id": "entra-blog-ace17dcb8b",
       "source_id": "entra-blog",
