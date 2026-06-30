@@ -1,6 +1,79 @@
 {
-  "generated_at": "2026-06-30T21:14:42.185Z",
+  "generated_at": "2026-06-30T23:41:20.996Z",
   "articles": [
+    {
+      "id": "m365-roadmap-eba7cd22d4",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567005",
+      "published": "2026-06-30T22:57:58.000Z",
+      "ingested": "2026-06-30T23:41:20.946Z",
+      "title_original": "Microsoft Copilot (Microsoft 365): Insights: Copilot Analytics - Cowork adoption and impact",
+      "headline_no": "Copilot Analytics får nytt AI Cost-dashboard for forbruk og adopsjon",
+      "summary_no": "Microsoft samler dypere innsikt i Cowork-adopsjon og -effekt i et nytt AI Cost-dashboard og Copilot-dashboard, med eksportmulighet. Analytikere kan spørre ut alle metrikker via et nytt AI-kostnadsspørsmål i advanced insights. Nyttig for IT-admins som må dokumentere Copilot-bruk og -kostnad mot ledelsen. GA i juli 2026.",
+      "topic": "ai",
+      "score": 39,
+      "tags": [
+        "copilot",
+        "analytics",
+        "m365",
+        "kostnad"
+      ]
+    },
+    {
+      "id": "m365-roadmap-2223417050",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566870",
+      "published": "2026-06-30T22:57:58.000Z",
+      "ingested": "2026-06-30T23:41:20.949Z",
+      "title_original": "OneNote: Suggested Artifact Creation in Copilot Notebooks",
+      "headline_no": "OneNote Copilot foreslår nå ferdige Word-, Excel- og PowerPoint-filer",
+      "summary_no": "Copilot Notebooks i OneNote foreslår automatisk artefakter som Word-dokumenter, Excel-arbeidsbøker og PowerPoint-presentasjoner basert på Microsoft 365-kunnskap og innholdet i notatboken. Brukeren velger et forslag, og Copilot genererer filen. Preview i juli 2026, GA i august 2026.",
+      "topic": "ai",
+      "score": 34,
+      "tags": [
+        "copilot",
+        "onenote",
+        "m365"
+      ]
+    },
+    {
+      "id": "m365-roadmap-90a0010e7e",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566314",
+      "published": "2026-06-30T22:57:58.000Z",
+      "ingested": "2026-06-30T23:41:20.949Z",
+      "title_original": "Planner: Save AI-generated filters in Planner Agent chat",
+      "headline_no": "Planner lar deg lagre AI-genererte filtre fra Planner-agenten",
+      "summary_no": "Filtre som Planner-agenten genererer kan nå lagres for gjenbruk på planene dine. En mindre kvalitetsforbedring for team som lener seg på AI-assistert filtrering i Planner. Preview i juli 2026, GA i september 2026.",
+      "topic": "ai",
+      "score": 29,
+      "tags": [
+        "planner",
+        "copilot",
+        "ai"
+      ]
+    },
+    {
+      "id": "m365-roadmap-a5e943588a",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=562534",
+      "published": "2026-06-30T22:57:58.000Z",
+      "ingested": "2026-06-30T23:41:20.949Z",
+      "title_original": "Microsoft Teams: Front-of-room view control for Town Hall\r\nand Webinar in Teams Rooms on Android",
+      "headline_no": "Teams Rooms på Android får presentatørkontroll for Town Hall og webinar",
+      "summary_no": "Når en Teams Rooms på Android inviteres som presentatør, viser fremrommet nå deltakervisning som standard, mens presentatøren styrer alt fra konsollen – inkludert green room og off-stage-håndtering. Visningen kan byttes til presentatørvisning uten å påvirke deltakerne. Krever Teams Rooms Pro. GA i august 2026.",
+      "topic": "endpoint",
+      "score": 29,
+      "tags": [
+        "teams",
+        "teams-rooms",
+        "android"
+      ]
+    },
     {
       "id": "msrc-blog-e3c87d41eb",
       "source_id": "msrc-blog",
