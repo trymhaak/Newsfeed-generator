@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-30T10:30:33.565Z",
+  "generated_at": "2026-06-30T14:26:10.536Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-b46e68626a",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42910",
+      "published": "2026-06-30T14:00:00.000Z",
+      "ingested": "2026-06-30T14:26:10.491Z",
+      "title_original": "CVE-2026-42910 Windows Hotpatch Monitoring Service Elevation of Privilege Vulnerability",
+      "headline_no": "Hotpatch-sårbarhet i Windows (CVE-2026-42910): bare kreditering oppdatert",
+      "summary_no": "MSRC har republisert oppføringen for CVE-2026-42910, en rettighetseskaleringssårbarhet i Windows Hotpatch Monitoring Service, men den eneste endringen er en oppdatert kreditering. Det er ingen ny teknisk informasjon og ingen ny patch-veiledning. IT-admins trenger ikke å foreta seg noe – dette er kun en informasjonsoppdatering av en eksisterende sak.",
+      "topic": "sikkerhet",
+      "score": 9,
+      "tags": [
+        "cve-2026-42910",
+        "windows",
+        "hotpatch",
+        "rettighetseskalering",
+        "msrc"
+      ]
+    },
     {
       "id": "o365reports-fa8f0cf335",
       "source_id": "o365reports",
