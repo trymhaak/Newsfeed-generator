@@ -1,6 +1,120 @@
 {
-  "generated_at": "2026-06-30T07:05:36.093Z",
+  "generated_at": "2026-06-30T07:32:19.783Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-0c9904f53a",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-11979",
+      "published": "2026-06-30T08:02:15.000Z",
+      "ingested": "2026-06-30T07:32:19.736Z",
+      "title_original": "CVE-2026-11979 Stack-Based Buffer Overflow in libxml2",
+      "headline_no": "Stack-overflyt i libxml2 truer Linux-systemer som parser XML",
+      "summary_no": "En stack-basert buffer-overflyt i libxml2 kan utnyttes når biblioteket parser ondsinnet XML — et bibliotek som er bredt brukt i mange tjenester. Prioriter patching av libxml2 siden angrepsflaten ofte er eksponert mot uklarert input.",
+      "topic": "sikkerhet",
+      "score": 43,
+      "tags": [
+        "libxml2",
+        "buffer-overflow",
+        "cve-2026-11979",
+        "xml"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-c7a608159a",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53325",
+      "published": "2026-06-30T08:02:09.000Z",
+      "ingested": "2026-06-30T07:32:19.736Z",
+      "title_original": "CVE-2026-53325 agp/amd64: Fix broken error propagation in agp_amd64_probe()",
+      "headline_no": "Linux-kjernen retter feilhåndtering i AGP-driver for AMD64",
+      "summary_no": "Linux-kjernen retter brutt feilpropagering i agp_amd64_probe() i AGP-driveren for AMD64. Lav praktisk risiko for de fleste, men inngår i kjerneoppdateringer admins bør rulle ut på berørte Linux-verter.",
+      "topic": "sikkerhet",
+      "score": 23,
+      "tags": [
+        "linux-kernel",
+        "agp",
+        "cve-2026-53325"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-c58a557dba",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41992",
+      "published": "2026-06-30T08:02:02.000Z",
+      "ingested": "2026-06-30T07:32:19.736Z",
+      "title_original": "CVE-2026-41992 Global Buffer Overflow in GNU gzip",
+      "headline_no": "Global buffer-overflyt i GNU gzip truer Linux-systemer",
+      "summary_no": "En global buffer-overflyt i GNU gzip kan trigges ved håndtering av spesiallagde data og potensielt føre til krasj eller kjøring av kode. Admins bør patche gzip på alle berørte Linux-systemer i stacken.",
+      "topic": "sikkerhet",
+      "score": 40,
+      "tags": [
+        "gzip",
+        "buffer-overflow",
+        "cve-2026-41992",
+        "linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-731aece5da",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41991",
+      "published": "2026-06-30T08:01:56.000Z",
+      "ingested": "2026-06-30T07:32:19.736Z",
+      "title_original": "CVE-2026-41991 Predictable Temporary File in GNU gzip",
+      "headline_no": "Forutsigbar temp-fil i GNU gzip åpner for symlink-angrep",
+      "summary_no": "En forutsigbar midlertidig fil i GNU gzip kan la en lokal angriper utføre symlink-angrep mot filer prosessen har tilgang til. Patch berørte Linux-systemer der gzip kjøres med forhøyede rettigheter.",
+      "topic": "sikkerhet",
+      "score": 29,
+      "tags": [
+        "gzip",
+        "symlink",
+        "cve-2026-41991",
+        "linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-5a99fcfed5",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54371",
+      "published": "2026-06-30T08:01:49.000Z",
+      "ingested": "2026-06-30T07:32:19.736Z",
+      "title_original": "CVE-2026-54371 attr < 2.6.0 Symlink Traversal Privilege Escalation via getfattr/setfattr",
+      "headline_no": "attr-verktøy lar lokale brukere eskalere rettigheter via symlink",
+      "summary_no": "Symlink-traversering i getfattr/setfattr lar lokale brukere eskalere rettigheter på systemer med attr-pakken eldre enn 2.6.0. Oppgrader attr til 2.6.0 eller nyere på Linux-verter i Microsoft-miljøet.",
+      "topic": "sikkerhet",
+      "score": 36,
+      "tags": [
+        "attr",
+        "privilege-escalation",
+        "cve-2026-54371",
+        "linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-7ffac6a2bb",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54369",
+      "published": "2026-06-30T08:01:43.000Z",
+      "ingested": "2026-06-30T07:32:19.734Z",
+      "title_original": "CVE-2026-54369 acl < 2.4.0 Symlink Traversal Privilege Escalation via libacl Functions",
+      "headline_no": "libacl-sårbarhet lar angripere eskalere rettigheter via symlink",
+      "summary_no": "MSRC sporer en svakhet i libacl-funksjoner der symlink-traversering kan utnyttes til lokal rettighetseskalering på systemer med acl eldre enn 2.4.0. IT-admins som kjører Linux i Microsoft-stacken (Azure Linux, WSL) bør oppgradere acl-pakken til 2.4.0 eller nyere.",
+      "topic": "sikkerhet",
+      "score": 36,
+      "tags": [
+        "acl",
+        "libacl",
+        "privilege-escalation",
+        "cve-2026-54369",
+        "linux"
+      ]
+    },
     {
       "id": "office365-itpros-79370d182a",
       "source_id": "office365-itpros",
