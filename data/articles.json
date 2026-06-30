@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T19:13:04.785Z",
+  "generated_at": "2026-06-30T19:35:26.947Z",
   "articles": [
     {
       "id": "msrc-blog-e3c87d41eb",
@@ -57,6 +57,65 @@
         "sccm",
         "asset-intelligence",
         "oppgradering"
+      ]
+    },
+    {
+      "id": "sentinel-blog-5d4b25aed2",
+      "source_id": "sentinel-blog",
+      "source_name": "Microsoft Sentinel Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-in-microsoft-sentinel-june-2026/ba-p/4531902",
+      "published": "2026-06-30T16:43:18.000Z",
+      "ingested": "2026-06-30T19:35:26.904Z",
+      "title_original": "What’s new in Microsoft Sentinel: June 2026",
+      "headline_no": "Sentinel i juni: ASIM-parsere blir GA, nye AI-agent-skjemaer",
+      "summary_no": "Juni-oppdateringen gjør ASIM-parserne (Advanced Security Information Model) generelt tilgjengelige med bredere dekning for Azure-tjenester, AWS CloudTrail og tredjeparts brannmurer, slik at én analyseregel når flere kilder med mindre arbeid per kilde. To nye skjemaer for ressursinventar og AI-agent-telemetri kommer til, og en Agent Identities-kobling gir identitetskontekst for hvem som eier AI-agenter og hvilke tillatelser de har. Sentinel MCP får i tillegg grafverktøy for å visualisere sammenhenger mellom identiteter, enheter og varsler.",
+      "topic": "sikkerhet",
+      "score": 53,
+      "tags": [
+        "sentinel",
+        "asim",
+        "data-lake",
+        "mcp",
+        "ai-agenter"
+      ]
+    },
+    {
+      "id": "sentinel-blog-9479d7ef23",
+      "source_id": "sentinel-blog",
+      "source_name": "Microsoft Sentinel Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/behind-the-build-with-gigamon-enriching-microsoft-sentinel-with/ba-p/4530360",
+      "published": "2026-06-30T16:00:00.000Z",
+      "ingested": "2026-06-30T19:35:26.902Z",
+      "title_original": "Behind the Build with Gigamon: Enriching Microsoft Sentinel with Network-Derived Telemetry",
+      "headline_no": "Gigamon beriker Microsoft Sentinel med nettverkstelemetri",
+      "summary_no": "Gigamon og Microsoft har integrert Gigamons Deep Observability Pipeline med Sentinel, slik at sikkerhetsteam kan tilføre nettverksbasert telemetri fra hybrid infrastruktur, kryptert trafikk og containere i etterforskninger. For SOC-team gir det dypere kontekst der endepunkt- og identitetslogger alene ikke avdekker hvordan systemer faktisk kommuniserer. Saken er en partner-spotlight og inneholder mer integrasjonshistorikk enn konkret produktnytt.",
+      "topic": "sikkerhet",
+      "score": 34,
+      "tags": [
+        "sentinel",
+        "gigamon",
+        "nettverkstelemetri",
+        "soc"
+      ]
+    },
+    {
+      "id": "sentinel-blog-2f40ece585",
+      "source_id": "sentinel-blog",
+      "source_name": "Microsoft Sentinel Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/the-ai-first-soc-copilot-ueba-threat-intelligence-and-soc/ba-p/4528609",
+      "published": "2026-06-30T16:00:00.000Z",
+      "ingested": "2026-06-30T19:35:26.904Z",
+      "title_original": "The AI-first SOC: Copilot, UEBA, threat intelligence, and SOC optimization",
+      "headline_no": "Defender samler Copilot, UEBA og trusseletterretning i ett SOC",
+      "summary_no": "Microsoft beskriver hvordan Defender-porteføljen forener Security Copilot-agenter, en samlet UEBA-opplevelse, native MDTI-trusseletterretning og SOC-optimalisering på ett sted. Mange av funksjonene aktiveres så snart et Sentinel-workspace kobles til, uten tvungen migrering bort fra Sentinel. For SOC-team betyr det at eksisterende Sentinel-investering utvides med AI-drevne arbeidsflyter og atferdsanalyse på tvers av hybrid- og multisky.",
+      "topic": "sikkerhet",
+      "score": 47,
+      "tags": [
+        "sentinel",
+        "defender",
+        "security-copilot",
+        "ueba",
+        "soc"
       ]
     },
     {
