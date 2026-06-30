@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T18:23:46.047Z",
+  "generated_at": "2026-06-30T18:35:28.367Z",
   "articles": [
     {
       "id": "prajwal-desai-00020b7c67",
@@ -58,6 +58,46 @@
         "ai-agenter",
         "copilot",
         "tool-poisoning"
+      ]
+    },
+    {
+      "id": "m365-copilot-750d8d40c2",
+      "source_id": "m365-copilot",
+      "source_name": "Microsoft 365 Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/the-workflow-is-the-product-copilot-cowork-plugins-change-what/ba-p/4531933",
+      "published": "2026-06-30T15:30:00.000Z",
+      "ingested": "2026-06-30T18:35:28.316Z",
+      "title_original": "The workflow is the product: Copilot Cowork plugins change what AI can do for businesses",
+      "headline_no": "Copilot Cowork blir GA — plugins kobler AI-en til systemene dere alt bruker",
+      "summary_no": "Copilot Cowork, Microsofts agentiske system som planlegger og utfører flertrinns-oppgaver fra start til slutt, er nå allment tilgjengelig globalt. Partnere kan utvide det med plugins som pakker «skills» (gjenbrukbare instruksjoner) og «connectors» (sikre broer inn i eksisterende forretningssystemer), distribuert via Microsoft Marketplace. For IT-admins betyr det at Cowork rekker inn i systemene teamene allerede bruker — men også at plugin-installasjon, tilgang og styring må vurderes.",
+      "topic": "ai",
+      "score": 65,
+      "tags": [
+        "copilot",
+        "cowork",
+        "plugins",
+        "marketplace",
+        "ga"
+      ]
+    },
+    {
+      "id": "m365-copilot-d09dec5304",
+      "source_id": "m365-copilot",
+      "source_name": "Microsoft 365 Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/what-s-new-in-microsoft-365-copilot-june-2026/ba-p/4529572",
+      "published": "2026-06-30T15:30:00.000Z",
+      "ingested": "2026-06-30T18:35:28.319Z",
+      "title_original": "What’s New in Microsoft 365 Copilot | June 2026",
+      "headline_no": "Copilot i juni: Cowork blir GA, nye admin-grep og Purview DLP-kontroller",
+      "summary_no": "Månedens Copilot-oppsummering samler juni-nyhetene: Copilot Cowork blir allment tilgjengelig, og chat/app får utvidede kildehenvisninger og resonnement, nye Notebooks-referanser samt forbedringer i Outlook, Word, PowerPoint og Excel. For IT-admins er det nytt rundt adopsjon og forvaltning i Microsoft 365 admin center, pluss e-postrestriksjoner og Cowork-kontroller i Purview Data Loss Prevention. Verdt en gjennomgang for å avgjøre hva som bør rulles ut eller begrenses i tenanten.",
+      "topic": "ai",
+      "score": 50,
+      "tags": [
+        "copilot",
+        "purview",
+        "dlp",
+        "admin-center",
+        "cowork"
       ]
     },
     {
