@@ -1,6 +1,25 @@
 {
-  "generated_at": "2026-06-30T17:20:15.538Z",
+  "generated_at": "2026-06-30T18:23:46.047Z",
   "articles": [
+    {
+      "id": "prajwal-desai-00020b7c67",
+      "source_id": "prajwal-desai",
+      "source_name": "Prajwal Desai",
+      "url": "https://www.prajwaldesai.com/configmgr-upgrade-fails-with-asset-intelligence-role-installed/",
+      "published": "2026-06-30T18:21:51.000Z",
+      "ingested": "2026-06-30T18:23:46.002Z",
+      "title_original": "ConfigMgr Upgrade fails with Asset Intelligence Role Installed",
+      "headline_no": "Asset Intelligence-rollen stopper ConfigMgr-oppgraderingen",
+      "summary_no": "En oppgradering av Configuration Manager kan feile når Asset Intelligence-rollen er installert, og feilen dukker opp i ConfigMgrPrereq.log. For admins som fortsatt drifter ConfigMgr betyr det at en prereq-sjekk kan blokkere hele oppgraderingen før den i det hele tatt starter. Bloggen forklarer årsaken og viser hvordan du kommer deg rundt problemet.",
+      "topic": "endpoint",
+      "score": 31,
+      "tags": [
+        "configmgr",
+        "sccm",
+        "asset-intelligence",
+        "oppgradering"
+      ]
+    },
     {
       "id": "msrc-blog-8db4e54de5",
       "source_id": "msrc-blog",
