@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-07-01T00:08:33.752Z",
+  "generated_at": "2026-07-01T06:04:25.222Z",
   "articles": [
+    {
+      "id": "call4cloud-ff896e532a",
+      "source_id": "call4cloud",
+      "source_name": "Call4Cloud (Rudy Ooms)",
+      "url": "https://patchmypc.com/blog/autopilot-0x800705b4-app-control-blocks-the-intune-management-extension/",
+      "published": "2026-07-01T05:09:21.000Z",
+      "ingested": "2026-07-01T06:04:25.175Z",
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image-34.png",
+      "title_original": "Autopilot 0x800705b4: App Control Blocks the Intune Management Extension",
+      "headline_no": "App Control blokkerer Intune-agenten og knekker Autopilot med 0x800705b4",
+      "summary_no": "En Autopilot-provisjonering henger på «Preparing your device for mobile management» og ender med feilkoden 0x800705b4. Årsaken er ikke Autopilot selv, men en App Control-policy (WDAC) som blokkerer Intune Management Extension fra å kjøre. Admins som ruller ut App Control bør eksplisitt tillate IME, ellers stopper enhetsprovisjoneringen opp.",
+      "topic": "endpoint",
+      "score": 40,
+      "tags": [
+        "autopilot",
+        "intune",
+        "app-control",
+        "wdac",
+        "0x800705b4"
+      ]
+    },
     {
       "id": "office365-itpros-b5b1630f70",
       "source_id": "office365-itpros",
