@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T07:28:45.467Z",
+  "generated_at": "2026-07-01T07:41:07.046Z",
   "articles": [
     {
       "id": "msrc-update-guide-1f5e92f2f3",
@@ -37,6 +37,117 @@
         "cve-2026-13218",
         "kubernetes",
         "container-escape"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-26a39d38e9",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13208",
+      "published": "2026-07-01T08:02:53.000Z",
+      "ingested": "2026-07-01T07:41:07.003Z",
+      "title_original": "CVE-2026-13208 Kubevirt: virt-handler-rhel9: kubevirt: virt-handler notify server trusts vmi identity from unauthenticated grpc request body",
+      "headline_no": "KubeVirt stoler på uautentisert VM-identitet – åpner for spoofing",
+      "summary_no": "KubeVirts notify-server i virt-handler stoler på VM-identiteten som oppgis i en uautentisert gRPC-forespørsel, slik at en angriper kan utgi seg for en annen VM. Mer alvorlig enn de øvrige GLib-sakene, men bare aktuelt for Kubernetes-miljøer som kjører KubeVirt.",
+      "topic": "sikkerhet",
+      "score": 27,
+      "tags": [
+        "kubevirt",
+        "cve-2026-13208",
+        "kubernetes",
+        "autentisering"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-61aca326e3",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13322",
+      "published": "2026-07-01T08:02:40.000Z",
+      "ingested": "2026-07-01T07:41:07.003Z",
+      "title_original": "CVE-2026-13322 Kubevirt: virt-handler-rhel9: kubevirt: unbounded virtio-serial readline in virt-handler causes oom denial of service",
+      "headline_no": "KubeVirt-node kan tvinges i minnetap og krasj via virtio-serial",
+      "summary_no": "virt-handler i KubeVirt begrenser ikke lengden når den leser fra virtio-serial, slik at en gjest kan sende endeløse data og sulte noden for minne (OOM) til den krasjer. Angår team som kjører KubeVirt-VM-er på Kubernetes/AKS, ellers utenfor kjernen av Microsoft-admin.",
+      "topic": "sikkerhet",
+      "score": 22,
+      "tags": [
+        "kubevirt",
+        "cve-2026-13322",
+        "dos",
+        "kubernetes"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-62e9e0fc33",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58014",
+      "published": "2026-07-01T08:02:21.000Z",
+      "ingested": "2026-07-01T07:41:07.003Z",
+      "title_original": "CVE-2026-58014 Glib: off-by-one error in glib/gkeyfile.c via \"g_key_file_get_locale_string_list\"",
+      "headline_no": "Off-by-one-feil i GLibs nøkkelfil-parser åpner for minnelesing",
+      "summary_no": "En off-by-one-feil i g_key_file_get_locale_string_list() lar GLib lese ett element for langt i nøkkelfiler, med potensiell minnelekkasje. Lav alvorlighet og lite eksponert i Microsoft-økosystemet – patch ved neste ordinære oppdatering av Linux-verter.",
+      "topic": "sikkerhet",
+      "score": 13,
+      "tags": [
+        "glib",
+        "cve-2026-58014",
+        "sårbarhet"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-209328ce4d",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58013",
+      "published": "2026-07-01T08:02:15.000Z",
+      "ingested": "2026-07-01T07:41:07.003Z",
+      "title_original": "CVE-2026-58013 Glib: buffer over-read in glib/giochannel.c via \"g_io_channel_read_line_backend\"",
+      "headline_no": "GLib: buffer-overlesing når IO-kanaler leser linjer",
+      "summary_no": "g_io_channel_read_line_backend() i GLib leser forbi bufferet når den henter linjer fra en IO-kanal, noe som kan lekke minne. Relevant for Linux-tjenester som lener seg på GLib, men perifert for typiske Microsoft 365-administratorer.",
+      "topic": "sikkerhet",
+      "score": 14,
+      "tags": [
+        "glib",
+        "cve-2026-58013",
+        "sårbarhet"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-67712f7687",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58011",
+      "published": "2026-07-01T08:02:07.000Z",
+      "ingested": "2026-07-01T07:41:07.003Z",
+      "title_original": "CVE-2026-58011 Glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid gdatetime",
+      "headline_no": "GLib leser utenfor minnet ved ugyldige datoverdier",
+      "summary_no": "En ugyldig gdatetime-verdi får g_date_time_get_ymd() til å lese utenfor tildelt minne, med fare for krasj eller informasjonslekkasje. Berører tjenester bygget på GLib, og er marginalt for Microsoft-sentrisk endepunkt- og identitetsdrift.",
+      "topic": "sikkerhet",
+      "score": 14,
+      "tags": [
+        "glib",
+        "cve-2026-58011",
+        "sårbarhet"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-c0de765f75",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58012",
+      "published": "2026-07-01T08:02:01.000Z",
+      "ingested": "2026-07-01T07:41:07.001Z",
+      "title_original": "CVE-2026-58012 Glib: buffer over-read in g_regex_replace() via glib/gregex.c:string_append() and g_utf8_next_char()",
+      "headline_no": "Buffer-overlesing i GLibs regex-motor kan lekke minnedata",
+      "summary_no": "GLib-funksjonen g_regex_replace() kan lese forbi buffergrensen under regex-erstatning og dermed lekke minneinnhold eller krasje prosessen. GLib er et lavnivåbibliotek bak mange Linux- og GNOME-tjenester, så dette treffer først og fremst Linux-arbeidslaster i Azure – lite relevant for ren Intune/Entra-drift.",
+      "topic": "sikkerhet",
+      "score": 14,
+      "tags": [
+        "glib",
+        "cve-2026-58012",
+        "sårbarhet",
+        "minnelekkasje"
       ]
     },
     {
