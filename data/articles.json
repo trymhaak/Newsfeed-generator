@@ -1,6 +1,139 @@
 {
-  "generated_at": "2026-07-01T07:13:32.502Z",
+  "generated_at": "2026-07-01T07:28:45.467Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-1f5e92f2f3",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57062",
+      "published": "2026-07-01T08:40:05.000Z",
+      "ingested": "2026-07-01T07:25:29.196Z",
+      "title_original": "CVE-2026-57062 CMS (Cryptographic Message Syntax) parsing in gpgsm in GnuPG through 2.5.20 mishandles the CMS format for AES-GCM because aes-ICVlen is supposed to be 12 bytes but 4 bytes is accepted. NOTE: this is related to CVE-2026-34182.",
+      "headline_no": "GnuPG godtar for korte AES-GCM-tagger i gpgsm-kryptering",
+      "summary_no": "En svakhet i gpgsm i GnuPG til og med 2.5.20 gjør at CMS-formatet for AES-GCM aksepterer en 4-byte autentiseringstagg der 12 byte er påkrevd. Det svekker integritetsbeskyttelsen på krypterte meldinger og kan åpne for manipulering uten at det oppdages. Sårbarheten henger sammen med CVE-2026-34182.",
+      "topic": "sikkerhet",
+      "score": 32,
+      "tags": [
+        "gnupg",
+        "cve-2026-57062",
+        "kryptering",
+        "aes-gcm"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-9f0286b385",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13218",
+      "published": "2026-07-01T08:02:59.000Z",
+      "ingested": "2026-07-01T07:28:45.421Z",
+      "title_original": "CVE-2026-13218 Kubevirt: kubevirt: symlink following in writetocachedfile allows host file overwrite from virt-launcher",
+      "headline_no": "KubeVirt-sårbarhet lar angriper overskrive vertsfiler via symlink",
+      "summary_no": "En feil i KubeVirt (CVE-2026-13218) lar virt-launcher følge symbolske lenker i writeToCachedFile og dermed overskrive vilkårlige filer på Kubernetes-verten. En angriper med kontroll over en VM-pod kan utnytte dette til å bryte ut av isolasjonen og kompromittere selve noden. Kjører du KubeVirt for VM-er på Kubernetes, bør du oppgradere til en patchet versjon så snart den er tilgjengelig.",
+      "topic": "sikkerhet",
+      "score": 29,
+      "tags": [
+        "kubevirt",
+        "cve-2026-13218",
+        "kubernetes",
+        "container-escape"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-1cabb658cb",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58016",
+      "published": "2026-07-01T08:01:55.000Z",
+      "ingested": "2026-07-01T07:25:29.198Z",
+      "title_original": "CVE-2026-58016 Glib: integer underflow in gio/gdbusintrospection.c via \"g_dbus_node_info_new_for_xml\"",
+      "headline_no": "Integer underflow i GLibs D-Bus XML-introspeksjon",
+      "summary_no": "En integer underflow i gio/gdbusintrospection.c via g_dbus_node_info_new_for_xml() rammer GLib (CVE-2026-58016). Funksjonen parser D-Bus-introspeksjon fra XML, og feilen kan utnyttes med spesiallaget input til å destabilisere prosesser. Oppdater GLib der D-Bus-introspeksjon er i bruk.",
+      "topic": "sikkerhet",
+      "score": 32,
+      "tags": [
+        "glib",
+        "cve-2026-58016",
+        "integer-underflow",
+        "dbus"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-8989f12374",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58015",
+      "published": "2026-07-01T08:01:49.000Z",
+      "ingested": "2026-07-01T07:25:29.198Z",
+      "title_original": "CVE-2026-58015 Glib: path traversal in glib/gio/gdbusauthmechanismsha1.c via keyring_lookup_entry and mechanism_client_data_receive",
+      "headline_no": "Path traversal i GLibs D-Bus SHA1-autentisering",
+      "summary_no": "GLib inneholder en path traversal-svakhet i gdbusauthmechanismsha1.c via keyring_lookup_entry og mechanism_client_data_receive (CVE-2026-58015). Sårbarheten sitter i D-Bus SHA1-autentiseringsmekanismen og kan la en angriper nå filer utenfor tiltenkt katalog. Oppgrader GLib i berørte systemer.",
+      "topic": "sikkerhet",
+      "score": 36,
+      "tags": [
+        "glib",
+        "cve-2026-58015",
+        "path-traversal",
+        "dbus"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-f3f04f9bab",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58010",
+      "published": "2026-07-01T08:01:42.000Z",
+      "ingested": "2026-07-01T07:25:29.198Z",
+      "title_original": "CVE-2026-58010 Glib: buffer over-read in glib/gvariant-serialiser.c via gvs_tuple_is_normal()",
+      "headline_no": "GLib leser utenfor buffer i GVariant-serialisering",
+      "summary_no": "En buffer over-read i glib/gvariant-serialiser.c via gvs_tuple_is_normal() rammer GLib (CVE-2026-58010). GLib er et grunnleggende bibliotek i mange Linux-baserte tjenester og verktøy. Feilen kan lekke minne eller krasje prosesser som deserialiserer upålitelige GVariant-data.",
+      "topic": "sikkerhet",
+      "score": 32,
+      "tags": [
+        "glib",
+        "cve-2026-58010",
+        "buffer-over-read",
+        "gvariant"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-768e1674e2",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48779",
+      "published": "2026-07-01T08:01:28.000Z",
+      "ingested": "2026-07-01T07:25:29.198Z",
+      "title_original": "CVE-2026-48779 ws: Memory exhaustion DoS from tiny fragments and data chunks",
+      "headline_no": "ws-biblioteket kan sultes ut av bittesmå WebSocket-fragmenter",
+      "summary_no": "WebSocket-biblioteket ws for Node.js kan tømmes for minne når en angriper sender mange små fragmenter og datachunker (CVE-2026-48779). Det gir en tjenestenekt (DoS) mot applikasjoner som eksponerer WebSocket-endepunkter. Oppgrader ws til rettet versjon i berørte prosjekter.",
+      "topic": "sikkerhet",
+      "score": 36,
+      "tags": [
+        "ws",
+        "cve-2026-48779",
+        "dos",
+        "nodejs"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-7d21ef5783",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42055",
+      "published": "2026-07-01T08:01:22.000Z",
+      "ingested": "2026-07-01T07:25:29.198Z",
+      "title_original": "CVE-2026-42055 NGINX ngx_http_proxy_v2_module and ngx_http_grpc_module vulnerability",
+      "headline_no": "Ny CVE rammer NGINX HTTP/2-proxy- og gRPC-moduler",
+      "summary_no": "MSRC har publisert CVE-2026-42055 for en sårbarhet i NGINX-modulene ngx_http_proxy_v2_module og ngx_http_grpc_module. Detaljene er foreløpig sparsomme, men NGINX brukes bredt som reverse proxy og lastbalanserer i mange miljøer. Admins bør følge med på patch-informasjon og oppdatere når rettelse foreligger.",
+      "topic": "sikkerhet",
+      "score": 38,
+      "tags": [
+        "nginx",
+        "cve-2026-42055",
+        "grpc",
+        "proxy"
+      ]
+    },
     {
       "id": "vasil-michev-a903bb2e1c",
       "source_id": "vasil-michev",
