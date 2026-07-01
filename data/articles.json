@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-07-01T06:04:25.222Z",
+  "generated_at": "2026-07-01T07:13:32.502Z",
   "articles": [
+    {
+      "id": "vasil-michev-a903bb2e1c",
+      "source_id": "vasil-michev",
+      "source_name": "Vasil Michev — Michev.info",
+      "url": "https://michev.info/blog/post/8015/microsoft-365-for-it-pros-13th-edition-and-some-other-news",
+      "published": "2026-07-01T07:12:39.000Z",
+      "ingested": "2026-07-01T07:13:32.457Z",
+      "hero_image": "https://michev.info/wp-content/uploads/2026/07/MTC10Y.png",
+      "title_original": "Microsoft 365 for IT Pros (13th Edition) and some other news",
+      "headline_no": "Ny utgave av «Microsoft 365 for IT Pros» er ute – med to nye bøker",
+      "summary_no": "Vasil Michev melder at 2027-utgaven av «Microsoft 365 for IT Pros» er lansert, nå med to nye frittstående bøker i tillegg til hovedbundelen. Michev kommenterer også Microsofts frivillige sluttpakke som trer i kraft nå, og uttrykker bekymring for all kompetansen som forsvinner når mange veteraner takker for seg. For IT-admins er dette mest en referanse- og leseoppdatering, ikke en teknisk endring.",
+      "topic": "identitet",
+      "score": 26,
+      "tags": [
+        "microsoft-365",
+        "m365-for-it-pros",
+        "bok",
+        "sluttpakke"
+      ]
+    },
     {
       "id": "call4cloud-ff896e532a",
       "source_id": "call4cloud",
