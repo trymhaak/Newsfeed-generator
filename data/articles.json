@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-06-30T23:41:20.996Z",
+  "generated_at": "2026-07-01T00:08:33.752Z",
   "articles": [
+    {
+      "id": "office365-itpros-b5b1630f70",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/01/microsoft-365-for-it-pros/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-365-for-it-pros",
+      "published": "2026-07-01T00:02:00.000Z",
+      "ingested": "2026-07-01T00:08:33.722Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Four-book-covers.png?resize=840%2C298&#038;ssl=1",
+      "title_original": "Announcing Microsoft 365 for IT Pros (2027 Edition)",
+      "headline_no": "«Microsoft 365 for IT Pros» 2027 skiller ut Purview i egen håndbok",
+      "summary_no": "Tony Redmonds bokserie «Microsoft 365 for IT Pros» er ute i sin trettende utgave, og for 2027 er innholdet delt opp: Purview og Power Platform får nå egne bøker. Purview-boka på 330 sider dekker datalivssyklus, eDiscovery, DLP, informasjonsbeskyttelse og etterlevelse — områder mange administratorer sliter med å mestre. Merk at dette er en kommersiell e-bok fra Gumroad, ikke en produktnyhet fra Microsoft.",
+      "topic": "sikkerhet",
+      "score": 23,
+      "tags": [
+        "microsoft-365",
+        "purview",
+        "e-bok",
+        "tony-redmond"
+      ]
+    },
     {
       "id": "m365-roadmap-eba7cd22d4",
       "source_id": "m365-roadmap",
