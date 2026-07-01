@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T21:19:29.674Z",
+  "generated_at": "2026-07-01T22:02:08.692Z",
   "articles": [
     {
       "id": "entra-blog-f19ee40d87",
@@ -37,6 +37,25 @@
         "dlp",
         "ai",
         "preview"
+      ]
+    },
+    {
+      "id": "defender-cloud-db3786699f",
+      "source_id": "defender-cloud",
+      "source_name": "Microsoft Defender for Cloud Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/now-generally-available-serverless-posture-coverage-in-microsoft/ba-p/4532353",
+      "published": "2026-07-01T16:00:48.000Z",
+      "ingested": "2026-07-01T22:02:08.642Z",
+      "title_original": "Now generally available: Serverless posture coverage in Microsoft Defender CSPM",
+      "headline_no": "Defender CSPM får agentløs dekning av serverless containere i Azure og AWS",
+      "summary_no": "Microsoft har gjort posture-dekning for serverless containere generelt tilgjengelig i Defender CSPM, med agentløs skanning av arbeidslaster i både Azure og AWS. Sikkerhetsteam kan nå kartlegge sårbarheter, usikre avhengigheter og risikable konfigurasjoner i functions, app services og containere. For IT-admins betyr det at serverless-arbeidslaster – ofte en blindsone – dukker opp som førsteklasses ressurser i skyinventaret.",
+      "topic": "sikkerhet",
+      "score": 59,
+      "tags": [
+        "defender-cspm",
+        "serverless",
+        "azure",
+        "aws"
       ]
     },
     {
