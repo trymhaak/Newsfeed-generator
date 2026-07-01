@@ -1,6 +1,25 @@
 {
-  "generated_at": "2026-07-01T09:02:03.692Z",
+  "generated_at": "2026-07-01T16:29:39.322Z",
   "articles": [
+    {
+      "id": "msrc-blog-b4b95d203c",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/01/microsoft-named-a-leader-in-the-frost-radar-for-cloud-and-application-runtime-security/",
+      "published": "2026-07-01T16:00:00.000Z",
+      "ingested": "2026-07-01T16:29:39.275Z",
+      "title_original": "Microsoft named a leader in the Frost Radar for cloud and application runtime security",
+      "headline_no": "Microsoft kåret til leder i Frost Radar for skysikkerhet",
+      "summary_no": "Frost & Sullivan rangerer Microsoft som leder i sin 2026 Frost Radar for Cloud/Application Runtime Security (CARS). Rapporten peker på at skysikkerhet flytter seg fra ren synlighet til kontekstuell risikoreduksjon som kobler signaler på tvers av kode, sky, runtime og SOC-arbeidsflyt. For IT-admins er dette først og fremst en analytiker-anerkjennelse av Defender for Cloud – ingen ny funksjon eller endring å handle på.",
+      "topic": "sikkerhet",
+      "score": 24,
+      "tags": [
+        "defender-for-cloud",
+        "cnapp",
+        "skysikkerhet",
+        "frost-radar"
+      ]
+    },
     {
       "id": "msrc-update-guide-1f5e92f2f3",
       "source_id": "msrc-update-guide",
