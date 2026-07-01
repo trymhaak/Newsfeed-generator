@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T18:49:11.798Z",
+  "generated_at": "2026-07-01T21:19:29.674Z",
   "articles": [
     {
       "id": "entra-blog-f19ee40d87",
@@ -40,6 +40,25 @@
       ]
     },
     {
+      "id": "intune-blog-985a1e0a27",
+      "source_id": "intune-blog",
+      "source_name": "Microsoft Intune Customer Success Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-intune-blog/advanced-microsoft-intune-capabilities-now-available-in/ba-p/4529335",
+      "published": "2026-07-01T16:00:00.000Z",
+      "ingested": "2026-07-01T21:19:29.621Z",
+      "title_original": "Advanced Microsoft Intune capabilities now available in Microsoft 365 E3 and E5",
+      "headline_no": "Avanserte Intune-funksjoner er nå inkludert i Microsoft 365 E3 og E5",
+      "summary_no": "Fra 1. juli er avanserte funksjoner fra Intune Suite inkludert i Microsoft 365 E5, og utvalgte funksjoner følger med i E3. Det betyr at admins får tilgang til blant annet endepunkt-privilegiehåndtering, moderne sertifikathåndtering og redusert stående privilegium uten å kjøpe Intune Suite som eget tillegg. Sjekk hvilke lisenser dere har og hva som nå er tilgjengelig.",
+      "topic": "endpoint",
+      "score": 68,
+      "tags": [
+        "intune",
+        "intune-suite",
+        "lisensiering",
+        "m365"
+      ]
+    },
+    {
       "id": "msrc-blog-b4b95d203c",
       "source_id": "msrc-blog",
       "source_name": "Microsoft Security Blog",
@@ -56,6 +75,44 @@
         "cnapp",
         "skysikkerhet",
         "frost-radar"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-599c318bb5",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32208",
+      "published": "2026-07-01T14:00:00.000Z",
+      "ingested": "2026-07-01T21:19:29.623Z",
+      "title_original": "CVE-2026-32208 Microsoft Entra ID Spoofing Vulnerability",
+      "headline_no": "MSRC retter beskrivelsen av Entra ID-sårbarheten CVE-2026-32208",
+      "summary_no": "MSRC har oppdatert oppføringen for CVE-2026-32208, en spoofing-sårbarhet i Microsoft Entra ID. Endringen er utelukkende informativ: tittel og beskrivelse er korrigert, uten ny teknisk informasjon, endret alvorlighetsgrad eller ny oppdatering. Ingen tiltak kreves for IT-admins.",
+      "topic": "sikkerhet",
+      "score": 18,
+      "tags": [
+        "cve-2026-32208",
+        "entra-id",
+        "msrc",
+        "spoofing"
+      ]
+    },
+    {
+      "id": "defender-xdr-b50e7e64ac",
+      "source_id": "defender-xdr",
+      "source_name": "Microsoft Defender XDR Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/monthly-news-july-2026/ba-p/4532402",
+      "published": "2026-07-01T09:30:09.000Z",
+      "ingested": "2026-07-01T21:19:29.623Z",
+      "title_original": "Monthly news - July 2026",
+      "headline_no": "Defenders juli-oppsummering: Workbooks-funksjoner blir GA",
+      "summary_no": "Microsofts månedlige Defender-oppsummering samler produktoppdateringene fra juni 2026 på tvers av XDR-porteføljen. Blant nyhetene er at to Workbooks-funksjoner – inkludert Advanced Hunting-koblingen for egendefinerte dashbord – nå er allment tilgjengelige, og at Defender for Cloud-nyheter samles i Defender-portalen. En rask måte for sikkerhetsteam å fange opp hva som er nytt.",
+      "topic": "sikkerhet",
+      "score": 45,
+      "tags": [
+        "defender",
+        "xdr",
+        "månedsnytt",
+        "advanced-hunting"
       ]
     },
     {
