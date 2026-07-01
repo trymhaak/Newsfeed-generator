@@ -1,6 +1,44 @@
 {
-  "generated_at": "2026-07-01T16:29:39.322Z",
+  "generated_at": "2026-07-01T18:49:11.798Z",
   "articles": [
+    {
+      "id": "entra-blog-f19ee40d87",
+      "source_id": "entra-blog",
+      "source_name": "Microsoft Entra Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/bring-business-logic-into-pim-role-activation-workflows/ba-p/4531380",
+      "published": "2026-07-01T16:35:45.000Z",
+      "ingested": "2026-07-01T18:49:11.752Z",
+      "title_original": "Bring business logic into PIM role activation workflows",
+      "headline_no": "PIM kan nå sjekke egne forretningsregler før rolleaktivering",
+      "summary_no": "Microsoft lanserer en preview av egendefinerte utvidelser for Privileged Identity Management. Under rolleaktivering kan PIM nå kalle ditt eget REST-API, som vurderer forespørselen mot forretningsregler – for eksempel gyldig sakenummer, ansettelsesstatus eller compliance-sjekker – og returnerer en beslutning PIM håndhever automatisk. Det lukker gapet der slike valideringer tidligere måtte gjøres manuelt utenfor PIM.",
+      "topic": "identitet",
+      "score": 68,
+      "tags": [
+        "pim",
+        "entra",
+        "privileged-access",
+        "preview"
+      ]
+    },
+    {
+      "id": "entra-blog-f97f6738c0",
+      "source_id": "entra-blog",
+      "source_name": "Microsoft Entra Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/protect-sensitive-data-in-motion-across-saas-and-ai-apps-with/ba-p/4529310",
+      "published": "2026-07-01T16:32:24.000Z",
+      "ingested": "2026-07-01T18:49:11.754Z",
+      "title_original": "Protect sensitive data in motion across SaaS and AI apps with Microsoft Purview and Microsoft Entra",
+      "headline_no": "Nå kan Purview stoppe datalekkasjer til AI-apper i sanntid",
+      "summary_no": "Microsoft utvider datasikkerhet til nettverkslaget gjennom Purview og Entra, nå i offentlig preview. Løsningen kombinerer datakontekst og identitetsbasert håndheving for å oppdage og stoppe sensitiv informasjon som lekker til uadministrerte web-, SaaS- og generative AI-apper i sanntid – uten fysiske nettverksapparater. For IT-admins betyr det DLP-håndheving før dataene forlater organisasjonen, ikke etterpå.",
+      "topic": "sikkerhet",
+      "score": 70,
+      "tags": [
+        "purview",
+        "dlp",
+        "ai",
+        "preview"
+      ]
+    },
     {
       "id": "msrc-blog-b4b95d203c",
       "source_id": "msrc-blog",
