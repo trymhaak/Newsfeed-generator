@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T07:41:07.046Z",
+  "generated_at": "2026-07-01T09:02:03.692Z",
   "articles": [
     {
       "id": "msrc-update-guide-1f5e92f2f3",
@@ -18,6 +18,26 @@
         "cve-2026-57062",
         "kryptering",
         "aes-gcm"
+      ]
+    },
+    {
+      "id": "goodworkaround-9302f39d60",
+      "source_id": "goodworkaround",
+      "source_name": "Good Workaround! (Marius Solbakken)",
+      "url": "https://goodworkaround.com/2026/07/01/adding-custom-attributes-to-entra-cloud-sync-from-ad/",
+      "published": "2026-07-01T08:31:13.000Z",
+      "ingested": "2026-07-01T09:02:03.642Z",
+      "hero_image": "https://0.gravatar.com/avatar/653b94bfdefd1283bc049c2805c386b666c42454eec9db823172ba03b94c42b6?s=96&d=identicon&r=G",
+      "title_original": "Adding custom attributes to Entra Cloud Sync from AD",
+      "headline_no": "Slik får du egendefinerte AD-attributter inn i Entra Cloud Sync",
+      "summary_no": "Marius Solbakken viser hvordan du mapper egendefinerte AD-attributter – som ansatt-ID, kostnadssted eller start- og sluttdato – inn i Entra ID med Cloud Sync. I motsetning til gamle Connect Sync finnes det ikke lenger et UI for dette; attributtene må lagres som extension properties på en app med identifier-URI på formatet API://<tenantid>/CloudSyncCustomExtensionsApp. Nyttig for alle som drifter hybrid identitet og trenger flere attributter til automatisering, provisjonering og identity governance.",
+      "topic": "identitet",
+      "score": 35,
+      "tags": [
+        "entra-id",
+        "cloud-sync",
+        "hybrid-identitet",
+        "active-directory"
       ]
     },
     {
