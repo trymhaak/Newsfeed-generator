@@ -1,6 +1,197 @@
 {
-  "generated_at": "2026-07-01T22:02:08.692Z",
+  "generated_at": "2026-07-01T23:55:49.041Z",
   "articles": [
+    {
+      "id": "m365-roadmap-8f56e606f0",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566998",
+      "published": "2026-07-01T23:03:18.000Z",
+      "ingested": "2026-07-01T23:54:35.330Z",
+      "title_original": "Microsoft Copilot Studio: Invoke agents as workflow steps with the agent node",
+      "headline_no": "Copilot Studio lar deg kalle agenter som steg i arbeidsflyter",
+      "summary_no": "Copilot Studio får en ny agent-node som bygger resonnement rett inn i automatiserte arbeidsflyter, uten manuelle overleveringer. For IT-admins betyr det at flere ende-til-ende-prosesser kan automatiseres, men også nye behov for styring og tilgangskontroll rundt agentene. Preview i april, GA i september 2026.",
+      "topic": "ai",
+      "score": 43,
+      "tags": [
+        "copilot-studio",
+        "agenter",
+        "automatisering",
+        "ai"
+      ]
+    },
+    {
+      "id": "m365-roadmap-94bf27f806",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566873",
+      "published": "2026-07-01T23:03:18.000Z",
+      "ingested": "2026-07-01T23:54:35.332Z",
+      "title_original": "Microsoft Copilot Studio: Enforce safe sharing by detecting credential oversharing",
+      "headline_no": "Copilot Studio stopper deling av agenter med usikre credentials",
+      "summary_no": "En ny funksjon i Copilot Studio oppdager når agenter og flows lener seg på usikre identiteter som maker-credentials, og blokkerer delingen ved publisering. Det reduserer risiko for identitetslekkasje og privilegie-eskalering, samtidig som utviklere kan jobbe videre innenfor godkjente rammer. GA september 2026.",
+      "topic": "sikkerhet",
+      "score": 45,
+      "tags": [
+        "copilot-studio",
+        "oversharing",
+        "credentials",
+        "governance"
+      ]
+    },
+    {
+      "id": "m365-roadmap-45874faa5b",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566872",
+      "published": "2026-07-01T23:03:18.000Z",
+      "ingested": "2026-07-01T23:54:35.332Z",
+      "title_original": "Microsoft Copilot (Microsoft 365): Complex web search with Copilot in Excel",
+      "headline_no": "Copilot i Excel får multi-agent nettsøk for mer komplette svar",
+      "summary_no": "Copilot i Excel bruker nå et multi-agent-system som kjører parallelle søk, verifiserer funn og sjekker hull på nytt ved behov. Resultatet er raskere og mer fullstendige svar på tvers av flere kilder. En kvalitetsheving for dem som allerede bruker Copilot i regneark. GA juli 2026.",
+      "topic": "ai",
+      "score": 34,
+      "tags": [
+        "copilot",
+        "excel",
+        "nettsøk",
+        "ai"
+      ]
+    },
+    {
+      "id": "m365-roadmap-6e9024f315",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566871",
+      "published": "2026-07-01T23:03:18.000Z",
+      "ingested": "2026-07-01T23:54:35.332Z",
+      "title_original": "Microsoft Edge: Enhanced Security Mode Plus",
+      "headline_no": "Edge får «Enhanced Security Mode Plus» for strammere angrepsflate",
+      "summary_no": "Edge får «Enhanced Security Mode Plus» som legger admin-styrte beskyttelser oppå eksisterende Enhanced Security Mode. Admins kan begrense utvalgte nettverksprotokoller, maskinvare-API-er, WebGL og eksterne protokoll-launcher via forhåndsdefinerte eller egendefinerte moduser. Reduserer nettleserens angrepsflate i utsatte miljøer. GA juli 2026.",
+      "topic": "sikkerhet",
+      "score": 43,
+      "tags": [
+        "edge",
+        "nettleser",
+        "herding",
+        "angrepsflate"
+      ]
+    },
+    {
+      "id": "m365-roadmap-1601adc4f5",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566869",
+      "published": "2026-07-01T23:03:18.000Z",
+      "ingested": "2026-07-01T23:54:35.332Z",
+      "title_original": "Microsoft Entra: Upcoming changes to federatedTokenValidationPolicy default settings",
+      "headline_no": "Entra endrer standard: blokkerer federerte pålogginger ved domenemismatch",
+      "summary_no": "Microsoft endrer standardregelen i federatedTokenValidationPolicy slik at pålogginger blokkeres når internalDomainFederation ikke matcher UPN-domenet. Endringen styrker forsvaret mot kryss-domene-pålogginger, men kan bryte eksisterende federerte oppsett som ikke er riktig konfigurert. IT-admins bør verifisere tenant-oppsettet før GA i august 2026.",
+      "topic": "identitet",
+      "score": 57,
+      "tags": [
+        "entra",
+        "federering",
+        "token-validering",
+        "breaking-change"
+      ]
+    },
+    {
+      "id": "m365-roadmap-bd96030f86",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566867",
+      "published": "2026-07-01T23:03:18.000Z",
+      "ingested": "2026-07-01T23:54:35.332Z",
+      "title_original": "Planner: Local Custom Fields/Columns",
+      "headline_no": "Planner får egendefinerte felt for skreddersydde planer",
+      "summary_no": "Planner får egendefinerte felt – tekst, tall, dato, ja/nei og valg – som kan sorteres, filtreres, grupperes og masseredigeres på tvers av tavle, rutenett og oppgavedetaljer. En ren produktivitetsforbedring for team som lever i Planner, med begrenset relevans for sikkerhets- og administrasjonsmiljøet. GA oktober 2026.",
+      "topic": "endpoint",
+      "score": 14,
+      "tags": [
+        "planner",
+        "produktivitet",
+        "custom-fields"
+      ]
+    },
+    {
+      "id": "m365-roadmap-b2f7547ffc",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566865",
+      "published": "2026-07-01T23:03:18.000Z",
+      "ingested": "2026-07-01T23:55:48.998Z",
+      "title_original": "Microsoft Purview compliance portal: Admin assignment time limit",
+      "headline_no": "Purview lar deg tidsbegrense admin-tilganger til rollegrupper",
+      "summary_no": "Microsoft Purview får mulighet til å sette en tidsgrense i dager når brukere og sikkerhetsgrupper legges til i rollegrupper. Dermed kan admins gi midlertidige admin-rettigheter som utløper automatisk, i tråd med prinsippet om minst mulig privilegier. GA er satt til juli 2026.",
+      "topic": "sikkerhet",
+      "score": 35,
+      "tags": [
+        "purview",
+        "rollegrupper",
+        "tilgangsstyring",
+        "governance"
+      ]
+    },
+    {
+      "id": "m365-roadmap-cd3e26bd37",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566864",
+      "published": "2026-07-01T23:03:18.000Z",
+      "ingested": "2026-07-01T23:55:48.998Z",
+      "title_original": "Microsoft Edge: Ask Copilot about an image",
+      "headline_no": "Copilot i Edge kan snart analysere bilder fra nettet",
+      "summary_no": "En ny funksjon lar brukere sende bilder fra nettet rett til Copilot via høyreklikkmenyen i Edge for å stille spørsmål og få innsikt om det de ser. IT-admins kan styre tilgangen med policyene EdgeEntraCopilotPageContext og Microsoft365CopilotChatIconEnabled. GA er ventet i august 2026.",
+      "topic": "ai",
+      "score": 34,
+      "tags": [
+        "copilot",
+        "edge",
+        "bilde",
+        "policy"
+      ]
+    },
+    {
+      "id": "m365-roadmap-e0a9a4fbc9",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566695",
+      "published": "2026-07-01T23:03:18.000Z",
+      "ingested": "2026-07-01T23:55:48.998Z",
+      "title_original": "OneDrive: Block screen capture for sensitivity-labeled PDFs in the OneDrive and SharePoint web viewer",
+      "headline_no": "OneDrive blokkerer skjermdump av merkede PDF-er i nettleseren",
+      "summary_no": "PDF-viseren i OneDrive og SharePoint på web vil blokkere skjermdump og skjermopptak i Edge når dokumentet har et sensitivitetsmerke med «Do Not Allow Screen Capture». Det gir bedre beskyttelse mot lekkasje av sensitivt innhold rett fra nettleseren. GA er satt til august 2026.",
+      "topic": "sikkerhet",
+      "score": 41,
+      "tags": [
+        "onedrive",
+        "sharepoint",
+        "sensitivitetsmerking",
+        "mip",
+        "skjermdump"
+      ]
+    },
+    {
+      "id": "m365-roadmap-0278c79d64",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566528",
+      "published": "2026-07-01T23:03:18.000Z",
+      "ingested": "2026-07-01T23:55:48.998Z",
+      "title_original": "Microsoft Purview: Data Loss Prevention - Extend Purview data security to the network layer via Entra GSA integration",
+      "headline_no": "Purview utvider DLP til nettverkslaget for å stanse AI-lekkasjer",
+      "summary_no": "Ved å integrere med Entra Internet Access kan Purview nå inspisere tekst og AI-prompter på nettverksnivå og håndheve DLP-regler før sensitive data forlater organisasjonen. Det dekker nettlesere, apper, API-er og tillegg – inkludert generative AI-plattformer – og kobles mot Insider Risk Management og Defender. Preview kommer i juli 2026, med GA i september.",
+      "topic": "sikkerhet",
+      "score": 50,
+      "tags": [
+        "purview",
+        "dlp",
+        "entra",
+        "global-secure-access",
+        "ai"
+      ]
+    },
     {
       "id": "entra-blog-f19ee40d87",
       "source_id": "entra-blog",
