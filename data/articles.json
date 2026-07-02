@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T19:22:25.805Z",
+  "generated_at": "2026-07-02T19:28:20.675Z",
   "articles": [
     {
       "id": "msrc-blog-f92fb00d54",
@@ -3558,6 +3558,26 @@
         "learning-agent",
         "ai-skilling",
         "work-iq"
+      ]
+    },
+    {
+      "id": "copilot-studio-a23d4ce517",
+      "source_id": "copilot-studio",
+      "source_name": "Microsoft Copilot Studio Blog",
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/building-reliable-voice-agents-a-practical-guide/",
+      "published": "2026-06-25T16:00:00.000Z",
+      "ingested": "2026-07-02T19:28:20.632Z",
+      "hero_image": "https://www.microsoft.com/en-us/microsoft-copilot/blog/wp-content/uploads/2026/06/MSC24-ASEAN-business-Getty-1366924099-rgb-1920-1024x683.jpg",
+      "title_original": "Building reliable voice agents: A practical guide",
+      "headline_no": "Slik bygger du stemmeagenter kundene faktisk kan stole på",
+      "summary_no": "Microsoft deler en praktisk guide for å designe kundevendte stemmeagenter som er pålitelige – ikke bare kapable. Playbooken går gjennom mønstre, testing og operasjonalisering for å ta en stemmeagent fra prototype til produksjon i Copilot Studio. Relevant for admins som vurderer stemmebaserte AI-agenter i kundeservice, der pålitelighet avgjør om automatiseringen skaper verdi eller risiko.",
+      "topic": "ai",
+      "score": 36,
+      "tags": [
+        "copilot-studio",
+        "stemmeagenter",
+        "ai-agenter",
+        "kundeservice"
       ]
     },
     {
