@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T19:28:20.675Z",
+  "generated_at": "2026-07-02T19:39:27.401Z",
   "articles": [
     {
       "id": "msrc-blog-f92fb00d54",
@@ -428,6 +428,26 @@
         "serverless",
         "azure",
         "aws"
+      ]
+    },
+    {
+      "id": "security-community-53f679c049",
+      "source_id": "security-community",
+      "source_name": "Microsoft Security Community Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/extend-data-security-to-the-network-with-microsoft-purview-and/ba-p/4531929",
+      "published": "2026-07-01T16:00:00.000Z",
+      "ingested": "2026-07-02T19:39:27.350Z",
+      "title_original": "Extend data security to the network with Microsoft Purview and Microsoft Entra",
+      "headline_no": "Purview og Entra stopper datalekkasjer til AI-verktøy på nettverksnivå",
+      "summary_no": "Microsoft integrerer Purview og Entra for å håndheve datatapssikring (DLP) direkte på nettverkslaget, nå i offentlig preview. Det gir sanntidsbeskyttelse mot at ansatte limer inn eller laster opp sensitive data i generative AI-verktøy, SaaS og uadministrerte web-apper – uten dyre nettverksappliances. For IT-admins kan datatap dermed stoppes før dataene forlater organisasjonen, ikke bare flagges i etterkant.",
+      "topic": "sikkerhet",
+      "score": 56,
+      "tags": [
+        "purview",
+        "entra",
+        "dlp",
+        "ai",
+        "datasikkerhet"
       ]
     },
     {
@@ -902,6 +922,25 @@
         "teams",
         "teams-rooms",
         "android"
+      ]
+    },
+    {
+      "id": "security-community-1959280b1f",
+      "source_id": "security-community",
+      "source_name": "Microsoft Security Community Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/introducing-a-unified-alert-experience-for-microsoft-purview/ba-p/4530714",
+      "published": "2026-06-30T19:00:00.000Z",
+      "ingested": "2026-07-02T19:39:27.352Z",
+      "title_original": "Introducing a unified alert experience for Microsoft Purview Insider Risk Management",
+      "headline_no": "Purview samler varsler for innsiderisiko i én kø for raskere gransking",
+      "summary_no": "Microsoft slår sammen den klassiske varselkøen og Data Security Triage Agent til én liste i Purview Insider Risk Management, med utvidede brukerprofiler og notater på tvers av varsler og saker. Endringene kommer i offentlig preview i juli 2026. For analytikere betyr det mindre veksling mellom verktøy og raskere triage fra signal til beslutning.",
+      "topic": "sikkerhet",
+      "score": 46,
+      "tags": [
+        "purview",
+        "insider-risk",
+        "gransking",
+        "preview"
       ]
     },
     {
