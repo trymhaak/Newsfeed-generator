@@ -1,6 +1,47 @@
 {
-  "generated_at": "2026-07-01T23:55:49.041Z",
+  "generated_at": "2026-07-02T09:01:39.723Z",
   "articles": [
+    {
+      "id": "goodworkaround-63bcad3034",
+      "source_id": "goodworkaround",
+      "source_name": "Good Workaround! (Marius Solbakken)",
+      "url": "https://goodworkaround.com/2026/07/02/mass-convert-groups-from-ad-to-entra-id-using-powershell/",
+      "published": "2026-07-02T08:27:32.000Z",
+      "ingested": "2026-07-02T09:01:39.677Z",
+      "hero_image": "https://0.gravatar.com/avatar/653b94bfdefd1283bc049c2805c386b666c42454eec9db823172ba03b94c42b6?s=96&d=identicon&r=G",
+      "title_original": "Mass convert groups from AD to Entra ID using PowerShell",
+      "headline_no": "Slik masse-konverterer du AD-grupper til Entra ID med PowerShell",
+      "summary_no": "Med Entras nye Group Source of Authority-konvertering kan synkroniserte AD-grupper overføres til Entra ID-styring uten å miste identitet, medlemskap eller tilganger. Marius Solbakken viser et PowerShell-skript som gjør konverteringen i bulk med feilhåndtering og logging, slik at admins slipper å håndtere hundrevis av grupper manuelt under en skymigrering.",
+      "topic": "identitet",
+      "score": 42,
+      "tags": [
+        "entra-id",
+        "powershell",
+        "grupper",
+        "group-soa",
+        "ad-migrering"
+      ]
+    },
+    {
+      "id": "office365-itpros-c52369a93a",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/02/external-chat-api/?utm_source=rss&utm_medium=rss&utm_campaign=external-chat-api",
+      "published": "2026-07-02T07:00:00.000Z",
+      "ingested": "2026-07-02T09:01:39.675Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Teams-external-chat-warning.jpg?resize=840%2C604&#038;ssl=1",
+      "title_original": "The Misleading Teams Remove External Chat from User View API",
+      "headline_no": "Teams-API lover å fjerne ekstern chat-tilgang, men skjuler den bare delvis",
+      "summary_no": "Graph-API-et removeAllAccessForUser, som Teams-dokumentasjonen anbefaler for å fjerne ekstern chat med skadelig innhold, kaster ikke brukeren ut av chatten slik navnet antyder — det skjuler bare meldingene delvis. Admins som stoler på funksjonen for innholdsmoderering bør vite at den gir langt svakere kontroll enn forventet.",
+      "topic": "identitet",
+      "score": 36,
+      "tags": [
+        "teams",
+        "graph-api",
+        "ekstern-chat",
+        "moderering"
+      ]
+    },
     {
       "id": "m365-roadmap-8f56e606f0",
       "source_id": "m365-roadmap",
