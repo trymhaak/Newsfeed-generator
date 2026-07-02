@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T09:01:39.723Z",
+  "generated_at": "2026-07-02T11:18:58.693Z",
   "articles": [
     {
       "id": "goodworkaround-63bcad3034",
@@ -20,6 +20,26 @@
         "grupper",
         "group-soa",
         "ad-migrering"
+      ]
+    },
+    {
+      "id": "core-infra-security-f112247b42",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/building-c-and-c-apps-with-github-copilot-cli-and-visual-studio/ba-p/4531648",
+      "published": "2026-07-02T08:00:00.000Z",
+      "ingested": "2026-07-02T11:18:58.647Z",
+      "title_original": "Building C# and C++ Apps with GitHub Copilot CLI and Visual Studio 2026",
+      "headline_no": "Copilot CLI bygger C#- og C++-apper fra naturlig språk i Visual Studio 2026",
+      "summary_no": "En ny gjennomgang fra Microsoft viser hvordan GitHub Copilot CLI kan scaffolde prosjekter, drive MSBuild og rette egne kompileringsfeil for C#- og C++-utvikling i Visual Studio 2026 – såkalt «vibe coding». Arbeidsflyten er verifisert mot Visual Studio 2026 Community 18.6.2 og Copilot CLI 1.0.56, og forutsetter en gyldig Copilot-lisens. For IT-avdelinger aktualiserer det både raskere prototyping og nye krav til lisens- og tilgangsstyring rundt AI-assistert utvikling.",
+      "topic": "ai",
+      "score": 36,
+      "tags": [
+        "copilot",
+        "github-copilot-cli",
+        "visual-studio-2026",
+        "vibe-coding",
+        "utvikling"
       ]
     },
     {
