@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-07-02T13:04:47.211Z",
+  "generated_at": "2026-07-02T13:42:31.521Z",
   "articles": [
+    {
+      "id": "smbtothecloud-31cd4bcb03",
+      "source_id": "smbtothecloud",
+      "source_name": "SMBtotheCloud",
+      "url": "https://smbtothecloud.com/win32-app-deep-dive-whats-inside-an-intunewin-file-and-how-it-gets-into-intune/?utm_source=rss&utm_medium=rss&utm_campaign=win32-app-deep-dive-whats-inside-an-intunewin-file-and-how-it-gets-into-intune",
+      "published": "2026-07-02T13:37:47.000Z",
+      "ingested": "2026-07-02T13:42:31.477Z",
+      "hero_image": "https://smbtothecloud.com/wp-content/uploads/2026/06/image-1024x296.png",
+      "title_original": "Win32 App Deep Dive – What’s Inside an intunewin File and How it Gets Into Intune?",
+      "headline_no": "Inni en .intunewin-fil: slik pakkes og distribueres Win32-apper i Intune",
+      "summary_no": "En grundig teknisk gjennomgang av hvordan Win32-apper faktisk fungerer i Intune — hva som ligger inne i en .intunewin-fil, hvordan IntuneWinAppUtil pakker den, og hvordan den lastes opp til tjenesten. Forfatteren viser også at Win32-apper kan brukes til mer enn ren app-distribusjon: skripting, registerendringer og en vei rundt remediations for organisasjoner uten Enterprise-lisens. Nyttig referanse for admins som distribuerer RMM-, EDR- og andre agent-baserte apper.",
+      "topic": "endpoint",
+      "score": 31,
+      "tags": [
+        "intune",
+        "win32",
+        "intunewin",
+        "app-distribusjon",
+        "msp"
+      ]
+    },
     {
       "id": "admindroid-35237594a8",
       "source_id": "admindroid",
