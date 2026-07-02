@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-07-02T11:18:58.693Z",
+  "generated_at": "2026-07-02T13:04:47.211Z",
   "articles": [
+    {
+      "id": "admindroid-35237594a8",
+      "source_id": "admindroid",
+      "source_name": "AdminDroid Blog",
+      "url": "https://blog.admindroid.com/network-data-security-in-microsoft-365/",
+      "published": "2026-07-02T13:00:40.000Z",
+      "ingested": "2026-07-02T13:04:47.180Z",
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Microsoft-Extends-Data-Protection-to-the-Network-Layer-150x150.png",
+      "title_original": "Prevent Sensitive Data Leakage Across Unmanaged Apps with Purview and Entra",
+      "headline_no": "Purview stopper datalekkasjer til AI-chatboter og skygge-SaaS på nettet",
+      "summary_no": "Microsoft lanserer Network Data Security, som utvider Purviews DLP til selve nettverkslaget via Entra. Funksjonen fanger sensitive data i bevegelse – tekst limt inn i AI-chatboter, filer til privat skylagring og trafikk til uautoriserte SaaS-apper – der Microsoft 365s innebygde kontroller ikke rekker. For IT-admins gir det sanntidsinnsyn og mulighet til å blokkere lekkasjer som før først ble oppdaget i etterkant.",
+      "topic": "sikkerhet",
+      "score": 38,
+      "tags": [
+        "purview",
+        "entra",
+        "dlp",
+        "network-data-security",
+        "saas"
+      ]
+    },
     {
       "id": "goodworkaround-63bcad3034",
       "source_id": "goodworkaround",
