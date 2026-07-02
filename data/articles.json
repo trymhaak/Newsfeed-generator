@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T19:15:45.883Z",
+  "generated_at": "2026-07-02T19:22:25.805Z",
   "articles": [
     {
       "id": "msrc-blog-f92fb00d54",
@@ -22,6 +22,25 @@
       ]
     },
     {
+      "id": "m365-copilot-f177638bbe",
+      "source_id": "m365-copilot",
+      "source_name": "Microsoft 365 Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/available-today-anthropic-s-claude-sonnet-5-in-microsoft-365/ba-p/4532188",
+      "published": "2026-07-02T15:55:25.000Z",
+      "ingested": "2026-07-02T19:22:25.761Z",
+      "title_original": "Available today: Anthropic’s Claude Sonnet 5 in Microsoft 365 Copilot",
+      "headline_no": "Claude Sonnet 5 rulles ut i Microsoft 365 Copilot",
+      "summary_no": "Anthropics nye agentiske modell Claude Sonnet 5 er nå tilgjengelig i Copilot Cowork og Copilot i PowerPoint, med ytelse nær Opus 4.8 til lavere pris. Administratorer kan styre tilgang basert på organisasjonens policyer, og utrullingen skjer gradvis per region og tenant. Sjekk Microsoft 365-veikartet for status i egen tenant.",
+      "topic": "ai",
+      "score": 65,
+      "tags": [
+        "copilot",
+        "anthropic",
+        "claude-sonnet-5",
+        "m365-copilot"
+      ]
+    },
+    {
       "id": "handsontek-09f151aa8f",
       "source_id": "handsontek",
       "source_name": "HANDS ON tek (João Ferreira)",
@@ -39,6 +58,25 @@
         "copilot-cowork",
         "billing",
         "m365"
+      ]
+    },
+    {
+      "id": "m365-copilot-7f2f41f3ae",
+      "source_id": "m365-copilot",
+      "source_name": "Microsoft 365 Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/sales-agent-is-now-generally-available-bringing-customer-and/ba-p/4532629",
+      "published": "2026-07-02T15:00:00.000Z",
+      "ingested": "2026-07-02T19:22:25.763Z",
+      "title_original": "Sales Agent is now generally available: Bringing customer and deal intelligence into the flow of work",
+      "headline_no": "Copilots Sales Agent når GA — CRM-innsikt i arbeidsflyten",
+      "summary_no": "Sales Agent er nå allment tilgjengelig og henter CRM-innsikt og salgsdata direkte inn i arbeidsflyten i Microsoft 365. Selgere får kontosammendrag, møteoppsummeringer, CRM-oppslag og e-postutkast uten å bytte mellom systemer. Verktøyet gikk fra offentlig preview i desember til GA, og kan nå rulles ut i stor skala.",
+      "topic": "ai",
+      "score": 59,
+      "tags": [
+        "copilot",
+        "sales-agent",
+        "crm",
+        "m365-copilot"
       ]
     },
     {
