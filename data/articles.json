@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-07-02T13:42:31.521Z",
+  "generated_at": "2026-07-02T19:15:45.883Z",
   "articles": [
+    {
+      "id": "msrc-blog-f92fb00d54",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/02/improving-security-posture-across-the-microsoft-partner-ecosystem/",
+      "published": "2026-07-02T16:00:00.000Z",
+      "ingested": "2026-07-02T19:15:45.834Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2025/10/thumbnail_image.webp",
+      "title_original": "Improving security posture across the Microsoft partner ecosystem",
+      "headline_no": "Slik styrer Microsoft sikkerhetsrisikoen fra CSP-partnere",
+      "summary_no": "Microsofts nestleder-CISO forklarer hvordan selskapet håndterer risikoen knyttet til Cloud Solution Providers (CSP-er) – partnerne mange virksomheter bruker til å kjøpe og drifte Microsoft 365 og Azure. For bedrifter som selv jobber med CSP-er gir innlegget et rammeverk for hvilke kontroller og forventninger som bør ligge til grunn for partnertilgang. Mer prinsipputredning enn konkret nyhet, men nyttig for governance av tredjepartstilgang.",
+      "topic": "sikkerhet",
+      "score": 40,
+      "tags": [
+        "csp",
+        "partner",
+        "governance",
+        "ciso"
+      ]
+    },
+    {
+      "id": "handsontek-09f151aa8f",
+      "source_id": "handsontek",
+      "source_name": "HANDS ON tek (João Ferreira)",
+      "url": "https://handsontek.net/whats-new-copilot-june-2026/",
+      "published": "2026-07-02T15:18:37.000Z",
+      "ingested": "2026-07-02T19:15:45.836Z",
+      "hero_image": "https://handsontek.net/images/hot2/Whats%20new%20Copilot/hero.png",
+      "title_original": "What’s new for Copilot – June 2026",
+      "headline_no": "Copilot Cowork er lansert – men krever egne kredittbudsjetter før bruk",
+      "summary_no": "Copilot Cowork nådde generell tilgjengelighet i juni, men er ikke inkludert i eksisterende lisenser – det faktureres per bruk via Copilot Credits, så admins må sette opp fakturering og forbrukskontroll før noen kan ta det i bruk. Måneden bød også på kuraterte organisasjonsprompter i Copilot Chat, AI-forslag til redigering i Copilot Pages og flere stemmestiler i M365 Copilot. I tillegg får Work IQ-API-ene forbruksbasert betaling.",
+      "topic": "ai",
+      "score": 48,
+      "tags": [
+        "copilot",
+        "copilot-cowork",
+        "billing",
+        "m365"
+      ]
+    },
     {
       "id": "smbtothecloud-31cd4bcb03",
       "source_id": "smbtothecloud",
