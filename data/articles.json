@@ -1,6 +1,25 @@
 {
-  "generated_at": "2026-07-03T00:56:42.005Z",
+  "generated_at": "2026-07-03T06:46:40.806Z",
   "articles": [
+    {
+      "id": "ourcloudnetwork-d51af1d7d8",
+      "source_id": "ourcloudnetwork",
+      "source_name": "Our Cloud Network (Daniel Bradley)",
+      "url": "https://ourcloudnetwork.com/microsoft-purview-adds-native-role-assignment-time-limits/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-purview-adds-native-role-assignment-time-limits",
+      "published": "2026-07-03T06:40:44.000Z",
+      "ingested": "2026-07-03T06:46:40.775Z",
+      "title_original": "Microsoft Purview Adds Native Role Assignment Time Limits",
+      "headline_no": "Purview får tidsbegrenset rolletilgang – uten Entra PIM",
+      "summary_no": "Microsoft Purview lar deg nå sette utløpstid direkte på administratorroller, uten å gå veien om Entra PIM. For IT-admins betyr det enklere just-in-time-tilgang og bedre etterlevelse når privilegerte roller skal deles ut midlertidig. Endringen spores som MC1411431 i meldingssenteret.",
+      "topic": "identitet",
+      "score": 44,
+      "tags": [
+        "purview",
+        "pim",
+        "rbac",
+        "compliance"
+      ]
+    },
     {
       "id": "m365-roadmap-1e25d7c022",
       "source_id": "m365-roadmap",
