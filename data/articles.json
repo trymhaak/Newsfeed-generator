@@ -1,6 +1,310 @@
 {
-  "generated_at": "2026-07-03T15:12:37.744Z",
+  "generated_at": "2026-07-03T20:42:40.155Z",
   "articles": [
+    {
+      "id": "niallbrady-1d1a29a5cf",
+      "source_id": "niallbrady",
+      "source_name": "Just Another Windows Noob (Niall Brady)",
+      "url": "https://www.niallbrady.com/2026/07/03/first-looks-at-windows-365s-gallery-image-with-developer-configuration-preview/",
+      "published": "2026-07-03T20:34:52.000Z",
+      "ingested": "2026-07-03T20:42:40.098Z",
+      "title_original": "First looks at Windows 365’s gallery Image with Developer Configuration (preview)",
+      "headline_no": "Windows 365 får utviklerklart galleribilde i forhåndsvisning",
+      "summary_no": "Microsoft ruller ut et nytt galleribilde med «Developer Configuration» i forhåndsvisning for Windows 365. Bildet gir Cloud PC-er et ferdig utviklermiljø som kan forenkle onboarding av utviklere uten manuelt oppsett.",
+      "topic": "endpoint",
+      "score": 35,
+      "tags": [
+        "windows-365",
+        "cloud-pc",
+        "preview",
+        "utvikler"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-5816421b3d",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14125",
+      "published": "2026-07-03T14:00:54.000Z",
+      "ingested": "2026-07-03T20:39:25.992Z",
+      "title_original": "Chromium: CVE-2026-14125 Uninitialized Use in ANGLE",
+      "headline_no": "Uinitialisert minnebruk i ANGLE tettet i Edge",
+      "summary_no": "CVE-2026-14125 gjelder bruk av uinitialisert minne i Chromiums ANGLE-grafikklag. Microsoft Edge arver fikset fra Chromium. Lav prioritet isolert sett, men følger med i neste Edge-oppdatering.",
+      "topic": "sikkerhet",
+      "score": 39,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-14125",
+        "angle"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-4fe9b80282",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13933",
+      "published": "2026-07-03T14:00:42.000Z",
+      "ingested": "2026-07-03T20:39:25.989Z",
+      "title_original": "Chromium: CVE-2026-13933 Insufficient policy enforcement in Passwords",
+      "headline_no": "Chromium-svakhet i passordhåndtering rammer Edge",
+      "summary_no": "CVE-2026-13933 er en svakhet i Chromiums passordfunksjon der policy-håndheving kan omgås. Microsoft Edge er Chromium-basert og arver rettelsen automatisk, så IT-admins bør sikre at klientene får siste Edge-versjon.",
+      "topic": "sikkerhet",
+      "score": 41,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-13933",
+        "passwords"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-7318b48e51",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14153",
+      "published": "2026-07-03T14:00:00.000Z",
+      "ingested": "2026-07-03T20:39:25.992Z",
+      "title_original": "Chromium: CVE-2026-14153 Inappropriate implementation in Glic",
+      "headline_no": "Chromium-feil i Glic-komponenten fikset i Edge",
+      "summary_no": "CVE-2026-14153 skyldes en uheldig implementasjon i Chromium-komponenten Glic. Edge tetter hullet ved å ta inn Chromium-oppdateringen. Rutinemessig patch, men rull ut nyeste Edge for å være dekket.",
+      "topic": "sikkerhet",
+      "score": 39,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-14153",
+        "glic"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-7af3736c61",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55945",
+      "published": "2026-07-03T14:00:00.000Z",
+      "ingested": "2026-07-03T20:39:25.992Z",
+      "title_original": "CVE-2026-55945 Microsoft Edge (Chromium-based) Information Disclosure Vulnerability",
+      "headline_no": "Race condition i Edge kan lekke informasjon lokalt",
+      "summary_no": "CVE-2026-55945 er en race condition i Microsoft Edge som lar en autentisert angriper lese ut informasjon lokalt på maskinen. Krever lokal tilgang og lavere alvorlighetsgrad, men bør med i neste patch-runde.",
+      "topic": "sikkerhet",
+      "score": 49,
+      "tags": [
+        "edge",
+        "cve-2026-55945",
+        "race-condition",
+        "info-disclosure"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-1753aebc3b",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56645",
+      "published": "2026-07-03T14:00:00.000Z",
+      "ingested": "2026-07-03T20:39:25.992Z",
+      "title_original": "CVE-2026-56645 Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+      "headline_no": "Kritisk RCE i Edge lar uautentisert angriper kjøre kode",
+      "summary_no": "CVE-2026-56645 er en heap-basert buffer overflow i Microsoft Edge som lar en uautentisert angriper kjøre vilkårlig kode over nettverket. Alvorlig — prioriter utrulling av Edge-oppdateringen til alle klienter raskt.",
+      "topic": "sikkerhet",
+      "score": 68,
+      "tags": [
+        "edge",
+        "cve-2026-56645",
+        "rce",
+        "buffer-overflow"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-a2c0247c93",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57975",
+      "published": "2026-07-03T14:00:00.000Z",
+      "ingested": "2026-07-03T20:39:25.992Z",
+      "title_original": "CVE-2026-57975 Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+      "headline_no": "Type confusion-feil i Edge åpner for fjernkjøring av kode",
+      "summary_no": "CVE-2026-57975 er en type confusion-sårbarhet i Microsoft Edge som gir en uautentisert angriper mulighet til å kjøre kode over nettverket. Høy alvorlighetsgrad — patch Edge så raskt som mulig på alle enheter.",
+      "topic": "sikkerhet",
+      "score": 68,
+      "tags": [
+        "edge",
+        "cve-2026-57975",
+        "rce",
+        "type-confusion"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-97fdc45ff6",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57983",
+      "published": "2026-07-03T14:00:00.000Z",
+      "ingested": "2026-07-03T20:41:34.385Z",
+      "title_original": "CVE-2026-57983 Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
+      "headline_no": "Sikkerhetssperre i Edge kan omgås av angriper på nettet",
+      "summary_no": "En autorisasjonsfeil i Chromium-baserte Edge lar en uautorisert angriper omgå en sikkerhetsmekanisme over nettverket. Feilen krever ingen innlogging, og IT-avdelinger bør rulle ut Edge-oppdateringen så snart den er tilgjengelig i oppdateringskanalen.",
+      "topic": "sikkerhet",
+      "score": 58,
+      "tags": [
+        "edge",
+        "cve-2026-57983",
+        "sfb",
+        "chromium"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-d78cd52bc4",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57984",
+      "published": "2026-07-03T14:00:00.000Z",
+      "ingested": "2026-07-03T20:41:34.385Z",
+      "title_original": "CVE-2026-57984 Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+      "headline_no": "Use-after-free i Edge lar angripere kjøre kode eksternt",
+      "summary_no": "En use-after-free-sårbarhet i Chromium-baserte Edge gjør at en uautorisert angriper kan kjøre vilkårlig kode over nettverket. Ekstern kodekjøring i nettleseren er høyt prioritert – sørg for at Edge er oppdatert på alle klienter, spesielt der brukere surfer fritt.",
+      "topic": "sikkerhet",
+      "score": 67,
+      "tags": [
+        "edge",
+        "cve-2026-57984",
+        "rce",
+        "use-after-free"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-ee2bf77621",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57985",
+      "published": "2026-07-03T14:00:00.000Z",
+      "ingested": "2026-07-03T20:41:34.385Z",
+      "title_original": "CVE-2026-57985 Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+      "headline_no": "Manglende inputvalidering gir kodekjøring i Edge",
+      "summary_no": "Feil i inputvalidering i Chromium-baserte Edge åpner for at en uautorisert angriper kan kjøre kode over nettverket. Sårbarheten kan utnyttes ved besøk på en spesialtilpasset nettside, og bør lukkes raskt via nettleseroppdatering.",
+      "topic": "sikkerhet",
+      "score": 66,
+      "tags": [
+        "edge",
+        "cve-2026-57985",
+        "rce",
+        "input-validation"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-65d12f2942",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57987",
+      "published": "2026-07-03T14:00:00.000Z",
+      "ingested": "2026-07-03T20:41:34.385Z",
+      "title_original": "CVE-2026-57987 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+      "headline_no": "SSRF-hull i Edge kan utnyttes til forfalskning",
+      "summary_no": "En server-side request forgery-feil i Chromium-baserte Edge lar en uautorisert angriper utføre forfalskning over nettverket. Spoofing kan brukes til phishing og til å lure brukere eller interne tjenester, så oppdatering anbefales.",
+      "topic": "sikkerhet",
+      "score": 54,
+      "tags": [
+        "edge",
+        "cve-2026-57987",
+        "ssrf",
+        "spoofing"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-5f37422cb0",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57988",
+      "published": "2026-07-03T14:00:00.000Z",
+      "ingested": "2026-07-03T20:41:34.385Z",
+      "title_original": "CVE-2026-57988 Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+      "headline_no": "Path traversal i Edge lar angriper kjøre skadekode",
+      "summary_no": "En relativ path traversal-sårbarhet i Chromium-baserte Edge gir en uautorisert angriper mulighet til å kjøre kode over nettverket. Som med de øvrige RCE-feilene i denne runden bør oppdateringen prioriteres på alle administrerte enheter.",
+      "topic": "sikkerhet",
+      "score": 66,
+      "tags": [
+        "edge",
+        "cve-2026-57988",
+        "rce",
+        "path-traversal"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-f62d53b029",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57992",
+      "published": "2026-07-03T14:00:00.000Z",
+      "ingested": "2026-07-03T20:41:34.385Z",
+      "title_original": "CVE-2026-57992 Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+      "headline_no": "Ny use-after-free i Edge muliggjør ekstern kodekjøring",
+      "summary_no": "Enda en use-after-free-sårbarhet i Chromium-baserte Edge lar en uautorisert angriper kjøre kode over nettverket. Feilen føyer seg til flere minnehåndteringsbugs i samme oppdatering – rull ut den nyeste Edge-versjonen for å tette hele settet.",
+      "topic": "sikkerhet",
+      "score": 67,
+      "tags": [
+        "edge",
+        "cve-2026-57992",
+        "rce",
+        "use-after-free"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-0e7f6de06b",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57993",
+      "published": "2026-07-03T14:00:00.000Z",
+      "ingested": "2026-07-03T20:42:40.097Z",
+      "title_original": "CVE-2026-57993 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+      "headline_no": "SSRF-hull i Edge lar angripere forfalske trafikk over nettverk",
+      "summary_no": "En ny SSRF-sårbarhet (CVE-2026-57993) i Chromium-baserte Edge lar en uautorisert angriper utføre forfalskning over nettverket. IT-admins bør sikre at Edge holdes oppdatert til nyeste versjon så snart rettelsen rulles ut i kanalen.",
+      "topic": "sikkerhet",
+      "score": 58,
+      "tags": [
+        "edge",
+        "ssrf",
+        "cve-2026-57993",
+        "spoofing"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-93e767f267",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56646",
+      "published": "2026-07-03T14:00:00.000Z",
+      "ingested": "2026-07-03T20:42:40.097Z",
+      "title_original": "CVE-2026-56646 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+      "headline_no": "Edge-sårbarhet lekker sensitiv info og åpner for forfalskning",
+      "summary_no": "CVE-2026-56646 eksponerer sensitiv informasjon til uautoriserte aktører i Chromium-baserte Edge, noe som kan utnyttes til spoofing over nettverk. Prioriter utrulling av Edge-oppdateringen i miljøer der nettleseren håndterer sensitive data.",
+      "topic": "sikkerhet",
+      "score": 54,
+      "tags": [
+        "edge",
+        "cve-2026-56646",
+        "spoofing",
+        "informasjonslekkasje"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-437fb136fc",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58282",
+      "published": "2026-07-03T14:00:00.000Z",
+      "ingested": "2026-07-03T20:42:40.097Z",
+      "title_original": "CVE-2026-58282 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+      "headline_no": "Svak tilgangskontroll i Edge muliggjør forfalskning over nett",
+      "summary_no": "En svakhet i tilgangskontrollen (CVE-2026-58282) i Chromium-baserte Edge lar uautoriserte angripere utføre spoofing over nettverket. Hold Edge oppdatert via oppdateringskanalen for å tette hullet.",
+      "topic": "sikkerhet",
+      "score": 55,
+      "tags": [
+        "edge",
+        "cve-2026-58282",
+        "spoofing",
+        "tilgangskontroll"
+      ]
+    },
     {
       "id": "vasil-michev-ca1e494993",
       "source_id": "vasil-michev",
