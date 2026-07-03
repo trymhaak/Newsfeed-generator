@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T00:14:10.946Z",
+  "generated_at": "2026-07-03T00:56:42.005Z",
   "articles": [
     {
       "id": "m365-roadmap-1e25d7c022",
@@ -560,6 +560,26 @@
         "entra",
         "global-secure-access",
         "ai"
+      ]
+    },
+    {
+      "id": "windows-it-pro-63fdf59378",
+      "source_id": "windows-it-pro",
+      "source_name": "Windows IT Pro Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-news-you-can-use-june-2026/ba-p/4532288",
+      "published": "2026-07-01T22:00:00.000Z",
+      "ingested": "2026-07-03T00:56:41.961Z",
+      "title_original": "Windows news you can use: June 2026",
+      "headline_no": "Windows 11 26H2 klar for testing – punktgjenoppretting nå allment tilgjengelig",
+      "summary_no": "Microsofts juni-oppsummering for IT-admins samler flere nyheter: Windows 11 26H2 er nå ute for tidlig testing i Insider-programmet og kan rulles ut med en enkel enablement-pakke fordi den deler servicegren med 24H2 og 25H2. Punktgjenoppretting for Windows 11 er blitt allment tilgjengelig og lar brukere rulle enheter tilbake til en tidligere tilstand på minutter i stedet for timer. Fra juli 2026 blir Windows Ready Print (tidligere Modern Print Platform) standard for nye skriverinstallasjoner der det støttes.",
+      "topic": "endpoint",
+      "score": 54,
+      "tags": [
+        "windows-11",
+        "26h2",
+        "windows-365",
+        "recovery",
+        "ready-print"
       ]
     },
     {
