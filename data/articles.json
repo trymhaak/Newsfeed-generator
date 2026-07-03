@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-07-03T07:24:20.371Z",
+  "generated_at": "2026-07-03T10:11:52.881Z",
   "articles": [
+    {
+      "id": "msendpointmgr-0fb35de478",
+      "source_id": "msendpointmgr",
+      "source_name": "MSEndpointMgr",
+      "url": "https://msendpointmgr.com/2026/07/03/epm-part-3-writing-intune-endpoint-privilege-management-rules-for-the-real-world-file-hash-certificate-and-when-each-one-is-the-wrong-choice/",
+      "published": "2026-07-03T09:00:39.000Z",
+      "ingested": "2026-07-03T10:11:52.831Z",
+      "hero_image": "https://msendpointmgr.com/wp-content/uploads/2026/06/Designer-14.png",
+      "title_original": "EPM Part 3: Writing Intune Endpoint Privilege Management rules for the real world: File hash, certificate, and when each one is the wrong choice",
+      "headline_no": "Slik velger du mellom filhash og sertifikat i Intune EPM-regler",
+      "summary_no": "Tredje del av MSEndpointMgrs EPM-serie viser hvordan et prioritert regel-backlog blir til hevingsregler som holder i produksjon. Artikkelen forklarer når du bør bruke filhash, sertifikat eller produktversjon som deteksjonskriterium – og når hvert av dem er feil valg. Nyttig for Intune-admins som vil unngå at EPM-regler knekker ved neste leverandøroppdatering eller hever noe de ikke skulle.",
+      "topic": "endpoint",
+      "score": 38,
+      "tags": [
+        "intune",
+        "epm",
+        "privilege-management",
+        "elevation"
+      ]
+    },
     {
       "id": "msrc-update-guide-1510175b44",
       "source_id": "msrc-update-guide",
