@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T10:11:52.881Z",
+  "generated_at": "2026-07-03T10:18:59.803Z",
   "articles": [
     {
       "id": "msendpointmgr-0fb35de478",
@@ -172,6 +172,25 @@
       ]
     },
     {
+      "id": "msrc-update-guide-ff888a310b",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14258",
+      "published": "2026-07-03T08:03:50.000Z",
+      "ingested": "2026-07-03T10:18:59.757Z",
+      "title_original": "CVE-2026-14258 Dhcpcd: dhcpcd infinite loop and out-of-bounds read via zero-length ipv6 nd option in router advertisement handling",
+      "headline_no": "Zero-length IPv6-opsjon får dhcpcd til å henge og lese utenfor minnet",
+      "summary_no": "dhcpcd kan havne i en uendelig løkke og lese utenfor tildelt minne når den håndterer en IPv6 nabooppdagelses-opsjon med lengde null i en router advertisement. Feilen kan utnyttes til tjenestenekt mot Linux-verter. Relevant for admins som drifter Linux-baserte noder eller apparater i Microsoft-miljøet.",
+      "topic": "sikkerhet",
+      "score": 41,
+      "tags": [
+        "dhcpcd",
+        "ipv6",
+        "dos",
+        "cve-2026-14258"
+      ]
+    },
+    {
       "id": "msrc-update-guide-06caadf38a",
       "source_id": "msrc-update-guide",
       "source_name": "MSRC Security Update Guide (RSS)",
@@ -188,6 +207,25 @@
         "linux-kernel",
         "ocfs2",
         "sårbarhet"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-99096d31e7",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53357",
+      "published": "2026-07-03T08:02:18.000Z",
+      "ingested": "2026-07-03T10:18:59.757Z",
+      "title_original": "CVE-2026-53357 Bluetooth: fix UAF in l2cap_sock_cleanup_listen() vs l2cap_conn_del()",
+      "headline_no": "Use-after-free i Linux-kjernens Bluetooth-stakk kan gi krasj eller kjøring",
+      "summary_no": "En use-after-free i Bluetooth-håndteringen i Linux-kjernen (l2cap) kan føre til krasj og potensielt kjøring av vilkårlig kode. Rettingen er allerede på plass i kjernen. Angår admins som drifter Linux-endepunkter eller Azure Linux-noder med Bluetooth aktivert.",
+      "topic": "sikkerhet",
+      "score": 51,
+      "tags": [
+        "linux-kernel",
+        "bluetooth",
+        "use-after-free",
+        "cve-2026-53357"
       ]
     },
     {
@@ -209,6 +247,24 @@
       ]
     },
     {
+      "id": "msrc-update-guide-62a0e5d039",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56149",
+      "published": "2026-07-03T08:02:04.000Z",
+      "ingested": "2026-07-03T10:18:59.754Z",
+      "title_original": "CVE-2026-56149 Allocation of Resources Without Limits or Throttling in Elasticsearch Leading to Denial of Service",
+      "headline_no": "Ubegrenset ressursbruk i Elasticsearch åpner for tjenestenekt-angrep",
+      "summary_no": "En sårbarhet i Elasticsearch lar en angriper allokere ressurser uten grenser, noe som kan føre til tjenestenekt (DoS). Microsoft publiserer oppføringen via MSRC fordi komponenten inngår i flere skytjenester. Admins som kjører Elasticsearch i Azure eller egne miljøer bør vurdere oppdatering.",
+      "topic": "sikkerhet",
+      "score": 47,
+      "tags": [
+        "elasticsearch",
+        "dos",
+        "cve-2026-56149"
+      ]
+    },
+    {
       "id": "msrc-update-guide-db7518842c",
       "source_id": "msrc-update-guide",
       "source_name": "MSRC Security Update Guide (RSS)",
@@ -225,6 +281,24 @@
         "ksmbd",
         "smb",
         "use-after-free"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-5940bce86e",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49090",
+      "published": "2026-07-03T08:01:57.000Z",
+      "ingested": "2026-07-03T10:18:59.757Z",
+      "title_original": "CVE-2026-49090 Uncontrolled Resource Consumption in Elasticsearch Leading to Denial of Service",
+      "headline_no": "Ny Elasticsearch-feil gir tjenestenekt via ukontrollert ressursbruk",
+      "summary_no": "Enda en Elasticsearch-sårbarhet der ukontrollert ressursbruk kan tvinge tjenesten i kne og gi tjenestenekt. Publisert via MSRC som del av Microsofts sårbarhetssporing for tredjepartskomponenter. Sjekk om egne søkeklynger er berørt og planlegg patching.",
+      "topic": "sikkerhet",
+      "score": 46,
+      "tags": [
+        "elasticsearch",
+        "dos",
+        "cve-2026-49090"
       ]
     },
     {
