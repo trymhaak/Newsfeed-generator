@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-07-03T11:01:20.248Z",
+  "generated_at": "2026-07-03T15:12:37.744Z",
   "articles": [
+    {
+      "id": "vasil-michev-ca1e494993",
+      "source_id": "vasil-michev",
+      "source_name": "Vasil Michev — Michev.info",
+      "url": "https://michev.info/blog/post/8025/more-robust-external-sharing-controls-now-available-for-spo-odfb-dlp-policies",
+      "published": "2026-07-03T13:06:47.000Z",
+      "ingested": "2026-07-03T15:12:37.695Z",
+      "hero_image": "https://michev.info/wp-content/uploads/2026/07/DLPGranularActions.png",
+      "title_original": "More robust external sharing controls now available for SPO/ODFB DLP policies",
+      "headline_no": "Nye DLP-handlinger blokkerer ekstern deling i SharePoint og OneDrive",
+      "summary_no": "Microsoft ruller ut to nye DLP-handlinger for SharePoint Online og OneDrive som kan blokkere tilgang til eksterne domener og brukere, eller flytte filer til en karantenelokasjon. Funksjonen (MC1338823, roadmap 557191) er fremdeles i preview, men gir IT-admins mer presis kontroll over ekstern deling rett i DLP-policyer avgrenset til SPO/ODFB. Handlingene dukker kun opp når policyen er scopet til SharePoint eller OneDrive.",
+      "topic": "sikkerhet",
+      "score": 47,
+      "tags": [
+        "dlp",
+        "sharepoint",
+        "onedrive",
+        "purview",
+        "ekstern-deling"
+      ]
+    },
     {
       "id": "andrew-taylor-d00ac40b97",
       "source_id": "andrew-taylor",
