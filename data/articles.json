@@ -1,6 +1,81 @@
 {
-  "generated_at": "2026-07-02T19:39:27.401Z",
+  "generated_at": "2026-07-03T00:14:10.946Z",
   "articles": [
+    {
+      "id": "m365-roadmap-1e25d7c022",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567006",
+      "published": "2026-07-02T23:12:48.000Z",
+      "ingested": "2026-07-03T00:12:34.208Z",
+      "title_original": "Outlook: Improvements to Save Contacts on iPhone and iPad",
+      "headline_no": "Outlook-kontakter dukker opp i hele iPhone-en — uten full adressebok-tilgang",
+      "summary_no": "Outlook tar i bruk Apples Contact Provider-rammeverk slik at kontaktene blir tilgjengelige for anrops-ID, Telefon, Meldinger og Siri — uten å kopiere dem til enheten eller kreve full tilgang til adresseboka. For BYOD-flåter gir det bedre integrasjon uten å svekke personvernet. Lanseres januar 2027.",
+      "topic": "endpoint",
+      "score": 32,
+      "tags": [
+        "outlook",
+        "ios",
+        "byod",
+        "kontakter"
+      ]
+    },
+    {
+      "id": "m365-roadmap-510c07322e",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566997",
+      "published": "2026-07-02T23:12:48.000Z",
+      "ingested": "2026-07-03T00:12:34.211Z",
+      "title_original": "Microsoft Copilot Studio: Block the use of maker-provided credentials for authentication",
+      "headline_no": "Copilot Studio: blokker at agenter bruker byggerens legitimasjon",
+      "summary_no": "Microsoft lar administratorer hindre at Copilot Studio-agenter autentiserer seg med legitimasjonen til den som bygde dem. Det stenger en vanlig vei til overprivilegerte agenter og støtter etterlevelse av GDPR og HIPAA ved å sikre at kun autoriserte identiteter brukes. Preview er ute nå, GA i august 2026.",
+      "topic": "ai",
+      "score": 45,
+      "tags": [
+        "copilot-studio",
+        "ai-agenter",
+        "iam",
+        "governance"
+      ]
+    },
+    {
+      "id": "m365-roadmap-95e28a6f61",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566866",
+      "published": "2026-07-02T23:12:48.000Z",
+      "ingested": "2026-07-03T00:12:34.211Z",
+      "title_original": "Planner: Task Details Sidecar experience",
+      "headline_no": "Planner får sidepanel for oppgavedetaljer — slipper å miste oversikten",
+      "summary_no": "Planner får et sidepanel («Sidecar») der du kan se og redigere oppgavedetaljer uten å forlate tavle-, rutenett- eller Mine oppgaver-visningen. En ren produktivitetsforbedring som ikke krever admin-handling. Lanseres august 2026.",
+      "topic": "endpoint",
+      "score": 29,
+      "tags": [
+        "planner",
+        "m365",
+        "produktivitet"
+      ]
+    },
+    {
+      "id": "jeffrey-appel-ffa8775f73",
+      "source_id": "jeffrey-appel",
+      "source_name": "Jeffrey Appel — Microsoft Security",
+      "url": "https://jeffreyappel.nl/defender-for-endpoint-performance-troubleshooting-on-linux/",
+      "published": "2026-07-02T20:28:36.000Z",
+      "ingested": "2026-07-03T00:14:10.900Z",
+      "title_original": "Defender for Endpoint performance troubleshooting on Linux",
+      "headline_no": "Slik feilsøker du ytelsesproblemer i Defender for Endpoint på Linux",
+      "summary_no": "Jeffrey Appel viser hvordan man diagnostiserer høyt CPU-, minne- og diskforbruk når Microsoft Defender for Endpoint kjører på Linux. En praktisk veiledning for admins som drifter MDE i blandede miljøer, men ingen ny funksjonalitet.",
+      "topic": "sikkerhet",
+      "score": 38,
+      "tags": [
+        "defender-for-endpoint",
+        "linux",
+        "mde",
+        "ytelse"
+      ]
+    },
     {
       "id": "msrc-blog-f92fb00d54",
       "source_id": "msrc-blog",
@@ -77,6 +152,120 @@
         "sales-agent",
         "crm",
         "m365-copilot"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-53807d8f62",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50521",
+      "published": "2026-07-02T14:00:00.000Z",
+      "ingested": "2026-07-03T00:12:34.211Z",
+      "title_original": "CVE-2026-50521 Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+      "headline_no": "Kritisk RCE-hull i Edge tettes — oppdater nettleseren nå (CVE-2026-50521)",
+      "summary_no": "Microsoft har lagt Edge til i sikkerhetsoppdateringstabellen for CVE-2026-50521, en sårbarhet for ekstern kjøring av kode i den Chromium-baserte nettleseren. Angripere kan potensielt kjøre vilkårlig kode, så oppdater til angitt versjon snarest. Rull ut via Intune, Autopatch eller WSUS.",
+      "topic": "sikkerhet",
+      "score": 65,
+      "tags": [
+        "cve-2026-50521",
+        "edge",
+        "rce",
+        "patch"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-0615a142d8",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57100",
+      "published": "2026-07-02T14:00:00.000Z",
+      "ingested": "2026-07-03T00:12:34.211Z",
+      "title_original": "CVE-2026-57100 Microsoft Entra Provisioning Service Elevation of Privilege Vulnerability",
+      "headline_no": "SSRF i Entra Provisioning ga angripere økte rettigheter (CVE-2026-57100)",
+      "summary_no": "En server-side request forgery-feil (SSRF) i Entra Provisioning Service (SyncFabric) lot en autentisert angriper eskalere privilegier over nettverket. Microsoft retter tjenesten på sin side, men identitets-team bør følge med på eventuelle herdingsråd. Gjelder CVE-2026-57100.",
+      "topic": "sikkerhet",
+      "score": 67,
+      "tags": [
+        "cve-2026-57100",
+        "entra",
+        "ssrf",
+        "eop"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-e51d891cb4",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45499",
+      "published": "2026-07-02T14:00:00.000Z",
+      "ingested": "2026-07-03T00:12:34.211Z",
+      "title_original": "CVE-2026-45499 Azure OpenAI Elevation of Privilege Vulnerability",
+      "headline_no": "SSRF i Azure OpenAI åpnet for rettighetseskalering (CVE-2026-45499)",
+      "summary_no": "En SSRF-sårbarhet i Azure OpenAI lot en autentisert angriper eskalere privilegier over nettverket. Feilen ligger i Microsofts tjeneste og rettes på plattformsiden, men team som bygger på Azure OpenAI bør merke seg det gjentakende mønsteret av SSRF-hull i AI-tjenester. Gjelder CVE-2026-45499.",
+      "topic": "sikkerhet",
+      "score": 63,
+      "tags": [
+        "cve-2026-45499",
+        "azure-openai",
+        "ssrf",
+        "eop"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-a4909852b0",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26145",
+      "published": "2026-07-02T14:00:00.000Z",
+      "ingested": "2026-07-03T00:14:10.900Z",
+      "title_original": "CVE-2026-26145 Microsoft Azure Synapse Elevation of Privilege Vulnerability",
+      "headline_no": "Azure Synapse-hull gir autentisert angriper høyere privilegier",
+      "summary_no": "Microsoft har publisert CVE-2026-26145, en sårbarhet der mangelfull tilgangskontroll i Azure Synapse lar en allerede autentisert angriper eskalere rettigheter over nettverket. Virksomheter som bruker Synapse bør prioritere oppdateringen så snart den er tilgjengelig.",
+      "topic": "sikkerhet",
+      "score": 57,
+      "tags": [
+        "cve-2026-26145",
+        "azure-synapse",
+        "eop",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-0f974e1c70",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41106",
+      "published": "2026-07-02T14:00:00.000Z",
+      "ingested": "2026-07-03T00:14:10.900Z",
+      "title_original": "CVE-2026-41106 Microsoft 365 Copilot Elevation of Privilege Vulnerability",
+      "headline_no": "Åpen redirect i M365 Copilot lar uautentisert angriper heve privilegier",
+      "summary_no": "CVE-2026-41106 er en open redirect-sårbarhet i Microsoft 365 Copilot som lar en uautentisert angriper eskalere rettigheter over nettverket ved å sende brukere til upålitelige nettsteder. Ettersom Copilot rulles ut bredt, bør sikkerhetsteam følge med på Microsofts patch-status.",
+      "topic": "sikkerhet",
+      "score": 64,
+      "tags": [
+        "cve-2026-41106",
+        "m365-copilot",
+        "open-redirect",
+        "eop"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-a25379dad3",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54998",
+      "published": "2026-07-02T14:00:00.000Z",
+      "ingested": "2026-07-03T00:14:10.900Z",
+      "title_original": "CVE-2026-54998 Microsoft Exchange Online Elevation of Privilege Vulnerability",
+      "headline_no": "Exchange Online-sårbarhet lar autentisert angriper eskalere rettigheter",
+      "summary_no": "CVE-2026-54998 skyldes feilaktig autorisasjon i Exchange Online og lar en autentisert angriper heve sine privilegier over nettverket. Siden Exchange Online er kjernen i mange virksomheters e-post, bør admins verifisere at tjenesten er oppdatert.",
+      "topic": "sikkerhet",
+      "score": 60,
+      "tags": [
+        "cve-2026-54998",
+        "exchange-online",
+        "eop",
+        "msrc"
       ]
     },
     {
