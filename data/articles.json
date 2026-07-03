@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-07-03T06:46:40.806Z",
+  "generated_at": "2026-07-03T07:03:34.634Z",
   "articles": [
+    {
+      "id": "office365-itpros-87812b98e6",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/03/teams-membership-snapshot/?utm_source=rss&utm_medium=rss&utm_campaign=teams-membership-snapshot",
+      "published": "2026-07-03T07:00:00.000Z",
+      "ingested": "2026-07-03T07:03:34.583Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/02/Teams-memberships-report.jpg?resize=840%2C544&#038;ssl=1",
+      "title_original": "How to Record Snapshots for Teams Memberships",
+      "headline_no": "Slik tar du øyeblikksbilder av Teams-medlemskap for arkivformål",
+      "summary_no": "Tony Redmond viser hvordan du med PowerShell kan lagre periodiske øyeblikksbilder av et teams medlemsliste, slik at du senere kan bevise hvem som hadde tilgang til kanaler, filer og SharePoint-innhold på et gitt tidspunkt. Teammedlemskap er i praksis en «adgang overalt»-billett til sensitivt innhold, så for virksomheter med juridiske dokumentasjonskrav er dette nyttig. Endringer i medlemskap kan også spores i revisjonsloggen.",
+      "topic": "identitet",
+      "score": 35,
+      "tags": [
+        "teams",
+        "powershell",
+        "medlemskap",
+        "etterlevelse",
+        "revisjon"
+      ]
+    },
     {
       "id": "ourcloudnetwork-d51af1d7d8",
       "source_id": "ourcloudnetwork",
