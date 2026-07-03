@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-07-03T10:18:59.803Z",
+  "generated_at": "2026-07-03T11:01:20.248Z",
   "articles": [
+    {
+      "id": "andrew-taylor-d00ac40b97",
+      "source_id": "andrew-taylor",
+      "source_name": "Andrew Taylor (andrewstaylor.com)",
+      "url": "https://andrewstaylor.com/2026/07/03/intune-newsletter-3rd-july-2026/",
+      "published": "2026-07-03T10:58:01.000Z",
+      "ingested": "2026-07-03T11:01:20.201Z",
+      "title_original": "Intune Newsletter – 3rd July 2026",
+      "headline_no": "Ukens Intune-nytt: multi-admin-godkjenning treffer nå Graph-handlinger",
+      "summary_no": "Andrew Taylors ukentlige Intune-nyhetsbrev samler flere community-saker denne uken: kontekstbasert omdirigering for Windows 365, runtime-beskyttelse av AI-agenter i Defender og oppsett av Remote Help. Mest merkbart for driftsteam er at multi-admin-godkjenning nå også slår inn på Microsoft Graph-handlinger, noe som kan bryte automatisering dersom Enterprise-apper ikke unntas.",
+      "topic": "endpoint",
+      "score": 29,
+      "tags": [
+        "intune",
+        "windows-365",
+        "multi-admin-approval",
+        "remote-help",
+        "nyhetsbrev"
+      ]
+    },
     {
       "id": "msendpointmgr-0fb35de478",
       "source_id": "msendpointmgr",
