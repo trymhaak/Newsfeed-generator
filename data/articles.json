@@ -1,6 +1,231 @@
 {
-  "generated_at": "2026-07-03T07:03:34.634Z",
+  "generated_at": "2026-07-03T07:24:20.371Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-1510175b44",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56405",
+      "published": "2026-07-03T08:07:08.000Z",
+      "ingested": "2026-07-03T07:20:44.437Z",
+      "title_original": "CVE-2026-56405 libexpat before 2.8.2 has an integer overflow in getAttributeId.",
+      "headline_no": "Heltallsoverflyt i libexpat truer XML-parsing (CVE-2026-56405)",
+      "summary_no": "MSRC har publisert CVE-2026-56405, en heltallsoverflyt i funksjonen getAttributeId i libexpat før versjon 2.8.2. Biblioteket brukes til XML-parsing i en rekke produkter, så IT-administratorer bør følge med på oppdateringer fra berørte leverandører. Feilen er rettet i libexpat 2.8.2.",
+      "topic": "sikkerhet",
+      "score": 43,
+      "tags": [
+        "cve-2026-56405",
+        "libexpat",
+        "xml",
+        "sårbarhet"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-4a0e9b9070",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56406",
+      "published": "2026-07-03T08:06:23.000Z",
+      "ingested": "2026-07-03T07:20:44.440Z",
+      "title_original": "CVE-2026-56406 libexpat before 2.8.2 has an integer overflow in XML_ParseBuffer because it lacked a check that was present in XML_Parse.",
+      "headline_no": "Ny libexpat-feil: XML_ParseBuffer mangler overflyt-sjekk (CVE-2026-56406)",
+      "summary_no": "CVE-2026-56406 er en heltallsoverflyt i XML_ParseBuffer i libexpat før 2.8.2, forårsaket av en manglende sjekk som fantes i XML_Parse. Produkter som bruker biblioteket til å parse XML kan være eksponert, og admins bør prioritere patch til 2.8.2 når leverandøren ruller den ut.",
+      "topic": "sikkerhet",
+      "score": 43,
+      "tags": [
+        "cve-2026-56406",
+        "libexpat",
+        "xml",
+        "sårbarhet"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-90f0133069",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56131",
+      "published": "2026-07-03T08:05:57.000Z",
+      "ingested": "2026-07-03T07:20:44.440Z",
+      "title_original": "CVE-2026-56131 libexpat before 2.8.2 lacks handler call depth tracking for calls to XML_ResumeParser from within handlers in cases of a policy violation. Thus, a use-after-free can occur (similar to the CVE-2026-50219 situation).",
+      "headline_no": "Use-after-free i libexpat via XML_ResumeParser (CVE-2026-56131)",
+      "summary_no": "CVE-2026-56131 er en use-after-free i libexpat før 2.8.2: biblioteket sporer ikke handler-kalldybde ved kall til XML_ResumeParser fra handlere ved policybrudd, tilsvarende CVE-2026-50219. Use-after-free kan i verste fall gi kjøring av vilkårlig kode, så dette er den mest alvorlige av libexpat-feilene i denne runden. Patch til 2.8.2 anbefales.",
+      "topic": "sikkerhet",
+      "score": 50,
+      "tags": [
+        "cve-2026-56131",
+        "libexpat",
+        "use-after-free",
+        "sårbarhet"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-4e3f840813",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53046",
+      "published": "2026-07-03T08:04:36.000Z",
+      "ingested": "2026-07-03T07:22:59.278Z",
+      "title_original": "CVE-2026-53046 ksmbd: fix use-after-free from async crypto on Qualcomm crypto engine",
+      "headline_no": "Ny ksmbd-feil: use-after-free via async krypto på Qualcomm-motor",
+      "summary_no": "Enda en use-after-free i Linux-kjernens ksmbd, denne gang utløst av asynkron krypto på Qualcomms krypto-motor. Som de øvrige ksmbd-feilene gjelder dette Linux SMB-serveren, ikke Windows. Lav prioritet med mindre du drifter ksmbd på Qualcomm-maskinvare.",
+      "topic": "sikkerhet",
+      "score": 23,
+      "tags": [
+        "cve-2026-53046",
+        "ksmbd",
+        "smb",
+        "use-after-free"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-cba5571ad3",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53039",
+      "published": "2026-07-03T08:04:26.000Z",
+      "ingested": "2026-07-03T07:22:59.278Z",
+      "title_original": "CVE-2026-53039 ocfs2: validate group add input before caching",
+      "headline_no": "OCFS2 validerer nå gruppe-input før caching i Linux-kjernen",
+      "summary_no": "En herding i Linux-kjernens OCFS2-filsystem validerer input ved gruppetillegg før det caches. OCFS2 er et Oracle-klyngefilsystem uten relevans for Intune-, Entra- eller Defender-drift, men flyter gjennom MSRC-feeden. Ingen handling kreves for vanlige Microsoft-miljøer.",
+      "topic": "sikkerhet",
+      "score": 14,
+      "tags": [
+        "cve-2026-53039",
+        "linux-kernel",
+        "ocfs2"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-47ae492210",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53045",
+      "published": "2026-07-03T08:04:20.000Z",
+      "ingested": "2026-07-03T07:22:59.278Z",
+      "title_original": "CVE-2026-53045 memory: tegra124-emc: Fix dll_change check",
+      "headline_no": "Linux-kjernen retter feil DLL-sjekk i Tegra124-minnekontroller",
+      "summary_no": "En patch i Linux-kjernen korrigerer en feilaktig dll_change-sjekk i Tegra124-minnekontrolleren (EMC). Dette er en NVIDIA-ARM-driver uten berøring med Windows-flåter, og dukker kun opp i MSRC-feeden fordi Microsoft nå publiserer CVE-er for åpen kildekode de konsumerer. Ingen handling kreves for et typisk Microsoft-driftsmiljø.",
+      "topic": "sikkerhet",
+      "score": 14,
+      "tags": [
+        "cve-2026-53045",
+        "linux-kernel",
+        "tegra"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-68fa73b999",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53049",
+      "published": "2026-07-03T08:04:14.000Z",
+      "ingested": "2026-07-03T07:20:44.440Z",
+      "title_original": "CVE-2026-53049 gfs2: add some missing log locking",
+      "headline_no": "gfs2 får manglende logg-låsing i Linux-kjernen (CVE-2026-53049)",
+      "summary_no": "CVE-2026-53049 legger til manglende logg-låsing i gfs2-klyngefilsystemet i Linux-kjernen. Feilen er svært nisje og treffer først og fremst miljøer som bruker gfs2 for delt lagring. Relevans for typiske Microsoft-miljøer er lav, men kjernen bør oppdateres der gfs2 er i bruk.",
+      "topic": "sikkerhet",
+      "score": 36,
+      "tags": [
+        "cve-2026-53049",
+        "linux-kernel",
+        "gfs2",
+        "sårbarhet"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-319a9f3d1b",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-52911",
+      "published": "2026-07-03T08:04:01.000Z",
+      "ingested": "2026-07-03T07:20:44.440Z",
+      "title_original": "CVE-2026-52911 ksmbd: scope conn->binding slowpath to bound sessions only",
+      "headline_no": "ksmbd-fiks avgrenser binding-slowpath til bundne økter (CVE-2026-52911)",
+      "summary_no": "CVE-2026-52911 gjelder ksmbd, den innebygde SMB-serveren i Linux-kjernen, der conn->binding-slowpath nå avgrenses til kun bundne økter. Siden ksmbd eksponerer SMB over nettverk, er kjernenære feil her sikkerhetsrelevante for Linux-tjenere som deler filer. Oppdater kjernen når fiksen er tilgjengelig.",
+      "topic": "sikkerhet",
+      "score": 42,
+      "tags": [
+        "cve-2026-52911",
+        "linux-kernel",
+        "ksmbd",
+        "smb"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-06caadf38a",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53043",
+      "published": "2026-07-03T08:03:26.000Z",
+      "ingested": "2026-07-03T07:20:44.440Z",
+      "title_original": "CVE-2026-53043 ocfs2/dlm: validate qr_numregions in dlm_match_regions()",
+      "headline_no": "Linux-kjernefeil i ocfs2 kan gi minnekorrupsjon (CVE-2026-53043)",
+      "summary_no": "CVE-2026-53043 retter en manglende validering av qr_numregions i dlm_match_regions() i ocfs2-klyngefilsystemet i Linux-kjernen. Sårbarheten er nisje, men relevant for miljøer som kjører ocfs2 på Linux-baserte Azure- eller on-prem-tjenere. Oppdater kjernen når distribusjonen leverer fiksen.",
+      "topic": "sikkerhet",
+      "score": 38,
+      "tags": [
+        "cve-2026-53043",
+        "linux-kernel",
+        "ocfs2",
+        "sårbarhet"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-49c4541eec",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53048",
+      "published": "2026-07-03T08:02:17.000Z",
+      "ingested": "2026-07-03T07:22:59.278Z",
+      "title_original": "CVE-2026-53048 gfs2: prevent NULL pointer dereference during unmount",
+      "headline_no": "Linux-kjernen fjerner NULL-dereferanse i GFS2 ved avmontering",
+      "summary_no": "En patch hindrer en NULL-pekerdereferanse i Linux-kjernens GFS2-filsystem under unmount, en potensiell lokal tjenestenekt. GFS2 er et klyngefilsystem uten berøring med Microsoft-økosystemet og har minimal relevans for målgruppen. Tas kun med for fullstendighet fra MSRC-feeden.",
+      "topic": "sikkerhet",
+      "score": 14,
+      "tags": [
+        "cve-2026-53048",
+        "linux-kernel",
+        "gfs2"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-db7518842c",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53010",
+      "published": "2026-07-03T08:02:03.000Z",
+      "ingested": "2026-07-03T07:22:59.278Z",
+      "title_original": "CVE-2026-53010 ksmbd: fix use-after-free in smb2_open during durable reconnect",
+      "headline_no": "Use-after-free i Linux' SMB-server (ksmbd) under durable reconnect",
+      "summary_no": "Linux-kjernens innebygde SMB3-server ksmbd hadde en use-after-free i smb2_open ved «durable reconnect», nå rettet. En minnefeil i en nettverks-filserver kan i verste fall utnyttes eksternt, men gjelder Linux-vertens ksmbd — ikke Windows' egen SMB-stack. Relevant kun hvis du faktisk drifter ksmbd-baserte filtjenere.",
+      "topic": "sikkerhet",
+      "score": 27,
+      "tags": [
+        "cve-2026-53010",
+        "ksmbd",
+        "smb",
+        "use-after-free"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-3d4aa77614",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53097",
+      "published": "2026-07-03T08:01:57.000Z",
+      "ingested": "2026-07-03T07:22:59.278Z",
+      "title_original": "CVE-2026-53097 wifi: mt76: mt7996: fix use-after-free bugs in mt7996_mac_dump_work()",
+      "headline_no": "Bruk-etter-frigjøring i MediaTek mt7996 WiFi-driver tettes",
+      "summary_no": "Linux-kjernen fikser flere use-after-free-feil i mt7996_mac_dump_work() i MediaTek mt76-WiFi-driveren. Feilen ligger i en kjernedriver for MediaTek-brikker og treffer ikke administrerte Windows-endepunkter. Lav prioritet for et Microsoft-fokusert driftsmiljø.",
+      "topic": "sikkerhet",
+      "score": 16,
+      "tags": [
+        "cve-2026-53097",
+        "linux-kernel",
+        "wifi",
+        "use-after-free"
+      ]
+    },
     {
       "id": "office365-itpros-87812b98e6",
       "source_id": "office365-itpros",
