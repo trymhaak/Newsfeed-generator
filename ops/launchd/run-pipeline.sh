@@ -77,6 +77,10 @@ push_if_ahead() {
   local ahead
   ahead="$(git rev-list --count "origin/$BRANCH..HEAD" 2>/dev/null || echo 0)"
   if [[ "$ahead" != "0" ]]; then
+    if [[ -z "${GITHUB_PAT:-}" ]] && [[ -x /opt/homebrew/bin/gh ]]; then
+      GITHUB_PAT="$(/opt/homebrew/bin/gh auth token 2>/dev/null || true)"
+      export GITHUB_PAT
+    fi
     local askpass=""
     local rc=0
     if [[ -n "${GITHUB_PAT:-}" ]]; then
