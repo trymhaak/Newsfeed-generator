@@ -4,19 +4,24 @@
  *
  * Runs on Cloudflare on a cron, INDEPENDENT of the Mac mini, so it fires
  * precisely when the Mac / launchd job dies and the feed stops refreshing — the
- * failure mode an on-Mac heartbeat cannot catch. It fetches the published
- * articles.json, reads the top-level `generated_at`, and POSTs to a Discord or
- * Slack webhook when the data is older than STALE_HOURS.
+ * failure mode an on-Mac-only heartbeat cannot catch. It fetches the published
+ * pipeline heartbeat, reads top-level `checked_at`, and alerts when that
+ * heartbeat is older than STALE_HOURS. This intentionally avoids false alarms
+ * when the pipeline runs successfully but no feeds have published new articles.
  *
  * NOTHING here is deployed by the repo. Deploy + secret steps: CUTOVER-RUNBOOK §B.
  */
 
 export interface Env {
   /**
-   * Where to read the published articles.json. Default (see wrangler.toml) is
-   * the canonical file on `main` via raw GitHub — works today and is
-   * hosting-independent. Switch to the Cloudflare Pages URL once articles.json
-   * is published there.
+   * Successful pipeline heartbeat written by ops/launchd/run-pipeline.sh.
+   * Preferred over ARTICLES_URL because no-new-article runs should still prove
+   * the control plane is alive.
+   */
+  STATUS_URL?: string;
+  /**
+   * Fallback: where to read the published articles.json. Default (see
+   * wrangler.toml) is the canonical file on `main` via raw GitHub.
    */
   ARTICLES_URL: string;
   /** Staleness threshold in hours (string var). Default "12". */
@@ -37,6 +42,7 @@ interface Health {
   ok: boolean;
   stale: boolean;
   ageHours: number | null;
+  checkedAt: string | null;
   generatedAt: string | null;
   source: string;
   reason: string;
@@ -44,11 +50,12 @@ interface Health {
 
 async function checkFreshness(env: Env): Promise<Health> {
   const staleHours = Number(env.STALE_HOURS ?? '12');
-  const source = env.ARTICLES_URL;
-  const fail = (reason: string, generatedAt: string | null = null): Health => ({
+  const source = env.STATUS_URL || env.ARTICLES_URL;
+  const fail = (reason: string, checkedAt: string | null = null, generatedAt: string | null = null): Health => ({
     ok: false,
     stale: true,
     ageHours: null,
+    checkedAt,
     generatedAt,
     source,
     reason,
@@ -67,32 +74,35 @@ async function checkFreshness(env: Env): Promise<Health> {
     return fail(`fetch ${source} returned HTTP ${res.status}`);
   }
 
-  let data: { generated_at?: string; generated?: string };
+  let data: { checked_at?: string; generated_at?: string; generated?: string };
   try {
-    data = (await res.json()) as { generated_at?: string; generated?: string };
+    data = (await res.json()) as { checked_at?: string; generated_at?: string; generated?: string };
   } catch (err) {
     return fail(`articles.json is not valid JSON: ${err instanceof Error ? err.message : String(err)}`);
   }
 
-  // Accept the legacy `generated` key too, so the monitor works against older
-  // published data as well as the canonical `generated_at`.
-  const ts = data.generated_at ?? data.generated ?? null;
-  if (!ts) return fail('articles.json has no generated_at field');
+  // Preferred: pipeline heartbeat `checked_at`. Fallback: legacy article-store
+  // freshness `generated_at` / `generated` so old deployments still work.
+  const generatedAt = data.generated_at ?? data.generated ?? null;
+  const ts = data.checked_at ?? generatedAt;
+  if (!ts) return fail('status/articles JSON has no checked_at or generated_at field');
 
   const parsed = Date.parse(ts);
-  if (Number.isNaN(parsed)) return fail(`generated_at is not a valid date: ${ts}`, ts);
+  if (Number.isNaN(parsed)) return fail(`freshness timestamp is not a valid date: ${ts}`, ts, generatedAt);
 
   const ageHours = (Date.now() - parsed) / 3_600_000;
   const stale = ageHours > staleHours;
+  const label = data.checked_at ? 'pipeline heartbeat' : 'articles.json';
   return {
     ok: !stale,
     stale,
     ageHours,
-    generatedAt: ts,
+    checkedAt: data.checked_at ?? null,
+    generatedAt,
     source,
     reason: stale
-      ? `articles.json is ${ageHours.toFixed(1)}h old (> ${staleHours}h threshold)`
-      : `fresh: ${ageHours.toFixed(1)}h old (<= ${staleHours}h threshold)`,
+      ? `${label} is ${ageHours.toFixed(1)}h old (> ${staleHours}h threshold)`
+      : `fresh: ${label} is ${ageHours.toFixed(1)}h old (<= ${staleHours}h threshold)`,
   };
 }
 

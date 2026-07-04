@@ -4,11 +4,12 @@
 #
 #     bash ops/launchd/run-pipeline.sh
 #
-# It runs the full pipeline (fetch -> enrich via Claude Max -> merge) and, ONLY
-# on success and ONLY if data/articles.json actually changed, commits and pushes
-# it. A non-zero pipeline exit (majority of feeds down, enrichment failure, or a
-# quota/rate-limit abort) means nothing is committed: launchd records the failure
-# and the out-of-band Cloudflare monitor flags the resulting staleness.
+# It runs the full pipeline (fetch -> enrich via Claude Max -> merge) and, on
+# success, commits a small heartbeat file (`data/pipeline-status.json`) every run.
+# If data/articles.json changed, that is committed in the same transaction. A
+# non-zero pipeline exit (majority of feeds down, enrichment failure, or a
+# quota/rate-limit abort) means no heartbeat is committed: launchd records the
+# failure and the out-of-band Cloudflare monitor flags the resulting staleness.
 set -euo pipefail
 
 # Resolve the repo root from this script's own location, so there is no
@@ -31,6 +32,38 @@ set -a; . "$HOME/.config/claude/oauth-token.env" 2>/dev/null || true; set +a
 # from a specific branch and would otherwise watch the wrong one.
 BRANCH="${NEWSFEED_BRANCH:-main}"
 stamp() { date -u +%Y-%m-%dT%H:%M:%SZ; }
+
+write_pipeline_status() {
+  python3 - <<'PY'
+import datetime as dt
+import json
+from pathlib import Path
+
+articles_path = Path("data/articles.json")
+status_path = Path("data/pipeline-status.json")
+checked_at = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+
+generated_at = None
+article_count = None
+if articles_path.exists():
+    data = json.loads(articles_path.read_text(encoding="utf-8"))
+    if isinstance(data, dict):
+        generated_at = data.get("generated_at") or data.get("generated")
+        articles = data.get("articles")
+        if isinstance(articles, list):
+            article_count = len(articles)
+
+payload = {
+    "schema": "newsfeed_pipeline_status.v1",
+    "checked_at": checked_at,
+    "generated_at": generated_at,
+    "article_count": article_count,
+    "source": "ops/launchd/run-pipeline.sh",
+}
+status_path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+print(f"[{checked_at}] wrote {status_path}")
+PY
+}
 
 push_if_ahead() {
   local ahead
@@ -58,19 +91,36 @@ push_if_ahead
 # so a failed run never reaches the commit/push below.
 npm run pipeline
 
-# Commit + push ONLY the data file, and only when it actually changed. A no-op
-# run is byte-identical (generated_at only moves when articles were added), so
-# `git status --porcelain` is empty and we skip the commit entirely.
+# Successful pipeline run heartbeat. This is intentionally separate from the
+# content freshness stamp: a no-new-articles run should still prove that the Mac,
+# launchd, GitHub push auth, and feed fetcher are alive.
+write_pipeline_status
+
+# Commit + push data changes and/or the heartbeat. A no-new-articles run keeps
+# data/articles.json byte-identical, but advances data/pipeline-status.json so
+# the Cloudflare monitor can distinguish "pipeline healthy but no new articles"
+# from "pipeline stopped".
 DATA_CHANGED=0
+STATUS_CHANGED=0
 if [[ -n "$(git status --porcelain -- data/articles.json)" ]]; then
-  git add data/articles.json
+  DATA_CHANGED=1
+fi
+if [[ -n "$(git status --porcelain -- data/pipeline-status.json)" ]]; then
+  STATUS_CHANGED=1
+fi
+if [[ "$DATA_CHANGED" == "1" || "$STATUS_CHANGED" == "1" ]]; then
+  git add data/articles.json data/pipeline-status.json
+  if [[ "$DATA_CHANGED" == "1" ]]; then
+    COMMIT_MESSAGE="data: refresh articles ($(date -u +%Y-%m-%dT%H:%MZ))"
+  else
+    COMMIT_MESSAGE="ops: record newsfeed pipeline heartbeat ($(date -u +%Y-%m-%dT%H:%MZ))"
+  fi
   git -c user.name="newsfeed-bot" \
       -c user.email="newsfeed-bot@users.noreply.github.com" \
-      commit -m "data: refresh articles ($(date -u +%Y-%m-%dT%H:%MZ))"
+      commit -m "$COMMIT_MESSAGE"
   push_if_ahead
-  DATA_CHANGED=1
 else
-  echo "[$(stamp)] no change to data/articles.json — nothing to commit (idempotent no-op)"
+  echo "[$(stamp)] no data or heartbeat changes — nothing to commit"
 fi
 
 # Publish the rebuilt site to Cloudflare Pages. IMPORTANT: the data push above
