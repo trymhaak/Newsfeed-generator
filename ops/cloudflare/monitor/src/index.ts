@@ -25,9 +25,9 @@ export interface Env {
   REMINDER_HOURS?: string;
   /** Scheduler window in hours; keeps one cron tick per reminder bucket. Default "3.25". */
   ALERT_WINDOW_HOURS?: string;
-  /** Incoming webhook URL — set as a SECRET, never committed. */
+  /** Incoming webhook URL — set as a SECRET when WEBHOOK_KIND is discord/slack/telegram. */
   WEBHOOK_URL?: string;
-  /** "discord" (default) or "slack" — selects the JSON body shape. */
+  /** "log" (default), "discord", "slack", or "telegram" — selects alert sink/body shape. */
   WEBHOOK_KIND?: string;
   /** Telegram chat id (secret) when WEBHOOK_KIND=telegram. */
   TELEGRAM_CHAT_ID?: string;
@@ -120,11 +120,15 @@ function shouldAlert(env: Env, h: Health): boolean {
 }
 
 async function alert(env: Env, text: string): Promise<void> {
+  const kind = (env.WEBHOOK_KIND ?? 'log').toLowerCase();
+  if (kind === 'log' || kind === 'none' || kind === 'disabled') {
+    console.log(JSON.stringify({ delivery: 'log', alert: text }));
+    return;
+  }
   if (!env.WEBHOOK_URL) {
     console.error('WEBHOOK_URL not configured — cannot send alert:', text);
     return;
   }
-  const kind = (env.WEBHOOK_KIND ?? 'discord').toLowerCase();
   // Discord expects { content }, Slack expects { text }.
   const body = kind === 'telegram' ? { chat_id: env.TELEGRAM_CHAT_ID, text } : kind === 'slack' ? { text } : { content: text };
   const res = await fetch(env.WEBHOOK_URL, {

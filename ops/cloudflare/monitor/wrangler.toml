@@ -16,7 +16,10 @@ crons = ["0 */3 * * *"]
 ARTICLES_URL = "https://raw.githubusercontent.com/trymhaak/Newsfeed-generator/HEAD/data/articles.json"
 STALE_HOURS = "12"
 REMINDER_HOURS = "24"
-WEBHOOK_KIND = "telegram"   # discord | slack | telegram
+WEBHOOK_KIND = "log"        # log | discord | slack | telegram
 
-# WEBHOOK_URL is a SECRET — never commit it. Set it after deploy with:
+# WEBHOOK_URL is optional and only used for discord/slack/telegram sinks. Do not
+# point this at Trym's Telegram directly; Hermes-owned local watchdogs poll this
+# Worker and handle remediation without user-facing noise.
+#   wrangler secret delete WEBHOOK_URL
 #   wrangler secret put WEBHOOK_URL
