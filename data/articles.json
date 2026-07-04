@@ -1,6 +1,25 @@
 {
-  "generated_at": "2026-07-04T00:58:01.679Z",
+  "generated_at": "2026-07-04T09:38:36.887Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-00e2b141c1",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53223",
+      "published": "2026-07-04T08:03:27.000Z",
+      "ingested": "2026-07-04T09:38:36.839Z",
+      "title_original": "CVE-2026-53223 net: guard timestamp cmsgs to real error queue skbs",
+      "headline_no": "Linux-kjerne-CVE havner i MSRC-katalogen: nettverksfeil rettet",
+      "summary_no": "CVE-2026-53223 er en Linux-kjernefeil der tidsstempel-kontrollmeldinger (timestamp cmsgs) ikke ble avgrenset til gyldige error-queue-buffere i nettverksstacken. MSRC-oppføringen har foreløpig ingen detaljer om alvorlighetsgrad, utnyttelse eller berørte tjenester. Relevansen er lav for rene Microsoft-admins, men verdt et blikk hvis du kjører Linux-arbeidslast i Azure.",
+      "topic": "sikkerhet",
+      "score": 18,
+      "tags": [
+        "cve-2026-53223",
+        "linux-kernel",
+        "msrc",
+        "nettverk"
+      ]
+    },
     {
       "id": "niallbrady-1d1a29a5cf",
       "source_id": "niallbrady",
