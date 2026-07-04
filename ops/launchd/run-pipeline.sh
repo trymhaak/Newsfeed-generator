@@ -77,8 +77,14 @@ push_if_ahead() {
   local ahead
   ahead="$(git rev-list --count "origin/$BRANCH..HEAD" 2>/dev/null || echo 0)"
   if [[ "$ahead" != "0" ]]; then
-    if [[ -n "${GITHUB_PAT:-}" ]]; then
+    if command -v gh >/dev/null 2>&1; then
       GIT_TERMINAL_PROMPT=0 git \
+        -c credential.helper= \
+        -c credential.helper='!/opt/homebrew/bin/gh auth git-credential' \
+        push origin "$BRANCH"
+    elif [[ -n "${GITHUB_PAT:-}" ]]; then
+      GIT_TERMINAL_PROMPT=0 git \
+        -c credential.helper= \
         -c credential.helper='!f() { echo username=x-access-token; echo password=$GITHUB_PAT; }; f' \
         push origin "$BRANCH"
     else
