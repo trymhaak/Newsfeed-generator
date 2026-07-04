@@ -79,13 +79,13 @@ push_if_ahead() {
   if [[ "$ahead" != "0" ]]; then
     local askpass=""
     local rc=0
-    if command -v gh >/dev/null 2>&1; then
+    if [[ -n "${GITHUB_PAT:-}" ]]; then
       askpass="$(mktemp -t newsfeed-git-askpass.XXXXXX)"
       cat >"$askpass" <<'EOF'
 #!/bin/sh
 case "$1" in
   *Username*) printf '%s\n' 'x-access-token' ;;
-  *Password*) /opt/homebrew/bin/gh auth token ;;
+  *Password*) printf '%s\n' "$GITHUB_PAT" ;;
   *) printf '\n' ;;
 esac
 EOF
@@ -95,13 +95,13 @@ EOF
       if [[ "$rc" != "0" ]]; then
         return "$rc"
       fi
-    elif [[ -n "${GITHUB_PAT:-}" ]]; then
+    elif command -v gh >/dev/null 2>&1; then
       askpass="$(mktemp -t newsfeed-git-askpass.XXXXXX)"
       cat >"$askpass" <<'EOF'
 #!/bin/sh
 case "$1" in
   *Username*) printf '%s\n' 'x-access-token' ;;
-  *Password*) printf '%s\n' "$GITHUB_PAT" ;;
+  *Password*) /opt/homebrew/bin/gh auth token ;;
   *) printf '\n' ;;
 esac
 EOF
