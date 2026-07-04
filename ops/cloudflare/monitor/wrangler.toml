@@ -10,12 +10,12 @@ compatibility_date = "2026-06-01"
 crons = ["0 */3 * * *"]
 
 [vars]
-# Where to read the published articles.json. Default = the canonical file on
-# `main` via raw GitHub: works today, hosting-independent, and goes stale exactly
-# when the Mac stops pushing. Switch to the Cloudflare Pages URL once
-# articles.json is published there (see ops/cloudflare/pages/README.md).
-ARTICLES_URL = "https://raw.githubusercontent.com/trymhaak/Newsfeed-generator/main/data/articles.json"
+# Where to read the published articles.json. `HEAD` avoids a long-lived Fastly
+# cache artifact observed on the branch URL after a delayed push, while still
+# resolving to the default branch.
+ARTICLES_URL = "https://raw.githubusercontent.com/trymhaak/Newsfeed-generator/HEAD/data/articles.json"
 STALE_HOURS = "12"
+REMINDER_HOURS = "24"
 WEBHOOK_KIND = "telegram"   # discord | slack | telegram
 
 # WEBHOOK_URL is a SECRET — never commit it. Set it after deploy with:

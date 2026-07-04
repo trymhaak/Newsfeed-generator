@@ -20,6 +20,7 @@ cd "$REPO_DIR"
 # Defensive PATH so node/npm/npx, `claude`, and git resolve under launchd (which
 # starts with a minimal environment). The plist also sets PATH; this is a backup.
 export PATH="$HOME/.claude/local:$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
+export GIT_TERMINAL_PROMPT=0
 
 # Long-lived Claude OAuth token (subscription auth) so enrichment authenticates
 # under launchd, which cannot reach the GUI login Keychain.
@@ -30,12 +31,28 @@ set -a; . "$HOME/.config/claude/oauth-token.env" 2>/dev/null || true; set +a
 # from a specific branch and would otherwise watch the wrong one.
 BRANCH="${NEWSFEED_BRANCH:-main}"
 stamp() { date -u +%Y-%m-%dT%H:%M:%SZ; }
+
+push_if_ahead() {
+  local ahead
+  ahead="$(git rev-list --count "origin/$BRANCH..HEAD" 2>/dev/null || echo 0)"
+  if [[ "$ahead" != "0" ]]; then
+    git push origin "$BRANCH"
+    echo "[$(stamp)] pushed $ahead local commit(s) to origin/$BRANCH"
+  fi
+}
+
 echo "[$(stamp)] newsfeed pipeline starting in $REPO_DIR (branch $BRANCH)"
 
 # Stay current so the commit applies cleanly and we never push a stale base.
 git fetch origin "$BRANCH"
 git checkout "$BRANCH"
 git pull --ff-only origin "$BRANCH"
+
+# If a previous launchd run committed fresh data but failed to authenticate for
+# push, retry that backlog even when this run has no new articles. Otherwise the
+# local store can be fresh while the raw GitHub file stays stale and the
+# out-of-band monitor keeps paging Telegram.
+push_if_ahead
 
 # Run the full pipeline. `set -e` aborts the script here on any non-zero exit,
 # so a failed run never reaches the commit/push below.
@@ -50,8 +67,7 @@ if [[ -n "$(git status --porcelain -- data/articles.json)" ]]; then
   git -c user.name="newsfeed-bot" \
       -c user.email="newsfeed-bot@users.noreply.github.com" \
       commit -m "data: refresh articles ($(date -u +%Y-%m-%dT%H:%MZ))"
-  git push origin "$BRANCH"
-  echo "[$(stamp)] pushed refreshed data/articles.json"
+  push_if_ahead
   DATA_CHANGED=1
 else
   echo "[$(stamp)] no change to data/articles.json — nothing to commit (idempotent no-op)"

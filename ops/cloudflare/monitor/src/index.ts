@@ -21,6 +21,10 @@ export interface Env {
   ARTICLES_URL: string;
   /** Staleness threshold in hours (string var). Default "12". */
   STALE_HOURS?: string;
+  /** Minimum hours between repeated stale reminders. Default "24". */
+  REMINDER_HOURS?: string;
+  /** Scheduler window in hours; keeps one cron tick per reminder bucket. Default "3.25". */
+  ALERT_WINDOW_HOURS?: string;
   /** Incoming webhook URL — set as a SECRET, never committed. */
   WEBHOOK_URL?: string;
   /** "discord" (default) or "slack" — selects the JSON body shape. */
@@ -92,6 +96,29 @@ async function checkFreshness(env: Env): Promise<Health> {
   };
 }
 
+function shouldAlert(env: Env, h: Health): boolean {
+  if (!h.stale) return false;
+
+  // Fetch/parse errors do not have an age; alert every cron tick because the
+  // monitor cannot tell whether this is transient or a hard outage.
+  if (h.ageHours === null) return true;
+
+  const staleHours = Number(env.STALE_HOURS ?? '12');
+  const reminderHours = Number(env.REMINDER_HOURS ?? '24');
+  const alertWindowHours = Number(env.ALERT_WINDOW_HOURS ?? '3.25');
+  const staleAge = h.ageHours - staleHours;
+  if (staleAge < 0) return false;
+
+  // First alert: the first scheduled run after crossing STALE_HOURS.
+  if (staleAge <= alertWindowHours) return true;
+
+  // Reminder alerts: one scheduled run per REMINDER_HOURS bucket. This is
+  // stateless, so it works on the free Worker cron without KV/Durable Objects
+  // and prevents the "same stale fingerprint every 3 hours" Telegram storm.
+  if (reminderHours <= 0) return false;
+  return staleAge % reminderHours <= alertWindowHours;
+}
+
 async function alert(env: Env, text: string): Promise<void> {
   if (!env.WEBHOOK_URL) {
     console.error('WEBHOOK_URL not configured — cannot send alert:', text);
@@ -114,7 +141,7 @@ export default {
     ctx.waitUntil(
       (async () => {
         const h = await checkFreshness(env);
-        if (h.stale) {
+        if (shouldAlert(env, h)) {
           await alert(env, `🚨 Newsfeed stale — ${h.reason}. Kilde: ${h.source}`);
         }
         console.log(JSON.stringify(h));
