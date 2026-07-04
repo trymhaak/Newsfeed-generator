@@ -30,6 +30,10 @@ set -a; . "$HOME/.config/claude/oauth-token.env" 2>/dev/null || true; set +a
 # Headless ops secrets. In particular, GITHUB_PAT lets launchd push without the
 # GUI Keychain / osxkeychain prompt that otherwise fails with exit 128.
 eval "$(bash "$HOME/Claude/politipuls/scripts/load-secrets.sh" 2>/dev/null)" 2>/dev/null || true
+if [[ -z "${GITHUB_PAT:-}" ]] && command -v gh >/dev/null 2>&1; then
+  GITHUB_PAT="$(gh auth token 2>/dev/null || true)"
+  export GITHUB_PAT
+fi
 
 # If you change this, also update ARTICLES_URL in
 # ops/cloudflare/monitor/wrangler.toml — the monitor reads the published file
