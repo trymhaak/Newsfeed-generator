@@ -77,16 +77,40 @@ push_if_ahead() {
   local ahead
   ahead="$(git rev-list --count "origin/$BRANCH..HEAD" 2>/dev/null || echo 0)"
   if [[ "$ahead" != "0" ]]; then
+    local askpass=""
+    local rc=0
     if command -v gh >/dev/null 2>&1; then
-      GIT_TERMINAL_PROMPT=0 git \
-        -c credential.helper= \
-        -c credential.helper='!/opt/homebrew/bin/gh auth git-credential' \
-        push origin "$BRANCH"
+      askpass="$(mktemp -t newsfeed-git-askpass.XXXXXX)"
+      cat >"$askpass" <<'EOF'
+#!/bin/sh
+case "$1" in
+  *Username*) printf '%s\n' 'x-access-token' ;;
+  *Password*) /opt/homebrew/bin/gh auth token ;;
+  *) printf '\n' ;;
+esac
+EOF
+      chmod 700 "$askpass"
+      GIT_TERMINAL_PROMPT=0 GIT_ASKPASS="$askpass" git -c credential.helper= push origin "$BRANCH" || rc=$?
+      rm -f "$askpass"
+      if [[ "$rc" != "0" ]]; then
+        return "$rc"
+      fi
     elif [[ -n "${GITHUB_PAT:-}" ]]; then
-      GIT_TERMINAL_PROMPT=0 git \
-        -c credential.helper= \
-        -c credential.helper='!f() { echo username=x-access-token; echo password=$GITHUB_PAT; }; f' \
-        push origin "$BRANCH"
+      askpass="$(mktemp -t newsfeed-git-askpass.XXXXXX)"
+      cat >"$askpass" <<'EOF'
+#!/bin/sh
+case "$1" in
+  *Username*) printf '%s\n' 'x-access-token' ;;
+  *Password*) printf '%s\n' "$GITHUB_PAT" ;;
+  *) printf '\n' ;;
+esac
+EOF
+      chmod 700 "$askpass"
+      GIT_TERMINAL_PROMPT=0 GIT_ASKPASS="$askpass" git -c credential.helper= push origin "$BRANCH" || rc=$?
+      rm -f "$askpass"
+      if [[ "$rc" != "0" ]]; then
+        return "$rc"
+      fi
     else
       git push origin "$BRANCH"
     fi
