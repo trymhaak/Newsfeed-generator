@@ -27,6 +27,10 @@ export GIT_TERMINAL_PROMPT=0
 # under launchd, which cannot reach the GUI login Keychain.
 set -a; . "$HOME/.config/claude/oauth-token.env" 2>/dev/null || true; set +a
 
+# Headless ops secrets. In particular, GITHUB_PAT lets launchd push without the
+# GUI Keychain / osxkeychain prompt that otherwise fails with exit 128.
+eval "$(bash "$HOME/Claude/politipuls/scripts/load-secrets.sh" 2>/dev/null)" 2>/dev/null || true
+
 # If you change this, also update ARTICLES_URL in
 # ops/cloudflare/monitor/wrangler.toml — the monitor reads the published file
 # from a specific branch and would otherwise watch the wrong one.
@@ -69,7 +73,13 @@ push_if_ahead() {
   local ahead
   ahead="$(git rev-list --count "origin/$BRANCH..HEAD" 2>/dev/null || echo 0)"
   if [[ "$ahead" != "0" ]]; then
-    git push origin "$BRANCH"
+    if [[ -n "${GITHUB_PAT:-}" ]]; then
+      GIT_TERMINAL_PROMPT=0 git \
+        -c credential.helper='!f() { echo username=x-access-token; echo password=$GITHUB_PAT; }; f' \
+        push origin "$BRANCH"
+    else
+      git push origin "$BRANCH"
+    fi
     echo "[$(stamp)] pushed $ahead local commit(s) to origin/$BRANCH"
   fi
 }
