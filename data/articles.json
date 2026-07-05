@@ -1,6 +1,25 @@
 {
-  "generated_at": "2026-07-04T09:38:36.887Z",
+  "generated_at": "2026-07-05T23:19:30.374Z",
   "articles": [
+    {
+      "id": "core-infra-security-73cf9d0ad1",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/windows-365-boot/ba-p/4533696",
+      "published": "2026-07-04T17:01:23.000Z",
+      "ingested": "2026-07-05T23:19:30.324Z",
+      "title_original": "Windows 365 Boot",
+      "headline_no": "Windows 365 Boot kan nå finjusteres via Intune Settings Catalog",
+      "summary_no": "Windows 365 Boot gjør om en vanlig Windows 11-PC til en strømlinjeformet Cloud PC-kiosk styrt av Intune-policy, men kunne tidligere bare settes opp gjennom en låst veiviser i Intune-portalen. Nå ligger innstillingene i Settings Catalog, slik at admins kan konfigurere og finjustere Boot på lik linje med andre Intune-policyer. Det er nyttig for delte arbeidsstasjoner som hot-desk og callsenter, der brukeren skal rett inn i en dedikert Cloud PC uten den lokale Windows-opplevelsen.",
+      "topic": "endpoint",
+      "score": 49,
+      "tags": [
+        "windows-365",
+        "intune",
+        "cloud-pc",
+        "settings-catalog"
+      ]
+    },
     {
       "id": "msrc-update-guide-00e2b141c1",
       "source_id": "msrc-update-guide",
