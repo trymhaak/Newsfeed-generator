@@ -30,10 +30,36 @@ set -a; . "$HOME/.config/claude/oauth-token.env" 2>/dev/null || true; set +a
 # Headless ops secrets. In particular, GITHUB_PAT lets launchd push without the
 # GUI Keychain / osxkeychain prompt that otherwise fails with exit 128.
 eval "$(bash "$HOME/Claude/politipuls/scripts/load-secrets.sh" 2>/dev/null)" 2>/dev/null || true
-if [[ -z "${GITHUB_PAT:-}" ]] && command -v gh >/dev/null 2>&1; then
-  GITHUB_PAT="$(gh auth token 2>/dev/null || true)"
-  export GITHUB_PAT
-fi
+
+refresh_github_pat() {
+  if [[ -n "${GITHUB_PAT:-}" ]]; then
+    export GITHUB_PAT
+    return 0
+  fi
+
+  # Stable Hermes broker (Keychain-backed) survives Infisical/gh outages and is
+  # safe for headless launchd. Never print the token; only export it for git's
+  # transient askpass process.
+  local secret_bin="$HOME/.hermes/bin/secret"
+  if [[ -x "$secret_bin" ]]; then
+    GITHUB_PAT="$($secret_bin get GITHUB_PAT --path / --no-newline 2>/dev/null || true)"
+    if [[ -n "${GITHUB_PAT:-}" ]]; then
+      export GITHUB_PAT
+      return 0
+    fi
+  fi
+
+  if command -v gh >/dev/null 2>&1; then
+    GITHUB_PAT="$(gh auth token 2>/dev/null || true)"
+    if [[ -n "${GITHUB_PAT:-}" ]]; then
+      export GITHUB_PAT
+      return 0
+    fi
+  fi
+
+  return 1
+}
+refresh_github_pat || true
 
 # If you change this, also update ARTICLES_URL in
 # ops/cloudflare/monitor/wrangler.toml — the monitor reads the published file
@@ -77,10 +103,7 @@ push_if_ahead() {
   local ahead
   ahead="$(git rev-list --count "origin/$BRANCH..HEAD" 2>/dev/null || echo 0)"
   if [[ "$ahead" != "0" ]]; then
-    if [[ -z "${GITHUB_PAT:-}" ]] && [[ -x /opt/homebrew/bin/gh ]]; then
-      GITHUB_PAT="$(/opt/homebrew/bin/gh auth token 2>/dev/null || true)"
-      export GITHUB_PAT
-    fi
+    refresh_github_pat || true
     local askpass=""
     local rc=0
     if [[ -n "${GITHUB_PAT:-}" ]]; then
