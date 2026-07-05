@@ -48,6 +48,32 @@ interface Health {
   reason: string;
 }
 
+type FreshnessPayload = {
+  checked_at?: string;
+  generated_at?: string;
+  generated?: string;
+  content?: string;
+  encoding?: string;
+};
+
+function decodeFreshnessPayload(data: FreshnessPayload): FreshnessPayload {
+  // GitHub's contents API is a safer freshness source than raw branch URLs
+  // (raw.githubusercontent.com can serve stale branch-cache artifacts after a
+  // delayed push). With the raw Accept header it returns the file body, but keep
+  // a metadata fallback so future header/proxy changes do not false-alert.
+  if (typeof data.checked_at === 'string' || typeof data.generated_at === 'string' || typeof data.generated === 'string') {
+    return data;
+  }
+  if (data.encoding === 'base64' && typeof data.content === 'string') {
+    try {
+      return JSON.parse(atob(data.content.replace(/\s/g, ''))) as FreshnessPayload;
+    } catch (_err) {
+      return data;
+    }
+  }
+  return data;
+}
+
 async function checkFreshness(env: Env): Promise<Health> {
   const staleHours = Number(env.STALE_HOURS ?? '12');
   const source = env.STATUS_URL || env.ARTICLES_URL;
@@ -64,7 +90,10 @@ async function checkFreshness(env: Env): Promise<Health> {
   let res: Response;
   try {
     res = await fetch(source, {
-      headers: { 'user-agent': 'newsfeed-monitor/1.0' },
+      headers: {
+        accept: source.includes('api.github.com/') ? 'application/vnd.github.raw+json' : 'application/json',
+        'user-agent': 'newsfeed-monitor/1.0',
+      },
       cf: { cacheTtl: 0 },
     });
   } catch (err) {
@@ -74,11 +103,11 @@ async function checkFreshness(env: Env): Promise<Health> {
     return fail(`fetch ${source} returned HTTP ${res.status}`);
   }
 
-  let data: { checked_at?: string; generated_at?: string; generated?: string };
+  let data: FreshnessPayload;
   try {
-    data = (await res.json()) as { checked_at?: string; generated_at?: string; generated?: string };
+    data = decodeFreshnessPayload((await res.json()) as FreshnessPayload);
   } catch (err) {
-    return fail(`articles.json is not valid JSON: ${err instanceof Error ? err.message : String(err)}`);
+    return fail(`status/articles JSON is not valid JSON: ${err instanceof Error ? err.message : String(err)}`);
   }
 
   // Preferred: pipeline heartbeat `checked_at`. Fallback: legacy article-store

@@ -10,11 +10,11 @@ compatibility_date = "2026-06-01"
 crons = ["0 */3 * * *"]
 
 [vars]
-# Where to read the successful pipeline heartbeat. `HEAD` avoids a long-lived
-# Fastly cache artifact observed on the branch URL after a delayed push, while
-# still resolving to the default branch. The Worker falls back to ARTICLES_URL
-# when STATUS_URL is absent.
-STATUS_URL = "https://raw.githubusercontent.com/trymhaak/Newsfeed-generator/HEAD/data/pipeline-status.json"
+# Where to read the successful pipeline heartbeat. Use GitHub's contents API
+# instead of raw branch URLs: raw.githubusercontent.com can serve stale
+# branch-cache artifacts after a delayed push, while the API reflects the latest
+# branch tip and can return the raw file body with the Accept header in index.ts.
+STATUS_URL = "https://api.github.com/repos/trymhaak/Newsfeed-generator/contents/data/pipeline-status.json?ref=main"
 ARTICLES_URL = "https://raw.githubusercontent.com/trymhaak/Newsfeed-generator/HEAD/data/articles.json"
 STALE_HOURS = "12"
 REMINDER_HOURS = "24"
