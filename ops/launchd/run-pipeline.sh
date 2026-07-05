@@ -49,6 +49,41 @@ refresh_github_pat() {
     fi
   fi
 
+  # Some launchd sessions cannot read the user Keychain broker cache even when
+  # Hermes can. Fall back to the non-interactive Infisical machine identity (do
+  # not print values) before trying gh's interactive/auth-helper state.
+  local identity_env="$HOME/Claude/infisical/MACHINE_IDENTITY.local.env"
+  local infisical_value=""
+  if [[ -f "$identity_env" ]] && command -v infisical >/dev/null 2>&1; then
+    infisical_value="$(
+      set -a
+      # shellcheck disable=SC1090
+      source "$identity_env"
+      set +a
+      export INFISICAL_DISABLE_UPDATE_CHECK=true
+      T="$(infisical login --method=universal-auth \
+        --client-id="$INFISICAL_UNIVERSAL_AUTH_CLIENT_ID" \
+        --client-secret="$INFISICAL_UNIVERSAL_AUTH_CLIENT_SECRET" \
+        --domain="$INFISICAL_API_URL" \
+        --plain --silent 2>/dev/null || true)"
+      if [[ -n "$T" ]]; then
+        infisical secrets get GITHUB_PAT \
+          --projectId="$INFISICAL_PROJECT_ID" \
+          --env=prod \
+          --domain="$INFISICAL_API_URL" \
+          --token="$T" \
+          --path=/ \
+          --plain 2>/dev/null || true
+      fi
+      unset T
+    )"
+    if [[ -n "$infisical_value" ]]; then
+      GITHUB_PAT="$infisical_value"
+      export GITHUB_PAT
+      return 0
+    fi
+  fi
+
   if command -v gh >/dev/null 2>&1; then
     GITHUB_PAT="$(gh auth token 2>/dev/null || true)"
     if [[ -n "${GITHUB_PAT:-}" ]]; then
