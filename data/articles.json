@@ -1,6 +1,67 @@
 {
-  "generated_at": "2026-07-05T23:19:30.374Z",
+  "generated_at": "2026-07-06T11:21:39.012Z",
   "articles": [
+    {
+      "id": "janbakker-20831e2c3a",
+      "source_id": "janbakker",
+      "source_name": "JanBakker.tech",
+      "url": "https://janbakker.tech/kb-employeeleavedatetime-show-empty-null/",
+      "published": "2026-07-06T09:41:25.000Z",
+      "ingested": "2026-07-06T11:21:38.973Z",
+      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/07/image-2.png",
+      "title_original": "KB – employeeLeaveDateTime show empty (null)",
+      "headline_no": "Tomt employeeLeaveDateTime i Entra? Du mangler en Graph-tillatelse",
+      "summary_no": "Når employeeLeaveDateTime-attributtet vises som null i Entra ID, er årsaken som regel manglende tillatelser – attributtet er sensitivt og krever «User-LifeCycleInfo.Read.All» for å leses via Graph. Etter at samtykke er gitt, blir verdien synlig. Verdt å vite for admins som bygger livssyklus- eller offboarding-automatisering rundt sluttdatoer.",
+      "topic": "identitet",
+      "score": 29,
+      "tags": [
+        "entra",
+        "microsoft-graph",
+        "permissions",
+        "lifecycle"
+      ]
+    },
+    {
+      "id": "janbakker-82eb84dfc6",
+      "source_id": "janbakker",
+      "source_name": "JanBakker.tech",
+      "url": "https://janbakker.tech/why-windows-is-the-hardest-passkey-surface-in-2026-and-what-entra-admins-should-expect/",
+      "published": "2026-07-06T07:47:51.000Z",
+      "ingested": "2026-07-06T11:21:38.973Z",
+      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/07/image.gif",
+      "title_original": "Why Windows is the hardest passkey surface in 2026 and what Entra admins should expect",
+      "headline_no": "Windows er plattformen der passkeys feiler mest i 2026",
+      "summary_no": "Data fra store passkey-utrullinger viser at Windows har den laveste innloggingssuksessen av alle store plattformer i 2026 – Windows-brukere sliter der iPhone-brukere logger inn sømløst, selv med samme identitetsleverandør og policy. For Entra-admins som planlegger passkey-utrulling betyr det at Windows-flåten trolig genererer flest supporthenvendelser og bør pilottestes ekstra grundig.",
+      "topic": "identitet",
+      "score": 39,
+      "tags": [
+        "passkeys",
+        "entra",
+        "windows",
+        "authentication",
+        "fido2"
+      ]
+    },
+    {
+      "id": "office365-itpros-136851da27",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/06/dlp-move-to-quarantine-action/?utm_source=rss&utm_medium=rss&utm_campaign=dlp-move-to-quarantine-action",
+      "published": "2026-07-06T07:00:00.000Z",
+      "ingested": "2026-07-06T11:21:38.971Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/DLP-MOve-to-Quarantine-action.jpg?resize=840%2C356&#038;ssl=1",
+      "title_original": "Purview Data Loss Prevention Introduces File Quarantine",
+      "headline_no": "Purview DLP flytter regelbrytende filer i karantene – GA i juni",
+      "summary_no": "Purview DLP får en ny «flytt til karantene»-handling som isolerer filer som bryter DLP-policyer i et sikret SharePoint-område, i stedet for bare å blokkere dem. Originalfilen erstattes med en «tombstone»-tekstfil som forklarer for brukeren hva som skjedde og hvorfor. Funksjonen er i preview nå og settes i generell tilgjengelighet i starten av juni 2026 (MC1288527).",
+      "topic": "sikkerhet",
+      "score": 53,
+      "tags": [
+        "purview",
+        "dlp",
+        "sharepoint",
+        "compliance"
+      ]
+    },
     {
       "id": "core-infra-security-73cf9d0ad1",
       "source_id": "core-infra-security",
