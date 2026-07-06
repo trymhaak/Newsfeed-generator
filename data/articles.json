@@ -1,6 +1,85 @@
 {
-  "generated_at": "2026-07-06T17:24:13.455Z",
+  "generated_at": "2026-07-06T23:26:30.738Z",
   "articles": [
+    {
+      "id": "windows-insider-1bec377f7a",
+      "source_id": "windows-insider",
+      "source_name": "Windows Insider Blog",
+      "url": "https://blogs.windows.com/windows-insider/2026/07/06/announcing-new-builds-for-july-6-2026/",
+      "published": "2026-07-06T21:06:46.000Z",
+      "ingested": "2026-07-06T23:26:30.683Z",
+      "hero_image": "https://winblogs.thesourcemediaassets.com/sites/44/2026/07/cloudrebuildtroubleshoot.png",
+      "title_original": "Announcing new builds for July 6 2026",
+      "headline_no": "«Cloud rebuild» gjenoppretter Windows 11 selv når PC-en ikke starter",
+      "summary_no": "Microsoft tester Cloud rebuild i Experimental-kanalen: en gjenopprettingsfunksjon som installerer Windows 11 helt på nytt ved å laste ned både OS-image og enhetsdrivere fra Windows Update – også når Windows ikke starter. I motsetning til «Reset this PC» krever den verken USB-media eller eget image. For IT-admins betyr det enklere gjenoppretting av låste eller ødelagte endepunkter.",
+      "topic": "endpoint",
+      "score": 52,
+      "tags": [
+        "windows-11",
+        "windows-insider",
+        "cloud-rebuild",
+        "recovery"
+      ]
+    },
+    {
+      "id": "fasttrack-cbb97f5ffe",
+      "source_id": "fasttrack",
+      "source_name": "Microsoft FastTrack Blog",
+      "url": "https://techcommunity.microsoft.com/t5/fasttrack-blog/understanding-copilot-risk-mapping-exposure-across-zero-trust/ba-p/4534183",
+      "published": "2026-07-06T17:55:11.000Z",
+      "ingested": "2026-07-06T23:26:30.683Z",
+      "title_original": "Understanding Copilot Risk: Mapping Exposure Across Zero Trust Pillars",
+      "headline_no": "Copilot gir ingen nye rettigheter – men forsterker oversharing-risiko",
+      "summary_no": "Microsoft FastTrack forklarer at M365 Copilot ikke tildeler nye tilganger, men fungerer som en «force multiplier» som gjør det raskere å oppdage og samle sensitiv data brukere allerede har tilgang til. I miljøer med oversharing og svak styring kan det eksponere sensitiv informasjon bredere enn ventet. Posten anbefaler å kartlegge risikooverflaten – hvilke data som er eksponert, hvem som har tilgang og via hvilke vektorer – før Copilot skaleres ut.",
+      "topic": "ai",
+      "score": 42,
+      "tags": [
+        "copilot",
+        "zero-trust",
+        "data-governance",
+        "purview",
+        "oversharing"
+      ]
+    },
+    {
+      "id": "petervanderwoude-5f9af31445",
+      "source_id": "petervanderwoude",
+      "source_name": "All about Microsoft Intune (Peter van der Woude)",
+      "url": "https://petervanderwoude.nl/post/customizing-the-power-options-in-start-layout/",
+      "published": "2026-07-06T17:45:00.000Z",
+      "ingested": "2026-07-06T23:26:30.683Z",
+      "title_original": "Customizing the power options in Start layout",
+      "headline_no": "Slik styrer du strømvalgene i Start-menyen med Intune",
+      "summary_no": "Peter van der Woude viser hvordan IT-admins kan tilpasse strøm-valgene i Start-menyen via Intune. Det er sjelden nødvendig på vanlige klienter, men nyttig på delte enheter som kiosk- og Shared PC-oppsett der man vil begrense hva brukeren kan gjøre. Posten er en del av en serie om tilpasning av Start-layouten.",
+      "topic": "endpoint",
+      "score": 32,
+      "tags": [
+        "intune",
+        "start-layout",
+        "kiosk",
+        "shared-pc"
+      ]
+    },
+    {
+      "id": "msrc-blog-9416dfd671",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/06/5-insights-from-frost-sullivans-2025-frost-radar-for-cloud-security-posture-management/",
+      "published": "2026-07-06T16:00:00.000Z",
+      "ingested": "2026-07-06T23:26:30.681Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/Cloud-Security-Posture-Management-2025-Radar-Image_Microsoft-Final.webp",
+      "title_original": "5 insights from Frost & Sullivan’s 2025 Frost Radar™ for Cloud Security Posture Management",
+      "headline_no": "Frost & Sullivan: CSPM-markedet mer enn dobles innen 2030",
+      "summary_no": "Frost & Sullivans 2025 Frost Radar for Cloud Security Posture Management spår at CSPM-markedet vokser fra 2,82 til 6,96 milliarder dollar innen 2030, og plasserer Microsoft blant lederne. Rapporten peker på et skifte fra periodisk compliance til kontinuerlig, risikobasert styring inne i CNAPP-plattformer. For admins er dette først og fremst markeds- og posisjoneringsstoff, ikke en konkret endring å handle på.",
+      "topic": "sikkerhet",
+      "score": 30,
+      "tags": [
+        "cspm",
+        "cnapp",
+        "defender-for-cloud",
+        "frost-radar"
+      ]
+    },
     {
       "id": "vasil-michev-2f2c2ce558",
       "source_id": "vasil-michev",
