@@ -1,6 +1,65 @@
 {
-  "generated_at": "2026-07-06T11:21:39.012Z",
+  "generated_at": "2026-07-06T17:24:13.455Z",
   "articles": [
+    {
+      "id": "vasil-michev-2f2c2ce558",
+      "source_id": "vasil-michev",
+      "source_name": "Vasil Michev — Michev.info",
+      "url": "https://michev.info/blog/post/8055/first-look-at-the-sharepoint-api-usage-report",
+      "published": "2026-07-06T14:09:39.000Z",
+      "ingested": "2026-07-06T17:24:13.421Z",
+      "hero_image": "https://michev.info/wp-content/uploads/2026/07/SharePointAPIUsage.png",
+      "title_original": "First look at the SharePoint API usage report",
+      "headline_no": "Ny beta-rapport viser SharePoint API-bruk — men krever manuell aktivering",
+      "summary_no": "En ny SharePoint API Usage-rapport er nå tilgjengelig i Graph beta og viser hvordan apper bruker SharePoint-API-ene i tenanten din. Rapporten er avslått som standard og må aktiveres via de nye rapportinnstillingene med ReportSettings.ReadWrite.All-tillatelse. Verdt å merke seg: endepunktene håndhever foreløpig ikke de dokumenterte tillatelsene, så en global admin kan skru den på uansett.",
+      "topic": "sikkerhet",
+      "score": 36,
+      "tags": [
+        "sharepoint",
+        "graph-api",
+        "rapportering",
+        "beta"
+      ]
+    },
+    {
+      "id": "core-infra-security-3ac012e600",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/turning-azure-policy-signals-into-actionable-governance-insights/ba-p/4534126",
+      "published": "2026-07-06T12:40:50.000Z",
+      "ingested": "2026-07-06T17:24:13.422Z",
+      "title_original": "Turning Azure Policy Signals into Actionable Governance Insights",
+      "headline_no": "Azure Policy: koble samsvarsdata med tilordninger for reell innsikt",
+      "summary_no": "Azure Policy forteller deg hva som bryter reglene, men sjelden hvorfor det betyr noe. Ved å koble PolicyStates mot PolicyAssignments i Azure Resource Graph får du frem hvilken kontroll som feilet, i hvilket scope, og hvem som bør handle. Bloggen viser hvordan policy-rapportering løftes fra ren statuslogg til et styringslag for store miljøer.",
+      "topic": "sikkerhet",
+      "score": 43,
+      "tags": [
+        "azure-policy",
+        "governance",
+        "compliance",
+        "azure-resource-graph"
+      ]
+    },
+    {
+      "id": "call4cloud-e784841df2",
+      "source_id": "call4cloud",
+      "source_name": "Call4Cloud (Rudy Ooms)",
+      "url": "https://patchmypc.com/blog/how-controlled-feature-rollout-actually-works/",
+      "published": "2026-07-06T11:13:29.000Z",
+      "ingested": "2026-07-06T17:24:13.422Z",
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image-36.png",
+      "title_original": "A Deep Dive into Controlled Feature Rollout: Why Features are turned off by default",
+      "headline_no": "Derfor skrur Windows nye funksjoner av som standard — CFR forklart",
+      "summary_no": "Rudy Ooms går i dybden på Controlled Feature Rollout (CFR), mekanismen som gjør at Microsoft ruller ut nye Windows-funksjoner og hotfixes gradvis og avslått som standard. Innlegget forklarer hvordan en enkelt enhet avgjør når den skal få en ny funksjon, slik at admins forstår hvorfor funksjoner dukker opp til ulik tid på tvers av flåten.",
+      "topic": "endpoint",
+      "score": 36,
+      "tags": [
+        "windows",
+        "cfr",
+        "feature-rollout",
+        "hotfix"
+      ]
+    },
     {
       "id": "janbakker-20831e2c3a",
       "source_id": "janbakker",
