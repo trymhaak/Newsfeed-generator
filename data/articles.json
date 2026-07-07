@@ -1,6 +1,309 @@
 {
-  "generated_at": "2026-07-07T05:28:34.021Z",
+  "generated_at": "2026-07-07T11:37:20.447Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-99f658d9ab",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9080",
+      "published": "2026-07-07T08:43:20.000Z",
+      "ingested": "2026-07-07T11:35:31.287Z",
+      "title_original": "CVE-2026-9080 UAF after pause in socket callback",
+      "headline_no": "Bruk-etter-frigjøring i curl kan utnyttes via socket-callback",
+      "summary_no": "En use-after-free i curl (CVE-2026-9080) trigges etter en pause i socket-callbacken, og kan i verste fall gi krasj eller kjøring av kode. Minnesikkerhetsfeil i et bibliotek som følger med Windows bør prioriteres når oppdateringen kommer.",
+      "topic": "sikkerhet",
+      "score": 50,
+      "tags": [
+        "curl",
+        "use-after-free",
+        "memory-safety",
+        "cve-2026-9080"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-4ee1bf57df",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8926",
+      "published": "2026-07-07T08:43:09.000Z",
+      "ingested": "2026-07-07T11:35:31.287Z",
+      "title_original": "CVE-2026-8926 password leak with netrc and user in URL",
+      "headline_no": "Curl kan lekke passord fra .netrc når brukernavn ligger i URL-en",
+      "summary_no": "CVE-2026-8926 gjør at curl kan lekke legitimasjon fra .netrc-filen når et brukernavn oppgis direkte i URL-en. For admins som bruker curl i skript og pipelines betyr det risiko for utilsiktet kredential-lekkasje til feil vert.",
+      "topic": "sikkerhet",
+      "score": 45,
+      "tags": [
+        "curl",
+        "netrc",
+        "credential-leak",
+        "cve-2026-8926"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-e64e5d1bf3",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-10536",
+      "published": "2026-07-07T08:42:55.000Z",
+      "ingested": "2026-07-07T11:32:30.033Z",
+      "title_original": "CVE-2026-10536 HTTP/2 stream-dependency tree UAF",
+      "headline_no": "Use-after-free i HTTP/2-avhengighetstre kan krasje klienter (CVE-2026-10536)",
+      "summary_no": "CVE-2026-10536 er en use-after-free i håndteringen av HTTP/2 sitt stream-dependency-tre, som kan utnyttes til å krasje eller potensielt kjøre kode i sårbare klienter. Minnekorrupsjon gjør denne alvorligere enn de øvrige tilkoblings-CVE-ene i samme oppdatering. Prioriter patching så snart MSRC publiserer oppdatering og alvorlighetsgrad.",
+      "topic": "sikkerhet",
+      "score": 63,
+      "tags": [
+        "cve-2026-10536",
+        "http2",
+        "use-after-free",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-854581281c",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8286",
+      "published": "2026-07-07T08:42:34.000Z",
+      "ingested": "2026-07-07T11:35:31.287Z",
+      "title_original": "CVE-2026-8286 wrong STARTTLS connection reuse",
+      "headline_no": "Curl-feil kan gjenbruke STARTTLS-tilkobling og lekke trafikk",
+      "summary_no": "CVE-2026-8286 beskriver at curl kan gjenbruke en tilkobling som ble opprettet via STARTTLS på feil grunnlag, slik at data kan sendes over en mindre sikker kanal enn forventet. Curl.exe følger med Windows, så IT-avdelinger bør merke seg patchen når MSRC fyller ut detaljene.",
+      "topic": "sikkerhet",
+      "score": 43,
+      "tags": [
+        "curl",
+        "starttls",
+        "cve-2026-8286"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-f66d27f01b",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8458",
+      "published": "2026-07-07T08:42:14.000Z",
+      "ingested": "2026-07-07T11:32:30.033Z",
+      "title_original": "CVE-2026-8458 wrong reuse for different services",
+      "headline_no": "Tilkobling kan gjenbrukes mot feil tjeneste (CVE-2026-8458)",
+      "summary_no": "CVE-2026-8458 gjelder feilaktig gjenbruk av tilkoblinger på tvers av ulike tjenester, der en etablert forbindelse kan brukes til en forespørsel mot en annen tjeneste enn tiltenkt. Det åpner for at data eller autentisering kan havne hos feil mottaker. Miljøer med mange utgående HTTP-forespørsler bør prioritere oppdateringen når patch er tilgjengelig.",
+      "topic": "sikkerhet",
+      "score": 57,
+      "tags": [
+        "cve-2026-8458",
+        "connection-reuse",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-9152faeaf4",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8924",
+      "published": "2026-07-07T08:41:55.000Z",
+      "ingested": "2026-07-07T11:32:30.033Z",
+      "title_original": "CVE-2026-8924 trailing dot domain super cookie",
+      "headline_no": "Punktum i domenenavn kan lage «super-cookie» på tvers (CVE-2026-8924)",
+      "summary_no": "CVE-2026-8924 beskriver hvordan et etterfølgende punktum i domenenavnet kan få en informasjonskapsel til å behandles som en «super-cookie» med bredere rekkevidde enn den skal ha. Det kan lekke cookie-data mellom domener og svekke isolasjonen mellom tjenester. Sikkerhetsteam bør merke seg saken for klienter som håndterer cookies mot Microsoft-tjenester.",
+      "topic": "sikkerhet",
+      "score": 54,
+      "tags": [
+        "cve-2026-8924",
+        "cookies",
+        "domener",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-c6185fb852",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8932",
+      "published": "2026-07-07T08:41:30.000Z",
+      "ingested": "2026-07-07T11:32:30.032Z",
+      "title_original": "CVE-2026-8932 incomplete mTLS config matching in conn reuse",
+      "headline_no": "Ufullstendig mTLS-sjekk kan gjenbruke feil tilkobling (CVE-2026-8932)",
+      "summary_no": "CVE-2026-8932 beskriver en feil der mTLS-konfigurasjon ikke matches fullstendig ved gjenbruk av tilkoblinger, slik at en eksisterende forbindelse kan gjenbrukes selv om klientsertifikat-innstillingene avviker. Det kan føre til at forespørsler sendes over en tilkobling med feil klientidentitet. Relevant for miljøer som bruker gjensidig TLS mot backend-tjenester; se MSRC for patch-status.",
+      "topic": "sikkerhet",
+      "score": 58,
+      "tags": [
+        "cve-2026-8932",
+        "mtls",
+        "connection-reuse",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-a7af6cebfd",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9545",
+      "published": "2026-07-07T08:41:09.000Z",
+      "ingested": "2026-07-07T11:32:30.032Z",
+      "title_original": "CVE-2026-9545 exposing HTTP/3 early data",
+      "headline_no": "HTTP/3 early data-feil kan eksponere sendte data (CVE-2026-9545)",
+      "summary_no": "MSRC har publisert CVE-2026-9545, en sårbarhet der HTTP/3 early data (0-RTT) kan eksponere data som ble sendt før tilkoblingen var fullført. Angripere kan potensielt fange opp eller reprisere forespørsler sendt som early data. Detaljene var sparsomme ved publisering – følg MSRC for alvorlighetsgrad og patch-status.",
+      "topic": "sikkerhet",
+      "score": 54,
+      "tags": [
+        "cve-2026-9545",
+        "http3",
+        "early-data",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-1ddb537ff8",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39827",
+      "published": "2026-07-07T08:40:36.000Z",
+      "ingested": "2026-07-07T11:37:20.394Z",
+      "title_original": "CVE-2026-39827 Invoking  memory leak when rejecting channels can lead to DoS in golang.org/x/crypto/ssh",
+      "headline_no": "Minnelekkasje i Go-SSH-bibliotek kan velte tjenester med tjenestenekt",
+      "summary_no": "En minnelekkasje i golang.org/x/crypto/ssh oppstår når kanaler avvises, og kan tømme tjenesten for minne slik at den går ned (DoS). Driftsteam som eksponerer Go-baserte SSH-endepunkter bør oppdatere biblioteket for å hindre at angripere utmatter ressursene.",
+      "topic": "sikkerhet",
+      "score": 50,
+      "tags": [
+        "cve-2026-39827",
+        "golang",
+        "ssh",
+        "dos"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-f111ac09c1",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25681",
+      "published": "2026-07-07T08:40:29.000Z",
+      "ingested": "2026-07-07T11:37:20.394Z",
+      "title_original": "CVE-2026-25681 Invoking  incorrect handling of character references in DOCTYPE nodes in golang.org/x/net/html",
+      "headline_no": "Go-bibliotek feiltolker DOCTYPE-tegn — kan åpne for HTML-injeksjon",
+      "summary_no": "Go-pakken golang.org/x/net/html håndterer tegnreferanser i DOCTYPE-noder feil, noe som kan gi parser-avvik og åpne for HTML- eller skriptinjeksjon i tjenester som saniterer eller videresender HTML. Utviklere og driftsteam bør oppdatere avhengigheten i berørte Go-baserte tjenester.",
+      "topic": "sikkerhet",
+      "score": 47,
+      "tags": [
+        "cve-2026-25681",
+        "golang",
+        "html",
+        "injeksjon"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-4718b06add",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14647",
+      "published": "2026-07-07T08:01:44.000Z",
+      "ingested": "2026-07-07T11:37:20.394Z",
+      "title_original": "CVE-2026-14647 onnx onnxruntime old.cc convPoolShapeInference_opset19 out-of-bounds",
+      "headline_no": "Sårbarhet i ONNX Runtime lar ondsinnede ML-modeller utløse minnefeil",
+      "summary_no": "En out-of-bounds-lesing i ONNX Runtimes forminferens (convPoolShapeInference, opset 19) kan trigges av spesiallagde modeller og føre til krasj eller informasjonslekkasje. Virksomheter som kjører AI-inferens på ONNX – inkludert flere Microsoft-tjenester og Windows ML – bør oppdatere til rettet versjon.",
+      "topic": "sikkerhet",
+      "score": 50,
+      "tags": [
+        "cve-2026-14647",
+        "onnx-runtime",
+        "ml",
+        "out-of-bounds"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-4dec2348d9",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12480",
+      "published": "2026-07-07T08:01:38.000Z",
+      "ingested": "2026-07-07T11:35:31.287Z",
+      "title_original": "CVE-2026-12480 Arbitrary HDF5 File Read via Virtual Dataset Bypass in keras-team/keras",
+      "headline_no": "Keras-sårbarhet gir vilkårlig fillesing via virtuelt datasett",
+      "summary_no": "En «virtual dataset»-omgåelse i keras-team/keras (CVE-2026-12480) gjør at en ondsinnet HDF5-modellfil kan lese vilkårlige filer på systemet ved innlasting. Team som laster inn ikke-klarerte modeller i ML-pipelines bør oppgradere; relevansen for Microsoft-admins er begrenset.",
+      "topic": "sikkerhet",
+      "score": 36,
+      "tags": [
+        "keras",
+        "hdf5",
+        "arbitrary-file-read",
+        "cve-2026-12480"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-1e56e39fc5",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54891",
+      "published": "2026-07-07T08:01:28.000Z",
+      "ingested": "2026-07-07T11:37:20.394Z",
+      "title_original": "CVE-2026-54891 Plaintext APPLICATION_DATA injected during TLS handshake delivered to client application post-handshake in ssl",
+      "headline_no": "TLS-svakhet lar angriper injisere klartekst-data i økten etter handshake",
+      "summary_no": "En feil i TLS-håndteringen gjør at klartekst APPLICATION_DATA injisert under handshaket blir levert til klientapplikasjonen etter at økten er etablert. Det kan gi en mann-i-midten mulighet til å smugle inn data i en ellers kryptert forbindelse, og IT-admins bør patche berørte TLS-biblioteker raskt.",
+      "topic": "sikkerhet",
+      "score": 61,
+      "tags": [
+        "cve-2026-54891",
+        "tls",
+        "mitm",
+        "kryptering"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-9a3aeab2f5",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54886",
+      "published": "2026-07-07T08:01:22.000Z",
+      "ingested": "2026-07-07T11:35:31.287Z",
+      "title_original": "CVE-2026-54886 SSH SFTP server denial of service via extended channel data infinite loop",
+      "headline_no": "SFTP-server kan tvinges i evig løkke og nekte tjeneste",
+      "summary_no": "CVE-2026-54886 lar en angriper drive en SSH SFTP-server inn i en uendelig løkke via «extended channel data», noe som fører til tjenestenekt. Miljøer som eksponerer SSH/SFTP bør vurdere rettelsen så snart den er tilgjengelig.",
+      "topic": "sikkerhet",
+      "score": 49,
+      "tags": [
+        "ssh",
+        "sftp",
+        "denial-of-service",
+        "cve-2026-54886"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-8bfcacafde",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55952",
+      "published": "2026-07-07T08:01:15.000Z",
+      "ingested": "2026-07-07T11:35:31.287Z",
+      "title_original": "CVE-2026-55952 TLS 1.3 server denial of service via malformed ClientHello pre-shared key extension",
+      "headline_no": "Ugyldig ClientHello kan slå ut TLS 1.3-servere via PSK-utvidelse",
+      "summary_no": "CVE-2026-55952 lar en angriper sende en misdannet «pre-shared key»-utvidelse i ClientHello og dermed ta ned en TLS 1.3-server. Tjenesteutfall utløst av én enkelt uautentisert forespørsel gjør dette verdt å patche raskt på eksponerte endepunkter.",
+      "topic": "sikkerhet",
+      "score": 54,
+      "tags": [
+        "tls",
+        "denial-of-service",
+        "tls1.3",
+        "cve-2026-55952"
+      ]
+    },
+    {
+      "id": "office365-itpros-c848c9a204",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/07/calendar-agent-disappoints/?utm_source=rss&utm_medium=rss&utm_campaign=calendar-agent-disappoints",
+      "published": "2026-07-07T07:00:00.000Z",
+      "ingested": "2026-07-07T11:32:30.031Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/image.png?resize=840%2C351&#038;ssl=1",
+      "title_original": "The Sadly Unfulfilled Promise of the Outlook Calendar Agent",
+      "headline_no": "Outlook-kalenderagenten skuffer: sliter med å planlegge møter",
+      "summary_no": "Tony Redmond har testet Microsofts Outlook-kalenderagent siden lanseringen i april 2026, men opplever at den fortsatt sliter med grunnleggende møteplanlegging. En sentral begrensning er at M365-koblinger kan lese, men ikke skrive til brukerkalendere, noe som hindrer ekte agentisk planlegging. IT-admins som vurderer Copilot-agenter bør justere forventningene til hva som faktisk fungerer i dag.",
+      "topic": "ai",
+      "score": 39,
+      "tags": [
+        "copilot",
+        "outlook",
+        "m365-agenter",
+        "kalender"
+      ]
+    },
     {
       "id": "m365-roadmap-2be42aa511",
       "source_id": "m365-roadmap",
