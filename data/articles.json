@@ -1,6 +1,63 @@
 {
-  "generated_at": "2026-07-06T23:26:30.738Z",
+  "generated_at": "2026-07-07T05:28:34.021Z",
   "articles": [
+    {
+      "id": "m365-roadmap-2be42aa511",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567316",
+      "published": "2026-07-06T23:00:50.000Z",
+      "ingested": "2026-07-07T05:28:33.971Z",
+      "title_original": "Outlook: Notification when not responding to most recent message of email thread",
+      "headline_no": "Outlook varsler når du svarer på en gammel melding i tråden",
+      "summary_no": "Nye Outlook for Windows og web viser nå et varsel dersom du svarer på en melding som ikke er den siste i en e-posttråd. Målet er å hindre at brukere svarer på feil melding i lange samtaler. Funksjonen er ventet generelt tilgjengelig i august 2026.",
+      "topic": "endpoint",
+      "score": 29,
+      "tags": [
+        "outlook",
+        "e-post",
+        "new-outlook",
+        "m365"
+      ]
+    },
+    {
+      "id": "m365-roadmap-a5d550ac1f",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567121",
+      "published": "2026-07-06T23:00:50.000Z",
+      "ingested": "2026-07-07T05:28:33.972Z",
+      "title_original": "Microsoft Copilot (Microsoft 365): Microsoft 365 admin center - Usage reports - Copilot Chat for GCC, GCC High and DoD",
+      "headline_no": "Bruksrapport for Copilot Chat kommer til GCC, GCC High og DoD",
+      "summary_no": "Microsoft 365 admin-senter får en ny bruksrapport for Copilot Chat i myndighetsskyene GCC, GCC High og DoD. Rapporten viser aktive brukere, bruk fordelt per Microsoft 365-app og aktivitet på brukernivå (anonymisert som standard). Gir admins innsikt i Copilot-adopsjon uten separate verktøy. GA juli 2026.",
+      "topic": "ai",
+      "score": 32,
+      "tags": [
+        "copilot",
+        "gcc",
+        "bruksrapport",
+        "m365-admin"
+      ]
+    },
+    {
+      "id": "m365-roadmap-910f9df1c1",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567120",
+      "published": "2026-07-06T23:00:50.000Z",
+      "ingested": "2026-07-07T05:28:33.972Z",
+      "title_original": "Microsoft Copilot (Microsoft 365): Microsoft 365 admin center – New Microsoft 365 Copilot usage report for GCC High & DoD",
+      "headline_no": "Ny bruksrapport for Microsoft 365 Copilot til GCC High og DoD",
+      "summary_no": "GCC High- og DoD-skyene får en egen bruksrapport for Microsoft 365 Copilot i admin-senteret. Rapporten dekker både aktiverte og aktive brukere, bruk per Microsoft 365-app og aktivitet på brukernivå (anonymisert som standard). Hjelper admins å følge opp lisensbruk og adopsjon i regulerte miljøer. GA juli 2026.",
+      "topic": "ai",
+      "score": 32,
+      "tags": [
+        "copilot",
+        "gcc-high",
+        "dod",
+        "bruksrapport"
+      ]
+    },
     {
       "id": "windows-insider-1bec377f7a",
       "source_id": "windows-insider",
