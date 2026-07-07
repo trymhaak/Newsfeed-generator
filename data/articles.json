@@ -1,6 +1,84 @@
 {
-  "generated_at": "2026-07-07T11:37:20.447Z",
+  "generated_at": "2026-07-07T23:40:15.584Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-a3821ad0e9",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45638",
+      "published": "2026-07-07T14:00:00.000Z",
+      "ingested": "2026-07-07T23:40:15.536Z",
+      "title_original": "CVE-2026-45638 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+      "headline_no": "Rettighetseskalering i Windows WinSock-driver (CVE-2026-45638)",
+      "summary_no": "Microsoft har oppdatert MSRC-oppføringen for CVE-2026-45638, en rettighetseskaleringssårbarhet i Windows-driveren Ancillary Function Driver for WinSock. Endringen gjelder kun en oppdatert anerkjennelse og er rent informativ — ingen ny patch eller endret risiko. AFD-feil er en klassisk lokal eskaleringsvektor, men denne revisjonen krever ingen handling.",
+      "topic": "sikkerhet",
+      "score": 27,
+      "tags": [
+        "cve-2026-45638",
+        "msrc",
+        "windows",
+        "winsock",
+        "eop"
+      ]
+    },
+    {
+      "id": "o365reports-a1d4281fc7",
+      "source_id": "o365reports",
+      "source_name": "Office 365 Reports (AdminDroid)",
+      "url": "https://o365reports.com/how-to-find-which-microsoft-365-service-created-a-sharepoint-online-site/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-find-which-microsoft-365-service-created-a-sharepoint-online-site",
+      "published": "2026-07-07T13:55:53.000Z",
+      "ingested": "2026-07-07T23:40:15.533Z",
+      "hero_image": "https://o365reports.com/wp-content/uploads/2026/07/CreationSourceFromSPO-300x121.png",
+      "title_original": "How to Find Which Service Created a Site in SharePoint Online",
+      "headline_no": "Slik finner du hvilken tjeneste som opprettet et SharePoint-område",
+      "summary_no": "SharePoint-områder opprettes ikke bare fra admin-senteret — Teams, M365-grupper, Viva Engage og API-er kan provisjonere områder automatisk. Denne guiden viser hvordan du sporer opprettelseskilden fra SharePoint admin-senteret. Nyttig for revisjon, feilsøking og styring når antallet områder vokser.",
+      "topic": "identitet",
+      "score": 24,
+      "tags": [
+        "sharepoint",
+        "governance",
+        "m365",
+        "revisjon"
+      ]
+    },
+    {
+      "id": "prajwal-desai-cd0eef1be1",
+      "source_id": "prajwal-desai",
+      "source_name": "Prajwal Desai",
+      "url": "https://www.prajwaldesai.com/configuration-manager-collection-size-limits/",
+      "published": "2026-07-07T11:58:55.000Z",
+      "ingested": "2026-07-07T23:40:15.536Z",
+      "title_original": "Configure Collection Size Limits in Configuration Manager",
+      "headline_no": "Slik setter du størrelsesgrenser for samlinger i Configuration Manager",
+      "summary_no": "Prajwal Desai forklarer hva størrelsesgrenser for samlinger i Configuration Manager er, hvorfor de betyr noe, og hvordan du konfigurerer dem. Grensene hindrer at store eller feilkonfigurerte samlinger belaster site-serveren unødvendig. En grunnleggende, men praktisk guide for ConfigMgr-administratorer.",
+      "topic": "endpoint",
+      "score": 25,
+      "tags": [
+        "configuration-manager",
+        "sccm",
+        "samlinger",
+        "endpoint"
+      ]
+    },
+    {
+      "id": "core-infra-security-520419e78a",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/azure-database-security-newsletter-july-2026/ba-p/4534477",
+      "published": "2026-07-07T11:47:08.000Z",
+      "ingested": "2026-07-07T23:40:15.536Z",
+      "title_original": "Azure Database Security Newsletter - July 2026",
+      "headline_no": "AI-agenter blir databasebrukere — slik endres Azure-sikkerheten",
+      "summary_no": "Juli-utgaven av Azure Database Security Newsletter tar for seg hvordan autonome AI-agenter blir en ny type databasebruker som genererer spørringer dynamisk og forsterker eksisterende risiko. Microsoft anbefaler identitet-først, minste privilegium, data-bevisst beskyttelse og kontinuerlig overvåking. En nyttig sjekkliste for team som åpner databasene sine for agent-arbeidsflyter.",
+      "topic": "sikkerhet",
+      "score": 40,
+      "tags": [
+        "azure-sql",
+        "database-security",
+        "ai-agenter",
+        "minste-privilegium"
+      ]
+    },
     {
       "id": "msrc-update-guide-99f658d9ab",
       "source_id": "msrc-update-guide",
