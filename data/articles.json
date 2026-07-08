@@ -1,6 +1,158 @@
 {
-  "generated_at": "2026-07-07T23:40:15.584Z",
+  "generated_at": "2026-07-08T05:44:22.621Z",
   "articles": [
+    {
+      "id": "ourcloudnetwork-c7cea4136c",
+      "source_id": "ourcloudnetwork",
+      "source_name": "Our Cloud Network (Daniel Bradley)",
+      "url": "https://ourcloudnetwork.com/why-you-shouldnt-bypass-mfa-for-your-office-ip-adresses/?utm_source=rss&utm_medium=rss&utm_campaign=why-you-shouldnt-bypass-mfa-for-your-office-ip-adresses",
+      "published": "2026-07-08T05:32:30.000Z",
+      "ingested": "2026-07-08T05:44:22.566Z",
+      "title_original": "Why you Shouldn’t bypass MFA for your office IP adresses",
+      "headline_no": "Derfor bør du ikke droppe MFA for kontorets IP-adresser",
+      "summary_no": "Et blogginnlegg forklarer hvorfor det å frita kontorets IP-adresser fra MFA skaper skjulte sikkerhetsrisikoer. Forfatteren viser hvordan Entra ID og Windows PRT sammen gir en trygg brukeropplevelse uten å svekke tilgangskontrollen. Nyttig lesning for admins som vurderer betrodde lokasjoner i Conditional Access.",
+      "topic": "identitet",
+      "score": 35,
+      "tags": [
+        "mfa",
+        "entra-id",
+        "conditional-access",
+        "prt"
+      ]
+    },
+    {
+      "id": "m365-roadmap-b60230f3cd",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567306",
+      "published": "2026-07-07T23:10:08.000Z",
+      "ingested": "2026-07-08T05:43:16.071Z",
+      "title_original": "Microsoft Teams: Enhanced delegated calling with delegate call access restrictions and join notifications",
+      "headline_no": "Teams: Stedfortredere kan låses ute fra pågående samtaler",
+      "summary_no": "Delegert oppringing i Teams får nye personvernkontroller: den som delegerer kan låse en aktiv samtale så stedfortredere ikke kan bli med eller gjenoppta den, og skru på varseltoner når en stedfortreder kobler seg på. Nyttig å kjenne til for brukere som håndterer sensitive samtaler på vegne av ledere. GA er satt til august 2026.",
+      "topic": "endpoint",
+      "score": 32,
+      "tags": [
+        "teams",
+        "delegert-oppringing",
+        "samtaler",
+        "personvern"
+      ]
+    },
+    {
+      "id": "m365-roadmap-6048729a38",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567010",
+      "published": "2026-07-07T23:10:08.000Z",
+      "ingested": "2026-07-08T05:43:16.073Z",
+      "title_original": "Microsoft Purview: Data Loss Prevention - User Based Aggregation of DLP Alerts",
+      "headline_no": "Purview samler DLP-varsler per bruker og demper varselstøyen",
+      "summary_no": "Purview kan snart slå sammen DLP-varsler for samme bruker selv når flere regler utløses samtidig, slik at relaterte hendelser havner i ett varselobjekt. Det kutter støy og forenkler etterforskning for sikkerhetsteam som drukner i duplikate varsler. Ventet GA i september 2026.",
+      "topic": "sikkerhet",
+      "score": 43,
+      "tags": [
+        "purview",
+        "dlp",
+        "varsler",
+        "secops"
+      ]
+    },
+    {
+      "id": "m365-roadmap-85dd3751d6",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567319",
+      "published": "2026-07-07T23:01:01.000Z",
+      "ingested": "2026-07-08T05:43:16.073Z",
+      "title_original": "Outlook: Categorize Emails by Dragging Them onto a Favorite Category",
+      "headline_no": "Nytt i Outlook: Dra e-post rett på favorittkategori for merking",
+      "summary_no": "Nye Outlook for Windows lar deg feste en kategori til Favoritter og dra e-poster rett oppå den for å merke dem i én bevegelse — uten menyer eller høyreklikk. En liten produktivitetsforbedring for sluttbrukere som kategoriserer mye e-post. GA i september 2026.",
+      "topic": "endpoint",
+      "score": 25,
+      "tags": [
+        "outlook",
+        "kategorier",
+        "produktivitet"
+      ]
+    },
+    {
+      "id": "m365-roadmap-fed1d25b98",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567318",
+      "published": "2026-07-07T23:01:01.000Z",
+      "ingested": "2026-07-08T05:43:16.073Z",
+      "title_original": "Outlook: Reply with a Template in Rules",
+      "headline_no": "Outlook-regler kan snart svare automatisk med ferdige maler",
+      "summary_no": "Du kan snart lage en Outlook-regel som automatisk svarer på innkommende e-post med en forhåndsdefinert mal ut fra vilkårene du setter. Praktisk for konsistente standardsvar uten å skrive det samme om og om igjen. Gjelder nye Outlook for Windows, med GA i september 2026.",
+      "topic": "endpoint",
+      "score": 29,
+      "tags": [
+        "outlook",
+        "regler",
+        "maler",
+        "automatisering"
+      ]
+    },
+    {
+      "id": "m365-roadmap-21b9728040",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567315",
+      "published": "2026-07-07T23:01:01.000Z",
+      "ingested": "2026-07-08T05:43:16.073Z",
+      "title_original": "Planner: Capabilities in Microsoft Cowork",
+      "headline_no": "Microsoft Cowork lar AI utføre Planner-oppgaver på tvers av M365",
+      "summary_no": "Planner kommer inn i Microsoft Cowork, der du kan se og redigere planer, bøtter, mål og oppgaver uten å bytte app. Cowork går lenger og kan utføre oppgavene på tvers av Microsoft 365 — skrive e-post, planlegge møter og poste i Teams — og skrive fremdrift tilbake til Planner etter din godkjenning. Et tydelig steg mot agentisk oppgavehåndtering, med GA i august 2026.",
+      "topic": "ai",
+      "score": 45,
+      "tags": [
+        "planner",
+        "cowork",
+        "ai",
+        "agenter"
+      ]
+    },
+    {
+      "id": "m365-roadmap-ad82a6f58f",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567313",
+      "published": "2026-07-07T23:01:01.000Z",
+      "ingested": "2026-07-08T05:43:16.073Z",
+      "title_original": "Microsoft Purview: Data Lifecycle Management - Graph API Support for Archive Mailboxes",
+      "headline_no": "Graph API åpner arkivpostkasser før EWS pensjoneres i oktober",
+      "summary_no": "Microsoft Graph får tilgang til arkivpostkasser — både hoved- og hjelpepostkasser — så brukere får én sømløs arkivvisning selv om dataene ligger spredt over flere postkasser. Timingen teller: EWS-baserte Graph-API-er fases ut innen oktober 2026, så team som henter arkivdata via EWS bør planlegge migrering nå. GA i august 2026.",
+      "topic": "sikkerhet",
+      "score": 46,
+      "tags": [
+        "purview",
+        "graph-api",
+        "ews",
+        "arkiv",
+        "deprecation"
+      ]
+    },
+    {
+      "id": "m365-roadmap-a67ee0d0c1",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566859",
+      "published": "2026-07-07T23:01:01.000Z",
+      "ingested": "2026-07-08T05:44:22.566Z",
+      "title_original": "Microsoft Copilot Studio: Use SharePoint lists as a knowledge source",
+      "headline_no": "Copilot Studio kan nå bruke SharePoint-lister som kunnskapskilde",
+      "summary_no": "Microsoft lar Copilot Studio-agenter hente kunnskap rett fra SharePoint-lister, uten manuell dataflytting eller kompliserte integrasjoner. Det gir mer presise, kontekstbevisste svar basert på ferske forretningsdata som oppgaver, lager og kunder. Preview kommer i juli 2026, med generell tilgjengelighet i september.",
+      "topic": "ai",
+      "score": 41,
+      "tags": [
+        "copilot-studio",
+        "sharepoint",
+        "copilot",
+        "preview"
+      ]
+    },
     {
       "id": "msrc-update-guide-a3821ad0e9",
       "source_id": "msrc-update-guide",
