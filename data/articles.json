@@ -1,6 +1,106 @@
 {
-  "generated_at": "2026-07-08T05:44:22.621Z",
+  "generated_at": "2026-07-08T17:50:18.501Z",
   "articles": [
+    {
+      "id": "msrc-blog-8ee9324ec5",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/08/protecting-microsoft-at-ai-speed-how-sfi-proactively-hardens-our-cloud/",
+      "published": "2026-07-08T17:00:00.000Z",
+      "ingested": "2026-07-08T17:47:35.148Z",
+      "title_original": "Protecting Microsoft at AI speed: How SFI proactively hardens our cloud",
+      "headline_no": "Microsoft bruker AI-agenter til å herde egen skyinfrastruktur",
+      "summary_no": "Microsoft har bygget et multi-agent AI-system som kontinuerlig evaluerer og herder selskapets egen skyinfrastruktur mot kravene i Secure Future Initiative. Systemet finner kodenivå-sårbarheter og verifiserer at sikkerhetskontroller faktisk virker i produksjon, i takt med at AI-drevet sårbarhetsjakt modnes. Dette er foreløpig en intern kapabilitet, ikke et kundeprodukt, men mønstrene skal etter hvert påvirke Microsofts produkter.",
+      "topic": "sikkerhet",
+      "score": 50,
+      "tags": [
+        "sfi",
+        "ai",
+        "cloud-security",
+        "msrc"
+      ]
+    },
+    {
+      "id": "windows-it-pro-64a4ab3ea0",
+      "source_id": "windows-it-pro",
+      "source_name": "Windows IT Pro Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-365-for-agents-a-secured-execution-environment-for-ai/ba-p/4529336",
+      "published": "2026-07-08T16:00:00.000Z",
+      "ingested": "2026-07-08T17:47:35.146Z",
+      "title_original": "Windows 365 for Agents: A secured execution environment for AI agents",
+      "headline_no": "Windows 365 for Agents gir AI-agenter sikret Cloud PC med egen identitet",
+      "summary_no": "Microsoft lanserer Windows 365 for Agents – sikrede, administrerte Cloud PC-er bygget spesielt for AI-agenter. Hver agent får sin egen Entra-identitet, atskilt fra menneskelige brukere, og styres med de samme kontrollene fra Intune, Defender og Purview som resten av flåten. For IT-admins betyr det at agentiske arbeidslaster kan kjøre innenfor kjente sikkerhets- og etterlevelsesgrenser i stedet for på uadministrerte maskiner.",
+      "topic": "ai",
+      "score": 68,
+      "tags": [
+        "windows-365",
+        "ai-agenter",
+        "cloud-pc",
+        "entra",
+        "agent-365"
+      ]
+    },
+    {
+      "id": "fasttrack-12504c62dd",
+      "source_id": "fasttrack",
+      "source_name": "Microsoft FastTrack Blog",
+      "url": "https://techcommunity.microsoft.com/t5/fasttrack-blog/limiting-microsoft-365-copilot-data-exposure-risk-with-zero/ba-p/4534642",
+      "published": "2026-07-08T14:48:12.000Z",
+      "ingested": "2026-07-08T17:50:18.451Z",
+      "hero_image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/dS0xMjkzMTEtMjAxMjgyaTRDRDk1ODBCNDJDQzQ3MjM?image-dimensions=120x120",
+      "title_original": "Limiting Microsoft 365 Copilot data exposure risk with Zero Trust apps and data controls",
+      "headline_no": "Slik hindrer du at Copilot lekker overdelt SharePoint-innhold",
+      "summary_no": "Microsoft FastTrack viser hvordan du begrenser dataeksponering når Microsoft 365 Copilot rulles ut — konkret det andre risikolaget, som handler om hvilke data Copilot faktisk kan lese. Kjernen er å rydde opp i overdelt SharePoint- og OneDrive-innhold og ta i bruk Purview (sensitivitetsetiketter og DLP), SharePoint Advanced Management, Entra ID Governance og Sentinel før Copilot skaleres. Poenget for admins: årevis med oversharing blir plutselig søkbart for enhver lisensiert bruker, så kontrollene må på plass før utrulling, ikke etter.",
+      "topic": "sikkerhet",
+      "score": 44,
+      "tags": [
+        "copilot",
+        "purview",
+        "dlp",
+        "zero-trust",
+        "oversharing"
+      ]
+    },
+    {
+      "id": "admindroid-ff6a3de5e5",
+      "source_id": "admindroid",
+      "source_name": "AdminDroid Blog",
+      "url": "https://blog.admindroid.com/how-to-deploy-powershell-scripts-in-microsoft-intune/",
+      "published": "2026-07-08T10:30:37.000Z",
+      "ingested": "2026-07-08T17:47:35.148Z",
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Deploy-PowerShell-Scripts-using-Microsoft-Intune-3-150x150.png",
+      "title_original": "How to Deploy PowerShell Scripts in Microsoft Intune",
+      "headline_no": "Slik distribuerer du PowerShell-skript til Windows via Intune",
+      "summary_no": "AdminDroid går gjennom de tre måtene å distribuere PowerShell-skript til Windows-enheter via Intune: platform scripts, remediations og Win32-apper. Guiden forklarer når hver metode passer – engangskjøring, kontinuerlig compliance-overvåking eller pakket distribusjon – og hvordan man følger med på kjørestatus per enhet. Praktisk oppslagsverk for admins som automatiserer oppgaver på tvers av flåten.",
+      "topic": "endpoint",
+      "score": 26,
+      "tags": [
+        "intune",
+        "powershell",
+        "endpoint",
+        "windows"
+      ]
+    },
+    {
+      "id": "office365-itpros-25e61caa0d",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/08/managers-and-direct-reports/?utm_source=rss&utm_medium=rss&utm_campaign=managers-and-direct-reports",
+      "published": "2026-07-08T07:00:00.000Z",
+      "ingested": "2026-07-08T17:47:35.148Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/02/Managers-and-Direct-Reports.jpg?resize=840%2C468&#038;ssl=1",
+      "title_original": "How to Report Managers and Direct Reports from Entra ID",
+      "headline_no": "Slik henter du ledere og direkterapporterende fra Entra ID med Graph",
+      "summary_no": "Tony Redmond oppdaterer sin guide for å rapportere ledere og direkterapporterende fra Entra ID, nå med Microsoft Graph i stedet for de utgåtte Azure AD-modulene. Artikkelen viser hvorfor den naive Get-MgUserDirectReport-tilnærmingen skalerer dårlig i større organisasjoner, og hvordan man gjør det mer effektivt. Nyttig for admins som bygger organisasjonsrapporter og er avhengige av korrekt utfylte manager-felt i Entra.",
+      "topic": "identitet",
+      "score": 32,
+      "tags": [
+        "entra-id",
+        "powershell",
+        "microsoft-graph",
+        "rapportering"
+      ]
+    },
     {
       "id": "ourcloudnetwork-c7cea4136c",
       "source_id": "ourcloudnetwork",
@@ -151,6 +251,46 @@
         "sharepoint",
         "copilot",
         "preview"
+      ]
+    },
+    {
+      "id": "entra-blog-a20b819fcf",
+      "source_id": "entra-blog",
+      "source_name": "Microsoft Entra Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/govern-ai-agent-identities-and-access-the-same-way-you-govern/ba-p/4529302",
+      "published": "2026-07-07T21:34:53.000Z",
+      "ingested": "2026-07-08T17:47:35.148Z",
+      "title_original": "Govern AI agent identities and access the same way you govern your employees",
+      "headline_no": "Entra gir AI-agenter egen identitet med navngitt menneskelig eier",
+      "summary_no": "Microsoft Entra får styring av AI-agenters identiteter og tilganger, allment tilgjengelig som en del av Microsoft Agent 365. Hver agent får en egen identitet med en navngitt menneskelig eier og styrt tilgang, slik at rettigheter ikke hoper seg opp over tid. IT-admins kan dermed governere agenter med samme livssyklus- og tilgangskontroll som ansatte.",
+      "topic": "identitet",
+      "score": 70,
+      "tags": [
+        "entra",
+        "ai-agenter",
+        "identity-governance",
+        "agent-365"
+      ]
+    },
+    {
+      "id": "fasttrack-103ad0da3e",
+      "source_id": "fasttrack",
+      "source_name": "Microsoft FastTrack Blog",
+      "url": "https://techcommunity.microsoft.com/t5/fasttrack-blog/mitigating-microsoft-365-copilot-access-risk-identity-and-device/ba-p/4534574",
+      "published": "2026-07-07T20:02:29.000Z",
+      "ingested": "2026-07-08T17:50:18.451Z",
+      "hero_image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/dS0xMjkzMTEtMjAxMjgyaTRDRDk1ODBCNDJDQzQ3MjM?image-dimensions=120x120",
+      "title_original": "Mitigating Microsoft 365 Copilot access risk: Identity and device controls for Zero Trust",
+      "headline_no": "Har du E5? Da eier du allerede kontrollene som sikrer Copilot",
+      "summary_no": "Andre del av FastTracks Zero Trust-serie for Copilot tar for seg det første risikolaget — hvem som i det hele tatt får tilgang til tjenesten — og de seks identitets- og enhetsrisikoene R1–R6. Budskapet er at E5-kunder allerede eier verktøyene som trengs (Entra ID, betinget tilgang, Intune og Defender); jobben er å konfigurere og avgrense dem bevisst før utrullingen skaleres. Hvorfor det haster: fordi Copilot opererer med brukerens fulle tilganger, kan én kompromittert eller uadministrert konto eksponere hele Microsoft 365-dataflaten.",
+      "topic": "identitet",
+      "score": 43,
+      "tags": [
+        "copilot",
+        "conditional-access",
+        "intune",
+        "entra",
+        "zero-trust"
       ]
     },
     {
@@ -589,6 +729,25 @@
         "gcc-high",
         "dod",
         "bruksrapport"
+      ]
+    },
+    {
+      "id": "windows-it-pro-37624fa7a7",
+      "source_id": "windows-it-pro",
+      "source_name": "Windows IT Pro Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-settings-backup-becoming-a-new-resilience-baseline/ba-p/4530757",
+      "published": "2026-07-06T21:45:48.000Z",
+      "ingested": "2026-07-08T17:47:35.148Z",
+      "title_original": "Windows settings backup becoming a new resilience baseline",
+      "headline_no": "Windows slår på innstillingsbackup som standard fra 26H2",
+      "summary_no": "Windows settings backup skrus på som standard for kvalifiserte enheter og blir allment tilgjengelig fra Windows 11 versjon 26H2. Innstillinger og listen over Microsoft Store-apper sikkerhetskopieres automatisk selv når policyen står som «Not Configured». Merk at gjenoppretting fortsatt krever eksplisitt admin-konfigurasjon – backup blir standard, men restore gjør det ikke.",
+      "topic": "endpoint",
+      "score": 60,
+      "tags": [
+        "windows-11",
+        "backup",
+        "26h2",
+        "resiliens"
       ]
     },
     {
