@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T17:50:18.501Z",
+  "generated_at": "2026-07-08T23:52:08.313Z",
   "articles": [
     {
       "id": "msrc-blog-8ee9324ec5",
@@ -59,6 +59,63 @@
         "dlp",
         "zero-trust",
         "oversharing"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-bb0f8dffd0",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42980",
+      "published": "2026-07-08T14:00:00.000Z",
+      "ingested": "2026-07-08T23:52:08.264Z",
+      "title_original": "CVE-2026-42980 NT OS Kernel Elevation of Privilege Vulnerability",
+      "headline_no": "Windows-kjerne: CVE-2026-42980 kan gi angripere hevede rettigheter",
+      "summary_no": "Microsoft har oppdatert oppføringen for CVE-2026-42980, en rettighetseskalering i NT OS-kjernen. Endringen er kun informativ (oppdatert anerkjennelse) og innebærer ingen ny fiks – systemer som allerede er patchet trenger ingen handling.",
+      "topic": "sikkerhet",
+      "score": 27,
+      "tags": [
+        "cve-2026-42980",
+        "windows-kernel",
+        "eop",
+        "privilegeeskalering"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-9679075e5e",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50656",
+      "published": "2026-07-08T14:00:00.000Z",
+      "ingested": "2026-07-08T23:52:08.266Z",
+      "title_original": "CVE-2026-50656 Microsoft Defender Elevation of Privilege Vulnerability",
+      "headline_no": "Defender-hull tettet: CVE-2026-50656 fikset i Malware Protection Engine",
+      "summary_no": "Microsoft har sluppet en oppdatering til Malware Protection Engine som tetter CVE-2026-50656, en rettighetseskalering i Microsoft Defender. Motoren oppdateres normalt automatisk, men admins bør verifisere at ny versjon er installert via Microsofts FAQ.",
+      "topic": "sikkerhet",
+      "score": 61,
+      "tags": [
+        "cve-2026-50656",
+        "defender",
+        "eop",
+        "malware-protection-engine"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-92180bdb99",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58525",
+      "published": "2026-07-08T14:00:00.000Z",
+      "ingested": "2026-07-08T23:52:08.266Z",
+      "title_original": "CVE-2026-58525 Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
+      "headline_no": "Edge-sårbarhet lar uautentisert angriper omgå sikkerhetsfunksjon over nettverk",
+      "summary_no": "CVE-2026-58525 er en svakhet i tilgangskontrollen i Chromium-baserte Microsoft Edge som lar en uautorisert angriper omgå en sikkerhetsfunksjon over nettverket. Oppdater Edge til nyeste versjon for å være beskyttet.",
+      "topic": "sikkerhet",
+      "score": 58,
+      "tags": [
+        "cve-2026-58525",
+        "edge",
+        "security-bypass",
+        "chromium"
       ]
     },
     {
