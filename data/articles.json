@@ -1,6 +1,65 @@
 {
-  "generated_at": "2026-07-08T23:52:08.313Z",
+  "generated_at": "2026-07-09T05:54:49.313Z",
   "articles": [
+    {
+      "id": "m365-roadmap-fb9563bced",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567314",
+      "published": "2026-07-08T23:10:57.000Z",
+      "ingested": "2026-07-09T05:54:49.248Z",
+      "title_original": "Microsoft Teams: SharePoint app in Teams",
+      "headline_no": "Teams åpner SharePoint-lenker i appen i stedet for mobilnettleser",
+      "summary_no": "Når en bruker klikker på en SharePoint-side eller nyhetslenke i Teams-chat eller -kanaler, åpnes lenken nå i SharePoint-appen inne i Teams i stedet for mobilnettleseren. Endringen holder brukerne i Teams-flyten på mobil og gir en mer sømløs navigasjon mellom innhold. Funksjonen står på veikartet med GA i august 2026.",
+      "topic": "endpoint",
+      "score": 29,
+      "tags": [
+        "teams",
+        "sharepoint",
+        "m365-roadmap",
+        "mobil"
+      ]
+    },
+    {
+      "id": "m365-roadmap-bd511e0364",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567311",
+      "published": "2026-07-08T23:10:57.000Z",
+      "ingested": "2026-07-09T05:54:49.250Z",
+      "title_original": "Microsoft Purview: Data Loss Prevention - Collection and DLP Policies for Intune-Policy Managed Apps",
+      "headline_no": "Purview utvider DLP til Intune-beskyttede mobilapper",
+      "summary_no": "Microsoft integrerer Purview Data Loss Prevention med Intune Mobile Application Management (MAM), slik at innholdsbevisste policyer kan beskytte sensitive data i administrerte mobilapper. Utklippstavle-handlinger i beskyttede apper evalueres mot DLP-policyer før deling tillates, noe som demper datalekkasje og innsiderisiko i mobile arbeidsflyter. Collection policies lar organisasjoner styre håndteringen av sensitive data, med GA på veikartet i september 2026.",
+      "topic": "sikkerhet",
+      "score": 46,
+      "tags": [
+        "purview",
+        "dlp",
+        "intune",
+        "mam",
+        "mobil"
+      ]
+    },
+    {
+      "id": "defender-office365-189b5c6eeb",
+      "source_id": "defender-office365",
+      "source_name": "Microsoft Defender for Office 365 Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/defending-the-inbox-against-prompt-injection-attacks/ba-p/4534636",
+      "published": "2026-07-08T18:16:22.000Z",
+      "ingested": "2026-07-09T05:54:49.250Z",
+      "title_original": "Defending the Inbox Against Prompt Injection Attacks",
+      "headline_no": "Defender stopper prompt injection-angrep i e-post før de når innboksen",
+      "summary_no": "Microsoft Defender kan nå oppdage og isolere ondsinnede AI-instruksjoner (prompt injection) skjult i e-post før meldingen leveres. Etter hvert som AI-assistenter automatisk leser og handler på e-post, blir innboksen en ny angrepsflate der angripere retter seg mot AI-en i stedet for mennesket. For IT-admins gir dette et nytt kontrollpunkt som demper risikoen for AI-drevet kompromittering og utilsiktet dataeksponering.",
+      "topic": "sikkerhet",
+      "score": 68,
+      "tags": [
+        "defender",
+        "prompt-injection",
+        "email-security",
+        "ai",
+        "office365"
+      ]
+    },
     {
       "id": "msrc-blog-8ee9324ec5",
       "source_id": "msrc-blog",
