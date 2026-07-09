@@ -1,6 +1,124 @@
 {
-  "generated_at": "2026-07-09T05:54:49.313Z",
+  "generated_at": "2026-07-09T18:06:56.014Z",
   "articles": [
+    {
+      "id": "azure-virtual-desktop-02fa78dfba",
+      "source_id": "azure-virtual-desktop",
+      "source_name": "Azure Virtual Desktop Blog",
+      "url": "https://techcommunity.microsoft.com/t5/azure-virtual-desktop-blog/enhanced-host-pool-management-for-azure-virtual-desktop-is-now/ba-p/4534612",
+      "published": "2026-07-09T16:00:00.000Z",
+      "ingested": "2026-07-09T18:06:55.931Z",
+      "title_original": "Enhanced host pool management for Azure Virtual Desktop is now generally available",
+      "headline_no": "AVD-oppdatering: sentralisert host pool-konfig og autoskalering er nå GA",
+      "summary_no": "Microsoft har gjort forbedret host pool-håndtering for Azure Virtual Desktop allment tilgjengelig. Administratorer kan nå definere én felles konfigurasjon for alle øktverter, rulle ut oppdateringer med innebygd validering og test-VM-er, og ta i bruk dynamisk autoskalering og ephemeral OS-disker. Det fjerner mye egen skripting og kutter både driftskostnader og disklatens.",
+      "topic": "endpoint",
+      "score": 70,
+      "tags": [
+        "avd",
+        "host-pool",
+        "autoskalering",
+        "ephemeral-disk"
+      ]
+    },
+    {
+      "id": "msrc-blog-ad8cf57f48",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/09/gigawiper-anatomy-of-a-destructive-backdoor-assembled-from-multiple-malware/",
+      "published": "2026-07-09T15:00:00.000Z",
+      "ingested": "2026-07-09T18:02:37.782Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/Fig1-GigaWiper.webp",
+      "title_original": "GigaWiper: Anatomy of a destructive backdoor assembled from multiple malware",
+      "headline_no": "GigaWiper: modulær Golang-bakdør sletter disker og etterligner løsepengevirus",
+      "summary_no": "Microsoft Threat Intelligence har analysert GigaWiper, en Golang-basert bakdør som samler flere ødeleggende malware-familier i ett implantat, fra fysisk disksletting til falskt løsepengevirus med krypteringsnøkler som aldri lagres. Trusselaktører velger ødeleggelsesmetode via on-demand-kommandoer, noe som gjør angrepene fleksible og vanskeligere å forutse. Sikkerhetsteam bør gjennomgå Defender-deteksjonene og IOC-ene i rapporten.",
+      "topic": "sikkerhet",
+      "score": 79,
+      "tags": [
+        "wiper",
+        "malware",
+        "threat-intelligence",
+        "defender"
+      ]
+    },
+    {
+      "id": "call4cloud-5888253455",
+      "source_id": "call4cloud",
+      "source_name": "Call4Cloud (Rudy Ooms)",
+      "url": "https://patchmypc.com/blog/autopilot-failing-with-0x81036501-expected-mdm-uri-was-not-found/",
+      "published": "2026-07-09T11:16:06.000Z",
+      "ingested": "2026-07-09T18:06:55.931Z",
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image.jpeg",
+      "title_original": "Autopilot failing with 0x81036501: Expected MDM URI was not found",
+      "headline_no": "Autopilot-innrullering feiler med 0x81036501 på ASU 0102-tenanter",
+      "summary_no": "Rudy Ooms (Call4Cloud) graver i incident IT1420224, der Autopilot-enheter i tenanter på ASU 0102 ikke klarte å melde seg inn i Intune og returnerte feilen 0x81036501 «Expected MDM URI was not found». For endpoint-admins som ser innrulleringen stoppe opp, forklarer bloggen hva som utløser MDM URI-feilen og hva som ligger bak hendelsen.",
+      "topic": "endpoint",
+      "score": 45,
+      "tags": [
+        "autopilot",
+        "intune",
+        "enrollment",
+        "0x81036501"
+      ]
+    },
+    {
+      "id": "admindroid-b441c6d186",
+      "source_id": "admindroid",
+      "source_name": "AdminDroid Blog",
+      "url": "https://blog.admindroid.com/how-to-disable-print-spooler-on-domain-controllers/",
+      "published": "2026-07-09T10:30:05.000Z",
+      "ingested": "2026-07-09T18:02:37.782Z",
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/How-to-Disable-Print-Spooler-on-Domain-Controller-150x150.png",
+      "title_original": "How to Disable the Print Spooler Service on Domain Controllers",
+      "headline_no": "Slik deaktiverer du Print Spooler på domenekontrollere",
+      "summary_no": "AdminDroid forklarer hvorfor Print Spooler-tjenesten bør slås av på domenekontrollere og går gjennom flere metoder for å gjøre det. Tjenesten er aktivert som standard og gir angripere en direkte vei til ekstern kjøring av kode og rettighetseskalering på kritiske servere. Å deaktivere den er en anbefalt del av herdingen av Active Directory.",
+      "topic": "sikkerhet",
+      "score": 26,
+      "tags": [
+        "active-directory",
+        "print-spooler",
+        "hardening",
+        "domain-controllers"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-86687cdaa8",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61727",
+      "published": "2026-07-09T08:42:39.000Z",
+      "ingested": "2026-07-09T18:02:37.782Z",
+      "title_original": "CVE-2025-61727 Improper application of excluded DNS name constraints when verifying wildcard names in crypto/x509",
+      "headline_no": "CVE-2025-61727: wildcard-sertifikater kan omgå DNS-navnebegrensninger",
+      "summary_no": "MSRC har publisert CVE-2025-61727, en svakhet i crypto/x509 der ekskluderte DNS-navnebegrensninger håndteres feil ved verifisering av wildcard-navn. Feilen kan føre til at sertifikater godkjennes selv om navnebegrensningene skulle avvist dem, noe som svekker tilliten i sertifikatvalidering. Detaljene er foreløpig sparsomme, så følg med på oppdateringer og patch berørte komponenter.",
+      "topic": "sikkerhet",
+      "score": 58,
+      "tags": [
+        "cve-2025-61727",
+        "crypto-x509",
+        "certificates",
+        "msrc"
+      ]
+    },
+    {
+      "id": "office365-itpros-593fb5453c",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/09/inactive-distribution-list-2026/?utm_source=rss&utm_medium=rss&utm_campaign=inactive-distribution-list-2026",
+      "published": "2026-07-09T07:00:00.000Z",
+      "ingested": "2026-07-09T18:02:37.782Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Inactive-DL-Check.jpg?resize=840%2C425&#038;ssl=1",
+      "title_original": "How to Check Distribution Lists for Activity Over the Last 90 Days",
+      "headline_no": "Slik finner du inaktive distribusjonslister med Get-MessageTraceV2",
+      "summary_no": "Tony Redmond viser hvordan du oppdaterer PowerShell-skript for å finne inaktive distribusjonslister nå som gamle Get-MessageTrace er pensjonert og sluttet å virke i september 2025. Den nye Get-MessageTraceV2-cmdleten kan hente meldingssporingsdata opptil 90 dager tilbake, men bare i ti-dagers biter. Nyttig for admins som vil rydde opp i ubrukte distribusjonslister i Exchange Online.",
+      "topic": "identitet",
+      "score": 36,
+      "tags": [
+        "exchange-online",
+        "powershell",
+        "distribution-lists",
+        "get-messagetracev2"
+      ]
+    },
     {
       "id": "m365-roadmap-fb9563bced",
       "source_id": "m365-roadmap",
@@ -41,6 +159,26 @@
       ]
     },
     {
+      "id": "fasttrack-487b6affa4",
+      "source_id": "fasttrack",
+      "source_name": "Microsoft FastTrack Blog",
+      "url": "https://techcommunity.microsoft.com/t5/fasttrack-blog/who-actually-blocks-ai-in-healthcare-and-why/ba-p/4535044",
+      "published": "2026-07-08T21:22:53.000Z",
+      "ingested": "2026-07-09T18:06:55.931Z",
+      "hero_image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/dS0yMDE4MTgteTNoRWFa?image-coordinates=0%2C0%2C1500%2C1500&amp;image-dimensions=120x120",
+      "title_original": "Who actually blocks AI in healthcare (and why)",
+      "headline_no": "Copilot-pilotene i helsevesenet dør i komité, ikke på teknikken",
+      "summary_no": "Microsofts FastTrack-team forklarer hvorfor Microsoft 365 Copilot-piloter i helsesektoren ofte lykkes teknisk, men stopper opp i styringsgrupper og mister finansiering. Del én av tre kartlegger hvem som egentlig kan blokkere et AI-prosjekt, hva de frykter kontra hva de sier, og i hvilken rekkefølge de bør involveres. Nyttig for IT-ledere og M365-admins som taper AI-piloter på organisatoriske hindre framfor tekniske.",
+      "topic": "ai",
+      "score": 38,
+      "tags": [
+        "copilot",
+        "helse",
+        "endringsledelse",
+        "adopsjon"
+      ]
+    },
+    {
       "id": "defender-office365-189b5c6eeb",
       "source_id": "defender-office365",
       "source_name": "Microsoft Defender for Office 365 Blog",
@@ -58,6 +196,25 @@
         "email-security",
         "ai",
         "office365"
+      ]
+    },
+    {
+      "id": "windows-it-pro-76467d69b4",
+      "source_id": "windows-it-pro",
+      "source_name": "Windows IT Pro Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/rdp-multipath-with-redundant-tcp-is-now-generally-available-for/ba-p/4534610",
+      "published": "2026-07-08T17:54:32.000Z",
+      "ingested": "2026-07-09T18:02:37.780Z",
+      "title_original": "RDP Multipath with redundant TCP is now generally available for Windows 365 and AVD",
+      "headline_no": "RDP Multipath med redundant TCP er nå GA for Windows 365 og AVD",
+      "summary_no": "Microsoft har gjort RDP Multipath med redundant TCP-støtte allment tilgjengelig for Windows 365 og Azure Virtual Desktop. Funksjonen evaluerer flere tilkoblingsveier kontinuerlig og bytter automatisk til en alternativ rute hvis den aktive forbindelsen svekkes, noe som demper sesjonsavbrudd i miljøer med pakketap, VPN eller UDP-restriksjoner. For admins betyr det mer stabile eksterne skrivebordsøkter uten ekstra konfigurasjon.",
+      "topic": "endpoint",
+      "score": 65,
+      "tags": [
+        "windows-365",
+        "avd",
+        "rdp",
+        "cloud-pc"
       ]
     },
     {
@@ -175,6 +332,25 @@
         "edge",
         "security-bypass",
         "chromium"
+      ]
+    },
+    {
+      "id": "defender-xdr-246cc64f78",
+      "source_id": "defender-xdr",
+      "source_name": "Microsoft Defender XDR Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/microsoft-defender-now-integrates-with-dragos-forescout-armis/ba-p/4534936",
+      "published": "2026-07-08T13:08:36.000Z",
+      "ingested": "2026-07-09T18:02:37.782Z",
+      "title_original": "Microsoft Defender now integrates with Dragos, Forescout, & Armis for OT Security",
+      "headline_no": "Defender integrerer Dragos, Forescout og Armis for OT-sikkerhet i SOC",
+      "summary_no": "Microsoft har lansert nye konnektorer som lar Defender ta imot OT-sikkerhetsdata fra Dragos, Forescout og Armis direkte inn i SOC-plattformen. Det gir organisasjoner med industrielle kontrollsystemer større frihet til å bruke OT-verktøyene som passer miljøet, uten å bytte ut eksisterende løsninger. For team som overvåker fabrikker, kraftnett eller vannverk gir det samlet innsyn på tvers av IT og OT.",
+      "topic": "sikkerhet",
+      "score": 59,
+      "tags": [
+        "defender",
+        "ot-security",
+        "xdr",
+        "soc"
       ]
     },
     {
