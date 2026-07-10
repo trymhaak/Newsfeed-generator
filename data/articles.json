@@ -1,6 +1,142 @@
 {
-  "generated_at": "2026-07-09T18:06:56.014Z",
+  "generated_at": "2026-07-10T00:14:43.052Z",
   "articles": [
+    {
+      "id": "m365-roadmap-f3fc0202f4",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566697",
+      "published": "2026-07-09T23:26:18.000Z",
+      "ingested": "2026-07-10T00:10:02.658Z",
+      "title_original": "OneDrive: PDF annotation for sensitivity-label protected PDFs in the OneDrive apps (iOS and Android)",
+      "headline_no": "Annoter beskyttede PDF-er i OneDrive-appen uten å svekke merkingen",
+      "summary_no": "OneDrive-appene for iOS og Android får full annotering av PDF-er som er beskyttet med en Purview-følsomhetsmerking med kryptering – inkludert penn, utheving, signaturer, stempler og skjemafelt – uten at kryptering eller tilgangsrettigheter svekkes. Funksjonen er på som standard for kvalifiserte brukere og krever ingen admin-handling. Gjelder kun mobilappene, ikke web. GA i august 2026.",
+      "topic": "sikkerhet",
+      "score": 31,
+      "tags": [
+        "onedrive",
+        "purview",
+        "sensitivity-labels",
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "id": "m365-roadmap-6d2b2b0586",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567472",
+      "published": "2026-07-09T23:00:39.000Z",
+      "ingested": "2026-07-10T00:10:02.661Z",
+      "title_original": "Microsoft Purview: Insider Risk Management - DS Triage Agent for IRM available in Defender",
+      "headline_no": "Insider Risk-triage fra Purview dukker opp i Defender-køen",
+      "summary_no": "Microsoft tar AI-genererte triage-sammendrag fra Insider Risk Management inn i Defender-varselkøen, slik at analytikere ser kategorisering, risikomønstre og brukerdetaljer uten å forlate Defender. Dypere gransking skjer fortsatt i Purview-portalen, og brukere er pseudonymisert som standard. Forhåndsvisning i august 2026, GA i desember 2026.",
+      "topic": "sikkerhet",
+      "score": 43,
+      "tags": [
+        "purview",
+        "insider-risk",
+        "defender",
+        "ai-agent",
+        "secops"
+      ]
+    },
+    {
+      "id": "m365-roadmap-7ce91b3c1d",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567470",
+      "published": "2026-07-09T23:00:39.000Z",
+      "ingested": "2026-07-10T00:10:02.661Z",
+      "title_original": "OneDrive: Exclude specific folders from syncing",
+      "headline_no": "OneDrive kan endelig utelate dev-mapper som node_modules fra synk",
+      "summary_no": "OneDrive-klienten for Windows og Mac får mulighet til å ekskludere bestemte mapper fra synkronisering, slik at utviklermapper som PowerShell-moduler, Visual Studio-config og node_modules blir liggende lokalt. Administratorer kan definere egne ekskluderingsregler for hele organisasjonen. GA i august 2026.",
+      "topic": "endpoint",
+      "score": 41,
+      "tags": [
+        "onedrive",
+        "sync",
+        "windows",
+        "mac",
+        "admin-policy"
+      ]
+    },
+    {
+      "id": "m365-roadmap-6b99d5ec05",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567317",
+      "published": "2026-07-09T23:00:39.000Z",
+      "ingested": "2026-07-10T00:10:02.661Z",
+      "title_original": "Minecraft Education: Learning Cubed Update with Cross-Tenant Multiplayer and Latest Bedrock Features",
+      "headline_no": "Minecraft Education åpner for flerspiller på tvers av tenants",
+      "summary_no": "Learning Cubed-oppdateringen gir Minecraft Education flerspiller på tvers av tenants for dedikerte servere, pluss de nyeste Bedrock-funksjonene. Primært relevant for skolesektoren og har begrenset betydning for de fleste Microsoft 365-administratorer. Forhåndsvisning i juli 2026, GA i august 2026.",
+      "topic": "endpoint",
+      "score": 11,
+      "tags": [
+        "minecraft-education",
+        "cross-tenant",
+        "edu"
+      ]
+    },
+    {
+      "id": "m365-roadmap-51fea581dc",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567009",
+      "published": "2026-07-09T23:00:39.000Z",
+      "ingested": "2026-07-10T00:10:02.661Z",
+      "title_original": "SharePoint: Create new workflows with Copilot in SharePoint",
+      "headline_no": "Copilot i SharePoint bygger arbeidsflyter fra en enkel beskrivelse",
+      "summary_no": "Copilot i SharePoint lar brukere beskrive en arbeidsflyt i naturlig språk – for eksempel «når filer settes til fullført, post en melding i Teams» – og setter selv sammen utløsere, betingelser og handlinger. Flyten kan justeres senere via Copilot eller «Workflows» i kommandolinjen. GA i desember 2026.",
+      "topic": "ai",
+      "score": 45,
+      "tags": [
+        "sharepoint",
+        "copilot",
+        "workflows",
+        "automation",
+        "no-code"
+      ]
+    },
+    {
+      "id": "m365-roadmap-83263ef35b",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566704",
+      "published": "2026-07-09T23:00:39.000Z",
+      "ingested": "2026-07-10T00:10:02.661Z",
+      "title_original": "Microsoft 365 app: New Copilot Notebooks design in the Microsoft 365 Copilot App (Android)",
+      "headline_no": "Copilot Notebooks samler chatter i ett AI-arbeidsrom på Android",
+      "summary_no": "Copilot Notebooks i Microsoft 365 Copilot-appen for Android får ny design som lar brukere samle relaterte chatter, resultater og referanser i ett vedvarende AI-arbeidsrom. Copilot bruker den akkumulerte konteksten i notatboken til å grunngi svar, slik at arbeidet fortsetter på tvers av økter. GA i august 2026.",
+      "topic": "ai",
+      "score": 34,
+      "tags": [
+        "copilot",
+        "notebooks",
+        "android",
+        "m365-app"
+      ]
+    },
+    {
+      "id": "m365-roadmap-a49ab10651",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566696",
+      "published": "2026-07-09T23:00:39.000Z",
+      "ingested": "2026-07-10T00:12:06.225Z",
+      "title_original": "Thumbnail view for PDFs is available in OneDrive and SharePoint on the web",
+      "headline_no": "Miniatyrbilder gjør det raskere å bla i lange PDF-er i OneDrive",
+      "summary_no": "OneDrive og SharePoint på web får et miniatyrpanel i PDF-viseren, slik at brukere kan bla visuelt gjennom sider og hoppe rett til en valgt side. Nyttig for å finne diagrammer, skjemaer eller bestemte oppsett uten å scrolle side for side. Generelt tilgjengelig fra august 2026.",
+      "topic": "endpoint",
+      "score": 29,
+      "tags": [
+        "onedrive",
+        "sharepoint",
+        "pdf",
+        "m365"
+      ]
+    },
     {
       "id": "azure-virtual-desktop-02fa78dfba",
       "source_id": "azure-virtual-desktop",
@@ -81,6 +217,63 @@
       ]
     },
     {
+      "id": "msrc-update-guide-6c731e6135",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8925",
+      "published": "2026-07-09T08:49:49.000Z",
+      "ingested": "2026-07-10T00:14:42.969Z",
+      "title_original": "CVE-2026-8925 SASL double-free",
+      "headline_no": "Double-free i SASL kan gi minnekorrupsjon og kjøring av kode",
+      "summary_no": "CVE-2026-8925 er en double-free-sårbarhet i SASL-autentiseringsbiblioteket som kan føre til minnekorrupsjon og i verste fall kjøring av vilkårlig kode. SASL brukes bredt i e-post- og katalogtjenester, så berørte servere bør patches raskt. For rene Microsoft-stakker er den direkte eksponeringen begrenset.",
+      "topic": "sikkerhet",
+      "score": 41,
+      "tags": [
+        "cve-2026-8925",
+        "sasl",
+        "double-free",
+        "minnekorrupsjon"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-912264a765",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-11856",
+      "published": "2026-07-09T08:47:43.000Z",
+      "ingested": "2026-07-10T00:14:42.969Z",
+      "title_original": "CVE-2026-11856 cross-origin Digest auth state leak",
+      "headline_no": "Digest-autentisering lekker tilstand på tvers av opprinnelser",
+      "summary_no": "En feil i HTTP Digest-autentisering (CVE-2026-11856) lar autentiseringstilstand lekke på tvers av opprinnelser, noe som kan svekke beskyttelsen mot forfalskede forespørsler. Problemet er generisk og ikke knyttet til et bestemt Microsoft-produkt, men kan påvirke tjenester og klienter som bruker Digest-auth. Hold berørte biblioteker oppdatert.",
+      "topic": "sikkerhet",
+      "score": 34,
+      "tags": [
+        "cve-2026-11856",
+        "http-digest",
+        "cross-origin",
+        "auth"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-7e5392a341",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9547",
+      "published": "2026-07-09T08:47:17.000Z",
+      "ingested": "2026-07-10T00:14:42.969Z",
+      "title_original": "CVE-2026-9547 SSH improper host validation",
+      "headline_no": "SSH-svakhet svikter vertsvalidering og åpner for mann-i-midten",
+      "summary_no": "CVE-2026-9547 beskriver mangelfull vertsvalidering i SSH som kan åpne for mann-i-midten-angrep mot krypterte økter. Siden Windows nå leveres med OpenSSH bør admins også følge med på oppdateringer for Windows-baserte SSH-endepunkter. Patch berørte SSH-klienter og -servere når rettelsen er tilgjengelig.",
+      "topic": "sikkerhet",
+      "score": 43,
+      "tags": [
+        "cve-2026-9547",
+        "ssh",
+        "openssh",
+        "mitm"
+      ]
+    },
+    {
       "id": "msrc-update-guide-86687cdaa8",
       "source_id": "msrc-update-guide",
       "source_name": "MSRC Security Update Guide (RSS)",
@@ -97,6 +290,63 @@
         "crypto-x509",
         "certificates",
         "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-cedc38dbee",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-58188",
+      "published": "2026-07-09T08:41:05.000Z",
+      "ingested": "2026-07-10T00:12:06.225Z",
+      "title_original": "CVE-2025-58188 Panic when validating certificates with DSA public keys in crypto/x509",
+      "headline_no": "CVE-2025-58188: DSA-sertifikat kan krasje sertifikatvalidering i Go",
+      "summary_no": "En sårbarhet i Go-biblioteket crypto/x509 (CVE-2025-58188) gjør at validering av sertifikater med DSA-offentlige nøkler kan utløse en panic, altså tjenestenekt. Microsoft-produkter og -tjenester bygget på Go bør patches når oppdatering foreligger. MSRC har foreløpig kun publisert minimal informasjon.",
+      "topic": "sikkerhet",
+      "score": 56,
+      "tags": [
+        "cve-2025-58188",
+        "golang",
+        "dos",
+        "crypto-x509"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-53f4eae119",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-61724",
+      "published": "2026-07-09T08:40:56.000Z",
+      "ingested": "2026-07-10T00:12:06.225Z",
+      "title_original": "CVE-2025-61724 Excessive CPU consumption in Reader.ReadResponse in net/textproto",
+      "headline_no": "CVE-2025-61724: net/textproto kan spise CPU og felle Go-tjenester",
+      "summary_no": "CVE-2025-61724 er en sårbarhet i Gos net/textproto der Reader.ReadResponse kan drive CPU-bruken i været og føre til tjenestenekt. Rammer Microsoft-tjenester som bygger på Go — patch når fiks er tilgjengelig. MSRC har foreløpig kun publisert minimal informasjon.",
+      "topic": "sikkerhet",
+      "score": 56,
+      "tags": [
+        "cve-2025-61724",
+        "golang",
+        "dos",
+        "net-textproto"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-2824fab4a5",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-23131",
+      "published": "2026-07-09T08:40:16.000Z",
+      "ingested": "2026-07-10T00:14:42.969Z",
+      "title_original": "CVE-2025-23131 dlm: prevent NPD when writing a positive value to event_done",
+      "headline_no": "Linux-kjernen tetter nullpeker-krasj i clustered lock manager (dlm)",
+      "summary_no": "En nullpeker-dereferanse i Linux-kjernens distribuerte lock manager (dlm) kan krasje systemet når en positiv verdi skrives til event_done. Feilen rammer clustered storage-oppsett og er nå rettet i kjernen. For rene Microsoft-miljøer er relevansen marginal, men den gjelder Azure Linux- og hybride Linux-arbeidslaster.",
+      "topic": "sikkerhet",
+      "score": 20,
+      "tags": [
+        "cve-2025-23131",
+        "linux-kernel",
+        "dlm",
+        "dos"
       ]
     },
     {
@@ -117,6 +367,63 @@
         "powershell",
         "distribution-lists",
         "get-messagetracev2"
+      ]
+    },
+    {
+      "id": "m365-roadmap-f2a4be4eee",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567305",
+      "published": "2026-07-08T23:10:57.000Z",
+      "ingested": "2026-07-10T00:12:06.225Z",
+      "title_original": "Microsoft Teams: Specify who has control of production tools in Teams meetings and events",
+      "headline_no": "Teams lar arrangører styre hvem som kontrollerer produksjonsverktøy",
+      "summary_no": "En ny møteinnstilling i Teams-møter og -arrangementer lar organisatorer utpeke hvem som får tilgang til produksjonskontrollene, som «Manage What Attendees See» og «Green Room». Gir tydeligere rollefordeling ved webinarer og større arrangementer. Generelt tilgjengelig fra august 2026.",
+      "topic": "endpoint",
+      "score": 31,
+      "tags": [
+        "teams",
+        "meetings",
+        "events",
+        "m365"
+      ]
+    },
+    {
+      "id": "m365-roadmap-48d29b5d5c",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567302",
+      "published": "2026-07-08T23:10:57.000Z",
+      "ingested": "2026-07-10T00:12:06.225Z",
+      "title_original": "Microsoft Teams: Ability for IT admins to customize the user notification messages for recording and transcription in calls",
+      "headline_no": "IT-admins kan tilpasse varslene om opptak og transkripsjon i Teams",
+      "summary_no": "IT-administratorer får mulighet til å tilpasse deler av varselmeldingene brukere ser når Teams-samtaler tas opp eller transkriberes. Det gir bedre kontroll på samtykke- og personvernsformuleringer i tråd med interne krav. Generelt tilgjengelig fra august 2026.",
+      "topic": "endpoint",
+      "score": 35,
+      "tags": [
+        "teams",
+        "compliance",
+        "recording",
+        "transkripsjon"
+      ]
+    },
+    {
+      "id": "m365-roadmap-489b289b7c",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567301",
+      "published": "2026-07-08T23:10:57.000Z",
+      "ingested": "2026-07-10T00:12:06.225Z",
+      "title_original": "Microsoft Teams: New controls for quick views in the chat list",
+      "headline_no": "Teams lar brukere styre hurtigvisninger i chat- og kanallisten",
+      "summary_no": "Teams gir brukere nye valg for hurtigvisningene øverst i chat- og kanallisten, som omtaler og fulgte tråder — alltid vis, alltid skjul eller vis kun ved ulest. Seksjonen kan også kollapses. En ren brukskvalitetsforbedring med liten administrativ betydning.",
+      "topic": "endpoint",
+      "score": 28,
+      "tags": [
+        "teams",
+        "chat",
+        "ux",
+        "m365"
       ]
     },
     {
@@ -9400,140 +9707,6 @@
         "lisensiering",
         "plan-2",
         "epm"
-      ]
-    },
-    {
-      "id": "seed-entra-001",
-      "source_id": "entra-blog",
-      "source_name": "Microsoft Entra Blog",
-      "url": "https://techcommunity.microsoft.com/example/entra-ca",
-      "published": "2026-05-11T12:00:00.000Z",
-      "ingested": "2026-05-11T12:30:00.000Z",
-      "title_original": "New Conditional Access policy templates for hybrid work scenarios",
-      "headline_no": "Nye CA-maler skal forenkle hybrid-tilgang i Entra",
-      "summary_no": "Microsoft har lansert seks nye Conditional Access-maler som dekker vanlige hybride scenarier som BYOD og kontraktørtilgang. Malene kan deployes i report-only-modus først for å se påvirkning før de slås på i prod.",
-      "topic": "identitet",
-      "score": 64,
-      "tags": [
-        "entra",
-        "conditional-access",
-        "hybrid",
-        "templates"
-      ]
-    },
-    {
-      "id": "seed-copilot-001",
-      "source_id": "m365-copilot",
-      "source_name": "Microsoft 365 Copilot Blog",
-      "url": "https://techcommunity.microsoft.com/example/copilot-agents",
-      "published": "2026-05-10T09:00:00.000Z",
-      "ingested": "2026-05-10T09:30:00.000Z",
-      "title_original": "Copilot agents now support custom data sources via Graph connectors",
-      "headline_no": "Copilot-agenter kan nå koble seg til egne datakilder",
-      "summary_no": "M365 Copilot-agenter støtter nå Graph connectors for å hente data fra interne systemer som ServiceNow, Salesforce og custom SharePoint-libraries. Tilgangsstyring følger eksisterende Graph-rettigheter, så ingen ekstra setup for autorisasjon er nødvendig.",
-      "topic": "ai",
-      "score": 71,
-      "tags": [
-        "copilot",
-        "agents",
-        "graph-connectors",
-        "rag"
-      ]
-    },
-    {
-      "id": "seed-defender-001",
-      "source_id": "defender-xdr",
-      "source_name": "Microsoft Defender XDR Blog",
-      "url": "https://techcommunity.microsoft.com/example/defender-aitr",
-      "published": "2026-05-09T14:00:00.000Z",
-      "ingested": "2026-05-09T14:30:00.000Z",
-      "title_original": "Automatic attack disruption now covers ransomware on Linux workloads",
-      "headline_no": "Defender stopper nå ransomware på Linux automatisk",
-      "summary_no": "Automatic Attack Disruption er utvidet til Linux og kan isolere kompromitterte servere uten SOC-inngripen ved høy konfidens på ransomware-aktivitet. Funksjonen kjører i shadow-mode først så team kan validere før de slår på full håndhevelse.",
-      "topic": "sikkerhet",
-      "score": 75,
-      "tags": [
-        "defender",
-        "xdr",
-        "linux",
-        "ransomware",
-        "auto-response"
-      ]
-    },
-    {
-      "id": "seed-windows365-001",
-      "source_id": "windows-365",
-      "source_name": "Windows 365 Blog",
-      "url": "https://techcommunity.microsoft.com/example/w365-byod",
-      "published": "2026-05-08T11:00:00.000Z",
-      "ingested": "2026-05-08T11:30:00.000Z",
-      "title_original": "Windows 365 BYOD access issues affecting some tenants",
-      "headline_no": "Windows 365 sliter med BYOD-tilgang — workaround tilgjengelig",
-      "summary_no": "Flere kunder rapporterer at Cloud PC-tilgang fra uregistrerte enheter feiler etter en backend-endring 6. mai. Microsoft har bekreftet problemet og anbefaler å sette CA-policyen til 'require compliant device' midlertidig.",
-      "topic": "endpoint",
-      "score": 68,
-      "tags": [
-        "windows-365",
-        "byod",
-        "cloud-pc",
-        "incident"
-      ]
-    },
-    {
-      "id": "seed-purview-001",
-      "source_id": "purview-blog",
-      "source_name": "Microsoft Purview Blog",
-      "url": "https://techcommunity.microsoft.com/example/purview-dlp",
-      "published": "2026-05-07T13:00:00.000Z",
-      "ingested": "2026-05-07T13:30:00.000Z",
-      "title_original": "DLP policies for Copilot prompts now in public preview",
-      "headline_no": "Purview kan nå blokkere sensitive Copilot-prompter",
-      "summary_no": "Purview DLP-policyer kan nå evaluere innholdet i Copilot-prompter og blokkere meldinger som inneholder sensitiv data før de når modellen. Funksjonen er i public preview og krever E5 Compliance-lisens.",
-      "topic": "sikkerhet",
-      "score": 62,
-      "tags": [
-        "purview",
-        "dlp",
-        "copilot",
-        "preview"
-      ]
-    },
-    {
-      "id": "seed-entra-002",
-      "source_id": "entra-blog",
-      "source_name": "Microsoft Entra Blog",
-      "url": "https://techcommunity.microsoft.com/example/entra-pim",
-      "published": "2026-05-06T10:00:00.000Z",
-      "ingested": "2026-05-06T10:30:00.000Z",
-      "title_original": "PIM for Groups expanding to Azure resource roles",
-      "headline_no": "PIM for grupper utvides til Azure-roller",
-      "summary_no": "Privileged Identity Management for grupper støtter nå Azure-ressursroller, ikke bare Entra-roller. Det betyr at midlertidig tilgang til subscription-nivå kan gis via gruppe-medlemskap med just-in-time-aktivering.",
-      "topic": "identitet",
-      "score": 58,
-      "tags": [
-        "entra",
-        "pim",
-        "azure",
-        "groups"
-      ]
-    },
-    {
-      "id": "seed-sentinel-001",
-      "source_id": "sentinel-blog",
-      "source_name": "Microsoft Sentinel Blog",
-      "url": "https://techcommunity.microsoft.com/example/sentinel-summary-rules",
-      "published": "2026-05-05T15:00:00.000Z",
-      "ingested": "2026-05-05T15:30:00.000Z",
-      "title_original": "Summary rules now GA in Microsoft Sentinel",
-      "headline_no": "Sentinel Summary Rules blir GA — kan kutte log-kostnader",
-      "summary_no": "Summary Rules går fra preview til GA og lar Sentinel aggregere høy-volum-logger til kompakt summary-data før indeksering. Tidlige brukere rapporterer 40-60% reduksjon i ingestion-kost for nettverkslogger.",
-      "topic": "sikkerhet",
-      "score": 60,
-      "tags": [
-        "sentinel",
-        "summary-rules",
-        "kostnad",
-        "ga"
       ]
     }
   ]
