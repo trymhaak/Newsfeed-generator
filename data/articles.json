@@ -1,6 +1,123 @@
 {
-  "generated_at": "2026-07-10T00:14:43.052Z",
+  "generated_at": "2026-07-10T12:19:02.292Z",
   "articles": [
+    {
+      "id": "andrew-taylor-3f7f98eb87",
+      "source_id": "andrew-taylor",
+      "source_name": "Andrew Taylor (andrewstaylor.com)",
+      "url": "https://andrewstaylor.com/2026/07/10/intune-newsletter-10th-july-2026/",
+      "published": "2026-07-10T10:24:35.000Z",
+      "ingested": "2026-07-10T12:19:02.217Z",
+      "title_original": "Intune Newsletter – 10th July 2026",
+      "headline_no": "Ukens Intune-nytt: Apple-enrollment blir GA og E5 gir gratis app-katalog",
+      "summary_no": "Andrew Taylors ukentlige Intune-nyhetsbrev samler ferske endringer for endpoint-administratorer: gruppering av enrollmenttidspunkt for Apple-enheter er nå GA og gjør utrulling av nye enheter raskere, og E5-lisenser gir nå gratis Enterprise App Management med auto-oppdaterende app-katalog. Utgaven dekker også tilpasning av strømvalg i startmenyen på delte enheter, en ny privat preview for kontekstbasert omdirigering i AVD, og hvordan komme i gang med Security Copilot.",
+      "topic": "endpoint",
+      "score": 33,
+      "tags": [
+        "intune",
+        "nyhetsbrev",
+        "apple",
+        "app-management",
+        "security-copilot"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-fe5cf48d4c",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56288",
+      "published": "2026-07-10T08:01:37.000Z",
+      "ingested": "2026-07-10T12:18:06.757Z",
+      "title_original": "CVE-2026-56288 NULL Pointer Dereference in GNU patch",
+      "headline_no": "CVE-2026-56288: NULL-pointer kan krasje GNU patch",
+      "summary_no": "MSRC har publisert CVE-2026-56288, en NULL-pointer-dereferanse i GNU patch som kan krasje verktøyet (denial of service). Sårbarhetsklassen tilsier lav alvorlighetsgrad, og det kreves at patch kjøres mot ondsinnet input. Rettes via ordinære Linux-pakkeoppdateringer.",
+      "topic": "sikkerhet",
+      "score": 42,
+      "tags": [
+        "cve-2026-56288",
+        "gnu-patch",
+        "dos",
+        "linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-e66fbdd4e4",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56289",
+      "published": "2026-07-10T08:01:27.000Z",
+      "ingested": "2026-07-10T12:18:06.757Z",
+      "title_original": "CVE-2026-56289 Loop with Unreachable Exit Condition in GNU patch",
+      "headline_no": "CVE-2026-56289: uendelig løkke kan henge GNU patch",
+      "summary_no": "CVE-2026-56289 er en løkke med uoppnåelig sluttvilkår i GNU patch som kan få verktøyet til å henge på spesiallagde patch-filer (denial of service). Lav alvorlighetsgrad og forutsetter kjøring mot upålitelig input. Fikses gjennom vanlige Linux-pakkeoppdateringer.",
+      "topic": "sikkerhet",
+      "score": 41,
+      "tags": [
+        "cve-2026-56289",
+        "gnu-patch",
+        "dos",
+        "linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-e7d8d0ea7a",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59818",
+      "published": "2026-07-10T08:01:17.000Z",
+      "ingested": "2026-07-10T12:18:06.757Z",
+      "title_original": "CVE-2026-59818 etcd: gRPC client listener does not enforce `--client-crl-file` certificate revocation",
+      "headline_no": "CVE-2026-59818: etcd ignorerer tilbakekalte klientsertifikater",
+      "summary_no": "CVE-2026-59818 gjør at etcd sin gRPC-klientlytter ikke håndhever --client-crl-file, slik at tilbakekalte klientsertifikater fortsatt gir tilgang. For Kubernetes- og AKS-miljøer som stoler på CRL-basert inndragning betyr det at revokerte klienter kan koble til likevel. Oppgrader etcd så snart en rettet versjon er tilgjengelig.",
+      "topic": "sikkerhet",
+      "score": 50,
+      "tags": [
+        "cve-2026-59818",
+        "etcd",
+        "kubernetes",
+        "sertifikat"
+      ]
+    },
+    {
+      "id": "office365-itpros-ae7f0fcd59",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/10/m365mutator-test-data/?utm_source=rss&utm_medium=rss&utm_campaign=m365mutator-test-data",
+      "published": "2026-07-10T07:00:00.000Z",
+      "ingested": "2026-07-10T12:18:06.757Z",
+      "hero_image": "https://i0.wp.com/github.com/probichaux/m365mutator/raw/main/public/screenshot-identities.png?w=840&#038;ssl=1",
+      "title_original": "Make Your Test Data Less Boring with M365Mutator",
+      "headline_no": "M365Mutator lager realistiske testdata for Microsoft 365-miljøer",
+      "summary_no": "Tony Redmond har laget M365Mutator, et lokalt open source-verktøy som kobler til en tenant via Microsoft Graph og genererer realistisk aktivitet — brukerendringer i Entra ID, e-post, kalenderoppføringer og filoperasjoner i OneDrive og SharePoint. Praktisk for demoer, backup-testing og Graph-utvikling der frosne CDX-tenants ellers gir døde, kjedelige data.",
+      "topic": "identitet",
+      "score": 36,
+      "tags": [
+        "m365",
+        "graph",
+        "test-data",
+        "open-source",
+        "entra"
+      ]
+    },
+    {
+      "id": "ourcloudnetwork-27fbb9705b",
+      "source_id": "ourcloudnetwork",
+      "source_name": "Our Cloud Network (Daniel Bradley)",
+      "url": "https://ourcloudnetwork.com/microsoft-entra-id-retires-custom-controls-for-external-mfa/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-entra-id-retires-custom-controls-for-external-mfa",
+      "published": "2026-07-10T06:22:28.000Z",
+      "ingested": "2026-07-10T12:18:06.757Z",
+      "title_original": "Microsoft Entra ID Retires Custom Controls For External MFA",
+      "headline_no": "Entra avvikler Custom Controls — ekstern MFA må migreres",
+      "summary_no": "Microsoft avvikler Custom Controls i Conditional Access — mekanismen mange bruker for å koble på eksterne MFA-leverandører. Berørte organisasjoner må migrere til External Authentication Methods før avviklingen, ellers risikerer de at CA-policyer slutter å virke. Kartlegg nå hvilke policyer som fortsatt bruker Custom Controls.",
+      "topic": "identitet",
+      "score": 48,
+      "tags": [
+        "entra",
+        "conditional-access",
+        "mfa",
+        "deprecation"
+      ]
+    },
     {
       "id": "m365-roadmap-f3fc0202f4",
       "source_id": "m365-roadmap",
@@ -135,6 +252,25 @@
         "sharepoint",
         "pdf",
         "m365"
+      ]
+    },
+    {
+      "id": "windows-it-pro-506de2c036",
+      "source_id": "windows-it-pro",
+      "source_name": "Windows IT Pro Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/understanding-windows-monthly-updates-servicing-explained/ba-p/4532290",
+      "published": "2026-07-09T16:00:00.000Z",
+      "ingested": "2026-07-10T12:18:06.754Z",
+      "title_original": "Understanding Windows monthly updates: Servicing explained",
+      "headline_no": "Windows-oppdateringer forklart: sikkerhet vs. preview-oppdateringer",
+      "summary_no": "Windows IT Pro-bloggen går gjennom servicing-modellen: kumulative sikkerhetsoppdateringer slippes hver Patch Tuesday og inneholder all tidligere retting, mens valgfrie preview-oppdateringer lar team validere kommende fikser først. Ingen ny funksjonalitet, men en nyttig oppfriskning for admins som planlegger oppdateringsrutiner.",
+      "topic": "endpoint",
+      "score": 36,
+      "tags": [
+        "windows",
+        "patch-tuesday",
+        "servicing",
+        "oppdateringer"
       ]
     },
     {
@@ -9570,143 +9706,6 @@
         "shadow-it",
         "mde",
         "apper"
-      ]
-    },
-    {
-      "id": "sentinel-blog-fdc76b40b9",
-      "source_id": "sentinel-blog",
-      "source_name": "Microsoft Sentinel Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/the-worm-in-the-supply-chain-how-defender-for-endpoint-and/ba-p/4526246",
-      "published": "2026-06-08T10:52:16.000Z",
-      "ingested": "2026-06-20T13:52:59.941Z",
-      "title_original": "The Worm in the Supply Chain: How Defender for Endpoint and Sentinel for SAP BTP Caught Shai-Hulud",
-      "headline_no": "Slik fanget Defender og Sentinel Shai-Hulud-ormen i SAP-npm-pakker",
-      "summary_no": "29. april 2026 ble fire offisielle SAP CAP npm-pakker kortvarig erstattet med ondsinnede versjoner som kjørte en legitimasjonstyver i utviklermiljøer og CI/CD-pipelines. Kampanjen «Mini Shai-Hulud» viser at også SAP-økosystemet nå er et mål for supply chain-angrep. Microsoft beskriver hvordan Defender for Endpoint og Sentinel for SAP BTP oppdaget angrepet — nyttig deteksjonslogikk for alle som driver SAP-utvikling.",
-      "topic": "sikkerhet",
-      "score": 68,
-      "tags": [
-        "supply-chain",
-        "npm",
-        "sap",
-        "defender-for-endpoint",
-        "shai-hulud"
-      ]
-    },
-    {
-      "id": "call4cloud-6deffe1ca7",
-      "source_id": "call4cloud",
-      "source_name": "Call4Cloud (Rudy Ooms)",
-      "url": "https://patchmypc.com/blog/company-portal-not-installing-during-autopilot-enrollment-0x87d1041c/",
-      "published": "2026-06-08T08:56:33.000Z",
-      "ingested": "2026-06-20T16:56:34.724Z",
-      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/06/image-2.jpg",
-      "title_original": "Company Portal Not Installing During Autopilot Enrollment 0x87D1041C",
-      "headline_no": "Company Portal feiler i Autopilot etter mai-oppdatering – kode 0x87D1041C",
-      "summary_no": "Etter mai-oppdateringen til Windows slutter Company Portal plutselig å installeres under Autopilot pre-provisjonering, og enheter blir stående med feilkode 0x87D1041C. Bloggen sporer endringen til hvordan installasjon i systemkontekst nå håndteres. Dette rammer pågående Autopilot-utrullinger og bør sjekkes før storskala enrollment.",
-      "topic": "endpoint",
-      "score": 43,
-      "tags": [
-        "autopilot",
-        "company-portal",
-        "intune",
-        "windows-update"
-      ]
-    },
-    {
-      "id": "prajwal-desai-666f728d36",
-      "source_id": "prajwal-desai",
-      "source_name": "Prajwal Desai",
-      "url": "https://www.prajwaldesai.com/configuration-manager-hotfix-kb37942646/",
-      "published": "2026-06-08T07:25:42.000Z",
-      "ingested": "2026-06-20T16:59:37.987Z",
-      "title_original": "ConfigMgr Hotfix KB37942646 for CMG VMSS Image Update",
-      "headline_no": "Ny ConfigMgr-hotfix oppdaterer CMG-image for skyadministrerte klienter",
-      "summary_no": "Microsoft ga 2. juni 2026 ut hotfix KB37942646 for image-en til Cloud Management Gateway sitt VM-skaleringssett (VMSS). Oppdateringen retter den CMG-komponenten som håndterer ConfigMgr-klienter over internett. Admins som bruker CMG bør oppdatere skaleringssett-image-en for å holde fjernadministrasjonen stabil.",
-      "topic": "endpoint",
-      "score": 38,
-      "tags": [
-        "configmgr",
-        "cmg",
-        "hotfix",
-        "sccm"
-      ]
-    },
-    {
-      "id": "office365-itpros-37b899b53a",
-      "source_id": "office365-itpros",
-      "source_name": "Office 365 for IT Pros (Tony Redmond)",
-      "url": "https://office365itpros.com/2026/06/08/blockcontentanalysisservices-label/?utm_source=rss&utm_medium=rss&utm_campaign=blockcontentanalysisservices-label",
-      "published": "2026-06-08T07:00:00.000Z",
-      "ingested": "2026-06-20T16:24:58.516Z",
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/05/Edit-Sensitivity-Label.jpg?resize=840%2C467&#038;ssl=1",
-      "title_original": "Microsoft Extends Sensitivity Label Block for Connected Services",
-      "headline_no": "Ny etikettinnstilling blokkerer Copilot fra å lese filinnhold",
-      "summary_no": "Message center-varsel MC1297982 utvider en sensitivitetsetikett-innstilling som hindrer Microsoft 365 Copilot og andre tilkoblede tjenester i å analysere innhold i Word, Excel og PowerPoint. Innstillingen er en «advanced setting» som kun kan konfigureres via PowerShell — den finnes ikke i Purview-portalens grensesnitt. Admins som vil skjerme sensitivt innhold fra AI bør merke seg endringen.",
-      "topic": "sikkerhet",
-      "score": 45,
-      "tags": [
-        "purview",
-        "sensitivity-labels",
-        "copilot",
-        "mc1297982"
-      ]
-    },
-    {
-      "id": "damienbod-1a00400169",
-      "source_id": "damienbod",
-      "source_name": "damienbod — Software Engineering",
-      "url": "https://damienbod.com/2026/06/08/asp-net-core-background-tasks-with-ncronjob-and-signalr/",
-      "published": "2026-06-08T05:39:20.000Z",
-      "ingested": "2026-06-20T16:26:52.164Z",
-      "hero_image": "https://damienbod.com/wp-content/uploads/2026/05/2026-05-14-11_25_54-aspnetcorencronjob-running-nonconconcurrentjob.cs-microsoft-visual-studio.png",
-      "title_original": "ASP.NET Core background tasks with NCronJob and SignalR",
-      "headline_no": "Bakgrunnsjobber i ASP.NET Core med NCronJob og SignalR",
-      "summary_no": "En teknisk gjennomgang av hvordan du kjører planlagte bakgrunnsjobber i ASP.NET Core med NCronJob og pusher status til klienter via SignalR. Retter seg mot .NET-utviklere, ikke IT-administratorer. Faller utenfor kjerneområdet Microsoft-drift og -sikkerhet.",
-      "topic": "identitet",
-      "score": 7,
-      "tags": [
-        "aspnet-core",
-        "ncronjob",
-        "signalr",
-        "dotnet"
-      ]
-    },
-    {
-      "id": "seed-msrc-001",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Response Center",
-      "url": "https://msrc.microsoft.com/blog/example",
-      "published": "2026-05-13T15:00:00.000Z",
-      "ingested": "2026-05-13T15:30:00.000Z",
-      "title_original": "Critical vulnerability in Exchange Server addressed in May security update",
-      "headline_no": "Kritisk Exchange-sårbarhet tettes i mai-oppdateringen",
-      "summary_no": "Microsoft har lansert en out-of-band-oppdatering som fikser en alvorlig sårbarhet i Exchange Server som lar uautoriserte angripere kjøre kode på serveren. Alle on-prem Exchange-miljøer bør patches innen 72 timer. Cloud-mailbokser er ikke berørt.",
-      "topic": "sikkerhet",
-      "score": 92,
-      "tags": [
-        "exchange",
-        "cve-2026-xxxx",
-        "patch-now",
-        "rce"
-      ]
-    },
-    {
-      "id": "seed-intune-001",
-      "source_id": "intune-blog",
-      "source_name": "Microsoft Intune Customer Success Blog",
-      "url": "https://techcommunity.microsoft.com/example/intune-plan-2",
-      "published": "2026-05-12T10:00:00.000Z",
-      "ingested": "2026-05-12T10:30:00.000Z",
-      "title_original": "Intune Plan 2 now generally available — what admins need to know",
-      "headline_no": "Intune Plan 2 lanseres for alle — slik påvirker det lisensiering",
-      "summary_no": "Intune Plan 2 er nå allment tilgjengelig med utvidet avansert endpoint analytics og Endpoint Privilege Management inkludert. Eksisterende Plan 1-kunder må vurdere oppgradering for å beholde funksjoner som tidligere lå i Suite. Prisendringene trer i kraft 1. juli.",
-      "topic": "endpoint",
-      "score": 78,
-      "tags": [
-        "intune",
-        "lisensiering",
-        "plan-2",
-        "epm"
       ]
     }
   ]
