@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-07-10T12:19:02.292Z",
+  "generated_at": "2026-07-10T18:20:56.850Z",
   "articles": [
+    {
+      "id": "mikemdm-4ca95a1776",
+      "source_id": "mikemdm",
+      "source_name": "Mike's MDM Blog",
+      "url": "https://mikemdm.de/2026/07/10/windows-365-frontline-was-renamed-to-windows-365-flex/",
+      "published": "2026-07-10T18:10:18.000Z",
+      "ingested": "2026-07-10T18:20:56.796Z",
+      "hero_image": "https://mikemdm.de/wp-content/uploads/2026/07/grafik-1-844x1024.png",
+      "title_original": "Windows 365 Frontline was renamed to Windows 365 Flex",
+      "headline_no": "Windows 365 Flex-navnebytte kan brekke Intune-filtre og dynamiske grupper",
+      "summary_no": "Microsoft har døpt om Windows 365 Frontline til Windows 365 Flex, og rebrandingen ruller nå ut på tvers av Intune-flatene. Endringen påvirker også CloudPC-størrelsen som fyller enhetsmodell-feltet i Intune, slik at «CloudPC Frontline» blir «Windows 365 Flex». Admins bør oppdatere tilordningsfiltre, dynamiske Entra-grupperegler og enhetskategori-skript med den nye navngivningen for å unngå at maskiner faller ut av policyer.",
+      "topic": "endpoint",
+      "score": 43,
+      "tags": [
+        "windows-365",
+        "intune",
+        "cloudpc",
+        "dynamiske-grupper",
+        "filtre"
+      ]
+    },
+    {
+      "id": "msrc-blog-5aa07a5339",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/10/securing-our-future-july-2026-progress-report-on-microsofts-secure-future-initiative/",
+      "published": "2026-07-10T16:00:00.000Z",
+      "ingested": "2026-07-10T18:20:56.794Z",
+      "title_original": "Securing our future: July 2026 progress report on Microsoft’s Secure Future Initiative",
+      "headline_no": "SFI-rapport: Microsoft møter AI-drevne angrep med AI-basert forsvar",
+      "summary_no": "Microsofts andre årlige Secure Future Initiative-rapport beskriver hvordan selskapet styrker sikkerhetsgrunnmuren for et trussellandskap akselerert av AI. Rapporten fremhever at de alvorligste bruddene sjelden skyldes én manglende kontroll, men sammensatte angrepsveier fra identitetshull, uforvaltede enheter og inkonsistente konfigurasjoner. For IT-admins er dette en påminnelse om å tette slike gap systematisk snarere enn punktvis.",
+      "topic": "sikkerhet",
+      "score": 44,
+      "tags": [
+        "sfi",
+        "microsoft-security",
+        "ai-sikkerhet",
+        "trusselbilde"
+      ]
+    },
     {
       "id": "andrew-taylor-3f7f98eb87",
       "source_id": "andrew-taylor",
@@ -9667,45 +9707,6 @@
         "kiosk",
         "start-meny",
         "konfigurasjon"
-      ]
-    },
-    {
-      "id": "security-baselines-0cc8561f29",
-      "source_id": "security-baselines",
-      "source_name": "Microsoft Security Baselines Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-review-for-microsoft-edge-version-149/ba-p/4526371",
-      "published": "2026-06-08T11:32:08.000Z",
-      "ingested": "2026-06-20T16:41:20.332Z",
-      "title_original": "Security Review for Microsoft Edge version 149",
-      "headline_no": "Edge 149 trenger ingen nye sikkerhetsinnstillinger — bruk 139-baseline",
-      "summary_no": "Microsoft har gjennomgått de 7 nye innstillingene i Microsoft Edge 149 og konkludert med at ingen krever håndheving. Den eksisterende Edge 139-baselinen forblir anbefalt konfigurasjon, så admins trenger ikke gjøre endringer — et regneark med de nye innstillingene er likevel tilgjengelig.",
-      "topic": "sikkerhet",
-      "score": 32,
-      "tags": [
-        "edge",
-        "security-baseline",
-        "sct",
-        "configuration"
-      ]
-    },
-    {
-      "id": "jeffrey-appel-285210859a",
-      "source_id": "jeffrey-appel",
-      "source_name": "Jeffrey Appel — Microsoft Security",
-      "url": "https://jeffreyappel.nl/disable-alert-generation-for-unsanctioned-apps-in-microsoft-defender-for-cloud-apps/",
-      "published": "2026-06-08T11:01:32.000Z",
-      "ingested": "2026-06-20T16:42:52.739Z",
-      "title_original": "Disable alert generation for Unsanctioned Apps in Microsoft Defender for Cloud Apps",
-      "headline_no": "Slik demper du alarmstøy for usanksjonerte apper i Defender for Cloud Apps",
-      "summary_no": "Jeffrey Appel viser hvordan du slår av alarmgenerering for usanksjonerte apper i Microsoft Defender for Cloud Apps når MDCA er integrert med Defender for Endpoint. Uten justering kan blokkering av apper utløse unødvendig støy i alarmkøen. En praktisk how-to for å holde Shadow IT-oppdagelsen ren.",
-      "topic": "sikkerhet",
-      "score": 34,
-      "tags": [
-        "mdca",
-        "defender",
-        "shadow-it",
-        "mde",
-        "apper"
       ]
     }
   ]
