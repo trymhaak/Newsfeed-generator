@@ -1,6 +1,296 @@
 {
-  "generated_at": "2026-07-11T17:45:48.046Z",
+  "generated_at": "2026-07-11T23:50:43.006Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-8981b10c52",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14428",
+      "published": "2026-07-11T22:41:38.000Z",
+      "ingested": "2026-07-11T23:48:00.773Z",
+      "title_original": "Chromium: CVE-2026-14428 Insufficient validation of untrusted input in Dawn",
+      "headline_no": "Ny Chromium-feil i Dawn rammer Edge: input-validering svikter",
+      "summary_no": "En sårbarhet i Chromiums Dawn-komponent (WebGPU) skyldes mangelfull validering av upålitelig input, og Microsoft Edge arver feilen fordi nettleseren er Chromium-basert. Chrome har allerede levert rettelsen som Edge tar inn. IT-admins bør sørge for at Edge er oppdatert til siste versjon i klientparken.",
+      "topic": "sikkerhet",
+      "score": 40,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-14428",
+        "dawn",
+        "webgpu"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-6d618e8194",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13777",
+      "published": "2026-07-11T22:39:58.000Z",
+      "ingested": "2026-07-11T23:48:00.779Z",
+      "title_original": "Chromium: CVE-2026-13777 Insufficient validation of untrusted input in iOSWeb",
+      "headline_no": "Edge på iOS arver Chromium-sårbarhet med svak input-validering",
+      "summary_no": "Chrome har utbedret en sårbarhet knyttet til mangelfull validering av upålitelig input i iOSWeb-komponenten, som også påvirker Microsoft Edge. Feilen er mest relevant for Edge på iOS-enheter. Sørg for at mobile Edge-installasjoner oppdateres via App Store.",
+      "topic": "sikkerhet",
+      "score": 38,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-13777",
+        "ios"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-790b0e93db",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14397",
+      "published": "2026-07-11T22:39:54.000Z",
+      "ingested": "2026-07-11T23:49:18.548Z",
+      "title_original": "Chromium: CVE-2026-14397 Out of bounds write in ANGLE",
+      "headline_no": "Edge tetter out-of-bounds-skriving i ANGLE (CVE-2026-14397)",
+      "summary_no": "Microsoft Edge arver en Chromium-fiks for en out-of-bounds-skrivefeil i grafikkomponenten ANGLE. Minnefeil av denne typen kan i verste fall utnyttes til kodekjøring i nettleseren. Ingen egen admin-handling utover å sikre at Edge holdes automatisk oppdatert.",
+      "topic": "sikkerhet",
+      "score": 38,
+      "tags": [
+        "edge",
+        "chromium",
+        "angle",
+        "cve-2026-14397"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-f079c423b4",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14396",
+      "published": "2026-07-11T22:39:53.000Z",
+      "ingested": "2026-07-11T23:48:00.780Z",
+      "title_original": "Chromium: CVE-2026-14396 Out of bounds read in ANGLE",
+      "headline_no": "ANGLE-lekkasje i Chromium: Edge kan lese utenfor minnegrenser",
+      "summary_no": "En out-of-bounds-lesefeil i ANGLE-grafikklaget i Chromium kan lekke minne, og Microsoft Edge arver sårbarheten fra Chromium. Chrome har levert en fiks som Edge henter inn. Verifiser at Edge er på nyeste versjon i organisasjonen.",
+      "topic": "sikkerhet",
+      "score": 41,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-14396",
+        "angle"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-f8830c1314",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13778",
+      "published": "2026-07-11T22:39:26.000Z",
+      "ingested": "2026-07-11T23:48:00.780Z",
+      "title_original": "Chromium: CVE-2026-13778 Use after free in WebUSB",
+      "headline_no": "Use-after-free i WebUSB truer Edge — Chromium-fiks tilgjengelig",
+      "summary_no": "En use-after-free-feil i Chromiums WebUSB kan i verste fall utnyttes til kodekjøring, og Microsoft Edge arver sårbarheten. Chrome har publisert en rettelse som Edge ingesterer. Rull ut oppdatert Edge til klientene så snart som mulig.",
+      "topic": "sikkerhet",
+      "score": 44,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-13778",
+        "webusb",
+        "use-after-free"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-7f6d6619f6",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14401",
+      "published": "2026-07-11T22:39:23.000Z",
+      "ingested": "2026-07-11T23:49:18.548Z",
+      "title_original": "Chromium: CVE-2026-14401 Insufficient validation of untrusted input in ANGLE",
+      "headline_no": "Edge fikser mangelfull inputvalidering i ANGLE (CVE-2026-14401)",
+      "summary_no": "Chromium retter mangelfull validering av upålitelig input i ANGLE, og Microsoft Edge henter fiksen automatisk. Svakheten kan åpne for manipulering via spesiallaget nettinnhold. Sikre at Edge-klientene får siste oppdatering.",
+      "topic": "sikkerhet",
+      "score": 36,
+      "tags": [
+        "edge",
+        "chromium",
+        "angle",
+        "cve-2026-14401"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-e27306caf3",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14405",
+      "published": "2026-07-11T22:37:50.000Z",
+      "ingested": "2026-07-11T23:50:42.689Z",
+      "title_original": "Chromium: CVE-2026-14405 Uninitialized Use in V8",
+      "headline_no": "Edge får Chromium-fiks for uinitialisert minnebruk i V8",
+      "summary_no": "En feil med bruk av uinitialisert minne i V8-motoren er rettet i Chromium og hentes automatisk inn i Microsoft Edge. Slike feil kan lekke minneinnhold eller destabilisere nettleseren; hold Edge oppdatert for å få rettelsen.",
+      "topic": "sikkerhet",
+      "score": 41,
+      "tags": [
+        "edge",
+        "chromium",
+        "v8",
+        "cve-2026-14405"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-079ab491de",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14404",
+      "published": "2026-07-11T22:37:48.000Z",
+      "ingested": "2026-07-11T23:50:42.689Z",
+      "title_original": "Chromium: CVE-2026-14404 Inappropriate implementation in PDFium",
+      "headline_no": "PDFium-svakhet i Edge rettet gjennom Chromium-oppdatering",
+      "summary_no": "Chromium har rettet en «inappropriate implementation»-svakhet i PDFium, komponenten som viser PDF-filer i nettleseren, og Microsoft Edge arver fiksen. PDF-visning er en vanlig angrepsflate, så IT-admins bør rulle ut siste Edge-versjon.",
+      "topic": "sikkerhet",
+      "score": 41,
+      "tags": [
+        "edge",
+        "chromium",
+        "pdfium",
+        "cve-2026-14404",
+        "pdf"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-326259fbc5",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14403",
+      "published": "2026-07-11T22:37:47.000Z",
+      "ingested": "2026-07-11T23:50:42.689Z",
+      "title_original": "Chromium: CVE-2026-14403 Use after free in V8",
+      "headline_no": "Edge arver Chromium-fiks for use-after-free i V8-motoren",
+      "summary_no": "Google har tettet en use-after-free-sårbarhet i V8 JavaScript-motoren, og Microsoft Edge (Chromium-basert) får rettelsen gjennom den vanlige Chromium-innhentingen. Use-after-free kan i verste fall utnyttes til kjøring av vilkårlig kode, så IT-admins bør sørge for at Edge oppdateres til nyeste versjon.",
+      "topic": "sikkerhet",
+      "score": 47,
+      "tags": [
+        "edge",
+        "chromium",
+        "v8",
+        "cve-2026-14403",
+        "use-after-free"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-dd91536f61",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14402",
+      "published": "2026-07-11T22:37:45.000Z",
+      "ingested": "2026-07-11T23:49:18.548Z",
+      "title_original": "Chromium: CVE-2026-14402 Uninitialized Use in ANGLE",
+      "headline_no": "Uinitialisert minnebruk i ANGLE rettet i Edge (CVE-2026-14402)",
+      "summary_no": "Microsoft Edge arver en Chromium-fiks for uinitialisert minnebruk i ANGLE-grafikkomponenten. Slike feil gir oftest informasjonslekkasje eller krasj heller enn full kompromittering. Rulles ut med ordinær Edge-oppdatering.",
+      "topic": "sikkerhet",
+      "score": 33,
+      "tags": [
+        "edge",
+        "chromium",
+        "angle",
+        "cve-2026-14402"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-6e81e5427c",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14400",
+      "published": "2026-07-11T22:37:44.000Z",
+      "ingested": "2026-07-11T23:49:18.548Z",
+      "title_original": "Chromium: CVE-2026-14400 Out of bounds write in ANGLE",
+      "headline_no": "Ny out-of-bounds-skriving i ANGLE tettet i Edge (CVE-2026-14400)",
+      "summary_no": "Enda en out-of-bounds-skrivefeil i ANGLE-grafikklaget er rettet i Chromium og arves av Microsoft Edge. Denne klassen minnefeil kan utnyttes til kodekjøring. Hold Edge oppdatert; ingen admin-handling utover normal patching.",
+      "topic": "sikkerhet",
+      "score": 38,
+      "tags": [
+        "edge",
+        "chromium",
+        "angle",
+        "cve-2026-14400"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-2023a0ecc9",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14399",
+      "published": "2026-07-11T22:37:43.000Z",
+      "ingested": "2026-07-11T23:49:18.548Z",
+      "title_original": "Chromium: CVE-2026-14399 Uninitialized Use in Dawn",
+      "headline_no": "Edge retter uinitialisert minnebruk i Dawn (CVE-2026-14399)",
+      "summary_no": "Microsoft Edge ingesterer en Chromium-fiks for uinitialisert minnebruk i WebGPU-komponenten Dawn. Konsekvensen er typisk informasjonslekkasje eller ustabilitet snarere enn full kompromittering. Lav prioritet, men rulles ut med ordinær Edge-oppdatering.",
+      "topic": "sikkerhet",
+      "score": 33,
+      "tags": [
+        "edge",
+        "chromium",
+        "dawn",
+        "cve-2026-14399"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-97b1618bb1",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14398",
+      "published": "2026-07-11T22:37:41.000Z",
+      "ingested": "2026-07-11T23:49:18.548Z",
+      "title_original": "Chromium: CVE-2026-14398 Use after free in ANGLE",
+      "headline_no": "Use-after-free i ANGLE fikset i Edge (CVE-2026-14398)",
+      "summary_no": "En use-after-free i Chromiums ANGLE-grafikklag er rettet, og Microsoft Edge henter fiksen via Chromium. Slike minnefeil kan misbrukes til å kjøre vilkårlig kode via ondsinnet nettinnhold. Sørg for at Edge-klientene er på nyeste versjon.",
+      "topic": "sikkerhet",
+      "score": 39,
+      "tags": [
+        "edge",
+        "chromium",
+        "angle",
+        "cve-2026-14398"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-6c04903800",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14395",
+      "published": "2026-07-11T22:37:40.000Z",
+      "ingested": "2026-07-11T23:48:00.780Z",
+      "title_original": "Chromium: CVE-2026-14395 Out of bounds write in V8",
+      "headline_no": "Skrivefeil utenfor minnegrenser i V8 rammer Edge-nettleseren",
+      "summary_no": "En out-of-bounds-skrivefeil i V8 kan føre til minnekorrupsjon og potensielt kodekjøring, og Edge påvirkes som Chromium-basert nettleser. Rettelsen fra Chrome er allerede tatt inn i Edge. Distribuer oppdatert Edge til klientparken for å lukke hullet.",
+      "topic": "sikkerhet",
+      "score": 46,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-14395",
+        "v8"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-98d8bd43ae",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14394",
+      "published": "2026-07-11T22:37:39.000Z",
+      "ingested": "2026-07-11T23:48:00.780Z",
+      "title_original": "Chromium: CVE-2026-14394 Use after free in V8",
+      "headline_no": "Minnefeil i V8-motoren rammer Edge — oppdater nettleseren nå",
+      "summary_no": "V8-motoren i Chromium har en use-after-free-sårbarhet som gir risiko for minnekorrupsjon og mulig kodekjøring, og Edge påvirkes fordi nettleseren bygger på Chromium. Google har fikset feilen, og Edge tar inn oppdateringen. IT-admins bør prioritere Edge-oppdatering på alle endepunkter.",
+      "topic": "sikkerhet",
+      "score": 47,
+      "tags": [
+        "edge",
+        "chromium",
+        "cve-2026-14394",
+        "v8",
+        "use-after-free"
+      ]
+    },
     {
       "id": "admindroid-2777316ab6",
       "source_id": "admindroid",
@@ -9403,298 +9693,6 @@
         "autopilot",
         "autopatch",
         "nyhetsbrev"
-      ]
-    },
-    {
-      "id": "m365-copilot-5fe9a3d1fe",
-      "source_id": "m365-copilot",
-      "source_name": "Microsoft 365 Copilot Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/available-today-anthropic-claude-fable-5-in-microsoft-365/ba-p/4526832",
-      "published": "2026-06-11T20:58:32.000Z",
-      "ingested": "2026-06-20T13:54:04.559Z",
-      "title_original": "Available today: Anthropic Claude Fable 5 in Microsoft 365 Copilot",
-      "headline_no": "Claude Fable 5 ute som forhåndsvisning i Microsoft 365 Copilot",
-      "summary_no": "Anthropics nye Claude Fable 5 er nå tilgjengelig som forhåndsvisningsmodell – avslått som standard – i Microsoft 365 Copilot, foreløpig i Copilot Cowork (Frontier) og som privat preview i Excel og PowerPoint. Modellen er rettet mot lengre arbeidsflyter i flere steg. IT-admins må aktivt skru på tilgang per policy, og bør merke seg at bruk omfattes av Anthropics dataoppbevaring før de aktiverer.",
-      "topic": "ai",
-      "score": 63,
-      "tags": [
-        "copilot",
-        "anthropic",
-        "claude-fable-5",
-        "preview"
-      ]
-    },
-    {
-      "id": "azure-network-security-994807195a",
-      "source_id": "azure-network-security",
-      "source_name": "Azure Network Security Blog",
-      "url": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/a-deep-dive-into-azure-bastion-session-recording/ba-p/4527583",
-      "published": "2026-06-11T19:38:25.000Z",
-      "ingested": "2026-06-20T16:41:20.332Z",
-      "title_original": "A deep dive into Azure Bastion session recording",
-      "headline_no": "Azure Bastion får Managed Identity for opptak av RDP- og SSH-økter",
-      "summary_no": "Azure Bastion Premium kan ta opp grafiske RDP- og SSH-økter som avspillbar video for revisjon og etterforskning. En ny public preview lar deg bruke Managed Identity i stedet for SAS-tokens for å lagre opptakene, noe som fjerner manuell tokenhåndtering og utløpsproblemer i produksjonsmiljøer.",
-      "topic": "sikkerhet",
-      "score": 46,
-      "tags": [
-        "azure-bastion",
-        "session-recording",
-        "managed-identity",
-        "rdp",
-        "ssh"
-      ]
-    },
-    {
-      "id": "security-community-7e80afd29e",
-      "source_id": "security-community",
-      "source_name": "Microsoft Security Community Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/level-up-your-azure-network-security-skills-with-our-upcoming/ba-p/4525584",
-      "published": "2026-06-11T18:09:16.000Z",
-      "ingested": "2026-06-20T16:42:52.739Z",
-      "title_original": "Level up your Azure Network Security Skills with our Upcoming Webinar Series",
-      "headline_no": "Azure-teamet inviterer til webinarserie om nettverkssikkerhet",
-      "summary_no": "Azure Network Security-teamet kjører en serie tekniske webinarer om WAF, Azure Firewall, DDoS Protection og Bastion, med demoer og de nyeste forbedringene. Sesjonene retter seg mot sikkerhetsarkitekter, nettverksteam og SOC-analytikere som sikrer Azure-miljøer. Mest relevant som kompetansepåfyll, ikke en produktnyhet.",
-      "topic": "sikkerhet",
-      "score": 22,
-      "tags": [
-        "webinar",
-        "azure",
-        "waf",
-        "firewall",
-        "ddos"
-      ]
-    },
-    {
-      "id": "windows-networking-fd868f6675",
-      "source_id": "windows-networking",
-      "source_name": "Windows Networking Blog (Core Networking)",
-      "url": "https://techcommunity.microsoft.com/t5/networking-blog/doh-is-now-generally-available-on-windows-dns-server/ba-p/4526839",
-      "published": "2026-06-11T17:27:51.000Z",
-      "ingested": "2026-06-20T16:48:55.360Z",
-      "title_original": "DoH is now generally available on Windows DNS Server",
-      "headline_no": "DNS over HTTPS blir allment tilgjengelig i Windows Server 2025",
-      "summary_no": "DNS over HTTPS (DoH) for Windows DNS Server er nå generelt tilgjengelig på Windows Server 2025 for klient-til-server-trafikk. Det gir kryptert og autentisert DNS direkte i eksisterende on-prem-infrastruktur, og reduserer risiko for avlytting og spoofing. For sikkerhetsteam er dette et konkret steg mot Zero Trust DNS uten å bytte ut resolver-arkitekturen.",
-      "topic": "sikkerhet",
-      "score": 61,
-      "tags": [
-        "doh",
-        "dns",
-        "windows-server-2025",
-        "zero-trust"
-      ]
-    },
-    {
-      "id": "windows-admin-center-0fc3b4f3e1",
-      "source_id": "windows-admin-center",
-      "source_name": "Windows Admin Center Blog",
-      "url": "https://techcommunity.microsoft.com/t5/windows-admin-center-blog/virtualization-mode-unlocked/ba-p/4487896",
-      "published": "2026-06-11T16:28:36.000Z",
-      "ingested": "2026-06-20T16:51:06.455Z",
-      "title_original": "Virtualization Mode Unlocked",
-      "headline_no": "Ny virtualiseringsmodus samler Hyper-V, lagring og nettverk ett sted",
-      "summary_no": "Microsoft har lansert Windows Admin Center: Virtualiseringsmodus i offentlig forhåndsvisning — et nytt verktøy for å styre Hyper-V-klynger, lagring (SAN, NAS, HCI) og nettverk fra ett grensesnitt. Verktøyet installeres på under fem minutter og posisjoneres som et fullverdig alternativ til tredjeparts virtualiseringsplattformer. Admins som drifter Hyper-V bør se nærmere på dette som erstatning for eldre styringsverktøy.",
-      "topic": "endpoint",
-      "score": 50,
-      "tags": [
-        "windows-admin-center",
-        "hyper-v",
-        "virtualisering",
-        "lagring",
-        "preview"
-      ]
-    },
-    {
-      "id": "windows-admin-center-5415cfa1d3",
-      "source_id": "windows-admin-center",
-      "source_name": "Windows Admin Center Blog",
-      "url": "https://techcommunity.microsoft.com/t5/windows-admin-center-blog/the-windows-admin-center-virtualization-mode-public-preview/ba-p/4527304",
-      "published": "2026-06-11T16:24:28.000Z",
-      "ingested": "2026-06-20T16:48:55.360Z",
-      "title_original": "The Windows Admin Center: Virtualization Mode public preview build has been updated!",
-      "headline_no": "Windows Admin Center vMode-preview oppdatert med feilrettinger og Angular 20",
-      "summary_no": "Public preview-byggen av Virtualization Mode i Windows Admin Center er oppdatert til 2.7.1.8, med rettelser for installasjon på ikke-engelske systemer, «access denied»-feil mot gateway og feil i nettverksintent. Alle WAC-utvidelser er oppgradert til Angular 20 for bedre ytelse og sikkerhet. Admins som tester vMode bør oppdatere for å unngå de kjente feilene.",
-      "topic": "endpoint",
-      "score": 32,
-      "tags": [
-        "windows-admin-center",
-        "vmode",
-        "public-preview",
-        "bugfix"
-      ]
-    },
-    {
-      "id": "defender-endpoint-697dbd414c",
-      "source_id": "defender-endpoint",
-      "source_name": "Microsoft Defender for Endpoint Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/reduce-unnecessary-internet-exposure-with-microsoft-defender/ba-p/4525654",
-      "published": "2026-06-11T16:00:00.000Z",
-      "ingested": "2026-06-20T16:29:50.126Z",
-      "title_original": "Reduce unnecessary internet exposure with Microsoft Defender",
-      "headline_no": "Defender får ny anbefaling som avslører unødvendig internett-eksponering",
-      "summary_no": "Microsoft Defender introduserer en ny sikkerhetsanbefaling som identifiserer enheter med innkommende tilkobling fra det åpne internett. Den hjelper sikkerhetsteam å skille tilsiktet eksponering fra unødvendig angrepsflate, slik at de kan prioritere og redusere risikoen for initial access og lateral bevegelse.",
-      "topic": "sikkerhet",
-      "score": 56,
-      "tags": [
-        "defender",
-        "angrepsflate",
-        "exposure-management"
-      ]
-    },
-    {
-      "id": "copilot-studio-6f261ee6dd",
-      "source_id": "copilot-studio",
-      "source_name": "Microsoft Copilot Studio Blog",
-      "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/who-evaluates-the-evaluators-the-data-science-behind-agent-evals/",
-      "published": "2026-06-11T16:00:00.000Z",
-      "ingested": "2026-06-20T13:55:30.839Z",
-      "hero_image": "https://www.microsoft.com/en-us/microsoft-copilot/blog/wp-content/uploads/2024/08/THE-QUALITY-QUESTION-1920px-1024x412.webp",
-      "title_original": "Who evaluates the evaluators? The data science behind agent evals",
-      "headline_no": "Slik avgjør Copilot Studio om AI-agenten din faktisk blir bedre",
-      "summary_no": "Microsoft åpner opp data science-metodikken bak agentevaluering i Copilot Studio: hvordan genererte testdatasett, graders og metrikker valideres for å gi pålitelige kvalitetssignaler. For team som bygger agenter er poenget å fange opp regresjoner før brukerne gjør det, og å kunne stole på at en endring faktisk forbedrer agenten – ikke bare ser sånn ut.",
-      "topic": "ai",
-      "score": 41,
-      "tags": [
-        "copilot-studio",
-        "ai-agenter",
-        "evaluering",
-        "data-science"
-      ]
-    },
-    {
-      "id": "m365-copilot-28fe511678",
-      "source_id": "m365-copilot",
-      "source_name": "Microsoft 365 Copilot Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/what-s-new-in-notebooks-june-2026/ba-p/4525625",
-      "published": "2026-06-11T15:03:45.000Z",
-      "ingested": "2026-06-20T13:52:59.941Z",
-      "title_original": "What’s New in Notebooks | June 2026",
-      "headline_no": "Copilot Notebooks blir tilgjengelig for alle Copilot Chat-brukere",
-      "summary_no": "Copilot Notebooks, som tidligere krevde full M365 Copilot-lisens, rulles nå ut til Copilot Chat-brukere i både Copilot-appen og OneNote. Brukere kan samle Word-, PowerPoint-, Excel- og Outlook-innhold i delte notatbøker og stille spørsmål på tvers av kildene. For IT-admins betyr det bredere tilgang til delt kunnskapsarbeid i blandede lisensmiljøer.",
-      "topic": "ai",
-      "score": 50,
-      "tags": [
-        "copilot",
-        "notebooks",
-        "m365",
-        "onenote",
-        "rollout"
-      ]
-    },
-    {
-      "id": "admindroid-a332054dcc",
-      "source_id": "admindroid",
-      "source_name": "AdminDroid Blog",
-      "url": "https://blog.admindroid.com/how-to-prevent-users-from-modifying-outlook-signatures-in-microsoft-365/",
-      "published": "2026-06-11T14:39:26.000Z",
-      "ingested": "2026-06-20T16:28:30.747Z",
-      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/Prevent-Users-from-Modifying-Outlook-Signatures-150x150.png",
-      "title_original": "How to Prevent Users from Modifying Outlook Signatures in Microsoft 365",
-      "headline_no": "Slik hindrer du brukere i å endre Outlook-signaturen i Microsoft 365",
-      "summary_no": "AdminDroid går gjennom to måter å låse Outlook-signaturer på, siden Microsoft 365 mangler en innebygd bryter for det: server-side signatur som hard lås, eller et planlagt PowerShell-skript som myk lås. Nyttig for å holde branding og juridisk ansvarsfraskrivelse konsistent.",
-      "topic": "endpoint",
-      "score": 20,
-      "tags": [
-        "outlook",
-        "signaturer",
-        "microsoft-365",
-        "powershell"
-      ]
-    },
-    {
-      "id": "core-infra-security-42973164b2",
-      "source_id": "core-infra-security",
-      "source_name": "Core Infrastructure and Security Blog",
-      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/analyse-intune-diagnostics-logs-with-github-copilot/ba-p/4527500",
-      "published": "2026-06-11T12:15:59.000Z",
-      "ingested": "2026-06-20T16:41:20.332Z",
-      "title_original": "Analyse Intune Diagnostics Logs with GitHub Copilot",
-      "headline_no": "GitHub Copilot leser Intune-diagnoselogger og finner rotårsaken raskere",
-      "summary_no": "En Microsoft-arkitekt viser hvordan GitHub Copilot CLI kan analysere Intune-diagnoselogger og nettverkstrace for å spore feil på minutter i stedet for timer. Oppsettet tar to minutter, men tolkningen krever fortsatt solid Intune-kompetanse — Copilot peker mot rotårsaken, du verifiserer den.",
-      "topic": "endpoint",
-      "score": 43,
-      "tags": [
-        "intune",
-        "copilot",
-        "troubleshooting",
-        "diagnostics"
-      ]
-    },
-    {
-      "id": "office365-itpros-d002240bc8",
-      "source_id": "office365-itpros",
-      "source_name": "Office 365 for IT Pros (Tony Redmond)",
-      "url": "https://office365itpros.com/2026/06/11/sensitivity-label-ps/?utm_source=rss&utm_medium=rss&utm_campaign=sensitivity-label-ps",
-      "published": "2026-06-11T07:00:00.000Z",
-      "ingested": "2026-06-20T16:24:58.516Z",
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/05/Sensitivity-Labels-List.jpg?resize=840%2C530&#038;ssl=1",
-      "title_original": "Primer: Finding Sensitivity Labels with PowerShell",
-      "headline_no": "Slik finner du sensitivitetsetiketter med PowerShell",
-      "summary_no": "Tony Redmond går gjennom tre måter å hente ut sensitivitetsetiketter og egenskapene deres i en Microsoft 365-tenant via PowerShell. Du trenger etikett-ID-en for å automatisere merking av filer, og artikkelen viser hvordan Get-Label skiller seg fra de Graph-baserte metodene. Nyttig grunnlag for admins som bygger skript rundt Purview-merking.",
-      "topic": "sikkerhet",
-      "score": 34,
-      "tags": [
-        "powershell",
-        "purview",
-        "sensitivity-labels",
-        "compliance"
-      ]
-    },
-    {
-      "id": "core-infra-security-34295d7f43",
-      "source_id": "core-infra-security",
-      "source_name": "Core Infrastructure and Security Blog",
-      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/at-scale-failure-reporting-for-azure-update-manager/ba-p/4527378",
-      "published": "2026-06-11T06:32:42.000Z",
-      "ingested": "2026-06-20T16:41:20.332Z",
-      "title_original": "At-Scale Failure Reporting for Azure Update Manager",
-      "headline_no": "Én ARG-spørring henter alle patch-feil i Azure Update Manager",
-      "summary_no": "Azure Update Manager viser patch-feil kun per maskin i portalen, noe som blir uhåndterlig i store flåter. En enkelt Azure Resource Graph-spørring kan i stedet trekke ut alle feilede maskiner med feilkoder og -meldinger for en gitt vedlikeholdskjøring, på tvers av abonnementer og regioner.",
-      "topic": "sikkerhet",
-      "score": 43,
-      "tags": [
-        "azure-update-manager",
-        "patching",
-        "azure-resource-graph",
-        "azure"
-      ]
-    },
-    {
-      "id": "ourcloudnetwork-fcc052a9f8",
-      "source_id": "ourcloudnetwork",
-      "source_name": "Our Cloud Network (Daniel Bradley)",
-      "url": "https://ourcloudnetwork.com/how-to-stop-guests-from-inviting-more-guests-in-microsoft-entra/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-stop-guests-from-inviting-more-guests-in-microsoft-entra",
-      "published": "2026-06-11T05:44:20.000Z",
-      "ingested": "2026-06-20T16:26:52.164Z",
-      "title_original": "How to Stop Guests From Inviting More Guests in Microsoft Entra",
-      "headline_no": "Slik hindrer du at gjester inviterer flere gjester i Entra",
-      "summary_no": "Som standard kan eksterne gjester invitere enda flere gjester inn i tenanten din, noe som raskt sprer tilgang utenfor kontroll. Guiden viser hvordan du strammer inn external collaboration-innstillingene i Entra. En enkel herdingsgevinst for å holde gjestelisten ryddig.",
-      "topic": "identitet",
-      "score": 36,
-      "tags": [
-        "entra",
-        "b2b",
-        "gjester",
-        "external-collaboration"
-      ]
-    },
-    {
-      "id": "windows-admin-center-053cffee74",
-      "source_id": "windows-admin-center",
-      "source_name": "Windows Admin Center Blog",
-      "url": "https://techcommunity.microsoft.com/t5/windows-admin-center-blog/announcing-windows-admin-center-virtualization-mode-public/ba-p/4508937",
-      "published": "2026-06-10T22:03:51.000Z",
-      "ingested": "2026-06-20T16:51:06.455Z",
-      "title_original": "Announcing Windows Admin Center: Virtualization Mode Public Preview 2!",
-      "headline_no": "Windows Admin Center: andre preview av virtualiseringsmodus er ute",
-      "summary_no": "Windows Admin Center: Virtualiseringsmodus er ute i Public Preview 2 med en rekke forbedringer på vei mot generell tilgjengelighet. Nyhetene denne runden er blant annet uattendert installasjon via INI-filer og raskere oppdateringer. For admins som vurderer å forlate VMware er dette en sjanse til å teste Microsofts nye Hyper-V-styringsverktøy før lansering.",
-      "topic": "endpoint",
-      "score": 47,
-      "tags": [
-        "windows-admin-center",
-        "hyper-v",
-        "virtualisering",
-        "preview",
-        "installasjon"
       ]
     }
   ]
