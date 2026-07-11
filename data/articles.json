@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T11:44:19.511Z",
+  "generated_at": "2026-07-11T17:45:48.046Z",
   "articles": [
     {
       "id": "admindroid-2777316ab6",
@@ -365,6 +365,25 @@
         "microsoft-security",
         "ai-sikkerhet",
         "trusselbilde"
+      ]
+    },
+    {
+      "id": "core-infra-security-26d80c91c7",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/when-arc-goes-silent-turning-visibility-gaps-into-soc-action/ba-p/4535711",
+      "published": "2026-07-10T12:07:15.000Z",
+      "ingested": "2026-07-11T17:45:47.985Z",
+      "title_original": "When Arc Goes Silent: Turning Visibility Gaps into SOC Action",
+      "headline_no": "Slik fanger du opp Azure Arc-servere som faller ut av overvåkingen",
+      "summary_no": "En ny playbook fra Microsoft viser hvordan du kombinerer Sentinel og Logic Apps for å oppdage Azure Arc-servere som blir stående usunne over en gitt terskel, for eksempel 30 minutter. I stedet for en flom av enkeltvarsler får SOC-en én samlet daglig e-postrapport som peker på hvor overvåkingsdekningen svekkes. For hybride miljøer betyr det raskere prioritering og mindre alarmstøy.",
+      "topic": "sikkerhet",
+      "score": 43,
+      "tags": [
+        "azure-arc",
+        "sentinel",
+        "soc",
+        "logic-apps"
       ]
     },
     {
@@ -9676,25 +9695,6 @@
         "virtualisering",
         "preview",
         "installasjon"
-      ]
-    },
-    {
-      "id": "defender-endpoint-3ac428ce0b",
-      "source_id": "defender-endpoint",
-      "source_name": "Microsoft Defender for Endpoint Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/introducing-scheduled-antivirus-scans-on-microsoft-defender/ba-p/4524578",
-      "published": "2026-06-10T16:00:00.000Z",
-      "ingested": "2026-06-20T16:29:50.126Z",
-      "title_original": "Introducing scheduled antivirus scans on Microsoft Defender Linux",
-      "headline_no": "Defender for Linux får sentralstyrte planlagte antivirus-skann",
-      "summary_no": "Microsoft Defender støtter nå sentralt administrerte, planlagte antivirus-skann på Linux i public preview. Admins kan sette opp time-, dags- eller ukesskann via security settings-policyer eller JSON deployet med Ansible, Puppet eller Chef — slutt på skjøre, egendefinerte cron-skript.",
-      "topic": "sikkerhet",
-      "score": 56,
-      "tags": [
-        "defender",
-        "linux",
-        "antivirus",
-        "public-preview"
       ]
     }
   ]
