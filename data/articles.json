@@ -1,6 +1,217 @@
 {
-  "generated_at": "2026-07-11T00:22:33.456Z",
+  "generated_at": "2026-07-11T10:53:06.276Z",
   "articles": [
+    {
+      "id": "admindroid-2777316ab6",
+      "source_id": "admindroid",
+      "source_name": "AdminDroid Blog",
+      "url": "https://blog.admindroid.com/configure-cross-tenant-message-recall-exchange-online/",
+      "published": "2026-07-11T10:29:19.000Z",
+      "ingested": "2026-07-11T10:48:50.356Z",
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Microsoft-Introduces-Cross-Tenant-Message-Recall-in-Exchange-Online-150x150.png",
+      "title_original": "Exchange Online Now Supports Cross-Tenant Message Recall",
+      "headline_no": "Exchange Online: Tilbakekall nå e-post sendt til eksterne tenants",
+      "summary_no": "Microsoft utvider Message Recall i Exchange Online til å fungere på tvers av tenants, slik at du kan trekke tilbake e-post som ved et uhell er sendt til andre Microsoft 365-organisasjoner. Tilbakekallingen lykkes kun når mottakertenanten har gitt eksplisitt tillatelse – kontrollen ligger fortsatt hos mottaker. For admins gir det en ny mulighet til å begrense skaden når sensitiv e-post havner utenfor egen organisasjon.",
+      "topic": "identitet",
+      "score": 42,
+      "tags": [
+        "exchange-online",
+        "message-recall",
+        "cross-tenant",
+        "e-post"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-074cebf1cb",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54908",
+      "published": "2026-07-11T08:41:05.000Z",
+      "ingested": "2026-07-11T10:48:50.356Z",
+      "title_original": "CVE-2026-54908 Pion DTLS: Denial of service via panic while parsing a crafted ECDHE_PSK ServerKeyExchange message",
+      "headline_no": "Tjenestenekt i Pion DTLS: spesiallaget melding utløser panic",
+      "summary_no": "En spesiallaget ECDHE_PSK ServerKeyExchange-melding kan utløse panic og tjenestenekt (DoS) i Pion DTLS-biblioteket (CVE-2026-54908). Sårbarheten rammer tjenester som bruker dette Go-biblioteket for DTLS/WebRTC, og har begrenset relevans for typiske Microsoft 365-miljøer.",
+      "topic": "sikkerhet",
+      "score": 36,
+      "tags": [
+        "cve-2026-54908",
+        "pion-dtls",
+        "dos",
+        "webrtc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-51749ece89",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7598",
+      "published": "2026-07-11T08:38:52.000Z",
+      "ingested": "2026-07-11T10:48:50.356Z",
+      "title_original": "CVE-2024-7598 Network restriction bypass via race condition during namespace termination",
+      "headline_no": "Race condition i namespace-terminering omgår nettverksrestriksjoner",
+      "summary_no": "En race condition under avslutning av namespace kan la angripere omgå nettverksrestriksjoner (CVE-2024-7598). MSRC har foreløpig kun publisert grunnleggende informasjon, men admins bør følge med på oppdateringen og vurdere eksponering i container- og nettverksmiljøer.",
+      "topic": "sikkerhet",
+      "score": 47,
+      "tags": [
+        "cve-2024-7598",
+        "race-condition",
+        "nettverk",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-9ed1677ec7",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56000",
+      "published": "2026-07-11T08:08:33.000Z",
+      "ingested": "2026-07-11T10:48:50.356Z",
+      "title_original": "CVE-2026-56000 xorg-x11-server / xwayland GLX contextTags Use-After-Free in CommonMakeCurrent()",
+      "headline_no": "Xwayland-sårbarhet: use-after-free i GLX åpner for kodekjøring",
+      "summary_no": "En use-after-free i GLX contextTags i xorg-x11-server/Xwayland (CVE-2026-56000) kan potensielt utnyttes til kjøring av vilkårlig kode. Sårbarheten er mest relevant for Linux-baserte miljøer som Azure Linux og WSLg; MSRC har så langt kun publisert grunnleggende informasjon.",
+      "topic": "sikkerhet",
+      "score": 38,
+      "tags": [
+        "cve-2026-56000",
+        "xwayland",
+        "use-after-free",
+        "azure-linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-805282cf11",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59998",
+      "published": "2026-07-11T08:02:59.000Z",
+      "ingested": "2026-07-11T10:50:57.942Z",
+      "title_original": "CVE-2026-59998 sshd in OpenSSH before 10.4 has an undocumented security-relevant behavior: GSSAPIStrictAcceptorCheck has no value if the server is in Windows Active Directory.",
+      "headline_no": "OpenSSH-feil svekker GSSAPI-sjekk når serveren står i Windows AD",
+      "summary_no": "I OpenSSH før 10.4 har innstillingen GSSAPIStrictAcceptorCheck ingen effekt når serveren er medlem av et Windows Active Directory-domene (CVE-2026-59998). Det kan svekke Kerberos-baserte tilgangskontroller på Linux-servere i AD-miljøer. Oppdater til OpenSSH 10.4 eller nyere.",
+      "topic": "sikkerhet",
+      "score": 59,
+      "tags": [
+        "openssh",
+        "cve-2026-59998",
+        "gssapi",
+        "active-directory",
+        "kerberos"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-8fbe938320",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20244",
+      "published": "2026-07-11T08:02:00.000Z",
+      "ingested": "2026-07-11T10:50:57.942Z",
+      "title_original": "CVE-2026-20244 ClamAV DMG File Processing Denial of Service Vulnerability",
+      "headline_no": "ClamAV: DMG-filer kan utløse tjenestenekt i skannemotoren",
+      "summary_no": "CVE-2026-20244 lar spesiallagde DMG-diskbilder få ClamAV til å krasje eller henge (tjenestenekt). Miljøer som skanner Mac-filformater med ClamAV bør patche.",
+      "topic": "sikkerhet",
+      "score": 43,
+      "tags": [
+        "clamav",
+        "cve-2026-20244",
+        "dos",
+        "dmg"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-86086618ba",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20217",
+      "published": "2026-07-11T08:01:47.000Z",
+      "ingested": "2026-07-11T10:50:57.942Z",
+      "title_original": "CVE-2026-20217 ClamAV PESpin File Format Processing Out-of-Bounds Memory Corruption Vulnerability",
+      "headline_no": "Minnekorrupsjon i ClamAVs PESpin-håndtering kan utnyttes av pakkede filer",
+      "summary_no": "CVE-2026-20217 er en out-of-bounds minnekorrupsjon som utløses når ClamAV analyserer PESpin-pakkede kjørbare filer. Sårbarheten kan destabilisere skanneren; oppdater til rettet ClamAV-versjon.",
+      "topic": "sikkerhet",
+      "score": 52,
+      "tags": [
+        "clamav",
+        "cve-2026-20217",
+        "pespin",
+        "sårbarhet"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-08ff6c7d7d",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20216",
+      "published": "2026-07-11T08:01:41.000Z",
+      "ingested": "2026-07-11T10:50:57.942Z",
+      "title_original": "CVE-2026-20216 ClamAV InstallShield File Format Processing Resource Exhaustion Vulnerability",
+      "headline_no": "ClamAV kan lammes av InstallShield-filer som tømmer ressurser",
+      "summary_no": "En ressursutmattings-sårbarhet (CVE-2026-20216) gjør at spesiallagde InstallShield-filer kan få ClamAV til å bruke opp systemressurser og stanse skanning (DoS). Relevant for gateways og e-postfiltre som lener seg på ClamAV.",
+      "topic": "sikkerhet",
+      "score": 45,
+      "tags": [
+        "clamav",
+        "cve-2026-20216",
+        "dos",
+        "installshield"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-196ce8e19c",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20215",
+      "published": "2026-07-11T08:01:35.000Z",
+      "ingested": "2026-07-11T10:50:57.942Z",
+      "title_original": "CVE-2026-20215 ClamAV 7Zip File Format Processing Out-of-Bounds Memory Corruption Vulnerability",
+      "headline_no": "ClamAV-feil i 7Zip-parsing åpner for minnekorrupsjon via ondsinnede arkiver",
+      "summary_no": "CVE-2026-20215 er en out-of-bounds minnekorrupsjon i ClamAVs håndtering av 7Zip-arkiver. En angriper kan sende et spesiallaget arkiv til skanning og potensielt destabilisere eller kompromittere skanneprosessen. Oppdater ClamAV-motoren.",
+      "topic": "sikkerhet",
+      "score": 54,
+      "tags": [
+        "clamav",
+        "cve-2026-20215",
+        "7zip",
+        "sårbarhet"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-836dbef164",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20214",
+      "published": "2026-07-11T08:01:29.000Z",
+      "ingested": "2026-07-11T10:50:57.942Z",
+      "title_original": "CVE-2026-20214 ClamAV FSG File Format Processing Out-of-Bounds Memory Corruption Vulnerability",
+      "headline_no": "ClamAV: Minnekorrupsjon i FSG-parsing kan utnyttes av skadelige filer",
+      "summary_no": "En ny sårbarhet (CVE-2026-20214) lar spesiallagde filer utløse minnekorrupsjon utenfor tildelt buffer når ClamAV behandler FSG-komprimerte filer. Miljøer som bruker ClamAV til fil- eller e-postskanning bør oppdatere til rettet motorversjon.",
+      "topic": "sikkerhet",
+      "score": 54,
+      "tags": [
+        "clamav",
+        "cve-2026-20214",
+        "sårbarhet",
+        "minnekorrupsjon"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-e1fd12b178",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59856",
+      "published": "2026-07-11T08:01:16.000Z",
+      "ingested": "2026-07-11T10:48:50.356Z",
+      "title_original": "CVE-2026-59856 Vim: Arbitrary Code Execution via PHP Omni-Completion",
+      "headline_no": "Vim kan kjøre vilkårlig kode via PHP-autofullføring (CVE-2026-59856)",
+      "summary_no": "En sårbarhet i Vims PHP omni-completion kan føre til kjøring av vilkårlig kode (CVE-2026-59856), typisk ved at et offer åpner en spesiallaget fil i editoren. Den er mest aktuell for utviklere og Linux-miljøer, og perifer for rene Microsoft 365-admins.",
+      "topic": "sikkerhet",
+      "score": 38,
+      "tags": [
+        "cve-2026-59856",
+        "vim",
+        "rce",
+        "azure-linux"
+      ]
+    },
     {
       "id": "m365-roadmap-acd20fedfe",
       "source_id": "m365-roadmap",
@@ -195,6 +406,25 @@
         "conditional-access",
         "mfa",
         "deprecation"
+      ]
+    },
+    {
+      "id": "hybridbrothers-ca7a511881",
+      "source_id": "hybridbrothers",
+      "source_name": "Hybrid Brothers",
+      "url": "https://hybridbrothers.com/posts/agentinfo-cloudappevents-correlation/",
+      "published": "2026-07-10T00:00:00.000Z",
+      "ingested": "2026-07-11T10:48:50.345Z",
+      "title_original": "Correlating AgentsInfo with CloudAppEvents",
+      "headline_no": "Slik sporer du AI-agenters aktivitet i Defender XDR",
+      "summary_no": "Hybrid Brothers viser hvordan du kobler AgentsInfo-tabellen mot CloudAppEvents i Defender XDR for å se nøyaktig hva en AI-agent har lest, skrevet eller slettet i Microsoft 365. Etter hvert som agenter får bredere tilgang til filer og e-post via AI-verktøy, blir slik korrelering avgjørende for revisjon og hendelseshåndtering.",
+      "topic": "sikkerhet",
+      "score": 39,
+      "tags": [
+        "defender-xdr",
+        "ai-agenter",
+        "threat-hunting",
+        "kql"
       ]
     },
     {
@@ -9473,241 +9703,6 @@
         "tilgangskontroll",
         "purview",
         "deployment"
-      ]
-    },
-    {
-      "id": "ccmexec-f67be741ba",
-      "source_id": "ccmexec",
-      "source_name": "CCMEXEC (Jörgen Nilsson)",
-      "url": "https://ccmexec.com/2026/06/mmugse-summer-2026-meetup/",
-      "published": "2026-06-10T06:03:41.000Z",
-      "ingested": "2026-06-20T16:56:34.724Z",
-      "title_original": "MMUGSE – Summer 2026 meetup",
-      "headline_no": "MMUGSE samler device management-miljøet til sommermøte 18. juni",
-      "summary_no": "Microsoft Management User Group i Sverige holder meetup 18. juni 2026 med sesjoner om device management, Mac-håndtering i Intune og passordløs autentisering. Arrangementet retter seg mot Intune- og Windows-administratorer som vil holde seg oppdatert. Mest relevant for de som følger det nordiske Intune-miljøet.",
-      "topic": "endpoint",
-      "score": 18,
-      "tags": [
-        "event",
-        "mmugse",
-        "intune",
-        "community"
-      ]
-    },
-    {
-      "id": "purview-blog-3a68904a40",
-      "source_id": "purview-blog",
-      "source_name": "Microsoft Purview Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/extend-microsoft-purview-data-protection-to-aws-bedrock-agents/ba-p/4525984",
-      "published": "2026-06-09T21:17:12.000Z",
-      "ingested": "2026-06-20T13:51:41.564Z",
-      "title_original": "Extend Microsoft Purview data protection to AWS Bedrock agents for cross-cloud AI governance",
-      "headline_no": "Purview strekker DLP-policyer ut til AI-agenter på AWS Bedrock",
-      "summary_no": "Microsoft Purview kan nå håndheve DLP-policyer for AI-agenter som kjører utenfor Azure, som på AWS Bedrock og Google Cloud. Det gir IT-admins ett felles styringslag for sensitive data på tvers av skyer, i stedet for separate kontroller per plattform. Posten demonstrerer det med en utgiftsgodkjennings-agent på Bedrock beskyttet av Purview-policyer.",
-      "topic": "sikkerhet",
-      "score": 54,
-      "tags": [
-        "purview",
-        "dlp",
-        "aws-bedrock",
-        "ai-governance",
-        "multi-cloud"
-      ]
-    },
-    {
-      "id": "m365-roadmap-a8b8680fdd",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=565374",
-      "published": "2026-06-09T20:46:16.000Z",
-      "ingested": "2026-06-22T23:43:41.446Z",
-      "title_original": "Microsoft Purview: Endpoint Data Loss Prevention - Policy Sync & Device Health AI-Powered Investigation",
-      "headline_no": "Purview får AI-feilsøking for endpoint-DLP på enheter",
-      "summary_no": "Microsoft Purview får AI-drevet innsyn i hvordan endpoint-DLP-policyer rulles ut på enheter, slik at admins kan følge synkroniseringsstatus og dekningsgrad. Verktøyet peker ut berørte enheter, forklarer hvorfor synkroniseringen feiler og foreslår konkrete tiltak for å rette det. For DLP-admins betyr det raskere feilsøking når policyer ikke trer i kraft – GA ventes i september 2026.",
-      "topic": "sikkerhet",
-      "score": 42,
-      "tags": [
-        "purview",
-        "dlp",
-        "endpoint-dlp",
-        "ai"
-      ]
-    },
-    {
-      "id": "prajwal-desai-a03296e446",
-      "source_id": "prajwal-desai",
-      "source_name": "Prajwal Desai",
-      "url": "https://www.prajwaldesai.com/windows-11-kb5094126-cumulative-update-released-for-june-2026/",
-      "published": "2026-06-09T19:04:17.000Z",
-      "ingested": "2026-06-20T16:58:05.721Z",
-      "title_original": "Windows 11 KB5094126 Cumulative Update Released for June 2026",
-      "headline_no": "Windows 11 juni-oppdatering KB5094126 gir delt lyd og multi-app kamera",
-      "summary_no": "Junis Patch Tuesday-oppdatering KB5094126 for Windows 11 introduserer Low Latency Profile, delt lyd (Shared Audio), støtte for kamera i flere apper samtidig og forbedret Secure Boot-kompatibilitet. Admins bør teste og rulle ut oppdateringen, som kombinerer nye funksjoner med månedlige sikkerhetsfikser.",
-      "topic": "endpoint",
-      "score": 44,
-      "tags": [
-        "windows-11",
-        "patch-tuesday",
-        "kb5094126",
-        "cumulative-update"
-      ]
-    },
-    {
-      "id": "msrc-blog-fff4a92874",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/09/reconstructing-ai-activity-investigations/",
-      "published": "2026-06-09T17:35:06.000Z",
-      "ingested": "2026-06-20T13:50:23.533Z",
-      "title_original": "Reconstructing AI activity in investigations",
-      "headline_no": "Ny playbook viser hvordan du etterforsker Copilot- og Azure AI-hendelser",
-      "summary_no": "Microsoft har publisert en etterforskningsplaybook for Microsoft 365 Copilot og Azure AI-tjenester som bruker telemetri du allerede har i Purview, Defender og Sentinel. Den følger en scope–context–signal-metodikk for å kartlegge hvem som gjorde hva, hvilke data som ble berørt, og om signaler som prompt-injection er reelle. Gir SOC-team en konkret ramme for å granske AI-relatert aktivitet i stedet for løsrevne enkeltsignaler.",
-      "topic": "sikkerhet",
-      "score": 57,
-      "tags": [
-        "copilot",
-        "purview",
-        "sentinel",
-        "defender",
-        "etterforskning"
-      ]
-    },
-    {
-      "id": "defender-endpoint-67f9c43873",
-      "source_id": "defender-endpoint",
-      "source_name": "Microsoft Defender for Endpoint Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-now-monitors-rpc-activity/ba-p/4523368",
-      "published": "2026-06-09T16:55:28.000Z",
-      "ingested": "2026-06-20T16:29:50.126Z",
-      "title_original": "Microsoft Defender now monitors RPC activity",
-      "headline_no": "Defender overvåker nå RPC-trafikk for å stoppe lateral bevegelse",
-      "summary_no": "Microsoft Defender begynner å overvåke eksterne RPC-kall, forstyrre ondsinnet aktivitet og eksponere telemetri i advanced hunting. RPC misbrukes ofte til lateral bevegelse, oppretting av tjenester og DCSync-baserte credential theft-angrep, så ny synlighet her tetter et viktig hull for sikkerhetsteam.",
-      "topic": "sikkerhet",
-      "score": 61,
-      "tags": [
-        "defender",
-        "rpc",
-        "lateral-bevegelse",
-        "advanced-hunting"
-      ]
-    },
-    {
-      "id": "defender-endpoint-575476a1de",
-      "source_id": "defender-endpoint",
-      "source_name": "Microsoft Defender for Endpoint Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/elevate-your-telemetry-using-custom-data-collection-in-microsoft/ba-p/4512530",
-      "published": "2026-06-09T16:00:00.000Z",
-      "ingested": "2026-06-20T16:29:50.126Z",
-      "title_original": "Elevate your telemetry using custom data collection in Microsoft Defender",
-      "headline_no": "Custom data collection i Defender brukes til å avsløre C2-trafikk",
-      "summary_no": "Microsoft deler konkrete eksempler på hvordan custom data collection og dynamisk tagging i Defender kan brukes til å oppdage command-and-control-kommunikasjon. For SOC-team gir det rikere telemetri og dypere jakt-muligheter på angriperaktivitet uten å forlate Defender-portalen.",
-      "topic": "sikkerhet",
-      "score": 47,
-      "tags": [
-        "defender",
-        "c2",
-        "telemetri",
-        "threat-hunting"
-      ]
-    },
-    {
-      "id": "prajwal-desai-b4a6ecb940",
-      "source_id": "prajwal-desai",
-      "source_name": "Prajwal Desai",
-      "url": "https://www.prajwaldesai.com/windows-11-26h1-updates-in-wsus-and-sccm/",
-      "published": "2026-06-09T12:40:40.000Z",
-      "ingested": "2026-06-20T16:58:05.721Z",
-      "title_original": "Get Windows 11 26H1 updates in WSUS and SCCM",
-      "headline_no": "Windows 11 26H1 er klar for utrulling via WSUS og SCCM",
-      "summary_no": "Windows 11 26H1 kan nå synkroniseres og distribueres gjennom WSUS og SCCM. Admins må aktivere oppdateringene manuelt under produktkategorien for Windows 11 før de kan rulles ut til enhetene. Signaliserer at 26H1-feature-oppdateringen er tilgjengelig for bedriftsdistribusjon.",
-      "topic": "endpoint",
-      "score": 39,
-      "tags": [
-        "windows-11",
-        "26h1",
-        "wsus",
-        "sccm",
-        "feature-update"
-      ]
-    },
-    {
-      "id": "admindroid-bc61282c3b",
-      "source_id": "admindroid",
-      "source_name": "AdminDroid Blog",
-      "url": "https://blog.admindroid.com/microsoft-requires-registered-authentication-methods-for-sspr-verification/",
-      "published": "2026-06-09T11:23:52.000Z",
-      "ingested": "2026-06-20T16:28:30.747Z",
-      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/Microsoft-Entra-ID-to-Require-Registered-Authentication-Methods-for-SSPR-Verification-2-150x150.png",
-      "title_original": "Microsoft Entra Requires Registered Authentication Methods for SSPR Verification",
-      "headline_no": "Entra krever registrerte autentiseringsmetoder for SSPR fra september",
-      "summary_no": "Fra 7. september 2026 godtar ikke Entra lenger passordtilbakestilling basert på telefonnummer eller e-post som bare ligger i katalogprofilen uten å være registrert som autentiseringsmetode. Admins bør sikre at brukerne har registrerte metoder, ellers kan de miste selvbetjent passordreset.",
-      "topic": "identitet",
-      "score": 45,
-      "tags": [
-        "entra",
-        "sspr",
-        "passordreset",
-        "autentisering",
-        "breaking-change"
-      ]
-    },
-    {
-      "id": "o365reports-e560d0b279",
-      "source_id": "o365reports",
-      "source_name": "Office 365 Reports (AdminDroid)",
-      "url": "https://o365reports.com/change-history-reports-in-sharepoint-online/?utm_source=rss&utm_medium=rss&utm_campaign=change-history-reports-in-sharepoint-online",
-      "published": "2026-06-09T10:29:00.000Z",
-      "ingested": "2026-06-20T16:29:50.126Z",
-      "hero_image": "https://o365reports.com/wp-content/uploads/2026/06/Select-the-change-history-report-type.png",
-      "title_original": "Track SharePoint Site Activities and Tenant Configuration Changes with Change History Reports",
-      "headline_no": "Nye change history-rapporter sporer admin-endringer i SharePoint",
-      "summary_no": "SharePoint admin center har fått change history-rapporter som viser hvem som endret hva, når og hvorfra — på både site- og tenant-nivå, opptil 180 dager tilbake. For IT-admins betyr det enklere oversikt over endringer i ekstern deling, eierskap og tilgangsstyring uten å grave i Purview-logger eller PowerShell-skript.",
-      "topic": "identitet",
-      "score": 30,
-      "tags": [
-        "sharepoint",
-        "audit",
-        "governance",
-        "ekstern-deling"
-      ]
-    },
-    {
-      "id": "office365-itpros-eeb3ca83fe",
-      "source_id": "office365-itpros",
-      "source_name": "Office 365 for IT Pros (Tony Redmond)",
-      "url": "https://office365itpros.com/2026/06/09/find-inactive-accounts/?utm_source=rss&utm_medium=rss&utm_campaign=find-inactive-accounts",
-      "published": "2026-06-09T07:00:00.000Z",
-      "ingested": "2026-06-20T16:24:58.516Z",
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Microsoft-365-Licensing-Report-196.jpg?resize=840%2C415&#038;ssl=1",
-      "title_original": "How to Find Inactive (Stale) User Accounts",
-      "headline_no": "Finn inaktive kontoer og kutt Microsoft 365-lisenskostnader",
-      "summary_no": "Med prisøkninger på mange Microsoft 365-lisenser fra 1. juli 2026 viser Redmond hvordan du finner inaktive kontoer for å frigjøre ubrukte lisenser. Det oppdaterte Licensing Report-skriptet (V1.96) rapporterer sist innlogging, lisenser på deaktiverte kontoer og rom-postbokser som har lisenser. En enkel måte å kutte kostnader på før budsjettet eroderer unødvendig.",
-      "topic": "identitet",
-      "score": 38,
-      "tags": [
-        "powershell",
-        "lisensiering",
-        "stale-accounts",
-        "entra-id"
-      ]
-    },
-    {
-      "id": "m365-copilot-92c05a371b",
-      "source_id": "m365-copilot",
-      "source_name": "Microsoft 365 Copilot Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/what-s-new-in-microsoft-365-copilot-may-2026/ba-p/4522010",
-      "published": "2026-06-08T21:52:59.000Z",
-      "ingested": "2026-06-20T13:54:04.559Z",
-      "title_original": "What’s New in Microsoft 365 Copilot | May 2026",
-      "headline_no": "Mai-oppdateringen for M365 Copilot: Claude Opus 4.8 og GPT-5.5 inn",
-      "summary_no": "Microsofts månedlige Copilot-oppsummering for mai bringer blant annet Anthropics Claude Opus 4.8 og GPT-5.5 Instant til Copilot Chat og Copilot Studio, sammen med en rekke app-forbedringer i Teams, Word, PowerPoint og Outlook. På admin-siden kommer utvidede ISO-sertifiseringer, en ny Copilot Adoption Hub og vannmerking av sensitivt innhold. Verdt å skumme for å holde tritt med hva som rulles ut til brukerne.",
-      "topic": "ai",
-      "score": 50,
-      "tags": [
-        "copilot",
-        "claude-opus-4-8",
-        "gpt-5.5",
-        "rollout"
       ]
     }
   ]
