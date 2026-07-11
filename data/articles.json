@@ -1,6 +1,45 @@
 {
-  "generated_at": "2026-07-10T18:20:56.850Z",
+  "generated_at": "2026-07-11T00:22:33.456Z",
   "articles": [
+    {
+      "id": "m365-roadmap-acd20fedfe",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567468",
+      "published": "2026-07-10T21:58:35.000Z",
+      "ingested": "2026-07-11T00:22:33.407Z",
+      "title_original": "Microsoft Teams: Modernized Gallery view in Teams Rooms on Android",
+      "headline_no": "Teams Rooms på Android får ny gallerivisning med stabile deltakerruter",
+      "summary_no": "Teams Rooms på Android får en oppdatert gallerivisning som prioriterer video på scenen, holder deltakerrutene i faste størrelsesforhold og reduserer flytting av rutene under møtet. Admins kan sette standardoppførselen via lokale enhetsinnstillinger og Pro Management-portalen, mens brukere selv kan skjule rom-selvvisningen og likestille lyd- og videodeltakere. GA er satt til juli 2026.",
+      "topic": "endpoint",
+      "score": 31,
+      "tags": [
+        "teams-rooms",
+        "android",
+        "teams",
+        "roadmap"
+      ]
+    },
+    {
+      "id": "m365-roadmap-6422b49541",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566999",
+      "published": "2026-07-10T21:58:35.000Z",
+      "ingested": "2026-07-11T00:22:33.409Z",
+      "title_original": "Microsoft Copilot Studio: Enable express mode for flows invoked by an agent or app",
+      "headline_no": "Express-modus i Copilot Studio gir agent-flyter raskere og stabilere kjøring",
+      "summary_no": "Copilot Studio får en express-modus som kraftig akselererer kjøretiden for flyter som kalles av agenter eller apper, og dermed kutter timeout-feil og kostbare avbrudd. For team som bygger Copilot-agenter betyr det mer pålitelige automatiseringer, bedre brukeropplevelse og høyere adopsjon. Preview kommer november 2025, med GA i november 2026.",
+      "topic": "ai",
+      "score": 39,
+      "tags": [
+        "copilot-studio",
+        "flows",
+        "agenter",
+        "automation",
+        "roadmap"
+      ]
+    },
     {
       "id": "mikemdm-4ca95a1776",
       "source_id": "mikemdm",
@@ -9669,44 +9708,6 @@
         "claude-opus-4-8",
         "gpt-5.5",
         "rollout"
-      ]
-    },
-    {
-      "id": "windows-insider-2a018ea470",
-      "source_id": "windows-insider",
-      "source_name": "Windows Insider Blog",
-      "url": "https://blogs.windows.com/windows-insider/2026/06/08/announcing-new-builds-8-june-2026-2/",
-      "published": "2026-06-08T21:15:32.000Z",
-      "ingested": "2026-06-20T16:48:55.360Z",
-      "title_original": "Announcing new builds 8 June 2026",
-      "headline_no": "Windows 11 26H1 får egen Beta-kanal og nytt 28100-byggtog",
-      "summary_no": "Insiders i Experimental (26H1) begynner nå å motta bygg i en ny 28100-serie, samtidig som Microsoft introduserer en egen Beta (26H1)-kanal basert på 28000-serien. Brukere kan bytte mellom Beta og Experimental for 26H1 via en in-place oppgradering, uten ren ominstallasjon. Gir 26H1-testere samme valgfrihet mellom utviklingsgrener som øvrige kanaler.",
-      "topic": "endpoint",
-      "score": 35,
-      "tags": [
-        "windows-11",
-        "26h1",
-        "insider",
-        "beta"
-      ]
-    },
-    {
-      "id": "petervanderwoude-d82dfd1c23",
-      "source_id": "petervanderwoude",
-      "source_name": "All about Microsoft Intune (Peter van der Woude)",
-      "url": "https://petervanderwoude.nl/post/hiding-the-recommended-section-from-the-start-layout-and-multi-app-kiosk-mode/",
-      "published": "2026-06-08T17:45:00.000Z",
-      "ingested": "2026-06-20T16:51:06.456Z",
-      "title_original": "Hiding the recommended section from the Start layout and multi-app kiosk mode",
-      "headline_no": "Skjul anbefalt-seksjonen i Start-menyen på multi-app kiosk",
-      "summary_no": "Peter van der Woude forklarer hvordan du skjuler anbefalt-seksjonen fra Start-oppsettet, en konfigurasjon som er spesielt nyttig i multi-app kiosk-modus. Uten den fjerner du blant annet en lenke til Innstillinger som ellers dukker opp når det ikke finnes anbefalinger, og dermed ett ekstra element brukerne kan klikke seg vill på. Mindre er mer når du bygger låste kiosk-enheter.",
-      "topic": "endpoint",
-      "score": 34,
-      "tags": [
-        "intune",
-        "kiosk",
-        "start-meny",
-        "konfigurasjon"
       ]
     }
   ]
