@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T10:53:06.276Z",
+  "generated_at": "2026-07-11T11:44:19.511Z",
   "articles": [
     {
       "id": "admindroid-2777316ab6",
@@ -76,6 +76,82 @@
         "xwayland",
         "use-after-free",
         "azure-linux"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-ba5a8ec616",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59925",
+      "published": "2026-07-11T08:07:05.000Z",
+      "ingested": "2026-07-11T11:43:35.266Z",
+      "title_original": "CVE-2026-59925 inline_parser: quadratic-time parsing on long runs of `**x**` and `***x***` emphasis pairs",
+      "headline_no": "Mistune-parser kan henge på lange emphasis-kjeder (CVE-2026-59925)",
+      "summary_no": "Mistunes inline_parser bruker kvadratisk tid på lange rekker av **x**- og ***x***-emphasis, noe som åpner for tjenestenekt (ReDoS) ved ondsinnet Markdown (CVE-2026-59925). Det gjelder Python-baserte webtjenester som bruker Mistune, og er lite relevant for Microsoft-driftsmiljøer.",
+      "topic": "sikkerhet",
+      "score": 16,
+      "tags": [
+        "cve-2026-59925",
+        "mistune",
+        "redos",
+        "dos"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-2918a83ead",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59926",
+      "published": "2026-07-11T08:06:59.000Z",
+      "ingested": "2026-07-11T11:43:35.266Z",
+      "title_original": "CVE-2026-59926 Mistune: XSS via unescaped class option in Admonition directive",
+      "headline_no": "XSS i Mistune via Admonition-direktiv (CVE-2026-59926)",
+      "summary_no": "Markdown-parseren Mistune er sårbar for cross-site scripting fordi class-opsjonen i Admonition-direktivet ikke escapes (CVE-2026-59926). Feilen rammer webapplikasjoner som rendrer upålitelig Markdown med Mistune, og har liten direkte betydning for Microsoft 365- eller Azure-administrasjon.",
+      "topic": "sikkerhet",
+      "score": 20,
+      "tags": [
+        "cve-2026-59926",
+        "mistune",
+        "xss",
+        "markdown"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-6b47b5cefb",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14740",
+      "published": "2026-07-11T08:06:45.000Z",
+      "ingested": "2026-07-11T11:43:35.266Z",
+      "title_original": "CVE-2026-14740 DBI versions before 1.650 for Perl read one byte out-of-bounds in preparse when deleting an initial SQL comment",
+      "headline_no": "Perl DBI leser utenfor minnet ved SQL-kommentarer (CVE-2026-14740)",
+      "summary_no": "DBI for Perl før 1.650 leser én byte utenfor tildelt minne i preparse når en innledende SQL-kommentar fjernes (CVE-2026-14740). Det er en avgrenset out-of-bounds-lesefeil i Perl-økosystemet med minimal betydning for Microsoft-sentrerte driftsmiljøer.",
+      "topic": "sikkerhet",
+      "score": 16,
+      "tags": [
+        "cve-2026-14740",
+        "perl",
+        "dbi",
+        "oob-read"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-057dbbdfd8",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14380",
+      "published": "2026-07-11T08:06:39.000Z",
+      "ingested": "2026-07-11T11:43:35.266Z",
+      "title_original": "CVE-2026-14380 DBI versions before 1.650 for Perl are vulnerable to code injection via caller-influenced Profile",
+      "headline_no": "Kodeinjeksjon i Perl DBI før 1.650 (CVE-2026-14380)",
+      "summary_no": "DBI-modulen for Perl før versjon 1.650 er sårbar for kodeinjeksjon via en Profile-verdi som kan påvirkes av kalleren (CVE-2026-14380). Sårbarheten ligger i Perl-økosystemet og har liten praktisk betydning for typisk Microsoft 365- eller Azure-drift, men dukker opp i MSRC-feeden via GitHubs CVE-tildeling.",
+      "topic": "sikkerhet",
+      "score": 23,
+      "tags": [
+        "cve-2026-14380",
+        "perl",
+        "dbi",
+        "code-injection"
       ]
     },
     {
@@ -409,6 +485,25 @@
       ]
     },
     {
+      "id": "m365-copilot-e486a8cba9",
+      "source_id": "m365-copilot",
+      "source_name": "Microsoft 365 Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/available-today-openai-s-gpt-5-6-in-microsoft-365-copilot/ba-p/4533152",
+      "published": "2026-07-10T01:55:02.000Z",
+      "ingested": "2026-07-11T11:43:35.265Z",
+      "title_original": "Available today: OpenAI’s GPT-5.6 in Microsoft 365 Copilot",
+      "headline_no": "GPT-5.6 blir standardmodellen i Microsoft 365 Copilot",
+      "summary_no": "OpenAIs GPT-5.6-modeller er fra i dag tilgjengelige i Microsoft 365 Copilot – i Word, Excel, PowerPoint, Chat og Cowork – og blir den foretrukne modellen for Copilot. Microsoft trekker fram sterkere resonnering for agentbaserte, flertrinns oppgaver, som skal gi bedre utkast og analyser rett i appene brukerne allerede bruker. For IT-admins er dette en ny modellgenerasjon å teste, kommunisere ut og styre gjennom Copilot-oppsettet.",
+      "topic": "ai",
+      "score": 77,
+      "tags": [
+        "copilot",
+        "gpt-5.6",
+        "openai",
+        "m365"
+      ]
+    },
+    {
       "id": "hybridbrothers-ca7a511881",
       "source_id": "hybridbrothers",
       "source_name": "Hybrid Brothers",
@@ -561,6 +656,44 @@
         "sharepoint",
         "pdf",
         "m365"
+      ]
+    },
+    {
+      "id": "azure-network-security-ad6d6ebba6",
+      "source_id": "azure-network-security",
+      "source_name": "Azure Network Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/azure-ddos-protection-azure-waf-a-layered-defense-for-modern/ba-p/4523745",
+      "published": "2026-07-09T21:33:51.000Z",
+      "ingested": "2026-07-11T11:44:19.470Z",
+      "title_original": "Azure DDoS Protection & Azure WAF: A Layered Defense for Modern DDoS Attacks",
+      "headline_no": "Slik kombinerer du Azure DDoS Protection og WAF til lagdelt forsvar",
+      "summary_no": "Microsoft forklarer hvordan Azure DDoS Protection (lag 3/4) og Azure WAF på applikasjonslaget kan settes sammen til en defense-in-depth-strategi mot moderne DDoS-angrep. For IT-admins som drifter internettvendte tjenester gir det en konkret oppskrift på å beskytte både båndbredde og applikasjoner mot alt fra volumetriske floods til sofistikerte angrep på applikasjonsnivå.",
+      "topic": "sikkerhet",
+      "score": 36,
+      "tags": [
+        "ddos",
+        "azure-waf",
+        "nettverkssikkerhet",
+        "azure"
+      ]
+    },
+    {
+      "id": "azure-network-security-461d99d7b6",
+      "source_id": "azure-network-security",
+      "source_name": "Azure Network Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/secure-native-access-to-azure-kubernetes-service-aks-private/ba-p/4535123",
+      "published": "2026-07-09T18:07:27.000Z",
+      "ingested": "2026-07-11T11:43:35.266Z",
+      "title_original": "Secure Native Access to Azure Kubernetes Service (AKS) Private Clusters with Azure Bastion",
+      "headline_no": "Azure Bastion gir sikker tunnel til private AKS-klynger",
+      "summary_no": "Azure Bastion støtter nå native klient-tunnelering mot private AKS-klynger, slik at ingeniører kan kjøre kubectl og feilsøke uten VPN, jump-hosts eller egne driftsmaskiner. Det gjør det enklere å holde Kubernetes-API-serveren privat samtidig som daglig drift forblir smidig. For sikkerhets- og plattformteam betyr det mindre angrepsflate uten tyngre administrasjon.",
+      "topic": "sikkerhet",
+      "score": 48,
+      "tags": [
+        "azure-bastion",
+        "aks",
+        "kubernetes",
+        "private-cluster"
       ]
     },
     {
@@ -9562,147 +9695,6 @@
         "linux",
         "antivirus",
         "public-preview"
-      ]
-    },
-    {
-      "id": "msrc-blog-d55f53d5c5",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://commandline.microsoft.com/assert-written-intent-executable-evals/",
-      "published": "2026-06-10T16:00:00.000Z",
-      "ingested": "2026-06-20T13:50:23.533Z",
-      "hero_image": "https://commandline.microsoft.com/wp-content/uploads/2026/06/UPDATED_ASSERT_Evaluation_Framework.jpg-1024x591.jpeg",
-      "title_original": "Turn specs into evals for any agent with ASSERT",
-      "headline_no": "ASSERT gjør tekstkrav om til kjørbare AI-tester automatisk",
-      "summary_no": "Microsoft har sluppet ASSERT, et åpen kildekode-rammeverk som omsetter krav skrevet i naturlig språk til ferdige evalueringer for AI-systemer. Det genererer testscenarier, datasett, metrikker og scorekort automatisk, slik at team kan måle om agenter oppfører seg som tiltenkt. Nyttig for alle som bygger eller drifter AI-løsninger og sliter med å holde evalueringene oppdaterte når krav og modeller endrer seg.",
-      "topic": "ai",
-      "score": 52,
-      "tags": [
-        "ai",
-        "eval",
-        "open-source",
-        "agenter",
-        "testing"
-      ]
-    },
-    {
-      "id": "security-community-39922fcb1a",
-      "source_id": "security-community",
-      "source_name": "Microsoft Security Community Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/new-exchange-online-mailbox-auditing-signal-visibility-into-ipm/ba-p/4526914",
-      "published": "2026-06-10T15:00:00.000Z",
-      "ingested": "2026-06-20T16:42:52.739Z",
-      "title_original": "New Exchange Online Mailbox Auditing Signal: Visibility into IPM to Non-IPM Copy Activity",
-      "headline_no": "Exchange Online avslører skjult triks angripere bruker for å stjele e-post",
-      "summary_no": "Exchange Online logger nå et MailItemsAccessed-event når e-post kopieres fra den synlige IPM-mappen til skjulte non-IPM-mapper — en kjent teknikk angripere har brukt for å iscenesette exfiltrering uten spor. Den nye AccessType-verdien CopyFromIPM lukker et revisjonshull som tidligere lot kopiering skje usynlig. SOC-team bør oppdatere jaktspørringer for å fange opp signalet.",
-      "topic": "sikkerhet",
-      "score": 56,
-      "tags": [
-        "exchange-online",
-        "audit",
-        "exfiltrering",
-        "mailitemsaccessed",
-        "soc"
-      ]
-    },
-    {
-      "id": "dirteam-berkouwer-b1b5f01651",
-      "source_id": "dirteam-berkouwer",
-      "source_name": "Sander Berkouwer — The things that are better left unspoken",
-      "url": "https://dirteam.com/sander/2026/06/10/a-critical-vulnerability-was-resolved-in-veeam-backup-replication-v12-3-2-4854/",
-      "published": "2026-06-10T14:43:15.000Z",
-      "ingested": "2026-06-20T16:24:58.516Z",
-      "hero_image": "https://dirteam.com/sander/wp-content/uploads/sites/2/2026/06/VeeamBR-530x277.jpg",
-      "title_original": "A critical vulnerability was resolved in Veeam Backup & Replication v12.3.2.4854",
-      "headline_no": "Kritisk RCE-hull i Veeam Backup rammer domenetilknyttede servere",
-      "summary_no": "Veeam har tettet en kritisk sårbarhet (CVE-2026-44963, CVSS 9.4) som lar en autentisert domenebruker kjøre vilkårlig kode på backup-serveren. Hullet rammer kun backup-servere som er domenetilknyttet, men berører en lang rekke v12-versjoner. Oppgrader til v12.3.2.4854 (sluppet 9. juni 2026) umiddelbart.",
-      "topic": "sikkerhet",
-      "score": 62,
-      "tags": [
-        "cve-2026-44963",
-        "veeam",
-        "rce",
-        "backup",
-        "sårbarhet"
-      ]
-    },
-    {
-      "id": "thomas-maurer-57e025a903",
-      "source_id": "thomas-maurer",
-      "source_name": "Thomas Maurer",
-      "url": "https://www.thomasmaurer.ch/2026/06/laps-for-azure-arc-local-admin-password-security-across-hybrid-at-scale/",
-      "published": "2026-06-10T12:25:56.000Z",
-      "ingested": "2026-06-20T16:59:37.987Z",
-      "title_original": "LAPS for Azure Arc: Local Admin Password Security Across Hybrid—at Scale",
-      "headline_no": "LAPS for Azure Arc roterer lokale admin-passord på tvers av hybridmiljøet",
-      "summary_no": "LAPS for Azure Arc lar deg rotere og sikre lokale administrator-passord på tvers av hybride Windows-maskiner i stor skala. Lokale admin-kontoer med samme, sjelden roterte passord er en klassisk inngang for lateral bevegelse i angrep. For sikkerhetsteam lukker dette et ofte oversett, men kritisk risikohull.",
-      "topic": "sikkerhet",
-      "score": 35,
-      "tags": [
-        "laps",
-        "azure-arc",
-        "lokal-admin",
-        "lateral-bevegelse"
-      ]
-    },
-    {
-      "id": "admindroid-1e2290957e",
-      "source_id": "admindroid",
-      "source_name": "AdminDroid Blog",
-      "url": "https://blog.admindroid.com/secure-microsoft-entra-workload-identities-from-modern-attacks/",
-      "published": "2026-06-10T10:34:45.000Z",
-      "ingested": "2026-06-20T16:28:30.747Z",
-      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/Work-identity-The-New-Cloud-Attack-Surface-in-Microsoft-365-2-1-150x150.png",
-      "title_original": "Secure Workload Identities in Microsoft Entra ID Against Modern Attacks",
-      "headline_no": "Storm-2949 jaktet på arbeidslast-identiteter — slik sikrer du Entra",
-      "summary_no": "Storm-2949-kampanjen forsøkte å etablere varig fotfeste via en service principal etter å ha kompromittert en brukerkonto, og lyktes ikke bare fordi kontoen manglet rettigheter. AdminDroid forklarer hvorfor arbeidslast-identiteter blir et hovedmål, og hvordan du oppdager og rydder opp i risiko i Entra ID.",
-      "topic": "identitet",
-      "score": 32,
-      "tags": [
-        "entra",
-        "workload-identity",
-        "service-principal",
-        "storm-2949"
-      ]
-    },
-    {
-      "id": "alitajran-6d1268b594",
-      "source_id": "alitajran",
-      "source_name": "ALI TAJRAN",
-      "url": "https://www.alitajran.com/remove-unlock-teams-premium-button/",
-      "published": "2026-06-10T09:00:05.000Z",
-      "ingested": "2026-06-20T16:26:52.164Z",
-      "hero_image": "https://www.alitajran.com/wp-content/uploads/2026/05/Remove-Unlock-Teams-Premium-Button-in-Microsoft-Teams-01.png",
-      "title_original": "How to Remove Unlock Teams Premium Button in Microsoft Teams",
-      "headline_no": "Slik fjerner du «Unlock Teams Premium»-knappen som starter prøveperioder",
-      "summary_no": "Teams viser en «Unlock Teams Premium»-knapp som lar vanlige brukere starte en gratis prøveperiode på egen hånd. Du skrur den av via Microsoft 365 admin center eller med PowerShell. Anbefalt for organisasjoner som vil blokkere self-service-prøver og -kjøp.",
-      "topic": "identitet",
-      "score": 31,
-      "tags": [
-        "teams",
-        "teams-premium",
-        "self-service-trials",
-        "m365-admin"
-      ]
-    },
-    {
-      "id": "office365-itpros-1ab83dae91",
-      "source_id": "office365-itpros",
-      "source_name": "Office 365 for IT Pros (Tony Redmond)",
-      "url": "https://office365itpros.com/2026/06/10/microsoft-365-copilot-prep/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-365-copilot-prep",
-      "published": "2026-06-10T07:00:00.000Z",
-      "ingested": "2026-06-20T16:24:58.516Z",
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/05/Slaart-and-Copilot.jpg?resize=840%2C664&#038;ssl=1",
-      "title_original": "Restricting Access is The Most Important Step in a Microsoft 365 Copilot Deployment",
-      "headline_no": "Begrens tilgang før du ruller ut Microsoft 365 Copilot",
-      "summary_no": "Redmond argumenterer for at tilgangskontroll er det aller viktigste steget før en Copilot-utrulling, fordi AI-en eksponerer alt innhold brukeren teknisk har tilgang til. Han anbefaler å starte med få lisenser via gruppebasert lisensiering og validere tilgangsstyringen med ekte brukeraktivitet. Microsoft melder om 20 millioner betalte Copilot-seter, men de fleste tenants er fortsatt uforberedt på datalekkasje.",
-      "topic": "ai",
-      "score": 39,
-      "tags": [
-        "copilot",
-        "tilgangskontroll",
-        "purview",
-        "deployment"
       ]
     }
   ]
