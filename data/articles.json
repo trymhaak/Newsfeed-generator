@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-07-11T23:50:43.006Z",
+  "generated_at": "2026-07-12T05:52:41.004Z",
   "articles": [
+    {
+      "id": "admindroid-8a6328ef93",
+      "source_id": "admindroid",
+      "source_name": "AdminDroid Blog",
+      "url": "https://blog.admindroid.com/manage-federated-group-chats-with-teams-powershell-controls/",
+      "published": "2026-07-12T05:30:00.000Z",
+      "ingested": "2026-07-12T05:52:40.939Z",
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/New-Teams-PowerShell-Controls-for-Federated-Group-Chats-150x150.png",
+      "title_original": "Manage Federated Group Chats with Teams PowerShell Controls",
+      "headline_no": "Nye PowerShell-kontroller tetter smutthull i Teams' fødererte gruppechatter",
+      "summary_no": "Microsoft har utvidet PowerShell-cmdleten Set-CsTenantFederationConfiguration med to nye tenant-parametere som håndhever ekstern tilgang gjennom hele livsløpet til en føderert gruppechat i Teams. Tidligere kunne eksterne brukere beholde tilgang – eller bli lagt til via en tredjeparts tenant – selv om organisasjonens policy ikke lenger tillot det. IT-admins bør aktivere kontrollene for å sikre at oppdaterte tilgangsregler faktisk får effekt på eksisterende chatter.",
+      "topic": "identitet",
+      "score": 36,
+      "tags": [
+        "teams",
+        "powershell",
+        "ekstern-tilgang",
+        "federation"
+      ]
+    },
     {
       "id": "msrc-update-guide-8981b10c52",
       "source_id": "msrc-update-guide",
@@ -9672,27 +9692,6 @@
         "entra",
         "automatisering",
         "custom-extensions"
-      ]
-    },
-    {
-      "id": "andrew-taylor-c3d593d024",
-      "source_id": "andrew-taylor",
-      "source_name": "Andrew Taylor (andrewstaylor.com)",
-      "url": "https://andrewstaylor.com/2026/06/12/intune-newsletter-12th-june-2026/",
-      "published": "2026-06-11T23:33:12.000Z",
-      "ingested": "2026-06-20T16:58:05.721Z",
-      "hero_image": "https://andrewstaylor.com/wp-content/uploads/2026/06/intune-session.jpeg",
-      "title_original": "Intune Newsletter – 12th June 2026",
-      "headline_no": "Ukens Intune-tips: Windows 365 via Graph og Lenovo-drivere i pre-prov",
-      "summary_no": "Andrew Taylors ukentlige Intune-nyhetsbrev fra Experts Live UK samler community-tips, blant annet en guide for å konvertere Azure VM-er til Windows 365-images med kun Graph-kommandoer og en metode for å gjenbruke Autopatch sine oppdateringsringer. Lenovos LCU PowerShell-modul kan nå oppdatere drivere under Autopilot pre-provisioning, slik at brukerne slipper driveroppdateringer etter utlevering. Nyttig praktisk lesning for cloud-native endpoint-admins.",
-      "topic": "endpoint",
-      "score": 31,
-      "tags": [
-        "intune",
-        "windows-365",
-        "autopilot",
-        "autopatch",
-        "nyhetsbrev"
       ]
     }
   ]
