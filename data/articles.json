@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T17:55:59.674Z",
+  "generated_at": "2026-07-12T23:58:17.364Z",
   "articles": [
     {
       "id": "danielengberg-5bbf20af0c",
@@ -18,6 +18,25 @@
         "intune",
         "endpoint",
         "mdm"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-d7dae31e59",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45489",
+      "published": "2026-07-12T14:00:00.000Z",
+      "ingested": "2026-07-12T23:58:17.318Z",
+      "title_original": "CVE-2026-45489 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+      "headline_no": "Spoofing-hull i Edge (CVE-2026-45489) får kun oppdatert CWE-klassifisering",
+      "summary_no": "MSRC har revidert oppføringen for CVE-2026-45489, en spoofing-sårbarhet i Chromium-baserte Edge, ved å legge til en CWE-klassifisering. Endringen er rent informativ — ingen ny patch, ingen endret risiko og ingen ny handling kreves. IT-admins kan trygt ignorere denne revisjonen; den er metadata-støy fra MSRC-feeden, ikke en ny sårbarhet.",
+      "topic": "sikkerhet",
+      "score": 14,
+      "tags": [
+        "edge",
+        "cve-2026-45489",
+        "spoofing",
+        "msrc"
       ]
     },
     {
@@ -9669,27 +9688,6 @@
         "endpoint",
         "patch-tuesday",
         "build"
-      ]
-    },
-    {
-      "id": "ccmexec-eee1e12ea7",
-      "source_id": "ccmexec",
-      "source_name": "CCMEXEC (Jörgen Nilsson)",
-      "url": "https://ccmexec.com/2026/06/microsoft-intune-endpoint-privilege-management-overview/",
-      "published": "2026-06-14T14:44:18.000Z",
-      "ingested": "2026-06-20T16:56:34.724Z",
-      "hero_image": "https://ccmexec.com/wp-content/uploads/2026/06/Screenshot-2026-06-14-144525.png",
-      "title_original": "Microsoft Intune Endpoint Privilege Management – Overview",
-      "headline_no": "Intune Endpoint Privilege Management inkluderes i Microsoft 365 E5 til sommeren",
-      "summary_no": "Microsoft annonserte i desember 2025 at Endpoint Privilege Management legges inn i Microsoft 365 E5-lisensen sommeren 2026. Det betyr at mange organisasjoner kan fjerne lokale admin-rettigheter og styre rettighetshevning uten å kjøpe Intune Suite separat. Jörgen Nilsson går gjennom virtuell admin-konto, hevningsregler og rapportering.",
-      "topic": "endpoint",
-      "score": 46,
-      "tags": [
-        "epm",
-        "intune",
-        "lisensiering",
-        "m365-e5",
-        "local-admin"
       ]
     }
   ]
