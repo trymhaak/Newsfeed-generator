@@ -1,6 +1,122 @@
 {
-  "generated_at": "2026-07-12T05:52:41.004Z",
+  "generated_at": "2026-07-12T17:55:59.674Z",
   "articles": [
+    {
+      "id": "danielengberg-5bbf20af0c",
+      "source_id": "danielengberg",
+      "source_name": "Daniel Engberg — Endpoint Management",
+      "url": "https://www.danielengberg.com/newsletter-june-15-july-11-2026/",
+      "published": "2026-07-12T16:20:31.000Z",
+      "ingested": "2026-07-12T17:55:59.634Z",
+      "title_original": "Endpoint Management Newsletter – June 15 – July 11, 2026",
+      "headline_no": "Endpoint Management-nyhetsbrev: Intune-nytt fra juni til juli",
+      "summary_no": "Daniel Engbergs nyhetsbrev samler Intune- og endpoint-nyheter fra 15. juni til 11. juli 2026 i én oppdatering. Det er en kurert oversikt for dem som vil ta igjen to ukers MDM- og Windows-nytt uten å følge alle kildene selv. Nyttig som jevnlig sjekkpunkt, men få enkeltsaker med høy nyhetsverdi i seg selv.",
+      "topic": "endpoint",
+      "score": 27,
+      "tags": [
+        "nyhetsbrev",
+        "intune",
+        "endpoint",
+        "mdm"
+      ]
+    },
+    {
+      "id": "call4cloud-22c2fd29e5",
+      "source_id": "call4cloud",
+      "source_name": "Call4Cloud (Rudy Ooms)",
+      "url": "https://patchmypc.com/blog/the-intune-mdm-device-certificate-ksp-renewal-bug-why-23h2-devices-stopped-renewing/",
+      "published": "2026-07-12T08:28:14.000Z",
+      "ingested": "2026-07-12T17:55:59.634Z",
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image-43-1024x331.png",
+      "title_original": "The Intune MDM Device Certificate KSP Renewal Bug: Why the Bit4id Provider Caused it",
+      "headline_no": "Intune-sertifikater sluttet å fornyes: Bit4id-provider var synderen",
+      "summary_no": "Rudy Ooms graver i hvorfor Intune MDM-enhetssertifikater sluttet å fornye seg på enkelte Windows 11 23H2-maskiner, og peker på Bit4id sin KSP (Key Storage Provider) som årsaken. Når enhetssertifikatet ikke fornyes, mister enheten etter hvert tillit og MDM-kommunikasjonen kan bryte sammen. Intune-admins med berørte maskiner bør sjekke hvilken KSP sertifikatene bruker for å unngå stille frafall av enheter.",
+      "topic": "endpoint",
+      "score": 43,
+      "tags": [
+        "intune",
+        "mdm",
+        "sertifikater",
+        "windows-11",
+        "ksp"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-290cc4e30a",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59874",
+      "published": "2026-07-12T08:01:47.000Z",
+      "ingested": "2026-07-12T17:55:59.634Z",
+      "title_original": "CVE-2026-59874 node-tar: Negative tar entry size causes infinite loop in archive replace",
+      "headline_no": "Negativ tar-størrelse sender node-tar i evig løkke",
+      "summary_no": "En negativ størrelse på en tar-oppføring kan sende node-tar inn i en uendelig løkke under «replace»-operasjonen og henge prosessen. Resultatet er tjenestenekt for alt som bruker biblioteket til å endre arkiv. Patch snarest og valider arkiv før de behandles.",
+      "topic": "sikkerhet",
+      "score": 58,
+      "tags": [
+        "cve-2026-59874",
+        "node-tar",
+        "dos",
+        "nodejs"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-caa0580d2f",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59873",
+      "published": "2026-07-12T08:01:40.000Z",
+      "ingested": "2026-07-12T17:55:59.634Z",
+      "title_original": "CVE-2026-59873 node-tar: Decompression/parse DoS via unlimited input",
+      "headline_no": "node-tar uten input-grense: dekomprimering åpner for DoS",
+      "summary_no": "Manglende grense på inndata lar node-tar bruke opp minne og CPU under dekomprimering og parsing, som åpner for tjenestenekt via «dekompresjonsbomber». Tjenester som tar imot opplastede arkiv er spesielt utsatt. Oppgrader biblioteket og sett egne størrelsesgrenser på arkiv som behandles.",
+      "topic": "sikkerhet",
+      "score": 58,
+      "tags": [
+        "cve-2026-59873",
+        "node-tar",
+        "dos",
+        "dekompresjon"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-cb2b109346",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59871",
+      "published": "2026-07-12T08:01:34.000Z",
+      "ingested": "2026-07-12T17:55:59.634Z",
+      "title_original": "CVE-2026-59871 node-tar: Process crash via PAX numeric path type confusion",
+      "headline_no": "node-tar-krasj: type-forvirring i PAX-baner feller prosessen",
+      "summary_no": "node-tar kan krasje når et arkiv inneholder PAX-headere med type-forvirrede numeriske stier, noe som feller prosessen og gir tjenestenekt. Biblioteket er svært utbredt i Node.js-økosystemet, så feilen kan ramme mange byggekjeder og backend-tjenester. Oppdater til patchet versjon og unngå å pakke ut ubetrodde tar-arkiv.",
+      "topic": "sikkerhet",
+      "score": 59,
+      "tags": [
+        "cve-2026-59871",
+        "node-tar",
+        "dos",
+        "nodejs"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-967e305baf",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15308",
+      "published": "2026-07-12T08:01:27.000Z",
+      "ingested": "2026-07-12T17:55:59.632Z",
+      "title_original": "CVE-2026-15308 Incremental HTMLParser feed() allows CPU-exhaustion DoS via repeated unterminated markup declarations",
+      "headline_no": "DoS-sårbarhet i HTMLParser: uferdig markup kan tømme CPU-en",
+      "summary_no": "En ny sårbarhet i den inkrementelle HTMLParser-en gjør at gjentatte, uavsluttede markup-deklarasjoner kan drive CPU-bruken i taket og gi tjenestenekt. Angripere kan utnytte det ved å mate spesiallaget HTML inn i tjenester som parser innhold fortløpende. IT-admins bør patche berørte komponenter og overvåke unormal CPU-last i tjenester som prosesserer ubetrodd HTML.",
+      "topic": "sikkerhet",
+      "score": 61,
+      "tags": [
+        "cve-2026-15308",
+        "dos",
+        "htmlparser",
+        "cpu-exhaustion"
+      ]
+    },
     {
       "id": "admindroid-8a6328ef93",
       "source_id": "admindroid",
@@ -9574,124 +9690,6 @@
         "lisensiering",
         "m365-e5",
         "local-admin"
-      ]
-    },
-    {
-      "id": "mikemdm-185b90d27e",
-      "source_id": "mikemdm",
-      "source_name": "Mike's MDM Blog",
-      "url": "https://mikemdm.de/2026/06/14/inventory-locally-running-vms-in-vmware-or-hyper-v/",
-      "published": "2026-06-14T12:36:58.000Z",
-      "ingested": "2026-06-20T16:56:34.724Z",
-      "hero_image": "https://mikemdm.de/wp-content/uploads/2026/06/grafik-1024x701.png",
-      "title_original": "Inventory locally running VMs in VMware or Hyper-V",
-      "headline_no": "PowerShell-skript gir oversikt over lokale VMer i VMware og Hyper-V",
-      "summary_no": "Mike Meier deler et proactive remediation-skript som inventarfører lokalt kjørende VMer fra VMware Player/Workstation og Hyper-V. Dataene lastes opp til Azure Cosmos DB og visualiseres i Power BI sammen med øvrig klientinventar. Nyttig for admins som trenger kontroll på utvikleres og testeres VM-flåte.",
-      "topic": "endpoint",
-      "score": 31,
-      "tags": [
-        "inventory",
-        "powershell",
-        "proactive-remediation",
-        "power-bi",
-        "hyper-v"
-      ]
-    },
-    {
-      "id": "windows-insider-252186b2cc",
-      "source_id": "windows-insider",
-      "source_name": "Windows Insider Blog",
-      "url": "https://blogs.windows.com/windows-insider/2026/06/12/announcing-new-builds-for-12-june-2026/",
-      "published": "2026-06-12T17:05:12.000Z",
-      "ingested": "2026-06-20T16:48:55.360Z",
-      "title_original": "Announcing new builds for 12 June 2026",
-      "headline_no": "Innebygde Windows-apper får egne utgivelsesnotater i Insider-programmet",
-      "summary_no": "Microsoft slipper nye bygg på tvers av Beta, Experimental og Release Preview, og lanserer en egen seksjon med utgivelsesnotater for innebygde Windows 11-apper som Kalkulator, Kamera og Bilder. Feilen som rammet AMD-maskiner med System Guard er også løst. For IT-folk gjør de dedikerte appnotatene det enklere å spore hva som faktisk endrer seg.",
-      "topic": "endpoint",
-      "score": 34,
-      "tags": [
-        "windows-11",
-        "insider",
-        "release-notes",
-        "apper"
-      ]
-    },
-    {
-      "id": "windows-it-pro-bc9b7d7599",
-      "source_id": "windows-it-pro",
-      "source_name": "Windows IT Pro Blog",
-      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-windows-ready-print-and-modernized-driver-selection/ba-p/4527563",
-      "published": "2026-06-12T16:00:00.000Z",
-      "ingested": "2026-06-20T13:44:12.222Z",
-      "title_original": "Introducing Windows Ready Print and Modernized Driver Selection",
-      "headline_no": "Nye skriverinstallasjoner får Windows Ready Print som standard fra juli 2026",
-      "summary_no": "Microsoft gir Modern Print Platform nytt navn — Windows Ready Print — og flytter utskrift mot standardbasert IPP med den innebygde Windows-driveren. Fra juli 2026 settes nye skriverinstallasjoner som standard til Windows Ready Print der det støttes, noe som reduserer behovet for tredjeparts driverhåndtering. Admins i miljøer som er avhengige av eldre drivere bør planlegge overgangen.",
-      "topic": "endpoint",
-      "score": 57,
-      "tags": [
-        "windows",
-        "utskrift",
-        "ipp",
-        "drivere"
-      ]
-    },
-    {
-      "id": "m365-copilot-5a2771d812",
-      "source_id": "m365-copilot",
-      "source_name": "Microsoft 365 Copilot Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/what-s-new-in-notebooks-may-2026/ba-p/4519838",
-      "published": "2026-06-12T14:34:37.000Z",
-      "ingested": "2026-06-20T13:54:04.559Z",
-      "title_original": "What’s New in Notebooks | May 2026",
-      "headline_no": "Copilot Notebooks får ny opplevelse og dypere forankring i arbeidsdata",
-      "summary_no": "Copilot Notebooks får en oppfrisket opplevelse i Microsoft 365 Copilot-appen, der chat, utdata og referanser samles på ett sted og synkroniseres med OneNote. Oppdateringene gir dypere forankring i arbeidsdata og enklere mobil-fangst av notater. Den lettvektige opplevelsen kommer til Frontier-programmet i sommer.",
-      "topic": "ai",
-      "score": 41,
-      "tags": [
-        "copilot",
-        "notebooks",
-        "onenote",
-        "preview"
-      ]
-    },
-    {
-      "id": "office365-itpros-f2fd0a3b31",
-      "source_id": "office365-itpros",
-      "source_name": "Office 365 for IT Pros (Tony Redmond)",
-      "url": "https://office365itpros.com/2026/06/12/unlicensed-onedrive-for-business-2/?utm_source=rss&utm_medium=rss&utm_campaign=unlicensed-onedrive-for-business-2",
-      "published": "2026-06-12T07:00:00.000Z",
-      "ingested": "2026-06-20T16:23:25.528Z",
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Unlicensed-OneDrive-Accounts-Report-Detail.jpg?resize=840%2C536&#038;ssl=1",
-      "title_original": "Microsoft to Delete Unlicensed OneDrive for Business Accounts",
-      "headline_no": "Microsoft sletter ubetalte OneDrive-kontoer etter 365 dager",
-      "summary_no": "Microsoft varsler (MC1381110) at ulisensierte OneDrive for Business-kontoer slettes etter 365 dager uten betaling for lagringen. Det er neste steg etter at slike kontoer for to år siden ble flyttet til Microsoft 365 Archive, og endringen gjelder ikke utdannings- eller offentlige tenanter. Bruk rapporten i SharePoint admin center til å gå gjennom ulisensierte kontoer før data går tapt.",
-      "topic": "sikkerhet",
-      "score": 48,
-      "tags": [
-        "onedrive",
-        "m365-archive",
-        "retention",
-        "mc1381110",
-        "sharepoint"
-      ]
-    },
-    {
-      "id": "ourcloudnetwork-c9dafb7a9b",
-      "source_id": "ourcloudnetwork",
-      "source_name": "Our Cloud Network (Daniel Bradley)",
-      "url": "https://ourcloudnetwork.com/stop-wasting-time-and-use-custom-extensions-for-pim-approvals/?utm_source=rss&utm_medium=rss&utm_campaign=stop-wasting-time-and-use-custom-extensions-for-pim-approvals",
-      "published": "2026-06-12T06:31:51.000Z",
-      "ingested": "2026-06-20T16:26:52.164Z",
-      "title_original": "Stop wasting time and use Custom Extensions for PIM approvals",
-      "headline_no": "Automatiser PIM-godkjenninger med custom extensions og sakssystemet ditt",
-      "summary_no": "Entra PIM kan kobles mot ticketing-systemet via custom extensions slik at rolleaktiveringer valideres automatisk. Det fjerner manuelt godkjenningsarbeid og sikrer at privilegert tilgang alltid har en sak bak seg. Nyttig for team som vil stramme inn governance uten å bremse driften.",
-      "topic": "identitet",
-      "score": 35,
-      "tags": [
-        "pim",
-        "entra",
-        "automatisering",
-        "custom-extensions"
       ]
     }
   ]
