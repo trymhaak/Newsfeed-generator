@@ -1,6 +1,45 @@
 {
-  "generated_at": "2026-07-13T12:02:09.222Z",
+  "generated_at": "2026-07-13T18:04:01.499Z",
   "articles": [
+    {
+      "id": "windows-server-cf35709ddb",
+      "source_id": "windows-server",
+      "source_name": "Windows Server News and Best Practices",
+      "url": "https://techcommunity.microsoft.com/t5/windows-server-news-and-best/patch-the-kernel-skip-the-reboot-the-case-for-arc-enabled/ba-p/4536562",
+      "published": "2026-07-13T17:29:33.000Z",
+      "ingested": "2026-07-13T18:04:01.430Z",
+      "title_original": "Patch the Kernel, Skip the Reboot: The Case for Arc-Enabled Hotpatching on Windows Server 2025",
+      "headline_no": "Gratis hotpatching i Windows Server 2025: patch kjernen uten omstart via Arc",
+      "summary_no": "Windows Server 2025 støtter Arc-aktivert hotpatching – oppdatering av kjørende kode direkte i minnet – uten ekstra kostnad gjennom Azure Arc. For serveradmins betyr det at kritiske sikkerhetsfikser kan legges på uten reboot, noe som krymper eksponeringsvinduet fra CVE-publisering til aktiv utnyttelse. Innlegget argumenterer konkret for å Arc-aktivere servere nå for å bli kvitt reboot-drevet patch-etterslep.",
+      "topic": "endpoint",
+      "score": 50,
+      "tags": [
+        "windows-server-2025",
+        "hotpatching",
+        "azure-arc",
+        "patching"
+      ]
+    },
+    {
+      "id": "windows-insider-c82c78fd29",
+      "source_id": "windows-insider",
+      "source_name": "Windows Insider Blog",
+      "url": "https://blogs.windows.com/windows-insider/2026/07/13/improving-windows-search-box-with-less-clutter-and-more-control/",
+      "published": "2026-07-13T17:00:32.000Z",
+      "ingested": "2026-07-13T18:04:01.429Z",
+      "hero_image": "https://winblogs.thesourcemediaassets.com/sites/44/2026/07/1searchhomejuly10github-revised.png",
+      "title_original": "Improving Windows Search Box, with less clutter and more control",
+      "headline_no": "Windows Search rydder bort reklame og lar deg skru av web-forslag",
+      "summary_no": "Microsoft ruller ut forbedringer i Windows-søkeboksen til Insiders i Experimental-kanalen: renere startskjerm, tydeligere merking av hvor et treff kommer fra (app, innstilling, fil eller web) og fjerning av reklame i web-resultatene. En ny innstilling under Personvern og sikkerhet lar brukeren styre om web- og Microsoft Store-forslag skal vises i det hele tatt. For endpoint-admins er det verdt å følge hvordan de nye søkekontrollene til slutt lander i den administrerte Windows-klienten.",
+      "topic": "endpoint",
+      "score": 38,
+      "tags": [
+        "windows",
+        "windows-search",
+        "insider",
+        "ux"
+      ]
+    },
     {
       "id": "msrc-update-guide-3b5ee860ef",
       "source_id": "msrc-update-guide",
@@ -9649,47 +9688,6 @@
         "mysql",
         "azure-database",
         "certificates"
-      ]
-    },
-    {
-      "id": "core-infra-security-4e8535bd73",
-      "source_id": "core-infra-security",
-      "source_name": "Core Infrastructure and Security Blog",
-      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/automating-daily-mde-compliance-monitoring-across-azure-vms/ba-p/4528274",
-      "published": "2026-06-15T11:52:45.000Z",
-      "ingested": "2026-06-20T16:41:20.332Z",
-      "title_original": "Automating Daily MDE Compliance Monitoring Across Azure VMs",
-      "headline_no": "Logic App fanger Azure-VMer som faller ut av Defender-dekning",
-      "summary_no": "En Logic App sjekker daglig alle kjørende Azure-VMer og varsler eieren automatisk når en maskin ikke er onboardet til Defender for Endpoint eller har sluttet å rapportere. Den skiller «onboardet, men rapporterer ikke» fra «ikke onboardet» og legger ved en CSV-rapport til IT, slik at hull i MDE-dekningen fanges innen 24 timer i stedet for uker.",
-      "topic": "sikkerhet",
-      "score": 44,
-      "tags": [
-        "defender",
-        "mde",
-        "logic-apps",
-        "azure",
-        "compliance"
-      ]
-    },
-    {
-      "id": "office365-itpros-c0049769fd",
-      "source_id": "office365-itpros",
-      "source_name": "Office 365 for IT Pros (Tony Redmond)",
-      "url": "https://office365itpros.com/2026/06/15/delete-teams-chat-threads/?utm_source=rss&utm_medium=rss&utm_campaign=delete-teams-chat-threads",
-      "published": "2026-06-15T07:00:00.000Z",
-      "ingested": "2026-06-20T16:23:25.528Z",
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/05/Teams-Chat-Thread-Deletions.jpg?resize=840%2C396&#038;ssl=1",
-      "title_original": "How to Remove Teams Chat Threads with PowerShell",
-      "headline_no": "Slik fjerner du spam-chatter i Teams med Remove-MgChat og PowerShell",
-      "summary_no": "Etter at noen opprettet en organisasjonsbred gruppechat og spammet den, trengte en MVP en måte å rydde opp på. Tony Redmond oppdaterer en gammel Azure Automation-runbook som bruker Remove-MgChat til å finne og slette problematiske Teams-chattetråder — nå med bedre feilhåndtering og søk i selve meldingsteksten. Et nyttig mønster for admins som må fjerne uønsket innhold i skala.",
-      "topic": "identitet",
-      "score": 33,
-      "tags": [
-        "teams",
-        "powershell",
-        "remove-mgchat",
-        "graph-sdk",
-        "automation"
       ]
     }
   ]
