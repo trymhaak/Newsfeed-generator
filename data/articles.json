@@ -1,6 +1,103 @@
 {
-  "generated_at": "2026-07-12T23:58:17.364Z",
+  "generated_at": "2026-07-13T12:02:09.222Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-3b5ee860ef",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-38096",
+      "published": "2026-07-13T08:46:49.000Z",
+      "ingested": "2026-07-13T12:02:09.173Z",
+      "title_original": "CVE-2025-38096 wifi: iwlwifi: don't warn when if there is a FW error",
+      "headline_no": "CVE-2025-38096: iwlwifi-fiks demper unødige FW-feil-advarsler i Linux",
+      "summary_no": "MSRC har publisert CVE-2025-38096, en mindre feil i Linux-kjernens iwlwifi-driver for Intel-trådløskort, der en fastvarefeil utløste unødvendige kjerneadvarsler. Endringen er en robusthetsfiks med lav sikkerhetsmessig alvorlighetsgrad. For de fleste Microsoft-fokuserte admins har den minimal praktisk betydning.",
+      "topic": "sikkerhet",
+      "score": 27,
+      "tags": [
+        "cve-2025-38096",
+        "linux",
+        "iwlwifi",
+        "kernel"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-b4494d62b4",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71072",
+      "published": "2026-07-13T08:44:37.000Z",
+      "ingested": "2026-07-13T12:02:09.173Z",
+      "title_original": "CVE-2025-71072 shmem: fix recovery on rename failures",
+      "headline_no": "CVE-2025-71072: Linux-shmem retter feil ved mislykket omdøping",
+      "summary_no": "MSRC har publisert CVE-2025-71072, en feil i Linux-kjernens shmem-håndtering knyttet til gjenoppretting etter mislykkede omdøpingsoperasjoner. Sårbarheten er primært relevant for Azure-baserte Linux-arbeidsbelastninger som følger Microsofts kjerneoppdateringer. Detaljene er foreløpig sparsomme, men Linux-i-Azure-admins bør følge patch-status.",
+      "topic": "sikkerhet",
+      "score": 32,
+      "tags": [
+        "cve-2025-71072",
+        "linux",
+        "kernel",
+        "azure"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-53e66fb5be",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-4543",
+      "published": "2026-07-13T08:38:47.000Z",
+      "ingested": "2026-07-13T12:02:09.173Z",
+      "title_original": "CVE-2022-4543 A flaw named \"EntryBleed\" was found in the Linux Kernel Page Table Isolation (KPTI). This issue could allow a local attacker to leak KASLR base via prefetch side-channels based on TLB timing for Intel systems.",
+      "headline_no": "EntryBleed (CVE-2022-4543) lekker KASLR fra Linux-KPTI på Intel",
+      "summary_no": "MSRC har oppført EntryBleed (CVE-2022-4543), en svakhet i Linux-kjernens Page Table Isolation (KPTI) som lar en lokal angriper lekke KASLR-baseadressen via prefetch-sidekanaler på Intel-systemer. Lekkasjen svekker en sentral beskyttelse mot minneutnyttelse og kan gjøre etterfølgende angrep enklere. Admins med Intel-baserte Linux-VMer i Azure bør sørge for at kjernen er oppdatert.",
+      "topic": "sikkerhet",
+      "score": 41,
+      "tags": [
+        "cve-2022-4543",
+        "entrybleed",
+        "linux",
+        "kaslr",
+        "side-channel"
+      ]
+    },
+    {
+      "id": "office365-itpros-93fcae6a5b",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/13/find-obsolete-sites/?utm_source=rss&utm_medium=rss&utm_campaign=find-obsolete-sites",
+      "published": "2026-07-13T07:00:00.000Z",
+      "ingested": "2026-07-13T12:02:09.171Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Obsolete-SPO-Sites.jpg?resize=840%2C408&#038;ssl=1",
+      "title_original": "How to Identify Obsolete SharePoint Online Sites with PowerShell",
+      "headline_no": "Slik finner du døde SharePoint-nettsteder – og hvorfor datoen lyver",
+      "summary_no": "Tony Redmond viser hvordan PowerShell kan brukes til å spore opp utdaterte SharePoint Online-nettsteder i store tenants. Han advarer mot å stole på LastModifiedDateTime, siden bakgrunnsprosesser endrer tidsstempelet og gir falske treff. For admins som skal rydde i tusenvis av nettsteder, må flere aktivitetskilder kombineres for å finne det som faktisk er dødt.",
+      "topic": "identitet",
+      "score": 36,
+      "tags": [
+        "sharepoint",
+        "powershell",
+        "governance",
+        "m365"
+      ]
+    },
+    {
+      "id": "ourcloudnetwork-db8c3b9b12",
+      "source_id": "ourcloudnetwork",
+      "source_name": "Our Cloud Network (Daniel Bradley)",
+      "url": "https://ourcloudnetwork.com/use-the-new-entra-soc-identity-responder-admin-role/?utm_source=rss&utm_medium=rss&utm_campaign=use-the-new-entra-soc-identity-responder-admin-role",
+      "published": "2026-07-13T06:28:40.000Z",
+      "ingested": "2026-07-13T12:02:09.173Z",
+      "title_original": "Use the new Entra SOC Identity Responder Admin Role",
+      "headline_no": "Ny Entra-rolle gir SOC rask respons på kompromitterte kontoer",
+      "summary_no": "Microsoft Entra har fått en ny innebygd rolle, SOC Identity Responder, som gir sikkerhetsteam målrettede tillatelser til å håndtere kompromitterte brukerkontoer. Analytikere kan tilbakestille passord, trekke tilbake sesjoner og iverksette tiltak uten å tildeles bredere admin-rettigheter. For admins betyr det strammere least-privilege og raskere respons på identitetsangrep.",
+      "topic": "identitet",
+      "score": 43,
+      "tags": [
+        "entra",
+        "rbac",
+        "soc",
+        "identity-protection"
+      ]
+    },
     {
       "id": "danielengberg-5bbf20af0c",
       "source_id": "danielengberg",
@@ -9593,101 +9690,6 @@
         "remove-mgchat",
         "graph-sdk",
         "automation"
-      ]
-    },
-    {
-      "id": "thomas-maurer-262dec8866",
-      "source_id": "thomas-maurer",
-      "source_name": "Thomas Maurer",
-      "url": "https://www.thomasmaurer.ch/2026/06/azure-local-multi-rack-deployments-scaling-hybrid-infrastructure-in-the-datacenter/",
-      "published": "2026-06-15T06:55:48.000Z",
-      "ingested": "2026-06-20T16:59:37.987Z",
-      "title_original": "Azure Local Multi-Rack Deployments: Scaling Hybrid Infrastructure in the Datacenter",
-      "headline_no": "Azure Local skalerer til multi-rack — hybrid infrastruktur i datasenteret",
-      "summary_no": "Azure Local støtter nå multi-rack-utrullinger for store on-prem-fotavtrykk i datasenteret, med samme Azure-konsistente opplevelse som mindre oppsett. Plattformen skalerer fra én maskin i butikk til store klynger og frakoblede, suverene miljøer. Relevant for organisasjoner som kjører hybrid infrastruktur i stor skala.",
-      "topic": "endpoint",
-      "score": 31,
-      "tags": [
-        "azure-local",
-        "hybrid",
-        "datasenter"
-      ]
-    },
-    {
-      "id": "msendpointmgr-06351b1255",
-      "source_id": "msendpointmgr",
-      "source_name": "MSEndpointMgr",
-      "url": "https://msendpointmgr.com/2026/06/15/epm-part-1-the-end-of-local-admin-how-intune-endpoint-privilege-management-solves-a-problem-it-has-lived-with-for-decades/",
-      "published": "2026-06-15T06:00:00.000Z",
-      "ingested": "2026-06-20T16:51:06.456Z",
-      "hero_image": "https://msendpointmgr.com/wp-content/uploads/2026/06/Designer-10.png",
-      "title_original": "EPM Part 1: The End of Local Admin: How Intune Endpoint Privilege Management solves a problem IT has lived with for decades",
-      "headline_no": "Intune EPM blir del av M365-lisensen fra 1. juli 2026",
-      "summary_no": "MSEndpointMgr starter en bloggserie om Intune Endpoint Privilege Management (EPM), som lar brukere kjøre utvalgte oppgaver med forhøyede rettigheter uten å være lokale administratorer. Det viktigste for admins: fra 1. juli 2026 er EPM inkludert i den eksisterende Microsoft 365-lisensen, noe som fjerner behovet for dyre tredjepartsverktøy. Det gir en konkret vei bort fra utdelt lokaladmin uten å ofre produktivitet.",
-      "topic": "endpoint",
-      "score": 45,
-      "tags": [
-        "intune",
-        "epm",
-        "lokaladmin",
-        "lisensiering",
-        "sikkerhet"
-      ]
-    },
-    {
-      "id": "ourcloudnetwork-a0da2b293b",
-      "source_id": "ourcloudnetwork",
-      "source_name": "Our Cloud Network (Daniel Bradley)",
-      "url": "https://ourcloudnetwork.com/how-to-enable-baseline-scope-settings-in-conditional-access/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-enable-baseline-scope-settings-in-conditional-access",
-      "published": "2026-06-15T05:16:46.000Z",
-      "ingested": "2026-06-20T16:26:52.164Z",
-      "title_original": "How to Enable Baseline Scope Settings in Conditional Access",
-      "headline_no": "Slik aktiverer du Baseline Scope før endringen i Conditional Access",
-      "summary_no": "Microsoft endrer snart hvordan Conditional Access-policyer håndheves, og admins bør aktivere Baseline Scope-innstillinger nå for å unngå overraskelser. Innstillingene styrer hvilke pålogginger som omfattes av policyene dine. Test før endringen trer i kraft slik at du ikke utilsiktet låser ute brukere.",
-      "topic": "identitet",
-      "score": 41,
-      "tags": [
-        "conditional-access",
-        "entra",
-        "baseline-scope"
-      ]
-    },
-    {
-      "id": "damienbod-593bcff35a",
-      "source_id": "damienbod",
-      "source_name": "damienbod — Software Engineering",
-      "url": "https://damienbod.com/2026/06/15/software-development-and-ai/",
-      "published": "2026-06-15T04:59:28.000Z",
-      "ingested": "2026-06-20T16:26:52.164Z",
-      "hero_image": "https://damienbod.com/wp-content/uploads/2026/03/image-ai.png",
-      "title_original": "Software development and AI",
-      "headline_no": "AI gjør gode utviklere bedre — men noen må betale for verktøyene",
-      "summary_no": "Et meningsinnlegg om hvordan AI-verktøy passer inn i programvareutvikling, og hvorfor effektivitetsgevinsten må dekke de økende kostnadene. Forfatteren mener AI hjelper dyktige utviklere mest, mens hypen om fart ofte er overdrevet. Mer bransjebetraktning enn konkret nytte for IT-drift.",
-      "topic": "ai",
-      "score": 12,
-      "tags": [
-        "ai",
-        "softwareutvikling",
-        "meningsinnlegg"
-      ]
-    },
-    {
-      "id": "danielengberg-963a2b6998",
-      "source_id": "danielengberg",
-      "source_name": "Daniel Engberg — Endpoint Management",
-      "url": "https://www.danielengberg.com/endpoint-management-newsletter-june-1-june-14-2026/",
-      "published": "2026-06-14T17:45:22.000Z",
-      "ingested": "2026-06-20T16:59:37.987Z",
-      "title_original": "Endpoint Management Newsletter – June 1 – June 14, 2026",
-      "headline_no": "Endpoint-nyhetsbrevet oppsummerer Build og en heftig Patch Tuesday",
-      "summary_no": "Daniel Engbergs todelte nyhetsbrev oppsummerer endpoint-nyhetene fra 1.–14. juni 2026, inkludert nyheter fra Build og en omfattende Patch Tuesday. En grei digest for Intune- og endpoint-admins som vil ta igjen på to ukers utvikling. Lenker videre til de underliggende kildene.",
-      "topic": "endpoint",
-      "score": 29,
-      "tags": [
-        "nyhetsbrev",
-        "endpoint",
-        "patch-tuesday",
-        "build"
       ]
     }
   ]
