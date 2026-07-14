@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-07-14T00:06:29.308Z",
+  "generated_at": "2026-07-14T06:07:59.049Z",
   "articles": [
+    {
+      "id": "ourcloudnetwork-1066937e74",
+      "source_id": "ourcloudnetwork",
+      "source_name": "Our Cloud Network (Daniel Bradley)",
+      "url": "https://ourcloudnetwork.com/microsoft-are-set-to-retire-sms-voice-authentication-methods/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-are-set-to-retire-sms-voice-authentication-methods",
+      "published": "2026-07-14T05:02:13.000Z",
+      "ingested": "2026-07-14T06:07:58.972Z",
+      "title_original": "Microsoft are set to retire SMS & Voice authentication methods",
+      "headline_no": "Entra fjerner SMS og tale-MFA — passkeys blir ny standard",
+      "summary_no": "Microsoft Entra pensjonerer SMS og talesamtale som standard MFA-metoder og skyver tenanter over på phishing-resistente passkeys (MC1426371). IT-administratorer bør kartlegge hvilke brukere som fortsatt er avhengige av SMS/tale-verifisering og planlegge migreringen før fristen, ellers risikerer kontoene å bli utestengt. Meldingssenter-saken beskriver tidslinjen og hvordan du reviderer tenanten.",
+      "topic": "identitet",
+      "score": 53,
+      "tags": [
+        "entra",
+        "mfa",
+        "passkeys",
+        "sms",
+        "utfasing"
+      ]
+    },
     {
       "id": "msrc-blog-8650d963e6",
       "source_id": "msrc-blog",
@@ -9666,26 +9686,6 @@
         "kiosk",
         "start-meny",
         "konfigurasjon"
-      ]
-    },
-    {
-      "id": "msrc-blog-186d7512e9",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/15/microsoft-defender-email-security-benchmarking-key-insights-from-one-year-of-data/",
-      "published": "2026-06-15T16:00:00.000Z",
-      "ingested": "2026-06-20T13:48:24.074Z",
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/Picture1.webp",
-      "title_original": "Microsoft Defender email security benchmarking: Key insights from one year of data",
-      "headline_no": "Ett år med tall: Defender slår e-postgateways på deteksjon før levering",
-      "summary_no": "Microsoft oppsummerer ett år med kvartalsvise benchmarktall som måler Defender mot SEG- og ICES-leverandører på reell trusseltelemetri. Defender har bommet på færre alvorlige trusler før levering enn alle SEG-leverandørene i hvert kvartal siden juli 2025, der nest beste SEG hadde 2,5 ganger flere bom. Nyttig dokumentasjon hvis du vurderer lagdelt eller flerleverandør e-postsikkerhet.",
-      "topic": "sikkerhet",
-      "score": 48,
-      "tags": [
-        "defender",
-        "e-postsikkerhet",
-        "benchmark",
-        "ices"
       ]
     }
   ]
