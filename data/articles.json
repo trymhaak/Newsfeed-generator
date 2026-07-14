@@ -1,6 +1,45 @@
 {
-  "generated_at": "2026-07-13T18:04:01.499Z",
+  "generated_at": "2026-07-14T00:06:29.308Z",
   "articles": [
+    {
+      "id": "msrc-blog-8650d963e6",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/13/defending-saas-based-applications-against-shinyhunters-oauth-abuse/",
+      "published": "2026-07-13T22:02:41.000Z",
+      "ingested": "2026-07-14T00:06:29.249Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/image-5.webp",
+      "title_original": "Defending SaaS-based applications against ShinyHunters OAuth abuse",
+      "headline_no": "ShinyHunters misbruker OAuth-koblinger til å stjele CRM-data fra Salesforce",
+      "summary_no": "Microsoft har sporet kampanjer fra 2025 til 2026 der aktører knyttet til ShinyHunters misbruker klarerte OAuth-koblinger, vishing og feilkonfigurert gjestetilgang for å nå SaaS-apper som Salesforce. Ett enkelt inngangspunkt eskalerer raskt til storskala uttrekk av CRM-data mens vanlige innloggingsvarsler omgås. Admins bør overvåke OAuth-tilkoblede apper, revidere samtykker og stramme inn gjestetilgang.",
+      "topic": "sikkerhet",
+      "score": 74,
+      "tags": [
+        "oauth",
+        "shinyhunters",
+        "salesforce",
+        "saas",
+        "vishing"
+      ]
+    },
+    {
+      "id": "niallbrady-e72fd62f21",
+      "source_id": "niallbrady",
+      "source_name": "Just Another Windows Noob (Niall Brady)",
+      "url": "https://www.niallbrady.com/2026/07/13/first-looks-at-windows-365-reserve/",
+      "published": "2026-07-13T18:40:11.000Z",
+      "ingested": "2026-07-14T00:06:29.251Z",
+      "title_original": "First looks at Windows 365 Reserve",
+      "headline_no": "Windows 365 Reserve: første titt på Microsofts nye reserve-Cloud PC",
+      "summary_no": "Niall Brady deler en tidlig gjennomgang av Windows 365 Reserve, en ny funksjon i Microsofts stadig voksende Windows 365-portefølje. Reserve skal gi ansatte en midlertidig reserve-Cloud PC når den primære enheten er utilgjengelig. For endpoint-admins er dette en tidlig pekepinn på hvordan Cloud PC kan inngå i beredskaps- og kontinuitetsplaner.",
+      "topic": "endpoint",
+      "score": 35,
+      "tags": [
+        "windows-365",
+        "cloud-pc",
+        "reserve"
+      ]
+    },
     {
       "id": "windows-server-cf35709ddb",
       "source_id": "windows-server",
@@ -38,6 +77,26 @@
         "windows-search",
         "insider",
         "ux"
+      ]
+    },
+    {
+      "id": "msrc-blog-54f215ceaa",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/",
+      "published": "2026-07-13T17:00:00.000Z",
+      "ingested": "2026-07-14T00:06:29.251Z",
+      "title_original": "Microsoft Entra ID security updates: Passkeys are the default authentication method in Entra ID",
+      "headline_no": "Passkeys blir standard i Entra ID — SMS og tale fases ut fra 2027",
+      "summary_no": "Fra 1. september 2026 ruller Microsoft ut passkeys som standard påloggingsmetode i Entra ID, og brukere med SMS eller tale blir automatisk bedt om å registrere passkey ved neste MFA. Fra 1. februar 2027 pensjoneres Microsofts egen SMS- og tale-levering, og de som fortsatt trenger det må kjøpe telecom-tjenester via partnere i Security Store. Admins bør migrere til phishing-resistente metoder nå for å unngå avbrudd.",
+      "topic": "identitet",
+      "score": 85,
+      "tags": [
+        "entra-id",
+        "passkeys",
+        "mfa",
+        "phishing-resistant",
+        "sms"
       ]
     },
     {
@@ -9627,67 +9686,6 @@
         "e-postsikkerhet",
         "benchmark",
         "ices"
-      ]
-    },
-    {
-      "id": "handsontek-acfa6335c2",
-      "source_id": "handsontek",
-      "source_name": "HANDS ON tek (João Ferreira)",
-      "url": "https://handsontek.net/hands-microsoft-365-pulse-weekly-updates-week-23-24/",
-      "published": "2026-06-15T15:40:33.000Z",
-      "ingested": "2026-06-20T17:00:31.434Z",
-      "hero_image": "https://handsontek.net/images/hot2/Week%2023%2024%202026/hero.png",
-      "title_original": "Hands-On Microsoft 365 Pulse – Weekly Updates (Week 23 & 24)",
-      "headline_no": "Microsoft Scout varsler en ny klasse «autopilot-agenter»",
-      "summary_no": "Ukentlig oppsummering fra Hands-On tek som samler nyheter fra uke 23 og 24, inkludert Microsoft Build. Hovedsaken er Microsoft Scout — en alltid-på agent som kan handle asynkront på dine vegne og krever nye intent-policyer og styringstenkning. Også omtalt: Anthropics Cloud Fable 5 dukket kort opp i Copilot, men er avslått som standard på grunn av avveininger rundt datadeling.",
-      "topic": "ai",
-      "score": 35,
-      "tags": [
-        "microsoft-scout",
-        "copilot",
-        "ai-agenter",
-        "governance",
-        "build"
-      ]
-    },
-    {
-      "id": "call4cloud-2c20f601ce",
-      "source_id": "call4cloud",
-      "source_name": "Call4Cloud (Rudy Ooms)",
-      "url": "https://patchmypc.com/blog/autopatch-client-broker-fails-during-autopilot-pre-provisioning/",
-      "published": "2026-06-15T13:59:26.000Z",
-      "ingested": "2026-06-20T16:56:34.724Z",
-      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/06/image-10.png",
-      "title_original": "Autopatch Client Broker Fails During Autopilot Pre-Provisioning",
-      "headline_no": "Autopatch-broker som blokkerende ESP-app knekker Autopilot-provisjonering",
-      "summary_no": "Rudy Ooms viser hvordan det å sette Autopatch Client Broker som en blokkerende app i Enrollment Status Page kan stoppe Autopilot pre-provisjonering. Problemet ligger ikke i selve brokeren, men i hvordan ESP håndterer den i systemkontekst. Admins som bygger Autopilot-profiler bør unngå denne konfigurasjonen.",
-      "topic": "endpoint",
-      "score": 39,
-      "tags": [
-        "autopilot",
-        "autopatch",
-        "esp",
-        "intune"
-      ]
-    },
-    {
-      "id": "core-infra-security-2c835f1c17",
-      "source_id": "core-infra-security",
-      "source_name": "Core Infrastructure and Security Blog",
-      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/tls-certificate-pinning-and-best-practices-in-azure-open-source/ba-p/4519531",
-      "published": "2026-06-15T13:42:38.000Z",
-      "ingested": "2026-06-20T16:41:20.332Z",
-      "title_original": "TLS Certificate Pinning and Best Practices in Azure Open-Source Relational Databases",
-      "headline_no": "TLS-pinning mot Azure-databaser: derfor kan serveren ikke oppdage det",
-      "summary_no": "Sertifikat-pinning i Azure Database for PostgreSQL og MySQL er ren klientside-logikk, og serveren kan ikke se om en klient pinner — derfor kan enhver sertifikatrotasjon brekke tilkoblinger uten forvarsel. Microsoft forklarer hvorfor pinning ikke kan oppdages serverside, og hva som er beste praksis for å unngå brutte forbindelser.",
-      "topic": "sikkerhet",
-      "score": 34,
-      "tags": [
-        "tls",
-        "postgresql",
-        "mysql",
-        "azure-database",
-        "certificates"
       ]
     }
   ]
