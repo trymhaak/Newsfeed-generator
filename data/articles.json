@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T00:23:56.664Z",
+  "generated_at": "2026-07-15T06:25:42.831Z",
   "articles": [
     {
       "id": "m365-roadmap-155e6acc0e",
@@ -263,6 +263,26 @@
         "patch-tuesday",
         "kb5101650",
         "cumulative-update"
+      ]
+    },
+    {
+      "id": "call4cloud-d3ccd3b9d1",
+      "source_id": "call4cloud",
+      "source_name": "Call4Cloud (Rudy Ooms)",
+      "url": "https://patchmypc.com/blog/inside-the-improved-on-demand-sync-for-windows-devices/",
+      "published": "2026-07-14T19:15:54.000Z",
+      "ingested": "2026-07-15T06:25:42.794Z",
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image-57.png",
+      "title_original": "Inside the Improved on-demand sync for Windows devices",
+      "headline_no": "Intunes forbedrede sync-knapp vekker nå Windows-enheter fra dvale",
+      "summary_no": "Rudy Ooms går gjennom hvordan den forbedrede on-demand-synkroniseringen i Intune nå kan vekke Windows-enheter fra dvale, slik at en manuell sync faktisk treffer frem. Tidligere kunne et trykk på sync-knappen bli liggende uten effekt hvis enheten sov. For IT-admins betyr det raskere og mer pålitelig utrulling av policyer og apper til klienter ute i felt.",
+      "topic": "endpoint",
+      "score": 39,
+      "tags": [
+        "intune",
+        "windows",
+        "on-demand-sync",
+        "mdm"
       ]
     },
     {
@@ -9647,26 +9667,6 @@
         "detection-engineering",
         "kql",
         "security-copilot"
-      ]
-    },
-    {
-      "id": "defender-office365-b1d096df17",
-      "source_id": "defender-office365",
-      "source_name": "Microsoft Defender for Office 365 Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/microsoft-defender-for-office-365-plan-1-is-now-rolling-out-to/ba-p/4527287",
-      "published": "2026-06-18T16:29:24.000Z",
-      "ingested": "2026-06-20T16:29:50.126Z",
-      "title_original": "Microsoft Defender for Office 365 Plan 1 is now rolling out to Microsoft 365 E3 and Office 365 E3",
-      "headline_no": "Defender for Office 365 Plan 1 rulles ut til alle E3-kunder",
-      "summary_no": "Microsoft 365 E3/G3 og Office 365 E3/G3 får nå automatisk Defender for Office 365 Plan 1, med full utrulling innen høsten 2026. Safe Links, Safe Attachments og avansert anti-phishing slås på automatisk, så admins bør gjennomgå policyer, mail flow og sluttbrukeropplevelse før beskyttelsen aktiveres.",
-      "topic": "sikkerhet",
-      "score": 65,
-      "tags": [
-        "defender-office-365",
-        "e3",
-        "safe-links",
-        "anti-phishing",
-        "utrulling"
       ]
     }
   ]
