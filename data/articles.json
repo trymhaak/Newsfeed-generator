@@ -1,6 +1,294 @@
 {
-  "generated_at": "2026-07-15T06:25:42.831Z",
+  "generated_at": "2026-07-15T12:32:40.097Z",
   "articles": [
+    {
+      "id": "admindroid-102d639f36",
+      "source_id": "admindroid",
+      "source_name": "AdminDroid Blog",
+      "url": "https://blog.admindroid.com/block-high-risk-agents-using-identity-protection/",
+      "published": "2026-07-15T10:48:52.000Z",
+      "ingested": "2026-07-15T12:28:56.762Z",
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Automatically-block-high-risk-ai-agents-in-m365-150x150.png",
+      "title_original": "Block High-risk Agents Using Identity Protection",
+      "headline_no": "Slik blokkerer du høyrisiko AI-agenter automatisk med Entra",
+      "summary_no": "AdminDroid viser hvordan du kan fange opp høyrisiko AI-agenter i Entra og blokkere tilgangen deres i sanntid basert på risikosignaler fra Identity Protection. En kompromittert eller manipulert agent, for eksempel via prompt injection, kan operere autonomt på tvers av Microsoft 365 til risikoen oppdages. Betinget tilgang basert på live risiko er et bedre alternativ enn å blokkere alle agenter.",
+      "topic": "ai",
+      "score": 31,
+      "tags": [
+        "entra",
+        "identity-protection",
+        "ai-agenter",
+        "conditional-access",
+        "prompt-injection"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-3eac018c92",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58253",
+      "published": "2026-07-15T08:41:30.000Z",
+      "ingested": "2026-07-15T12:31:15.629Z",
+      "title_original": "CVE-2026-58253 NATS Server: Route API Auth Bypass",
+      "headline_no": "Autentiseringssvakhet i NATS' route-API åpner for klyngetilgang",
+      "summary_no": "CVE-2026-58253 lar en angriper omgå autentisering mot route-API-et i NATS Server og potensielt koble seg på trafikken mellom klyngenoder. Bruker du NATS i klynge bør du patche raskt, ettersom route-tilgang kan eksponere all meldingsflyt mellom serverne.",
+      "topic": "sikkerhet",
+      "score": 31,
+      "tags": [
+        "nats",
+        "cve-2026-58253",
+        "auth-bypass",
+        "clustering"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-e31ff7b445",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58209",
+      "published": "2026-07-15T08:41:23.000Z",
+      "ingested": "2026-07-15T12:31:15.629Z",
+      "title_original": "CVE-2026-58209 NATS Server: MQTT retained and QoS replay bypass subscribe deny filters",
+      "headline_no": "NATS-server: MQTT-replay omgår deny-filtre for abonnement",
+      "summary_no": "En svakhet i NATS Server lar MQTT-klienter bruke retained-meldinger og QoS-replay til å omgå deny-filtrene som skal blokkere abonnement på bestemte emner. Kjører du NATS som meldingsmegler – for eksempel bak Azure-tjenester – bør du oppgradere, siden feilen kan gi tilgang til meldinger klienten ikke skulle sett.",
+      "topic": "sikkerhet",
+      "score": 27,
+      "tags": [
+        "nats",
+        "mqtt",
+        "cve-2026-58209",
+        "authz-bypass"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-0ea169bf75",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58252",
+      "published": "2026-07-15T08:41:15.000Z",
+      "ingested": "2026-07-15T12:28:56.762Z",
+      "title_original": "CVE-2026-58252 NATS Server: Subscribe Authz Bypass via Wildcard-Overlap",
+      "headline_no": "Wildcard-overlapp gir autorisasjonsbypass for abonnement i NATS",
+      "summary_no": "CVE-2026-58252 er en autorisasjonsbypass i NATS Server som utnytter overlappende wildcard-mønstre i abonnementsregler. Feilen kan gi klienter tilgang til emner de ikke skulle kunne abonnere på. NATS-administratorer bør gjennomgå tilgangsregler og oppdatere.",
+      "topic": "sikkerhet",
+      "score": 50,
+      "tags": [
+        "cve-2026-58252",
+        "nats",
+        "authz-bypass",
+        "wildcard"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-1c08efb373",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58250",
+      "published": "2026-07-15T08:41:08.000Z",
+      "ingested": "2026-07-15T12:32:40.064Z",
+      "title_original": "CVE-2026-58250 NATS Server: Pre-auth server crash via double INFO in leafnode handshake",
+      "headline_no": "Uautentisert angriper kan krasje NATS Server med dobbel INFO-pakke",
+      "summary_no": "En sårbarhet i NATS Server lar en uautentisert angriper krasje serveren ved å sende to INFO-meldinger i leafnode-håndtrykket. Feilen krever ingen innlogging og kan utnyttes til tjenestenekt mot meldingsinfrastrukturen. Team som kjører NATS med leafnode-tilkoblinger bør oppgradere til en rettet versjon.",
+      "topic": "sikkerhet",
+      "score": 58,
+      "tags": [
+        "cve-2026-58250",
+        "nats",
+        "dos",
+        "sårbarhet"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-f436939cb6",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58208",
+      "published": "2026-07-15T08:41:00.000Z",
+      "ingested": "2026-07-15T12:28:56.762Z",
+      "title_original": "CVE-2026-58208 NATS Server: MQTT-over-WebSocket Path Can Crash WebSocket-Only JetStream Servers Before MQTT Is Enabled",
+      "headline_no": "MQTT-over-WebSocket kan krasje WebSocket-only JetStream-servere i NATS",
+      "summary_no": "CVE-2026-58208 lar en MQTT-over-WebSocket-forespørsel krasje WebSocket-only JetStream-servere – selv før MQTT er aktivert. Sårbarheten gir tjenestenekt mot NATS-servere. Berørte installasjoner bør oppdateres.",
+      "topic": "sikkerhet",
+      "score": 42,
+      "tags": [
+        "cve-2026-58208",
+        "nats",
+        "dos",
+        "jetstream",
+        "mqtt"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-367531b697",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58251",
+      "published": "2026-07-15T08:40:53.000Z",
+      "ingested": "2026-07-15T12:28:56.762Z",
+      "title_original": "CVE-2026-58251 NATS Server: Queue Subscribe Authz Bypass",
+      "headline_no": "Autorisasjonsbypass i NATS lar klienter abonnere uten tilgang",
+      "summary_no": "CVE-2026-58251 beskriver en autorisasjonsbypass i NATS Server der køabonnementer (queue subscribe) kan omgå tilgangskontroll. En klient kan dermed motta meldinger den ikke skulle hatt tilgang til. Kjører du NATS med autorisasjonsregler, bør du patche snarest.",
+      "topic": "sikkerhet",
+      "score": 50,
+      "tags": [
+        "cve-2026-58251",
+        "nats",
+        "authz-bypass"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-aa31410c5e",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58207",
+      "published": "2026-07-15T08:40:45.000Z",
+      "ingested": "2026-07-15T12:28:56.762Z",
+      "title_original": "CVE-2026-58207 NATS Server: Remote crash via integer overflow in Connz pagination",
+      "headline_no": "NATS-server kan krasje eksternt via heltallsoverflyt i Connz",
+      "summary_no": "En heltallsoverflyt i Connz-pagineringen i NATS Server lar en angriper krasje serveren eksternt (tjenestenekt). MSRC har publisert CVE-2026-58207. Organisasjoner som kjører NATS bør oppdatere til en rettet versjon.",
+      "topic": "sikkerhet",
+      "score": 42,
+      "tags": [
+        "cve-2026-58207",
+        "nats",
+        "dos",
+        "integer-overflow"
+      ]
+    },
+    {
+      "id": "thomas-maurer-461a1dea15",
+      "source_id": "thomas-maurer",
+      "source_name": "Thomas Maurer",
+      "url": "https://www.thomasmaurer.ch/2026/07/azure-kubernetes-service-aks-on-bare-metal/",
+      "published": "2026-07-15T08:10:00.000Z",
+      "ingested": "2026-07-15T12:32:40.064Z",
+      "title_original": "Azure Kubernetes Service (AKS) on Bare Metal",
+      "headline_no": "AKS på bare metal gir Azure-styring for on-prem Kubernetes",
+      "summary_no": "Azure Kubernetes Service kommer til bare metal, slik at organisasjoner kan kjøre Kubernetes on-prem, i edge eller i suverene miljøer med samme konsistens som i Azure. Løsningen retter seg mot virksomheter med krav til datasuverenitet eller lav latens som likevel vil ha Azures administrasjonsmodell. For IT-admins betyr det én felles styringsflate for både sky- og lokale klynger.",
+      "topic": "endpoint",
+      "score": 32,
+      "tags": [
+        "aks",
+        "kubernetes",
+        "bare-metal",
+        "azure"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-389efd0b2e",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57219",
+      "published": "2026-07-15T08:02:14.000Z",
+      "ingested": "2026-07-15T12:32:40.064Z",
+      "title_original": "CVE-2026-57219 RabbitMQ: Unauthenticated disclosure of OAuth client credentials via an HTTP API endpoint with certain less common OAuth 2 configurations",
+      "headline_no": "RabbitMQ lekker OAuth-klientlegitimasjon via åpent API-endepunkt",
+      "summary_no": "En sårbarhet i RabbitMQs HTTP API kan avsløre OAuth-klientlegitimasjon til uautentiserte angripere ved enkelte mindre vanlige OAuth 2-oppsett. Lekket klientlegitimasjon kan misbrukes til å utgi seg for applikasjoner og få tilgang til beskyttede ressurser. Admins som kjører RabbitMQ med OAuth 2 bør gjennomgå konfigurasjonen og patche så snart en rettelse foreligger.",
+      "topic": "sikkerhet",
+      "score": 67,
+      "tags": [
+        "cve-2026-57219",
+        "rabbitmq",
+        "oauth",
+        "sårbarhet"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-d74b028fa7",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15028",
+      "published": "2026-07-15T08:02:01.000Z",
+      "ingested": "2026-07-15T12:31:15.629Z",
+      "title_original": "CVE-2026-15028 Libarchive: heap overflow oob read while parsing a tar archive contains a pax extended header",
+      "headline_no": "Heap-overflyt i libarchive utløses av pax-header i tar-arkiv",
+      "summary_no": "CVE-2026-15028 gir en heap-basert out-of-bounds lesing i libarchive når et tar-arkiv med en pax extended header parses. Fordi Windows' innebygde tar.exe (bsdtar) bygger på libarchive, kan et manipulert arkiv treffe klienter som pakker ut tar-filer – oppgrader når patch er klar.",
+      "topic": "sikkerhet",
+      "score": 36,
+      "tags": [
+        "libarchive",
+        "cve-2026-15028",
+        "tar",
+        "heap-overflow"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-c5729e811a",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42505",
+      "published": "2026-07-15T08:01:45.000Z",
+      "ingested": "2026-07-15T12:31:15.629Z",
+      "title_original": "CVE-2026-42505 Invoking Encrypted Client Hello privacy leak in crypto/tls",
+      "headline_no": "Personvernlekkasje i Gos Encrypted Client Hello røper skjult SNI",
+      "summary_no": "En feil i crypto/tls gjør at Gos implementasjon av Encrypted Client Hello likevel kan lekke informasjonen ECH er ment å skjule, som SNI. Go-tjenester som er avhengige av ECH for personvern bør oppgradere, ellers faller beskyttelsen bort.",
+      "topic": "sikkerhet",
+      "score": 25,
+      "tags": [
+        "golang",
+        "cve-2026-42505",
+        "tls",
+        "ech"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-f1921df8a0",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-39822",
+      "published": "2026-07-15T08:01:36.000Z",
+      "ingested": "2026-07-15T12:31:15.629Z",
+      "title_original": "CVE-2026-39822 Root escape via symlink plus trailing slash in os",
+      "headline_no": "Symlink med skråstrek bryter ut av Gos os.Root-sandkasse",
+      "summary_no": "CVE-2026-39822 lar en symlink kombinert med en avsluttende skråstrek bryte ut av katalogsperren i Gos os-pakke (os.Root), slik at kode får filtilgang utenfor det tiltenkte rotområdet. Utviklere som bruker os.Root til å sandkasse filtilgang bør bygge på nytt med patchet Go.",
+      "topic": "sikkerhet",
+      "score": 27,
+      "tags": [
+        "golang",
+        "cve-2026-39822",
+        "path-traversal",
+        "sandbox-escape"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-26b13fbbaf",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57432",
+      "published": "2026-07-15T08:01:20.000Z",
+      "ingested": "2026-07-15T12:31:15.629Z",
+      "title_original": "CVE-2026-57432 Perl versions through 5.43.10 have an integer overflow in S_measure_struct leading to an out-of-bounds heap read in pack and unpack",
+      "headline_no": "Heltallsoverflyt i Perls pack/unpack lekker heap-minne",
+      "summary_no": "En integer overflow i Perl-funksjonen S_measure_struct (til og med 5.43.10) gir en out-of-bounds lesing på heapen når pack/unpack behandler spesiallaget input. Rammer først og fremst systemer som kjører Perl-skript på uklarert data; oppgrader Perl når fiksen er tilgjengelig.",
+      "topic": "sikkerhet",
+      "score": 20,
+      "tags": [
+        "perl",
+        "cve-2026-57432",
+        "integer-overflow",
+        "heap-read"
+      ]
+    },
+    {
+      "id": "office365-itpros-54208bd16d",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/15/cross-tenant-message-recall/?utm_source=rss&utm_medium=rss&utm_campaign=cross-tenant-message-recall",
+      "published": "2026-07-15T07:00:00.000Z",
+      "ingested": "2026-07-15T12:28:56.761Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/New-Outlook-Recall-message.jpg?resize=840%2C584&#038;ssl=1",
+      "title_original": "Cross-Tenant Message Recall and Duplicate DDG Detection Enhance Exchange Online Messaging",
+      "headline_no": "Exchange Online lar deg tilbakekalle meldinger på tvers av tenants",
+      "summary_no": "Exchange Online får to nye funksjoner: en sjekk som hindrer oppretting av duplikate dynamiske distribusjonsgrupper, og tilbakekalling av meldinger på tvers av tenants. Sistnevnte krever at administratorer aktivt bestemmer hvilke andre tenants som får lov til å tilbakekalle meldinger levert til organisasjonen. Admins bør vurdere styringsimplikasjonene før funksjonen tas i bruk.",
+      "topic": "identitet",
+      "score": 45,
+      "tags": [
+        "exchange-online",
+        "ddg",
+        "cross-tenant",
+        "message-recall"
+      ]
+    },
     {
       "id": "m365-roadmap-155e6acc0e",
       "source_id": "m365-roadmap",
@@ -9375,298 +9663,6 @@
         "26h2",
         "oppdatering",
         "enablement-package"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-eed188bcfd",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45469",
-      "published": "2026-06-19T14:00:00.000Z",
-      "ingested": "2026-06-20T16:39:08.195Z",
-      "title_original": "CVE-2026-45469 Microsoft Excel Remote Code Execution Vulnerability",
-      "headline_no": "RCE-sårbarhet i Excel for Mac lar angripere kjøre vilkårlig kode",
-      "summary_no": "CVE-2026-45469 er en sårbarhet for ekstern kjøring av kode i Microsoft Excel, og Microsoft har gitt ut sikkerhetsoppdateringer for Office for Mac. IT-admins bør rulle ut oppdateringen til alle berørte Mac-klienter umiddelbart. Andre Office-versjoner er ikke berørt og krever ingen handling.",
-      "topic": "sikkerhet",
-      "score": 72,
-      "tags": [
-        "cve-2026-45469",
-        "excel",
-        "office-for-mac",
-        "rce"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-67ef331ea1",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45475",
-      "published": "2026-06-19T14:00:00.000Z",
-      "ingested": "2026-06-20T16:39:08.195Z",
-      "title_original": "CVE-2026-45475 Microsoft Office Remote Code Execution Vulnerability",
-      "headline_no": "Ny RCE-sårbarhet i Office for Mac krever umiddelbar oppdatering",
-      "summary_no": "CVE-2026-45475 er en sårbarhet for ekstern kjøring av kode i Microsoft Office, og rettes i sikkerhetsoppdateringene for Office for Mac. Kunder med berørt Mac-programvare bør installere oppdateringen for å være beskyttet. Andre Office-installasjoner trenger ingen tiltak.",
-      "topic": "sikkerhet",
-      "score": 72,
-      "tags": [
-        "cve-2026-45475",
-        "office-for-mac",
-        "rce"
-      ]
-    },
-    {
-      "id": "andrew-taylor-cf985b6a2a",
-      "source_id": "andrew-taylor",
-      "source_name": "Andrew Taylor (andrewstaylor.com)",
-      "url": "https://andrewstaylor.com/2026/06/19/intune-newsletter-19th-june-2026/",
-      "published": "2026-06-19T10:59:19.000Z",
-      "ingested": "2026-06-20T16:56:34.724Z",
-      "title_original": "Intune Newsletter – 19th June 2026",
-      "headline_no": "Intune Suite lander i E5 og E3 – ukens nyhetsbrev oppsummerer hva du får",
-      "summary_no": "Andrew Taylors ukentlige nyhetsbrev samler community-dekningen av at Intune Suite nå rulles ut til E5 og deler til E3. Utgaven lenker til guider om Endpoint Privilege Management, Remote Help med uovervåket tilgang og Advanced Analytics. Et greit utgangspunkt for admins som vil forstå hvilke Suite-funksjoner de plutselig har tilgang til.",
-      "topic": "endpoint",
-      "score": 34,
-      "tags": [
-        "intune-suite",
-        "nyhetsbrev",
-        "epm",
-        "remote-help",
-        "lisensiering"
-      ]
-    },
-    {
-      "id": "office365-itpros-c9ba61edca",
-      "source_id": "office365-itpros",
-      "source_name": "Office 365 for IT Pros (Tony Redmond)",
-      "url": "https://office365itpros.com/2026/06/19/baseline-scopes-ca/?utm_source=rss&utm_medium=rss&utm_campaign=baseline-scopes-ca",
-      "published": "2026-06-19T07:00:00.000Z",
-      "ingested": "2026-06-20T16:23:25.526Z",
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Entra-low-priority-permissions.jpg?resize=840%2C365&#038;ssl=1",
-      "title_original": "Entra ID Tightens Conditional Access Processing for Baseline Scopes",
-      "headline_no": "Conditional Access fanger nå apper som ber om baseline-scopes i Entra ID",
-      "summary_no": "Microsoft endrer Entra ID (MC1223829) slik at apper som kun ber om såkalte baseline-scopes — openid, email, profile, User.Read med flere — nå omfattes av Conditional Access-policyer. Utrullingen startet 15. juni og er ferdig globalt midt i august 2026. Gjennomgå aktive CA-policyer nå, for apper som tidligere slapp gjennom kan bli blokkert eller møte nye betingelser.",
-      "topic": "identitet",
-      "score": 54,
-      "tags": [
-        "entra-id",
-        "conditional-access",
-        "baseline-scopes",
-        "oidc",
-        "mc1223829"
-      ]
-    },
-    {
-      "id": "msrc-blog-90bc6b5ecd",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/18/autojack-single-page-rce-host-running-ai-agent/",
-      "published": "2026-06-19T00:17:54.000Z",
-      "ingested": "2026-06-20T13:47:15.344Z",
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-43.webp",
-      "title_original": "AutoJack: How a single page can RCE the host running your AI agent",
-      "headline_no": "AutoJack: Én nettside kan kapre AI-agenten og kjøre kode på verten",
-      "summary_no": "Microsoft-forskere avdekket en angrepskjede de kaller AutoJack i AutoGen Studio, der ondsinnet nettinnhold en surfe-agent åpner kan nå en lokal MCP-WebSocket og starte vilkårlige prosesser på vertsmaskinen. Hullet ble tettet i upstream-koden før det nådde en PyPI-utgivelse, så vanlige installasjoner er ikke eksponert for akkurat denne kjeden. Saken er likevel en påminnelse om at agenter som surfer på utrygt innhold kan bryte localhost-tillitsgrensen — vurder hvilke lokale tjenester agent-rammeverk får snakke med.",
-      "topic": "sikkerhet",
-      "score": 70,
-      "tags": [
-        "autogen",
-        "mcp",
-        "rce",
-        "ai-agenter",
-        "msrc"
-      ]
-    },
-    {
-      "id": "m365-roadmap-182616ab11",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=565425",
-      "published": "2026-06-18T23:00:06.000Z",
-      "ingested": "2026-06-29T23:41:08.847Z",
-      "title_original": "Microsoft Teams: Language selection by users in Teams Rooms on Android",
-      "headline_no": "Velg møtespråk selv i Teams Rooms på Android",
-      "summary_no": "Teams Rooms på Android lar nå brukere velge foretrukket møtespråk blant 69 språk direkte fra konsollen. Romsystemet må restartes etter at språket er valgt. En liten, men kjekk kvalitetsforbedring for flerspråklige arbeidsplasser; GA september 2026.",
-      "topic": "endpoint",
-      "score": 29,
-      "tags": [
-        "teams",
-        "teams-rooms",
-        "android",
-        "språk"
-      ]
-    },
-    {
-      "id": "m365-roadmap-0f4e7e7421",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566324",
-      "published": "2026-06-18T23:00:06.000Z",
-      "ingested": "2026-06-20T13:56:26.314Z",
-      "title_original": "Microsoft Purview: Data Lifecycle Management - Adaptive Protection integration with Data Lifecycle Management",
-      "headline_no": "Purview kobler innsiderisiko til oppbevaring av slettede data",
-      "summary_no": "Adaptive Protection i Purview integreres med Data Lifecycle Management slik at oppbevaringsetiketter automatisk settes på slettede e-poster og filer ut fra brukerens innsiderisikonivå. For IT-admin betyr det at data fra høyrisikobrukere bevares automatisk når risikoen stiger, uten manuell policy-styring. Lansering er ventet i august 2026.",
-      "topic": "sikkerhet",
-      "score": 42,
-      "tags": [
-        "purview",
-        "adaptive-protection",
-        "innsiderisiko",
-        "oppbevaring"
-      ]
-    },
-    {
-      "id": "m365-roadmap-5ab2db6160",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566323",
-      "published": "2026-06-18T23:00:06.000Z",
-      "ingested": "2026-06-20T13:56:26.314Z",
-      "title_original": "Microsoft Purview: Data Loss Prevention - File Testing Against Sensitive Information Classifiers",
-      "headline_no": "Purview lar deg teste filer mot alle klassifiserere på én gang",
-      "summary_no": "En ny funksjon på klassifiseringssiden i Purview lar deg teste filer mot en enkelt klassifiserer eller alle samtidig for å se hva som trigger på sensitivt innhold. Det gjør feilsøking av feilklassifisering raskere for admins som finjusterer DLP- og merkeregler. Lansering er ventet i august 2026.",
-      "topic": "sikkerhet",
-      "score": 34,
-      "tags": [
-        "purview",
-        "dlp",
-        "klassifisering",
-        "feilsoking"
-      ]
-    },
-    {
-      "id": "m365-roadmap-2a10846041",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566322",
-      "published": "2026-06-18T23:00:06.000Z",
-      "ingested": "2026-06-20T13:56:26.314Z",
-      "title_original": "OneNote: Multimodal Capture in Copilot Notebooks (Windows)",
-      "headline_no": "OneNote-Copilot fanger lyd og bilder og lager strukturerte notater",
-      "summary_no": "Multimodal Capture lar Copilot Notebooks på Windows fange lyd, bilder og notater fra møter og idémyldring, og gjøre dem om til strukturerte notater med innsikter, beslutninger og oppgaver. Funksjonen retter seg mot sluttbrukere, men IT-admin bør vurdere datahåndtering når møtelyd havner i Copilot. Lansering er ventet i juli 2026.",
-      "topic": "ai",
-      "score": 36,
-      "tags": [
-        "onenote",
-        "copilot",
-        "windows",
-        "ai"
-      ]
-    },
-    {
-      "id": "m365-roadmap-8538c827a5",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566321",
-      "published": "2026-06-18T23:00:06.000Z",
-      "ingested": "2026-06-20T13:56:26.314Z",
-      "title_original": "Microsoft Purview: Data Loss Prevention - Export DLP and Label Policy Configurations",
-      "headline_no": "Purview lar deg eksportere DLP- og etikettpolicyer som ZIP",
-      "summary_no": "Purview får en eksportfunksjon for DLP-policyer og policyer for merkepublisering, inkludert skjema, som en nedlastbar ZIP-fil. Filen kan legges ved supportsaker for å fremskynde feilsøking. En liten, men kjærkommen forbedring for admins som jobber mye mot Microsoft support. Lansering er ventet i august 2026.",
-      "topic": "sikkerhet",
-      "score": 35,
-      "tags": [
-        "purview",
-        "dlp",
-        "eksport",
-        "policy",
-        "support"
-      ]
-    },
-    {
-      "id": "m365-roadmap-e4188c5c54",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566318",
-      "published": "2026-06-18T23:00:06.000Z",
-      "ingested": "2026-06-20T13:57:05.503Z",
-      "title_original": "Microsoft 365 app: Updated light-weight Notebooks experience in the Microsoft 365 Copilot App (iOS)",
-      "headline_no": "Copilot Notebooks får vedvarende arbeidsområde i iOS-appen",
-      "summary_no": "Copilot Notebooks i Microsoft 365 Copilot-appen for iOS lar nå brukere samle relaterte chatter, resultater og referanser i ett vedvarende AI-arbeidsområde. Copilot bruker den oppsamlede konteksten til å forankre svarene sine, slik at arbeidet fortsetter på tvers av økter i stedet for å starte på nytt hver gang. For IT-admins som ruller ut Copilot på mobil er dette en ny produktivitetsflate å forberede brukerne på — GA er satt til august 2026.",
-      "topic": "ai",
-      "score": 35,
-      "tags": [
-        "copilot",
-        "m365-copilot",
-        "ios",
-        "notebooks"
-      ]
-    },
-    {
-      "id": "core-infra-security-7009183a4f",
-      "source_id": "core-infra-security",
-      "source_name": "Core Infrastructure and Security Blog",
-      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/check-this-out-cto-guide-may-june-2026/ba-p/4529349",
-      "published": "2026-06-18T21:36:23.000Z",
-      "ingested": "2026-06-20T16:39:08.195Z",
-      "title_original": "Check This Out! (CTO!) Guide (May/June 2026)",
-      "headline_no": "Månedens Azure-tips: Event Grid-triggere og TLS-pinning i praksis",
-      "summary_no": "Core Infrastructure and Security-bloggen samler månedens beste community-artikler, blant annet hvordan du trigger Azure Functions fra Blob Storage via Event Grid og hvorfor TLS-sertifikatpinning frarådes for Azure-baserte PostgreSQL- og MySQL-databaser. En lettlest faglig oppdatering for Azure-driftere. Lite nytt av kritisk betydning.",
-      "topic": "sikkerhet",
-      "score": 27,
-      "tags": [
-        "azure",
-        "event-grid",
-        "tls",
-        "roundup"
-      ]
-    },
-    {
-      "id": "core-infra-security-d7fa7bbfc8",
-      "source_id": "core-infra-security",
-      "source_name": "Core Infrastructure and Security Blog",
-      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/microsoft-security-copilot-ai-driven-security-operations-at/ba-p/4528912",
-      "published": "2026-06-18T20:49:10.000Z",
-      "ingested": "2026-06-20T16:39:08.195Z",
-      "title_original": "Microsoft Security Copilot: AI-Driven Security Operations at Greater Scale",
-      "headline_no": "Security Copilot skalerer SOC-arbeidet med AI på maskinhastighet",
-      "summary_no": "Microsoft beskriver hvordan Security Copilot skal forsterke trusseldeteksjon, etterforskning og respons ved å tolke skytelemetri og trusseletterretning til konkrete anbefalinger. Innlegget fremhever utvidbarhet via tredjeparts-plugins og dyp integrasjon med Defender, Sentinel og Entra. Mer en kapabilitetsoversikt enn en nyhet, men nyttig kontekst for SOC-team som vurderer verktøyet.",
-      "topic": "ai",
-      "score": 38,
-      "tags": [
-        "security-copilot",
-        "soc",
-        "ai",
-        "threat-detection"
-      ]
-    },
-    {
-      "id": "msrc-blog-7dffbd88fc",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/18/new-forrester-study-shows-customers-who-unified-with-microsoft-security-benefited-from-124-roi/",
-      "published": "2026-06-18T19:36:08.000Z",
-      "ingested": "2026-06-20T13:47:15.344Z",
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/05/Picture1-4.webp",
-      "title_original": "New Forrester study shows customers who unified with Microsoft Security benefited from 124% ROI",
-      "headline_no": "Forrester: Samlet Microsoft-sikkerhet ga 124 % ROI på tre år",
-      "summary_no": "En Forrester TEI-studie bestilt av Microsoft anslår at en modellert organisasjon med 10 000 ansatte kan oppnå 124 % avkastning over tre år ved å samle sikkerheten hos Microsoft. Studien fremhever opptil 30 % lavere sannsynlighet for brudd og 25 % lavere utbedringskostnader. Tallene er bestilt og modellert av Microsoft selv, så les dem som markedsføring og ikke uavhengig måling.",
-      "topic": "sikkerhet",
-      "score": 28,
-      "tags": [
-        "forrester",
-        "roi",
-        "microsoft-security",
-        "markedsføring"
-      ]
-    },
-    {
-      "id": "sentinel-blog-e11e390756",
-      "source_id": "sentinel-blog",
-      "source_name": "Microsoft Sentinel Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/detection-and-automation-reimagined/ba-p/4527933",
-      "published": "2026-06-18T18:31:03.000Z",
-      "ingested": "2026-06-20T13:51:41.564Z",
-      "title_original": "Detection and automation, reimagined",
-      "headline_no": "Sentinel-deteksjon flytter til Defender — regler og playbooks følger med",
-      "summary_no": "Microsoft flytter deteksjonsarbeidet inn i Defender, der eksisterende analyseregler, playbooks og workbooks fortsetter å virke uendret. Til gjengjeld kan analytikere nå jakte på tvers av endepunkt-, identitets-, e-post- og Sentinel-data i én KQL-flate, med near-real-time deteksjoner og Security Copilot som genererer playbooks. SOC-team bør sette seg inn i den nye verktøykassa før migreringen.",
-      "topic": "sikkerhet",
-      "score": 49,
-      "tags": [
-        "sentinel",
-        "defender",
-        "detection-engineering",
-        "kql",
-        "security-copilot"
       ]
     }
   ]
