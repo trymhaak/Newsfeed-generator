@@ -1,6 +1,270 @@
 {
-  "generated_at": "2026-07-14T18:18:19.353Z",
+  "generated_at": "2026-07-15T00:23:56.664Z",
   "articles": [
+    {
+      "id": "m365-roadmap-155e6acc0e",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567671",
+      "published": "2026-07-14T22:41:38.000Z",
+      "ingested": "2026-07-15T00:20:33.334Z",
+      "title_original": "Planner: Planner Agent chat in Basic Plans",
+      "headline_no": "Planner får innebygd AI-agent med chat og oppgavesøk",
+      "summary_no": "Planner får en innebygd AI-agent som svarer på spørsmål i naturlig språk, finner relevante oppgaver og lar deg administrere oppgaver direkte i planen. Funksjonen når allmenn tilgjengelighet i august 2026 og gjelder også Basic Plans.",
+      "topic": "ai",
+      "score": 39,
+      "tags": [
+        "planner",
+        "ai-agent",
+        "copilot",
+        "m365"
+      ]
+    },
+    {
+      "id": "m365-roadmap-0f783132cb",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567669",
+      "published": "2026-07-14T22:41:38.000Z",
+      "ingested": "2026-07-15T00:20:33.336Z",
+      "title_original": "SharePoint: Enterprise store plugins in Copilot in SharePoint",
+      "headline_no": "SharePoint-Copilot åpner for plugins og MCP-servere fra bedriftsbutikken",
+      "summary_no": "Copilot i SharePoint kan nå bruke plugins fra bedriftens app-butikk — pakker som samler skills, MCP-servere og andre utvidelser, alt styrt av M365-admin. Admins kan rulle ut én plugin på tvers av hele organisasjonen slik at alle får samme opplevelse. Preview i august 2026, GA i desember.",
+      "topic": "ai",
+      "score": 44,
+      "tags": [
+        "sharepoint",
+        "copilot",
+        "plugins",
+        "mcp"
+      ]
+    },
+    {
+      "id": "m365-roadmap-39f229937b",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567668",
+      "published": "2026-07-14T22:41:38.000Z",
+      "ingested": "2026-07-15T00:20:33.336Z",
+      "title_original": "SharePoint: Personal Skills in Copilot in SharePoint",
+      "headline_no": "Lag egne Copilot-ferdigheter som følger deg på tvers av SharePoint",
+      "summary_no": "Brukere kan lage egne personlige skills i Copilot i SharePoint og bruke dem overalt — på tvers av SharePoint-sider og OneDrive, uten å gjenskape dem per side. Ferdighetene eies av brukeren og lagres som markdown-filer i egen OneDrive. Preview i august 2026, GA i desember.",
+      "topic": "ai",
+      "score": 36,
+      "tags": [
+        "sharepoint",
+        "copilot",
+        "personal-skills",
+        "onedrive"
+      ]
+    },
+    {
+      "id": "m365-roadmap-f807560ac3",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567667",
+      "published": "2026-07-14T22:41:38.000Z",
+      "ingested": "2026-07-15T00:20:33.336Z",
+      "title_original": "Microsoft Viva: Copilot Analytics - Agent 365 Dashboard in Insights",
+      "headline_no": "Agent 365-dashbord gir ledere innsyn i all AI-agentaktivitet",
+      "summary_no": "Copilot Analytics (Insights) får et Agent 365-dashbord som samler aktivitet fra alle agenter registrert via Agent 365, med historiske data. Gir ledere og admins oversikt over agentbruk på tvers av organisasjonen. Preview i juli 2026, GA i september.",
+      "topic": "ai",
+      "score": 42,
+      "tags": [
+        "agent-365",
+        "copilot-analytics",
+        "viva",
+        "governance"
+      ]
+    },
+    {
+      "id": "m365-roadmap-033dc33ba8",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567469",
+      "published": "2026-07-14T22:41:38.000Z",
+      "ingested": "2026-07-15T00:20:33.336Z",
+      "title_original": "Microsoft Teams: PowerPoint Live Light theme support",
+      "headline_no": "PowerPoint Live i Teams får endelig lyst tema",
+      "summary_no": "PowerPoint Live i Teams støtter nå lyst tema, i tillegg til mørkt, klassisk og høykontrast. Presentatører kan velge visning etter egne preferanser og systeminnstillinger. Kosmetisk forbedring med GA i august 2026.",
+      "topic": "endpoint",
+      "score": 28,
+      "tags": [
+        "teams",
+        "powerpoint-live",
+        "ui"
+      ]
+    },
+    {
+      "id": "m365-roadmap-b4e07a14fe",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567467",
+      "published": "2026-07-14T22:41:38.000Z",
+      "ingested": "2026-07-15T00:20:33.336Z",
+      "title_original": "Microsoft Teams: Expand presenter visibility in 'Manage what attendees see' for Teams events",
+      "headline_no": "Teams events: presentatørpanelet kan nå utvides og endres i størrelse",
+      "summary_no": "I Teams events kan du nå endre størrelse på og utvide presentatørpanelet under «Manage what attendees see». Gjør det enklere å se, styre og bytte mellom presentatører underveis i arrangementet.",
+      "topic": "endpoint",
+      "score": 26,
+      "tags": [
+        "teams",
+        "teams-events",
+        "ui"
+      ]
+    },
+    {
+      "id": "m365-roadmap-e7a3b755de",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567466",
+      "published": "2026-07-14T22:41:38.000Z",
+      "ingested": "2026-07-15T00:22:44.695Z",
+      "title_original": "Microsoft Teams: Teams events attendance and engagement report policy",
+      "headline_no": "Teams skiller oppmøterapporter for events ut i egen policy",
+      "summary_no": "Microsoft skiller oppmøte- og engasjementsrapporter for Teams events ut i en egen policy, adskilt fra CsTeamsMeetingPolicy. Admins kan dermed gi event-arrangører tilgang til events-rapporter uten samtidig å åpne for oppmøterapporter fra vanlige møter. GA august 2026.",
+      "topic": "endpoint",
+      "score": 35,
+      "tags": [
+        "teams",
+        "events",
+        "rapportering",
+        "policy"
+      ]
+    },
+    {
+      "id": "m365-roadmap-22778b1379",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567462",
+      "published": "2026-07-14T22:41:38.000Z",
+      "ingested": "2026-07-15T00:22:44.695Z",
+      "title_original": "Microsoft Teams: Enhanced live captions settings and right-side panel view",
+      "headline_no": "Teams får live teksting i sidepanel og samlet innstillingsmeny",
+      "summary_no": "Live teksting i Teams får et nytt høyre sidepanel og en samlet innstillingsmeny for talespråk, tekststil og bannordfilter direkte i møtet, pluss en bryter for å slå på teksting som standard. Primært en tilgjengelighets- og brukeropplevelsesforbedring med lite admin-konfigurasjon. GA august 2026.",
+      "topic": "endpoint",
+      "score": 31,
+      "tags": [
+        "teams",
+        "teksting",
+        "tilgjengelighet",
+        "møter"
+      ]
+    },
+    {
+      "id": "m365-roadmap-3b69a46222",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567458",
+      "published": "2026-07-14T22:41:38.000Z",
+      "ingested": "2026-07-15T00:22:44.695Z",
+      "title_original": "Microsoft Teams: Multilingual recap available with translation button",
+      "headline_no": "Teams lar deg endre språk på møtesammendrag i etterkant",
+      "summary_no": "Teams genererer møtesammendraget på språket som ble valgt under møtet, og lar brukere bytte språk på sammendraget i etterkant. Praktisk for flerspråklige og internasjonale team, men en mindre funksjon uten admin-konfigurasjon. GA august 2026.",
+      "topic": "endpoint",
+      "score": 29,
+      "tags": [
+        "teams",
+        "recap",
+        "oversettelse",
+        "møter"
+      ]
+    },
+    {
+      "id": "m365-roadmap-6ccd2e2576",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567457",
+      "published": "2026-07-14T22:41:38.000Z",
+      "ingested": "2026-07-15T00:22:44.695Z",
+      "title_original": "Microsoft Teams: View and manage auto attendant shared voicemails directly in the Queues app",
+      "headline_no": "Delt talepost fra automatisk sentralbord havner nå i Queues-appen",
+      "summary_no": "Talepost til automatisk sentralbord (Auto Attendant) vises nå direkte i Queues-appen, slik at delte meldinger kan spores, triageres og besvares sentralt. Relevant for organisasjoner som kjører Teams Phone med sentralbord og køer. GA august 2026.",
+      "topic": "endpoint",
+      "score": 34,
+      "tags": [
+        "teams",
+        "queues",
+        "voicemail",
+        "telefoni"
+      ]
+    },
+    {
+      "id": "m365-roadmap-4057875758",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567300",
+      "published": "2026-07-14T22:41:38.000Z",
+      "ingested": "2026-07-15T00:22:44.695Z",
+      "title_original": "Microsoft Teams: Prevent presence transition to \"Do not disturb\" setting when screen sharing (GCC High, DoD)",
+      "headline_no": "Teams lar presentatører beholde varsler under skjermdeling",
+      "summary_no": "En ny innstilling lar brukere unngå at tilstedeværelsen automatisk settes til «Ikke forstyrr» ved skjermdeling eller presentasjon, slik at de fortsatt kan motta anrop. Foreløpig kun for GCC High og DoD, så rekkevidden er begrenset. GA september 2026.",
+      "topic": "endpoint",
+      "score": 28,
+      "tags": [
+        "teams",
+        "presence",
+        "gcc-high",
+        "dod"
+      ]
+    },
+    {
+      "id": "m365-roadmap-c665868e1f",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567298",
+      "published": "2026-07-14T22:41:38.000Z",
+      "ingested": "2026-07-15T00:22:44.695Z",
+      "title_original": "Microsoft Teams: External presenters can access production controls for Teams events",
+      "headline_no": "Eksterne presentatører kan få produksjonskontroll i Teams events",
+      "summary_no": "Organisasjoner kan gi eksterne presentatører tilgang til produksjonskontroller for Teams events ved å legge fødererte (B2B) og gjestebrukere til i innstillingen «Who has control of production tools». Nyttig for samarbeid med tredjeparts eventprodusenter, men admins bør vurdere at eksterne da kan styre hva deltakere ser. GA august 2026.",
+      "topic": "endpoint",
+      "score": 36,
+      "tags": [
+        "teams",
+        "events",
+        "b2b",
+        "gjestebruker"
+      ]
+    },
+    {
+      "id": "surface-it-pro-f02af24506",
+      "source_id": "surface-it-pro",
+      "source_name": "Surface IT Pro Blog",
+      "url": "https://techcommunity.microsoft.com/t5/surface-it-pro-blog/reimagining-surface-tools-for-business/ba-p/4525227",
+      "published": "2026-07-14T20:01:17.000Z",
+      "ingested": "2026-07-15T00:23:56.625Z",
+      "title_original": "Reimagining Surface Tools for Business",
+      "headline_no": "Surface Management Portal får Scorecard og beskyttelsesplaner",
+      "summary_no": "Microsoft har oppdatert Surface Tools for Business (Management Portal, Support Portal, IT Toolkit og Repair Tool) med støtte for de nye Surface-enhetene på Intel Core Ultra Series 3 og Snapdragon X2. Surface Management Portal får nå — foreløpig kun i USA — Scorecard og beskyttelsesplaner for å overvåke flåtehelse og livssyklus. IT-admins som forvalter Surface-flåter får bedre synlighet og enklere tilgang til support- og beskyttelsesressurser.",
+      "topic": "endpoint",
+      "score": 41,
+      "tags": [
+        "surface",
+        "endpoint-management",
+        "secured-core",
+        "fleet-health"
+      ]
+    },
+    {
+      "id": "prajwal-desai-20d656fa7d",
+      "source_id": "prajwal-desai",
+      "source_name": "Prajwal Desai",
+      "url": "https://www.prajwaldesai.com/windows-11-kb5101650-kb5099414-updates/",
+      "published": "2026-07-14T19:28:40.000Z",
+      "ingested": "2026-07-15T00:23:56.625Z",
+      "title_original": "Windows 11 KB5101650 & KB5099414 Updates Bring Major Stability Boosts and Smarter Features",
+      "headline_no": "Windows 11 KB5101650 og KB5099414 ute: stabilitetsløft og nye funksjoner",
+      "summary_no": "Microsoft slapp 14. juli 2026 de kumulative oppdateringene KB5101650 for Windows 11 25H2 og 24H2, og KB5099414 for 23H2. Oppdateringene gir stabilitetsforbedringer og enkelte nye funksjoner. IT-admins bør teste og distribuere dem gjennom patch-ringene sine.",
+      "topic": "endpoint",
+      "score": 39,
+      "tags": [
+        "windows-11",
+        "patch-tuesday",
+        "kb5101650",
+        "cumulative-update"
+      ]
+    },
     {
       "id": "janbakker-e089b22619",
       "source_id": "janbakker",
@@ -20,6 +284,26 @@
         "entra",
         "tidslinje",
         "migrering"
+      ]
+    },
+    {
+      "id": "security-community-365a68996c",
+      "source_id": "security-community",
+      "source_name": "Microsoft Security Community Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/new-windows-features-to-secure-today-s-data-in-a-post-quantum/ba-p/4523370",
+      "published": "2026-07-14T15:56:03.000Z",
+      "ingested": "2026-07-15T00:23:56.625Z",
+      "title_original": "New Windows Features to Secure Today’s Data in a Post-Quantum World",
+      "headline_no": "Windows får kvantesikker TLS: ML-KEM-nøkkelutveksling er nå live",
+      "summary_no": "Microsoft har rullet ut post-kvante TLS-hybridnøkkelutveksling (ML-KEM) og komposittalgoritmer til Windows 11 (24H2, 25H2 og 26H1) og Windows Server 2025 via juli-oppdateringene. Kvantesikker støtte flyttes nå fra rene algoritmer og API-er inn i selve TLS-stacken, krypto-API-ene og sertifikatfunksjonene. IT-admins kan dermed begynne å pilotere og deploye kvantesikker TLS og PQ-sertifikater i stor skala som del av krypto-agilitetsmigreringen.",
+      "topic": "sikkerhet",
+      "score": 60,
+      "tags": [
+        "post-quantum",
+        "tls",
+        "ml-kem",
+        "windows-server-2025",
+        "kryptografi"
       ]
     },
     {
@@ -9383,307 +9667,6 @@
         "safe-links",
         "anti-phishing",
         "utrulling"
-      ]
-    },
-    {
-      "id": "intune-blog-5b96561782",
-      "source_id": "intune-blog",
-      "source_name": "Microsoft Intune Customer Success Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-intune-blog/it-experts-weigh-in-advanced-intune-capabilities-coming-to/ba-p/4516898",
-      "published": "2026-06-18T16:00:00.000Z",
-      "ingested": "2026-06-20T13:44:12.220Z",
-      "title_original": "IT experts weigh in: Advanced Intune capabilities coming to Microsoft 365 E3 and E5",
-      "headline_no": "Intune Suite-funksjoner inkluderes i Microsoft 365 E3 og E5 fra 1. juli",
-      "summary_no": "Fra 1. juli inkluderes avanserte Intune Suite-funksjoner som Endpoint Privilege Management, Advanced Analytics og Remote Help i Microsoft 365 E3 og E5, uten ekstra lisenskostnad. Eksisterende kvalifiserte kunder får funksjonene i tenanten innen 1. august. Admins bør kartlegge hvordan de nye funksjonene passer inn i eksisterende oppsett før utrulling.",
-      "topic": "endpoint",
-      "score": 59,
-      "tags": [
-        "intune",
-        "lisensiering",
-        "m365",
-        "endpoint-privilege-management"
-      ]
-    },
-    {
-      "id": "handsontek-e85bdfe683",
-      "source_id": "handsontek",
-      "source_name": "HANDS ON tek (João Ferreira)",
-      "url": "https://handsontek.net/copilot-cowork-pricing-real-costs-risks-free-alternatives/",
-      "published": "2026-06-18T15:40:15.000Z",
-      "ingested": "2026-06-20T17:00:31.434Z",
-      "hero_image": "https://handsontek.net/images/hot2/Cowork/hero.png",
-      "title_original": "Copilot Cowork Pricing: Real Costs, Risks & Free Alternatives",
-      "headline_no": "Copilot Cowork går GA — men koster nå ekstra per forbruk",
-      "summary_no": "Microsoft gjorde Copilot Cowork allment tilgjengelig globalt 16. juni 2026, men flyttet funksjonen ut av M365 Copilot-lisensen og over på forbruksbasert fakturering — på toppen av de 30 dollarene per bruker per måned. Cowork kjører autonome, langvarige oppgaver på tvers av M365-data og bruker Anthropic Opus 4.8 og Sonnet 4.6. IT-admins bør sette kostnadstak og klar styring før forbruket løper løpsk.",
-      "topic": "ai",
-      "score": 57,
-      "tags": [
-        "copilot",
-        "cowork",
-        "ai-agenter",
-        "lisensiering",
-        "m365"
-      ]
-    },
-    {
-      "id": "admindroid-2e823e809e",
-      "source_id": "admindroid",
-      "source_name": "AdminDroid Blog",
-      "url": "https://blog.admindroid.com/service-plans-for-agent-conditional-access-and-identity-protection/",
-      "published": "2026-06-18T13:45:10.000Z",
-      "ingested": "2026-06-20T16:28:30.747Z",
-      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/Agent-CA-Identity-Protection-Get-New-Service-Plans-150x150.png",
-      "title_original": "Entra ID Adds New Service Plans for Agent Conditional Access and Identity Protection",
-      "headline_no": "Entra flytter agent-sikkerhet til egne lisensplaner i M365 E7",
-      "summary_no": "Microsoft skiller ut Conditional Access og Identity Protection for AI-agenter i to nye tjenesteplaner under Microsoft 365 Agent og M365 E7. Funksjonene lå tidligere under Entra ID P1/P2, så admins bør kontrollere lisensieringen for å unngå avbrudd i agent-sikkerheten.",
-      "topic": "identitet",
-      "score": 37,
-      "tags": [
-        "entra",
-        "conditional-access",
-        "identity-protection",
-        "ai-agenter",
-        "lisensiering"
-      ]
-    },
-    {
-      "id": "windows-it-pro-275293f7b3",
-      "source_id": "windows-it-pro",
-      "source_name": "Windows IT Pro Blog",
-      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-365-and-azure-virtual-desktop-expanding-access/ba-p/4515931",
-      "published": "2026-06-18T13:31:22.000Z",
-      "ingested": "2026-06-20T13:45:30.158Z",
-      "title_original": "Windows 365 and Azure Virtual Desktop: Expanding access",
-      "headline_no": "Windows 365 Business blir 20 % billigere fra 1. mai",
-      "summary_no": "Microsoft setter ned listeprisen på Windows 365 Business med 20 % på alle Cloud PC-konfigurasjoner fra 1. mai 2026, og nye kvalifiserte kunder får ytterligere 20 % rabatt ut juni. Endringen senker terskelen for små og mellomstore bedrifter (opptil 300 seter) som vil ha ferdige Cloud PC-er uten å måtte kjøpe andre Microsoft-lisenser først. Relevant for IT-ansvarlige som vurderer skybasert Windows for mindre miljøer.",
-      "topic": "endpoint",
-      "score": 54,
-      "tags": [
-        "windows-365",
-        "cloud-pc",
-        "azure-virtual-desktop",
-        "lisensiering",
-        "smb"
-      ]
-    },
-    {
-      "id": "prajwal-desai-a545e11010",
-      "source_id": "prajwal-desai",
-      "source_name": "Prajwal Desai",
-      "url": "https://www.prajwaldesai.com/kb38232642-security-update-for-confimgr-console-extension/",
-      "published": "2026-06-18T07:01:07.000Z",
-      "ingested": "2026-06-20T16:58:05.721Z",
-      "title_original": "KB38232642 Security Update for Configuration Manager Console Extension",
-      "headline_no": "Ny ConfigMgr-hotfix sikrer import av konsollutvidelser (KB38232642)",
-      "summary_no": "Microsoft har gitt ut hotfix KB38232642 for Configuration Manager 2603, 2509 og 2503 som styrker sikkerheten rundt import av console extensions. Oppdateringen reduserer risikoen ved tredjeparts konsollutvidelser, og admins bør installere den for å bevare systemintegriteten.",
-      "topic": "endpoint",
-      "score": 42,
-      "tags": [
-        "configmgr",
-        "sccm",
-        "hotfix",
-        "kb38232642",
-        "sikkerhet"
-      ]
-    },
-    {
-      "id": "office365-itpros-b93d853a5a",
-      "source_id": "office365-itpros",
-      "source_name": "Office 365 for IT Pros (Tony Redmond)",
-      "url": "https://office365itpros.com/2026/06/18/copilot-interaction-app/?utm_source=rss&utm_medium=rss&utm_campaign=copilot-interaction-app",
-      "published": "2026-06-18T07:00:00.000Z",
-      "ingested": "2026-06-20T16:23:25.528Z",
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Copilot-Interactions-in-Out-GridView.jpg?resize=840%2C152&#038;ssl=1",
-      "title_original": "Microsoft Blocks Graph Access to Non-IPM Folders",
-      "headline_no": "Graph blokkerer nå tilgang til skjulte mapper med Copilot- og Teams-logger",
-      "summary_no": "Microsoft har stille blokkert Graph-tilgang til ikke-IPM-mapper som TeamsMessagesData, der compliance-data for Copilot-prompter og Teams-chat lagres. Get-MgUserMailFolderMessage gir nå 403 Forbidden mot disse skjulte mappene. Admins med skript som henter slike compliance-poster via Graph må finne nye metoder.",
-      "topic": "sikkerhet",
-      "score": 44,
-      "tags": [
-        "microsoft-graph",
-        "compliance",
-        "copilot",
-        "teams",
-        "non-ipm"
-      ]
-    },
-    {
-      "id": "msrc-blog-9658f03bb1",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/17/postinstall-payload-inside-mastra-npm-supply-chain-compromise/",
-      "published": "2026-06-18T03:43:04.000Z",
-      "ingested": "2026-06-20T13:47:15.344Z",
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-30.webp",
-      "title_original": "From package to postinstall payload: Inside the Mastra npm supply chain compromise by Sapphire Sleet",
-      "headline_no": "Nordkoreansk Sapphire Sleet kompromitterte 140+ npm-pakker i Mastra-angrep",
-      "summary_no": "Microsoft Threat Intelligence knytter et storstilt npm-forsyningskjedeangrep mot over 140 pakker i mastra- og @mastra-scopene til den nordkoreanske statsaktøren Sapphire Sleet. Angriperne kapret vedlikeholderkontoen ehindero og publiserte forgiftede versjoner som trakk inn easy-day-js, en ondsinnet typosquat av populære dayjs. Pakkene er fjernet og publiseringstilgangen trukket, men angrepet viser hvorfor utviklere må låse avhengigheter og granske postinstall-skript.",
-      "topic": "sikkerhet",
-      "score": 84,
-      "tags": [
-        "npm",
-        "supply-chain",
-        "sapphire-sleet",
-        "typosquat",
-        "nord-korea"
-      ]
-    },
-    {
-      "id": "msrc-blog-603762b505",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/17/crypto-clipper-uses-tor-worm-like-propagation-for-persistence-control/",
-      "published": "2026-06-17T23:11:43.000Z",
-      "ingested": "2026-06-20T13:47:15.344Z",
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-21.webp",
-      "title_original": "Crypto Clipper uses Tor and worm-like propagation for persistence and control",
-      "headline_no": "Crypto-clipper bruker Tor og ormespredning for å stjele kryptolommebøker",
-      "summary_no": "Microsoft Threat Intelligence har sporet en Windows-basert crypto-clipper som har vært aktiv siden februar 2026, og som bytter ut kryptoadresser i utklippstavlen, tar skjermbilder og fungerer som en lett bakdør. Skadevaren bruker Windows Script Host og ActiveX til å starte en innebygd Tor-proxy mot en skjult C2-tjeneste, uten tradisjonell installer eller IP-basert infrastruktur. Defender oppdager den som Trojan:Win32/CryptoBandits.A, og de sterkeste sporene for forsvarere er atferdsbaserte, som skripttolkere som starter mistenkelige barneprosesser og trafikk mot localhost:9050.",
-      "topic": "sikkerhet",
-      "score": 73,
-      "tags": [
-        "malware",
-        "crypto-clipper",
-        "tor",
-        "defender",
-        "windows"
-      ]
-    },
-    {
-      "id": "windows-networking-203ba54cec",
-      "source_id": "windows-networking",
-      "source_name": "Windows Networking Blog (Core Networking)",
-      "url": "https://techcommunity.microsoft.com/t5/networking-blog/announcing-windows-clat-public-preview/ba-p/4506046",
-      "published": "2026-06-17T22:30:50.000Z",
-      "ingested": "2026-06-20T16:48:55.360Z",
-      "title_original": "Announcing Windows CLAT Public Preview",
-      "headline_no": "Windows CLAT i offentlig forhåndsvisning baner vei for IPv6-only nett",
-      "summary_no": "Windows CLAT er nå i offentlig forhåndsvisning, med start i Canary-bygg 29599-1000 og utrulling til flere Insider-kanaler i ukene som kommer. Funksjonen lar IPv4-only-apper fungere på IPv6-only-nettverk, og preview-en støtter nå konfigurasjon via Group Policy. Relevant for virksomheter som planlegger overgang til IPv6-only.",
-      "topic": "endpoint",
-      "score": 50,
-      "tags": [
-        "clat",
-        "ipv6",
-        "networking",
-        "public-preview"
-      ]
-    },
-    {
-      "id": "msrc-blog-d6222874ee",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/17/beyond-the-benchmark-advancing-security-at-ai-speed/",
-      "published": "2026-06-17T19:30:00.000Z",
-      "ingested": "2026-06-20T13:48:24.074Z",
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/MDASH-diagram-1.webp",
-      "title_original": "Beyond the benchmark: Advancing security at AI speed",
-      "headline_no": "Microsofts AI-agenter jakter sårbarheter i Windows, Hyper-V og Azure",
-      "summary_no": "Microsoft løfter AI-systemet MDASH fra forskningsprosjekt til produksjon for å oppdage, verifisere og utbedre sårbarheter i egne plattformer som Windows, Hyper-V, Azure og identitetssystemer. Systemet orkestrerer et panel av spesialiserte AI-agenter framfor å lene seg på én modell, og åpner nå for preview. For sikkerhetsteam betyr det raskere funn av vanskelige feil før angriperne rekker først.",
-      "topic": "sikkerhet",
-      "score": 70,
-      "tags": [
-        "mdash",
-        "ai",
-        "sårbarheter",
-        "preview"
-      ]
-    },
-    {
-      "id": "msrc-blog-7d2201bbda",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/17/forrester-names-microsoft-a-leader-in-the-2026-extended-detection-and-response-platforms-wave-report/",
-      "published": "2026-06-17T18:30:00.000Z",
-      "ingested": "2026-06-20T13:48:24.074Z",
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/Picture1-2.webp",
-      "title_original": "​​Forrester names Microsoft a Leader in the 2026 Extended Detection and Response Platforms Wave™ report",
-      "headline_no": "Forrester kårer Microsoft til leder innen XDR-plattformer i 2026",
-      "summary_no": "Microsoft topper Forresters XDR Wave for Q2 2026 og scorer høyest av alle leverandører på både strategi og visjon. Rapporten trekker fram Defenders dekning på tvers av identitet, endepunkt, e-post, SaaS og skyworkloads, samt toppscore på blant annet SIEM-erstatning og trusseljakt. Mest relevant som beslutningsstøtte hvis du vurderer XDR-leverandør.",
-      "topic": "sikkerhet",
-      "score": 30,
-      "tags": [
-        "xdr",
-        "forrester",
-        "defender"
-      ]
-    },
-    {
-      "id": "msrc-blog-88c53ed1af",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/ai-is-accelerating-cyberattacks%E2%80%94here%E2%80%99s-how-to-stay-ahead/4528592",
-      "published": "2026-06-17T17:00:00.000Z",
-      "ingested": "2026-06-20T13:48:24.074Z",
-      "hero_image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTI4NTkyLXBpcTBYRw?image-dimensions=999x474&amp;revision=11",
-      "title_original": "AI is accelerating cyberattacks—here’s how to stay ahead",
-      "headline_no": "AI gir cyberangrep fart — identitet er det nye trykkpunktet",
-      "summary_no": "Microsoft advarer om at AI lar angripere skalere sosial manipulering, automatisere rekognosering og utnytte lekkede passord raskere enn før. Identitet er fortsatt den vanligste inngangen, og selv små forsinkelser mellom deteksjon og handling kan skille en kontrollert hendelse fra et forretningskritisk brudd. Admins bør samle identitets- og sikkerhetssignaler framfor å jobbe i siloer.",
-      "topic": "sikkerhet",
-      "score": 45,
-      "tags": [
-        "ai",
-        "identitet",
-        "trusler",
-        "social-engineering"
-      ]
-    },
-    {
-      "id": "entra-blog-24539916d2",
-      "source_id": "entra-blog",
-      "source_name": "Microsoft Entra Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/microsoft-entra-id-security-updates-what-organizations-need-to/ba-p/4522024",
-      "published": "2026-06-17T16:38:05.000Z",
-      "ingested": "2026-06-20T13:45:30.158Z",
-      "title_original": "Microsoft Entra ID security updates: What organizations need to do now",
-      "headline_no": "Entra ID strammer inn MFA, Conditional Access og SSPR fra juli",
-      "summary_no": "Microsoft pensjonerer flere eldre Entra ID-funksjoner: Custom controls erstattes av External MFA (utfases 30. september 2026, end of life mai 2027), Conditional Access håndheves konsekvent ved registrering av sikkerhetsinfo fra 6. juli, og SSPR vil kun godta eksplisitt registrerte metoder fra 7. september. IT-admins bør teste policyer i report-only-modus og rydde opp i katalog-baserte telefonnumre og e-postadresser før fristene. Manglende handling kan blokkere både brukerregistrering og selvbetjent passordtilbakestilling.",
-      "topic": "identitet",
-      "score": 76,
-      "tags": [
-        "entra-id",
-        "conditional-access",
-        "sspr",
-        "mfa",
-        "deprecation"
-      ]
-    },
-    {
-      "id": "entra-blog-7d44586e34",
-      "source_id": "entra-blog",
-      "source_name": "Microsoft Entra Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/ai-is-accelerating-cyberattacks-here-s-how-to-stay-ahead/ba-p/4528592",
-      "published": "2026-06-17T16:37:33.000Z",
-      "ingested": "2026-06-20T13:45:30.158Z",
-      "title_original": "AI is accelerating cyberattacks—here’s how to stay ahead",
-      "headline_no": "AI gjør cyberangrep raskere — identitet er det nye trykkpunktet",
-      "summary_no": "Microsoft advarer om at AI akselererer angrep gjennom automatisert rekognosering, skreddersydd sosial manipulering og tilpasning i sanntid, mens identitet fortsatt er den vanligste inngangsporten. Budskapet er at identitets- og sikkerhetsteam ikke lenger kan jobbe i siloer, men trenger helhetlig innsyn og integrerte verktøy for å oppdage og stanse trusler raskt. Lite konkret nytt, men en pekepinn på Microsofts retning for identitetssikkerhet.",
-      "topic": "identitet",
-      "score": 30,
-      "tags": [
-        "ai",
-        "identitet",
-        "trusler",
-        "sosial-manipulering"
-      ]
-    },
-    {
-      "id": "sentinel-blog-44f48fc3cb",
-      "source_id": "sentinel-blog",
-      "source_name": "Microsoft Sentinel Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/anatomy-of-the-change/ba-p/4527934",
-      "published": "2026-06-17T16:00:00.000Z",
-      "ingested": "2026-06-20T13:51:41.564Z",
-      "title_original": "Anatomy of the change",
-      "headline_no": "Sentinel i Defender gir SOC-team én samlet hendelseskø og angrepshistorie",
-      "summary_no": "Når Sentinel flyttes fra Azure-portalen inn i Defender, samles hendelser, varsler, korrelasjon og automatisering ett sted — med én incident-kø og én sammenhengende angrepshistorie. Den underliggende dataarkitekturen og innholdet fra Content hub består, så eksisterende investeringer videreføres. Microsoft inkluderer en konkret sjekkliste for hva SOC-team bør gjøre allerede denne uka.",
-      "topic": "sikkerhet",
-      "score": 48,
-      "tags": [
-        "sentinel",
-        "defender",
-        "incident-queue",
-        "soc",
-        "migration"
       ]
     }
   ]
