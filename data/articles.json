@@ -1,6 +1,64 @@
 {
-  "generated_at": "2026-07-16T00:39:02.561Z",
+  "generated_at": "2026-07-16T06:41:36.499Z",
   "articles": [
+    {
+      "id": "msrc-blog-f0dd9780aa",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/15/unpacking-asyncapi-npm-supply-chain-compromise-import-time-payload-delivery/",
+      "published": "2026-07-16T01:36:21.000Z",
+      "ingested": "2026-07-16T06:41:36.446Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/image-14.webp",
+      "title_original": "Unpacking the AsyncAPI npm supply chain compromise and import-time payload delivery",
+      "headline_no": "npm-angrep: kaprede AsyncAPI-pakker kjører skadekode ved import",
+      "summary_no": "Microsoft Threat Intelligence avdekket 14. juli en koordinert forsyningskjede-kompromittering av @asyncapi-organisasjonen på npm, der fem pakkeversjoner ble republisert med samme skadelige loader. Fordi @asyncapi/specs er en transitiv avhengighet, rammes utviklermaskiner, CI/CD-pipelines og produksjonstjenester som importerte pakkene i eksponeringsvinduet. Koden kjører ved import – ikke via postinstall – så «npm install --ignore-scripts» stopper den ikke.",
+      "topic": "sikkerhet",
+      "score": 86,
+      "tags": [
+        "npm",
+        "supply-chain",
+        "asyncapi",
+        "miasma"
+      ]
+    },
+    {
+      "id": "m365-roadmap-090669f772",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567465",
+      "published": "2026-07-15T22:55:27.000Z",
+      "ingested": "2026-07-16T06:41:36.446Z",
+      "title_original": "Microsoft Teams: Teams shared display mode and peripheral detection available for DoD environments",
+      "headline_no": "Teams: delt visningsmodus og enhetsdeteksjon nå i DoD-miljøer",
+      "summary_no": "Teams' delte visningsmodus er nå tilgjengelig i amerikanske DoD-myndighetsmiljøer og gir mer sømløst og privat møtevertskap fra PC-en. BYOD-rom får i tillegg periferideteksjon for inventar og rapportering via Pro Management-portalen. GA er satt til august 2026.",
+      "topic": "endpoint",
+      "score": 29,
+      "tags": [
+        "teams",
+        "dod",
+        "byod",
+        "m365-roadmap"
+      ]
+    },
+    {
+      "id": "windows-it-pro-b0114db37f",
+      "source_id": "windows-it-pro",
+      "source_name": "Windows IT Pro Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/now-available-admin-control-for-sso-prompts-in-windows/ba-p/4534613",
+      "published": "2026-07-15T22:43:03.000Z",
+      "ingested": "2026-07-16T06:41:36.444Z",
+      "title_original": "Now available: Admin control for SSO prompts in Windows",
+      "headline_no": "Windows 11: IT-admins kan nå fjerne SSO-prompt på styrte enheter",
+      "summary_no": "Fra juli-oppdateringen (KB5101650) til Windows 11 24H2 og 25H2 kan IT-administratorer bruke en registernøkkel til å automatisk godta SSO-tillatelser på administrerte enheter. Det omgår prompten som EØS-brukere ellers får før de logges inn på andre Microsoft-tjenester. Nyttig for virksomheter som allerede styrer påloggingspolicyer og tillitsforhold sentralt.",
+      "topic": "endpoint",
+      "score": 59,
+      "tags": [
+        "windows-11",
+        "sso",
+        "eøs",
+        "kb5101650"
+      ]
+    },
     {
       "id": "windows-server-0bc27bb514",
       "source_id": "windows-server",
@@ -195,6 +253,25 @@
         "rettighetseskalering",
         "msrc",
         "windows"
+      ]
+    },
+    {
+      "id": "core-infra-security-f66987273c",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/customer-offerings-solution-optimization-for-github-copilot/ba-p/4536886",
+      "published": "2026-07-15T13:41:27.000Z",
+      "ingested": "2026-07-16T06:41:36.446Z",
+      "title_original": "Customer Offerings: Solution Optimization for GitHub Copilot",
+      "headline_no": "GitHub Copilot går over til forbruksbasert AI Credits-fakturering",
+      "summary_no": "GitHub Copilot gikk 1. juni fra premium request-enheter til forbruksbasert fakturering med AI Credits, der én kreditt tilsvarer 0,01 USD. Copilot Business inkluderer 1 900 krediter per bruker per måned, Enterprise 3 900. Microsoft tilbyr nå et «Solution Optimization»-engasjement via kundeteamet for å gi kostnadsoversikt og forbruksstyring.",
+      "topic": "ai",
+      "score": 37,
+      "tags": [
+        "github-copilot",
+        "ai-credits",
+        "fakturering",
+        "kostnad"
       ]
     },
     {
@@ -9593,82 +9670,6 @@
         "asn1",
         "minnelekkasje",
         "parsing"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-1baf565271",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-7383",
-      "published": "2026-06-20T08:43:24.000Z",
-      "ingested": "2026-06-20T17:34:12.585Z",
-      "title_original": "CVE-2026-7383 Possible Heap Buffer Overflow in ASN.1 Multibyte String Conversion",
-      "headline_no": "Heap-overflow i OpenSSLs ASN.1-parsing kan gi kodekjøring",
-      "summary_no": "OpenSSL har en mulig heap buffer overflow ved konvertering av multibyte ASN.1-strenger. Siden ASN.1 brukes bredt i sertifikat- og kryptohåndtering, kan overflyten i verste fall gi kodekjøring og rammer mange produkter. Dette bør prioriteres høyt i patch-syklusen.",
-      "topic": "sikkerhet",
-      "score": 61,
-      "tags": [
-        "cve-2026-7383",
-        "openssl",
-        "asn1",
-        "buffer-overflow"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-a50408872f",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42767",
-      "published": "2026-06-20T08:43:00.000Z",
-      "ingested": "2026-06-20T16:32:56.544Z",
-      "title_original": "CVE-2026-42767 NULL Pointer Dereference in CRMF EncryptedValue Decryption",
-      "headline_no": "NULL-peker i CRMF-dekryptering åpner for tjenestenekt (CVE-2026-42767)",
-      "summary_no": "Dekryptering av CRMF EncryptedValue kan utløse en NULL-pekerdereferanse og krasje prosessen som behandler sertifikatforespørsler. Miljøer med sertifikatregistrering via CRMF bør patche når Microsoft publiserer rettelsen.",
-      "topic": "sikkerhet",
-      "score": 45,
-      "tags": [
-        "cve-2026-42767",
-        "crmf",
-        "dos",
-        "sertifikater"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-522fdc8d13",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42766",
-      "published": "2026-06-20T08:42:43.000Z",
-      "ingested": "2026-06-20T16:32:56.544Z",
-      "title_original": "CVE-2026-42766 Possible NULL Dereference in Password-Based CMS Decryption",
-      "headline_no": "NULL-dereferanse i CMS-dekryptering kan krasje tjenester (CVE-2026-42766)",
-      "summary_no": "En mulig NULL-pekerdereferanse i passordbasert CMS-dekryptering kan utløses av spesialutformede data og føre til tjenestenektkrasj. Admins bør prioritere oppdatering på systemer som dekrypterer CMS-meldinger fra upålitelige kilder.",
-      "topic": "sikkerhet",
-      "score": 47,
-      "tags": [
-        "cve-2026-42766",
-        "cms",
-        "dos",
-        "kryptografi"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-36d61cb569",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45446",
-      "published": "2026-06-20T08:42:18.000Z",
-      "ingested": "2026-06-20T16:32:56.544Z",
-      "title_original": "CVE-2026-45446 Incorrect Tag Processing for Empty Messages in AES-GCM-SIV and AES-SIV modes",
-      "headline_no": "Feil tag-håndtering i AES-GCM-SIV svekker integritet for tomme meldinger",
-      "summary_no": "Feil i tag-prosesseringen for tomme meldinger i AES-GCM-SIV- og AES-SIV-modus kan svekke autentiseringsgarantien slik at manipulerte meldinger godtas. Utviklere og admins som bruker disse AEAD-modusene bør oppdatere berørte kryptobiblioteker når rettelsen kommer.",
-      "topic": "sikkerhet",
-      "score": 54,
-      "tags": [
-        "cve-2026-45446",
-        "aes-gcm-siv",
-        "aes-siv",
-        "kryptografi"
       ]
     }
   ]
