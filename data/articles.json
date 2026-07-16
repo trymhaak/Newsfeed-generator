@@ -1,6 +1,202 @@
 {
-  "generated_at": "2026-07-15T12:32:40.097Z",
+  "generated_at": "2026-07-16T00:39:02.561Z",
   "articles": [
+    {
+      "id": "windows-server-0bc27bb514",
+      "source_id": "windows-server",
+      "source_name": "Windows Server News and Best Practices",
+      "url": "https://techcommunity.microsoft.com/t5/windows-server-news-and-best/announcing-trusted-launch-for-virtual-machines-for-windows/ba-p/4537082",
+      "published": "2026-07-15T20:24:24.000Z",
+      "ingested": "2026-07-16T00:39:02.509Z",
+      "title_original": "Announcing Trusted Launch for Virtual Machines for Windows Server Insiders",
+      "headline_no": "Trusted Launch gir boot-integritet for Hyper-V-VM-er i Windows Server",
+      "summary_no": "Windows Server Insider Preview får Trusted Launch for Hyper-V Gen 2-VM-er, med Secure Boot, virtuell TPM og verifisering av boot-integritet mot Azure Attestation. vTPM-tilstanden følger nå automatisk med ved live-migrering og failover, slik at VM-en starter uten manuell flytting av TPM-nøkler. Beskytter mot malware plantet i boot-stien – en stadig vanligere angrepsvektor.",
+      "topic": "endpoint",
+      "score": 52,
+      "tags": [
+        "windows-server",
+        "trusted-launch",
+        "hyper-v",
+        "vtpm",
+        "secure-boot"
+      ]
+    },
+    {
+      "id": "fasttrack-3ba24c6019",
+      "source_id": "fasttrack",
+      "source_name": "Microsoft FastTrack Blog",
+      "url": "https://techcommunity.microsoft.com/t5/fasttrack-blog/why-identity-is-the-copilot-unlock/ba-p/4537445",
+      "published": "2026-07-15T18:30:19.000Z",
+      "ingested": "2026-07-16T00:39:02.509Z",
+      "hero_image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/dS0yMDE4MTgteTNoRWFa?image-coordinates=0%2C0%2C1500%2C1500&amp;image-dimensions=120x120",
+      "title_original": "Why identity is the Copilot unlock",
+      "headline_no": "Derfor er identitet nøkkelen som låser opp Copilot",
+      "summary_no": "Microsoft FastTrack argumenterer for at fastlåste Copilot-utrullinger sjelden er et lisens- eller Copilot-problem, men et identitetsproblem: M365 Copilot autentiserer via Entra ID og arver brukerens Graph-tilganger. Er identitetsfundamentet umodent, får ingen brukere Copilot i hendene – og kontrollplanet for fremtidige agenter mangler. Del 2 i serien retter seg mot M365-admins og CIO-er som har betalt for Copilot uten å få det «på».",
+      "topic": "identitet",
+      "score": 38,
+      "tags": [
+        "copilot",
+        "entra-id",
+        "identitet",
+        "microsoft-graph",
+        "governance"
+      ]
+    },
+    {
+      "id": "entra-blog-ebd4c7ed65",
+      "source_id": "entra-blog",
+      "source_name": "Microsoft Entra Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/ai-agents-are-everywhere-are-your-access-controls-ready/ba-p/4531379",
+      "published": "2026-07-15T18:16:41.000Z",
+      "ingested": "2026-07-16T00:36:34.439Z",
+      "title_original": "AI agents are everywhere. Are your access controls ready?",
+      "headline_no": "AI-agenter florerer ustyrt – 44 000 dukket opp i én tenant",
+      "summary_no": "På Identiverse 2026 fortalte identitetseksperter at ustyrte AI-agenter allerede er en realitet – én tenant hadde 44 000 av dem, de fleste uadministrert. Agentene sprer seg på tvers av SaaS, multisky og tredjepartsmiljøer uten styring, og «shadow AI» er utbredt. IT-admins bør kartlegge og få tilgangskontroll på agent-identiteter før sprawlen vokser seg ustyrlig.",
+      "topic": "identitet",
+      "score": 51,
+      "tags": [
+        "entra",
+        "ai-agenter",
+        "shadow-ai",
+        "tilgangsstyring",
+        "identiverse"
+      ]
+    },
+    {
+      "id": "msrc-blog-8ed526306a",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/15/turning-threat-intelligence-into-decisive-action-with-defender-experts/",
+      "published": "2026-07-15T16:00:35.000Z",
+      "ingested": "2026-07-16T00:36:34.441Z",
+      "title_original": "Turning threat intelligence into decisive action with Defender Experts",
+      "headline_no": "Ny Defender Experts-tjeneste skal tette gapet mellom trussel og respons",
+      "summary_no": "Microsoft lanserer Defender Experts Threat Intelligence – en menneskeledet tjeneste som skal fange opp kampanjer før de treffer deg – og utvider Defender Experts MDR med dekning for tredjeparts- og multiskymiljøer. Målet er å tette «intelligence-to-action»-gapet der de fleste angrep avgjøres. Relevant for team som drukner i varsler, men mangler kapasitet til å tolke og handle på dem.",
+      "topic": "sikkerhet",
+      "score": 66,
+      "tags": [
+        "defender",
+        "mdr",
+        "threat-intelligence",
+        "defender-experts"
+      ]
+    },
+    {
+      "id": "defender-endpoint-f98565b566",
+      "source_id": "defender-endpoint",
+      "source_name": "Microsoft Defender for Endpoint Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-privileged-token-context-telemetry-boosts-advanced-hunting/ba-p/4528613",
+      "published": "2026-07-15T16:00:00.000Z",
+      "ingested": "2026-07-16T00:36:34.441Z",
+      "title_original": "New Privileged Token Context Telemetry Boosts Advanced Hunting in Microsoft Defender",
+      "headline_no": "Defender avslører privilegert token-kontekst i Advanced Hunting",
+      "summary_no": "Microsoft Defender eksponerer nå privilegie-konteksten fra innloggings-tokens direkte i Advanced Hunting, via nye felter som TokenHasDomainAdminSid. Det gjør det enkelt å isolere privilegerte økter, granske mistenkelige innlogginger og bygge mer treffsikre deteksjoner rundt misbruk av rettigheter. Trusseljegere slipper å gjette om en økt hadde Domain Admin-medlemskap.",
+      "topic": "sikkerhet",
+      "score": 58,
+      "tags": [
+        "defender",
+        "advanced-hunting",
+        "kql",
+        "privilege"
+      ]
+    },
+    {
+      "id": "defender-endpoint-3ac428ce0b",
+      "source_id": "defender-endpoint",
+      "source_name": "Microsoft Defender for Endpoint Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/introducing-scheduled-antivirus-scans-on-microsoft-defender/ba-p/4524578",
+      "published": "2026-07-15T14:05:55.000Z",
+      "ingested": "2026-07-16T00:36:34.441Z",
+      "title_original": "Introducing scheduled antivirus scans on Microsoft Defender Linux",
+      "headline_no": "Defender for Linux får sentralstyrte planlagte antivirus-skanninger",
+      "summary_no": "Defender støtter nå sentralstyrte, planlagte antivirus-skanninger på Linux – konfigurert via security settings-policyer i Defender-portalen eller lokal JSON deployet med Ansible, Puppet eller Chef. Slutt på skjøre cron- og skallskript for å holde Linux-flåten dekket. Fleksible valg som skanning kun ved inaktivitet, lav CPU-prioritet og randomisert starttid gjør det enklere å standardisere.",
+      "topic": "sikkerhet",
+      "score": 56,
+      "tags": [
+        "defender",
+        "linux",
+        "antivirus",
+        "planlagt-skann"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-3dda271654",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58644",
+      "published": "2026-07-15T14:00:00.000Z",
+      "ingested": "2026-07-16T00:36:34.441Z",
+      "title_original": "CVE-2026-58644 Microsoft SharePoint Remote Code Execution Vulnerability",
+      "headline_no": "CVE-2026-58644: MSRC korrigerer utnyttelsesdata for SharePoint-RCE",
+      "summary_no": "MSRC har korrigert Exploitability Index, «Exploited»-flagget og CVSS-vektoren for denne SharePoint-RCE-en – en ren informasjonsoppdatering av varselet fra 14. juli, uten ny patch. Endringen berører nettopp feltene som styrer hastverk, så team som prioriterte ut fra de opprinnelige verdiene bør sjekke den oppdaterte vurderingen.",
+      "topic": "sikkerhet",
+      "score": 43,
+      "tags": [
+        "sharepoint",
+        "cve-2026-58644",
+        "rce",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-4b307e4c80",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50341",
+      "published": "2026-07-15T14:00:00.000Z",
+      "ingested": "2026-07-16T00:36:34.441Z",
+      "title_original": "CVE-2026-50341 Windows NTFS Information Disclosure Vulnerability",
+      "headline_no": "CVE-2026-50341: MSRC oppdaterer kun kreditering for NTFS-lekkasje",
+      "summary_no": "MSRC har kun oppdatert krediteringen for denne NTFS-sårbarheten som kan lekke informasjon – en ren informasjonsendring uten betydning for alvorlighetsgrad, patch eller utnyttelse. Ingen handling kreves for dem som allerede har installert oppdateringen.",
+      "topic": "sikkerhet",
+      "score": 18,
+      "tags": [
+        "ntfs",
+        "cve-2026-50341",
+        "windows",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-43cbd04e51",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50375",
+      "published": "2026-07-15T14:00:00.000Z",
+      "ingested": "2026-07-16T00:39:02.509Z",
+      "title_original": "CVE-2026-50375 DirectX Graphics Kernel Elevation of Privilege Vulnerability",
+      "headline_no": "CVE-2026-50375: rettighetseskalering i DirectX-kjernen oppdatert",
+      "summary_no": "MSRC har oppdatert oppføringen for CVE-2026-50375, en rettighetseskalering (EoP) i DirectX Graphics Kernel. Endringen er kun informativ – oppdatert anerkjennelse av bidragsyter – og medfører ingen ny patch eller handling fra administratorer.",
+      "topic": "sikkerhet",
+      "score": 25,
+      "tags": [
+        "cve-2026-50375",
+        "directx",
+        "rettighetseskalering",
+        "msrc",
+        "windows"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-a3b3cb7556",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56182",
+      "published": "2026-07-15T14:00:00.000Z",
+      "ingested": "2026-07-16T00:39:02.509Z",
+      "title_original": "CVE-2026-56182 Windows NTFS Elevation of Privilege Vulnerability",
+      "headline_no": "CVE-2026-56182: rettighetseskalering i Windows NTFS oppdatert",
+      "summary_no": "MSRC har oppdatert oppføringen for CVE-2026-56182, en rettighetseskalering i Windows NTFS. Oppdateringen er kun informativ og innebærer ingen ny patch eller endret risiko – ingen handling kreves fra IT-avdelingen.",
+      "topic": "sikkerhet",
+      "score": 25,
+      "tags": [
+        "cve-2026-56182",
+        "ntfs",
+        "rettighetseskalering",
+        "msrc",
+        "windows"
+      ]
+    },
     {
       "id": "admindroid-102d639f36",
       "source_id": "admindroid",
@@ -571,6 +767,26 @@
         "windows",
         "on-demand-sync",
         "mdm"
+      ]
+    },
+    {
+      "id": "core-infra-security-e114bfd1e2",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/hunting-local-ai-tools-on-macos-with-microsoft-defender-for/ba-p/4536965",
+      "published": "2026-07-14T16:42:42.000Z",
+      "ingested": "2026-07-16T00:39:02.509Z",
+      "title_original": "Hunting Local AI Tools on macOS with Microsoft Defender for Endpoint",
+      "headline_no": "Slik jakter du lokale AI-verktøy på macOS med Defender XDR",
+      "summary_no": "Microsoft viser hvordan Advanced Hunting-KQL i Defender for Endpoint kan avdekke lokale AI-verktøy, MCP-servere og mistenkelige skill-filer på macOS-utviklermaskiner allerede i dag. Nye preview-funksjoner for AI-agent- og MCP-deteksjon er på vei i Defender XDR. Relevant for team som må styre AI-drevet skygge-IT og redusere supply chain-risiko blant utviklere.",
+      "topic": "sikkerhet",
+      "score": 51,
+      "tags": [
+        "defender-for-endpoint",
+        "macos",
+        "advanced-hunting",
+        "mcp",
+        "ai-sikkerhet"
       ]
     },
     {
@@ -9453,216 +9669,6 @@
         "aes-gcm-siv",
         "aes-siv",
         "kryptografi"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-ac8066d5f1",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9076",
-      "published": "2026-06-20T08:42:01.000Z",
-      "ingested": "2026-06-20T16:32:56.544Z",
-      "title_original": "CVE-2026-9076 Out-of-Bounds Read in CMS Password-Based Decryption",
-      "headline_no": "Lesefeil utenfor minnet i CMS-dekryptering kan lekke data (CVE-2026-9076)",
-      "summary_no": "En out-of-bounds-lesefeil i passordbasert CMS-dekryptering kan la en angriper lese minne utenfor tiltenkt buffer, med fare for informasjonslekkasje. IT-admins bør følge MSRC og rulle ut oppdateringen så snart den er tilgjengelig for berørte komponenter.",
-      "topic": "sikkerhet",
-      "score": 52,
-      "tags": [
-        "cve-2026-9076",
-        "cms",
-        "kryptografi",
-        "minnelekkasje"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-690fcb928b",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42768",
-      "published": "2026-06-20T08:41:45.000Z",
-      "ingested": "2026-06-20T17:34:12.585Z",
-      "title_original": "CVE-2026-42768 Multi-RecipientInfo Bleichenbacher Oracle in CMS_decrypt() and PKCS7_decrypt()",
-      "headline_no": "Bleichenbacher-orakel i OpenSSLs CMS_decrypt() truer kryptert data",
-      "summary_no": "En Bleichenbacher-padding-orakel-sårbarhet i OpenSSLs CMS_decrypt() og PKCS7_decrypt() med flere RecipientInfo kan la angripere dekryptere RSA-kryptert innhold. Feilen rammer meldings- og sertifikathåndtering i produkter som bygger på OpenSSL. Oppdater berørte biblioteker.",
-      "topic": "sikkerhet",
-      "score": 59,
-      "tags": [
-        "cve-2026-42768",
-        "openssl",
-        "kryptografi",
-        "bleichenbacher"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-e45ae90447",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34183",
-      "published": "2026-06-20T08:41:20.000Z",
-      "ingested": "2026-06-20T17:34:12.585Z",
-      "title_original": "CVE-2026-34183 Unbounded Memory Growth in the QUIC PATH_CHALLENGE Handler",
-      "headline_no": "Ubegrenset minnevekst i QUIC-håndtering åpner for tjenestenekt",
-      "summary_no": "En sårbarhet i håndteringen av QUIC PATH_CHALLENGE gir ubegrenset minnevekst som kan utnyttes til tjenestenekt (DoS). Servere og tjenester som bruker det berørte QUIC-biblioteket kan tvinges til å bruke opp minnet. Berørte komponenter bør patches snarest.",
-      "topic": "sikkerhet",
-      "score": 52,
-      "tags": [
-        "cve-2026-34183",
-        "quic",
-        "tjenestenekt",
-        "dos"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-7bc982a538",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45445",
-      "published": "2026-06-20T08:40:55.000Z",
-      "ingested": "2026-06-20T17:34:12.585Z",
-      "title_original": "CVE-2026-45445 AES-OCB IV Ignored on EVP_Cipher() Path",
-      "headline_no": "OpenSSL ignorerer IV-en i AES-OCB og svekker krypteringen",
-      "summary_no": "En feil i OpenSSLs EVP_Cipher()-sti gjør at IV-en ignoreres for AES-OCB, noe som kan svekke krypteringen og gjøre kryptert data mer forutsigbar. Feilen rammer applikasjoner og Microsoft-produkter som benytter OpenSSL til kryptering. Prioriter patching av berørte komponenter.",
-      "topic": "sikkerhet",
-      "score": 54,
-      "tags": [
-        "cve-2026-45445",
-        "openssl",
-        "kryptografi",
-        "aes"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-d8bbed3683",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-5791",
-      "published": "2026-06-20T08:40:10.000Z",
-      "ingested": "2026-06-20T17:34:12.582Z",
-      "title_original": "CVE-2025-5791 Users: `root` appended to group listings",
-      "headline_no": "«root» legges feilaktig til i gruppelister (CVE-2025-5791)",
-      "summary_no": "En sårbarhet fører til at brukeren «root» feilaktig dukker opp i gruppeoppføringer, noe som kan gi misvisende oversikt over tilganger. MSRC har publisert informasjon om feilen i en berørt komponent. IT-admins bør verifisere gruppemedlemskap og følge med på kommende oppdateringer.",
-      "topic": "sikkerhet",
-      "score": 41,
-      "tags": [
-        "cve-2025-5791",
-        "tilgangsstyring",
-        "sårbarhet"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-ad321f25ee",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-4574",
-      "published": "2026-06-20T08:39:58.000Z",
-      "ingested": "2026-06-20T17:34:12.585Z",
-      "title_original": "CVE-2025-4574 Crossbeam-channel: crossbeam-channel vulnerable to double free on drop",
-      "headline_no": "Double-free i Rust-biblioteket crossbeam-channel ved drop",
-      "summary_no": "Rust-crate-en crossbeam-channel har en double-free-feil ved drop som kan føre til minnekorrupsjon og krasj. Microsoft-produkter og -tjenester som bygger på biblioteket kan være berørt. Hold øye med oppdateringer til komponenter som bruker crossbeam-channel.",
-      "topic": "sikkerhet",
-      "score": 50,
-      "tags": [
-        "cve-2025-4574",
-        "rust",
-        "crossbeam",
-        "minnesikkerhet"
-      ]
-    },
-    {
-      "id": "m365-roadmap-ddffff6204",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566317",
-      "published": "2026-06-19T22:15:36.000Z",
-      "ingested": "2026-06-20T13:55:30.839Z",
-      "title_original": "Microsoft Viva: Create and customize PBI reports",
-      "headline_no": "Viva Insights lar ledere skreddersy egne Power BI-rapporter",
-      "summary_no": "Ledere og analytikere i Viva Insights får åpne en Power BI-rapport og selv endre tidsrom, filtre, attributter og visualiseringer, for så å lagre den til senere bruk. Gir mer fleksibel arbeidsplassanalyse uten å bygge rapporter fra bunnen, men er en nokså perifer sak for sikkerhets- og endpoint-admins. Planlagt GA juli 2026.",
-      "topic": "endpoint",
-      "score": 25,
-      "tags": [
-        "viva-insights",
-        "power-bi",
-        "rapporter",
-        "roadmap"
-      ]
-    },
-    {
-      "id": "m365-roadmap-b928ca52e1",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566302",
-      "published": "2026-06-19T22:15:36.000Z",
-      "ingested": "2026-06-20T13:55:30.839Z",
-      "title_original": "Microsoft Viva: Copilot Analytics - Insights in Cowork and WorkIQ spend and usage",
-      "headline_no": "Viva Insights sporer nå Copilot-forbruket ned til teamnivå",
-      "summary_no": "Viva Insights får et dashboard som viser Copilot-kredittforbruk (AI-spend) på gruppe- og teamnivå for Cowork og WorkIQ API. Det er på som standard for ledere med minst fem direkterapporter, analytikere og globale admins, og krever forbruksbasert fakturering satt opp via Cost Management i M365 admin center. Nyttig for å holde AI-kostnadene under kontroll. GA juni 2026.",
-      "topic": "ai",
-      "score": 36,
-      "tags": [
-        "copilot",
-        "viva-insights",
-        "ai-kostnader",
-        "cowork",
-        "workiq"
-      ]
-    },
-    {
-      "id": "oofhours-16e64992b1",
-      "source_id": "oofhours",
-      "source_name": "Out of Office Hours (Michael Niehaus)",
-      "url": "https://oofhours.com/2026/06/19/windows-11-26h2-will-be-an-enablement-package/",
-      "published": "2026-06-19T19:35:48.000Z",
-      "ingested": "2026-06-20T16:51:06.456Z",
-      "hero_image": "https://oofhours.com/wp-content/uploads/2026/06/out-of-office-hours-6a3599e7428e8.png",
-      "title_original": "Windows 11 26H2 will be an enablement package",
-      "headline_no": "Windows 11 26H2 blir enablement-pakke — slipper full oppgradering",
-      "summary_no": "Microsoft har bekreftet at Windows 11 26H2 leveres som en enablement-pakke, på samme måte som 25H2. Det betyr at oppgraderingen aktiveres med en liten pakke i stedet for en full funksjonsoppgradering, noe som gir kortere nedetid og enklere utrulling. Merk at ARM64-baserte 26H1-enheter ikke kan oppgraderes direkte til 26H2.",
-      "topic": "endpoint",
-      "score": 47,
-      "tags": [
-        "windows-11",
-        "26h2",
-        "enablement-package",
-        "servicing"
-      ]
-    },
-    {
-      "id": "windows-insider-3b7f2a2416",
-      "source_id": "windows-insider",
-      "source_name": "Windows Insider Blog",
-      "url": "https://blogs.windows.com/windows-insider/2026/06/19/announcing-new-builds-for-19-june-2026-26h2-for-experimental/",
-      "published": "2026-06-19T17:07:42.000Z",
-      "ingested": "2026-06-20T16:48:55.360Z",
-      "title_original": "Announcing new builds for 19 June 2026, version 26H2 for Experimental",
-      "headline_no": "Windows 11 26H2 til Insider — oppdateres med én omstart via eKB",
-      "summary_no": "Windows 11 versjon 26H2 er nå tilgjengelig i Experimental-kanalen som årets andre halvårsoppdatering. Fordi 26H2 deler servicing-gren med 25H2, leveres den som en enablement package (eKB) — altså én enkelt omstart. IT-avdelinger bør merke seg den lette oppdateringsmodellen når de planlegger utrulling.",
-      "topic": "endpoint",
-      "score": 42,
-      "tags": [
-        "windows-11",
-        "26h2",
-        "insider",
-        "ekb"
-      ]
-    },
-    {
-      "id": "windows-it-pro-8a6f644798",
-      "source_id": "windows-it-pro",
-      "source_name": "Windows IT Pro Blog",
-      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/get-ready-for-windows-11-version-26h2/ba-p/4529367",
-      "published": "2026-06-19T17:05:18.000Z",
-      "ingested": "2026-06-20T13:44:12.222Z",
-      "title_original": "Get ready for Windows 11, version 26H2",
-      "headline_no": "Windows 11 26H2 kommer som lett enablement-pakke — Insiders har den nå",
-      "summary_no": "Windows 11 versjon 26H2 er den neste årlige oppdateringen og er allerede tilgjengelig for Windows Insiders. For enheter på 24H2 eller 25H2 leveres den som en liten enablement-pakke, omtrent som en vanlig månedlig oppdatering, uten reimaging eller kompleks utrulling. Merk at enheter på 26H1 ikke kan oppdatere direkte til 26H2, fordi de bygger på en annen Windows-kjerne.",
-      "topic": "endpoint",
-      "score": 61,
-      "tags": [
-        "windows-11",
-        "26h2",
-        "oppdatering",
-        "enablement-package"
       ]
     }
   ]
