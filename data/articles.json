@@ -1,6 +1,106 @@
 {
-  "generated_at": "2026-07-16T06:41:36.499Z",
+  "generated_at": "2026-07-16T19:12:36.191Z",
   "articles": [
+    {
+      "id": "msrc-blog-75f2a6e6f9",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/16/least-privilege-for-ai-agents-identity-access-and-tool-binding/",
+      "published": "2026-07-16T16:00:00.000Z",
+      "ingested": "2026-07-16T19:12:36.123Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/image-4.webp",
+      "title_original": "Least privilege for AI agents: Identity, access, and tool binding",
+      "headline_no": "Slik hindrer du at AI-agenter får for mye tilgang",
+      "summary_no": "AI-agenter planlegger og kjeder sammen handlinger på tvers av systemer uten at et menneske godkjenner hvert steg, og en for vid rolletildeling kan gi dem tilgang langt utover det tiltenkte. Microsoft anbefaler å behandle hver agent som en egen identitet med dedikert managed identity, RBAC etter minste privilegium, tydelig scope og sikker binding av verktøy. For IT-admins betyr det at agentenes tilgangsmodell må strammes inn før de rulles bredt ut.",
+      "topic": "sikkerhet",
+      "score": 55,
+      "tags": [
+        "ai-agenter",
+        "rbac",
+        "least-privilege",
+        "managed-identity"
+      ]
+    },
+    {
+      "id": "call4cloud-c86001e3c7",
+      "source_id": "call4cloud",
+      "source_name": "Call4Cloud (Rudy Ooms)",
+      "url": "https://call4cloud.nl/continue-to-sign-in-prompt-autoacceptssopermission/",
+      "published": "2026-07-16T09:00:22.000Z",
+      "ingested": "2026-07-16T19:12:36.125Z",
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/167ce37e-df9f-47cb-a545-0e6fc55f1fb2-e1784192415333.png",
+      "title_original": "AutoAcceptSsoPermission: The Continue to Sign In Prompt Fix",
+      "headline_no": "Ny policy fjerner «Continue to sign in» ved enhetsonboarding",
+      "summary_no": "Policyen AutoAcceptSsoPermission lukker gapet mellom Windows' krav om brukersamtykke og onboarding av administrerte enheter. På styrte enheter dukker «Continue to sign in»-prompten opp midt i påloggingsflyten, og policyen lar admins forhåndsgodkjenne den. Rudy Ooms viser hvordan innstillingen fungerer i praksis for Intune-administrerte enheter.",
+      "topic": "endpoint",
+      "score": 39,
+      "tags": [
+        "autoacceptssopermission",
+        "sso",
+        "intune",
+        "onboarding"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-1a47b994d6",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59831",
+      "published": "2026-07-16T08:39:07.000Z",
+      "ingested": "2026-07-16T19:12:36.125Z",
+      "title_original": "CVE-2026-59831 GitHub CLI `gh codespace jupyter` could allow remote code execution when connecting to a malicious Codespace",
+      "headline_no": "CVE-2026-59831: ondsinnet Codespace kan kjøre kode via GitHub CLI",
+      "summary_no": "En sårbarhet i GitHub CLI-kommandoen «gh codespace jupyter» kan la en ondsinnet Codespace kjøre vilkårlig kode på maskinen som kobler seg til (CVE-2026-59831). Utviklere og admins som bruker GitHub CLI mot ikke-klarerte Codespaces bør oppdatere så snart en rettet versjon er tilgjengelig. MSRC har foreløpig bare publisert grunnleggende informasjon om hullet.",
+      "topic": "sikkerhet",
+      "score": 66,
+      "tags": [
+        "cve-2026-59831",
+        "github-cli",
+        "rce",
+        "codespaces"
+      ]
+    },
+    {
+      "id": "janbakker-140bfaec77",
+      "source_id": "janbakker",
+      "source_name": "JanBakker.tech",
+      "url": "https://janbakker.tech/admin-control-for-sso-prompts-in-windows-finally-an-off-switch/",
+      "published": "2026-07-16T07:15:29.000Z",
+      "ingested": "2026-07-16T19:12:36.125Z",
+      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/07/image-6.png",
+      "title_original": "Admin control for SSO prompts in Windows; finally, an off switch!",
+      "headline_no": "Admins kan endelig skru av SSO-promptene i Windows 11 24H2",
+      "summary_no": "I EØS må Windows nå spørre brukeren før påloggingen gjenbrukes til andre Microsoft-apper — greit for personvern, men ren støy i styrte miljøer der SSO allerede er satt opp. Microsoft har publisert en ny registerkontroll som lar admins skru av prompten, tilgjengelig fra juli 2026-oppdateringen (KB5101650) for Windows 11 24H2. Dermed slipper administrerte enheter å be brukeren godkjenne pålogging på nytt.",
+      "topic": "identitet",
+      "score": 48,
+      "tags": [
+        "sso",
+        "entra",
+        "windows-11",
+        "eøs",
+        "kb5101650"
+      ]
+    },
+    {
+      "id": "office365-itpros-e0bed1d089",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/16/schedule-teams-meeting-shared-mbx/?utm_source=rss&utm_medium=rss&utm_campaign=schedule-teams-meeting-shared-mbx",
+      "published": "2026-07-16T07:00:00.000Z",
+      "ingested": "2026-07-16T19:12:36.125Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/Schedule-Teams-meeting-shared-mailbox.jpg?resize=840%2C548&#038;ssl=1",
+      "title_original": "How to Schedule Teams Meetings from Shared Mailboxes",
+      "headline_no": "Slik planlegger du Teams-møter fra delte postbokser",
+      "summary_no": "Til tross for at Microsoft dokumenterer det som støttet, hersker det tvil om man kan sende Teams-møteinnkallinger fra en delt postboks. Det fungerer så lenge delegaten har full tilgang til postboksen og en Teams-lisens — men foreløpig bare i klassisk Outlook, ikke nye Outlook. Selve den delte postboksen trenger ingen egen lisens for å planlegge møtene.",
+      "topic": "identitet",
+      "score": 33,
+      "tags": [
+        "teams",
+        "delte-postbokser",
+        "outlook",
+        "lisensiering"
+      ]
+    },
     {
       "id": "msrc-blog-f0dd9780aa",
       "source_id": "msrc-blog",
@@ -9572,104 +9672,6 @@
         "edge",
         "provisjonering",
         "hybrid"
-      ]
-    },
-    {
-      "id": "office365-itpros-083793d72e",
-      "source_id": "office365-itpros",
-      "source_name": "Office 365 for IT Pros (Tony Redmond)",
-      "url": "https://office365itpros.com/2026/06/22/powershell-woes-and-cmdlets/?utm_source=rss&utm_medium=rss&utm_campaign=powershell-woes-and-cmdlets",
-      "published": "2026-06-22T07:00:00.000Z",
-      "ingested": "2026-06-22T07:04:23.899Z",
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/PowerShell-assembly-problems.jpg?resize=840%2C473&#038;ssl=1",
-      "title_original": "The Grief and Joys of New PowerShell Releases",
-      "headline_no": "Nyeste Graph SDK og Exchange Online-modul nekter å kjøre i samme økt",
-      "summary_no": "Etter oppdatering til Microsoft Graph PowerShell SDK V2.38 og Exchange Online Management V3.10 kolliderer modulenes delte assemblies, slik at Connect-MgGraph og Connect-ExchangeOnline ikke lenger kan kjøres i samme PowerShell-økt – uansett rekkefølge får du «Method not found» eller en NullReferenceException. Dette rammer drifts- og automatiseringsskript som logger inn mot både Entra/Graph og Exchange Online i samme sesjon. Test skriptene grundig før du ruller ut de nyeste modulversjonene.",
-      "topic": "identitet",
-      "score": 50,
-      "tags": [
-        "powershell",
-        "microsoft-graph",
-        "exchange-online",
-        "automation"
-      ]
-    },
-    {
-      "id": "msendpointmgr-010b946fff",
-      "source_id": "msendpointmgr",
-      "source_name": "MSEndpointMgr",
-      "url": "https://msendpointmgr.com/2026/06/22/epm-part-2-before-you-remove-local-admin-how-to-use-intune-endpoint-privilege-management-audit-mode-to-understand-your-environment/",
-      "published": "2026-06-22T06:00:00.000Z",
-      "ingested": "2026-06-22T06:01:47.307Z",
-      "hero_image": "https://msendpointmgr.com/wp-content/uploads/2026/06/Designer-12.png",
-      "title_original": "EPM Part 2: Before you remove local admin: How to use Intune Endpoint Privilege Management audit mode to understand your environment",
-      "headline_no": "Bruk Intune EPM-revisjonsmodus før du fjerner lokale admin-rettigheter",
-      "summary_no": "MSEndpointMgr viser hvordan revisjonsmodus i Intune Endpoint Privilege Management (EPM) kartlegger hva brukerne faktisk eleverer, før du fjerner lokale admin-rettigheter. Den vanligste tabben er å bygge eleveringsregler på antakelser i stedet for data, noe som gir blokkerte brukere, stadige unntak og en utrulling som stopper opp. Kjør audit-modus først, så får du treffsikre regler og en innstramming brukerne faktisk tåler.",
-      "topic": "endpoint",
-      "score": 41,
-      "tags": [
-        "intune",
-        "epm",
-        "local-admin",
-        "audit-mode",
-        "least-privilege"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-4cd64470e8",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44967",
-      "published": "2026-06-20T08:43:49.000Z",
-      "ingested": "2026-06-20T16:32:56.544Z",
-      "title_original": "CVE-2026-44967 opentelemetry-cpp: OTLP HTTP exporters read unbounded HTTP response",
-      "headline_no": "OpenTelemetry-C++ leser ubegrenset HTTP-svar — fare for ressursutmatting",
-      "summary_no": "OTLP HTTP-eksportørene i opentelemetry-cpp leser HTTP-svar uten størrelsesgrense, slik at et ondsinnet eller kompromittert telemetri-endepunkt kan tvinge fram minneoppblåsing og tjenestenekt. Team som sender telemetri via OTLP/HTTP bør oppgradere biblioteket til en rettet versjon.",
-      "topic": "sikkerhet",
-      "score": 45,
-      "tags": [
-        "cve-2026-44967",
-        "opentelemetry",
-        "otlp",
-        "dos"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-bd6e27884f",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46331",
-      "published": "2026-06-20T08:43:41.000Z",
-      "ingested": "2026-06-20T16:39:08.195Z",
-      "title_original": "CVE-2026-46331 net/sched: fix pedit partial COW leading to page cache corruption",
-      "headline_no": "Linux-kjernefeil i net/sched kan korrumpere minne på Azure-VM-er",
-      "summary_no": "Microsoft har publisert CVE-2026-46331, en sårbarhet i Linux-kjernens net/sched-subsystem der en delvis copy-on-write i pedit kan korrumpere page cache. Feilen er relevant for Azure Linux-VM-er og AKS-noder, og bør patches så snart oppdateringen er tilgjengelig. Detaljene i MSRC-guiden er foreløpig sparsomme.",
-      "topic": "sikkerhet",
-      "score": 59,
-      "tags": [
-        "cve-2026-46331",
-        "linux-kernel",
-        "azure",
-        "net-sched"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-4fb19c2d92",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34180",
-      "published": "2026-06-20T08:43:31.000Z",
-      "ingested": "2026-06-20T16:32:56.544Z",
-      "title_original": "CVE-2026-34180 Heap Buffer Over-read in ASN.1 Content Parsing",
-      "headline_no": "Heap-overlesing i ASN.1-parsing kan eksponere minne (CVE-2026-34180)",
-      "summary_no": "En heap-buffer-overlesing under parsing av ASN.1-innhold kan la en angriper lese tilstøtende minne via manipulerte strukturer, med risiko for informasjonslekkasje eller krasj. ASN.1 brukes bredt i sertifikat- og kryptohåndtering, så admins bør rulle ut oppdateringen raskt.",
-      "topic": "sikkerhet",
-      "score": 56,
-      "tags": [
-        "cve-2026-34180",
-        "asn1",
-        "minnelekkasje",
-        "parsing"
       ]
     }
   ]
