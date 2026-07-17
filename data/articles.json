@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-07-17T13:46:04.103Z",
+  "generated_at": "2026-07-17T20:15:29.997Z",
   "articles": [
+    {
+      "id": "msrc-blog-b5cc185770",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/17/microsoft-at-black-hat-usa-2026-defending-trust-in-the-age-of-ai-and-supply-chain-attacks/",
+      "published": "2026-07-17T16:00:00.000Z",
+      "ingested": "2026-07-17T20:15:29.906Z",
+      "title_original": "Microsoft at Black Hat USA 2026: Defending trust in the age of AI and supply chain attacks",
+      "headline": "Microsoft Maps New Trust-Based Attacks Across Software, Identity, and AI",
+      "topic": "security",
+      "score": 35,
+      "tags": [
+        "supply chain",
+        "AI security",
+        "identity",
+        "threat intelligence"
+      ],
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/MISA-demo-presence.jpg",
+      "summary": "Microsoft outlines how attackers exploit trusted packages, build pipelines, identities, tools, and AI agents to reach enterprise systems. IT administrators should review access controls and monitoring across software supply chains, cloud services, and AI workloads."
+    },
     {
       "id": "msrc-update-guide-1dfdb8056c",
       "source_id": "msrc-update-guide",
@@ -9227,24 +9247,6 @@
         "lisensiering",
         "epm",
         "remote-help"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-d40538bae7",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46285",
-      "published": "2026-06-24T09:43:33.000Z",
-      "ingested": "2026-06-24T07:06:56.797Z",
-      "title_original": "CVE-2026-46285 mtd: docg3: fix use-after-free in docg3_release()",
-      "headline": "CVE-2026-46285 mtd: docg3: fix use-after-free in docg3_release()",
-      "topic": "security",
-      "score": 18,
-      "tags": [
-        "cve-2026-46285",
-        "linux-kernel",
-        "use-after-free",
-        "msrc"
       ]
     }
   ]
