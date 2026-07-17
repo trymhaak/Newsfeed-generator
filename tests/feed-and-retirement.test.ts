@@ -37,9 +37,9 @@ test('no-new-article merge is byte-semantic idempotent', async () => {
 
 test('old human routes retire to Trym Cloud while feed stays public', async () => {
   const redirects = await readFile('public/_redirects', 'utf8');
-  assert.match(redirects, /^\/ https:\/\/trym\.cloud\/security\/briefing\/ 301$/m);
-  assert.match(redirects, /^\/tema\/\* https:\/\/trym\.cloud\/security\/briefing\/ 301$/m);
-  assert.match(redirects, /^\/artikkel\/\* https:\/\/trym\.cloud\/security\/briefing\/ 301$/m);
+  assert.match(redirects, /^\/ https:\/\/trym\.cloud\/security\/newsfeed\/ 301$/m);
+  assert.match(redirects, /^\/tema\/\* https:\/\/trym\.cloud\/security\/newsfeed\/ 301$/m);
+  assert.match(redirects, /^\/artikkel\/\* https:\/\/trym\.cloud\/security\/newsfeed\/ 301$/m);
   assert.doesNotMatch(redirects, /^\/feed\.json\b/m);
   const headers = await readFile('public/_headers', 'utf8');
   assert.match(headers, /^\/feed\.json$/m);

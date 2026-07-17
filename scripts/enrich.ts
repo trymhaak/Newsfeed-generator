@@ -160,7 +160,7 @@ export function buildPrompt(batch: RawArticle[]): string {
   }));
 
   return [
-    'Enrich articles for the Trym Cloud Security Briefing about the Microsoft ecosystem',
+    'Enrich articles for the Microsoft Security Newsfeed on Trym Cloud about the Microsoft ecosystem',
     '(Intune, Entra, Defender, Purview, Copilot, Windows, and related security tooling).',
     '',
     'Return exactly one object for EVERY input article with these exact fields:',
