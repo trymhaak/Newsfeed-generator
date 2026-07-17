@@ -1,6 +1,6 @@
 # Trym Cloud migration and cutover runbook
 
-This runbook moves the user-facing Newsfeed Generator into `https://trym.cloud/security/briefing/` while keeping this repository as the automated producer.
+This runbook moves the user-facing Newsfeed Generator into `https://trym.cloud/security/newsfeed/` while keeping this repository as the automated producer.
 
 ## 1. Preflight
 
@@ -48,12 +48,12 @@ curl -sSI https://newsfeed.trym.cloud/
 curl -sSI https://newsfeed.trym.cloud/tema/security
 curl -sSI https://newsfeed.trym.cloud/artikkel/example
 curl -sS https://newsfeed.trym.cloud/feed.json
-curl -sSI https://trym.cloud/security/briefing/
+curl -sSI https://trym.cloud/security/newsfeed/
 ```
 
 Expected:
 
-- old human routes return a permanent redirect to the Trym Cloud Security Briefing;
+- old human routes return a permanent redirect to the Microsoft Security Newsfeed on Trym Cloud;
 - `/feed.json` returns `200`, JSON content type, CORS `*` and a five-minute cache policy;
 - the feed contains only English public fields and valid source URLs;
 - the Trym Cloud route returns `200` and renders the current feed;

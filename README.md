@@ -1,6 +1,6 @@
 # Newsfeed Generator
 
-Newsfeed Generator is the data producer for the [Trym Cloud Security Briefing](https://trym.cloud/security/briefing/).
+Newsfeed Generator is the data producer for the [Microsoft Security Newsfeed on Trym Cloud](https://trym.cloud/security/newsfeed/).
 
 Every six hours, the Mac mini pipeline:
 

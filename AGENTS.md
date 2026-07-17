@@ -2,9 +2,9 @@
 
 ## Mission
 
-Maintain the automated source pipeline behind the Trym Cloud Security Briefing.
+Maintain the automated source pipeline behind the Microsoft Security Newsfeed on Trym Cloud.
 
-- Canonical human surface: `https://trym.cloud/security/briefing/`
+- Canonical human surface: `https://trym.cloud/security/newsfeed/`
 - Producer endpoint: `https://newsfeed.trym.cloud/feed.json`
 - Repository: `trymhaak/Newsfeed-generator`
 - Runtime: Mac mini launchd every six hours
@@ -22,7 +22,7 @@ The old standalone VG-style website is retired. Do not restore a separate visual
 6. Partial or malformed model output fails closed and does not write pending data.
 7. The enrichment child is pinned to Hermes/OpenAI Codex. Do not add Claude, Anthropic or an implicit fallback.
 8. Never print credentials. Diagnostics are bounded and redacted.
-9. Human routes on the old domain redirect to the Trym Cloud Security Briefing. `/feed.json` remains reachable.
+9. Human routes on the old domain redirect to the Microsoft Security Newsfeed on Trym Cloud. `/feed.json` remains reachable.
 
 ## Commands
 

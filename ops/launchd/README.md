@@ -11,7 +11,7 @@ This directory contains the installed-runtime templates for the Mac mini produce
 5. commits and pushes changed producer data;
 6. rebuilds and deploys the old domain as the machine-feed and redirect host.
 
-The canonical human surface is `https://trym.cloud/security/briefing/`. The producer endpoint is `https://newsfeed.trym.cloud/feed.json`.
+The canonical human surface is `https://trym.cloud/security/newsfeed/`. The producer endpoint is `https://newsfeed.trym.cloud/feed.json`.
 
 ## Files
 

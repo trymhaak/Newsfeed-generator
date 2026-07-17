@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://newsfeed.trym.cloud/schema/feed.schema.json",
-  "title": "Trym Cloud Security Briefing producer feed",
+  "title": "Microsoft Security Newsfeed on Trym Cloud producer feed",
   "type": "object",
   "additionalProperties": false,
   "required": ["generated_at", "articles"],

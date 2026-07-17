@@ -5,7 +5,7 @@ The Cloudflare Pages project named `newsfeed` serves `https://newsfeed.trym.clou
 After the Trym Cloud migration, this host has two responsibilities:
 
 - publish the English machine feed at `/feed.json` with CORS and five-minute cache headers;
-- permanently redirect the old human routes to `https://trym.cloud/security/briefing/`.
+- permanently redirect the old human routes to `https://trym.cloud/security/newsfeed/`.
 
 The launchd wrapper builds and deploys the site only when canonical article data changes:
 
@@ -26,7 +26,7 @@ curl -sSI https://newsfeed.trym.cloud/feed.json
 
 Expected:
 
-- human routes: permanent redirect to the Trym Cloud Security Briefing;
+- human routes: permanent redirect to the Microsoft Security Newsfeed on Trym Cloud;
 - machine feed: `200`, JSON content type, `Access-Control-Allow-Origin: *`, five-minute cache policy;
 - no legacy Norwegian public fields.
 
