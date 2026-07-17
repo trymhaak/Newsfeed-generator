@@ -1,6 +1,370 @@
 {
-  "generated_at": "2026-07-16T19:12:36.191Z",
+  "generated_at": "2026-07-17T07:36:54.162Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-1dfdb8056c",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59886",
+      "published": "2026-07-17T08:02:48.000Z",
+      "ingested": "2026-07-17T07:34:51.393Z",
+      "title_original": "CVE-2026-59886 pyasn1: Uncontrolled resource consumption when converting decoded REAL values",
+      "headline_no": "Ny pyasn1-svakhet åpner for tjenestenekt i Python-verktøy",
+      "summary_no": "En feil i hvordan pyasn1 dekoder ASN.1 REAL-verdier lar en angriper utløse ukontrollert ressursbruk og dermed tjenestenekt. Biblioteket brukes bredt i Python-baserte sikkerhets- og nettverksverktøy, og dukker opp i MSRC fordi Microsoft distribuerer det i Linux-baserte tjenester. Oppgrader pyasn1 der det inngår i egne eller Microsofts komponenter.",
+      "topic": "sikkerhet",
+      "score": 34,
+      "tags": [
+        "cve-2026-59886",
+        "pyasn1",
+        "dos",
+        "python"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-59419d9b21",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59884",
+      "published": "2026-07-17T08:02:41.000Z",
+      "ingested": "2026-07-17T07:32:55.499Z",
+      "title_original": "CVE-2026-59884 pyasn1 BER/CER/DER decoder denial of service via unbounded long-form tag IDs",
+      "headline_no": "pyasn1-dekoder kan tvinges i kne av endeløse long-form tag-IDer",
+      "summary_no": "CVE-2026-59884 er en tjenestenekt i pyasn1s BER/CER/DER-dekoder, der ubegrensede long-form tag-IDer kan få dekoderen til å henge eller bruke opp ressurser. Python-tjenester som parser ASN.1-strukturer, som sertifikater, kan påvirkes. Direkte betydning for Windows-, Intune- og Entra-administrasjon er begrenset.",
+      "topic": "sikkerhet",
+      "score": 30,
+      "tags": [
+        "pyasn1",
+        "asn1",
+        "dos",
+        "cve-2026-59884"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-58aebde4f8",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59885",
+      "published": "2026-07-17T08:02:35.000Z",
+      "ingested": "2026-07-17T07:36:54.088Z",
+      "title_original": "CVE-2026-59885 pyasn1: Quadratic complexity in OBJECT IDENTIFIER and RELATIVE-OID processing allows denial of service",
+      "headline_no": "Kvadratisk parsing-feil i pyasn1 kan utnyttes til tjenestenekt",
+      "summary_no": "MSRC har publisert CVE-2026-59885 i Python-biblioteket pyasn1, hvor parsing av OBJECT IDENTIFIER og RELATIVE-OID har kvadratisk kompleksitet. En angriper kan sende spesiallagde ASN.1-data som får CPU-forbruket til å eksplodere og dermed gjøre tjenester utilgjengelige. IT-admins bør kartlegge hvor pyasn1 inngår i egne løsninger eller Microsoft-leverte komponenter, og oppdatere så snart en rettet versjon foreligger.",
+      "topic": "sikkerhet",
+      "score": 54,
+      "tags": [
+        "cve-2026-59885",
+        "pyasn1",
+        "dos",
+        "sårbarhet",
+        "asn.1"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-9536381f54",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-60081",
+      "published": "2026-07-17T08:02:29.000Z",
+      "ingested": "2026-07-17T07:32:55.499Z",
+      "title_original": "CVE-2026-60081 DBI::ProfileData versions before 1.651 for Perl do not limit the path index",
+      "headline_no": "DBI::ProfileData i Perl mangler grense på path-indeks før 1.651",
+      "summary_no": "CVE-2026-60081 beskriver at DBI::ProfileData i Perl før 1.651 ikke begrenser path-indeksen, noe som kan misbrukes til å skrive utenfor forventet struktur ved prosessering av profildata. Sårbarheten er smal og treffer Perl-miljøer spesifikt. For rene Microsoft-administrasjonsmiljøer er relevansen minimal.",
+      "topic": "sikkerhet",
+      "score": 25,
+      "tags": [
+        "perl",
+        "dbi",
+        "cve-2026-60081"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-8c010d29b8",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15392",
+      "published": "2026-07-17T08:02:22.000Z",
+      "ingested": "2026-07-17T07:34:51.393Z",
+      "title_original": "CVE-2026-15392 DBD::File versions before 1.651 for Perl do not ensure the table file is not a symlink to an untrusted location",
+      "headline_no": "DBD::File lar symlenker peke Perl-DBI mot uklarerte filer",
+      "summary_no": "DBD::File før 1.651 sjekker ikke om tabellfilen er en symlink, slik at en angriper kan lure modulen til å lese eller skrive filer utenfor det tiltenkte området. Symlink-angrep av denne typen kan brukes til å lekke eller overskrive sensitive filer. Oppgrader til 1.651.",
+      "topic": "sikkerhet",
+      "score": 32,
+      "tags": [
+        "cve-2026-15392",
+        "perl",
+        "dbd-file",
+        "symlink"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-c12272bca2",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-60082",
+      "published": "2026-07-17T08:02:16.000Z",
+      "ingested": "2026-07-17T07:32:55.499Z",
+      "title_original": "CVE-2026-60082 DBI versions before 1.651 for Perl do not enforce statement handle consistency with the row",
+      "headline_no": "Perl DBI før 1.651 håndhever ikke konsistens i statement-handles",
+      "summary_no": "CVE-2026-60082 gjelder Perl-modulen DBI før versjon 1.651, som ikke sikrer at et statement-handle er konsistent med raden det opererer på. Det kan gi uforutsigbar oppførsel i Perl-baserte databaseintegrasjoner. Saken har liten direkte betydning for Intune-, Entra- eller Defender-drift, men er relevant der Perl-verktøy inngår i pipelinen.",
+      "topic": "sikkerhet",
+      "score": 25,
+      "tags": [
+        "perl",
+        "dbi",
+        "cve-2026-60082"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-0b8a78a17d",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15043",
+      "published": "2026-07-17T08:02:10.000Z",
+      "ingested": "2026-07-17T07:34:51.393Z",
+      "title_original": "CVE-2026-15043 DBI::SQL::Nano versions from 1.42 before 1.651 for Perl have inverted <= and >= SQL operators on text",
+      "headline_no": "DBI::SQL::Nano snur <= og >= og kan gi gale SQL-resultater",
+      "summary_no": "I DBI::SQL::Nano fra 1.42 til før 1.651 er <= og >=-operatorene byttet om for tekst, slik at spørringer kan returnere det motsatte av forventet resultat. For logikk som hviler på tekstsammenligning kan dette føre til gale filtrerings- eller tilgangsavgjørelser. Feilen er rettet i 1.651.",
+      "topic": "sikkerhet",
+      "score": 27,
+      "tags": [
+        "cve-2026-15043",
+        "perl",
+        "dbi",
+        "sql"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-c14a43bc87",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57433",
+      "published": "2026-07-17T08:02:03.000Z",
+      "ingested": "2026-07-17T07:34:51.393Z",
+      "title_original": "CVE-2026-57433 Storable versions before 3.41 for Perl have a signed integer overflow when deserializing a crafted SX_HOOK record",
+      "headline_no": "Storable-modulen i Perl har overflow ved usikker deserialisering",
+      "summary_no": "Storable før 3.41 har et signert heltallsoverløp når den deserialiserer en spesiallaget SX_HOOK-post, noe som kan destabilisere Perl-prosesser som leser upålitelige data. Deserialisering av fremmed input er kjent risikabelt, og feilen gjelder alle som kjører Storable på uklarerte data. Oppgrader til 3.41 eller nyere.",
+      "topic": "sikkerhet",
+      "score": 32,
+      "tags": [
+        "cve-2026-57433",
+        "perl",
+        "storable",
+        "deserialisering"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-d775817768",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15709",
+      "published": "2026-07-17T08:01:57.000Z",
+      "ingested": "2026-07-17T07:34:51.393Z",
+      "title_original": "CVE-2026-15709 Soupwebsocketextensiondeflate: libsoup: libsoup: websocket permessage-deflate unbounded decompression remote denial of service",
+      "headline_no": "Libsoup: dekomprimeringsbombe over websocket kan felle tjenester",
+      "summary_no": "libsoups permessage-deflate-utvidelse mangler grense på dekomprimering, slik at en liten komprimert websocket-melding kan blåse seg opp til enorm minnebruk og ta ned tjenesten. Dette er en klassisk dekomprimeringsbombe som rammer alt som bruker libsoups websocket-stack. Oppdater biblioteket til rettet versjon.",
+      "topic": "sikkerhet",
+      "score": 33,
+      "tags": [
+        "cve-2026-15709",
+        "libsoup",
+        "websocket",
+        "dos"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-5724817708",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15712",
+      "published": "2026-07-17T08:01:51.000Z",
+      "ingested": "2026-07-17T07:32:55.499Z",
+      "title_original": "CVE-2026-15712 Soupclientmessageiohttp2: libsoup3: libsoup: http/2 goaway frame parsing heap buffer over-read via invalid nul-termination assumption",
+      "headline_no": "libsoup3 leser forbi bufferen ved feil i HTTP/2 GOAWAY-ramme",
+      "summary_no": "CVE-2026-15712 er en heap-basert over-lesing i libsoup3 som oppstår når biblioteket feilaktig antar nul-terminering under parsing av HTTP/2 GOAWAY-rammer. En angriper kan utnytte dette til minnelekkasje eller krasj. Sårbarheten treffer først og fremst Linux-baserte tjenester, ikke kjerne-Windows eller Microsoft 365.",
+      "topic": "sikkerhet",
+      "score": 32,
+      "tags": [
+        "libsoup",
+        "http/2",
+        "heap-overread",
+        "cve-2026-15712"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-40cc685a99",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15714",
+      "published": "2026-07-17T08:01:45.000Z",
+      "ingested": "2026-07-17T07:32:55.499Z",
+      "title_original": "CVE-2026-15714 Libsoup: soupmultipartinputstream: libsoup: out-of-bounds read in soup_multipart_input_stream_read_headers via an oversized multipart boundary string",
+      "headline_no": "Overlang multipart-grense gir out-of-bounds-lesing i libsoup",
+      "summary_no": "CVE-2026-15714 beskriver en out-of-bounds-lesing i libsoups håndtering av multipart-strømmer, utløst av en overdimensjonert boundary-streng. Feilen kan lekke minne eller krasje prosesser som parser multipart-data. Relevansen for Microsoft-sentrerte driftsmiljøer er begrenset, men gjelder Linux-komponenter der libsoup inngår.",
+      "topic": "sikkerhet",
+      "score": 32,
+      "tags": [
+        "libsoup",
+        "multipart",
+        "oob-read",
+        "cve-2026-15714"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-1fa206f543",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15713",
+      "published": "2026-07-17T08:01:38.000Z",
+      "ingested": "2026-07-17T07:32:55.498Z",
+      "title_original": "CVE-2026-15713 Libsoup: soupcache: libsoup: http/2 frame window exhaustion remote denial of service via memory leak",
+      "headline_no": "HTTP/2-minnelekkasje i libsoup kan tvinge frem tjenestenekt",
+      "summary_no": "MSRC har publisert CVE-2026-15713, en sårbarhet i libsoup der en minnelekkasje i HTTP/2-rammer kan uttømme tilgjengelig minne og utløse ekstern tjenestenekt. Biblioteket følger med enkelte Azure Linux-baserte komponenter, men rammer i liten grad rene Windows-, Intune- eller Entra-miljøer. Admins som drifter Linux-arbeidslaster bør oppdatere pakken når patch foreligger.",
+      "topic": "sikkerhet",
+      "score": 32,
+      "tags": [
+        "libsoup",
+        "http/2",
+        "dos",
+        "cve-2026-15713"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-39b2c286a7",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15711",
+      "published": "2026-07-17T08:01:32.000Z",
+      "ingested": "2026-07-17T07:34:51.393Z",
+      "title_original": "CVE-2026-15711 Libsoup: soupwebsocketconnection: libsoup: websocket remote denial of service via oversized control frame protocol violation",
+      "headline_no": "Libsoup-feil gir ekstern tjenestenekt via websocket-ramme",
+      "summary_no": "En mangelfull håndtering av protokollbrudd i libsoups websocket-kode lar en angriper sende en overdimensjonert kontrollramme og krasje tjenesten eksternt. Libsoup følger med mange Linux-plattformer, inkludert komponenter Microsoft redistribuerer. Patch biblioteket der det er i bruk.",
+      "topic": "sikkerhet",
+      "score": 33,
+      "tags": [
+        "cve-2026-15711",
+        "libsoup",
+        "websocket",
+        "dos"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-c275974f16",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53366",
+      "published": "2026-07-17T08:01:26.000Z",
+      "ingested": "2026-07-17T07:30:26.683Z",
+      "title_original": "CVE-2026-53366 ipv4: account for fraggap on the paged allocation path",
+      "headline_no": "CVE-2026-53366: Minnefeil i Linux-kjernens IPv4-fragmentering",
+      "summary_no": "MSRC har publisert CVE-2026-53366, en feil i håndteringen av IPv4-fragmentering på den paged allokeringsstien i Linux-kjernen. CVE-en kommer via Microsofts sikkerhetsoppdateringer og er relevant for Microsofts Linux-baserte plattformer. Detaljert konsekvens er foreløpig ikke publisert; følg med på oppdatert alvorlighetsgrad før patching prioriteres.",
+      "topic": "sikkerhet",
+      "score": 47,
+      "tags": [
+        "cve-2026-53366",
+        "linux-kernel",
+        "ipv4",
+        "msrc"
+      ]
+    },
+    {
+      "id": "msrc-update-guide-73abd1f8ae",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48863",
+      "published": "2026-07-17T08:01:19.000Z",
+      "ingested": "2026-07-17T07:30:26.683Z",
+      "title_original": "CVE-2026-48863 Libsolv: stack-based buffer overflow in libsolv eddsa pgp signature verification allows denial of service",
+      "headline_no": "CVE-2026-48863: Buffer overflow i libsolv kan gi tjenestenekt",
+      "summary_no": "MSRC har publisert CVE-2026-48863, en stack-basert buffer overflow i libsolvs verifisering av EdDSA-/PGP-signaturer som kan utnyttes til tjenestenekt. Libsolv brukes til pakkehåndtering blant annet i Microsofts Linux-distribusjoner, så berørte systemer bør patches. Sårbarheten gir kun DoS, ikke kjøring av vilkårlig kode.",
+      "topic": "sikkerhet",
+      "score": 50,
+      "tags": [
+        "cve-2026-48863",
+        "libsolv",
+        "dos",
+        "buffer-overflow"
+      ]
+    },
+    {
+      "id": "office365-itpros-d1256055ff",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/17/owa-light-retirement/?utm_source=rss&utm_medium=rss&utm_campaign=owa-light-retirement",
+      "published": "2026-07-17T07:00:00.000Z",
+      "ingested": "2026-07-17T07:30:26.683Z",
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/OWA-Lite.jpg?resize=840%2C600&#038;ssl=1",
+      "title_original": "The Demise of the OWA Light Client",
+      "headline_no": "Exchange Server pensjonerer OWA Light-klienten i august 2026",
+      "summary_no": "Microsoft pensjonerer den lettvekts OWA Light-klienten i Exchange Server SE fra en oppdatering i august 2026, slik at lokale brukere må over på full OWA. Klienten har siden Exchange 2007 latt eldre nettlesere og alternative plattformer nå e-post uten JavaScript. Berører kun on-prem Exchange-miljøer; rene skybrukere påvirkes ikke.",
+      "topic": "endpoint",
+      "score": 38,
+      "tags": [
+        "exchange-server",
+        "owa",
+        "deprecation",
+        "on-prem"
+      ]
+    },
+    {
+      "id": "msrc-blog-88097730a6",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/16/acr-stealer-two-observed-intrusion-chains-amid-increased-threat-activity/",
+      "published": "2026-07-16T23:12:02.000Z",
+      "ingested": "2026-07-17T07:30:26.679Z",
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/image-16-1024x430.webp",
+      "title_original": "ACR Stealer: Two observed intrusion chains amid increased threat activity",
+      "headline_no": "ACR Stealer stjeler passord og tokens via ClickFix-lokkemat",
+      "summary_no": "Microsoft Defender Experts har observert økt aktivitet fra infostealeren ACR Stealer, som via ClickFix-lokkemat lurer ansatte til å kjøre skadelige kommandoer selv. Malwaren stjeler nettleserpassord, sesjonstokens og sensitive dokumenter, noe som kan gi angripere tilgang til skyressurser og videre inntrengning. IT-avdelinger bør overvåke for ClickFix-lokkemat, mistenkelig WebDAV-aktivitet og obfuskert PowerShell-kjøring.",
+      "topic": "sikkerhet",
+      "score": 78,
+      "tags": [
+        "acr-stealer",
+        "clickfix",
+        "infostealer",
+        "credential-theft",
+        "defender"
+      ]
+    },
+    {
+      "id": "m365-roadmap-8bf83b6e68",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567304",
+      "published": "2026-07-16T23:08:19.000Z",
+      "ingested": "2026-07-17T07:30:26.683Z",
+      "title_original": "Microsoft Teams: Explicit recording consent for PSTN participants now available in GCC High and DoD",
+      "headline_no": "Teams krever nå opptakssamtykke fra PSTN-deltakere i GCC High og DoD",
+      "summary_no": "Microsoft utvider eksplisitt opptakssamtykke for PSTN-deltakere til Teams-møter i GCC High- og DoD-miljøer, en funksjon som allerede finnes i vanlige og GCC-skyer. Innringere må aktivt samtykke før de kan slå på mikrofonen når møtet tas opp eller transkriberes, ellers forblir de dempet. Berører kun tenants i suverene skyer; informer innringende brukere før lanseringen i august 2026.",
+      "topic": "endpoint",
+      "score": 31,
+      "tags": [
+        "teams",
+        "gcc-high",
+        "dod",
+        "compliance",
+        "pstn"
+      ]
+    },
+    {
+      "id": "m365-roadmap-3102e06439",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=562353",
+      "published": "2026-07-16T23:08:19.000Z",
+      "ingested": "2026-07-17T07:30:26.683Z",
+      "title_original": "Microsoft Copilot (Microsoft 365): Session and Response Sharing in M365 Copilot",
+      "headline_no": "M365 Copilot lar deg dele chat-økter og svar via lenke",
+      "summary_no": "Microsoft 365 Copilot får deling av både hele chat-økter og enkeltsvar via lenke, slik at kolleger kan åpne innholdet skrivebeskyttet og fortsette i egen Copilot-chat. Funksjonen erstatter klipp-og-lim og holder delingen innenfor organisasjonens kontroller. IT-admins bør vurdere hvordan eksisterende Copilot-policyer styrer delingen før lanseringen i august 2026.",
+      "topic": "ai",
+      "score": 36,
+      "tags": [
+        "m365-copilot",
+        "copilot",
+        "deling",
+        "samarbeid"
+      ]
+    },
     {
       "id": "msrc-blog-75f2a6e6f9",
       "source_id": "msrc-blog",
@@ -19,6 +383,25 @@
         "rbac",
         "least-privilege",
         "managed-identity"
+      ]
+    },
+    {
+      "id": "prajwal-desai-fa56e68879",
+      "source_id": "prajwal-desai",
+      "source_name": "Prajwal Desai",
+      "url": "https://www.prajwaldesai.com/prajwal-desai-mvp-intune-windows-365/",
+      "published": "2026-07-16T12:54:56.000Z",
+      "ingested": "2026-07-17T07:36:54.088Z",
+      "title_original": "Renewed as Microsoft MVP for Intune and Windows 365",
+      "headline_no": "Prajwal Desai fornyet som Microsoft MVP for Intune og Windows 365",
+      "summary_no": "Community-profilen Prajwal Desai er fornyet som Microsoft MVP for Intune og Windows 365 for 2026–2027. Dette er en personlig anerkjennelse uten praktisk betydning for drift eller sikkerhet, men bekrefter fortsatt aktiv innholdsproduksjon fra en velkjent Intune-blogger.",
+      "topic": "endpoint",
+      "score": 5,
+      "tags": [
+        "intune",
+        "windows-365",
+        "mvp",
+        "community"
       ]
     },
     {
@@ -9282,396 +9665,6 @@
         "powershell",
         "governance",
         "microsoft-365"
-      ]
-    },
-    {
-      "id": "m365-roadmap-ee978c4b0d",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566531",
-      "published": "2026-06-23T23:15:39.000Z",
-      "ingested": "2026-06-24T00:51:58.861Z",
-      "title_original": "OneDrive: Find your group sites faster with the new My Sites tab in OneDrive for iOS",
-      "headline_no": "OneDrive for iOS får «Mine områder»-fane for kjappere SharePoint-tilgang",
-      "summary_no": "En ny «Mine områder»-fane i OneDrive-appen for iOS samler alle gruppekoblede SharePoint-områder du eier eller er medlem av på ett sted. Brukere kan bla gjennom hele lista og hoppe rett til dokumentbibliotekene uten å huske områdenavn eller søke. GA er satt til juli 2026.",
-      "topic": "endpoint",
-      "score": 31,
-      "tags": [
-        "onedrive",
-        "ios",
-        "sharepoint",
-        "m365"
-      ]
-    },
-    {
-      "id": "m365-roadmap-f9bb7c04c4",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566529",
-      "published": "2026-06-23T23:15:39.000Z",
-      "ingested": "2026-06-24T00:51:58.863Z",
-      "title_original": "Microsoft Purview: View only Role management enhancements",
-      "headline_no": "Ny les-kun-rolle i Purview gir innsyn i alle rolletildelinger",
-      "summary_no": "Microsoft introduserer en les-kun-rolle som lar administratorer se alle medlemstildelinger i Purview- og Defender-portalen. Rettigheten legges til Global Reader og Security Reader i både Purview og Entra, og gir bedre innsyn i hvem som har hvilke roller uten å utvide skrivetilgang. GA i juli 2026.",
-      "topic": "sikkerhet",
-      "score": 36,
-      "tags": [
-        "purview",
-        "defender",
-        "rbac",
-        "entra"
-      ]
-    },
-    {
-      "id": "m365-roadmap-adf32db8d1",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566470",
-      "published": "2026-06-23T23:15:39.000Z",
-      "ingested": "2026-06-24T00:51:58.863Z",
-      "title_original": "Microsoft Viva: Insights for GitHub Copilot spend and usage",
-      "headline_no": "Viva Insights får dashbord for GitHub Copilot-forbruk – på som standard",
-      "summary_no": "Viva Insights får et nytt dashbord for AI-forbruk og -bruk i GitHub Copilot, tilgjengelig for ledere med minst fem direkterapporterende, globale analytikere og globale administratorer. Dashbordet er skrudd på som standard, så IT bør være klar over hvem som får innsyn i forbruksdataene. GA i juli 2026.",
-      "topic": "ai",
-      "score": 38,
-      "tags": [
-        "viva-insights",
-        "github-copilot",
-        "kostnad",
-        "governance"
-      ]
-    },
-    {
-      "id": "m365-roadmap-2aa10613f4",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=562354",
-      "published": "2026-06-23T23:15:39.000Z",
-      "ingested": "2026-06-24T00:51:58.863Z",
-      "title_original": "Microsoft Copilot (Microsoft 365): Updated Copilot Answers",
-      "headline_no": "Copilot Answers blir mer konsis og løfter frem chat i sidepanelet",
-      "summary_no": "Copilot Answers i Copilot Search gir nå kortere og mer konsise svar i M365 Copilot-appen på web og skrivebord, og fremhever tydeligere muligheten til å fortsette samtalen i Copilot-chat i høyre sidepanel. En mindre justering av brukeropplevelsen for Copilot-søk. GA i juli 2026.",
-      "topic": "ai",
-      "score": 30,
-      "tags": [
-        "m365-copilot",
-        "copilot-search",
-        "ai"
-      ]
-    },
-    {
-      "id": "windows-it-pro-7da7cb0128",
-      "source_id": "windows-it-pro",
-      "source_name": "Windows IT Pro Blog",
-      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/best-practices-for-deploying-secure-boot-certificate-updates/ba-p/4529884",
-      "published": "2026-06-23T21:00:00.000Z",
-      "ingested": "2026-06-24T01:03:19.875Z",
-      "title_original": "Best practices for deploying Secure Boot certificate updates",
-      "headline_no": "Secure Boot-sertifikater: slik fullfører du utrullingen trygt",
-      "summary_no": "Microsoft deler mønstrene som fungerer i praksis for utrulling av Secure Boot-sertifikatoppdateringer: start med piloter, kombiner OEM-firmware med Windows-sikkerhetsoppdateringer, og bruk verktøy som Intune, Group Policy, Azure og PowerShell. IT-admins som ennå ikke er ferdige med utrullingen, bør holde stø kurs før de gamle sertifikatene faller bort.",
-      "topic": "endpoint",
-      "score": 50,
-      "tags": [
-        "secure-boot",
-        "sertifikater",
-        "windows",
-        "intune",
-        "firmware"
-      ]
-    },
-    {
-      "id": "sentinel-blog-6581a7be6a",
-      "source_id": "sentinel-blog",
-      "source_name": "Microsoft Sentinel Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/a-guide-to-innovating-threat-hunting-with-microsoft-sentinel/ba-p/4530287",
-      "published": "2026-06-23T20:35:15.000Z",
-      "ingested": "2026-06-25T03:28:41.159Z",
-      "title_original": "A guide to innovating threat hunting with Microsoft Sentinel custom graph",
-      "headline_no": "Sentinel-graf gir relasjonsbasert trusseljakt — egne grafer i public preview",
-      "summary_no": "Microsoft lanserer egendefinerte grafer i Sentinel (public preview), en relasjonsbasert måte å utforske sammenhenger mellom brukere, enheter, IP-er og applikasjoner i data lake-en. I stedet for kompliserte tabell-joins kan analytikere følge angrep over flere hopp og raskt se blast radius og skjulte pivoter. Grafene bygges i VS Code med GitHub Copilot og krever Sentinel data lake samt security operator- eller admin-rettigheter.",
-      "topic": "sikkerhet",
-      "score": 51,
-      "tags": [
-        "sentinel",
-        "trusseljakt",
-        "graf",
-        "copilot"
-      ]
-    },
-    {
-      "id": "windows-it-pro-96e1bbe905",
-      "source_id": "windows-it-pro",
-      "source_name": "Windows IT Pro Blog",
-      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/point-in-time-restore-for-windows-11-is-now-generally-available/ba-p/4508101",
-      "published": "2026-06-23T16:00:00.000Z",
-      "ingested": "2026-06-24T01:03:19.877Z",
-      "title_original": "Point-in-time restore for Windows 11 is now generally available",
-      "headline_no": "Point-in-time restore for Windows 11 er nå GA — gjenopprett på minutter",
-      "summary_no": "Microsoft har gjort point-in-time restore allment tilgjengelig i Windows 11. Funksjonen tar automatisk jevnlige gjenopprettingspunkter lokalt på enheten og lar admins og brukere rulle PC-en tilbake til en tidligere tilstand — OS, apper, konfigurasjon, innstillinger og lokale filer — på minutter i stedet for timer. Den er tilgjengelig i Enterprise, Pro og Home, og kan kutte nedetid kraftig ved feil i stedet for full reinstallasjon.",
-      "topic": "endpoint",
-      "score": 68,
-      "tags": [
-        "windows-11",
-        "recovery",
-        "gjenoppretting",
-        "ga"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-c751a726ef",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45504",
-      "published": "2026-06-23T14:00:00.000Z",
-      "ingested": "2026-06-23T17:48:13.678Z",
-      "title_original": "CVE-2026-45504 Microsoft Exchange Server Elevation of Privilege Vulnerability",
-      "headline_no": "CVE-2026-45504: Exchange-sårbarhet får kun informasjonsendring",
-      "summary_no": "MSRC har oppdatert oppføringen for elevasjon-av-rettigheter-sårbarheten CVE-2026-45504 i Exchange Server, men endringen er rent informasjonell: kun en anerkjennelse er lagt til. Ingen ny teknisk informasjon eller sikkerhetsoppdatering følger med revisjonen, så IT-administratorer som allerede har vurdert sårbarheten trenger ikke å foreta seg noe nytt.",
-      "topic": "sikkerhet",
-      "score": 27,
-      "tags": [
-        "exchange",
-        "cve-2026-45504",
-        "privilege-escalation",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-59317e3b83",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33840",
-      "published": "2026-06-23T14:00:00.000Z",
-      "ingested": "2026-06-23T14:04:50.222Z",
-      "title_original": "CVE-2026-33840 Win32k Elevation of Privilege Vulnerability",
-      "headline_no": "Win32k-sårbarhet CVE-2026-33840 oppdatert – kun endret anerkjennelse",
-      "summary_no": "MSRC har oppdatert oppføringen for CVE-2026-33840, en rettighetseskalering (EoP) i Win32k-kjernekomponenten. Endringen er rent administrativ – en justering av anerkjennelsen om hvem som krediteres – uten ny teknisk informasjon eller ny oppdatering. IT-admins trenger ikke foreta seg noe basert på denne revisjonen.",
-      "topic": "sikkerhet",
-      "score": 11,
-      "tags": [
-        "cve-2026-33840",
-        "win32k",
-        "rettighetseskalering",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-0ef8a6db1b",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42915",
-      "published": "2026-06-23T14:00:00.000Z",
-      "ingested": "2026-06-23T13:33:09.431Z",
-      "title_original": "CVE-2026-42915 Microsoft Windows VMSwitch Denial of Service Vulnerability",
-      "headline_no": "Hyper-V VMSwitch rammes av tjenestenektsårbarhet (CVE-2026-42915)",
-      "summary_no": "Microsoft har oppdatert MSRC-oppføringen for CVE-2026-42915, en tjenestenektsårbarhet i Windows VMSwitch (Hyper-V sin virtuelle svitsj). Endringen er kun informasjonell – en anerkjennelse er justert – og gir verken ny teknisk informasjon eller endret risiko. Hyper-V-administratorer trenger ikke å gjøre noe nytt, men bør forsikre seg om at gjeldende sikkerhetsoppdateringer for berørte verter allerede er installert.",
-      "topic": "sikkerhet",
-      "score": 23,
-      "tags": [
-        "cve-2026-42915",
-        "hyper-v",
-        "vmswitch",
-        "dos"
-      ]
-    },
-    {
-      "id": "admindroid-e3494d9ecd",
-      "source_id": "admindroid",
-      "source_name": "AdminDroid Blog",
-      "url": "https://blog.admindroid.com/manually-create-incidents-or-alerts-in-microsoft-defender/",
-      "published": "2026-06-23T11:59:33.000Z",
-      "ingested": "2026-06-23T12:17:44.600Z",
-      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/Create-Incidents-and-Alerts-in-Microsoft-Defender-150x150.png",
-      "title_original": "Microsoft Defender Introduces Manual Incident and Alert Creation",
-      "headline_no": "Defender lar analytikere opprette hendelser og varsler manuelt",
-      "summary_no": "Microsoft Defender får i preview muligheten til å opprette hendelser og varsler manuelt, slik at analytikere kan starte og dokumentere undersøkelser direkte i portalen uten å vente på automatiske deteksjoner. Det dekker brukerrapporterte trusler, threat hunting-funn og eksterne varsler som tidligere måtte håndteres i separate sakssystemer. For SOC-team betyr det samlet sporing og eierskap på ett sted.",
-      "topic": "sikkerhet",
-      "score": 36,
-      "tags": [
-        "defender",
-        "incident response",
-        "soc",
-        "preview",
-        "threat hunting"
-      ]
-    },
-    {
-      "id": "o365reports-4de152e1bc",
-      "source_id": "o365reports",
-      "source_name": "Office 365 Reports (AdminDroid)",
-      "url": "https://o365reports.com/identify-inactive-users-in-active-directory-using-powershell/?utm_source=rss&utm_medium=rss&utm_campaign=identify-inactive-users-in-active-directory-using-powershell",
-      "published": "2026-06-23T10:34:41.000Z",
-      "ingested": "2026-06-23T10:38:26.002Z",
-      "hero_image": "https://s.w.org/images/core/emoji/14.0.0/72x72/1f625.png",
-      "title_original": "Identify Dormant Users in Active Directory Using PowerShell",
-      "headline_no": "Slik finner du sovende AD-kontoer nøyaktig med PowerShell",
-      "summary_no": "Inaktive brukerkontoer hoper seg opp i Active Directory og blir både en sikkerhetsrisiko og rot i katalogen. AdminDroid forklarer hvorfor de vanlige attributtene LastLogonDate og lastLogonTimestamp kan bomme med opptil 14 dager på grunn av replikering, og viser hvordan du i stedet bruker lastLogon-attributtet via PowerShell for å hente faktisk siste pålogging. Det krever spørringer mot alle domenekontrollere, men gir et nøyaktig grunnlag for opprydding og tilgangsgjennomganger.",
-      "topic": "identitet",
-      "score": 28,
-      "tags": [
-        "active-directory",
-        "powershell",
-        "inaktive-brukere",
-        "offboarding"
-      ]
-    },
-    {
-      "id": "prajwal-desai-b226dd3421",
-      "source_id": "prajwal-desai",
-      "source_name": "Prajwal Desai",
-      "url": "https://www.prajwaldesai.com/using-sql-query-to-monitor-collection-evaluation-in-sccm/",
-      "published": "2026-06-23T10:14:45.000Z",
-      "ingested": "2026-06-23T10:22:09.593Z",
-      "title_original": "Using SQL Query to Monitor Collection Evaluation in SCCM",
-      "headline_no": "Overvåk collection-evaluering i SCCM med én enkel SQL-spørring",
-      "summary_no": "Prajwal Desai viser hvordan en enkel SQL-spørring mot ConfigMgr-databasen lar deg se hvor lang tid collection-evalueringen faktisk tar. For admins med store eller nestede collection-strukturer kan dette avdekke flaskehalser som tynger konsollen og forsinker distribusjoner. Teknikken krever kun lesetilgang til site-databasen.",
-      "topic": "endpoint",
-      "score": 29,
-      "tags": [
-        "sccm",
-        "configmgr",
-        "sql",
-        "collections",
-        "overvåking"
-      ]
-    },
-    {
-      "id": "office365-itpros-0ca69028c6",
-      "source_id": "office365-itpros",
-      "source_name": "Office 365 for IT Pros (Tony Redmond)",
-      "url": "https://office365itpros.com/2026/06/23/automating-microsoft-365-3rd/?utm_source=rss&utm_medium=rss&utm_campaign=automating-microsoft-365-3rd",
-      "published": "2026-06-23T07:00:00.000Z",
-      "ingested": "2026-06-23T07:05:19.853Z",
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/2.-Automating-MS365-with-PowerShell-Cover-2027-Edition-212x300.jpg?resize=212%2C300&#038;ssl=1",
-      "title_original": "Automating Microsoft 365 with PowerShell (2027 Edition)",
-      "headline_no": "Tredje utgave av PowerShell-bok for Microsoft 365-automatisering ute nå",
-      "summary_no": "Office 365 for IT Pros-teamet har gitt ut tredje utgave av eBoken «Automating Microsoft 365 with PowerShell», med nye praktiske eksempler basert på Microsoft Graph PowerShell SDK. eBoken er tilgjengelig på Gumroad nå, og papirutgaven kommer 1. juli som del av Microsoft 365 for IT Pros (2027-utgaven). Nyttig oppslagsverk for admins som vil erstatte manuelle rutiner med skalerbare, skriptdrevne prosesser.",
-      "topic": "identitet",
-      "score": 23,
-      "tags": [
-        "powershell",
-        "automatisering",
-        "microsoft-365",
-        "graph-sdk",
-        "bok"
-      ]
-    },
-    {
-      "id": "m365-roadmap-77f501dfae",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566201",
-      "published": "2026-06-22T23:00:47.000Z",
-      "ingested": "2026-06-22T23:43:41.442Z",
-      "title_original": "Microsoft Teams: Block all identified external bots automatically from joining your meetings",
-      "headline_no": "Teams blokkerer snart alle eksterne AI-bots fra møter automatisk",
-      "summary_no": "Microsoft utvider møtekontrollene i Teams med et nytt valg som automatisk blokkerer alle identifiserte eksterne bots fra å bli med i møter. For IT-admins gir det enklere styring av tredjeparts AI-notatverktøy og uvedkommende agenter som ellers kan logge sensitive møter. Funksjonen er ventet generelt tilgjengelig i august 2026.",
-      "topic": "sikkerhet",
-      "score": 46,
-      "tags": [
-        "teams",
-        "bots",
-        "møtesikkerhet",
-        "ai-agenter"
-      ]
-    },
-    {
-      "id": "msrc-blog-8f4c502779",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/22/guarding-ai-memory/",
-      "published": "2026-06-22T19:07:28.000Z",
-      "ingested": "2026-06-22T20:15:20.431Z",
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-48.webp",
-      "title_original": "Guarding AI memory",
-      "headline_no": "Angripere kan plante falske minner i AI-agenter for å styre dem",
-      "summary_no": "Microsoft beskriver en ny angrepsklasse der ondsinnede aktører gradvis former en AI-agents oppførsel eller planter falske «minner» som påvirker resonnementet lenge etter at den opprinnelige konteksten er borte og brukerens årvåkenhet er lavere. Når Copilot og agenter får varig minne, vokser angrepsflaten – og Microsoft svarer med dybdeforsvar på tvers av lagring, gjenfinning, modellinteraksjon og brukerkontroll. Relevant for alle som ruller ut agentbaserte AI-tjenester i Microsoft 365.",
-      "topic": "ai",
-      "score": 56,
-      "tags": [
-        "ai-sikkerhet",
-        "agenter",
-        "copilot",
-        "memory",
-        "microsoft-365"
-      ]
-    },
-    {
-      "id": "petervanderwoude-9ff2119633",
-      "source_id": "petervanderwoude",
-      "source_name": "All about Microsoft Intune (Peter van der Woude)",
-      "url": "https://petervanderwoude.nl/post/customizing-the-account-settings-in-start-layout/",
-      "published": "2026-06-22T17:45:00.000Z",
-      "ingested": "2026-06-22T17:54:43.576Z",
-      "title_original": "Customizing the account settings in Start layout",
-      "headline_no": "Slik styrer du kontoinnstillingene i Start-menyen på delte PC-er",
-      "summary_no": "Peter van der Woude viser hvordan IT-administratorer kan tilpasse kontoinnstillingene i Start-menyens layout, noe som er spesielt nyttig på delte enheter som kiosker og Shared PC-er. Innlegget er del av en serie som går gjennom de ulike delene av Start-layouten. På vanlige enheter bør valgene overlates til brukeren, men i kontrollerte miljøer gir dette admins ekstra styring.",
-      "topic": "endpoint",
-      "score": 35,
-      "tags": [
-        "intune",
-        "start-meny",
-        "shared-pc",
-        "kiosk"
-      ]
-    },
-    {
-      "id": "msrc-blog-927c3bc281",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/22/one-intrusion-two-cyberattackers-uncovering-parallel-threat-activity/",
-      "published": "2026-06-22T16:00:00.000Z",
-      "ingested": "2026-06-22T17:17:59.722Z",
-      "title_original": "One intrusion, two cyberattackers: Uncovering parallel threat activity",
-      "headline_no": "Storm-2603 utnyttet lokal SharePoint — DART fant to angripere samtidig",
-      "summary_no": "Microsofts DART-team etterforsket et tilsynelatende rutinemessig ransomware-angrep og oppdaget at to urelaterte trusselaktører opererte i miljøet samtidig. Storm-2603 hadde utnyttet kjente sårbarheter i lokale SharePoint-servere siden midten av 2025, og brukte legitime verktøy som Velociraptor med SYSTEM-rettigheter for å etablere dyp og varig tilgang. Driver du SharePoint on-prem, bør du jakte på tegn til kompromittering og prioritere patching — overlappende angrep gjør deteksjon vanskeligere.",
-      "topic": "sikkerhet",
-      "score": 68,
-      "tags": [
-        "sharepoint",
-        "storm-2603",
-        "ransomware",
-        "dart",
-        "velociraptor"
-      ]
-    },
-    {
-      "id": "jeffrey-appel-ef8bbd21cb",
-      "source_id": "jeffrey-appel",
-      "source_name": "Jeffrey Appel — Microsoft Security",
-      "url": "https://jeffreyappel.nl/configure-ai-agent-runtime-protection-preview-with-microsoft-defender-for-endpoint/",
-      "published": "2026-06-22T14:59:03.000Z",
-      "ingested": "2026-06-22T15:03:07.100Z",
-      "title_original": "Configure AI agent runtime protection (preview) with Microsoft Defender for Endpoint",
-      "headline_no": "Defender for Endpoint får sanntidsbeskyttelse for AI-agenter (preview)",
-      "summary_no": "Microsoft har lansert en forhåndsversjon av runtime-beskyttelse for AI-agenter i Defender for Endpoint. Funksjonen overvåker agenter som kan lese filer, kjøre kommandoer og kalle API-er på vegne av brukere – en raskt voksende angrepsflate. IT-admins får dermed et nytt verktøy for å oppdage og stanse misbruk av autonome AI-verktøy på endepunktene.",
-      "topic": "sikkerhet",
-      "score": 51,
-      "tags": [
-        "defender-for-endpoint",
-        "ai-agenter",
-        "preview",
-        "runtime-protection",
-        "endpoint"
-      ]
-    },
-    {
-      "id": "thomas-maurer-a835a33dd3",
-      "source_id": "thomas-maurer",
-      "source_name": "Thomas Maurer",
-      "url": "https://www.thomasmaurer.ch/2026/06/azure-local-simplified-machine-provisioning/",
-      "published": "2026-06-22T07:38:56.000Z",
-      "ingested": "2026-06-22T07:41:08.038Z",
-      "title_original": "Azure Local Simplified Machine Provisioning",
-      "headline_no": "Azure Local lar deg rulle ut edge-servere uten IT-folk på stedet",
-      "summary_no": "Azure Local får forenklet maskinprovisjonering som fjerner mye av det manuelle arbeidet med å sette opp servere på avdelingskontorer, i butikker og på fjernlokasjoner. Tidligere krevde slik utrulling kvalifisert IT-personell fysisk på stedet — tregt, dyrt og feilutsatt. For admins som drifter hybride edge-miljøer betyr dette raskere og mer standardisert utrulling uten å sende folk ut.",
-      "topic": "endpoint",
-      "score": 28,
-      "tags": [
-        "azure-local",
-        "edge",
-        "provisjonering",
-        "hybrid"
       ]
     }
   ]
