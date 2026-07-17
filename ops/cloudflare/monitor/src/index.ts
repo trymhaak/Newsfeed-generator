@@ -185,7 +185,7 @@ export default {
       (async () => {
         const h = await checkFreshness(env);
         if (shouldAlert(env, h)) {
-          await alert(env, `🚨 Newsfeed stale — ${h.reason}. Kilde: ${h.source}`);
+          await alert(env, `🚨 Newsfeed stale — ${h.reason}. Source: ${h.source}`);
         }
         console.log(JSON.stringify(h));
       })(),

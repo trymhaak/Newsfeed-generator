@@ -1,54 +1,71 @@
-# Newsfeed-generator
+# Newsfeed Generator
 
-En automatisk-generert, VG-style nyhetsside for Microsoft-økosystemet
-(Intune, Entra, Defender, Purview, Copilot mfl.).
+Newsfeed Generator is the data producer for the [Trym Cloud Security Briefing](https://trym.cloud/security/briefing/).
 
-Pipelinen henter RSS/Atom fra offisielle Microsoft-feeds, bruker `claude` CLI
-til å oppsummere og kategorisere nye saker, og publiserer en statisk side til
-GitHub Pages — hver 6. time.
+Every six hours, the Mac mini pipeline:
 
-## Hva er nytt vs. en PDF?
+1. fetches configured RSS and Atom sources;
+2. deduplicates articles by stable ID;
+3. uses Hermes with OpenAI Codex (`gpt-5.6-sol`) to write an English headline, summary, topic and relevance score;
+4. validates and atomically merges the result into `data/articles.json`;
+5. publishes the English-only machine feed at `https://newsfeed.trym.cloud/feed.json`.
 
-- **Forsiden prioriterer** for deg: storsak øverst, mellomsaker, "siste nytt"
-- **Tema-undersider** for Identitet, Sikkerhet, Endpoint og AI & Copilot
-- **Norske sammendrag** av engelske kilder — 2-3 setninger per sak
-- **Klikkbart hele veien** — alltid lenke til original kilde
+The former standalone news website has been retired. Human routes on `newsfeed.trym.cloud` redirect to the native Trym Cloud page. The old domain remains only as the producer endpoint and a migration fallback.
 
-## Lokal utvikling
+## Public contract
+
+`/feed.json` contains:
+
+- `generated_at` in UTC;
+- up to 500 source-linked articles;
+- English `headline` and optional verified `summary`;
+- `identity`, `security`, `endpoint` or `ai` topic;
+- relevance score and source identity.
+
+Producer-only fields, legacy Norwegian copy and internal tags are not exposed by the public feed.
+
+## Local commands
 
 ```bash
-npm install
-npm run dev       # Astro dev på :4321
-npm run build     # Statisk build → dist/
-npm run pipeline  # Hent feeds → berik via Claude → oppdater data/articles.json
+npm ci
+npm test
+npm run typecheck
+npm run build
+npm run pipeline:fetch
+npm run pipeline:enrich
+npm run pipeline
+npm run probe:hermes
 ```
 
-For å kjøre `pipeline` lokalt må du ha `claude` CLI installert og innlogget,
-eller sette `ANTHROPIC_API_KEY` i miljøet.
+`npm run pipeline:migrate` is an idempotent one-time migration for the legacy Norwegian schema. It preserves article IDs, source URLs, dates, scores and tags. It uses each known English source title as the legacy headline and omits the unverified translated summary.
 
-## Oppsett
+## Runtime
 
-GitHub Pages aktiveres automatisk av workflowen første gang den kjører
-(`actions/configure-pages` med `enablement: true`) — ingen manuell UI-config
-nødvendig.
+The production runner is `ops/launchd/run-pipeline.sh`, installed as `com.hakanssonlabs.newsfeed.pipeline`. It pins the enrichment child to:
 
-Workflowen kjører cron hver 6. time. Første kjøring trigges automatisk når
-PR merges til `main` (push-trigger), eller manuelt via Actions-fanen → "Run
-workflow".
+```text
+provider: openai-codex
+model: gpt-5.6-sol
+mode: Hermes one-shot, safe mode
+```
 
-### AI-auth (valgfritt)
+`HERMES_BIN` may override the executable path for tests or a future installation move. No Anthropic or Claude authentication is required or accepted by the enrichment child.
 
-Pipelinen kjører i to moduser:
+## Repository map
 
-- **Med auth**: Henter feeds + beriker via Claude. Trenger én av:
-  - `CLAUDE_CODE_OAUTH_TOKEN` — generer ved å kjøre `/install-github-app` i
-    Claude Code lokalt; tokenet legges automatisk inn som repo-secret.
-  - `ANTHROPIC_API_KEY` — legg inn manuelt i Settings → Secrets → Actions.
+```text
+config/feeds.yaml             Source registry and default topic
+scripts/fetch-feeds.ts        RSS/Atom fetch, normalization and dedupe
+scripts/enrich.ts             Hermes/OpenAI-Codex English enrichment
+scripts/pipeline.ts           Fetch -> enrich -> validated atomic merge
+scripts/migrate-english.ts    Fail-closed legacy schema migration
+data/articles.json            Canonical producer store
+src/pages/feed.json.ts        Public English machine feed
+src/pages/index.astro         English migration fallback
+public/_redirects             Old human route retirement
+ops/launchd/                  Scheduled Mac mini runner
+ops/cloudflare/               Feed deployment and staleness monitor
+schema/                       Canonical JSON schemas
+```
 
-- **Uten auth**: Workflowen detekterer at ingen nøkkel er satt, hopper over
-  enrichment-steget, og bygger siden med eksisterende data. Bra for å teste
-  byggeflyt før du legger inn nøkkelen.
-
-## Struktur
-
-Se [CLAUDE.md](./CLAUDE.md) for arkitektur og konvensjoner.
+See [AGENTS.md](./AGENTS.md) for the binding engineering contract and [CUTOVER-RUNBOOK.md](./CUTOVER-RUNBOOK.md) for deployment steps.

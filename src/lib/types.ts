@@ -1,20 +1,6 @@
-export type Topic = 'identitet' | 'sikkerhet' | 'endpoint' | 'ai';
+export type Topic = 'identity' | 'security' | 'endpoint' | 'ai';
 
-export const TOPICS: Topic[] = ['identitet', 'sikkerhet', 'endpoint', 'ai'];
-
-export const TOPIC_LABELS: Record<Topic, string> = {
-  identitet: 'Identitet',
-  sikkerhet: 'Sikkerhet',
-  endpoint: 'Endpoint',
-  ai: 'AI & Copilot',
-};
-
-export const TOPIC_COLORS: Record<Topic, string> = {
-  identitet: '#1e6091',
-  sikkerhet: '#b3261e',
-  endpoint: '#2d6a4f',
-  ai: '#6a3d9a',
-};
+export const TOPICS: readonly Topic[] = ['identity', 'security', 'endpoint', 'ai'];
 
 export interface FeedSource {
   id: string;
@@ -38,6 +24,7 @@ export interface RawArticle {
   source_weight: number;
 }
 
+/** Canonical producer record. `summary` is absent on safely migrated legacy rows. */
 export interface EnrichedArticle {
   id: string;
   source_id: string;
@@ -47,20 +34,35 @@ export interface EnrichedArticle {
   ingested: string;
   hero_image?: string;
   title_original: string;
-  headline_no: string;
-  summary_no: string;
+  headline: string;
+  summary?: string;
   topic: Topic;
   score: number;
+  /** Internal producer metadata. Legacy values are preserved but are not public. */
   tags: string[];
 }
 
 export interface ArticleStore {
-  /**
-   * Top-level freshness stamp — UTC ISO-8601, bumped only when new articles
-   * are merged. Read by the UI ("sist oppdatert") and by the out-of-band
-   * Cloudflare staleness monitor. Legacy stores used `generated`; loadStore
-   * normalises that to `generated_at` on read.
-   */
+  /** UTC ISO-8601 stamp, advanced only when at least one article is added. */
   generated_at: string;
   articles: EnrichedArticle[];
+}
+
+export interface PublicFeedArticle {
+  id: string;
+  url: string;
+  published: string;
+  headline: string;
+  summary?: string;
+  topic: Topic;
+  score: number;
+  source: {
+    id: string;
+    name: string;
+  };
+}
+
+export interface PublicFeed {
+  generated_at: string;
+  articles: PublicFeedArticle[];
 }

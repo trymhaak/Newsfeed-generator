@@ -4,7 +4,7 @@
 #
 #     bash ops/launchd/run-pipeline.sh
 #
-# It runs the full pipeline (fetch -> enrich via Claude Max -> merge) and, on
+# It runs the full pipeline (fetch -> enrich via Hermes/OpenAI-Codex -> merge) and, on
 # success, commits a small heartbeat file (`data/pipeline-status.json`) every run.
 # If data/articles.json changed, that is committed in the same transaction. A
 # non-zero pipeline exit (majority of feeds down, enrichment failure, or a
@@ -18,14 +18,11 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 cd "$REPO_DIR"
 
-# Defensive PATH so node/npm/npx, `claude`, and git resolve under launchd (which
+# Defensive PATH so node/npm/npx, Hermes, and git resolve under launchd (which
 # starts with a minimal environment). The plist also sets PATH; this is a backup.
-export PATH="$HOME/.claude/local:$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
+export PATH="$HOME/.hermes/hermes-agent/venv/bin:$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
+export HERMES_BIN="${HERMES_BIN:-$HOME/.hermes/hermes-agent/venv/bin/hermes}"
 export GIT_TERMINAL_PROMPT=0
-
-# Long-lived Claude OAuth token (subscription auth) so enrichment authenticates
-# under launchd, which cannot reach the GUI login Keychain.
-set -a; . "$HOME/.config/claude/oauth-token.env" 2>/dev/null || true; set +a
 
 # Headless ops secrets. In particular, GITHUB_PAT lets launchd push without the
 # GUI Keychain / osxkeychain prompt that otherwise fails with exit 128.
@@ -229,11 +226,9 @@ else
   echo "[$(stamp)] no data or heartbeat changes — nothing to commit"
 fi
 
-# Publish the rebuilt site to Cloudflare Pages. IMPORTANT: the data push above
-# does NOT auto-deploy — this Pages project has no Git integration, so without
-# this the live site at newsfeed.trym.cloud freezes at the last manual deploy
-# while git keeps moving. Rebuild + deploy here so the 5-min cadence keeps the
-# published site fresh. Only runs when data actually changed.
+# Publish the rebuilt producer feed and retirement redirects to Cloudflare Pages.
+# The Pages project has no Git integration, so a changed store must be rebuilt and
+# deployed here to keep /feed.json fresh. Only runs when data actually changed.
 #
 # NON-FATAL BY DESIGN: every failure path is caught (if-conditions suppress
 # set -e) and degrades to a WARN — a broken build or a Cloudflare/Infisical
@@ -243,7 +238,7 @@ if [[ "$DATA_CHANGED" == "1" ]]; then
   if SITE_BASE=/ SITE_URL=https://newsfeed.trym.cloud npm run build >/dev/null 2>&1; then
     eval "$(bash "$HOME/Claude/politipuls/scripts/load-secrets.sh" 2>/dev/null)" 2>/dev/null || true
     if [[ -n "${CLOUDFLARE_API_TOKEN:-}" ]] && npx --yes wrangler@3 pages deploy dist --project-name=newsfeed --branch="$BRANCH" --commit-dirty=true >/dev/null 2>&1; then
-      echo "[$(stamp)] deployed rebuilt site to Cloudflare Pages (newsfeed.trym.cloud)"
+      echo "[$(stamp)] deployed feed and retirement redirects to Cloudflare Pages (newsfeed.trym.cloud)"
     else
       echo "[$(stamp)] WARN: site deploy failed or CF token missing — data pushed; site publishes on next successful deploy"
     fi

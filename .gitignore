@@ -20,9 +20,8 @@ npm-debug.log*
 .env.local
 .env.*.local
 
-# Claude local
-.claude/settings.local.json
-CLAUDE.local.md
+# Local agent overrides
+*.local.md
 
 # Pipeline artifacts
 data/_raw.json

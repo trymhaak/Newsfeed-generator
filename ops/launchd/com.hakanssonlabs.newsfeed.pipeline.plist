@@ -1,34 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!--
-  User LaunchAgent for the Newsfeed pipeline (Mac mini, Claude Max logged in).
-  This is a TEMPLATE: the __PLACEHOLDERS__ are substituted at install time — see
-  ops/launchd/README.md and CUTOVER-RUNBOOK.md. It is NOT installed by this repo;
-  a human loads it with `launchctl bootstrap` on the Mac.
-
-  Place the rendered copy at:
-    ~/Library/LaunchAgents/com.hakanssonlabs.newsfeed.pipeline.plist
+  User LaunchAgent template for the Newsfeed producer pipeline.
+  Render the __PLACEHOLDERS__ at install time; see ops/launchd/README.md.
 -->
 <plist version="1.0">
 <dict>
   <key>Label</key>
   <string>com.hakanssonlabs.newsfeed.pipeline</string>
 
-  <!-- Invoke the runner via bash so the script does not need the +x bit.
-       __REPO_DIR__ = absolute path to the repo checkout on the Mac. -->
   <key>ProgramArguments</key>
   <array>
     <string>/bin/bash</string>
     <string>__REPO_DIR__/ops/launchd/run-pipeline.sh</string>
   </array>
 
-  <!-- Give the job a real login session so `claude -p` can read the Claude Max
-       OAuth credentials from the user login Keychain (macOS stores them there).
-       This is the crux of the chosen architecture: no token in the cloud. -->
-  <key>SessionCreate</key>
-  <true/>
-
-  <!-- Run once at load, then every 6 hours (21600 seconds). -->
   <key>RunAtLoad</key>
   <true/>
   <key>StartInterval</key>
@@ -39,18 +25,15 @@
 
   <key>EnvironmentVariables</key>
   <dict>
-    <!-- launchd starts with a minimal PATH. Include the dirs that hold node /
-         npm / npx, the `claude` CLI, and git. Find them on the Mac with
-         `which -a node npm claude git` and substitute __NODE_BIN_DIR__
-         (e.g. /opt/homebrew/bin, or an nvm/fnm path). run-pipeline.sh also
-         augments PATH defensively. -->
+    <!-- Include Node, npm/npx, Hermes, and git for launchd's minimal environment. -->
     <key>PATH</key>
-    <string>__NODE_BIN_DIR__:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <string>__HOME__/.hermes/hermes-agent/venv/bin:__NODE_BIN_DIR__:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
     <key>HOME</key>
     <string>__HOME__</string>
+    <key>HERMES_BIN</key>
+    <string>__HOME__/.hermes/hermes-agent/venv/bin/hermes</string>
   </dict>
 
-  <!-- Logs are gitignored (*.log). The logs/ dir is kept via .gitkeep. -->
   <key>StandardOutPath</key>
   <string>__REPO_DIR__/ops/launchd/logs/pipeline.out.log</string>
   <key>StandardErrorPath</key>

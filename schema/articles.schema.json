@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://newsfeed.trym.cloud/schema/articles.schema.json",
+  "title": "Newsfeed producer store",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["generated_at", "articles"],
+  "properties": {
+    "generated_at": { "type": "string", "format": "date-time" },
+    "articles": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/article" }
+    }
+  },
+  "$defs": {
+    "article": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "source_id", "source_name", "url", "published", "ingested",
+        "title_original", "headline", "topic", "score", "tags"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "source_id": { "type": "string", "minLength": 1 },
+        "source_name": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+        "published": { "type": "string", "format": "date-time" },
+        "ingested": { "type": "string", "format": "date-time" },
+        "hero_image": { "type": "string", "format": "uri", "pattern": "^https?://" },
+        "title_original": { "type": "string", "minLength": 1 },
+        "headline": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string", "minLength": 1 },
+        "topic": { "enum": ["identity", "security", "endpoint", "ai"] },
+        "score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}
