@@ -1,59 +1,27 @@
 ---
-import Newspaper from '../layouts/Newspaper.astro';
-import HeroStory from '../components/HeroStory.astro';
-import MidStory from '../components/MidStory.astro';
-import LatestList from '../components/LatestList.astro';
-import TopicBlock from '../components/TopicBlock.astro';
-import { loadStore, selectFrontPage, articlesByTopic } from '../lib/store.ts';
-import { TOPICS, type Topic } from '../lib/types.ts';
-
-const store = await loadStore();
-const { hero, mid, latest, byTopic } = selectFrontPage(store.articles);
-const empty = store.articles.length === 0;
-
-const topicCounts = Object.fromEntries(
-  TOPICS.map((t) => [t, articlesByTopic(store.articles, t).length]),
-) as Record<Topic, number>;
+const destination = 'https://trym.cloud/security/briefing/';
 ---
-<Newspaper
-  title="Nyhetsfeed — Microsoft-økosystemet"
-  description="Automatisk-generert VG-style nyhetsoversikt for Intune, Entra, Defender, Copilot mfl."
-  generatedAt={store.generated_at}
-  topicCounts={topicCounts}
->
-  {empty
-    ? (
-      <div class="container">
-        <div class="empty-state">
-          <h2>Ingen saker enda</h2>
-          <p>Pipelinen har ikke kjørt enda. Kjør <code>npm run pipeline</code> eller vent på neste cron-trigger.</p>
-        </div>
-      </div>
-    )
-    : (
-      <>
-        {hero && <HeroStory article={hero} />}
-
-        {mid.length > 0 && (
-          <section class="mid">
-            <div class="container">
-              <h2 class="section-title">Mer fra nyhetsfeeden</h2>
-              <div class="mid-grid">
-                {mid.map((a) => <MidStory article={a} />)}
-              </div>
-            </div>
-          </section>
-        )}
-
-        {latest.length > 0 && <LatestList articles={latest} />}
-
-        <section class="topics" style="padding: 0 0 8px;">
-          <div class="container">
-            <div class="topic-grid">
-              {TOPICS.map((t) => <TopicBlock topic={t} articles={byTopic[t]} />)}
-            </div>
-          </div>
-        </section>
-      </>
-    )}
-</Newspaper>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="refresh" content={`0;url=${destination}`} />
+    <link rel="canonical" href={destination} />
+    <title>Security Briefing has moved | Trym Cloud</title>
+    <meta name="description" content="The Security Briefing is now part of Trym Cloud." />
+    <style>
+      :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+      body { display: grid; min-height: 100vh; margin: 0; place-items: center; }
+      main { max-width: 36rem; padding: 2rem; text-align: center; }
+      a { font-weight: 700; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Security Briefing has moved</h1>
+      <p>The newsfeed is now part of Trym Cloud.</p>
+      <p><a href={destination}>Continue to the Trym Cloud Security Briefing</a></p>
+    </main>
+  </body>
+</html>

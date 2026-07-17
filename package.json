@@ -11,6 +11,9 @@
     "pipeline": "tsx scripts/pipeline.ts",
     "pipeline:fetch": "tsx scripts/fetch-feeds.ts",
     "pipeline:enrich": "tsx scripts/enrich.ts",
+    "pipeline:migrate": "tsx scripts/migrate-english.ts",
+    "probe:hermes": "tsx scripts/probe-hermes.ts",
+    "test": "tsx --test tests/*.test.ts",
     "typecheck": "astro check && tsc --noEmit"
   },
   "dependencies": {

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://newsfeed.trym.cloud/schema/feed.schema.json",
+  "title": "Trym Cloud Security Briefing producer feed",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["generated_at", "articles"],
+  "properties": {
+    "generated_at": { "type": "string", "format": "date-time" },
+    "articles": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/article" }
+    }
+  },
+  "$defs": {
+    "article": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "url", "published", "headline", "topic", "score", "source"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+        "published": { "type": "string", "format": "date-time" },
+        "headline": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string", "minLength": 1 },
+        "topic": { "enum": ["identity", "security", "endpoint", "ai"] },
+        "score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "name"],
+          "properties": {
+            "id": { "type": "string", "minLength": 1 },
+            "name": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,54 +1,33 @@
-# Cloudflare Pages — hosting (planned, §4.2)
+# Cloudflare Pages producer host
 
-Config + commands to host the Astro site on Cloudflare Pages with `base: '/'`
-(dropping the clumsy `/Newsfeed-generator/` GitHub Pages base path) and a custom
-domain.
+The Cloudflare Pages project named `newsfeed` serves `https://newsfeed.trym.cloud`.
 
-> **Not deployed by this repo.** The current GitHub Pages / `gh-pages` setup is
-> left untouched. Authoritative cutover steps: [`../../../CUTOVER-RUNBOOK.md`](../../../CUTOVER-RUNBOOK.md) §C.
+After the Trym Cloud migration, this host has two responsibilities:
 
-## The base-path switch (already wired)
+- publish the English machine feed at `/feed.json` with CORS and five-minute cache headers;
+- permanently redirect the old human routes to `https://trym.cloud/security/briefing/`.
 
-`astro.config.mjs` reads two env vars, defaulting to the current GitHub Pages
-values so **nothing changes until you opt in**:
-
-| Env | Default (GitHub Pages) | Cloudflare Pages |
-|-----|------------------------|------------------|
-| `SITE_BASE` | `/Newsfeed-generator` | `/` |
-| `SITE_URL` | `https://trymhaak.github.io` | `https://<your-domain>` |
-
-So the Cloudflare build is just:
+The launchd wrapper builds and deploys the site only when canonical article data changes:
 
 ```bash
-SITE_BASE=/ SITE_URL=https://<your-domain> npm run build
+SITE_BASE=/ SITE_URL=https://newsfeed.trym.cloud npm run build
+npx --yes wrangler@3 pages deploy dist --project-name=newsfeed --branch=main --commit-dirty=true
 ```
 
-## Deploy options
+`public/_redirects` owns the route migration. `public/_headers` owns the feed response contract. Keep `/feed.json` out of the redirect rules.
 
-**A. Direct upload (recommended — reuses the launchd build, no CF build minutes):**
+## Verification
 
 ```bash
-SITE_BASE=/ SITE_URL=https://<your-domain> npm run build
-wrangler pages deploy ./dist --project-name=newsfeed
+curl -sSI https://newsfeed.trym.cloud/
+curl -sSI https://newsfeed.trym.cloud/tema/security
+curl -sSI https://newsfeed.trym.cloud/feed.json
 ```
 
-This can be appended to `ops/launchd/run-pipeline.sh` later instead of (or in
-addition to) the git push, so every refresh redeploys.
+Expected:
 
-**B. Git integration:** copy `wrangler.toml` here to the repo root, connect the
-repo in the Cloudflare dashboard, and set build command
-`SITE_BASE=/ SITE_URL=https://<your-domain> npm run build`, output dir `dist`.
+- human routes: permanent redirect to the Trym Cloud Security Briefing;
+- machine feed: `200`, JSON content type, `Access-Control-Allow-Origin: *`, five-minute cache policy;
+- no legacy Norwegian public fields.
 
-## Optional: serve `articles.json` from the site
-
-The monitor defaults to reading `articles.json` from raw GitHub, which already
-works. If you'd rather have it read the Pages-hosted copy, publish the JSON with
-the site (e.g. copy `data/articles.json` into `public/` before build) and point
-the monitor's `ARTICLES_URL` at `https://<your-domain>/articles.json`.
-
-## Watch-outs
-
-- Pages has a **20 000-file limit** — if `public/images/{id}.jpg` ever
-  accumulates unbounded, prune old images or move them to R2 (§4.2).
-- Keep `force_orphan` GitHub Pages deploy as-is until the Pages domain is live
-  and verified, then cut DNS over (§C).
+See [CUTOVER-RUNBOOK.md](../../../CUTOVER-RUNBOOK.md) for the full release and rollback sequence.
