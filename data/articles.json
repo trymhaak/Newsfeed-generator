@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T07:36:54.162Z",
+  "generated_at": "2026-07-17T12:51:21.474Z",
   "articles": [
     {
       "id": "msrc-update-guide-1dfdb8056c",
@@ -269,6 +269,26 @@
         "dos",
         "buffer-overflow"
       ]
+    },
+    {
+      "id": "call4cloud-9405901cc8",
+      "source_id": "call4cloud",
+      "source_name": "Call4Cloud (Rudy Ooms)",
+      "url": "https://patchmypc.com/blog/autopilot-required-apps-no-longer-need-to-wait-60-minutes/",
+      "published": "2026-07-17T07:59:21.000Z",
+      "ingested": "2026-07-17T12:51:21.400Z",
+      "title_original": "Autopilot Required Apps No Longer Need to Wait 60 Minutes",
+      "headline": "Intune Fixes the 60-Minute Autopilot Delay for Required Apps",
+      "topic": "endpoint",
+      "score": 39,
+      "tags": [
+        "Intune",
+        "Autopilot",
+        "IME",
+        "app deployment"
+      ],
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image-69.png",
+      "summary": "Intune Management Extension 1.103.101.0 appears to remove the 60-minute delay that could affect required app installations after Autopilot enrollment. Administrators should verify the new behavior in their environment because it can shorten device provisioning and reduce post-enrollment support issues."
     },
     {
       "id": "office365-itpros-d1256055ff",
@@ -589,6 +609,26 @@
         "threat-intelligence",
         "defender-experts"
       ]
+    },
+    {
+      "id": "sentinel-blog-7664bcd454",
+      "source_id": "sentinel-blog",
+      "source_name": "Microsoft Sentinel Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/announcing-the-asim-parser-creation-agentic-experience/ba-p/4532266",
+      "published": "2026-07-15T16:00:00.000Z",
+      "ingested": "2026-07-17T12:51:21.400Z",
+      "title_original": "Announcing the ASIM Parser Creation Agentic Experience",
+      "headline": "Microsoft Open-Sources an AI Workflow for Building Sentinel ASIM Parsers",
+      "topic": "security",
+      "score": 49,
+      "tags": [
+        "Microsoft Sentinel",
+        "ASIM",
+        "KQL",
+        "AI agents",
+        "log normalization"
+      ],
+      "summary": "Microsoft released an open-source, AI-guided workflow that creates, validates, and packages Microsoft Sentinel ASIM parsers. Security teams can normalize new data sources faster, improving the portability of detections, hunting queries, and analytics across vendor logs."
     },
     {
       "id": "defender-endpoint-f98565b566",
@@ -9129,43 +9169,6 @@
         "use-after-free",
         "msrc"
       ]
-    },
-    {
-      "id": "thomas-maurer-ab5a170188",
-      "source_id": "thomas-maurer",
-      "source_name": "Thomas Maurer",
-      "url": "https://www.thomasmaurer.ch/2026/06/how-to-deploy-azure-local-small-form-factor-sff-bringing-azure-to-the-edge/",
-      "published": "2026-06-24T08:22:18.000Z",
-      "ingested": "2026-06-24T08:25:27.335Z",
-      "title_original": "How to Deploy Azure Local Small Form Factor (SFF) – Bringing Azure to the Edge",
-      "headline": "How to Deploy Azure Local Small Form Factor (SFF) – Bringing Azure to the Edge",
-      "topic": "endpoint",
-      "score": 27,
-      "tags": [
-        "azure-local",
-        "edge",
-        "sff",
-        "infrastruktur"
-      ]
-    },
-    {
-      "id": "office365-itpros-a7079689be",
-      "source_id": "office365-itpros",
-      "source_name": "Office 365 for IT Pros (Tony Redmond)",
-      "url": "https://office365itpros.com/2026/06/24/find-inactive-channels/?utm_source=rss&utm_medium=rss&utm_campaign=find-inactive-channels",
-      "published": "2026-06-24T07:00:00.000Z",
-      "ingested": "2026-06-24T07:06:56.795Z",
-      "title_original": "How to Identify Inactive Teams Channels",
-      "headline": "How to Identify Inactive Teams Channels",
-      "topic": "identity",
-      "score": 34,
-      "tags": [
-        "teams",
-        "powershell",
-        "governance",
-        "microsoft-365"
-      ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Teams-admin-center-collaboration-activity.jpg?resize=840%2C527&#038;ssl=1"
     }
   ]
 }
