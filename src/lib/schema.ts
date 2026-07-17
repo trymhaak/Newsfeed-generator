@@ -32,7 +32,7 @@ const PUBLIC_ARTICLE_REQUIRED_KEYS = [
   'score',
   'source',
 ] as const;
-const PUBLIC_ARTICLE_OPTIONAL_KEYS = ['summary'] as const;
+const PUBLIC_ARTICLE_OPTIONAL_KEYS = ['summary', 'image'] as const;
 
 function asRecord(value: unknown, path: string): Record<string, unknown> {
   if (!value || typeof value !== 'object' || Array.isArray(value)) {
@@ -181,6 +181,9 @@ function validatePublicArticle(value: unknown, path: string): PublicFeedArticle 
   };
   if (hasOwn(article, 'summary')) {
     validated.summary = nonEmptyString(article.summary, `${path}.summary`);
+  }
+  if (hasOwn(article, 'image')) {
+    validated.image = httpUrl(article.image, `${path}.image`);
   }
   return validated;
 }

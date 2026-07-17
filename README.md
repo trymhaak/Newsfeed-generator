@@ -4,11 +4,11 @@ Newsfeed Generator is the data producer for the [Microsoft Security Newsfeed on 
 
 Every six hours, the Mac mini pipeline:
 
-1. fetches configured RSS and Atom sources;
+1. fetches configured RSS and Atom sources, including source-provided article images;
 2. deduplicates articles by stable ID;
 3. uses Hermes with OpenAI Codex (`gpt-5.6-sol`) to write an English headline, summary, topic and relevance score;
 4. validates and atomically merges the result into `data/articles.json`;
-5. publishes the English-only machine feed at `https://newsfeed.trym.cloud/feed.json`.
+5. publishes the English machine feed, including optional summaries and images, at `https://newsfeed.trym.cloud/feed.json`.
 
 The former standalone news website has been retired. Human routes on `newsfeed.trym.cloud` redirect to the native Trym Cloud page. The old domain remains only as the producer endpoint and a migration fallback.
 
@@ -18,7 +18,8 @@ The former standalone news website has been retired. Human routes on `newsfeed.t
 
 - `generated_at` in UTC;
 - up to 500 source-linked articles;
-- English `headline` and optional verified `summary`;
+- English `headline` and optional automated `summary`;
+- optional source-provided article `image` using an absolute HTTP(S) URL;
 - `identity`, `security`, `endpoint` or `ai` topic;
 - relevance score and source identity.
 

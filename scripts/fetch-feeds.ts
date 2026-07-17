@@ -52,7 +52,8 @@ function truncate(s: string, n: number): string {
 function safeImageUrl(raw: string | undefined, base?: string): string | undefined {
   if (!raw) return undefined;
   try {
-    const u = base ? new URL(raw, base) : new URL(raw);
+    const decoded = raw.replace(/&(?:amp|#0*38);/gi, '&');
+    const u = base ? new URL(decoded, base) : new URL(decoded);
     // Only allow https (and http) — reject javascript:, data:, file:, etc.
     if (u.protocol !== 'https:' && u.protocol !== 'http:') return undefined;
     return u.toString();

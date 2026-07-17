@@ -16,6 +16,7 @@ export function buildPublicFeed(store: ArticleStore): PublicFeed {
       },
     };
     if (article.summary) item.summary = article.summary;
+    if (article.hero_image) item.image = article.hero_image;
     return item;
   });
 

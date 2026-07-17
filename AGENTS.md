@@ -16,7 +16,7 @@ The old standalone VG-style website is retired. Do not restore a separate visual
 
 1. Public fields and visible fallback copy are English.
 2. Every item links to its original source.
-3. The public feed contains only validated fields. Never expose raw RSS content, producer tags or legacy fields.
+3. The public feed contains only validated fields. Never expose raw RSS content, producer tags or legacy fields. Source-provided image URLs must use HTTP(S); the producer does not copy source binaries.
 4. `data/articles.json` is written atomically and keeps at most 500 records.
 5. A no-new-article run is idempotent for the article store.
 6. Partial or malformed model output fails closed and does not write pending data.

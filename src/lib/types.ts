@@ -54,6 +54,7 @@ export interface PublicFeedArticle {
   published: string;
   headline: string;
   summary?: string;
+  image?: string;
   topic: Topic;
   score: number;
   source: {
