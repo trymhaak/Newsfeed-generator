@@ -23,6 +23,7 @@
         "published": { "type": "string", "format": "date-time" },
         "headline": { "type": "string", "minLength": 1 },
         "summary": { "type": "string", "minLength": 1 },
+        "image": { "type": "string", "format": "uri", "pattern": "^https?://" },
         "topic": { "enum": ["identity", "security", "endpoint", "ai"] },
         "score": { "type": "integer", "minimum": 0, "maximum": 100 },
         "source": {

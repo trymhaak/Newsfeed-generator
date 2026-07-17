@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T12:51:21.474Z",
+  "generated_at": "2026-07-17T13:46:04.103Z",
   "articles": [
     {
       "id": "msrc-update-guide-1dfdb8056c",
@@ -307,7 +307,8 @@
         "deprecation",
         "on-prem"
       ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/OWA-Lite.jpg?resize=840%2C600&#038;ssl=1"
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/OWA-Lite.jpg?resize=840%2C600&ssl=1",
+      "summary": "Microsoft will retire the lightweight OWA Light client in Exchange Server SE with an August 2026 update, requiring on-premises users to switch to the full OWA client. Available since Exchange 2007 for older browsers and alternative platforms without JavaScript, OWA Light affects only on-premises Exchange environments, not cloud-only users."
     },
     {
       "id": "msrc-blog-88097730a6",
@@ -327,7 +328,8 @@
         "credential-theft",
         "defender"
       ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/image-16-1024x430.webp"
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/image-16-1024x430.webp",
+      "summary": "Microsoft Defender Experts has observed increased ACR Stealer activity using ClickFix lures to trick employees into running malicious commands that steal browser passwords, session tokens, and sensitive documents, potentially enabling access to cloud resources and further intrusion. IT teams should monitor for ClickFix lures, suspicious WebDAV activity, and obfuscated PowerShell execution."
     },
     {
       "id": "m365-roadmap-8bf83b6e68",
@@ -383,7 +385,8 @@
         "least-privilege",
         "managed-identity"
       ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/image-4.webp"
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/image-4.webp",
+      "summary": "AI agents plan and chain actions across systems without human approval at every step, so overly broad role assignments can grant access far beyond what was intended. Microsoft recommends treating each agent as a separate identity with a dedicated managed identity, least-privilege RBAC, a clearly defined scope, and secure tool binding before broad deployment."
     },
     {
       "id": "prajwal-desai-fa56e68879",
@@ -420,7 +423,8 @@
         "intune",
         "onboarding"
       ],
-      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/167ce37e-df9f-47cb-a545-0e6fc55f1fb2-e1784192415333.png"
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/167ce37e-df9f-47cb-a545-0e6fc55f1fb2-e1784192415333.png",
+      "summary": "The AutoAcceptSsoPermission policy closes the gap between Windows user-consent requirements and managed-device onboarding by allowing administrators to preapprove the “Continue to sign in” prompt that appears during sign-in. Rudy Ooms demonstrates how the setting works on Intune-managed devices."
     },
     {
       "id": "msrc-update-guide-1a47b994d6",
@@ -458,7 +462,8 @@
         "eøs",
         "kb5101650"
       ],
-      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/07/image-6.png"
+      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/07/image-6.png",
+      "summary": "In the EEA, Windows must now ask users before reusing their sign-in for other Microsoft apps, adding noise in managed environments where SSO is already configured. Microsoft has published a new registry control that lets administrators disable the prompt, available with the July 2026 update for Windows 11 24H2 (KB5101650)."
     },
     {
       "id": "office365-itpros-e0bed1d089",
@@ -477,7 +482,8 @@
         "outlook",
         "lisensiering"
       ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/Schedule-Teams-meeting-shared-mailbox.jpg?resize=840%2C548&#038;ssl=1"
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/Schedule-Teams-meeting-shared-mailbox.jpg?resize=840%2C548&ssl=1",
+      "summary": "Despite Microsoft documenting it as supported, uncertainty remains over whether Teams meeting invitations can be sent from a shared mailbox. It works when the delegate has full mailbox access and a Teams license, but currently only in classic Outlook, and the shared mailbox itself does not need a separate license."
     },
     {
       "id": "msrc-blog-f0dd9780aa",
@@ -496,7 +502,8 @@
         "asyncapi",
         "miasma"
       ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/image-14.webp"
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/image-14.webp",
+      "summary": "On July 14, Microsoft Threat Intelligence uncovered a coordinated supply-chain compromise of the @asyncapi organization on npm, with five package versions republished using the same malicious loader. Because @asyncapi/specs is a transitive dependency and the code runs at import time rather than through postinstall, affected developer machines, CI/CD pipelines, and production services are not protected by “npm install --ignore-scripts.”"
     },
     {
       "id": "m365-roadmap-090669f772",
@@ -571,7 +578,8 @@
         "microsoft-graph",
         "governance"
       ],
-      "hero_image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/dS0yMDE4MTgteTNoRWFa?image-coordinates=0%2C0%2C1500%2C1500&amp;image-dimensions=120x120"
+      "hero_image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/dS0yMDE4MTgteTNoRWFa?image-coordinates=0%2C0%2C1500%2C1500&image-dimensions=120x120",
+      "summary": "Microsoft FastTrack argues that stalled Copilot deployments are rarely a licensing or Copilot problem, but an identity problem because Microsoft 365 Copilot authenticates through Entra ID and inherits each user’s Graph access. Part two targets Microsoft 365 administrators and CIOs whose immature identity foundations have prevented users from accessing Copilot and left them without a control plane for future agents."
     },
     {
       "id": "entra-blog-ebd4c7ed65",
@@ -776,7 +784,8 @@
         "conditional-access",
         "prompt-injection"
       ],
-      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Automatically-block-high-risk-ai-agents-in-m365-150x150.png"
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Automatically-block-high-risk-ai-agents-in-m365-150x150.png",
+      "summary": "AdminDroid shows how to detect high-risk AI agents in Entra and block their access in real time using Identity Protection risk signals. Because a compromised or manipulated agent, including one affected by prompt injection, can operate autonomously across Microsoft 365 until detected, live risk-based Conditional Access is a better option than blocking all agents."
     },
     {
       "id": "msrc-update-guide-3eac018c92",
@@ -1029,7 +1038,8 @@
         "cross-tenant",
         "message-recall"
       ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/New-Outlook-Recall-message.jpg?resize=840%2C584&#038;ssl=1"
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/New-Outlook-Recall-message.jpg?resize=840%2C584&ssl=1",
+      "summary": "Exchange Online is gaining two features: a check that prevents duplicate dynamic distribution groups and cross-tenant message recall. Administrators must explicitly choose which external tenants may recall messages delivered to their organization and should assess the governance implications before enabling the feature."
     },
     {
       "id": "m365-roadmap-155e6acc0e",
@@ -1298,7 +1308,8 @@
         "on-demand-sync",
         "mdm"
       ],
-      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image-57.png"
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image-57.png",
+      "summary": "Rudy Ooms explains how Intune’s improved on-demand sync can now wake sleeping Windows devices, preventing manual sync requests from having no effect while a device is asleep. This enables faster, more reliable deployment of policies and apps to devices in the field."
     },
     {
       "id": "core-infra-security-e114bfd1e2",
@@ -1337,7 +1348,8 @@
         "tidslinje",
         "migrering"
       ],
-      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/07/image-5.png"
+      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/07/image-5.png",
+      "summary": "Jan Bakker provides a practical timeline for the retirement of Microsoft-provided SMS and voice MFA and the shift to passkeys by default. The first milestone is September 1, 2026, when all SMS and voice users will be automatically enabled and prompted to register a passkey at sign-in, so administrators should ensure everyone has a phishing-resistant method before the summer holidays reduce preparation time."
     },
     {
       "id": "security-community-365a68996c",
@@ -1666,7 +1678,8 @@
         "outlook",
         "postkasse"
       ],
-      "hero_image": "https://s.w.org/images/core/emoji/14.0.0/72x72/1f4cc.png"
+      "hero_image": "https://s.w.org/images/core/emoji/14.0.0/72x72/1f4cc.png",
+      "summary": "This practical guide explains how owners and members can create folders and inbox rules for Microsoft 365 group mailboxes in Outlook. Group mailboxes contain only Inbox and Deleted Items by default, so the feature can help teams organize growing email volumes, although it has limited relevance for most IT administrators."
     },
     {
       "id": "admindroid-026fbb2cb6",
@@ -1685,7 +1698,8 @@
         "mfa",
         "sim-swapping"
       ],
-      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Microsoft-Retires-SMS-Voice-Authentication-Passkeys-Become-the-Default-150x150.png"
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Microsoft-Retires-SMS-Voice-Authentication-Passkeys-Become-the-Default-150x150.png",
+      "summary": "AdminDroid summarizes Microsoft’s transition to a passkey-first Entra ID model and explains why phone-based MFA poses a growing risk as organizations increase their use of AI. SMS and voice codes travel over telephone networks and are vulnerable to interception, social engineering, and SIM swapping, making the article useful background for prioritizing passkey deployment."
     },
     {
       "id": "office365-itpros-c72e638b40",
@@ -1705,7 +1719,8 @@
         "entra",
         "deprecation"
       ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/SMS-challenge.png?resize=300%2C236&#038;ssl=1"
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/SMS-challenge.png?resize=300%2C236&ssl=1",
+      "summary": "Microsoft says in MC1426371 that it will stop providing SMS one-time codes and voice calls for MFA on February 1, 2027, and move all tenants toward passkeys as a second factor. Customers that still require SMS or voice must purchase the service from a telecommunications provider through Microsoft Security Store starting September 18, 2026, so administrators should begin deploying passkeys now to prevent users from losing their sign-in method."
     },
     {
       "id": "ourcloudnetwork-1066937e74",
@@ -1744,7 +1759,8 @@
         "saas",
         "vishing"
       ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/image-5.webp"
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/image-5.webp",
+      "summary": "Microsoft tracked campaigns from 2025 to 2026 in which actors linked to ShinyHunters abused trusted OAuth connections, vishing, and misconfigured guest access to reach SaaS applications such as Salesforce. A single entry point can quickly lead to large-scale CRM data extraction while bypassing standard sign-in alerts, so administrators should monitor OAuth-connected apps, review consent grants, and tighten guest access."
     },
     {
       "id": "core-infra-security-8091babe65",
@@ -1836,7 +1852,8 @@
         "insider",
         "ux"
       ],
-      "hero_image": "https://winblogs.thesourcemediaassets.com/sites/44/2026/07/1searchhomejuly10github-revised.png"
+      "hero_image": "https://winblogs.thesourcemediaassets.com/sites/44/2026/07/1searchhomejuly10github-revised.png",
+      "summary": "Microsoft is rolling out Windows search box improvements to Insiders in the Experimental Channel, including a cleaner home screen, clearer labels showing whether results come from apps, settings, files, or the web, and no advertising in web results. A new Privacy & security setting controls whether web and Microsoft Store suggestions appear, and endpoint administrators should watch how these controls eventually reach managed Windows clients."
     },
     {
       "id": "msrc-blog-54f215ceaa",
@@ -1929,7 +1946,8 @@
         "governance",
         "m365"
       ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Obsolete-SPO-Sites.jpg?resize=840%2C408&#038;ssl=1"
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Obsolete-SPO-Sites.jpg?resize=840%2C408&ssl=1",
+      "summary": "Tony Redmond demonstrates how to use PowerShell to identify obsolete SharePoint Online sites in large tenants, warning that background processes make LastModifiedDateTime unreliable and prone to false positives. Administrators cleaning up thousands of sites must combine multiple activity sources to determine which sites are truly inactive."
     },
     {
       "id": "ourcloudnetwork-db8c3b9b12",
@@ -2003,7 +2021,8 @@
         "windows-11",
         "ksp"
       ],
-      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image-43-1024x331.png"
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image-43-1024x331.png",
+      "summary": "Rudy Ooms investigates why Intune MDM device certificates stopped renewing on some Windows 11 23H2 machines and identifies Bit4id’s Key Storage Provider as the cause. Because an unrenewed certificate can eventually cause the device to lose trust and break MDM communication, Intune administrators should check which KSP affected certificates use to prevent devices from silently dropping out."
     },
     {
       "id": "msrc-update-guide-290cc4e30a",
@@ -2094,7 +2113,8 @@
         "ekstern-tilgang",
         "federation"
       ],
-      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/New-Teams-PowerShell-Controls-for-Federated-Group-Chats-150x150.png"
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/New-Teams-PowerShell-Controls-for-Federated-Group-Chats-150x150.png",
+      "summary": "Microsoft has added two tenant parameters to the Set-CsTenantFederationConfiguration PowerShell cmdlet to enforce external-access rules throughout the lifecycle of federated Teams group chats. Administrators should enable the controls so updated policies apply to existing chats, preventing external users from retaining access or being added through a third-party tenant when policy no longer permits it."
     },
     {
       "id": "msrc-update-guide-8981b10c52",
@@ -2388,7 +2408,8 @@
         "cross-tenant",
         "e-post"
       ],
-      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Microsoft-Introduces-Cross-Tenant-Message-Recall-in-Exchange-Online-150x150.png"
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Microsoft-Introduces-Cross-Tenant-Message-Recall-in-Exchange-Online-150x150.png",
+      "summary": "Microsoft is extending Message Recall in Exchange Online across tenants, allowing email accidentally sent to other Microsoft 365 organizations to be recalled. A recall succeeds only when the recipient tenant has explicitly allowed it, giving admins a new way to limit damage while keeping control with the recipient."
     },
     {
       "id": "msrc-update-guide-074cebf1cb",
@@ -2698,7 +2719,8 @@
         "dynamiske-grupper",
         "filtre"
       ],
-      "hero_image": "https://mikemdm.de/wp-content/uploads/2026/07/grafik-1-844x1024.png"
+      "hero_image": "https://mikemdm.de/wp-content/uploads/2026/07/grafik-1-844x1024.png",
+      "summary": "Microsoft has renamed Windows 365 Frontline to Windows 365 Flex, with the rebranding now rolling out across Intune, including changing the device model value from “CloudPC Frontline” to “Windows 365 Flex.” Admins should update assignment filters, dynamic Entra group rules, and device category scripts to prevent devices from dropping out of policies."
     },
     {
       "id": "msrc-blog-5aa07a5339",
@@ -2827,7 +2849,8 @@
         "open-source",
         "entra"
       ],
-      "hero_image": "https://i0.wp.com/github.com/probichaux/m365mutator/raw/main/public/screenshot-identities.png?w=840&#038;ssl=1"
+      "hero_image": "https://i0.wp.com/github.com/probichaux/m365mutator/raw/main/public/screenshot-identities.png?w=840&ssl=1",
+      "summary": "Tony Redmond has created M365Mutator, a local open-source tool that connects to a tenant through Microsoft Graph and generates realistic Entra ID user changes, email, calendar entries, and OneDrive and SharePoint file operations. It is useful for demos, backup testing, and Graph development when static CDX tenants provide stale, uninteresting data."
     },
     {
       "id": "ourcloudnetwork-27fbb9705b",
@@ -3101,7 +3124,8 @@
         "threat-intelligence",
         "defender"
       ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/Fig1-GigaWiper.webp"
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/Fig1-GigaWiper.webp",
+      "summary": "Microsoft Threat Intelligence has analyzed GigaWiper, a Golang-based backdoor that combines several destructive malware families in one implant, from physical disk wiping to fake ransomware whose encryption keys are never stored. Threat actors select the destruction method through on-demand commands, making attacks more flexible and difficult to predict, and security teams should review the Defender detections and indicators of compromise in the report."
     },
     {
       "id": "handsontek-3b3bb48eee",
@@ -3120,7 +3144,8 @@
         "teams",
         "power-automate"
       ],
-      "hero_image": "https://handsontek.net/images/hot2/Week%2027%202026/hero.png"
+      "hero_image": "https://handsontek.net/images/hot2/Week%2027%202026/hero.png",
+      "summary": "This week’s HANDS ON tek Pulse covers three SharePoint updates: SharePoint links in Teams now open in the SharePoint app, a new button web part arriving in late July can trigger predefined Copilot prompts or Power Automate flows, and admins can classify sites into custom groups in Catalog Management. It is useful for daily SharePoint administrators but is primarily a weekly roundup."
     },
     {
       "id": "call4cloud-5888253455",
@@ -3139,7 +3164,8 @@
         "enrollment",
         "0x81036501"
       ],
-      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image.jpeg"
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image.jpeg",
+      "summary": "Rudy Ooms of Call4Cloud examines incident IT1420224, in which Autopilot devices in tenants on ASU 0102 failed to enroll in Intune and returned error 0x81036501, “Expected MDM URI was not found.” The post explains what triggers the MDM URI error and what caused the incident for endpoint admins troubleshooting stalled enrollments."
     },
     {
       "id": "admindroid-b441c6d186",
@@ -3158,7 +3184,8 @@
         "hardening",
         "domain-controllers"
       ],
-      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/How-to-Disable-Print-Spooler-on-Domain-Controller-150x150.png"
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/How-to-Disable-Print-Spooler-on-Domain-Controller-150x150.png",
+      "summary": "AdminDroid explains why the Print Spooler service should be disabled on domain controllers and outlines several ways to do so. The service is enabled by default and gives attackers a direct path to remote code execution and privilege escalation on critical servers, making its removal a recommended part of Active Directory hardening."
     },
     {
       "id": "msrc-update-guide-6c731e6135",
@@ -3303,7 +3330,8 @@
         "distribution-lists",
         "get-messagetracev2"
       ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Inactive-DL-Check.jpg?resize=840%2C425&#038;ssl=1"
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Inactive-DL-Check.jpg?resize=840%2C425&ssl=1",
+      "summary": "Tony Redmond explains how to update PowerShell scripts for identifying inactive distribution lists now that the legacy Get-MessageTrace cmdlet was retired and stopped working in September 2025. The new Get-MessageTraceV2 cmdlet can retrieve up to 90 days of message-trace data, but only in ten-day segments."
     },
     {
       "id": "m365-roadmap-f2a4be4eee",
@@ -3413,7 +3441,8 @@
         "endringsledelse",
         "adopsjon"
       ],
-      "hero_image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/dS0yMDE4MTgteTNoRWFa?image-coordinates=0%2C0%2C1500%2C1500&amp;image-dimensions=120x120"
+      "hero_image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/dS0yMDE4MTgteTNoRWFa?image-coordinates=0%2C0%2C1500%2C1500&image-dimensions=120x120",
+      "summary": "Microsoft’s FastTrack team explains why Microsoft 365 Copilot pilots in healthcare often succeed technically but stall in governance committees and lose funding. Part one of three identifies who can block an AI project, what they fear versus what they say, and the order in which they should be engaged."
     },
     {
       "id": "defender-office365-189b5c6eeb",
@@ -3507,7 +3536,8 @@
         "zero-trust",
         "oversharing"
       ],
-      "hero_image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/dS0xMjkzMTEtMjAxMjgyaTRDRDk1ODBCNDJDQzQ3MjM?image-dimensions=120x120"
+      "hero_image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/dS0xMjkzMTEtMjAxMjgyaTRDRDk1ODBCNDJDQzQ3MjM?image-dimensions=120x120",
+      "summary": "Microsoft FastTrack explains how to limit the second layer of Microsoft 365 Copilot risk: which data Copilot can read, by addressing overshared SharePoint and OneDrive content and implementing Purview sensitivity labels and DLP, SharePoint Advanced Management, Entra ID Governance, and Sentinel before scaling deployment. Years of oversharing can become searchable by any licensed user, so admins should establish these controls before rollout rather than afterward."
     },
     {
       "id": "msrc-update-guide-bb0f8dffd0",
@@ -3598,7 +3628,8 @@
         "endpoint",
         "windows"
       ],
-      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Deploy-PowerShell-Scripts-using-Microsoft-Intune-3-150x150.png"
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Deploy-PowerShell-Scripts-using-Microsoft-Intune-3-150x150.png",
+      "summary": "AdminDroid covers the three ways to deploy PowerShell scripts to Windows devices through Intune: platform scripts, remediations, and Win32 apps. The guide explains when to use each method for one-time execution, continuous compliance monitoring, or packaged deployment, and how to track execution status per device."
     },
     {
       "id": "office365-itpros-25e61caa0d",
@@ -3617,7 +3648,8 @@
         "microsoft-graph",
         "rapportering"
       ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/02/Managers-and-Direct-Reports.jpg?resize=840%2C468&#038;ssl=1"
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/02/Managers-and-Direct-Reports.jpg?resize=840%2C468&ssl=1",
+      "summary": "Tony Redmond updates his guide to reporting managers and direct reports from Entra ID, replacing the retired Azure AD modules with Microsoft Graph. The article explains why a basic Get-MgUserDirectReport approach scales poorly in larger organizations and presents a more efficient method for admins who rely on accurate manager fields."
     },
     {
       "id": "ourcloudnetwork-c7cea4136c",
@@ -3799,7 +3831,8 @@
         "entra",
         "zero-trust"
       ],
-      "hero_image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/dS0xMjkzMTEtMjAxMjgyaTRDRDk1ODBCNDJDQzQ3MjM?image-dimensions=120x120"
+      "hero_image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/dS0xMjkzMTEtMjAxMjgyaTRDRDk1ODBCNDJDQzQ3MjM?image-dimensions=120x120",
+      "summary": "Part two of FastTrack’s Zero Trust series for Copilot addresses the first risk layer, who can access the service, and the six identity and device risks R1–R6. E5 customers already have the required tools in Entra ID, Conditional Access, Intune, and Defender, but must configure and scope them deliberately before scaling because one compromised or unmanaged account can expose the entire Microsoft 365 data estate through the user’s full permissions."
     },
     {
       "id": "msrc-update-guide-a3821ad0e9",
@@ -3837,7 +3870,8 @@
         "m365",
         "revisjon"
       ],
-      "hero_image": "https://o365reports.com/wp-content/uploads/2026/07/CreationSourceFromSPO-300x121.png"
+      "hero_image": "https://o365reports.com/wp-content/uploads/2026/07/CreationSourceFromSPO-300x121.png",
+      "summary": "SharePoint sites can be provisioned automatically by Teams, Microsoft 365 groups, Viva Engage, and APIs, not only through the admin center. This guide shows how to trace a site’s creation source in the SharePoint admin center for auditing, troubleshooting, and governance."
     },
     {
       "id": "prajwal-desai-cd0eef1be1",
@@ -4160,7 +4194,8 @@
         "m365-agenter",
         "kalender"
       ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/image.png?resize=840%2C351&#038;ssl=1"
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/image.png?resize=840%2C351&ssl=1",
+      "summary": "Tony Redmond has tested Microsoft’s Outlook Calendar Agent since its April 2026 launch but finds that it still struggles with basic meeting scheduling. A key limitation is that Microsoft 365 connectors can read but not write to user calendars, preventing genuine agentic scheduling, so IT admins should adjust expectations about current Copilot agent capabilities."
     },
     {
       "id": "m365-roadmap-2be42aa511",
@@ -4251,7 +4286,8 @@
         "cloud-rebuild",
         "recovery"
       ],
-      "hero_image": "https://winblogs.thesourcemediaassets.com/sites/44/2026/07/cloudrebuildtroubleshoot.png"
+      "hero_image": "https://winblogs.thesourcemediaassets.com/sites/44/2026/07/cloudrebuildtroubleshoot.png",
+      "summary": "Microsoft is testing Cloud Rebuild in the Experimental Channel, a recovery feature that completely reinstalls Windows 11 by downloading both the OS image and device drivers from Windows Update, even when Windows cannot start. Unlike Reset this PC, it requires neither USB media nor a separate image, simplifying recovery of locked or damaged endpoints."
     },
     {
       "id": "fasttrack-cbb97f5ffe",
@@ -4307,7 +4343,8 @@
         "defender-for-cloud",
         "frost-radar"
       ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/Cloud-Security-Posture-Management-2025-Radar-Image_Microsoft-Final.webp"
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/Cloud-Security-Posture-Management-2025-Radar-Image_Microsoft-Final.webp",
+      "summary": "Frost & Sullivan’s 2025 Frost Radar for Cloud Security Posture Management forecasts that the CSPM market will grow from $2.82 billion to $6.96 billion by 2030 and places Microsoft among the leaders. It highlights a shift from periodic compliance to continuous, risk-based governance within CNAPP platforms, but is primarily market and positioning material rather than an actionable change for admins."
     },
     {
       "id": "vasil-michev-2f2c2ce558",
@@ -4326,7 +4363,8 @@
         "rapportering",
         "beta"
       ],
-      "hero_image": "https://michev.info/wp-content/uploads/2026/07/SharePointAPIUsage.png"
+      "hero_image": "https://michev.info/wp-content/uploads/2026/07/SharePointAPIUsage.png",
+      "summary": "A new SharePoint API Usage report is available in Microsoft Graph beta, showing how apps use SharePoint APIs in a tenant. It is disabled by default and must be enabled through the new report settings with the ReportSettings.ReadWrite.All permission, although the endpoints do not yet enforce the documented permissions and a global admin can enable it regardless."
     },
     {
       "id": "core-infra-security-3ac012e600",
@@ -4363,7 +4401,8 @@
         "feature-rollout",
         "hotfix"
       ],
-      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image-36.png"
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image-36.png",
+      "summary": "Rudy Ooms examines Controlled Feature Rollout, the mechanism Microsoft uses to release new Windows features and hotfixes gradually and disabled by default. The post explains how an individual device determines when it receives a feature, helping admins understand why features appear at different times across their fleet."
     },
     {
       "id": "janbakker-20831e2c3a",
@@ -4382,7 +4421,8 @@
         "permissions",
         "lifecycle"
       ],
-      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/07/image-2.png"
+      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/07/image-2.png",
+      "summary": "When the employeeLeaveDateTime attribute appears as null in Entra ID, the usual cause is missing permissions because this sensitive attribute requires User-LifeCycleInfo.Read.All for access through Microsoft Graph. The value becomes visible after consent is granted, which is important for admins building lifecycle or offboarding automation around departure dates."
     },
     {
       "id": "janbakker-82eb84dfc6",
@@ -4402,7 +4442,8 @@
         "authentication",
         "fido2"
       ],
-      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/07/image.gif"
+      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/07/image.gif",
+      "summary": "Data from large passkey deployments shows that Windows has the lowest sign-in success rate of any major platform in 2026, with Windows users struggling where iPhone users sign in seamlessly despite using the same identity provider and policy. Entra admins planning passkey deployments should expect their Windows fleet to generate the most support requests and pilot-test it especially thoroughly."
     },
     {
       "id": "office365-itpros-136851da27",
@@ -4421,7 +4462,8 @@
         "sharepoint",
         "compliance"
       ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/DLP-MOve-to-Quarantine-action.jpg?resize=840%2C356&#038;ssl=1"
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/DLP-MOve-to-Quarantine-action.jpg?resize=840%2C356&ssl=1",
+      "summary": "Purview DLP is adding a “move to quarantine” action that isolates files violating DLP policies in a secure SharePoint location instead of merely blocking them, replacing the original with a tombstone text file that explains what happened and why. The feature is currently in preview and is scheduled for general availability in early June 2026 (MC1288527)."
     },
     {
       "id": "core-infra-security-73cf9d0ad1",
@@ -4765,7 +4807,8 @@
         "purview",
         "ekstern-deling"
       ],
-      "hero_image": "https://michev.info/wp-content/uploads/2026/07/DLPGranularActions.png"
+      "hero_image": "https://michev.info/wp-content/uploads/2026/07/DLPGranularActions.png",
+      "summary": "Microsoft is rolling out two new DLP actions for SharePoint Online and OneDrive that can block access by external domains and users or move files to a quarantine location. The feature (MC1338823, roadmap 557191) remains in preview and appears only when a policy is scoped to SharePoint or OneDrive, giving IT admins more precise control over external sharing directly in SPO/ODFB DLP policies."
     },
     {
       "id": "andrew-taylor-d00ac40b97",
@@ -4803,7 +4846,8 @@
         "privilege-management",
         "elevation"
       ],
-      "hero_image": "https://msendpointmgr.com/wp-content/uploads/2026/06/Designer-14.png"
+      "hero_image": "https://msendpointmgr.com/wp-content/uploads/2026/06/Designer-14.png",
+      "summary": "Part three of MSEndpointMgr’s EPM series shows how to turn a prioritized rule backlog into elevation rules that hold up in production, explaining when to use file hashes, certificates, or product versions as detection criteria and when each is the wrong choice. It is useful for Intune admins who want to prevent EPM rules from breaking after the next vendor update or elevating unintended files."
     },
     {
       "id": "msrc-update-guide-1510175b44",
@@ -5106,7 +5150,8 @@
         "etterlevelse",
         "revisjon"
       ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/02/Teams-memberships-report.jpg?resize=840%2C544&#038;ssl=1"
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/02/Teams-memberships-report.jpg?resize=840%2C544&ssl=1",
+      "summary": "Tony Redmond shows how to use PowerShell to save periodic snapshots of a team’s membership so organizations can later prove who had access to channels, files, and SharePoint content at a given time. Team membership effectively grants broad access to sensitive content, making this useful for legal recordkeeping requirements, while membership changes can also be tracked in the audit log."
     },
     {
       "id": "ourcloudnetwork-d51af1d7d8",
@@ -5232,7 +5277,8 @@
         "governance",
         "ciso"
       ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2025/10/thumbnail_image.webp"
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2025/10/thumbnail_image.webp",
+      "summary": "Microsoft’s deputy CISO explains how the company manages risks associated with Cloud Solution Providers (CSPs), which many organizations use to purchase and operate Microsoft 365 and Azure. The post offers organizations working with CSPs a framework for controls and expectations around partner access, focusing more on principles than concrete news but providing useful guidance for third-party access governance."
     },
     {
       "id": "m365-copilot-f177638bbe",
@@ -5269,7 +5315,8 @@
         "billing",
         "m365"
       ],
-      "hero_image": "https://handsontek.net/images/hot2/Whats%20new%20Copilot/hero.png"
+      "hero_image": "https://handsontek.net/images/hot2/Whats%20new%20Copilot/hero.png",
+      "summary": "Copilot Cowork reached general availability in June but is not included in existing licenses and is billed per use through Copilot Credits, so admins must configure billing and consumption controls before it can be used. Other updates include curated organizational prompts in Copilot Chat, AI editing suggestions in Copilot Pages, more voice styles in Microsoft 365 Copilot, and usage-based billing for the Work IQ APIs."
     },
     {
       "id": "m365-copilot-7f2f41f3ae",
@@ -5415,7 +5462,8 @@
         "app-distribusjon",
         "msp"
       ],
-      "hero_image": "https://smbtothecloud.com/wp-content/uploads/2026/06/image-1024x296.png"
+      "hero_image": "https://smbtothecloud.com/wp-content/uploads/2026/06/image-1024x296.png",
+      "summary": "This detailed technical guide explains how Win32 apps work in Intune, including what an .intunewin file contains, how IntuneWinAppUtil packages it, and how it is uploaded to the service. It also shows how Win32 apps can support scripting and registry changes and provide an alternative to remediations for organizations without an Enterprise license, making it a useful reference for admins deploying RMM, EDR, and other agent-based apps."
     },
     {
       "id": "admindroid-35237594a8",
@@ -5435,7 +5483,8 @@
         "network-data-security",
         "saas"
       ],
-      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Microsoft-Extends-Data-Protection-to-the-Network-Layer-150x150.png"
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Microsoft-Extends-Data-Protection-to-the-Network-Layer-150x150.png",
+      "summary": "Microsoft is launching Network Data Security, which extends Purview DLP to the network layer through Entra and detects sensitive data in motion, including text pasted into AI chatbots, files uploaded to personal cloud storage, and traffic sent to unauthorized SaaS apps beyond the reach of Microsoft 365’s built-in controls. It gives IT admins real-time visibility and the ability to block leaks that previously might only have been discovered afterward."
     },
     {
       "id": "handsontek-f257bd472d",
@@ -5455,7 +5504,8 @@
         "deprecation",
         "event-receivers"
       ],
-      "hero_image": "https://handsontek.net//images/hot2/Week%2026%202026/hero.png"
+      "hero_image": "https://handsontek.net//images/hot2/Week%2026%202026/hero.png",
+      "summary": "The month’s first Pulse summarizes June updates across SharePoint, Teams, and Copilot, with the retirement of Remote Event Receivers in SharePoint Online being the most important change for admins because dependent custom solutions must now plan their transition. Custom domains can also be excluded from Copilot web grounding, while a new Recap app in Teams brings all meeting recaps together in one place."
     },
     {
       "id": "goodworkaround-63bcad3034",
@@ -5475,7 +5525,8 @@
         "group-soa",
         "ad-migrering"
       ],
-      "hero_image": "https://0.gravatar.com/avatar/653b94bfdefd1283bc049c2805c386b666c42454eec9db823172ba03b94c42b6?s=96&d=identicon&r=G"
+      "hero_image": "https://0.gravatar.com/avatar/653b94bfdefd1283bc049c2805c386b666c42454eec9db823172ba03b94c42b6?s=96&d=identicon&r=G",
+      "summary": "Entra’s new Group Source of Authority conversion allows synchronized AD groups to move to Entra ID management without losing their identity, membership, or access. Marius Solbakken provides a PowerShell script for bulk conversion with error handling and logging, saving admins from manually processing hundreds of groups during a cloud migration."
     },
     {
       "id": "core-infra-security-f112247b42",
@@ -5513,7 +5564,8 @@
         "ekstern-chat",
         "moderering"
       ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Teams-external-chat-warning.jpg?resize=840%2C604&#038;ssl=1"
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Teams-external-chat-warning.jpg?resize=840%2C604&ssl=1",
+      "summary": "The removeAllAccessForUser Graph API, which Teams documentation recommends for removing external chats containing malicious content, does not remove the user from the chat as its name suggests and only partially hides the messages. Admins relying on it for content moderation should know that it provides much weaker control than expected."
     },
     {
       "id": "m365-roadmap-8f56e606f0",
@@ -5895,7 +5947,8 @@
         "hybrid-identitet",
         "active-directory"
       ],
-      "hero_image": "https://0.gravatar.com/avatar/653b94bfdefd1283bc049c2805c386b666c42454eec9db823172ba03b94c42b6?s=96&d=identicon&r=G"
+      "hero_image": "https://0.gravatar.com/avatar/653b94bfdefd1283bc049c2805c386b666c42454eec9db823172ba03b94c42b6?s=96&d=identicon&r=G",
+      "summary": "Marius Solbakken shows how to map custom AD attributes such as employee ID, cost center, and start and end dates into Entra ID with Cloud Sync. Unlike the older Connect Sync, this has no user interface, so attributes must be stored as extension properties on an app with an identifier URI in the format API://<tenantid>/CloudSyncCustomExtensionsApp, which is useful for hybrid identity environments needing additional attributes for automation, provisioning, and identity governance."
     },
     {
       "id": "msrc-update-guide-9f0286b385",
@@ -6127,7 +6180,8 @@
         "bok",
         "sluttpakke"
       ],
-      "hero_image": "https://michev.info/wp-content/uploads/2026/07/MTC10Y.png"
+      "hero_image": "https://michev.info/wp-content/uploads/2026/07/MTC10Y.png",
+      "summary": "Vasil Michev reports that the 2027 edition of “Microsoft 365 for IT Pros” has launched, now with two new standalone books alongside the main bundle. He also discusses Microsoft’s voluntary severance package taking effect and expresses concern about the expertise being lost as many veterans leave; for IT admins, this is primarily a reference and reading update rather than a technical change."
     },
     {
       "id": "call4cloud-ff896e532a",
@@ -6147,7 +6201,8 @@
         "wdac",
         "0x800705b4"
       ],
-      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image-34.png"
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image-34.png",
+      "summary": "An Autopilot provisioning process stalls at “Preparing your device for mobile management” and ends with error 0x800705b4 because an App Control policy (WDAC), rather than Autopilot itself, blocks the Intune Management Extension from running. Admins deploying App Control should explicitly allow IME or device provisioning will fail."
     },
     {
       "id": "office365-itpros-b5b1630f70",
@@ -6166,7 +6221,8 @@
         "e-bok",
         "tony-redmond"
       ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Four-book-covers.png?resize=840%2C298&#038;ssl=1"
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Four-book-covers.png?resize=840%2C298&ssl=1",
+      "summary": "Tony Redmond’s “Microsoft 365 for IT Pros” book series is now in its thirteenth edition, with the 2027 content split so that Purview and Power Platform have their own books. The 330-page Purview book covers data lifecycle management, eDiscovery, DLP, information protection, and compliance, but it is a commercial Gumroad e-book rather than Microsoft product news."
     },
     {
       "id": "m365-roadmap-eba7cd22d4",
@@ -6402,7 +6458,8 @@
         "ai-agenter",
         "sårbarheter"
       ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/Picture1-4-1024x576.webp"
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/Picture1-4-1024x576.webp",
+      "summary": "Microsoft’s monthly security update introduces “MDASH” in private preview, an agent-based AI system that scans complex code to find and validate vulnerabilities and route them directly into Defender workflows, while Defender is also extending endpoint protection to local AI agents. These developments give IT admins new vulnerability tools but also reflect a growing attack surface as AI agents are adopted."
     },
     {
       "id": "msrc-blog-075d2f7a3a",
@@ -6421,7 +6478,8 @@
         "copilot",
         "tool-poisoning"
       ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-62.webp"
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-62.webp",
+      "summary": "Microsoft Incident Response describes an attack pattern in which malicious Model Context Protocol (MCP) tools manipulate AI agents that can not only read content but also perform actions such as sending email or changing systems, and provides a practical playbook for detecting, containing, and preventing these attacks with Microsoft security controls. As agents in Microsoft 365 Copilot, Copilot Studio, and Azure AI Foundry gain write access, the attack surface grows and IT admins need to understand the risk."
     },
     {
       "id": "m365-copilot-750d8d40c2",
@@ -6497,7 +6555,8 @@
         "inaktive-kontoer",
         "opprydding"
       ],
-      "hero_image": "https://o365reports.com/wp-content/uploads/2026/06/Cleanup-inactive-user-accounts-in-Active-Directory-Sample-Output-300x75.png"
+      "hero_image": "https://o365reports.com/wp-content/uploads/2026/06/Cleanup-inactive-user-accounts-in-Active-Directory-Sample-Output-300x75.png",
+      "summary": "AdminDroid has published a PowerShell script that finds inactive Active Directory accounts and automates cleanup in a controlled workflow by disabling them, moving them to a dedicated OU, and deleting them after a defined retention period. Forgotten accounts retain unnecessary access and increase the attack surface, while the script reduces the time and errors associated with manual cleanup and accounts for lastLogonTimestamp lagging by up to 14 days."
     },
     {
       "id": "msrc-update-guide-0c9904f53a",
@@ -6624,7 +6683,8 @@
         "brukeropplevelse",
         "mc1045221"
       ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Teams-Call-Small-Window.jpg?resize=840%2C365&#038;ssl=1"
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Teams-Call-Small-Window.jpg?resize=840%2C365&ssl=1",
+      "summary": "A Teams setting allows incoming calls to appear in a small window instead of the large default window, reducing disruption and letting users see what they were doing without switching windows. The optional feature is controlled under Calls in Teams settings and is described in Message Center notice MC1045221."
     },
     {
       "id": "m365-roadmap-eaf30ae1ca",
@@ -6735,7 +6795,8 @@
         "mv3",
         "perplexity"
       ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-56.webp"
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-56.webp",
+      "summary": "Microsoft Threat Intelligence uncovered a Chromium extension impersonating Perplexity AI that secretly redirects address-bar searches using Manifest V3 and declarativeNetRequest rules to capture search traffic and collect data for profiling or advertising. Google removed it after notification, but organizations should consider allowlisting browser extensions because they remain an underestimated attack surface."
     },
     {
       "id": "sentinel-blog-1fb6e495cd",
@@ -6900,7 +6961,8 @@
         "copilot-chat",
         "rollout"
       ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Copilot-memories.jpg?resize=785%2C646&#038;ssl=1"
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Copilot-memories.jpg?resize=785%2C646&ssl=1",
+      "summary": "Tony Redmond highlights two recent Microsoft 365 Copilot Chat changes announced in message center posts MC1174856 and MC1158329: conversations are now saved as continuous threads, and Copilot's memory is improving. The client-side changes require no admin action, but IT teams should understand them amid the flood of Copilot-related notifications they cannot influence."
     },
     {
       "id": "core-infra-security-7954d2e12d",
@@ -8342,7 +8404,8 @@
         "sårbarheter",
         "eol"
       ],
-      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/06/image-64.png"
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/06/image-64.png",
+      "summary": "On June 22, the Five Eyes intelligence alliance jointly urged organizations to patch known vulnerabilities faster and phase out systems that no longer receive security updates. IT administrators should review patching schedules and end-of-life system inventories before attackers exploit the gaps."
     },
     {
       "id": "defender-xdr-0cb455ad38",
@@ -8380,7 +8443,8 @@
         "wip",
         "retail"
       ],
-      "hero_image": "https://winblogs.thesourcemediaassets.com/sites/44/2026/06/taskbarsize2.png"
+      "hero_image": "https://winblogs.thesourcemediaassets.com/sites/44/2026/06/taskbarsize2.png",
+      "summary": "Microsoft is beginning to roll out the new Windows Insider setup to regular retail Windows 11 builds this week, adding new channel choices under Settings > Windows Update > Windows Insider Program. In most cases, users can now change channels or leave the program without reinstalling Windows; the rollout is gradual and accompanied by new Beta and Experimental channel builds."
     },
     {
       "id": "security-community-a7f9be34c2",
@@ -8417,7 +8481,8 @@
         "lisensiering",
         "m365"
       ],
-      "hero_image": "https://handsontek.net/images/hot2/Week%2025%202026/hero.png"
+      "hero_image": "https://handsontek.net/images/hot2/Week%2025%202026/hero.png",
+      "summary": "João Ferreira's weekly Microsoft 365 roundup focuses on Microsoft's Copilot Cowork licensing changes and the resulting reaction. Recommended articles examine the actual costs, cheaper alternatives that cover about 80% of requirements, and how licensing choices determine who can use AI at work, while the rest of the edition covers other news including SharePoint."
     },
     {
       "id": "janbakker-c43b4fa5fc",
@@ -8437,7 +8502,8 @@
         "fido2",
         "salesforce"
       ],
-      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/06/image.png"
+      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/06/image.png",
+      "summary": "Starting June 29, 2026, Entra ID will include both amr and acr claims in SAML 2.0 tokens, enabling applications such as Salesforce to identify the authentication method used and enforce phishing-resistant MFA through FIDO2 or passkeys for administrators. Organizations using Entra ID as the Salesforce identity provider should verify that their Entra policies apply before Salesforce enables the requirement on June 29."
     },
     {
       "id": "call4cloud-04ec0b9ecd",
@@ -8456,7 +8522,8 @@
         "privilege-management",
         "preview"
       ],
-      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/06/image-9.jpg"
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/06/image-9.jpg",
+      "summary": "Microsoft appears to be developing a new system settings experience in Endpoint Privilege Management, initially covering network settings and time synchronization. It would let standard users elevate privileges for selected settings without receiving full local administrator access, giving IT more granular control over self-service tasks."
     },
     {
       "id": "msrc-update-guide-cc69b599c8",
@@ -8605,7 +8672,8 @@
         "c2",
         "backdoor.turn"
       ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Attack-hero.jpg?resize=300%2C300&#038;ssl=1"
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Attack-hero.jpg?resize=300%2C300&ssl=1",
+      "summary": "DragonForce routed Backdoor.Turn malware through Microsoft Teams TURN relay servers, making command-and-control traffic resemble normal Teams activity and evade monitoring. There is no Teams vulnerability or patch; administrators should inspect traffic patterns and volumes rather than assuming all traffic to trusted Microsoft domains is safe."
     },
     {
       "id": "andrew-taylor-a94b16d4fa",
@@ -8698,7 +8766,8 @@
         "c2",
         "threat-intel"
       ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-52.webp"
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-52.webp",
+      "summary": "Since April 2026, Microsoft Threat Intelligence has tracked an ongoing multistage campaign targeting hospitality and travel organizations in Europe and Asia, using image ZIP files with fake shortcuts to launch obfuscated PowerShell, install a Node.js implant, and establish dual registry persistence with command-and-control traffic over unusual ports. The attackers use legitimate services such as Calendly and Google's URL redirection for phishing with multilingual lures, and industry administrators should hunt for these persistence mechanisms."
     },
     {
       "id": "entra-blog-ca579b06ad",
@@ -8791,7 +8860,8 @@
         "ai-agenter",
         "kundeservice"
       ],
-      "hero_image": "https://www.microsoft.com/en-us/microsoft-copilot/blog/wp-content/uploads/2026/06/MSC24-ASEAN-business-Getty-1366924099-rgb-1920-1024x683.jpg"
+      "hero_image": "https://www.microsoft.com/en-us/microsoft-copilot/blog/wp-content/uploads/2026/06/MSC24-ASEAN-business-Getty-1366924099-rgb-1920-1024x683.jpg",
+      "summary": "Microsoft provides a practical guide to designing customer-facing voice agents that are reliable, not merely capable, covering patterns, testing, and operationalization from prototype to production in Copilot Studio. It is relevant to administrators considering voice-based customer service agents, where reliability determines whether automation creates value or risk."
     },
     {
       "id": "intune-blog-20cc925cd9",
@@ -8829,7 +8899,8 @@
         "endpoint-management",
         "windows-365"
       ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/01504eb9-9949-4b9b-8ece-29256a07173b-769x1024.webp"
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/01504eb9-9949-4b9b-8ece-29256a07173b-769x1024.webp",
+      "summary": "Microsoft was named a Leader in The Forrester Wave: Endpoint Management Platforms, Q2 2026, which evaluated Intune against eight vendors and highlighted its integration of Entra, Defender, Windows, and Windows 365 in one admin console. The recognition offers little immediate action for IT administrators but can support platform and tool-selection decisions."
     },
     {
       "id": "security-community-4af4e3bc0b",
@@ -8922,7 +8993,8 @@
         "microsoft-365",
         "oppbevaring"
       ],
-      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/Create-Configure-Retention-Labels-in-Microsoft-365-for-Item-Level-Retention-150x150.png"
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/Create-Configure-Retention-Labels-in-Microsoft-365-for-Item-Level-Retention-150x150.png",
+      "summary": "AdminDroid explains how to create, publish, and apply Microsoft 365 retention labels to manage content lifecycles across Exchange, SharePoint, OneDrive, and Teams. Unlike broad retention policies, labels can assign different retention settings to individual items manually or through automatic labeling, helping administrators manage data growth and compliance requirements."
     },
     {
       "id": "prajwal-desai-690a103bb6",
@@ -9036,7 +9108,8 @@
         "mc2mc",
         "herding"
       ],
-      "hero_image": "https://assets.hybridbrothers.com/images/public-speaking/25-06-2026/image-1.jpeg"
+      "hero_image": "https://assets.hybridbrothers.com/images/public-speaking/25-06-2026/image-1.jpeg",
+      "summary": "Hybrid Brothers and Wim Matthyssen presented the security risks of running Azure Arc with its default configuration to 130 attendees at the MC2MC user group. The event recap provides no new technical guidance but reinforces that the Arc agent's default configuration should be hardened."
     },
     {
       "id": "security-community-1b6256c481",
@@ -9073,7 +9146,8 @@
         "defender-for-cloud",
         "frost-radar"
       ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/Security-2.webp"
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/Security-2.webp",
+      "summary": "Frost & Sullivan's 2026 Frost Radar for CNAPP places Microsoft among the leading cloud security platform vendors and describes CNAPP's evolution from visibility and compliance into an operational platform that correlates signals across code, cloud, runtime, and the SOC. For security teams, this means less alert noise and clearer prioritization of exploitable vulnerabilities, identities, and data exposures."
     },
     {
       "id": "call4cloud-6a8cd35a33",
@@ -9092,7 +9166,8 @@
         "graph-api",
         "automasjon"
       ],
-      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/06/image-13.jpg"
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/06/image-13.jpg",
+      "summary": "Microsoft has extended Multi Admin Approval to app-based Graph automation, causing previously unrestricted Intune app updates to fail with the x-msft-approval-justification error because they now require approval and a justification. Administrators updating apps through Graph must adapt their scripts and pipelines to prevent disruptions."
     },
     {
       "id": "msrc-blog-6d60dde7ba",
@@ -9112,7 +9187,8 @@
         "mfa-bypass",
         "defender"
       ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/attack-chain.webp"
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/attack-chain.webp",
+      "summary": "Microsoft Security analyzes the StealC infostealer family and the Amadey delivery service, which are rented as commodities in the cybercrime ecosystem; infections on employees' personal devices can steal VPN passwords, SSO tokens, and session cookies that let attackers bypass MFA and enter corporate networks. Microsoft Defender has new detections and indicators of compromise, and administrators should strengthen identity protection, credential hygiene, and rapid response to compromised accounts."
     },
     {
       "id": "admindroid-c319f2bd9e",
@@ -9131,7 +9207,8 @@
         "governance",
         "m365"
       ],
-      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/How-to-Automate-Inactive-SharePoint-Sites-Cleanup-Using-Power-Automate-150x150.png"
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/How-to-Automate-Inactive-SharePoint-Sites-Cleanup-Using-Power-Automate-150x150.png",
+      "summary": "AdminDroid shows how an approval-based Power Automate flow can automatically identify inactive SharePoint Online sites and let site owners decide whether to retain or delete them. This reduces manual review while improving storage control and lifecycle management in growing Microsoft 365 environments."
     },
     {
       "id": "andrew-taylor-83761b180a",
