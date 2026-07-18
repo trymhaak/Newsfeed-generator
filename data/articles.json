@@ -1,6 +1,82 @@
 {
-  "generated_at": "2026-07-18T03:46:25.544Z",
+  "generated_at": "2026-07-18T11:16:00.431Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-821c975758",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50012",
+      "published": "2026-07-18T08:01:40.000Z",
+      "ingested": "2026-07-18T11:16:00.345Z",
+      "title_original": "CVE-2026-50012 Squid: Memory corruption in cache_digest reply handling",
+      "headline": "Squid cache digest flaw can corrupt memory",
+      "topic": "security",
+      "score": 68,
+      "tags": [
+        "Squid",
+        "cache digest",
+        "memory corruption",
+        "CVE"
+      ],
+      "summary": "CVE-2026-50012 causes memory corruption while Squid handles cache digest replies. Administrators operating affected proxy or caching infrastructure should prioritize vendor updates because memory corruption can cause crashes or potentially more severe compromise."
+    },
+    {
+      "id": "msrc-update-guide-cc3069de14",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47729",
+      "published": "2026-07-18T08:01:34.000Z",
+      "ingested": "2026-07-18T11:16:00.345Z",
+      "title_original": "CVE-2026-47729 Squid: Memory disclosure in FTP gateway",
+      "headline": "Squid FTP gateway flaw can expose memory contents",
+      "topic": "security",
+      "score": 63,
+      "tags": [
+        "Squid",
+        "FTP gateway",
+        "memory disclosure",
+        "CVE"
+      ],
+      "summary": "CVE-2026-47729 allows memory disclosure through Squid's FTP gateway. Administrators using Squid for FTP proxying should evaluate affected versions and apply vendor guidance to reduce the risk of sensitive data exposure."
+    },
+    {
+      "id": "msrc-update-guide-0888f9e85f",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62299",
+      "published": "2026-07-18T08:01:26.000Z",
+      "ingested": "2026-07-18T11:16:00.345Z",
+      "title_original": "CVE-2026-62299 CoreDNS: rewrite-plugin EDNS0 response-revert nil-pointer panic (remote DoS) when a downstream plugin returns a response with no OPT record",
+      "headline": "CoreDNS rewrite plugin flaw enables remote denial of service",
+      "topic": "security",
+      "score": 67,
+      "tags": [
+        "CoreDNS",
+        "EDNS0",
+        "remote DoS",
+        "CVE"
+      ],
+      "summary": "CVE-2026-62299 triggers a nil-pointer panic when the CoreDNS rewrite plugin processes a downstream response without an EDNS0 OPT record. Administrators should review affected deployments because remote requests could disrupt DNS availability."
+    },
+    {
+      "id": "msrc-update-guide-c9e1c29e84",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62309",
+      "published": "2026-07-18T08:01:20.000Z",
+      "ingested": "2026-07-18T11:16:00.345Z",
+      "title_original": "CVE-2026-62309 CoreDNS: proxyproto plugin panics on PPv2 datagram with non-UDP transport — single 28-byte packet remote DoS",
+      "headline": "CoreDNS flaw lets one 28-byte packet trigger remote denial of service",
+      "topic": "security",
+      "score": 70,
+      "tags": [
+        "CoreDNS",
+        "remote DoS",
+        "Proxy Protocol",
+        "CVE"
+      ],
+      "summary": "CVE-2026-62309 causes the CoreDNS proxyproto plugin to panic when it receives a crafted Proxy Protocol v2 datagram using a non-UDP transport. Administrators running affected DNS infrastructure should assess exposure and prioritize available updates or mitigations."
+    },
     {
       "id": "msrc-update-guide-3b92d648ef",
       "source_id": "msrc-update-guide",
@@ -9166,81 +9242,6 @@
         "app-management",
         "sårbarheter",
         "auto-update"
-      ]
-    },
-    {
-      "id": "msrc-blog-7660b25b1a",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/25/microsoft-a-leader-in-the-forrester-wave-for-endpoint-management-platforms/",
-      "published": "2026-06-25T16:00:00.000Z",
-      "ingested": "2026-06-25T16:58:07.026Z",
-      "title_original": "Microsoft a Leader in The Forrester Wave™ for Endpoint Management Platforms",
-      "headline": "Microsoft a Leader in The Forrester Wave™ for Endpoint Management Platforms",
-      "topic": "endpoint",
-      "score": 25,
-      "tags": [
-        "intune",
-        "forrester",
-        "endpoint-management",
-        "windows-365"
-      ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/01504eb9-9949-4b9b-8ece-29256a07173b-769x1024.webp",
-      "summary": "Microsoft was named a Leader in The Forrester Wave: Endpoint Management Platforms, Q2 2026, which evaluated Intune against eight vendors and highlighted its integration of Entra, Defender, Windows, and Windows 365 in one admin console. The recognition offers little immediate action for IT administrators but can support platform and tool-selection decisions."
-    },
-    {
-      "id": "security-community-4af4e3bc0b",
-      "source_id": "security-community",
-      "source_name": "Microsoft Security Community Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/security-community-spotlight-sathish-veerapandian/ba-p/4530697",
-      "published": "2026-06-25T15:00:00.000Z",
-      "ingested": "2026-06-26T19:21:11.507Z",
-      "title_original": "Security Community Spotlight: Sathish Veerapandian",
-      "headline": "Security Community Spotlight: Sathish Veerapandian",
-      "topic": "security",
-      "score": 18,
-      "tags": [
-        "community",
-        "purview",
-        "defender",
-        "fido"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-c2d8c2c530",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41086",
-      "published": "2026-06-25T14:00:00.000Z",
-      "ingested": "2026-06-25T14:32:13.719Z",
-      "title_original": "CVE-2026-41086 Windows Admin Center in Azure Portal Elevation of Privilege Vulnerability",
-      "headline": "CVE-2026-41086 Windows Admin Center in Azure Portal Elevation of Privilege Vulnerability",
-      "topic": "security",
-      "score": 25,
-      "tags": [
-        "cve-2026-41086",
-        "windows-admin-center",
-        "azure",
-        "rettighetseskalering",
-        "eop"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-06637015e3",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45637",
-      "published": "2026-06-25T14:00:00.000Z",
-      "ingested": "2026-06-25T14:26:10.051Z",
-      "title_original": "CVE-2026-45637 Microsoft DWM Core Library Elevation of Privilege Vulnerability",
-      "headline": "CVE-2026-45637 Microsoft DWM Core Library Elevation of Privilege Vulnerability",
-      "topic": "security",
-      "score": 14,
-      "tags": [
-        "cve-2026-45637",
-        "dwm",
-        "msrc",
-        "rettighetseskalering"
       ]
     }
   ]
