@@ -1,6 +1,235 @@
 {
-  "generated_at": "2026-07-17T20:15:29.997Z",
+  "generated_at": "2026-07-18T03:46:25.544Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-3b92d648ef",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15905",
+      "published": "2026-07-18T00:42:44.000Z",
+      "ingested": "2026-07-18T03:46:25.458Z",
+      "title_original": "Chromium: CVE-2026-15905 Use after free in Aura",
+      "headline": "Microsoft Edge fixes Chromium use-after-free vulnerability CVE-2026-15905",
+      "topic": "security",
+      "score": 65,
+      "tags": [
+        "Microsoft Edge",
+        "Chromium",
+        "CVE",
+        "use-after-free"
+      ],
+      "summary": "Microsoft Edge has inherited Chromium's fix for a use-after-free vulnerability in the Aura interface framework. Administrators should prioritize Edge updates to reduce the risk of browser-based exploitation."
+    },
+    {
+      "id": "msrc-update-guide-fc1b345cf5",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15904",
+      "published": "2026-07-18T00:42:43.000Z",
+      "ingested": "2026-07-18T03:46:09.341Z",
+      "title_original": "Chromium: CVE-2026-15904 Use after free in Ozone",
+      "headline": "Microsoft Edge fixes use-after-free flaw in Chromium Ozone",
+      "topic": "security",
+      "score": 61,
+      "tags": [
+        "Microsoft Edge",
+        "Chromium",
+        "Ozone",
+        "CVE-2026-15904"
+      ],
+      "summary": "Microsoft Edge has ingested Chromium changes that address CVE-2026-15904, a use-after-free vulnerability in Ozone. Administrators should deploy the latest Edge security update to reduce browser exploitation risk."
+    },
+    {
+      "id": "msrc-update-guide-a749dc3d2f",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15903",
+      "published": "2026-07-18T00:42:41.000Z",
+      "ingested": "2026-07-18T03:46:09.341Z",
+      "title_original": "Chromium: CVE-2026-15903 Out of bounds read and write in V8",
+      "headline": "Microsoft Edge fixes out-of-bounds access flaw in Chromium V8",
+      "topic": "security",
+      "score": 67,
+      "tags": [
+        "Microsoft Edge",
+        "Chromium",
+        "V8",
+        "CVE-2026-15903"
+      ],
+      "summary": "Microsoft Edge has ingested Chromium changes that address CVE-2026-15903, an out-of-bounds read and write vulnerability in V8. Administrators should prioritize the latest Edge update because memory corruption in the JavaScript engine can expose users to browser-based attacks."
+    },
+    {
+      "id": "msrc-update-guide-28489bd308",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15902",
+      "published": "2026-07-18T00:42:40.000Z",
+      "ingested": "2026-07-18T03:46:09.341Z",
+      "title_original": "Chromium: CVE-2026-15902 Use after free in Cast",
+      "headline": "Microsoft Edge fixes use-after-free flaw in Chromium Cast",
+      "topic": "security",
+      "score": 59,
+      "tags": [
+        "Microsoft Edge",
+        "Chromium",
+        "Cast",
+        "CVE-2026-15902"
+      ],
+      "summary": "Microsoft Edge has ingested Chromium changes that address CVE-2026-15902, a use-after-free vulnerability in Cast functionality. Administrators should apply the latest Edge security update, especially on devices where browser casting is available."
+    },
+    {
+      "id": "msrc-update-guide-4f0f3e0409",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15901",
+      "published": "2026-07-18T00:42:39.000Z",
+      "ingested": "2026-07-18T03:46:09.341Z",
+      "title_original": "Chromium: CVE-2026-15901 Use after free in Network",
+      "headline": "Microsoft Edge fixes use-after-free flaw in Chromium networking",
+      "topic": "security",
+      "score": 63,
+      "tags": [
+        "Microsoft Edge",
+        "Chromium",
+        "networking",
+        "CVE-2026-15901"
+      ],
+      "summary": "Microsoft Edge has ingested Chromium changes that address CVE-2026-15901, a use-after-free vulnerability in network handling. Administrators should update Edge across managed devices to reduce exposure from malicious or compromised web services."
+    },
+    {
+      "id": "msrc-update-guide-0e87283df7",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15900",
+      "published": "2026-07-18T00:42:38.000Z",
+      "ingested": "2026-07-18T03:46:09.341Z",
+      "title_original": "Chromium: CVE-2026-15900 Use after free in GPU",
+      "headline": "Microsoft Edge fixes use-after-free flaw in Chromium GPU code",
+      "topic": "security",
+      "score": 63,
+      "tags": [
+        "Microsoft Edge",
+        "Chromium",
+        "GPU",
+        "CVE-2026-15900"
+      ],
+      "summary": "Microsoft Edge has ingested Chromium changes that address CVE-2026-15900, a use-after-free vulnerability in GPU processing. Administrators should deploy the latest Edge update to protect endpoints from malicious graphics content that could trigger memory corruption."
+    },
+    {
+      "id": "msrc-update-guide-49062a597b",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15899",
+      "published": "2026-07-18T00:42:35.000Z",
+      "ingested": "2026-07-18T03:46:09.341Z",
+      "title_original": "Chromium: CVE-2026-15899 Use after free in CameraCapture",
+      "headline": "Microsoft Edge fixes use-after-free flaw in Chromium CameraCapture",
+      "topic": "security",
+      "score": 59,
+      "tags": [
+        "Microsoft Edge",
+        "Chromium",
+        "CameraCapture",
+        "CVE-2026-15899"
+      ],
+      "summary": "Microsoft Edge has ingested Chromium changes that address CVE-2026-15899, a use-after-free vulnerability in CameraCapture. Administrators should update managed browsers to limit exposure when users interact with camera-enabled web content."
+    },
+    {
+      "id": "m365-roadmap-7ebc24cf9d",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567893",
+      "published": "2026-07-17T22:12:56.000Z",
+      "ingested": "2026-07-18T03:45:43.184Z",
+      "title_original": "Microsoft Viva: Copilot Analytics - Agent 365 dashboard for managers",
+      "headline": "Copilot Analytics adds Agent 365 activity dashboard for managers",
+      "topic": "ai",
+      "score": 48,
+      "tags": [
+        "Agent 365",
+        "Copilot Analytics",
+        "agent monitoring",
+        "Viva Insights"
+      ],
+      "summary": "Managers will gain access to current and historical Agent 365 activity through the Copilot Analytics Agent Dashboard. The August 2026 release will help organizations monitor adoption and understand the use of centrally registered agents."
+    },
+    {
+      "id": "m365-roadmap-8603fa0df0",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567890",
+      "published": "2026-07-17T22:12:56.000Z",
+      "ingested": "2026-07-18T03:45:43.184Z",
+      "title_original": "Microsoft Purview: Information Protection - Auto-labeling scale increase for SharePoint and OneDrive",
+      "headline": "Purview raises daily auto-labeling capacity to 500,000 files",
+      "topic": "security",
+      "score": 55,
+      "tags": [
+        "Microsoft Purview",
+        "auto-labeling",
+        "sensitivity labels",
+        "SharePoint",
+        "OneDrive"
+      ],
+      "summary": "Microsoft Purview will increase auto-labeling capacity for SharePoint and OneDrive from 100,000 to 500,000 files per tenant each day. Administrators can protect existing data faster, reduce sensitivity-labeling gaps, and better prepare content for Microsoft 365 Copilot."
+    },
+    {
+      "id": "m365-roadmap-1f53766ce7",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567888",
+      "published": "2026-07-17T22:12:56.000Z",
+      "ingested": "2026-07-18T03:45:43.184Z",
+      "title_original": "Outlook: All Day events to show up more clearly in the Mail module Calendar Preview",
+      "headline": "Outlook highlights all-day scheduling conflicts in meeting invitations",
+      "topic": "endpoint",
+      "score": 13,
+      "tags": [
+        "Outlook",
+        "calendar",
+        "meeting invites",
+        "Windows"
+      ],
+      "summary": "Outlook on the web and Windows will make conflicts with out-of-office periods and busy all-day events easier to identify. The change may reduce scheduling mistakes but has limited relevance to security administration."
+    },
+    {
+      "id": "m365-roadmap-7cf72c1f36",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567884",
+      "published": "2026-07-17T22:12:56.000Z",
+      "ingested": "2026-07-18T03:45:43.184Z",
+      "title_original": "Microsoft Teams: External phone call routing (GCC High, DoD)",
+      "headline": "Teams adds external call routing for GCC High and DoD users",
+      "topic": "endpoint",
+      "score": 29,
+      "tags": [
+        "Microsoft Teams",
+        "GCC High",
+        "DoD",
+        "call routing"
+      ],
+      "summary": "Teams users in GCC High and DoD environments will be able to route all external calls to voicemail or their unanswered-call settings. Administrators should review calling policies before the September 2026 rollout, although the change has limited security impact."
+    },
+    {
+      "id": "m365-roadmap-ba339e7d91",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567670",
+      "published": "2026-07-17T22:12:56.000Z",
+      "ingested": "2026-07-18T03:45:43.184Z",
+      "title_original": "Microsoft Copilot (Microsoft 365): Use Agent 365 agents within Microsoft 365 Copilot Chat and Declarative Agents",
+      "headline": "Microsoft 365 Copilot connects Agent 365 agents through Agent2Agent",
+      "topic": "ai",
+      "score": 52,
+      "tags": [
+        "Agent 365",
+        "Agent2Agent",
+        "Copilot Studio",
+        "Agent Builder"
+      ],
+      "summary": "Agents published to Agent 365 will work as connected agents in Agent Builder and Copilot Studio when they implement the Agent2Agent protocol. Administrators can centrally manage reusable agents through the Microsoft 365 admin center ahead of general availability in August 2026."
+    },
     {
       "id": "msrc-blog-b5cc185770",
       "source_id": "msrc-blog",
@@ -20,6 +249,24 @@
       ],
       "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/MISA-demo-presence.jpg",
       "summary": "Microsoft outlines how attackers exploit trusted packages, build pipelines, identities, tools, and AI agents to reach enterprise systems. IT administrators should review access controls and monitoring across software supply chains, cloud services, and AI workloads."
+    },
+    {
+      "id": "msrc-update-guide-3da7bcf4ea",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56159",
+      "published": "2026-07-17T14:00:00.000Z",
+      "ingested": "2026-07-18T03:46:25.458Z",
+      "title_original": "CVE-2026-56159 DHCP Server Service Remote Code Execution Vulnerability",
+      "headline": "Microsoft adds acknowledgements for DHCP Server vulnerability CVE-2026-56159",
+      "topic": "security",
+      "score": 23,
+      "tags": [
+        "DHCP Server",
+        "CVE",
+        "remote code execution"
+      ],
+      "summary": "Microsoft updated the advisory for the DHCP Server remote code execution vulnerability with acknowledgements only. The change adds no new technical details or remediation guidance, so administrators do not need to alter existing patching plans."
     },
     {
       "id": "msrc-update-guide-1dfdb8056c",
@@ -387,6 +634,25 @@
         "deling",
         "samarbeid"
       ]
+    },
+    {
+      "id": "m365-copilot-6d02c83ba4",
+      "source_id": "m365-copilot",
+      "source_name": "Microsoft 365 Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/join-us-live-understanding-copilot-cowork-and-managing-copilot/ba-p/4537935",
+      "published": "2026-07-16T16:36:52.000Z",
+      "ingested": "2026-07-18T03:45:43.184Z",
+      "title_original": "Join Us Live: Understanding Copilot Cowork and Managing Copilot Credits",
+      "headline": "Microsoft schedules Copilot Cowork and Credits management AMA",
+      "topic": "ai",
+      "score": 25,
+      "tags": [
+        "Copilot Cowork",
+        "Copilot Credits",
+        "governance",
+        "cost management"
+      ],
+      "summary": "Microsoft will host a live session on Copilot Cowork adoption, governance, scaling, and credit allocation. Administrators can use the guidance to improve usage visibility and control consumption-based AI costs."
     },
     {
       "id": "msrc-blog-75f2a6e6f9",
@@ -8975,278 +9241,6 @@
         "dwm",
         "msrc",
         "rettighetseskalering"
-      ]
-    },
-    {
-      "id": "m365-blog-8f02988b1b",
-      "source_id": "m365-blog",
-      "source_name": "Microsoft 365 Blog (official)",
-      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/25/copilot-in-excel-built-for-the-era-of-frontier-finance/",
-      "published": "2026-06-25T13:00:00.000Z",
-      "ingested": "2026-06-28T17:57:45.958Z",
-      "title_original": "Copilot in Excel: Built for the era of Frontier Finance",
-      "headline": "Copilot in Excel: Built for the era of Frontier Finance",
-      "topic": "ai",
-      "score": 26,
-      "tags": [
-        "copilot",
-        "excel",
-        "m365",
-        "finans"
-      ]
-    },
-    {
-      "id": "admindroid-53a06cfd41",
-      "source_id": "admindroid",
-      "source_name": "AdminDroid Blog",
-      "url": "https://blog.admindroid.com/how-to-configure-retention-labels-in-microsoft-365/",
-      "published": "2026-06-25T10:29:52.000Z",
-      "ingested": "2026-06-25T10:31:44.225Z",
-      "title_original": "How to Configure Retention Labels in Microsoft 365",
-      "headline": "How to Configure Retention Labels in Microsoft 365",
-      "topic": "security",
-      "score": 25,
-      "tags": [
-        "purview",
-        "retention",
-        "compliance",
-        "microsoft-365",
-        "oppbevaring"
-      ],
-      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/Create-Configure-Retention-Labels-in-Microsoft-365-for-Item-Level-Retention-150x150.png",
-      "summary": "AdminDroid explains how to create, publish, and apply Microsoft 365 retention labels to manage content lifecycles across Exchange, SharePoint, OneDrive, and Teams. Unlike broad retention policies, labels can assign different retention settings to individual items manually or through automatic labeling, helping administrators manage data growth and compliance requirements."
-    },
-    {
-      "id": "prajwal-desai-690a103bb6",
-      "source_id": "prajwal-desai",
-      "source_name": "Prajwal Desai",
-      "url": "https://www.prajwaldesai.com/windows-11-kb5095093-out-with-new-features-and-improvements/",
-      "published": "2026-06-25T08:49:46.000Z",
-      "ingested": "2026-06-25T08:52:33.760Z",
-      "title_original": "Windows 11 KB5095093 out with New Features and Improvements",
-      "headline": "Windows 11 KB5095093 out with New Features and Improvements",
-      "topic": "endpoint",
-      "score": 39,
-      "tags": [
-        "windows-11",
-        "kb5095093",
-        "24h2",
-        "25h2",
-        "oppdatering"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-17a6e2e2bb",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-4367",
-      "published": "2026-06-25T08:03:53.000Z",
-      "ingested": "2026-06-25T07:07:17.147Z",
-      "title_original": "CVE-2026-4367 Libxpm: libxpm: denial of service via out-of-bounds read in xpm file parsing",
-      "headline": "CVE-2026-4367 Libxpm: libxpm: denial of service via out-of-bounds read in xpm file parsing",
-      "topic": "security",
-      "score": 36,
-      "tags": [
-        "libxpm",
-        "dos",
-        "cve-2026-4367",
-        "out-of-bounds",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-8f5311cd4f",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-11816",
-      "published": "2026-06-25T08:03:45.000Z",
-      "ingested": "2026-06-25T07:07:17.145Z",
-      "title_original": "CVE-2026-11816 Path Traversal in keras-team/keras",
-      "headline": "CVE-2026-11816 Path Traversal in keras-team/keras",
-      "topic": "security",
-      "score": 47,
-      "tags": [
-        "keras",
-        "path-traversal",
-        "cve-2026-11816",
-        "ai",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-d6fbcefd7b",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46140",
-      "published": "2026-06-25T08:03:39.000Z",
-      "ingested": "2026-06-25T07:24:09.519Z",
-      "title_original": "CVE-2026-46140 Bluetooth: btmtk: validate WMT event SKB length before struct access",
-      "headline": "CVE-2026-46140 Bluetooth: btmtk: validate WMT event SKB length before struct access",
-      "topic": "security",
-      "score": 32,
-      "tags": [
-        "cve-2026-46140",
-        "bluetooth",
-        "linux",
-        "mediatek",
-        "kjerne"
-      ]
-    },
-    {
-      "id": "office365-itpros-1b583b5cdf",
-      "source_id": "office365-itpros",
-      "source_name": "Office 365 for IT Pros (Tony Redmond)",
-      "url": "https://office365itpros.com/2026/06/25/graph-delta-queries-entra-id-groups/?utm_source=rss&utm_medium=rss&utm_campaign=graph-delta-queries-entra-id-groups",
-      "published": "2026-06-25T07:00:00.000Z",
-      "ingested": "2026-06-25T07:01:12.062Z",
-      "title_original": "Using Graph Delta Queries with Entra ID Groups",
-      "headline": "Using Graph Delta Queries with Entra ID Groups",
-      "topic": "identity",
-      "score": 35,
-      "tags": [
-        "entra-id",
-        "microsoft-graph",
-        "delta-query",
-        "grupper",
-        "rapportering"
-      ]
-    },
-    {
-      "id": "hybridbrothers-d11492d823",
-      "source_id": "hybridbrothers",
-      "source_name": "Hybrid Brothers",
-      "url": "https://hybridbrothers.com/public-speaking/25-06-2025/",
-      "published": "2026-06-25T00:00:00.000Z",
-      "ingested": "2026-06-29T22:05:16.533Z",
-      "title_original": "MC2MC Live - Zero Trust Rising",
-      "headline": "MC2MC Live - Zero Trust Rising",
-      "topic": "security",
-      "score": 20,
-      "tags": [
-        "azure-arc",
-        "konferanse",
-        "mc2mc",
-        "herding"
-      ],
-      "hero_image": "https://assets.hybridbrothers.com/images/public-speaking/25-06-2026/image-1.jpeg",
-      "summary": "Hybrid Brothers and Wim Matthyssen presented the security risks of running Azure Arc with its default configuration to 130 attendees at the MC2MC user group. The event recap provides no new technical guidance but reinforces that the Arc agent's default configuration should be hardened."
-    },
-    {
-      "id": "security-community-1b6256c481",
-      "source_id": "security-community",
-      "source_name": "Microsoft Security Community Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/how-karambit-ai-and-microsoft-bring-software-authenticity-to-14/ba-p/4528606",
-      "published": "2026-06-24T20:30:26.000Z",
-      "ingested": "2026-06-25T12:52:24.345Z",
-      "title_original": "How Karambit.AI and Microsoft Bring Software Authenticity to 14 Billion Files Per Month",
-      "headline": "How Karambit.AI and Microsoft Bring Software Authenticity to 14 Billion Files Per Month",
-      "topic": "security",
-      "score": 40,
-      "tags": [
-        "malware",
-        "supply-chain",
-        "atferdsanalyse",
-        "karambit"
-      ]
-    },
-    {
-      "id": "msrc-blog-bd8544c2da",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/24/cnapp-evolution-how-microsoft-aligns-with-leading-cloud-risk-management-platforms/",
-      "published": "2026-06-24T18:00:00.000Z",
-      "ingested": "2026-06-24T21:05:49.530Z",
-      "title_original": "CNAPP evolution: How Microsoft aligns with leading cloud risk management platforms",
-      "headline": "CNAPP evolution: How Microsoft aligns with leading cloud risk management platforms",
-      "topic": "security",
-      "score": 25,
-      "tags": [
-        "cnapp",
-        "skysikkerhet",
-        "defender-for-cloud",
-        "frost-radar"
-      ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/Security-2.webp",
-      "summary": "Frost & Sullivan's 2026 Frost Radar for CNAPP places Microsoft among the leading cloud security platform vendors and describes CNAPP's evolution from visibility and compliance into an operational platform that correlates signals across code, cloud, runtime, and the SOC. For security teams, this means less alert noise and clearer prioritization of exploitable vulnerabilities, identities, and data exposures."
-    },
-    {
-      "id": "call4cloud-6a8cd35a33",
-      "source_id": "call4cloud",
-      "source_name": "Call4Cloud (Rudy Ooms)",
-      "url": "https://patchmypc.com/blog/intune-multi-admin-approval-the-x-msft-approval-justification-error/",
-      "published": "2026-06-24T14:08:29.000Z",
-      "ingested": "2026-06-24T15:07:16.610Z",
-      "title_original": "Intune Multi Admin Approval: The x-msft-approval-justification Error",
-      "headline": "Intune Multi Admin Approval: The x-msft-approval-justification Error",
-      "topic": "endpoint",
-      "score": 46,
-      "tags": [
-        "intune",
-        "multi-admin-approval",
-        "graph-api",
-        "automasjon"
-      ],
-      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/06/image-13.jpg",
-      "summary": "Microsoft has extended Multi Admin Approval to app-based Graph automation, causing previously unrestricted Intune app updates to fail with the x-msft-approval-justification error because they now require approval and a justification. Administrators updating apps through Graph must adapt their scripts and pipelines to prevent disruptions."
-    },
-    {
-      "id": "msrc-blog-6d60dde7ba",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/24/stealc-and-amadey-breaking-down-infostealers-and-the-cybercrime-services-that-deliver-them/",
-      "published": "2026-06-24T12:30:00.000Z",
-      "ingested": "2026-06-24T13:07:26.560Z",
-      "title_original": "StealC and Amadey: Breaking down infostealers and the cybercrime services that deliver them",
-      "headline": "StealC and Amadey: Breaking down infostealers and the cybercrime services that deliver them",
-      "topic": "security",
-      "score": 64,
-      "tags": [
-        "infostealer",
-        "stealc",
-        "amadey",
-        "mfa-bypass",
-        "defender"
-      ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/attack-chain.webp",
-      "summary": "Microsoft Security analyzes the StealC infostealer family and the Amadey delivery service, which are rented as commodities in the cybercrime ecosystem; infections on employees' personal devices can steal VPN passwords, SSO tokens, and session cookies that let attackers bypass MFA and enter corporate networks. Microsoft Defender has new detections and indicators of compromise, and administrators should strengthen identity protection, credential hygiene, and rapid response to compromised accounts."
-    },
-    {
-      "id": "admindroid-c319f2bd9e",
-      "source_id": "admindroid",
-      "source_name": "AdminDroid Blog",
-      "url": "https://blog.admindroid.com/cleanup-inactive-sharepoint-online-sites-using-power-automate/",
-      "published": "2026-06-24T11:14:07.000Z",
-      "ingested": "2026-06-24T11:23:10.016Z",
-      "title_original": "How to Automate Inactive SharePoint Sites Cleanup Using Power Automate",
-      "headline": "How to Automate Inactive SharePoint Sites Cleanup Using Power Automate",
-      "topic": "security",
-      "score": 26,
-      "tags": [
-        "sharepoint",
-        "power-automate",
-        "governance",
-        "m365"
-      ],
-      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/06/How-to-Automate-Inactive-SharePoint-Sites-Cleanup-Using-Power-Automate-150x150.png",
-      "summary": "AdminDroid shows how an approval-based Power Automate flow can automatically identify inactive SharePoint Online sites and let site owners decide whether to retain or delete them. This reduces manual review while improving storage control and lifecycle management in growing Microsoft 365 environments."
-    },
-    {
-      "id": "andrew-taylor-83761b180a",
-      "source_id": "andrew-taylor",
-      "source_name": "Andrew Taylor (andrewstaylor.com)",
-      "url": "https://andrewstaylor.com/2026/06/24/what-do-i-really-get-with-intune-suite/",
-      "published": "2026-06-24T10:56:19.000Z",
-      "ingested": "2026-06-24T11:01:25.584Z",
-      "title_original": "What do I really get with Intune Suite?",
-      "headline": "What do I really get with Intune Suite?",
-      "topic": "endpoint",
-      "score": 35,
-      "tags": [
-        "intune",
-        "intune-suite",
-        "lisensiering",
-        "epm",
-        "remote-help"
       ]
     }
   ]
