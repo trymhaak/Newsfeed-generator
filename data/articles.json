@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-07-18T11:16:00.431Z",
+  "generated_at": "2026-07-18T18:45:48.740Z",
   "articles": [
+    {
+      "id": "call4cloud-e362cc453e",
+      "source_id": "call4cloud",
+      "source_name": "Call4Cloud (Rudy Ooms)",
+      "url": "https://patchmypc.com/blog/custom-compliance-policies-and-the-eight-hour-waiting-fix/",
+      "published": "2026-07-18T10:36:57.000Z",
+      "ingested": "2026-07-18T18:45:48.628Z",
+      "title_original": "Intune Custom Compliance Could Move Beyond the 8 Hour Wait",
+      "headline": "Intune Custom Compliance May Reduce the Eight-Hour Evaluation Delay",
+      "topic": "endpoint",
+      "score": 34,
+      "tags": [
+        "Intune",
+        "custom compliance",
+        "device evaluation",
+        "remediation"
+      ],
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image-3.png",
+      "summary": "Intune custom compliance policies may support faster evaluations instead of making administrators wait up to eight hours for refreshed results. Shorter delays could help security teams detect and remediate noncompliant endpoints sooner."
+    },
     {
       "id": "msrc-update-guide-821c975758",
       "source_id": "msrc-update-guide",
@@ -9224,25 +9244,6 @@
       ],
       "hero_image": "https://www.microsoft.com/en-us/microsoft-copilot/blog/wp-content/uploads/2026/06/MSC24-ASEAN-business-Getty-1366924099-rgb-1920-1024x683.jpg",
       "summary": "Microsoft provides a practical guide to designing customer-facing voice agents that are reliable, not merely capable, covering patterns, testing, and operationalization from prototype to production in Copilot Studio. It is relevant to administrators considering voice-based customer service agents, where reliability determines whether automation creates value or risk."
-    },
-    {
-      "id": "intune-blog-20cc925cd9",
-      "source_id": "intune-blog",
-      "source_name": "Microsoft Intune Customer Success Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-intune-blog/what-s-new-in-microsoft-intune-june/ba-p/4491983",
-      "published": "2026-06-25T16:00:00.000Z",
-      "ingested": "2026-06-25T18:06:46.430Z",
-      "title_original": "What’s new in Microsoft Intune – June",
-      "headline": "What’s new in Microsoft Intune – June",
-      "topic": "endpoint",
-      "score": 65,
-      "tags": [
-        "intune",
-        "eam",
-        "app-management",
-        "sårbarheter",
-        "auto-update"
-      ]
     }
   ]
 }
