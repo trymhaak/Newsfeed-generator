@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-07-19T02:15:57.240Z",
+  "generated_at": "2026-07-19T23:49:38.943Z",
   "articles": [
+    {
+      "id": "mikemdm-c83236e93f",
+      "source_id": "mikemdm",
+      "source_name": "Mike's MDM Blog",
+      "url": "https://mikemdm.de/2026/07/19/avd-hybrid-allows-for-vdi-on-any-hypervisor/",
+      "published": "2026-07-19T11:19:04.000Z",
+      "ingested": "2026-07-19T23:49:38.881Z",
+      "title_original": "AVD Hybrid allows for VDI on any Hypervisor",
+      "headline": "Azure Virtual Desktop Hybrid brings VDI to any hypervisor",
+      "topic": "endpoint",
+      "score": 48,
+      "tags": [
+        "Azure Virtual Desktop",
+        "Azure Arc",
+        "VDI",
+        "Windows"
+      ],
+      "hero_image": "https://mikemdm.de/wp-content/uploads/2026/07/grafik-9.png",
+      "summary": "Microsoft is previewing Azure Virtual Desktop Hybrid for running VDI workloads on Azure Arc-enabled Windows machines across third-party hypervisors. IT administrators can reuse existing infrastructure while managing supported Windows 11 and Windows Server hosts through Azure."
+    },
     {
       "id": "call4cloud-e362cc453e",
       "source_id": "call4cloud",
@@ -9223,25 +9243,6 @@
         "wac",
         "release",
         "administration-mode"
-      ]
-    },
-    {
-      "id": "m365-copilot-a88f582cb7",
-      "source_id": "m365-copilot",
-      "source_name": "Microsoft 365 Copilot Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/learning-agent-now-generally-available-personalized-ai/ba-p/4524571",
-      "published": "2026-06-25T16:02:52.000Z",
-      "ingested": "2026-06-25T18:06:46.431Z",
-      "title_original": "Learning Agent now generally available — personalized AI upskilling for every employee",
-      "headline": "Learning Agent now generally available — personalized AI upskilling for every employee",
-      "topic": "ai",
-      "score": 56,
-      "tags": [
-        "copilot",
-        "m365",
-        "learning-agent",
-        "ai-skilling",
-        "work-iq"
       ]
     }
   ]
