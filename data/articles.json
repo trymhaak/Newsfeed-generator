@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T18:45:48.740Z",
+  "generated_at": "2026-07-19T02:15:57.240Z",
   "articles": [
     {
       "id": "call4cloud-e362cc453e",
@@ -4709,6 +4709,25 @@
       ]
     },
     {
+      "id": "intune-blog-20cc925cd9",
+      "source_id": "intune-blog",
+      "source_name": "Microsoft Intune Customer Success Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-intune-blog/what-s-new-in-microsoft-intune-june/ba-p/4491983",
+      "published": "2026-07-06T16:53:47.000Z",
+      "ingested": "2026-07-19T02:15:57.155Z",
+      "title_original": "What’s new in Microsoft Intune – June",
+      "headline": "Intune EAM Now Automatically Updates Managed Applications",
+      "topic": "endpoint",
+      "score": 78,
+      "tags": [
+        "Intune",
+        "EAM",
+        "application updates",
+        "vulnerability management"
+      ],
+      "summary": "Microsoft has made Intune Enterprise Application Management auto-updates generally available for incremental application releases. IT administrators can reduce manual packaging, version drift, and exposure to known vulnerabilities across managed endpoints."
+    },
+    {
       "id": "msrc-blog-9416dfd671",
       "source_id": "msrc-blog",
       "source_name": "Microsoft Security Blog",
@@ -9224,26 +9243,6 @@
         "ai-skilling",
         "work-iq"
       ]
-    },
-    {
-      "id": "copilot-studio-a23d4ce517",
-      "source_id": "copilot-studio",
-      "source_name": "Microsoft Copilot Studio Blog",
-      "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/building-reliable-voice-agents-a-practical-guide/",
-      "published": "2026-06-25T16:00:00.000Z",
-      "ingested": "2026-07-02T19:28:20.632Z",
-      "title_original": "Building reliable voice agents: A practical guide",
-      "headline": "Building reliable voice agents: A practical guide",
-      "topic": "ai",
-      "score": 36,
-      "tags": [
-        "copilot-studio",
-        "stemmeagenter",
-        "ai-agenter",
-        "kundeservice"
-      ],
-      "hero_image": "https://www.microsoft.com/en-us/microsoft-copilot/blog/wp-content/uploads/2026/06/MSC24-ASEAN-business-Getty-1366924099-rgb-1920-1024x683.jpg",
-      "summary": "Microsoft provides a practical guide to designing customer-facing voice agents that are reliable, not merely capable, covering patterns, testing, and operationalization from prototype to production in Copilot Studio. It is relevant to administrators considering voice-based customer service agents, where reliability determines whether automation creates value or risk."
     }
   ]
 }

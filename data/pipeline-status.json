@@ -1,7 +1,7 @@
 {
   "article_count": 500,
-  "checked_at": "2026-07-18T18:45:48Z",
-  "generated_at": "2026-07-18T18:45:48.740Z",
+  "checked_at": "2026-07-19T02:15:57Z",
+  "generated_at": "2026-07-19T02:15:57.240Z",
   "schema": "newsfeed_pipeline_status.v1",
   "source": "ops/launchd/run-pipeline.sh"
 }
