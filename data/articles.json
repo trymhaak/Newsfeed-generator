@@ -1,6 +1,311 @@
 {
-  "generated_at": "2026-07-19T23:49:38.943Z",
+  "generated_at": "2026-07-20T13:52:41.062Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-1dde859563",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63834",
+      "published": "2026-07-20T08:05:09.000Z",
+      "ingested": "2026-07-20T13:52:40.963Z",
+      "title_original": "CVE-2026-63834 batman-adv: tp_meter: restrict number of unacked list entries",
+      "headline": "Linux batman-adv limits unacknowledged throughput-meter entries",
+      "topic": "security",
+      "score": 47,
+      "tags": [
+        "CVE",
+        "Linux kernel",
+        "batman-adv",
+        "mesh networking"
+      ],
+      "summary": "CVE-2026-63834 restricts the number of unacknowledged entries maintained by the Linux batman-adv throughput meter. Administrators using mesh-networking features should review affected kernels and install the relevant security update."
+    },
+    {
+      "id": "msrc-update-guide-b9fdb86cfe",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63803",
+      "published": "2026-07-20T08:05:02.000Z",
+      "ingested": "2026-07-20T13:52:40.963Z",
+      "title_original": "CVE-2026-63803 hdlc_ppp: sync per-proto timers before freeing hdlc state",
+      "headline": "Linux HDLC PPP synchronizes timers before freeing state",
+      "topic": "security",
+      "score": 47,
+      "tags": [
+        "CVE",
+        "Linux kernel",
+        "HDLC",
+        "PPP"
+      ],
+      "summary": "CVE-2026-63803 fixes Linux HDLC PPP timer synchronization before the driver frees its state. Administrators using affected Linux networking components should evaluate exposure and apply the relevant security update."
+    },
+    {
+      "id": "msrc-update-guide-a3e63897c5",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63809",
+      "published": "2026-07-20T08:04:44.000Z",
+      "ingested": "2026-07-20T13:52:40.963Z",
+      "title_original": "CVE-2026-63809 bpf: use kvfree() for replaced sysctl write buffer",
+      "headline": "Linux BPF frees replaced sysctl write buffers safely",
+      "topic": "security",
+      "score": 47,
+      "tags": [
+        "CVE",
+        "Linux kernel",
+        "BPF",
+        "memory safety"
+      ],
+      "summary": "CVE-2026-63809 changes Linux BPF code to use kvfree() for a replaced sysctl write buffer. Administrators should review affected Linux systems and deploy the relevant security update to reduce memory-handling risk."
+    },
+    {
+      "id": "msrc-update-guide-9736462c3c",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53393",
+      "published": "2026-07-20T08:04:37.000Z",
+      "ingested": "2026-07-20T13:52:40.963Z",
+      "title_original": "CVE-2026-53393 nfsd: reset write verifier on deferred writeback errors",
+      "headline": "Linux nfsd resets write verifier after deferred writeback errors",
+      "topic": "security",
+      "score": 47,
+      "tags": [
+        "CVE",
+        "Linux kernel",
+        "NFS",
+        "nfsd"
+      ],
+      "summary": "CVE-2026-53393 addresses how Linux nfsd handles the write verifier after deferred writeback errors. Administrators running Linux-based NFS servers should assess affected systems and apply the relevant security update."
+    },
+    {
+      "id": "msrc-update-guide-109d4518f7",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53375",
+      "published": "2026-07-20T08:04:18.000Z",
+      "ingested": "2026-07-20T13:52:20.722Z",
+      "title_original": "CVE-2026-53375 drm/amdgpu/vce: Prevent partial address patches",
+      "headline": "Linux AMDGPU VCE prevents partial address patches",
+      "topic": "security",
+      "score": 49,
+      "tags": [
+        "Linux kernel",
+        "AMDGPU",
+        "VCE",
+        "CVE"
+      ],
+      "summary": "A Linux kernel update prevents partial address patches in the AMDGPU VCE driver, tracked as CVE-2026-53375. Administrators running Linux systems with affected AMD graphics hardware should review exposure and deploy the relevant kernel update."
+    },
+    {
+      "id": "msrc-update-guide-492b037740",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63829",
+      "published": "2026-07-20T08:04:12.000Z",
+      "ingested": "2026-07-20T13:52:20.722Z",
+      "title_original": "CVE-2026-63829 net: ip_gre: require CAP_NET_ADMIN in the device netns for changelink",
+      "headline": "Linux GRE changes now require network administration privileges",
+      "topic": "security",
+      "score": 56,
+      "tags": [
+        "Linux kernel",
+        "GRE",
+        "CAP_NET_ADMIN",
+        "network namespace"
+      ],
+      "summary": "A Linux kernel update requires CAP_NET_ADMIN in the device network namespace for GRE changelink operations, tracked as CVE-2026-63829. Administrators using containers or network namespaces should patch affected systems to prevent unauthorized tunnel changes."
+    },
+    {
+      "id": "msrc-update-guide-ffc9a0fa9b",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63826",
+      "published": "2026-07-20T08:03:53.000Z",
+      "ingested": "2026-07-20T13:52:20.722Z",
+      "title_original": "CVE-2026-63826 fbdev: fix use-after-free in store_modes()",
+      "headline": "Linux fbdev fixes a use-after-free flaw in mode handling",
+      "topic": "security",
+      "score": 58,
+      "tags": [
+        "Linux kernel",
+        "fbdev",
+        "use-after-free",
+        "memory safety"
+      ],
+      "summary": "A Linux kernel update fixes a use-after-free vulnerability in the fbdev store_modes function, tracked as CVE-2026-63826. Administrators should patch affected kernels because memory-safety flaws can cause crashes or enable further exploitation."
+    },
+    {
+      "id": "msrc-update-guide-4af6a00f3d",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63833",
+      "published": "2026-07-20T08:03:29.000Z",
+      "ingested": "2026-07-20T13:52:20.722Z",
+      "title_original": "CVE-2026-63833 ntfs3: reject direct userspace writes to reserved $LX* xattrs",
+      "headline": "Linux NTFS3 blocks userspace writes to reserved extended attributes",
+      "topic": "security",
+      "score": 52,
+      "tags": [
+        "Linux kernel",
+        "NTFS3",
+        "xattr",
+        "filesystem"
+      ],
+      "summary": "A Linux kernel update makes NTFS3 reject direct userspace writes to reserved $LX extended attributes, tracked as CVE-2026-63833. Administrators using NTFS volumes on Linux should update affected systems to prevent unsafe modification of filesystem metadata."
+    },
+    {
+      "id": "msrc-update-guide-4c1468e16c",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63806",
+      "published": "2026-07-20T08:03:04.000Z",
+      "ingested": "2026-07-20T13:52:20.722Z",
+      "title_original": "CVE-2026-63806 KVM: Replace guest-triggerable BUG_ON() in ioeventfd datamatch with get_unaligned()",
+      "headline": "Linux KVM removes a guest-triggerable kernel crash condition",
+      "topic": "security",
+      "score": 59,
+      "tags": [
+        "Linux kernel",
+        "KVM",
+        "virtualization",
+        "denial of service"
+      ],
+      "summary": "A Linux kernel update replaces a guest-triggerable BUG_ON condition in KVM ioeventfd handling, tracked as CVE-2026-63806. Administrators hosting virtual machines should assess affected kernels because a guest may be able to trigger a host failure."
+    },
+    {
+      "id": "msrc-update-guide-f688c9ed30",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53376",
+      "published": "2026-07-20T08:02:57.000Z",
+      "ingested": "2026-07-20T13:52:20.722Z",
+      "title_original": "CVE-2026-53376 drm/amdkfd: Add upper bound check for num_of_nodes",
+      "headline": "Linux kernel adds an upper bound check for AMD KFD node counts",
+      "topic": "security",
+      "score": 47,
+      "tags": [
+        "Linux kernel",
+        "AMD KFD",
+        "bounds check",
+        "CVE"
+      ],
+      "summary": "A Linux kernel update adds an upper bound check for AMD KFD node counts tracked as CVE-2026-53376. Administrators running Linux systems with supported AMD GPUs should review affected versions and apply the relevant security update."
+    },
+    {
+      "id": "msrc-update-guide-e0a413db8e",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53374",
+      "published": "2026-07-20T08:02:39.000Z",
+      "ingested": "2026-07-20T13:51:57.605Z",
+      "title_original": "CVE-2026-53374 drm/amdgpu: zero-initialize GART table on allocation",
+      "headline": "MSRC publishes CVE-2026-53374 for AMDGPU GART allocation",
+      "topic": "security",
+      "score": 49,
+      "tags": [
+        "CVE-2026-53374",
+        "Linux kernel",
+        "AMDGPU",
+        "memory initialization"
+      ],
+      "summary": "MSRC published information about the Linux AMDGPU driver failing to zero-initialize a GART table during allocation. Administrators managing affected Linux systems with AMD graphics should assess risk and apply applicable updates."
+    },
+    {
+      "id": "msrc-update-guide-be5d2ac3b5",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53392",
+      "published": "2026-07-20T08:02:33.000Z",
+      "ingested": "2026-07-20T13:51:57.605Z",
+      "title_original": "CVE-2026-53392 NFSv4/flexfiles: reject zero filehandle version count",
+      "headline": "MSRC publishes CVE-2026-53392 for NFSv4 flexfiles validation",
+      "topic": "security",
+      "score": 49,
+      "tags": [
+        "CVE-2026-53392",
+        "Linux kernel",
+        "NFSv4",
+        "input validation"
+      ],
+      "summary": "MSRC published information about NFSv4 flexfiles accepting a zero filehandle version count. Administrators using affected Linux NFS configurations should review exposure and apply applicable vendor updates."
+    },
+    {
+      "id": "msrc-update-guide-0ee39b9749",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63810",
+      "published": "2026-07-20T08:02:14.000Z",
+      "ingested": "2026-07-20T13:51:57.605Z",
+      "title_original": "CVE-2026-63810 block: Avoid mounting the bdev pseudo-filesystem in userspace",
+      "headline": "MSRC publishes CVE-2026-63810 for Linux block-device handling",
+      "topic": "security",
+      "score": 49,
+      "tags": [
+        "CVE-2026-63810",
+        "Linux kernel",
+        "block device",
+        "filesystem"
+      ],
+      "summary": "MSRC published information about Linux block-device code mounting the bdev pseudo-filesystem in userspace. Administrators should identify affected systems and apply applicable kernel or vendor updates."
+    },
+    {
+      "id": "msrc-update-guide-53e831fa52",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53386",
+      "published": "2026-07-20T08:01:49.000Z",
+      "ingested": "2026-07-20T13:51:57.605Z",
+      "title_original": "CVE-2026-53386 iio: adc: ti-ads1298: add bounds check to pga_settings index",
+      "headline": "MSRC publishes CVE-2026-53386 for the TI ADS1298 driver",
+      "topic": "security",
+      "score": 49,
+      "tags": [
+        "CVE-2026-53386",
+        "Linux kernel",
+        "device driver",
+        "bounds check"
+      ],
+      "summary": "MSRC published information about a missing bounds check in the Linux TI ADS1298 ADC driver's gain settings. Administrators running affected Linux devices should assess exposure and install applicable vendor updates."
+    },
+    {
+      "id": "msrc-update-guide-531eb0c779",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63815",
+      "published": "2026-07-20T08:01:23.000Z",
+      "ingested": "2026-07-20T13:51:57.605Z",
+      "title_original": "CVE-2026-63815 f2fs: bound i_inline_xattr_size for non-inline-xattr inodes",
+      "headline": "MSRC publishes CVE-2026-63815 for Linux F2FS inline attributes",
+      "topic": "security",
+      "score": 49,
+      "tags": [
+        "CVE-2026-63815",
+        "Linux kernel",
+        "F2FS",
+        "vulnerability"
+      ],
+      "summary": "MSRC published information about an F2FS flaw involving unbounded inline extended-attribute sizes on certain inodes. Administrators should review affected Linux systems and apply applicable vendor updates when available."
+    },
+    {
+      "id": "office365-itpros-d7d14efef7",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/20/user-assigned-managed-identity/?utm_source=rss&utm_medium=rss&utm_campaign=user-assigned-managed-identity",
+      "published": "2026-07-20T07:00:00.000Z",
+      "ingested": "2026-07-20T13:51:57.605Z",
+      "title_original": "Using User Assigned Managed Identities with Microsoft 365 Automation",
+      "headline": "User-assigned identities simplify shared Microsoft 365 automation",
+      "topic": "identity",
+      "score": 39,
+      "tags": [
+        "managed identity",
+        "Azure Automation",
+        "PowerShell",
+        "Microsoft 365"
+      ],
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/UAMI-Create.jpg?resize=840%2C600&ssl=1",
+      "summary": "User-assigned managed identities can authenticate Microsoft 365 automation across multiple Azure resources and automation accounts. Administrators gain reusable identity management without tying credentials to the lifecycle of one automation account."
+    },
     {
       "id": "mikemdm-c83236e93f",
       "source_id": "mikemdm",
@@ -8945,305 +9250,6 @@
       ],
       "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/06/image-9.jpg",
       "summary": "Microsoft appears to be developing a new system settings experience in Endpoint Privilege Management, initially covering network settings and time synchronization. It would let standard users elevate privileges for selected settings without receiving full local administrator access, giving IT more granular control over self-service tasks."
-    },
-    {
-      "id": "msrc-update-guide-cc69b599c8",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46320",
-      "published": "2026-06-26T08:41:26.000Z",
-      "ingested": "2026-06-26T07:11:21.164Z",
-      "title_original": "CVE-2026-46320 tap: free page on error paths in tap_get_user_xdp()",
-      "headline": "CVE-2026-46320 tap: free page on error paths in tap_get_user_xdp()",
-      "topic": "security",
-      "score": 18,
-      "tags": [
-        "linux-kernel",
-        "cve-2026-46320",
-        "tap",
-        "xdp",
-        "wsl2"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-c2e90aaf0f",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46322",
-      "published": "2026-06-26T08:41:18.000Z",
-      "ingested": "2026-06-26T07:11:21.164Z",
-      "title_original": "CVE-2026-46322 tun: free page on build_skb failure in tun_xdp_one()",
-      "headline": "CVE-2026-46322 tun: free page on build_skb failure in tun_xdp_one()",
-      "topic": "security",
-      "score": 20,
-      "tags": [
-        "linux-kernel",
-        "cve-2026-46322",
-        "tun",
-        "xdp",
-        "build-skb"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-97822a9c59",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46321",
-      "published": "2026-06-26T08:41:11.000Z",
-      "ingested": "2026-06-26T07:11:21.162Z",
-      "title_original": "CVE-2026-46321 tun: free page on short-frame rejection in tun_xdp_one()",
-      "headline": "CVE-2026-46321 tun: free page on short-frame rejection in tun_xdp_one()",
-      "topic": "security",
-      "score": 20,
-      "tags": [
-        "linux-kernel",
-        "cve-2026-46321",
-        "tun",
-        "xdp",
-        "azure-linux"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-3cdf365dbf",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45930",
-      "published": "2026-06-26T08:40:44.000Z",
-      "ingested": "2026-06-26T07:30:01.650Z",
-      "title_original": "CVE-2026-45930 net: mctp: ensure our nlmsg responses are initialised",
-      "headline": "CVE-2026-45930 net: mctp: ensure our nlmsg responses are initialised",
-      "topic": "security",
-      "score": 14,
-      "tags": [
-        "linux-kernel",
-        "mctp",
-        "netlink",
-        "cve-2026-45930"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-54fe50929b",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45850",
-      "published": "2026-06-26T08:40:31.000Z",
-      "ingested": "2026-06-26T07:30:01.650Z",
-      "title_original": "CVE-2026-45850 ipvs: skip ipv6 extension headers for csum checks",
-      "headline": "CVE-2026-45850 ipvs: skip ipv6 extension headers for csum checks",
-      "topic": "security",
-      "score": 12,
-      "tags": [
-        "linux-kernel",
-        "ipvs",
-        "ipv6",
-        "cve-2026-45850"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-276c53dab6",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68736",
-      "published": "2026-06-26T08:39:56.000Z",
-      "ingested": "2026-06-26T07:30:01.648Z",
-      "title_original": "CVE-2025-68736 landlock: Fix handling of disconnected directories",
-      "headline": "CVE-2025-68736 landlock: Fix handling of disconnected directories",
-      "topic": "security",
-      "score": 13,
-      "tags": [
-        "linux-kernel",
-        "landlock",
-        "cve-2025-68736",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-44e333ab00",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-68296",
-      "published": "2026-06-26T08:39:42.000Z",
-      "ingested": "2026-06-26T07:30:01.650Z",
-      "title_original": "CVE-2025-68296 drm, fbcon, vga_switcheroo: Avoid race condition in fbcon setup",
-      "headline": "CVE-2025-68296 drm, fbcon, vga_switcheroo: Avoid race condition in fbcon setup",
-      "topic": "security",
-      "score": 10,
-      "tags": [
-        "linux-kernel",
-        "drm",
-        "fbcon",
-        "cve-2025-68296"
-      ]
-    },
-    {
-      "id": "office365-itpros-1fe43acb6b",
-      "source_id": "office365-itpros",
-      "source_name": "Office 365 for IT Pros (Tony Redmond)",
-      "url": "https://office365itpros.com/2026/06/26/dragonforce-attack-teams/?utm_source=rss&utm_medium=rss&utm_campaign=dragonforce-attack-teams",
-      "published": "2026-06-26T07:00:00.000Z",
-      "ingested": "2026-06-26T07:03:32.222Z",
-      "title_original": "What the DragonForce Attack Against Teams Is All About",
-      "headline": "What the DragonForce Attack Against Teams Is All About",
-      "topic": "security",
-      "score": 47,
-      "tags": [
-        "dragonforce",
-        "ransomware",
-        "teams",
-        "c2",
-        "backdoor.turn"
-      ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Attack-hero.jpg?resize=300%2C300&ssl=1",
-      "summary": "DragonForce routed Backdoor.Turn malware through Microsoft Teams TURN relay servers, making command-and-control traffic resemble normal Teams activity and evade monitoring. There is no Teams vulnerability or patch; administrators should inspect traffic patterns and volumes rather than assuming all traffic to trusted Microsoft domains is safe."
-    },
-    {
-      "id": "andrew-taylor-a94b16d4fa",
-      "source_id": "andrew-taylor",
-      "source_name": "Andrew Taylor (andrewstaylor.com)",
-      "url": "https://andrewstaylor.com/2026/06/26/intune-newsletter-26th-june-2026/",
-      "published": "2026-06-25T23:23:26.000Z",
-      "ingested": "2026-06-26T00:25:32.419Z",
-      "title_original": "Intune Newsletter – 26th June 2026",
-      "headline": "Intune Newsletter – 26th June 2026",
-      "topic": "endpoint",
-      "score": 31,
-      "tags": [
-        "intune",
-        "nyhetsbrev",
-        "26h2",
-        "android-enrollment",
-        "community"
-      ]
-    },
-    {
-      "id": "m365-roadmap-abbb936058",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566617",
-      "published": "2026-06-25T23:15:45.000Z",
-      "ingested": "2026-06-26T00:25:32.418Z",
-      "title_original": "Microsoft Purview: Data Loss Prevention - Endpoint DLP now detects sensitivity labels on files inside archives",
-      "headline": "Microsoft Purview: Data Loss Prevention - Endpoint DLP now detects sensitivity labels on files inside archives",
-      "topic": "security",
-      "score": 41,
-      "tags": [
-        "purview",
-        "endpoint-dlp",
-        "dlp",
-        "arkivfiler"
-      ]
-    },
-    {
-      "id": "m365-roadmap-72a34ed840",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566527",
-      "published": "2026-06-25T23:15:45.000Z",
-      "ingested": "2026-06-26T00:25:32.419Z",
-      "title_original": "Microsoft Purview: Data Lifecycle Management - Ensure regulatory compliance by deleting inactive OneDrives and mailboxes for departing employees",
-      "headline": "Microsoft Purview: Data Lifecycle Management - Ensure regulatory compliance by deleting inactive OneDrives and mailboxes for departing employees",
-      "topic": "security",
-      "score": 39,
-      "tags": [
-        "purview",
-        "data-lifecycle",
-        "offboarding",
-        "compliance",
-        "onedrive"
-      ]
-    },
-    {
-      "id": "m365-roadmap-9b48bbd931",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566351",
-      "published": "2026-06-25T23:15:45.000Z",
-      "ingested": "2026-06-26T00:25:32.419Z",
-      "title_original": "PowerPoint: Create on brand presentations with additional brand assets",
-      "headline": "PowerPoint: Create on brand presentations with additional brand assets",
-      "topic": "endpoint",
-      "score": 13,
-      "tags": [
-        "powerpoint",
-        "merkevare",
-        "office"
-      ]
-    },
-    {
-      "id": "msrc-blog-7d5c9895c3",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/25/photo-zip-campaign-targeting-hospitality-industry-delivers-node-js-implant-persistent-access/",
-      "published": "2026-06-25T22:30:29.000Z",
-      "ingested": "2026-06-26T00:36:38.178Z",
-      "title_original": "Photo ZIP campaign targeting hospitality industry delivers Node.js implant for persistent access",
-      "headline": "Photo ZIP campaign targeting hospitality industry delivers Node.js implant for persistent access",
-      "topic": "security",
-      "score": 75,
-      "tags": [
-        "phishing",
-        "node.js",
-        "powershell",
-        "c2",
-        "threat-intel"
-      ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-52.webp",
-      "summary": "Since April 2026, Microsoft Threat Intelligence has tracked an ongoing multistage campaign targeting hospitality and travel organizations in Europe and Asia, using image ZIP files with fake shortcuts to launch obfuscated PowerShell, install a Node.js implant, and establish dual registry persistence with command-and-control traffic over unusual ports. The attackers use legitimate services such as Calendly and Google's URL redirection for phishing with multilingual lures, and industry administrators should hunt for these persistence mechanisms."
-    },
-    {
-      "id": "entra-blog-ca579b06ad",
-      "source_id": "entra-blog",
-      "source_name": "Microsoft Entra Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/secure-ai-at-scale-join-the-microsoft-entra-purview-webinar/ba-p/4530257",
-      "published": "2026-06-25T20:17:14.000Z",
-      "ingested": "2026-06-26T19:15:16.653Z",
-      "title_original": "Secure AI at scale: Join the Microsoft Entra + Purview webinar series",
-      "headline": "Secure AI at scale: Join the Microsoft Entra + Purview webinar series",
-      "topic": "identity",
-      "score": 24,
-      "tags": [
-        "entra",
-        "purview",
-        "ai-sikkerhet",
-        "webinar"
-      ]
-    },
-    {
-      "id": "sentinel-blog-85325e9762",
-      "source_id": "sentinel-blog",
-      "source_name": "Microsoft Sentinel Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/the-governance-shift-rbac-urbac-data-lake-and-mssp/ba-p/4528607",
-      "published": "2026-06-25T20:11:19.000Z",
-      "ingested": "2026-06-26T19:15:16.655Z",
-      "title_original": "The governance shift: RBAC, URBAC, data lake, and MSSP",
-      "headline": "The governance shift: RBAC, URBAC, data lake, and MSSP",
-      "topic": "security",
-      "score": 51,
-      "tags": [
-        "defender",
-        "sentinel",
-        "urbac",
-        "rbac",
-        "mssp"
-      ]
-    },
-    {
-      "id": "windows-admin-center-e35becc614",
-      "source_id": "windows-admin-center",
-      "source_name": "Windows Admin Center Blog",
-      "url": "https://techcommunity.microsoft.com/t5/windows-admin-center-blog/windows-admin-center-version-2606-is-now-generally-available/ba-p/4530811",
-      "published": "2026-06-25T16:15:20.000Z",
-      "ingested": "2026-06-25T18:06:46.431Z",
-      "title_original": "Windows Admin Center version 2606 is now generally available!",
-      "headline": "Windows Admin Center version 2606 is now generally available!",
-      "topic": "endpoint",
-      "score": 39,
-      "tags": [
-        "windows-admin-center",
-        "wac",
-        "release",
-        "administration-mode"
-      ]
     }
   ]
 }
