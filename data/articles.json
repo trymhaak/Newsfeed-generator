@@ -1,6 +1,43 @@
 {
-  "generated_at": "2026-07-20T13:52:41.062Z",
+  "generated_at": "2026-07-20T21:23:04.742Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-a2743e4fb0",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50650",
+      "published": "2026-07-20T14:00:00.000Z",
+      "ingested": "2026-07-20T21:23:04.652Z",
+      "title_original": "CVE-2026-50650 .NET Framework Elevation of Privilege Vulnerability",
+      "headline": "Microsoft Updates Product Details for CVE-2026-50650",
+      "topic": "security",
+      "score": 23,
+      "tags": [
+        "CVE-2026-50650",
+        ".NET Framework",
+        "privilege escalation"
+      ],
+      "summary": "Microsoft revised the affected product information for the .NET Framework elevation-of-privilege vulnerability. The change is informational and does not introduce new security guidance or require additional administrator action."
+    },
+    {
+      "id": "msrc-update-guide-7acf9d727f",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-35248",
+      "published": "2026-07-20T14:00:00.000Z",
+      "ingested": "2026-07-20T21:23:04.652Z",
+      "title_original": "CVE-2024-35248 Microsoft Dynamics 365 Business Central Elevation of Privilege Vulnerability",
+      "headline": "Microsoft Revises Build Numbers for Business Central CVE-2024-35248",
+      "topic": "security",
+      "score": 25,
+      "tags": [
+        "CVE-2024-35248",
+        "Business Central",
+        "build numbers",
+        "privilege escalation"
+      ],
+      "summary": "Microsoft corrected build numbers associated with the Dynamics 365 Business Central elevation-of-privilege vulnerability. Administrators can use the revised values to verify deployments, but the update adds no new remediation guidance."
+    },
     {
       "id": "msrc-update-guide-1dde859563",
       "source_id": "msrc-update-guide",
@@ -3428,6 +3465,26 @@
       ],
       "hero_image": "https://mikemdm.de/wp-content/uploads/2026/07/grafik-1-844x1024.png",
       "summary": "Microsoft has renamed Windows 365 Frontline to Windows 365 Flex, with the rebranding now rolling out across Intune, including changing the device model value from “CloudPC Frontline” to “Windows 365 Flex.” Admins should update assignment filters, dynamic Entra group rules, and device category scripts to prevent devices from dropping out of policies."
+    },
+    {
+      "id": "windows-admin-center-e35becc614",
+      "source_id": "windows-admin-center",
+      "source_name": "Windows Admin Center Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-admin-center-blog/windows-admin-center-version-2606-is-now-generally-available/ba-p/4530811",
+      "published": "2026-07-10T17:31:05.000Z",
+      "ingested": "2026-07-20T21:23:04.652Z",
+      "title_original": "Windows Admin Center version 2606 is now generally available!",
+      "headline": "Microsoft Releases Windows Admin Center 2606 with Security Fixes",
+      "topic": "endpoint",
+      "score": 63,
+      "tags": [
+        "Windows Admin Center",
+        "Administration Mode",
+        "RCE",
+        "privilege escalation",
+        "build 2.7.4"
+      ],
+      "summary": "Microsoft made Windows Admin Center 2606 generally available in Administration Mode and updated its installer to build 2.7.4. The release improves reliability and accessibility while correcting elevation-of-privilege and remote-code-execution issues, so administrators should prioritize upgrading management hosts."
     },
     {
       "id": "msrc-blog-5aa07a5339",
@@ -9189,67 +9246,6 @@
         "gateway",
         "trust-boundary"
       ]
-    },
-    {
-      "id": "handsontek-48301efed8",
-      "source_id": "handsontek",
-      "source_name": "HANDS ON tek (João Ferreira)",
-      "url": "https://handsontek.net/hands-microsoft-365-pulse-weekly-updates-week-25/",
-      "published": "2026-06-26T15:10:20.000Z",
-      "ingested": "2026-06-26T19:15:16.655Z",
-      "title_original": "Hands-On Microsoft 365 Pulse – Weekly Updates (Week 25)",
-      "headline": "Hands-On Microsoft 365 Pulse – Weekly Updates (Week 25)",
-      "topic": "ai",
-      "score": 29,
-      "tags": [
-        "copilot",
-        "copilot-cowork",
-        "lisensiering",
-        "m365"
-      ],
-      "hero_image": "https://handsontek.net/images/hot2/Week%2025%202026/hero.png",
-      "summary": "João Ferreira's weekly Microsoft 365 roundup focuses on Microsoft's Copilot Cowork licensing changes and the resulting reaction. Recommended articles examine the actual costs, cheaper alternatives that cover about 80% of requirements, and how licensing choices determine who can use AI at work, while the rest of the edition covers other news including SharePoint."
-    },
-    {
-      "id": "janbakker-c43b4fa5fc",
-      "source_id": "janbakker",
-      "source_name": "JanBakker.tech",
-      "url": "https://janbakker.tech/entra-id-saml-authnmethodsreferences-amr-now-supports-phishing-resistant-mfa/",
-      "published": "2026-06-26T14:12:37.000Z",
-      "ingested": "2026-06-26T14:13:54.464Z",
-      "title_original": "Entra ID SAML authnmethodsreferences (AMR) now supports phishing-resistant MFA",
-      "headline": "Entra ID SAML authnmethodsreferences (AMR) now supports phishing-resistant MFA",
-      "topic": "identity",
-      "score": 49,
-      "tags": [
-        "entra-id",
-        "saml",
-        "mfa",
-        "fido2",
-        "salesforce"
-      ],
-      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/06/image.png",
-      "summary": "Starting June 29, 2026, Entra ID will include both amr and acr claims in SAML 2.0 tokens, enabling applications such as Salesforce to identify the authentication method used and enforce phishing-resistant MFA through FIDO2 or passkeys for administrators. Organizations using Entra ID as the Salesforce identity provider should verify that their Entra policies apply before Salesforce enables the requirement on June 29."
-    },
-    {
-      "id": "call4cloud-04ec0b9ecd",
-      "source_id": "call4cloud",
-      "source_name": "Call4Cloud (Rudy Ooms)",
-      "url": "https://patchmypc.com/blog/intune-epm-system-settings-network-and-time-sync-elevation/",
-      "published": "2026-06-26T08:44:27.000Z",
-      "ingested": "2026-06-26T09:04:44.830Z",
-      "title_original": "Intune EPM System Settings: Network and Time Sync Elevation",
-      "headline": "Intune EPM System Settings: Network and Time Sync Elevation",
-      "topic": "endpoint",
-      "score": 40,
-      "tags": [
-        "intune",
-        "epm",
-        "privilege-management",
-        "preview"
-      ],
-      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/06/image-9.jpg",
-      "summary": "Microsoft appears to be developing a new system settings experience in Endpoint Privilege Management, initially covering network settings and time synchronization. It would let standard users elevate privileges for selected settings without receiving full local administrator access, giving IT more granular control over self-service tasks."
     }
   ]
 }
