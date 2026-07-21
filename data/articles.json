@@ -1,6 +1,84 @@
 {
-  "generated_at": "2026-07-21T11:55:30.520Z",
+  "generated_at": "2026-07-21T19:25:45.817Z",
   "articles": [
+    {
+      "id": "call4cloud-b9140a14eb",
+      "source_id": "call4cloud",
+      "source_name": "Call4Cloud (Rudy Ooms)",
+      "url": "https://patchmypc.com/blog/evaluate-third-party-patching-solutions-beyond-price/",
+      "published": "2026-07-21T17:20:32.000Z",
+      "ingested": "2026-07-21T19:25:45.741Z",
+      "title_original": "How to Evaluate Third-Party Patching Solutions Beyond Price",
+      "headline": "Evaluate third-party patching tools beyond licensing costs",
+      "topic": "endpoint",
+      "score": 31,
+      "tags": [
+        "Intune",
+        "patch management",
+        "third-party apps",
+        "automation"
+      ],
+      "summary": "This analysis recommends assessing third-party patching products by operational value rather than licensing price alone. Intune administrators should compare deployment reliability, application coverage, automation, reporting, and support before selecting a platform."
+    },
+    {
+      "id": "msrc-update-guide-5a30a7d77b",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58640",
+      "published": "2026-07-21T14:00:00.000Z",
+      "ingested": "2026-07-21T19:25:45.741Z",
+      "title_original": "CVE-2026-58640 Windows NTFS Remote Code Execution Vulnerability",
+      "headline": "Microsoft updates credit for Windows NTFS remote code execution flaw",
+      "topic": "security",
+      "score": 7,
+      "tags": [
+        "CVE-2026-58640",
+        "Windows",
+        "NTFS",
+        "remote code execution"
+      ],
+      "summary": "Microsoft updated an acknowledgement for CVE-2026-58640 without changing the vulnerability details or remediation guidance. Administrators do not need to take additional action beyond applying the existing security update."
+    },
+    {
+      "id": "msrc-update-guide-a35aa882b0",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50462",
+      "published": "2026-07-21T14:00:00.000Z",
+      "ingested": "2026-07-21T19:25:45.741Z",
+      "title_original": "CVE-2026-50462 Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+      "headline": "Microsoft updates credit for Windows WinSock privilege escalation flaw",
+      "topic": "security",
+      "score": 7,
+      "tags": [
+        "CVE-2026-50462",
+        "Windows",
+        "WinSock",
+        "privilege escalation"
+      ],
+      "summary": "Microsoft updated an acknowledgement for CVE-2026-50462 without changing the vulnerability details or remediation guidance. Administrators do not need to take additional action beyond applying the existing security update."
+    },
+    {
+      "id": "janbakker-b14d707dfb",
+      "source_id": "janbakker",
+      "source_name": "JanBakker.tech",
+      "url": "https://janbakker.tech/lock-or-sign-out-when-yubikey-is-removed-from-the-device/",
+      "published": "2026-07-21T13:53:20.000Z",
+      "ingested": "2026-07-21T19:25:45.741Z",
+      "title_original": "Lock or sign-out when Yubikey is removed from the device",
+      "headline": "Open-source tool locks devices when users remove their YubiKey",
+      "topic": "identity",
+      "score": 39,
+      "tags": [
+        "YubiKey",
+        "FIDO2",
+        "Intune",
+        "ADMX",
+        "device lock"
+      ],
+      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/07/image-14.png",
+      "summary": "Sciber YubiKey Locker can lock a device or sign out the user when a YubiKey is removed on Windows, macOS, or Linux. IT administrators can deploy and configure the tool through Intune and ADMX policies to enforce security-key removal behavior."
+    },
     {
       "id": "o365reports-c310d58c75",
       "source_id": "o365reports",
@@ -9188,78 +9266,6 @@
         "amd",
         "drm",
         "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-d98bfdb3c1",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21825",
-      "published": "2026-06-28T08:47:13.000Z",
-      "ingested": "2026-06-28T11:22:20.510Z",
-      "title_original": "CVE-2025-21825 bpf: Cancel the running bpf_timer through kworker for PREEMPT_RT",
-      "headline": "CVE-2025-21825 bpf: Cancel the running bpf_timer through kworker for PREEMPT_RT",
-      "topic": "security",
-      "score": 14,
-      "tags": [
-        "cve-2025-21825",
-        "linux-kernel",
-        "bpf",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-4c75c4686e",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45932",
-      "published": "2026-06-28T08:47:08.000Z",
-      "ingested": "2026-06-28T07:39:47.810Z",
-      "title_original": "CVE-2026-45932 bpf: Fix tcx/netkit detach permissions when prog fd isn't given",
-      "headline": "CVE-2026-45932 bpf: Fix tcx/netkit detach permissions when prog fd isn't given",
-      "topic": "security",
-      "score": 30,
-      "tags": [
-        "cve-2026-45932",
-        "linux-kjerne",
-        "ebpf",
-        "tcx"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-68dc125b4f",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45944",
-      "published": "2026-06-28T08:46:54.000Z",
-      "ingested": "2026-06-28T07:39:47.810Z",
-      "title_original": "CVE-2026-45944 iommu/vt-d: Clear Present bit before tearing down context entry",
-      "headline": "CVE-2026-45944 iommu/vt-d: Clear Present bit before tearing down context entry",
-      "topic": "security",
-      "score": 27,
-      "tags": [
-        "cve-2026-45944",
-        "linux-kjerne",
-        "iommu",
-        "intel-vt-d"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-36ebf45b25",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46054",
-      "published": "2026-06-28T08:46:39.000Z",
-      "ingested": "2026-06-28T07:39:47.810Z",
-      "title_original": "CVE-2026-46054 selinux: fix overlayfs mmap() and mprotect() access checks",
-      "headline": "CVE-2026-46054 selinux: fix overlayfs mmap() and mprotect() access checks",
-      "topic": "security",
-      "score": 29,
-      "tags": [
-        "cve-2026-46054",
-        "linux-kjerne",
-        "selinux",
-        "overlayfs"
       ]
     }
   ]
