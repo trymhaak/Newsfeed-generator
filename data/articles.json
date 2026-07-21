@@ -1,6 +1,274 @@
 {
-  "generated_at": "2026-07-21T04:24:57.096Z",
+  "generated_at": "2026-07-21T11:55:30.520Z",
   "articles": [
+    {
+      "id": "o365reports-c310d58c75",
+      "source_id": "o365reports",
+      "source_name": "Office 365 Reports (AdminDroid)",
+      "url": "https://o365reports.com/replace-remember-mfa-with-conditional-access-sign-in-frequency/?utm_source=rss&utm_medium=rss&utm_campaign=replace-remember-mfa-with-conditional-access-sign-in-frequency",
+      "published": "2026-07-21T11:38:46.000Z",
+      "ingested": "2026-07-21T11:54:46.558Z",
+      "title_original": "Replace Remember MFA with Conditional Access Sign-in Frequency in Microsoft 365",
+      "headline": "Conditional Access replaces static remembered MFA sessions",
+      "topic": "identity",
+      "score": 29,
+      "tags": [
+        "Conditional Access",
+        "Microsoft Entra",
+        "MFA",
+        "authentication"
+      ],
+      "hero_image": "https://o365reports.com/wp-content/uploads/2026/07/disable-remember-mfa-1.png",
+      "summary": "Conditional Access sign-in frequency provides more granular reauthentication controls than the tenant-wide Remember MFA setting. Entra administrators can apply policies by user, application, and risk context instead of relying on a fixed browser cookie."
+    },
+    {
+      "id": "janbakker-243df874e1",
+      "source_id": "janbakker",
+      "source_name": "JanBakker.tech",
+      "url": "https://janbakker.tech/writing-maester-tests-using-ai-from-idea-to-pull-request/",
+      "published": "2026-07-21T09:37:48.000Z",
+      "ingested": "2026-07-21T11:54:46.558Z",
+      "title_original": "Writing Maester tests using AI – From idea to Pull Request",
+      "headline": "AI skills streamline development of Maester security tests",
+      "topic": "ai",
+      "score": 32,
+      "tags": [
+        "Maester",
+        "Microsoft Entra",
+        "Copilot",
+        "security testing"
+      ],
+      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/07/image-9.png",
+      "summary": "Reusable instruction files help AI agents generate Maester tests that follow the project's expected structure and workflow. Entra and Microsoft 365 administrators can turn security-control ideas into reviewable tests without first mastering the entire codebase."
+    },
+    {
+      "id": "msrc-update-guide-2ee9b04d33",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63796",
+      "published": "2026-07-21T08:44:23.000Z",
+      "ingested": "2026-07-21T11:54:46.558Z",
+      "title_original": "CVE-2026-63796 ocfs2: reject oversized group bitmap descriptors",
+      "headline": "Linux OCFS2 flaw accepts oversized group bitmap descriptors",
+      "topic": "security",
+      "score": 16,
+      "tags": [
+        "CVE-2026-63796",
+        "Linux",
+        "OCFS2",
+        "filesystem"
+      ],
+      "summary": "The Linux OCFS2 filesystem requires stricter validation to reject oversized group bitmap descriptors. The issue has limited relevance to Microsoft administrators unless affected Linux workloads use OCFS2 in their environment."
+    },
+    {
+      "id": "msrc-update-guide-9214e11c2e",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3842",
+      "published": "2026-07-21T08:42:10.000Z",
+      "ingested": "2026-07-21T11:54:46.558Z",
+      "title_original": "CVE-2026-3842 Qemu-kvm: hyperv/syndbg: missing mapped-length guard after cpu_physical_memory_map causes host oob write",
+      "headline": "QEMU Hyper-V debugging flaw enables an out-of-bounds host write",
+      "topic": "security",
+      "score": 52,
+      "tags": [
+        "CVE-2026-3842",
+        "QEMU-KVM",
+        "Hyper-V",
+        "out-of-bounds write"
+      ],
+      "summary": "A missing mapped-length check in QEMU-KVM's Hyper-V synthetic debugger can cause an out-of-bounds write on the host. Administrators operating affected virtualization hosts should assess exposure and apply vendor fixes when available."
+    },
+    {
+      "id": "msrc-update-guide-f7a06339aa",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-38754",
+      "published": "2026-07-21T08:41:54.000Z",
+      "ingested": "2026-07-21T11:54:46.558Z",
+      "title_original": "CVE-2026-38754 A heap overflow in the ifsbreakup() function (shell/ash.c) of Busybox v1.38.0 allows attackers to cause a Denial of Service (DoS) via supplying a crafted input.",
+      "headline": "BusyBox heap overflow allows crafted input to trigger denial of service",
+      "topic": "security",
+      "score": 38,
+      "tags": [
+        "CVE-2026-38754",
+        "BusyBox",
+        "heap overflow",
+        "denial of service"
+      ],
+      "summary": "A heap overflow in the BusyBox ash shell can let crafted input cause a denial of service. Administrators running affected BusyBox-based containers or appliances should review vendor guidance and update exposed workloads."
+    },
+    {
+      "id": "msrc-update-guide-17b9bdc83b",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63828",
+      "published": "2026-07-21T08:39:26.000Z",
+      "ingested": "2026-07-21T11:55:15.302Z",
+      "title_original": "CVE-2026-63828 apparmor: mediate the implicit connect of TCP fast open sendmsg",
+      "headline": "AppArmor Adds Controls for Implicit TCP Fast Open Connections",
+      "topic": "security",
+      "score": 47,
+      "tags": [
+        "Linux kernel",
+        "AppArmor",
+        "TCP Fast Open",
+        "network security"
+      ],
+      "summary": "AppArmor now mediates implicit connections created when applications use sendmsg with TCP Fast Open. Linux administrators should update affected systems to ensure security policies govern this connection path."
+    },
+    {
+      "id": "msrc-update-guide-f24b1a3c89",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63801",
+      "published": "2026-07-21T08:39:19.000Z",
+      "ingested": "2026-07-21T11:55:15.302Z",
+      "title_original": "CVE-2026-63801 tipc: fix slab-use-after-free Read in tipc_aead_decrypt_done",
+      "headline": "Linux TIPC Fix Prevents Use-After-Free During AEAD Decryption",
+      "topic": "security",
+      "score": 50,
+      "tags": [
+        "Linux kernel",
+        "TIPC",
+        "use-after-free",
+        "CVE"
+      ],
+      "summary": "A Linux kernel fix addresses a slab use-after-free read in the TIPC AEAD decryption callback. Administrators running Linux systems with TIPC enabled should review affected versions and apply the relevant security update."
+    },
+    {
+      "id": "msrc-update-guide-cd776f1b35",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63882",
+      "published": "2026-07-21T08:04:12.000Z",
+      "ingested": "2026-07-21T11:55:30.421Z",
+      "title_original": "CVE-2026-63882 drm/amdkfd: fix NULL pointer bug in svm_range_set_attr",
+      "headline": "AMD GPU driver fixes NULL pointer flaw in KFD shared virtual memory",
+      "topic": "endpoint",
+      "score": 47,
+      "tags": [
+        "CVE",
+        "Linux kernel",
+        "AMD KFD",
+        "SVM"
+      ],
+      "summary": "A Linux kernel update fixes a NULL pointer bug in the AMD KFD shared virtual memory implementation. Administrators running Linux systems with AMD GPUs should assess exposure and apply applicable vendor updates."
+    },
+    {
+      "id": "msrc-update-guide-0e5698997c",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63879",
+      "published": "2026-07-21T08:03:54.000Z",
+      "ingested": "2026-07-21T11:55:30.421Z",
+      "title_original": "CVE-2026-63879 drm/amdgpu: fix amdgpu_hmm_range_get_pages",
+      "headline": "AMD GPU driver fixes page retrieval flaw in amdgpu HMM",
+      "topic": "endpoint",
+      "score": 43,
+      "tags": [
+        "CVE",
+        "Linux kernel",
+        "AMD GPU",
+        "driver"
+      ],
+      "summary": "A Linux kernel update fixes a flaw in the AMD GPU driver's amdgpu_hmm_range_get_pages function. Administrators running Linux systems with AMD GPUs should review the CVE and apply applicable vendor updates."
+    },
+    {
+      "id": "msrc-update-guide-a1f2361a32",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64077",
+      "published": "2026-07-21T08:03:09.000Z",
+      "ingested": "2026-07-21T11:55:15.302Z",
+      "title_original": "CVE-2026-64077 netfilter: ebtables: move to two-stage removal scheme",
+      "headline": "Linux Netfilter Uses Two-Stage Removal to Protect ebtables Objects",
+      "topic": "security",
+      "score": 48,
+      "tags": [
+        "Linux kernel",
+        "Netfilter",
+        "ebtables",
+        "networking"
+      ],
+      "summary": "Linux Netfilter now removes ebtables objects in two stages to prevent unsafe lifecycle handling. Administrators running Linux bridges or container networking should apply the update after confirming their kernel is affected."
+    },
+    {
+      "id": "msrc-update-guide-a26b1049b3",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63940",
+      "published": "2026-07-21T08:03:02.000Z",
+      "ingested": "2026-07-21T11:55:15.302Z",
+      "title_original": "CVE-2026-63940 KVM: SEV: Ignore Port I/O requests of length '0'",
+      "headline": "KVM SEV Fix Rejects Zero-Length Port I/O Requests",
+      "topic": "security",
+      "score": 49,
+      "tags": [
+        "Linux kernel",
+        "KVM",
+        "AMD SEV",
+        "virtualization"
+      ],
+      "summary": "KVM now ignores zero-length port I/O requests when running AMD SEV-protected virtual machines. Virtualization administrators should update affected Linux hosts to avoid incorrect request handling at the guest-host boundary."
+    },
+    {
+      "id": "msrc-update-guide-d28013a306",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64097",
+      "published": "2026-07-21T08:02:50.000Z",
+      "ingested": "2026-07-21T11:55:15.302Z",
+      "title_original": "CVE-2026-64097 drm/amd/display: Validate GPIO pin LUT table size before iterating",
+      "headline": "AMD Display Driver Validates GPIO Tables to Prevent Invalid Access",
+      "topic": "security",
+      "score": 43,
+      "tags": [
+        "Linux kernel",
+        "AMD",
+        "GPIO",
+        "display driver"
+      ],
+      "summary": "The Linux AMD display driver now validates the GPIO pin lookup table size before iterating over it. Administrators managing affected Linux endpoints should deploy the fix to prevent invalid memory access caused by malformed table data."
+    },
+    {
+      "id": "msrc-update-guide-ec34cbc59d",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64133",
+      "published": "2026-07-21T08:01:42.000Z",
+      "ingested": "2026-07-21T11:55:15.302Z",
+      "title_original": "CVE-2026-64133 ALSA: asihpi: Fix potential OOB array access at reading cache",
+      "headline": "Linux ALSA Fix Blocks Out-of-Bounds Access in ASI HPI Cache",
+      "topic": "security",
+      "score": 45,
+      "tags": [
+        "Linux kernel",
+        "ALSA",
+        "out-of-bounds",
+        "device driver"
+      ],
+      "summary": "A Linux ALSA update fixes a potential out-of-bounds array access while the ASI HPI driver reads its cache. Administrators using affected audio hardware should apply the update to reduce the risk of crashes or unintended memory access."
+    },
+    {
+      "id": "office365-itpros-7aec9ec386",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/21/json-batching-primer/?utm_source=rss&utm_medium=rss&utm_campaign=json-batching-primer",
+      "published": "2026-07-21T07:00:00.000Z",
+      "ingested": "2026-07-21T11:54:46.558Z",
+      "title_original": "Primer: How to Use JSON Batching to Speed up Graph Processing",
+      "headline": "Microsoft Graph batching accelerates large-scale Microsoft 365 automation",
+      "topic": "identity",
+      "score": 39,
+      "tags": [
+        "Microsoft Graph",
+        "JSON batching",
+        "automation",
+        "Microsoft 365"
+      ],
+      "summary": "Microsoft Graph can process up to 20 requests in one JSON batch, reducing network calls for bulk queries and updates. Administrators can use batching to accelerate user, group, device, license, and mailbox automation in large tenants."
+    },
     {
       "id": "m365-roadmap-7edc89156d",
       "source_id": "m365-roadmap",
@@ -8992,260 +9260,6 @@
         "linux-kjerne",
         "selinux",
         "overlayfs"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-e35b46ebaa",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-46705",
-      "published": "2026-06-28T08:46:32.000Z",
-      "ingested": "2026-06-28T09:46:18.758Z",
-      "title_original": "CVE-2024-46705 drm/xe: reset mmio mappings with devm",
-      "headline": "CVE-2024-46705 drm/xe: reset mmio mappings with devm",
-      "topic": "security",
-      "score": 9,
-      "tags": [
-        "linux-kernel",
-        "cve-2024-46705",
-        "intel-xe",
-        "drm",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-db58087581",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45894",
-      "published": "2026-06-28T08:45:51.000Z",
-      "ingested": "2026-06-28T07:39:47.810Z",
-      "title_original": "CVE-2026-45894 iommu/vt-d: Clear Present bit before tearing down PASID entry",
-      "headline": "CVE-2026-45894 iommu/vt-d: Clear Present bit before tearing down PASID entry",
-      "topic": "security",
-      "score": 27,
-      "tags": [
-        "cve-2026-45894",
-        "linux-kjerne",
-        "iommu",
-        "intel-vt-d"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-fea4a43aaa",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45901",
-      "published": "2026-06-28T08:45:37.000Z",
-      "ingested": "2026-06-28T07:39:47.810Z",
-      "title_original": "CVE-2026-45901 netfilter: nf_tables: revert commit_mutex usage in reset path",
-      "headline": "CVE-2026-45901 netfilter: nf_tables: revert commit_mutex usage in reset path",
-      "topic": "security",
-      "score": 29,
-      "tags": [
-        "cve-2026-45901",
-        "linux-kjerne",
-        "netfilter",
-        "nftables"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-9c7165f9a8",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46059",
-      "published": "2026-06-28T08:45:21.000Z",
-      "ingested": "2026-06-28T07:39:47.810Z",
-      "title_original": "CVE-2026-46059 KVM: nSVM: Always use NextRIP as vmcb02's NextRIP after first L2 VMRUN",
-      "headline": "CVE-2026-46059 KVM: nSVM: Always use NextRIP as vmcb02's NextRIP after first L2 VMRUN",
-      "topic": "security",
-      "score": 30,
-      "tags": [
-        "cve-2026-46059",
-        "linux-kjerne",
-        "kvm",
-        "virtualisering"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-82cdfd1356",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45917",
-      "published": "2026-06-28T08:44:37.000Z",
-      "ingested": "2026-06-28T07:37:46.676Z",
-      "title_original": "CVE-2026-45917 ipvs: do not keep dest_dst if dev is going down",
-      "headline": "CVE-2026-45917 ipvs: do not keep dest_dst if dev is going down",
-      "topic": "security",
-      "score": 29,
-      "tags": [
-        "cve-2026-45917",
-        "linux-kernel",
-        "ipvs",
-        "azure-linux"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-e4162147b2",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45877",
-      "published": "2026-06-28T08:44:21.000Z",
-      "ingested": "2026-06-28T07:37:46.676Z",
-      "title_original": "CVE-2026-45877 HID: intel-ish-hid: fix NULL-ptr-deref in ishtp_bus_remove_all_clients",
-      "headline": "CVE-2026-45877 HID: intel-ish-hid: fix NULL-ptr-deref in ishtp_bus_remove_all_clients",
-      "topic": "security",
-      "score": 29,
-      "tags": [
-        "cve-2026-45877",
-        "linux-kernel",
-        "hid",
-        "azure-linux"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-5df1b6e755",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-29923",
-      "published": "2026-06-28T08:43:15.000Z",
-      "ingested": "2026-06-28T11:44:05.656Z",
-      "title_original": "CVE-2025-29923 go-redis allows potential out of order responses when `CLIENT SETINFO` times out during connection establishment",
-      "headline": "CVE-2025-29923 go-redis allows potential out of order responses when `CLIENT SETINFO` times out during connection establishment",
-      "topic": "security",
-      "score": 31,
-      "tags": [
-        "cve-2025-29923",
-        "go-redis",
-        "redis",
-        "azure"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-b0cd3e7de7",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21833",
-      "published": "2026-06-28T08:43:00.000Z",
-      "ingested": "2026-06-28T11:22:20.510Z",
-      "title_original": "CVE-2025-21833 iommu/vt-d: Avoid use of NULL after WARN_ON_ONCE",
-      "headline": "CVE-2025-21833 iommu/vt-d: Avoid use of NULL after WARN_ON_ONCE",
-      "topic": "security",
-      "score": 12,
-      "tags": [
-        "cve-2025-21833",
-        "linux-kernel",
-        "iommu",
-        "intel-vt-d"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-909757b995",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-42065",
-      "published": "2026-06-28T08:42:34.000Z",
-      "ingested": "2026-06-28T09:17:16.871Z",
-      "title_original": "CVE-2024-42065 drm/xe: Add a NULL check in xe_ttm_stolen_mgr_init",
-      "headline": "CVE-2024-42065 drm/xe: Add a NULL check in xe_ttm_stolen_mgr_init",
-      "topic": "security",
-      "score": 17,
-      "tags": [
-        "linux-kernel",
-        "cve-2024-42065",
-        "intel-xe",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-00aeed6ae4",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-57857",
-      "published": "2026-06-28T08:42:29.000Z",
-      "ingested": "2026-06-28T08:34:20.202Z",
-      "title_original": "CVE-2024-57857 RDMA/siw: Remove direct link to net_device",
-      "headline": "CVE-2024-57857 RDMA/siw: Remove direct link to net_device",
-      "topic": "security",
-      "score": 14,
-      "tags": [
-        "cve-2024-57857",
-        "linux-kernel",
-        "rdma",
-        "azure-linux",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-54e1c816d4",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-42064",
-      "published": "2026-06-28T08:41:27.000Z",
-      "ingested": "2026-06-28T09:17:16.871Z",
-      "title_original": "CVE-2024-42064 drm/amd/display: Skip pipe if the pipe idx not set properly",
-      "headline": "CVE-2024-42064 drm/amd/display: Skip pipe if the pipe idx not set properly",
-      "topic": "security",
-      "score": 17,
-      "tags": [
-        "linux-kernel",
-        "cve-2024-42064",
-        "amd-gpu",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-02f74e32ab",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46598",
-      "published": "2026-06-28T08:41:12.000Z",
-      "ingested": "2026-06-28T07:37:46.676Z",
-      "title_original": "CVE-2026-46598 Invoking  pathological inputs can lead to client panic in golang.org/x/crypto/ssh/agent",
-      "headline": "CVE-2026-46598 Invoking  pathological inputs can lead to client panic in golang.org/x/crypto/ssh/agent",
-      "topic": "security",
-      "score": 32,
-      "tags": [
-        "cve-2026-46598",
-        "golang",
-        "ssh",
-        "dos"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-8f0bddf15f",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-58089",
-      "published": "2026-06-28T08:41:08.000Z",
-      "ingested": "2026-06-28T11:22:20.510Z",
-      "title_original": "CVE-2024-58089 btrfs: fix double accounting race when btrfs_run_delalloc_range() failed",
-      "headline": "CVE-2024-58089 btrfs: fix double accounting race when btrfs_run_delalloc_range() failed",
-      "topic": "security",
-      "score": 13,
-      "tags": [
-        "cve-2024-58089",
-        "linux-kernel",
-        "btrfs",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-eeecb87b5e",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9149",
-      "published": "2026-06-28T08:40:54.000Z",
-      "ingested": "2026-06-28T07:37:46.676Z",
-      "title_original": "CVE-2026-9149 Libsolv: heap buffer overflow in libsolv repo_add_solv via negative maxsize from crafted .solv file",
-      "headline": "CVE-2026-9149 Libsolv: heap buffer overflow in libsolv repo_add_solv via negative maxsize from crafted .solv file",
-      "topic": "security",
-      "score": 36,
-      "tags": [
-        "cve-2026-9149",
-        "libsolv",
-        "heap-overflow",
-        "azure-linux"
       ]
     }
   ]
