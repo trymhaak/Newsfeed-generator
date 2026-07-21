@@ -1,6 +1,430 @@
 {
-  "generated_at": "2026-07-20T21:23:04.742Z",
+  "generated_at": "2026-07-21T04:24:57.096Z",
   "articles": [
+    {
+      "id": "m365-roadmap-7edc89156d",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567895",
+      "published": "2026-07-20T22:37:15.000Z",
+      "ingested": "2026-07-21T04:23:51.963Z",
+      "title_original": "OneNote: Multimodal capture in Copilot Notebooks (Android)",
+      "headline": "OneNote brings multimodal Copilot Notebook capture to Android",
+      "topic": "ai",
+      "score": 44,
+      "tags": [
+        "OneNote",
+        "Copilot Notebooks",
+        "Android",
+        "multimodal"
+      ],
+      "summary": "OneNote for Android will let users combine audio transcription, images, and typed notes in one capture session before Copilot creates a structured page. The feature enters preview in August 2026 and general availability in September, giving administrators another Copilot data workflow to evaluate and govern."
+    },
+    {
+      "id": "m365-roadmap-4d2bbe417c",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567894",
+      "published": "2026-07-20T22:37:15.000Z",
+      "ingested": "2026-07-21T04:23:51.963Z",
+      "title_original": "Microsoft Copilot Studio: Share Autonomous Agents to End Users (Run-Only)",
+      "headline": "Copilot Studio adds run-only sharing for autonomous agents",
+      "topic": "ai",
+      "score": 48,
+      "tags": [
+        "Copilot Studio",
+        "autonomous agents",
+        "run-only access",
+        "governance"
+      ],
+      "summary": "Copilot Studio will allow makers to share autonomous agents with end users without granting edit permissions or ownership. The preview starts in August 2026, helping administrators broaden agent access while retaining governance and separation between builders and users."
+    },
+    {
+      "id": "m365-roadmap-e038aed158",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567891",
+      "published": "2026-07-20T22:37:15.000Z",
+      "ingested": "2026-07-21T04:23:51.963Z",
+      "title_original": "Microsoft Copilot (Microsoft 365): Power BI integration in M365 Copilot",
+      "headline": "Microsoft 365 Copilot adds grounded answers from Power BI data",
+      "topic": "ai",
+      "score": 55,
+      "tags": [
+        "Microsoft 365 Copilot",
+        "Power BI",
+        "semantic models",
+        "data governance"
+      ],
+      "summary": "Microsoft 365 Copilot can now reason over Power BI reports and semantic models to answer natural-language questions with enterprise data. The integration reaches general availability in August 2026, requiring administrators to review Power BI permissions and Copilot data-governance controls."
+    },
+    {
+      "id": "m365-roadmap-73318f36fc",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567889",
+      "published": "2026-07-20T22:37:15.000Z",
+      "ingested": "2026-07-21T04:23:51.963Z",
+      "title_original": "SharePoint: Flexible Section Authoring Improvements",
+      "headline": "SharePoint improves flexible page section authoring",
+      "topic": "endpoint",
+      "score": 30,
+      "tags": [
+        "SharePoint",
+        "page authoring",
+        "Flexible Sections",
+        "layout"
+      ],
+      "summary": "SharePoint is adding persistent layout guides, clearer column controls, and one-click conversion of existing sections into Flexible Sections. The August 2026 release should simplify page authoring across desktop, mobile, and email experiences but has limited administrative impact."
+    },
+    {
+      "id": "m365-roadmap-d383a95eb5",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567883",
+      "published": "2026-07-20T22:37:15.000Z",
+      "ingested": "2026-07-21T04:24:13.305Z",
+      "title_original": "Microsoft Teams: Unified Agent and App Installation Management Across Microsoft 365 and Teams Admin Center",
+      "headline": "Microsoft Unifies App and Agent Installation Across Microsoft 365",
+      "topic": "endpoint",
+      "score": 48,
+      "tags": [
+        "Microsoft 365",
+        "Teams",
+        "Copilot",
+        "app management"
+      ],
+      "summary": "Microsoft will unify app and agent installation changes across Teams, Outlook, and Microsoft 365 Copilot in August 2026. Administrators will be able to configure installations once and enforce them consistently across supported surfaces."
+    },
+    {
+      "id": "entra-blog-3365ae7c0a",
+      "source_id": "entra-blog",
+      "source_name": "Microsoft Entra Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/secure-ai-web-and-private-apps-with-zero-trust/ba-p/4516387",
+      "published": "2026-07-20T21:26:12.000Z",
+      "ingested": "2026-07-21T04:23:51.963Z",
+      "title_original": "Secure AI, web, and private apps with Zero Trust",
+      "headline": "Microsoft previews stronger Zero Trust controls for AI and private access",
+      "topic": "identity",
+      "score": 66,
+      "tags": [
+        "Entra",
+        "Zero Trust",
+        "SASE",
+        "AI agents"
+      ],
+      "summary": "Microsoft is previewing new Entra Internet Access and Private Access controls for AI interactions, sensitive data, applications, and connectivity resilience. Administrators can apply identity, device, location, and risk context across more traffic, including access initiated by AI agents."
+    },
+    {
+      "id": "windows-insider-b73d2b626e",
+      "source_id": "windows-insider",
+      "source_name": "Windows Insider Blog",
+      "url": "https://blogs.windows.com/windows-insider/2026/07/20/announcing-new-builds-for-20-july-2026/",
+      "published": "2026-07-20T21:05:12.000Z",
+      "ingested": "2026-07-21T04:24:57.011Z",
+      "title_original": "Announcing new builds for 20 July 2026",
+      "headline": "Microsoft Releases New Windows 11 Preview Builds Across Three Channels",
+      "topic": "endpoint",
+      "score": 49,
+      "tags": [
+        "Windows 11",
+        "Windows Insider",
+        "preview builds",
+        "26H1"
+      ],
+      "summary": "Microsoft released Windows 11 preview builds for Beta, Experimental, and Release Preview channels, covering versions from 24H2 through 26H1. Endpoint administrators should review the channel-specific notes before validating upcoming Windows changes in managed test rings."
+    },
+    {
+      "id": "entra-blog-8c02848587",
+      "source_id": "entra-blog",
+      "source_name": "Microsoft Entra Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/plan-your-azure-ad-b2c-migration-with-the-migration-policy/ba-p/4532874",
+      "published": "2026-07-20T17:18:24.000Z",
+      "ingested": "2026-07-21T04:23:51.963Z",
+      "title_original": "Plan your Azure AD B2C migration with the Migration Policy Analyzer",
+      "headline": "Microsoft releases Azure AD B2C Migration Policy Analyzer",
+      "topic": "identity",
+      "score": 72,
+      "tags": [
+        "Azure AD B2C",
+        "External ID",
+        "migration",
+        "custom policies"
+      ],
+      "summary": "Microsoft has made the Migration Policy Analyzer generally available for assessing Azure AD B2C custom policies before moving to Entra External ID. Identity teams can inventory authentication capabilities, identify migration gaps, and reduce manual analysis, although the tool does not scan the entire tenant."
+    },
+    {
+      "id": "call4cloud-770ad7715f",
+      "source_id": "call4cloud",
+      "source_name": "Call4Cloud (Rudy Ooms)",
+      "url": "https://patchmypc.com/blog/company-portal-error-loading-apps/",
+      "published": "2026-07-20T14:16:30.000Z",
+      "ingested": "2026-07-21T04:24:57.011Z",
+      "title_original": "Company Portal: Error Loading Apps",
+      "headline": "Company Portal App Loading Failures Trace Back to IWService Errors",
+      "topic": "endpoint",
+      "score": 34,
+      "tags": [
+        "Intune",
+        "Company Portal",
+        "IWService",
+        "HTTP 503"
+      ],
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image-21.jpg",
+      "summary": "The troubleshooting analysis connects Company Portal app-loading failures with matching web portal errors and HTTP 500 or 503 responses from IWService. Intune administrators can use these signals to distinguish service-side failures from device-specific Company Portal problems."
+    },
+    {
+      "id": "msrc-update-guide-9a6ed13413",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50652",
+      "published": "2026-07-20T14:00:00.000Z",
+      "ingested": "2026-07-21T04:24:13.305Z",
+      "title_original": "CVE-2026-50652 Azure Active Directory Denial of Service Vulnerability",
+      "headline": "Microsoft Updates Product Details for Entra ID CVE-2026-50652",
+      "topic": "security",
+      "score": 16,
+      "tags": [
+        "Entra ID",
+        "CVE-2026-50652",
+        "denial of service"
+      ],
+      "summary": "Microsoft updated the affected-product information for the Entra ID denial-of-service vulnerability CVE-2026-50652. The revision is informational and does not indicate a new vulnerability or security update."
+    },
+    {
+      "id": "msrc-update-guide-1526b79ad4",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50653",
+      "published": "2026-07-20T14:00:00.000Z",
+      "ingested": "2026-07-21T04:24:13.305Z",
+      "title_original": "CVE-2026-50653 Azure Active Directory Denial of Service Vulnerability",
+      "headline": "Microsoft Updates Product Details for Entra ID CVE-2026-50653",
+      "topic": "security",
+      "score": 16,
+      "tags": [
+        "Entra ID",
+        "CVE-2026-50653",
+        "denial of service"
+      ],
+      "summary": "Microsoft updated the affected-product information for the Entra ID denial-of-service vulnerability CVE-2026-50653. The revision is informational and does not introduce a new vulnerability or security update."
+    },
+    {
+      "id": "msrc-update-guide-207fcba1bf",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47304",
+      "published": "2026-07-20T14:00:00.000Z",
+      "ingested": "2026-07-21T04:24:13.305Z",
+      "title_original": "CVE-2026-47304 .NET Security Feature Bypass Vulnerability",
+      "headline": "Microsoft Revises Product Details for .NET CVE-2026-47304",
+      "topic": "security",
+      "score": 18,
+      "tags": [
+        ".NET",
+        "CVE-2026-47304",
+        "security bypass"
+      ],
+      "summary": "Microsoft revised the product information for the .NET security feature bypass vulnerability CVE-2026-47304. Administrators should note the clarified applicability, but the change is informational and does not provide a new update."
+    },
+    {
+      "id": "msrc-update-guide-0060ad62bf",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50304",
+      "published": "2026-07-20T14:00:00.000Z",
+      "ingested": "2026-07-21T04:24:13.305Z",
+      "title_original": "CVE-2026-50304 Windows Active Directory Federation Services Denial of Service Vulnerability",
+      "headline": "Microsoft Updates ADFS Product Details for CVE-2026-50304",
+      "topic": "identity",
+      "score": 16,
+      "tags": [
+        "ADFS",
+        "CVE-2026-50304",
+        "denial of service"
+      ],
+      "summary": "Microsoft updated the affected-product information for the ADFS denial-of-service vulnerability CVE-2026-50304. The revision is informational and does not indicate a new vulnerability or security update."
+    },
+    {
+      "id": "msrc-update-guide-2e41adfa3d",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50368",
+      "published": "2026-07-20T14:00:00.000Z",
+      "ingested": "2026-07-21T04:24:13.305Z",
+      "title_original": "CVE-2026-50368 Windows Active Directory Federation Services Denial of Service Vulnerability",
+      "headline": "Microsoft Updates ADFS Product Details for CVE-2026-50368",
+      "topic": "identity",
+      "score": 16,
+      "tags": [
+        "ADFS",
+        "CVE-2026-50368",
+        "denial of service"
+      ],
+      "summary": "Microsoft updated the affected-product information for the ADFS denial-of-service vulnerability CVE-2026-50368. The revision is informational and does not indicate a new vulnerability or security update."
+    },
+    {
+      "id": "msrc-update-guide-579c133ca2",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50324",
+      "published": "2026-07-20T14:00:00.000Z",
+      "ingested": "2026-07-21T04:24:34.496Z",
+      "title_original": "CVE-2026-50324 Windows Active Directory Federation Services Denial of Service Vulnerability",
+      "headline": "Microsoft Updates ADFS Product Data for CVE-2026-50324",
+      "topic": "security",
+      "score": 18,
+      "tags": [
+        "ADFS",
+        "CVE",
+        "denial of service"
+      ],
+      "summary": "Microsoft updated the affected product information for this ADFS denial-of-service vulnerability. The change is informational only, so administrators do not need to reassess remediation based on this update alone."
+    },
+    {
+      "id": "msrc-update-guide-1388e9b08c",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50355",
+      "published": "2026-07-20T14:00:00.000Z",
+      "ingested": "2026-07-21T04:24:34.496Z",
+      "title_original": "CVE-2026-50355 Windows Active Directory Federation Services Denial of Service Vulnerability",
+      "headline": "Microsoft Updates ADFS Product Data for CVE-2026-50355",
+      "topic": "security",
+      "score": 18,
+      "tags": [
+        "ADFS",
+        "CVE",
+        "denial of service"
+      ],
+      "summary": "Microsoft updated the affected product information for this ADFS denial-of-service vulnerability. The change is informational only, so administrators do not need to reassess remediation based on this update alone."
+    },
+    {
+      "id": "msrc-update-guide-554f8f5c1a",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50411",
+      "published": "2026-07-20T14:00:00.000Z",
+      "ingested": "2026-07-21T04:24:34.496Z",
+      "title_original": "CVE-2026-50411 Windows Active Directory Federation Services Denial of Service Vulnerability",
+      "headline": "Microsoft Updates ADFS Product Data for CVE-2026-50411",
+      "topic": "security",
+      "score": 18,
+      "tags": [
+        "ADFS",
+        "CVE",
+        "denial of service"
+      ],
+      "summary": "Microsoft updated the affected product information for this ADFS denial-of-service vulnerability. The change is informational only, so administrators do not need to reassess remediation based on this update alone."
+    },
+    {
+      "id": "msrc-update-guide-9291a085dc",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50525",
+      "published": "2026-07-20T14:00:00.000Z",
+      "ingested": "2026-07-21T04:24:34.496Z",
+      "title_original": "CVE-2026-50525 .NET Denial of Service Vulnerability",
+      "headline": "Microsoft Updates .NET Product Data for CVE-2026-50525",
+      "topic": "security",
+      "score": 18,
+      "tags": [
+        ".NET",
+        "CVE",
+        "denial of service"
+      ],
+      "summary": "Microsoft updated the affected product information for this .NET denial-of-service vulnerability. The change is informational only, so administrators do not need to reassess remediation based on this update alone."
+    },
+    {
+      "id": "msrc-update-guide-08903f4893",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50527",
+      "published": "2026-07-20T14:00:00.000Z",
+      "ingested": "2026-07-21T04:24:34.496Z",
+      "title_original": "CVE-2026-50527 .NET Framework Denial of Service Vulnerability",
+      "headline": "Microsoft Updates .NET Framework Product Data for CVE-2026-50527",
+      "topic": "security",
+      "score": 18,
+      "tags": [
+        ".NET Framework",
+        "CVE",
+        "denial of service"
+      ],
+      "summary": "Microsoft updated the affected product information for this .NET Framework denial-of-service vulnerability. The change is informational only, so administrators do not need to reassess remediation based on this update alone."
+    },
+    {
+      "id": "msrc-update-guide-b0d99a85d9",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50646",
+      "published": "2026-07-20T14:00:00.000Z",
+      "ingested": "2026-07-21T04:24:34.496Z",
+      "title_original": "CVE-2026-50646 .NET Framework Remote Code Execution Vulnerability",
+      "headline": "Microsoft Updates .NET Framework Product Data for CVE-2026-50646",
+      "topic": "security",
+      "score": 23,
+      "tags": [
+        ".NET Framework",
+        "CVE",
+        "remote code execution"
+      ],
+      "summary": "Microsoft updated the affected product information for this .NET Framework remote-code-execution vulnerability. The change is informational only, so administrators do not need to reassess remediation based on this update alone."
+    },
+    {
+      "id": "msrc-update-guide-bd3630a75f",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50647",
+      "published": "2026-07-20T14:00:00.000Z",
+      "ingested": "2026-07-21T04:24:57.011Z",
+      "title_original": "CVE-2026-50647 Active Directory Federation Server Denial of Service Vulnerability",
+      "headline": "Microsoft Revises ADFS CVE-2026-50647 Product Information",
+      "topic": "identity",
+      "score": 23,
+      "tags": [
+        "ADFS",
+        "CVE-2026-50647",
+        "denial of service"
+      ],
+      "summary": "Microsoft updated the affected-product information for the ADFS denial-of-service vulnerability. The change is informational only, but administrators should verify their patch inventories against the revised table."
+    },
+    {
+      "id": "msrc-update-guide-d89f783160",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50648",
+      "published": "2026-07-20T14:00:00.000Z",
+      "ingested": "2026-07-21T04:24:57.011Z",
+      "title_original": "CVE-2026-50648 .NET Framework Denial of Service Vulnerability",
+      "headline": "Microsoft Revises .NET Framework CVE-2026-50648 Product Information",
+      "topic": "security",
+      "score": 23,
+      "tags": [
+        ".NET Framework",
+        "CVE-2026-50648",
+        "denial of service"
+      ],
+      "summary": "Microsoft updated the affected-product information for the .NET Framework denial-of-service vulnerability. No new security guidance was announced, but administrators should reconcile the revised table with their patch scope."
+    },
+    {
+      "id": "msrc-update-guide-c26062a194",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50649",
+      "published": "2026-07-20T14:00:00.000Z",
+      "ingested": "2026-07-21T04:24:57.011Z",
+      "title_original": "CVE-2026-50649 .NET Remote Code Execution Vulnerability",
+      "headline": "Microsoft Revises .NET CVE-2026-50649 Product Information",
+      "topic": "security",
+      "score": 25,
+      "tags": [
+        ".NET",
+        "CVE-2026-50649",
+        "remote code execution"
+      ],
+      "summary": "Microsoft updated the affected-product information for the .NET remote-code-execution vulnerability. The revision is informational, but administrators should confirm that patching reports include every listed product."
+    },
     {
       "id": "msrc-update-guide-a2743e4fb0",
       "source_id": "msrc-update-guide",
@@ -37,6 +461,25 @@
         "privilege escalation"
       ],
       "summary": "Microsoft corrected build numbers associated with the Dynamics 365 Business Central elevation-of-privilege vulnerability. Administrators can use the revised values to verify deployments, but the update adds no new remediation guidance."
+    },
+    {
+      "id": "core-infra-security-97e8713bd3",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/azure-lighthouse-bring-your-partner-in-without-letting-their/ba-p/4529852",
+      "published": "2026-07-20T12:00:00.000Z",
+      "ingested": "2026-07-21T04:24:57.011Z",
+      "title_original": "Azure Lighthouse: Bring Your Partner In, Without Letting Their Identities In (part 2 of 3)",
+      "headline": "Azure Lighthouse Limits Partner Identity Footprints in Customer Tenants",
+      "topic": "identity",
+      "score": 44,
+      "tags": [
+        "Azure Lighthouse",
+        "delegated access",
+        "Entra ID",
+        "RBAC"
+      ],
+      "summary": "The analysis explains how Azure Lighthouse lets service providers manage Azure resources without creating guest or local accounts in customer tenants. Administrators can reduce identity cleanup, persistent-access risk, and credential-management overhead while retaining delegated control."
     },
     {
       "id": "msrc-update-guide-1dde859563",
@@ -8803,448 +9246,6 @@
         "libsolv",
         "heap-overflow",
         "azure-linux"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-2bc5d7d8b2",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-9150",
-      "published": "2026-06-28T08:40:36.000Z",
-      "ingested": "2026-06-28T07:37:46.676Z",
-      "title_original": "CVE-2026-9150 Libsolv: stack-based buffer overflow in libsolv's debian metadata parser when handling sha384/sha512 checksums",
-      "headline": "CVE-2026-9150 Libsolv: stack-based buffer overflow in libsolv's debian metadata parser when handling sha384/sha512 checksums",
-      "topic": "security",
-      "score": 36,
-      "tags": [
-        "cve-2026-9150",
-        "libsolv",
-        "buffer-overflow",
-        "azure-linux"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-9b6799ea2b",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27136",
-      "published": "2026-06-28T08:40:16.000Z",
-      "ingested": "2026-06-28T07:37:46.675Z",
-      "title_original": "CVE-2026-27136 Invoking  duplicate attributes can cause XSS in golang.org/x/net/html",
-      "headline": "CVE-2026-27136 Invoking  duplicate attributes can cause XSS in golang.org/x/net/html",
-      "topic": "security",
-      "score": 34,
-      "tags": [
-        "cve-2026-27136",
-        "golang",
-        "xss",
-        "azure-linux"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-5ae18cee9d",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13038",
-      "published": "2026-06-27T00:46:45.000Z",
-      "ingested": "2026-06-26T19:45:28.563Z",
-      "title_original": "Chromium: CVE-2026-13038 Use after free in Autofill",
-      "headline": "Chromium: CVE-2026-13038 Use after free in Autofill",
-      "topic": "security",
-      "score": 42,
-      "tags": [
-        "chromium",
-        "edge",
-        "cve-2026-13038",
-        "use-after-free",
-        "autofill"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-0a9fe4e1d4",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13036",
-      "published": "2026-06-27T00:46:44.000Z",
-      "ingested": "2026-06-26T19:44:18.835Z",
-      "title_original": "Chromium: CVE-2026-13036 Use after free in Blink",
-      "headline": "Chromium: CVE-2026-13036 Use after free in Blink",
-      "topic": "security",
-      "score": 52,
-      "tags": [
-        "edge",
-        "chromium",
-        "cve-2026-13036",
-        "blink",
-        "uaf"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-76ba6c7731",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13035",
-      "published": "2026-06-27T00:46:43.000Z",
-      "ingested": "2026-06-26T19:44:18.835Z",
-      "title_original": "Chromium: CVE-2026-13035 Use after free in Bluetooth",
-      "headline": "Chromium: CVE-2026-13035 Use after free in Bluetooth",
-      "topic": "security",
-      "score": 49,
-      "tags": [
-        "edge",
-        "chromium",
-        "cve-2026-13035",
-        "bluetooth",
-        "uaf"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-a5817b5a2c",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13034",
-      "published": "2026-06-27T00:46:41.000Z",
-      "ingested": "2026-06-26T19:44:18.835Z",
-      "title_original": "Chromium: CVE-2026-13034 Inappropriate implementation in Passwords",
-      "headline": "Chromium: CVE-2026-13034 Inappropriate implementation in Passwords",
-      "topic": "security",
-      "score": 48,
-      "tags": [
-        "edge",
-        "chromium",
-        "cve-2026-13034",
-        "passwords"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-59e1161366",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13033",
-      "published": "2026-06-27T00:46:40.000Z",
-      "ingested": "2026-06-26T19:44:18.835Z",
-      "title_original": "Chromium: CVE-2026-13033 Out of bounds read in Blink>InterestGroups",
-      "headline": "Chromium: CVE-2026-13033 Out of bounds read in Blink>InterestGroups",
-      "topic": "security",
-      "score": 45,
-      "tags": [
-        "edge",
-        "chromium",
-        "cve-2026-13033",
-        "blink",
-        "oob-read"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-2cc259cb93",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13031",
-      "published": "2026-06-27T00:46:39.000Z",
-      "ingested": "2026-06-26T19:44:18.835Z",
-      "title_original": "Chromium: CVE-2026-13031 Use after free in Blink",
-      "headline": "Chromium: CVE-2026-13031 Use after free in Blink",
-      "topic": "security",
-      "score": 51,
-      "tags": [
-        "edge",
-        "chromium",
-        "cve-2026-13031",
-        "blink",
-        "uaf"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-38d0fd3195",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13029",
-      "published": "2026-06-27T00:46:38.000Z",
-      "ingested": "2026-06-26T19:45:28.563Z",
-      "title_original": "Chromium: CVE-2026-13029 Use after free in Web Authentication",
-      "headline": "Chromium: CVE-2026-13029 Use after free in Web Authentication",
-      "topic": "security",
-      "score": 45,
-      "tags": [
-        "chromium",
-        "edge",
-        "cve-2026-13029",
-        "use-after-free",
-        "webauthn"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-00e8f567c6",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13027",
-      "published": "2026-06-27T00:46:36.000Z",
-      "ingested": "2026-06-26T19:43:02.643Z",
-      "title_original": "Chromium: CVE-2026-13027 Use after free in FileSystem",
-      "headline": "Chromium: CVE-2026-13027 Use after free in FileSystem",
-      "topic": "security",
-      "score": 45,
-      "tags": [
-        "edge",
-        "chromium",
-        "cve-2026-13027",
-        "use-after-free"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-aa12215cd7",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13026",
-      "published": "2026-06-27T00:46:35.000Z",
-      "ingested": "2026-06-26T19:43:02.645Z",
-      "title_original": "Chromium: CVE-2026-13026 Use after free in Digital Credentials",
-      "headline": "Chromium: CVE-2026-13026 Use after free in Digital Credentials",
-      "topic": "security",
-      "score": 45,
-      "tags": [
-        "edge",
-        "chromium",
-        "cve-2026-13026",
-        "use-after-free"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-c9b60f503f",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13025",
-      "published": "2026-06-27T00:46:34.000Z",
-      "ingested": "2026-06-26T19:43:02.645Z",
-      "title_original": "Chromium: CVE-2026-13025 Insufficient validation of untrusted input in DevTools",
-      "headline": "Chromium: CVE-2026-13025 Insufficient validation of untrusted input in DevTools",
-      "topic": "security",
-      "score": 40,
-      "tags": [
-        "edge",
-        "chromium",
-        "cve-2026-13025",
-        "devtools"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-7e3f34b01c",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13024",
-      "published": "2026-06-27T00:46:33.000Z",
-      "ingested": "2026-06-26T19:43:02.645Z",
-      "title_original": "Chromium: CVE-2026-13024 Insufficient validation of untrusted input in Navigation",
-      "headline": "Chromium: CVE-2026-13024 Insufficient validation of untrusted input in Navigation",
-      "topic": "security",
-      "score": 41,
-      "tags": [
-        "edge",
-        "chromium",
-        "cve-2026-13024",
-        "navigation"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-8bfe134a52",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13023",
-      "published": "2026-06-27T00:46:32.000Z",
-      "ingested": "2026-06-26T19:43:02.645Z",
-      "title_original": "Chromium: CVE-2026-13023 Uninitialized Use in GPU",
-      "headline": "Chromium: CVE-2026-13023 Uninitialized Use in GPU",
-      "topic": "security",
-      "score": 42,
-      "tags": [
-        "edge",
-        "chromium",
-        "cve-2026-13023",
-        "gpu"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-b79320cb59",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13022",
-      "published": "2026-06-27T00:46:31.000Z",
-      "ingested": "2026-06-26T19:43:02.645Z",
-      "title_original": "Chromium: CVE-2026-13022 Inappropriate implementation in Autofill",
-      "headline": "Chromium: CVE-2026-13022 Inappropriate implementation in Autofill",
-      "topic": "security",
-      "score": 40,
-      "tags": [
-        "edge",
-        "chromium",
-        "cve-2026-13022",
-        "autofill"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-b25c8a7c61",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13021",
-      "published": "2026-06-27T00:46:29.000Z",
-      "ingested": "2026-06-26T19:44:18.835Z",
-      "title_original": "Chromium: CVE-2026-13021 Inappropriate implementation in DeviceBoundSessionCredentials",
-      "headline": "Chromium: CVE-2026-13021 Inappropriate implementation in DeviceBoundSessionCredentials",
-      "topic": "security",
-      "score": 47,
-      "tags": [
-        "edge",
-        "chromium",
-        "cve-2026-13021",
-        "dbsc"
-      ]
-    },
-    {
-      "id": "m365-roadmap-94084578cc",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566703",
-      "published": "2026-06-26T22:01:51.000Z",
-      "ingested": "2026-06-26T22:33:12.040Z",
-      "title_original": "Microsoft Edge: Upgraded Copilot new tab page",
-      "headline": "Microsoft Edge: Upgraded Copilot new tab page",
-      "topic": "ai",
-      "score": 31,
-      "tags": [
-        "edge",
-        "copilot",
-        "ny-fane",
-        "m365"
-      ]
-    },
-    {
-      "id": "m365-roadmap-1734f123da",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566699",
-      "published": "2026-06-26T22:01:51.000Z",
-      "ingested": "2026-06-26T22:33:12.042Z",
-      "title_original": "Microsoft Viva: Discussion Post Previews",
-      "headline": "Microsoft Viva: Discussion Post Previews",
-      "topic": "endpoint",
-      "score": 27,
-      "tags": [
-        "viva",
-        "m365",
-        "samarbeid"
-      ]
-    },
-    {
-      "id": "m365-roadmap-8cc591c60a",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566698",
-      "published": "2026-06-26T22:01:51.000Z",
-      "ingested": "2026-06-26T22:33:12.042Z",
-      "title_original": "SharePoint: Neutral-themed SharePoint UI in Page Editing and Property Panes",
-      "headline": "SharePoint: Neutral-themed SharePoint UI in Page Editing and Property Panes",
-      "topic": "endpoint",
-      "score": 25,
-      "tags": [
-        "sharepoint",
-        "ui",
-        "design",
-        "m365"
-      ]
-    },
-    {
-      "id": "m365-roadmap-7702f87b3e",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=565870",
-      "published": "2026-06-26T22:01:51.000Z",
-      "ingested": "2026-06-26T22:33:12.042Z",
-      "title_original": "Microsoft Purview: Data Loss Prevention - Data Loss Prevention to safeguard sensitive information from external web search in Microsoft 356 Copilot and Copilot Chat",
-      "headline": "Microsoft Purview: Data Loss Prevention - Data Loss Prevention to safeguard sensitive information from external web search in Microsoft 356 Copilot and Copilot Chat",
-      "topic": "security",
-      "score": 49,
-      "tags": [
-        "purview",
-        "dlp",
-        "copilot",
-        "datalekkasje"
-      ]
-    },
-    {
-      "id": "call4cloud-75d57d8e7d",
-      "source_id": "call4cloud",
-      "source_name": "Call4Cloud (Rudy Ooms)",
-      "url": "https://patchmypc.com/blog/five-eyes-intelligence-alliance-says-its-time-to-speed-up-patching/",
-      "published": "2026-06-26T18:41:24.000Z",
-      "ingested": "2026-06-26T21:04:21.522Z",
-      "title_original": "Five Eyes Intelligence Alliance Says It’s Time to Speed Up Patching",
-      "headline": "Five Eyes Intelligence Alliance Says It’s Time to Speed Up Patching",
-      "topic": "security",
-      "score": 42,
-      "tags": [
-        "five-eyes",
-        "patching",
-        "sårbarheter",
-        "eol"
-      ],
-      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/06/image-64.png",
-      "summary": "On June 22, the Five Eyes intelligence alliance jointly urged organizations to patch known vulnerabilities faster and phase out systems that no longer receive security updates. IT administrators should review patching schedules and end-of-life system inventories before attackers exploit the gaps."
-    },
-    {
-      "id": "defender-xdr-0cb455ad38",
-      "source_id": "defender-xdr",
-      "source_name": "Microsoft Defender XDR Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/the-next-frontier-in-endpoint-security-securing-local-ai-agents/ba-p/4524651",
-      "published": "2026-06-26T17:49:18.000Z",
-      "ingested": "2026-06-27T17:00:36.939Z",
-      "title_original": "The next frontier in endpoint security: Securing local AI agents with Microsoft Defender",
-      "headline": "The next frontier in endpoint security: Securing local AI agents with Microsoft Defender",
-      "topic": "security",
-      "score": 68,
-      "tags": [
-        "defender",
-        "ai-agenter",
-        "xdr",
-        "endepunkt",
-        "prompt-injection"
-      ]
-    },
-    {
-      "id": "windows-insider-fb919178ea",
-      "source_id": "windows-insider",
-      "source_name": "Windows Insider Blog",
-      "url": "https://blogs.windows.com/windows-insider/2026/06/26/announcing-new-builds-for-26-june-2026-retail-launch-of-new-wip-improvements/",
-      "published": "2026-06-26T17:00:19.000Z",
-      "ingested": "2026-06-26T19:15:16.655Z",
-      "title_original": "Announcing new builds for 26 June 2026, retail launch of new WIP improvements",
-      "headline": "Announcing new builds for 26 June 2026, retail launch of new WIP improvements",
-      "topic": "endpoint",
-      "score": 44,
-      "tags": [
-        "windows-11",
-        "windows-insider",
-        "wip",
-        "retail"
-      ],
-      "hero_image": "https://winblogs.thesourcemediaassets.com/sites/44/2026/06/taskbarsize2.png",
-      "summary": "Microsoft is beginning to roll out the new Windows Insider setup to regular retail Windows 11 builds this week, adding new channel choices under Settings > Windows Update > Windows Insider Program. In most cases, users can now change channels or leave the program without reinstalling Windows; the rollout is gradual and accompanied by new Beta and Experimental channel builds."
-    },
-    {
-      "id": "security-community-a7f9be34c2",
-      "source_id": "security-community",
-      "source_name": "Microsoft Security Community Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/the-state-of-mcp-security-in-2026/ba-p/4531327",
-      "published": "2026-06-26T16:21:41.000Z",
-      "ingested": "2026-06-27T15:57:47.257Z",
-      "title_original": "The state of MCP security in 2026",
-      "headline": "The state of MCP security in 2026",
-      "topic": "security",
-      "score": 44,
-      "tags": [
-        "mcp",
-        "ai-agenter",
-        "gateway",
-        "trust-boundary"
       ]
     }
   ]
