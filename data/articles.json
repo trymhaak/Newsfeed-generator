@@ -1,6 +1,64 @@
 {
-  "generated_at": "2026-07-22T09:58:20.535Z",
+  "generated_at": "2026-07-22T17:00:43.470Z",
   "articles": [
+    {
+      "id": "windows-it-pro-4dc817e111",
+      "source_id": "windows-it-pro",
+      "source_name": "Windows IT Pro Blog",
+      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/strengthening-key-management-service-kms-with-hardware-based/ba-p/4539465",
+      "published": "2026-07-22T16:00:00.000Z",
+      "ingested": "2026-07-22T17:00:43.309Z",
+      "title_original": "Strengthening Key Management Service - (KMS) with Hardware-Based Trust",
+      "headline": "Microsoft Adds TPM Attestation to Secure Windows KMS Activation",
+      "topic": "endpoint",
+      "score": 61,
+      "tags": [
+        "KMS",
+        "TPM",
+        "Windows Server",
+        "attestation"
+      ],
+      "summary": "Microsoft is introducing KMS Hardware-Secured, which uses TPM-based attestation to verify that activation hosts run on trusted hardware. Administrators should prepare upcoming Windows Server KMS deployments for hardware-backed validation to reduce spoofing, credential theft, and licensing risk."
+    },
+    {
+      "id": "prajwal-desai-8e474080ec",
+      "source_id": "prajwal-desai",
+      "source_name": "Prajwal Desai",
+      "url": "https://www.prajwaldesai.com/automatically-update-macos-pkg-apps-using-intune/",
+      "published": "2026-07-22T13:54:42.000Z",
+      "ingested": "2026-07-22T17:00:43.309Z",
+      "title_original": "How to Automatically Update macOS PKG Apps Using Intune",
+      "headline": "Intune Adds Automatic Updates for Managed macOS PKG Apps",
+      "topic": "endpoint",
+      "score": 43,
+      "tags": [
+        "Intune",
+        "macOS",
+        "PKG",
+        "app management"
+      ],
+      "summary": "Intune service release 2606 lets administrators automatically update macOS PKG applications by updating their app policies. This reduces manual packaging work and helps managed Macs receive current application versions more consistently."
+    },
+    {
+      "id": "admindroid-e61cf1e423",
+      "source_id": "admindroid",
+      "source_name": "AdminDroid Blog",
+      "url": "https://blog.admindroid.com/free-microsoft-365-management-tools/",
+      "published": "2026-07-22T10:30:00.000Z",
+      "ingested": "2026-07-22T17:00:43.309Z",
+      "title_original": "12 Free Microsoft 365 Management Tools",
+      "headline": "12 Free Tools Simplify Microsoft 365 Administration and Security",
+      "topic": "identity",
+      "score": 28,
+      "tags": [
+        "Microsoft 365",
+        "Conditional Access",
+        "PowerShell",
+        "tenant security"
+      ],
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Free-Microsoft-365-Management-Tools-150x150.png",
+      "summary": "AdminDroid highlights 12 free tools for Microsoft 365 tasks such as configuration backup, drift detection, Conditional Access deployment, security assessment, and reporting. Administrators can use the list to fill gaps in native admin centers, but should review each community tool before granting tenant access."
+    },
     {
       "id": "msrc-update-guide-cd8a279611",
       "source_id": "msrc-update-guide",
@@ -9226,60 +9284,6 @@
         "linux-kernel",
         "btrfs",
         "filesystem"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-943c5c6211",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71225",
-      "published": "2026-06-28T08:58:39.000Z",
-      "ingested": "2026-06-28T11:44:05.658Z",
-      "title_original": "CVE-2025-71225 md: suspend array while updating raid_disks via sysfs",
-      "headline": "CVE-2025-71225 md: suspend array while updating raid_disks via sysfs",
-      "topic": "security",
-      "score": 19,
-      "tags": [
-        "cve-2025-71225",
-        "linux-kernel",
-        "raid",
-        "md"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-831687a6c7",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23213",
-      "published": "2026-06-28T08:58:23.000Z",
-      "ingested": "2026-06-28T11:44:05.658Z",
-      "title_original": "CVE-2026-23213 drm/amd/pm: Disable MMIO access during SMU Mode 1 reset",
-      "headline": "CVE-2026-23213 drm/amd/pm: Disable MMIO access during SMU Mode 1 reset",
-      "topic": "security",
-      "score": 16,
-      "tags": [
-        "cve-2026-23213",
-        "linux-kernel",
-        "amd-gpu",
-        "drm"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-377e5ebcc9",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-40213",
-      "published": "2026-06-28T08:58:16.000Z",
-      "ingested": "2026-06-28T11:01:58.896Z",
-      "title_original": "CVE-2025-40213 Bluetooth: MGMT: fix crash in set_mesh_sync and set_mesh_complete",
-      "headline": "CVE-2025-40213 Bluetooth: MGMT: fix crash in set_mesh_sync and set_mesh_complete",
-      "topic": "security",
-      "score": 9,
-      "tags": [
-        "cve-2025-40213",
-        "linux-kjerne",
-        "bluetooth",
-        "mesh"
       ]
     }
   ]
