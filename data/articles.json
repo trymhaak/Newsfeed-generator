@@ -1,6 +1,63 @@
 {
-  "generated_at": "2026-07-21T19:25:45.817Z",
+  "generated_at": "2026-07-22T02:56:15.493Z",
   "articles": [
+    {
+      "id": "m365-roadmap-a58be8c717",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=568075",
+      "published": "2026-07-21T22:37:32.000Z",
+      "ingested": "2026-07-22T02:56:15.388Z",
+      "title_original": "Microsoft Purview: Data Loss Prevention - Data Security for non-Microsoft connected apps",
+      "headline": "Microsoft Purview extends DLP controls to non-Microsoft apps",
+      "topic": "security",
+      "score": 55,
+      "tags": [
+        "Purview",
+        "DLP",
+        "auto-labeling",
+        "SaaS security"
+      ],
+      "summary": "Microsoft Purview is extending Data Loss Prevention and automatic sensitivity labeling to connected services including Google Workspace, Box, Dropbox, Salesforce, AWS, and Webex. Security teams should review application-specific conditions and actions before the preview in July 2026 and general availability in September 2026."
+    },
+    {
+      "id": "windows-insider-95a22b0b75",
+      "source_id": "windows-insider",
+      "source_name": "Windows Insider Blog",
+      "url": "https://blogs.windows.com/windows-insider/2026/07/21/announcing-windows-11-insider-preview-build-28120-2546-for-experimental-26h1/",
+      "published": "2026-07-21T21:03:05.000Z",
+      "ingested": "2026-07-22T02:56:15.388Z",
+      "title_original": "Announcing Windows 11 Insider Preview Build 28120.2546 for Experimental (26H1)",
+      "headline": "Windows 11 enforces smart card removal in Entra-authenticated remote sessions",
+      "topic": "endpoint",
+      "score": 44,
+      "tags": [
+        "Windows 11",
+        "smart cards",
+        "Azure Virtual Desktop",
+        "Windows 365"
+      ],
+      "summary": "Windows 11 Insider Build 28120.2546 lets administrators automatically disconnect Azure Virtual Desktop and Windows 365 sessions when a redirected smart card is removed. The change extends smart card removal policies to Entra-authenticated remote sessions, helping organizations enforce security and compliance requirements."
+    },
+    {
+      "id": "entra-blog-e817c093d6",
+      "source_id": "entra-blog",
+      "source_name": "Microsoft Entra Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/microsoft-entra-id-enhances-security-of-branded-sign-ins/ba-p/4537471",
+      "published": "2026-07-21T17:58:43.000Z",
+      "ingested": "2026-07-22T02:56:15.388Z",
+      "title_original": "Microsoft Entra ID enhances security of branded sign-ins",
+      "headline": "Microsoft Entra retires custom CSS positioning for branded sign-ins",
+      "topic": "identity",
+      "score": 65,
+      "tags": [
+        "Entra ID",
+        "custom branding",
+        "phishing resistance",
+        "CSS"
+      ],
+      "summary": "Microsoft Entra ID will retire custom CSS positioning properties for branded sign-in pages globally on October 26, 2026, followed by all custom CSS later in 2027. Administrators should identify affected tenants and update branding to avoid broken layouts while improving phishing resistance."
+    },
     {
       "id": "call4cloud-b9140a14eb",
       "source_id": "call4cloud",
@@ -9208,63 +9265,6 @@
         "cve-2025-21801",
         "linux-kernel",
         "driver",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-4390f657ee",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-57974",
-      "published": "2026-06-28T08:48:51.000Z",
-      "ingested": "2026-06-28T08:49:58.900Z",
-      "title_original": "CVE-2024-57974 udp: Deal with race between UDP socket address change and rehash",
-      "headline": "CVE-2024-57974 udp: Deal with race between UDP socket address change and rehash",
-      "topic": "security",
-      "score": 20,
-      "tags": [
-        "cve-2024-57974",
-        "linux-kernel",
-        "udp",
-        "azure-linux",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-2d9377369f",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21768",
-      "published": "2026-06-28T08:47:48.000Z",
-      "ingested": "2026-06-28T08:49:58.900Z",
-      "title_original": "CVE-2025-21768 net: ipv6: fix dst ref loops in rpl, seg6 and ioam6 lwtunnels",
-      "headline": "CVE-2025-21768 net: ipv6: fix dst ref loops in rpl, seg6 and ioam6 lwtunnels",
-      "topic": "security",
-      "score": 20,
-      "tags": [
-        "cve-2025-21768",
-        "linux-kernel",
-        "ipv6",
-        "azure-linux",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-735b7b19f4",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-46808",
-      "published": "2026-06-28T08:47:34.000Z",
-      "ingested": "2026-06-28T09:46:18.758Z",
-      "title_original": "CVE-2024-46808 drm/amd/display: Add missing NULL pointer check within dpcd_extend_address_range",
-      "headline": "CVE-2024-46808 drm/amd/display: Add missing NULL pointer check within dpcd_extend_address_range",
-      "topic": "security",
-      "score": 7,
-      "tags": [
-        "linux-kernel",
-        "cve-2024-46808",
-        "amd",
-        "drm",
         "msrc"
       ]
     }
