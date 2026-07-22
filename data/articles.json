@@ -1,6 +1,255 @@
 {
-  "generated_at": "2026-07-22T02:56:15.493Z",
+  "generated_at": "2026-07-22T09:58:20.535Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-cd8a279611",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56434",
+      "published": "2026-07-22T08:41:55.000Z",
+      "ingested": "2026-07-22T09:57:50.965Z",
+      "title_original": "CVE-2026-56434 NGINX ngx_http_ssi_module vulnerability",
+      "headline": "Microsoft Publishes CVE-2026-56434 for the NGINX SSI Module",
+      "topic": "security",
+      "score": 32,
+      "tags": [
+        "CVE-2026-56434",
+        "NGINX",
+        "SSI",
+        "vulnerability"
+      ],
+      "summary": "Microsoft has published an advisory for CVE-2026-56434 affecting the NGINX ngx_http_ssi_module. Administrators using server-side includes should check affected versions and follow the available remediation guidance."
+    },
+    {
+      "id": "msrc-update-guide-d82706f792",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42533",
+      "published": "2026-07-22T08:41:48.000Z",
+      "ingested": "2026-07-22T09:57:50.965Z",
+      "title_original": "CVE-2026-42533 NGINX Map directive and Regex matching vulnerability",
+      "headline": "Microsoft Publishes CVE-2026-42533 for NGINX Map and Regex Matching",
+      "topic": "security",
+      "score": 32,
+      "tags": [
+        "CVE-2026-42533",
+        "NGINX",
+        "regex",
+        "vulnerability"
+      ],
+      "summary": "Microsoft has published an advisory for CVE-2026-42533 involving NGINX map directives and regular-expression matching. Administrators running NGINX should review the advisory, identify affected versions, and apply vendor guidance."
+    },
+    {
+      "id": "msrc-update-guide-2354ad5c55",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57211",
+      "published": "2026-07-22T08:40:56.000Z",
+      "ingested": "2026-07-22T09:58:20.458Z",
+      "title_original": "CVE-2026-57211 RabbitMQ: UNC SSRF affecting the management UI on Windows",
+      "headline": "RabbitMQ Management UI on Windows Is Vulnerable to UNC SSRF",
+      "topic": "security",
+      "score": 61,
+      "tags": [
+        "CVE-2026-57211",
+        "RabbitMQ",
+        "SSRF",
+        "Windows"
+      ],
+      "summary": "Microsoft disclosed CVE-2026-57211, a UNC-based server-side request forgery vulnerability affecting the RabbitMQ management UI on Windows. Administrators should review the advisory, assess affected deployments, and restrict management-interface exposure while following available remediation guidance."
+    },
+    {
+      "id": "msrc-update-guide-0e8374a7cf",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57216",
+      "published": "2026-07-22T08:40:25.000Z",
+      "ingested": "2026-07-22T09:58:09.431Z",
+      "title_original": "CVE-2026-57216 RabbitMQ: AMQP 1.0, AMQP 0-9-1, Stream Protocol loopback enforcement can lead to remote guest sessions due to listener-address loopback checks",
+      "headline": "RabbitMQ Fixes Remote Guest Sessions Caused by Loopback Checks",
+      "topic": "identity",
+      "score": 71,
+      "tags": [
+        "RabbitMQ",
+        "AMQP",
+        "guest access",
+        "authentication",
+        "loopback"
+      ],
+      "summary": "Faulty listener-address checks could treat remote AMQP and Stream Protocol connections as loopback traffic, enabling guest sessions remotely. Administrators should patch RabbitMQ immediately and verify that guest access remains restricted to localhost."
+    },
+    {
+      "id": "msrc-update-guide-7b1ebc8ffa",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57213",
+      "published": "2026-07-22T08:40:10.000Z",
+      "ingested": "2026-07-22T09:58:09.431Z",
+      "title_original": "CVE-2026-57213 RabbitMQ: Stored XSS federation management plugin via unsanitized consumer_tag rendering",
+      "headline": "RabbitMQ Fixes Stored XSS in Federation Management Plugin",
+      "topic": "security",
+      "score": 61,
+      "tags": [
+        "RabbitMQ",
+        "stored XSS",
+        "federation",
+        "management UI"
+      ],
+      "summary": "The RabbitMQ federation management plugin rendered unsanitized consumer tags, enabling stored cross-site scripting. Administrators should patch affected management interfaces and restrict console access until updates are deployed."
+    },
+    {
+      "id": "msrc-update-guide-2d43fe4c57",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57217",
+      "published": "2026-07-22T08:40:02.000Z",
+      "ingested": "2026-07-22T09:58:09.431Z",
+      "title_original": "CVE-2026-57217 RabbitMQ: Topic authorization can lead to cross-tenant routing-key bypass",
+      "headline": "RabbitMQ Fixes Cross-Tenant Topic Authorization Bypass",
+      "topic": "identity",
+      "score": 70,
+      "tags": [
+        "RabbitMQ",
+        "authorization",
+        "multi-tenancy",
+        "routing keys"
+      ],
+      "summary": "A RabbitMQ topic-authorization flaw could let messages bypass routing-key restrictions across tenant boundaries. Administrators running shared or multi-tenant brokers should update promptly and review topic permissions."
+    },
+    {
+      "id": "msrc-update-guide-a1acada6c4",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57220",
+      "published": "2026-07-22T08:39:55.000Z",
+      "ingested": "2026-07-22T09:58:09.431Z",
+      "title_original": "CVE-2026-57220 RabbitMQ: Stream listener does not enforce configured frame-size limit during authentication, permitting unauth'd mem-exhaust DoS",
+      "headline": "RabbitMQ Fixes Unauthenticated Memory-Exhaustion Attack",
+      "topic": "security",
+      "score": 70,
+      "tags": [
+        "RabbitMQ",
+        "Stream Protocol",
+        "denial of service",
+        "authentication"
+      ],
+      "summary": "RabbitMQ's Stream listener failed to enforce its configured frame-size limit during authentication, allowing an unauthenticated client to exhaust memory. Administrators should patch exposed brokers promptly to prevent remote denial-of-service attacks."
+    },
+    {
+      "id": "msrc-update-guide-b99cab490e",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64188",
+      "published": "2026-07-22T08:02:10.000Z",
+      "ingested": "2026-07-22T09:58:09.431Z",
+      "title_original": "CVE-2026-64188 net: qualcomm: rmnet: fix endpoint use-after-free in rmnet_dellink()",
+      "headline": "Qualcomm RMNET Fixes Use-After-Free in Endpoint Removal",
+      "topic": "endpoint",
+      "score": 60,
+      "tags": [
+        "Linux",
+        "Qualcomm",
+        "RMNET",
+        "use-after-free"
+      ],
+      "summary": "The Qualcomm RMNET driver contained a use-after-free flaw when removing a network endpoint. Administrators should update affected Linux systems to reduce the risk of crashes or memory corruption."
+    },
+    {
+      "id": "msrc-update-guide-e4fe31baec",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64189",
+      "published": "2026-07-22T08:02:03.000Z",
+      "ingested": "2026-07-22T09:58:09.431Z",
+      "title_original": "CVE-2026-64189 netfilter: ipset: fix race between dump and ip_set_list resize",
+      "headline": "Linux ipset Fixes Race Condition During List Resizing",
+      "topic": "security",
+      "score": 59,
+      "tags": [
+        "Linux",
+        "netfilter",
+        "ipset",
+        "race condition"
+      ],
+      "summary": "A race condition between ipset dumps and list resizing could cause unsafe behavior in the Linux netfilter subsystem. Administrators should apply the relevant security updates to systems that use ipset-based traffic filtering."
+    },
+    {
+      "id": "msrc-update-guide-e27b4a43e1",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64192",
+      "published": "2026-07-22T08:01:38.000Z",
+      "ingested": "2026-07-22T09:57:50.965Z",
+      "title_original": "CVE-2026-64192 bpf: Reject BPF_MAP_TYPE_INODE_STORAGE creation if BPF LSM is uninitialized",
+      "headline": "Microsoft Publishes CVE-2026-64192 for Linux BPF Inode Storage",
+      "topic": "security",
+      "score": 32,
+      "tags": [
+        "CVE-2026-64192",
+        "Linux kernel",
+        "BPF",
+        "LSM"
+      ],
+      "summary": "Microsoft has published an advisory for CVE-2026-64192 involving BPF inode-storage map creation when BPF LSM is uninitialized. Administrators responsible for Linux systems should review kernel exposure and apply applicable updates."
+    },
+    {
+      "id": "msrc-update-guide-b301e71dee",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26197",
+      "published": "2026-07-22T08:01:19.000Z",
+      "ingested": "2026-07-22T09:57:50.965Z",
+      "title_original": "CVE-2026-26197 Array full size, element count, and element size are not checked to make sure they match in H5Odtype.c",
+      "headline": "Microsoft Publishes CVE-2026-26197 for HDF5 Array Validation",
+      "topic": "security",
+      "score": 29,
+      "tags": [
+        "CVE-2026-26197",
+        "HDF5",
+        "array validation",
+        "vulnerability"
+      ],
+      "summary": "Microsoft has published an advisory for CVE-2026-26197 concerning inconsistent array size validation in H5Odtype.c. Administrators should identify software that bundles the affected HDF5 code and follow vendor remediation guidance."
+    },
+    {
+      "id": "office365-itpros-b2d9e55ce2",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/22/block-sharing-dlp-sharepoint/?utm_source=rss&utm_medium=rss&utm_campaign=block-sharing-dlp-sharepoint",
+      "published": "2026-07-22T07:00:59.000Z",
+      "ingested": "2026-07-22T09:57:50.965Z",
+      "title_original": "Purview DLP Blocks Sharing Files with Specific Domains or Users",
+      "headline": "Purview DLP Preview Blocks File Sharing with Named Domains and Users",
+      "topic": "security",
+      "score": 51,
+      "tags": [
+        "Purview DLP",
+        "SharePoint",
+        "OneDrive",
+        "data protection"
+      ],
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/DLP-Block-access-to-external-domains-and-users-rule.jpg?resize=840%2C375&ssl=1",
+      "summary": "Microsoft Purview DLP can now block external sharing of SharePoint and OneDrive files with specified domains or individual users in preview. Administrators can use targeted allow or deny lists to reduce data leakage without blocking all external collaboration."
+    },
+    {
+      "id": "ourcloudnetwork-781a695d91",
+      "source_id": "ourcloudnetwork",
+      "source_name": "Our Cloud Network (Daniel Bradley)",
+      "url": "https://ourcloudnetwork.com/microsoft-are-retiring-custom-css-positioning-in-company-branding/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-are-retiring-custom-css-positioning-in-company-branding",
+      "published": "2026-07-22T06:44:47.000Z",
+      "ingested": "2026-07-22T09:57:50.965Z",
+      "title_original": "Microsoft are retiring custom CSS positioning in company branding",
+      "headline": "Entra ID Retires Custom CSS Positioning for Company Branding",
+      "topic": "identity",
+      "score": 43,
+      "tags": [
+        "Entra ID",
+        "company branding",
+        "CSS",
+        "deprecation"
+      ],
+      "summary": "Microsoft will retire custom CSS positioning properties from Entra ID company branding on October 26, 2026. Administrators should review affected sign-in experiences and replace unsupported styling before layouts change."
+    },
     {
       "id": "m365-roadmap-a58be8c717",
       "source_id": "m365-roadmap",
@@ -9031,241 +9280,6 @@
         "linux-kjerne",
         "bluetooth",
         "mesh"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-b5086d93d1",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46282",
-      "published": "2026-06-28T08:57:17.000Z",
-      "ingested": "2026-06-28T07:15:46.318Z",
-      "title_original": "CVE-2026-46282 iio: frequency: admv1013: fix NULL pointer dereference on str",
-      "headline": "CVE-2026-46282 iio: frequency: admv1013: fix NULL pointer dereference on str",
-      "topic": "security",
-      "score": 9,
-      "tags": [
-        "linux-kernel",
-        "iio",
-        "cve-2026-46282",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-2069e39045",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46275",
-      "published": "2026-06-28T08:57:02.000Z",
-      "ingested": "2026-06-28T07:15:46.318Z",
-      "title_original": "CVE-2026-46275 Bluetooth: hci_uart: fix UAFs and race conditions in close and init paths",
-      "headline": "CVE-2026-46275 Bluetooth: hci_uart: fix UAFs and race conditions in close and init paths",
-      "topic": "security",
-      "score": 23,
-      "tags": [
-        "linux-kernel",
-        "bluetooth",
-        "use-after-free",
-        "cve-2026-46275"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-25e9b2f135",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-46778",
-      "published": "2026-06-28T08:56:37.000Z",
-      "ingested": "2026-06-28T09:46:18.758Z",
-      "title_original": "CVE-2024-46778 drm/amd/display: Check UnboundedRequestEnabled's value",
-      "headline": "CVE-2024-46778 drm/amd/display: Check UnboundedRequestEnabled's value",
-      "topic": "security",
-      "score": 7,
-      "tags": [
-        "linux-kernel",
-        "cve-2024-46778",
-        "amd",
-        "drm",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-40ccad610e",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42504",
-      "published": "2026-06-28T08:55:04.000Z",
-      "ingested": "2026-06-28T07:15:46.318Z",
-      "title_original": "CVE-2026-42504 Quadratic complexity in WordDecoder.DecodeHeader in mime",
-      "headline": "CVE-2026-42504 Quadratic complexity in WordDecoder.DecodeHeader in mime",
-      "topic": "security",
-      "score": 34,
-      "tags": [
-        "golang",
-        "dos",
-        "mime",
-        "cve-2026-42504"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-3e6d761514",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46244",
-      "published": "2026-06-28T08:54:38.000Z",
-      "ingested": "2026-06-28T07:15:46.318Z",
-      "title_original": "CVE-2026-46244 netfilter: nft_inner: Fix IPv6 inner_thoff desync",
-      "headline": "CVE-2026-46244 netfilter: nft_inner: Fix IPv6 inner_thoff desync",
-      "topic": "security",
-      "score": 27,
-      "tags": [
-        "linux-kernel",
-        "netfilter",
-        "ipv6",
-        "cve-2026-46244"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-5861aa532f",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21885",
-      "published": "2026-06-28T08:54:23.000Z",
-      "ingested": "2026-06-28T11:22:20.510Z",
-      "title_original": "CVE-2025-21885 RDMA/bnxt_re: Fix the page details for the srq created by kernel consumers",
-      "headline": "CVE-2025-21885 RDMA/bnxt_re: Fix the page details for the srq created by kernel consumers",
-      "topic": "security",
-      "score": 12,
-      "tags": [
-        "cve-2025-21885",
-        "linux-kernel",
-        "rdma",
-        "bnxt_re"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-5da91c3b9b",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46252",
-      "published": "2026-06-28T08:54:22.000Z",
-      "ingested": "2026-06-28T07:15:46.318Z",
-      "title_original": "CVE-2026-46252 regulator: core: fix locking in regulator_resolve_supply() error path",
-      "headline": "CVE-2026-46252 regulator: core: fix locking in regulator_resolve_supply() error path",
-      "topic": "security",
-      "score": 11,
-      "tags": [
-        "linux-kernel",
-        "regulator",
-        "cve-2026-46252",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-a7dffc0e99",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21892",
-      "published": "2026-06-28T08:53:51.000Z",
-      "ingested": "2026-06-28T11:22:20.510Z",
-      "title_original": "CVE-2025-21892 RDMA/mlx5: Fix the recovery flow of the UMR QP",
-      "headline": "CVE-2025-21892 RDMA/mlx5: Fix the recovery flow of the UMR QP",
-      "topic": "security",
-      "score": 13,
-      "tags": [
-        "cve-2025-21892",
-        "linux-kernel",
-        "rdma",
-        "mlx5"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-1306308bca",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46245",
-      "published": "2026-06-28T08:53:37.000Z",
-      "ingested": "2026-06-28T07:15:46.317Z",
-      "title_original": "CVE-2026-46245 drm/amd/display: Fix dc_link NULL handling in HPD init",
-      "headline": "CVE-2026-46245 drm/amd/display: Fix dc_link NULL handling in HPD init",
-      "topic": "security",
-      "score": 13,
-      "tags": [
-        "linux-kernel",
-        "amd",
-        "cve-2026-46245",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-f6718a9955",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21732",
-      "published": "2026-06-28T08:53:05.000Z",
-      "ingested": "2026-06-28T08:49:58.900Z",
-      "title_original": "CVE-2025-21732 RDMA/mlx5: Fix a race for an ODP MR which leads to CQE with error",
-      "headline": "CVE-2025-21732 RDMA/mlx5: Fix a race for an ODP MR which leads to CQE with error",
-      "topic": "security",
-      "score": 14,
-      "tags": [
-        "cve-2025-21732",
-        "linux-kernel",
-        "rdma",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-f7f7a7dcc9",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-57976",
-      "published": "2026-06-28T08:52:01.000Z",
-      "ingested": "2026-06-28T08:49:58.900Z",
-      "title_original": "CVE-2024-57976 btrfs: do proper folio cleanup when cow_file_range() failed",
-      "headline": "CVE-2024-57976 btrfs: do proper folio cleanup when cow_file_range() failed",
-      "topic": "security",
-      "score": 16,
-      "tags": [
-        "cve-2024-57976",
-        "linux-kernel",
-        "btrfs",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-c8a3cbc56a",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-6606",
-      "published": "2026-06-28T08:51:57.000Z",
-      "ingested": "2026-06-28T11:22:20.508Z",
-      "title_original": "CVE-2023-6606 Kernel: out-of-bounds read vulnerability in smbcalcsize",
-      "headline": "CVE-2023-6606 Kernel: out-of-bounds read vulnerability in smbcalcsize",
-      "topic": "security",
-      "score": 16,
-      "tags": [
-        "cve-2023-6606",
-        "linux-kernel",
-        "smb",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-ee6ff948c9",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21801",
-      "published": "2026-06-28T08:50:42.000Z",
-      "ingested": "2026-06-28T08:49:58.900Z",
-      "title_original": "CVE-2025-21801 net: ravb: Fix missing rtnl lock in suspend/resume path",
-      "headline": "CVE-2025-21801 net: ravb: Fix missing rtnl lock in suspend/resume path",
-      "topic": "security",
-      "score": 14,
-      "tags": [
-        "cve-2025-21801",
-        "linux-kernel",
-        "driver",
-        "msrc"
       ]
     }
   ]
