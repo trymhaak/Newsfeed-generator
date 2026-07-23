@@ -1,6 +1,65 @@
 {
-  "generated_at": "2026-07-23T14:32:15.938Z",
+  "generated_at": "2026-07-23T21:33:04.798Z",
   "articles": [
+    {
+      "id": "office365-itpros-01e9d2297d",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/23/microsoft-defender-prompt-injection/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-defender-prompt-injection",
+      "published": "2026-07-23T21:32:32.000Z",
+      "ingested": "2026-07-23T21:33:04.724Z",
+      "title_original": "Microsoft Defender for Office 365 Blocks Prompt Injections",
+      "headline": "Defender for Office 365 blocks prompt injection attacks against Copilot",
+      "topic": "ai",
+      "score": 50,
+      "tags": [
+        "Defender for Office 365",
+        "prompt injection",
+        "Microsoft 365 Copilot",
+        "phishing"
+      ],
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/MDO-Mailbox-Report.jpg?resize=840%2C643&ssl=1",
+      "summary": "Microsoft Defender for Office 365 Plan 2 can classify messages containing prompt injections as high-confidence phishing and block them from user mailboxes. Administrators can reduce the risk that malicious email content manipulates Microsoft 365 Copilot into exposing sensitive data."
+    },
+    {
+      "id": "entra-blog-8f1f6aaafc",
+      "source_id": "entra-blog",
+      "source_name": "Microsoft Entra Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/modernize-sap-identity-management-with-microsoft-entra/ba-p/4528596",
+      "published": "2026-07-23T20:03:06.000Z",
+      "ingested": "2026-07-23T21:33:04.724Z",
+      "title_original": "Modernize SAP Identity Management with Microsoft Entra",
+      "headline": "Microsoft Entra expands identity management integrations for SAP",
+      "topic": "identity",
+      "score": 65,
+      "tags": [
+        "Microsoft Entra",
+        "SAP",
+        "provisioning",
+        "identity governance"
+      ],
+      "summary": "Microsoft Entra now supports more flexible SAP provisioning, custom user attributes, and account discovery. The integrations help administrators replace SAP IDM while automating identity lifecycles and strengthening access governance."
+    },
+    {
+      "id": "msrc-blog-90ed2eac0b",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/23/email-threat-landscape-q2-2026-trends-and-insights/",
+      "published": "2026-07-23T15:00:00.000Z",
+      "ingested": "2026-07-23T21:33:04.724Z",
+      "title_original": "Email threat landscape: Q2 2026 trends and insights",
+      "headline": "Teams voice phishing attempts surge as Tycoon2FA email attacks decline",
+      "topic": "security",
+      "score": 55,
+      "tags": [
+        "phishing",
+        "Microsoft Teams",
+        "Tycoon2FA",
+        "threat intelligence"
+      ],
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/Figure-1.-Tycoon2FA-monthly-malicious-messages-volume-July-2025&ndash;June-2026-scaled.webp",
+      "summary": "Microsoft reports that Tycoon2FA-linked phishing volume fell 92% after its disruption operation, while malicious Teams calls rose to nearly ten times the mid-2025 baseline. Security teams should adjust detection and training as attackers shift from email toward trusted collaboration channels."
+    },
     {
       "id": "oofhours-fe96db160a",
       "source_id": "oofhours",
@@ -9246,64 +9305,6 @@
         "linux-kjerne",
         "bpf",
         "azure"
-      ]
-    },
-    {
-      "id": "office365-itpros-64eab38036",
-      "source_id": "office365-itpros",
-      "source_name": "Office 365 for IT Pros (Tony Redmond)",
-      "url": "https://office365itpros.com/2026/06/29/copilot-memory-updates/?utm_source=rss&utm_medium=rss&utm_campaign=copilot-memory-updates",
-      "published": "2026-06-29T07:00:00.000Z",
-      "ingested": "2026-06-29T07:04:24.304Z",
-      "title_original": "Two Microsoft 365 Copilot Changes That Just Make Sense",
-      "headline": "Two Microsoft 365 Copilot Changes That Just Make Sense",
-      "topic": "ai",
-      "score": 36,
-      "tags": [
-        "copilot",
-        "m365-copilot",
-        "copilot-chat",
-        "rollout"
-      ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Copilot-memories.jpg?resize=785%2C646&ssl=1",
-      "summary": "Tony Redmond highlights two recent Microsoft 365 Copilot Chat changes announced in message center posts MC1174856 and MC1158329: conversations are now saved as continuous threads, and Copilot's memory is improving. The client-side changes require no admin action, but IT teams should understand them amid the flood of Copilot-related notifications they cannot influence."
-    },
-    {
-      "id": "core-infra-security-7954d2e12d",
-      "source_id": "core-infra-security",
-      "source_name": "Core Infrastructure and Security Blog",
-      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/authenticating-aws-workloads-to-azure-functions-using-workload/ba-p/4531603",
-      "published": "2026-06-29T04:38:32.000Z",
-      "ingested": "2026-06-29T22:26:53.106Z",
-      "title_original": "Authenticating AWS Workloads to Azure Functions using Workload Identity Federation",
-      "headline": "Authenticating AWS Workloads to Azure Functions using Workload Identity Federation",
-      "topic": "identity",
-      "score": 44,
-      "tags": [
-        "entra-id",
-        "workload-identity-federation",
-        "oidc",
-        "zero-trust",
-        "aws"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-5c0b04bf24",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21696",
-      "published": "2026-06-28T09:05:29.000Z",
-      "ingested": "2026-06-28T08:49:58.898Z",
-      "title_original": "CVE-2025-21696 mm: clear uffd-wp PTE/PMD state on mremap()",
-      "headline": "CVE-2025-21696 mm: clear uffd-wp PTE/PMD state on mremap()",
-      "topic": "security",
-      "score": 23,
-      "tags": [
-        "cve-2025-21696",
-        "linux-kernel",
-        "azure-linux",
-        "msrc",
-        "memory"
       ]
     }
   ]
