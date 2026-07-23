@@ -1,6 +1,63 @@
 {
-  "generated_at": "2026-07-22T17:00:43.470Z",
+  "generated_at": "2026-07-23T00:29:47.556Z",
   "articles": [
+    {
+      "id": "m365-roadmap-483e6127d4",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=568074",
+      "published": "2026-07-22T22:41:54.000Z",
+      "ingested": "2026-07-23T00:29:47.493Z",
+      "title_original": "SharePoint: Cross-post SharePoint News to Engage",
+      "headline": "SharePoint News gains cross-posting to Viva Engage",
+      "topic": "endpoint",
+      "score": 34,
+      "tags": [
+        "SharePoint",
+        "Viva Engage",
+        "Microsoft 365",
+        "cross-posting"
+      ],
+      "summary": "SharePoint News authors will be able to distribute posts to Viva Engage while preserving their formatting. A shared Engage conversation will replace separate comments, giving administrators a consistent discussion thread across Microsoft 365 surfaces."
+    },
+    {
+      "id": "m365-roadmap-5293497838",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567007",
+      "published": "2026-07-22T22:41:54.000Z",
+      "ingested": "2026-07-23T00:29:47.493Z",
+      "title_original": "Outlook: New Copilot entry point in Classic Outlook",
+      "headline": "Classic Outlook adds the unified Microsoft 365 Copilot entry point",
+      "topic": "ai",
+      "score": 45,
+      "tags": [
+        "Copilot",
+        "Outlook",
+        "Microsoft 365",
+        "user experience"
+      ],
+      "summary": "Microsoft is bringing its unified Copilot entry point to classic Outlook in August 2026. The interface consolidates contextual Copilot actions across Microsoft 365, so administrators should prepare users and support materials for the rollout."
+    },
+    {
+      "id": "msrc-blog-404e740da4",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/22/real-world-incident-response-microsoft-and-axa-xl-strengthen-cyber-resilience/",
+      "published": "2026-07-22T16:00:00.000Z",
+      "ingested": "2026-07-23T00:29:47.493Z",
+      "title_original": "Real world incident response: Microsoft and AXA XL strengthen cyber resilience",
+      "headline": "Microsoft and AXA XL coordinate incident response for cyber insurance customers",
+      "topic": "security",
+      "score": 35,
+      "tags": [
+        "Defender Experts",
+        "incident response",
+        "cyber insurance",
+        "ransomware"
+      ],
+      "summary": "Microsoft and AXA XL are integrating Defender Experts incident response services into cyber insurance workflows. The partnership aims to help security, legal, executive, and insurance teams coordinate faster during incidents such as ransomware attacks."
+    },
     {
       "id": "windows-it-pro-4dc817e111",
       "source_id": "windows-it-pro",
@@ -9230,60 +9287,6 @@
         "linux-kernel",
         "asoc",
         "sof"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-fde6b698c8",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-71227",
-      "published": "2026-06-28T08:59:10.000Z",
-      "ingested": "2026-06-28T11:01:58.896Z",
-      "title_original": "CVE-2025-71227 wifi: mac80211: don't WARN for connections on invalid channels",
-      "headline": "CVE-2025-71227 wifi: mac80211: don't WARN for connections on invalid channels",
-      "topic": "security",
-      "score": 11,
-      "tags": [
-        "cve-2025-71227",
-        "linux-kjerne",
-        "wifi",
-        "mac80211"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-dd469aaa90",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21888",
-      "published": "2026-06-28T08:59:08.000Z",
-      "ingested": "2026-06-28T11:44:05.658Z",
-      "title_original": "CVE-2025-21888 RDMA/mlx5: Fix a WARN during dereg_mr for DM type",
-      "headline": "CVE-2025-21888 RDMA/mlx5: Fix a WARN during dereg_mr for DM type",
-      "topic": "security",
-      "score": 18,
-      "tags": [
-        "cve-2025-21888",
-        "linux-kernel",
-        "rdma",
-        "mlx5"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-c447f98f19",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23214",
-      "published": "2026-06-28T08:58:54.000Z",
-      "ingested": "2026-06-28T11:44:05.658Z",
-      "title_original": "CVE-2026-23214 btrfs: reject new transactions if the fs is fully read-only",
-      "headline": "CVE-2026-23214 btrfs: reject new transactions if the fs is fully read-only",
-      "topic": "security",
-      "score": 19,
-      "tags": [
-        "cve-2026-23214",
-        "linux-kernel",
-        "btrfs",
-        "filesystem"
       ]
     }
   ]
