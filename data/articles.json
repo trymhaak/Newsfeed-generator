@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-07-23T07:31:12.049Z",
+  "generated_at": "2026-07-23T14:32:15.938Z",
   "articles": [
+    {
+      "id": "oofhours-fe96db160a",
+      "source_id": "oofhours",
+      "source_name": "Out of Office Hours (Michael Niehaus)",
+      "url": "https://oofhours.com/2026/07/23/how-can-windows-11-keep-getting-bigger/",
+      "published": "2026-07-23T08:22:29.000Z",
+      "ingested": "2026-07-23T14:32:15.872Z",
+      "title_original": "How can Windows 11 keep getting bigger?",
+      "headline": "Windows 11 ISO Files Keep Growing Across Hudson Valley Releases",
+      "topic": "endpoint",
+      "score": 33,
+      "tags": [
+        "Windows 11",
+        "ISO",
+        "deployment",
+        "provisioning"
+      ],
+      "hero_image": "https://oofhours.com/wp-content/uploads/2026/07/image-2.png",
+      "summary": "Windows 11 installation media continues to grow across successive Hudson Valley releases. IT administrators should account for the larger files when planning deployment storage, network capacity, and provisioning workflows."
+    },
     {
       "id": "msrc-update-guide-56a582427d",
       "source_id": "msrc-update-guide",
@@ -9284,25 +9304,6 @@
         "azure-linux",
         "msrc",
         "memory"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-955b2903a6",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-31419",
-      "published": "2026-06-28T09:05:24.000Z",
-      "ingested": "2026-06-28T08:34:20.202Z",
-      "title_original": "CVE-2026-31419 net: bonding: fix use-after-free in bond_xmit_broadcast()",
-      "headline": "CVE-2026-31419 net: bonding: fix use-after-free in bond_xmit_broadcast()",
-      "topic": "security",
-      "score": 22,
-      "tags": [
-        "cve-2026-31419",
-        "linux-kernel",
-        "networking",
-        "use-after-free",
-        "azure-linux"
       ]
     }
   ]
