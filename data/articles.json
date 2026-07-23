@@ -1,6 +1,297 @@
 {
-  "generated_at": "2026-07-23T00:29:47.556Z",
+  "generated_at": "2026-07-23T07:31:12.049Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-56a582427d",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42955",
+      "published": "2026-07-23T08:04:39.000Z",
+      "ingested": "2026-07-23T07:31:11.769Z",
+      "title_original": "CVE-2026-42955 Extra fix for CVE-2026-40622 to also clamp the TTL of A/AAAA records disallowing a one-time 'ghost domain' delegation renewal via glue records",
+      "headline": "DNS fix blocks ghost domain renewal through stale glue records",
+      "topic": "security",
+      "score": 60,
+      "tags": [
+        "CVE",
+        "DNS",
+        "TTL",
+        "glue records",
+        "patching"
+      ],
+      "summary": "An additional fix for CVE-2026-40622 clamps the TTL of A and AAAA records to prevent one-time ghost domain delegation renewal through glue records. Administrators should deploy the updated remediation because the original fix did not fully close the issue."
+    },
+    {
+      "id": "msrc-update-guide-38feed2058",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-46582",
+      "published": "2026-07-23T08:04:32.000Z",
+      "ingested": "2026-07-23T07:31:11.769Z",
+      "title_original": "CVE-2026-46582 A wildcard replay, as another piece of data, triggers poisoning in the serve expired reply path",
+      "headline": "Wildcard replay flaw enables DNS cache poisoning in expired replies",
+      "topic": "security",
+      "score": 65,
+      "tags": [
+        "CVE",
+        "DNS",
+        "cache poisoning",
+        "serve-expired"
+      ],
+      "summary": "A wildcard replayed as different data can poison responses generated through the serve-expired path. Administrators running affected DNS services should patch promptly and monitor for unexpected cached records or resolution behavior."
+    },
+    {
+      "id": "msrc-update-guide-568bfe28a2",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32665",
+      "published": "2026-07-23T08:04:13.000Z",
+      "ingested": "2026-07-23T07:31:11.769Z",
+      "title_original": "CVE-2026-32665 Remote DNS-over-QUIC denial of service due to `quic-size` budget bypass",
+      "headline": "DNS-over-QUIC flaw lets attackers bypass limits and cause denial of service",
+      "topic": "security",
+      "score": 61,
+      "tags": [
+        "CVE",
+        "DNS-over-QUIC",
+        "denial of service",
+        "patching"
+      ],
+      "summary": "A flaw in DNS-over-QUIC handling allows remote attackers to bypass the quic-size budget and exhaust resources. Administrators should review affected DNS deployments and apply the relevant security update to prevent service disruption."
+    },
+    {
+      "id": "msrc-update-guide-f5b7a31d9c",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40691",
+      "published": "2026-07-23T08:04:07.000Z",
+      "ingested": "2026-07-23T07:30:56.495Z",
+      "title_original": "CVE-2026-40691 Packet of death for DNSCrypt over TCP",
+      "headline": "Malformed DNSCrypt TCP packet can crash Unbound",
+      "topic": "security",
+      "score": 67,
+      "tags": [
+        "CVE-2026-40691",
+        "DNSCrypt",
+        "TCP",
+        "Unbound",
+        "denial of service"
+      ],
+      "summary": "CVE-2026-40691 is a packet-of-death vulnerability affecting DNSCrypt over TCP. Administrators running exposed DNSCrypt services should prioritize assessment because a malicious packet could remotely interrupt DNS availability."
+    },
+    {
+      "id": "msrc-update-guide-3a7e496eb0",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55717",
+      "published": "2026-07-23T08:04:01.000Z",
+      "ingested": "2026-07-23T07:30:56.495Z",
+      "title_original": "CVE-2026-55717 'serve-expired-client-timeout' and 'response-ip' CNAME redirect could lead to a crash",
+      "headline": "Unbound CNAME redirect handling can crash DNS resolvers",
+      "topic": "security",
+      "score": 61,
+      "tags": [
+        "CVE-2026-55717",
+        "Unbound",
+        "CNAME",
+        "DNS",
+        "denial of service"
+      ],
+      "summary": "CVE-2026-55717 can crash Unbound when serve-expired-client-timeout interacts with a response-ip CNAME redirect. Administrators using these features should assess exposure because crafted or unexpected DNS responses could interrupt name resolution."
+    },
+    {
+      "id": "msrc-update-guide-49a79b390b",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44621",
+      "published": "2026-07-23T08:03:55.000Z",
+      "ingested": "2026-07-23T07:30:56.495Z",
+      "title_original": "CVE-2026-44621 Libunbound applications configured with 'unwanted-reply-threshold' could eventually be abruptly terminated",
+      "headline": "Unbound reply-threshold setting can terminate applications",
+      "topic": "security",
+      "score": 60,
+      "tags": [
+        "CVE-2026-44621",
+        "libunbound",
+        "DNS",
+        "denial of service"
+      ],
+      "summary": "CVE-2026-44621 can abruptly terminate applications using libunbound when unwanted-reply-threshold is configured. Administrators should identify affected resolver integrations because repeated termination could disrupt DNS-dependent services."
+    },
+    {
+      "id": "msrc-update-guide-8f3529894f",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55708",
+      "published": "2026-07-23T08:03:36.000Z",
+      "ingested": "2026-07-23T07:30:56.495Z",
+      "title_original": "CVE-2026-55708 Privacy/configuration issue when adding local data in views through 'unbound-control'",
+      "headline": "Unbound control command can expose local data across views",
+      "topic": "security",
+      "score": 55,
+      "tags": [
+        "CVE-2026-55708",
+        "Unbound",
+        "DNS views",
+        "unbound-control",
+        "privacy"
+      ],
+      "summary": "CVE-2026-55708 is a privacy and configuration flaw triggered when administrators add local data to views through unbound-control. Teams using split DNS or view-specific records should investigate because data may not remain isolated as intended."
+    },
+    {
+      "id": "msrc-update-guide-e32f584336",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50248",
+      "published": "2026-07-23T08:03:24.000Z",
+      "ingested": "2026-07-23T07:30:56.495Z",
+      "title_original": "CVE-2026-50248 BOGUS configured primary hostname accepted for XFR in auth/rpz zones",
+      "headline": "Unbound accepts invalid primary hostnames for zone transfers",
+      "topic": "security",
+      "score": 56,
+      "tags": [
+        "CVE-2026-50248",
+        "Unbound",
+        "DNS",
+        "zone transfer",
+        "RPZ"
+      ],
+      "summary": "CVE-2026-50248 allows Unbound to accept a BOGUS-configured primary hostname for zone transfers in authoritative and response-policy zones. DNS administrators should review affected configurations because unintended transfer behavior can undermine zone integrity and policy enforcement."
+    },
+    {
+      "id": "msrc-update-guide-54978a4064",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44687",
+      "published": "2026-07-23T08:03:11.000Z",
+      "ingested": "2026-07-23T07:30:56.495Z",
+      "title_original": "CVE-2026-44687 Off-by-one error in 'harden-below-nxdomain' logic can shadow a stub/forward zone by a legitimate parent's NXDOMAIN",
+      "headline": "Unbound NXDOMAIN flaw can shadow legitimate DNS zones",
+      "topic": "security",
+      "score": 58,
+      "tags": [
+        "CVE-2026-44687",
+        "Unbound",
+        "DNS",
+        "NXDOMAIN"
+      ],
+      "summary": "CVE-2026-44687 is an off-by-one error in Unbound's harden-below-nxdomain logic that can let a legitimate parent NXDOMAIN shadow a stub or forward zone. Administrators should assess affected DNS resolver configurations because the flaw can disrupt access to delegated resources."
+    },
+    {
+      "id": "msrc-update-guide-b45fefc13a",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55973",
+      "published": "2026-07-23T08:03:05.000Z",
+      "ingested": "2026-07-23T07:30:33.873Z",
+      "title_original": "CVE-2026-55973 'dns-error-reporting: yes' leads to stack buffer overflow",
+      "headline": "DNS Error Reporting Option Can Cause a Stack Buffer Overflow",
+      "topic": "security",
+      "score": 50,
+      "tags": [
+        "CVE-2026-55973",
+        "DNS",
+        "buffer overflow",
+        "configuration"
+      ],
+      "summary": "CVE-2026-55973 links the enabled dns-error-reporting option to a stack buffer overflow. Administrators should locate affected software, review whether the option is enabled, and follow vendor mitigation or update guidance."
+    },
+    {
+      "id": "msrc-update-guide-c5682a1d43",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53910",
+      "published": "2026-07-23T08:02:58.000Z",
+      "ingested": "2026-07-23T07:30:33.873Z",
+      "title_original": "CVE-2026-53910 Heap-based Buffer Overflow in GNU diffutils",
+      "headline": "GNU diffutils Buffer Overflow Threatens Systems Using the Package",
+      "topic": "security",
+      "score": 50,
+      "tags": [
+        "CVE-2026-53910",
+        "GNU diffutils",
+        "buffer overflow",
+        "Linux"
+      ],
+      "summary": "CVE-2026-53910 is a heap-based buffer overflow in GNU diffutils. Administrators should inventory Linux workloads and development environments that include affected versions and apply distribution updates when available."
+    },
+    {
+      "id": "msrc-update-guide-ebcebbf8ff",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63136",
+      "published": "2026-07-23T08:02:44.000Z",
+      "ingested": "2026-07-23T07:30:33.873Z",
+      "title_original": "CVE-2026-63136 Uncontrolled Resource Consumption in Elasticsearch Leading to Denial of Service",
+      "headline": "Elasticsearch Resource Consumption Flaw Can Disrupt Availability",
+      "topic": "security",
+      "score": 50,
+      "tags": [
+        "CVE-2026-63136",
+        "Elasticsearch",
+        "denial of service",
+        "resource consumption"
+      ],
+      "summary": "CVE-2026-63136 involves uncontrolled resource consumption in Elasticsearch and can cause denial of service. Administrators should review affected versions and prioritize vendor-recommended mitigations for exposed deployments."
+    },
+    {
+      "id": "msrc-update-guide-222cc21aca",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-63140",
+      "published": "2026-07-23T08:02:31.000Z",
+      "ingested": "2026-07-23T07:30:33.873Z",
+      "title_original": "CVE-2026-63140 Reachable Assertion in Elasticsearch Leading to Denial of Service",
+      "headline": "Reachable Assertion Can Crash Elasticsearch Services",
+      "topic": "security",
+      "score": 50,
+      "tags": [
+        "CVE-2026-63140",
+        "Elasticsearch",
+        "denial of service",
+        "assertion failure"
+      ],
+      "summary": "CVE-2026-63140 exposes a reachable assertion in Elasticsearch that can lead to denial of service. Administrators should identify affected deployments and follow Elasticsearch remediation guidance to protect service availability."
+    },
+    {
+      "id": "msrc-update-guide-25f0cc6deb",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56145",
+      "published": "2026-07-23T08:02:25.000Z",
+      "ingested": "2026-07-23T07:30:33.873Z",
+      "title_original": "CVE-2026-56145 Uncontrolled Resource Consumption in Elasticsearch Leading to Denial of Service",
+      "headline": "Elasticsearch Resource Exhaustion Can Trigger Denial of Service",
+      "topic": "security",
+      "score": 50,
+      "tags": [
+        "CVE-2026-56145",
+        "Elasticsearch",
+        "denial of service",
+        "resource exhaustion"
+      ],
+      "summary": "CVE-2026-56145 allows uncontrolled resource consumption in Elasticsearch, potentially causing denial of service. Administrators running Elasticsearch in Microsoft-connected environments should assess exposure and apply vendor guidance when available."
+    },
+    {
+      "id": "office365-itpros-210f4c9e4d",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/23/permissions-creep-sdk/?utm_source=rss&utm_medium=rss&utm_campaign=permissions-creep-sdk",
+      "published": "2026-07-23T07:00:00.000Z",
+      "ingested": "2026-07-23T07:30:33.873Z",
+      "title_original": "How Permissions Creep Can Halt the Microsoft Graph PowerShell SDK",
+      "headline": "Permission Creep Can Block Microsoft Graph PowerShell Sessions",
+      "topic": "identity",
+      "score": 39,
+      "tags": [
+        "Microsoft Graph",
+        "PowerShell",
+        "Entra ID",
+        "delegated permissions"
+      ],
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/Consent-screen-for-Connect-mgGraph.jpg?resize=652%2C633&ssl=1",
+      "summary": "Accumulated delegated permissions on the Microsoft Graph Command Line Tools service principal can cause scope problems during interactive PowerShell sessions. Entra administrators should review existing consent grants and request only the scopes required for each task."
+    },
     {
       "id": "m365-roadmap-483e6127d4",
       "source_id": "m365-roadmap",
@@ -9012,281 +9303,6 @@
         "networking",
         "use-after-free",
         "azure-linux"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-a0008e063a",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21672",
-      "published": "2026-06-28T09:05:14.000Z",
-      "ingested": "2026-06-28T08:34:20.202Z",
-      "title_original": "CVE-2025-21672 afs: Fix merge preference rule failure condition",
-      "headline": "CVE-2025-21672 afs: Fix merge preference rule failure condition",
-      "topic": "security",
-      "score": 13,
-      "tags": [
-        "cve-2025-21672",
-        "linux-kernel",
-        "afs",
-        "azure-linux",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-86496bad6a",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-5119",
-      "published": "2026-06-28T09:04:37.000Z",
-      "ingested": "2026-06-28T08:03:45.501Z",
-      "title_original": "CVE-2026-5119 Libsoup: libsoup: information disclosure via cleartext transmission of cookies during https tunnel establishment",
-      "headline": "CVE-2026-5119 Libsoup: libsoup: information disclosure via cleartext transmission of cookies during https tunnel establishment",
-      "topic": "security",
-      "score": 20,
-      "tags": [
-        "libsoup",
-        "cve-2026-5119",
-        "cookies",
-        "info-disclosure",
-        "azure-linux"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-bcee154200",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23371",
-      "published": "2026-06-28T09:03:44.000Z",
-      "ingested": "2026-06-28T08:13:26.188Z",
-      "title_original": "CVE-2026-23371 sched/deadline: Fix missing ENQUEUE_REPLENISH during PI de-boosting",
-      "headline": "CVE-2026-23371 sched/deadline: Fix missing ENQUEUE_REPLENISH during PI de-boosting",
-      "topic": "security",
-      "score": 32,
-      "tags": [
-        "cve-2026-23371",
-        "linux-kernel",
-        "scheduler",
-        "realtime"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-9e4985cbf4",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23383",
-      "published": "2026-06-28T09:03:12.000Z",
-      "ingested": "2026-06-28T08:13:26.188Z",
-      "title_original": "CVE-2026-23383 bpf, arm64: Force 8-byte alignment for JIT buffer to prevent atomic tearing",
-      "headline": "CVE-2026-23383 bpf, arm64: Force 8-byte alignment for JIT buffer to prevent atomic tearing",
-      "topic": "security",
-      "score": 34,
-      "tags": [
-        "cve-2026-23383",
-        "linux-kernel",
-        "bpf",
-        "arm64"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-49231ef553",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23377",
-      "published": "2026-06-28T09:02:56.000Z",
-      "ingested": "2026-06-28T08:13:26.188Z",
-      "title_original": "CVE-2026-23377 ice: change XDP RxQ frag_size from DMA write length to xdp.frame_sz",
-      "headline": "CVE-2026-23377 ice: change XDP RxQ frag_size from DMA write length to xdp.frame_sz",
-      "topic": "security",
-      "score": 34,
-      "tags": [
-        "cve-2026-23377",
-        "linux-kernel",
-        "intel-ice",
-        "xdp"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-d90d8367b1",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-42107",
-      "published": "2026-06-28T09:02:05.000Z",
-      "ingested": "2026-06-28T09:17:16.871Z",
-      "title_original": "CVE-2024-42107 ice: Don't process extts if PTP is disabled",
-      "headline": "CVE-2024-42107 ice: Don't process extts if PTP is disabled",
-      "topic": "security",
-      "score": 18,
-      "tags": [
-        "linux-kernel",
-        "cve-2024-42107",
-        "intel-ice",
-        "msrc",
-        "azure-linux"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-7f3729ac5d",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3632",
-      "published": "2026-06-28T09:01:38.000Z",
-      "ingested": "2026-06-28T08:03:45.501Z",
-      "title_original": "CVE-2026-3632 Libsoup: libsoup: http smuggling and server-side request forgery via malformed hostnames",
-      "headline": "CVE-2026-3632 Libsoup: libsoup: http smuggling and server-side request forgery via malformed hostnames",
-      "topic": "security",
-      "score": 25,
-      "tags": [
-        "libsoup",
-        "cve-2026-3632",
-        "ssrf",
-        "http-smuggling",
-        "azure-linux"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-7c220485a8",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3634",
-      "published": "2026-06-28T09:01:23.000Z",
-      "ingested": "2026-06-28T08:03:45.501Z",
-      "title_original": "CVE-2026-3634 Libsoup: libsoup: http header injection and response splitting via crlf injection in content-type header",
-      "headline": "CVE-2026-3634 Libsoup: libsoup: http header injection and response splitting via crlf injection in content-type header",
-      "topic": "security",
-      "score": 22,
-      "tags": [
-        "libsoup",
-        "cve-2026-3634",
-        "crlf",
-        "azure-linux"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-c2df532e54",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23276",
-      "published": "2026-06-28T09:01:08.000Z",
-      "ingested": "2026-06-28T08:13:26.188Z",
-      "title_original": "CVE-2026-23276 net: add xmit recursion limit to tunnel xmit functions",
-      "headline": "CVE-2026-23276 net: add xmit recursion limit to tunnel xmit functions",
-      "topic": "security",
-      "score": 38,
-      "tags": [
-        "cve-2026-23276",
-        "linux-kernel",
-        "azure",
-        "networking"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-57c3f7b6b2",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23278",
-      "published": "2026-06-28T09:00:53.000Z",
-      "ingested": "2026-06-28T08:24:50.148Z",
-      "title_original": "CVE-2026-23278 netfilter: nf_tables: always walk all pending catchall elements",
-      "headline": "CVE-2026-23278 netfilter: nf_tables: always walk all pending catchall elements",
-      "topic": "security",
-      "score": 41,
-      "tags": [
-        "cve-2026-23278",
-        "netfilter",
-        "linux-kjerne",
-        "azure-linux",
-        "lpe"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-3c61115299",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23207",
-      "published": "2026-06-28T09:00:39.000Z",
-      "ingested": "2026-06-28T11:01:58.896Z",
-      "title_original": "CVE-2026-23207 spi: tegra210-quad: Protect curr_xfer check in IRQ handler",
-      "headline": "CVE-2026-23207 spi: tegra210-quad: Protect curr_xfer check in IRQ handler",
-      "topic": "security",
-      "score": 7,
-      "tags": [
-        "cve-2026-23207",
-        "linux-kjerne",
-        "spi",
-        "tegra"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-a9f7ed1ab3",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3644",
-      "published": "2026-06-28T09:00:24.000Z",
-      "ingested": "2026-06-28T08:24:50.147Z",
-      "title_original": "CVE-2026-3644 Incomplete control character validation in http.cookies",
-      "headline": "CVE-2026-3644 Incomplete control character validation in http.cookies",
-      "topic": "security",
-      "score": 38,
-      "tags": [
-        "cve-2026-3644",
-        "python",
-        "cookies",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-585d3d08dd",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23247",
-      "published": "2026-06-28T08:59:53.000Z",
-      "ingested": "2026-06-28T08:13:26.188Z",
-      "title_original": "CVE-2026-23247 tcp: secure_seq: add back ports to TS offset",
-      "headline": "CVE-2026-23247 tcp: secure_seq: add back ports to TS offset",
-      "topic": "security",
-      "score": 41,
-      "tags": [
-        "cve-2026-23247",
-        "linux-kernel",
-        "tcp",
-        "spoofing"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-f9afd92865",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23240",
-      "published": "2026-06-28T08:59:39.000Z",
-      "ingested": "2026-06-28T08:13:26.188Z",
-      "title_original": "CVE-2026-23240 tls: Fix race condition in tls_sw_cancel_work_tx()",
-      "headline": "CVE-2026-23240 tls: Fix race condition in tls_sw_cancel_work_tx()",
-      "topic": "security",
-      "score": 39,
-      "tags": [
-        "cve-2026-23240",
-        "linux-kernel",
-        "ktls",
-        "race-condition"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-24827d4d7e",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21870",
-      "published": "2026-06-28T08:59:24.000Z",
-      "ingested": "2026-06-28T11:44:05.658Z",
-      "title_original": "CVE-2025-21870 ASoC: SOF: ipc4-topology: Harden loops for looking up ALH copiers",
-      "headline": "CVE-2025-21870 ASoC: SOF: ipc4-topology: Harden loops for looking up ALH copiers",
-      "topic": "security",
-      "score": 14,
-      "tags": [
-        "cve-2025-21870",
-        "linux-kernel",
-        "asoc",
-        "sof"
       ]
     }
   ]
