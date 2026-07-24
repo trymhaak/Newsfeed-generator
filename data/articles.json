@@ -1,6 +1,142 @@
 {
-  "generated_at": "2026-07-24T04:34:48.293Z",
+  "generated_at": "2026-07-24T11:35:55.606Z",
   "articles": [
+    {
+      "id": "andrew-taylor-a9faf804b7",
+      "source_id": "andrew-taylor",
+      "source_name": "Andrew Taylor (andrewstaylor.com)",
+      "url": "https://andrewstaylor.com/2026/07/24/intune-newsletter-24th-july-2026/",
+      "published": "2026-07-24T09:32:26.000Z",
+      "ingested": "2026-07-24T11:35:55.562Z",
+      "title_original": "Intune Newsletter – 24th July 2026",
+      "headline": "Intune Community Highlights Agents, Windows 365 Reserve, and Cloud PKI",
+      "topic": "endpoint",
+      "score": 29,
+      "tags": [
+        "Intune",
+        "Windows 365",
+        "Security Copilot",
+        "Cloud PKI",
+        "remediation"
+      ],
+      "summary": "This two-week Intune roundup covers vulnerability-remediation agents, Security Copilot capabilities, managed VS Code extensions, Windows 365 changes, and Cloud PKI. Endpoint administrators can use the collection to identify recent features and community guidance worth evaluating."
+    },
+    {
+      "id": "janbakker-37688aa6a9",
+      "source_id": "janbakker",
+      "source_name": "JanBakker.tech",
+      "url": "https://janbakker.tech/how-to-add-granular-amr-claims-to-your-saml-apps-in-entra-id/",
+      "published": "2026-07-24T08:18:03.000Z",
+      "ingested": "2026-07-24T11:35:36.023Z",
+      "title_original": "How to add granular amr claims to your SAML apps in Entra ID",
+      "headline": "Entra ID adds granular authentication claims to SAML applications",
+      "topic": "identity",
+      "score": 34,
+      "tags": [
+        "Entra ID",
+        "SAML",
+        "AMR",
+        "MFA"
+      ],
+      "hero_image": "https://janbakker.tech/wp-content/uploads/2026/07/image-20.png",
+      "summary": "Entra administrators can expose detailed authentication-method information to SAML applications by configuring the optional amr claim with include_granular_amr. This enables applications to evaluate phishing-resistant MFA, but administrators must configure most SAML apps manually."
+    },
+    {
+      "id": "msrc-update-guide-bf7de899fb",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-64600",
+      "published": "2026-07-24T08:02:36.000Z",
+      "ingested": "2026-07-24T11:35:55.562Z",
+      "title_original": "CVE-2026-64600 xfs: resample the data fork mapping after cycling ILOCK",
+      "headline": "Microsoft Publishes XFS Data-Fork Mapping Vulnerability",
+      "topic": "security",
+      "score": 59,
+      "tags": [
+        "CVE-2026-64600",
+        "XFS",
+        "Linux kernel",
+        "filesystem"
+      ],
+      "summary": "Microsoft published CVE-2026-64600 concerning XFS data-fork mapping after the filesystem cycles ILOCK. Administrators running affected Linux systems should assess exposure and install applicable kernel or vendor updates."
+    },
+    {
+      "id": "msrc-update-guide-507d879f5c",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59677",
+      "published": "2026-07-24T08:02:30.000Z",
+      "ingested": "2026-07-24T11:35:55.562Z",
+      "title_original": "CVE-2026-59677 Process Kill Attack Vector in killall() in seunshare",
+      "headline": "Microsoft Discloses Process-Kill Vulnerability in seunshare killall()",
+      "topic": "security",
+      "score": 59,
+      "tags": [
+        "CVE-2026-59677",
+        "seunshare",
+        "Linux",
+        "privilege isolation"
+      ],
+      "summary": "Microsoft published CVE-2026-59677, which describes a process-kill attack vector in the seunshare killall() function. Security administrators should review affected systems and apply the relevant vendor updates or mitigations."
+    },
+    {
+      "id": "msrc-update-guide-d2ac57b575",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59676",
+      "published": "2026-07-24T08:02:21.000Z",
+      "ingested": "2026-07-24T11:35:36.023Z",
+      "title_original": "CVE-2026-59676 Local File Deletion Attack Vector in rm_rf() in seunshare",
+      "headline": "Microsoft discloses local file deletion flaw in seunshare rm_rf()",
+      "topic": "security",
+      "score": 50,
+      "tags": [
+        "CVE-2026-59676",
+        "seunshare",
+        "file deletion",
+        "vulnerability"
+      ],
+      "summary": "Microsoft published information about CVE-2026-59676, a local file deletion vulnerability in the rm_rf() function used by seunshare. Security teams should review the advisory, identify affected systems, and apply available mitigations or updates."
+    },
+    {
+      "id": "office365-itpros-387f297808",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/24/federated-chat-controls/?utm_source=rss&utm_medium=rss&utm_campaign=federated-chat-controls",
+      "published": "2026-07-24T07:00:00.000Z",
+      "ingested": "2026-07-24T11:35:36.023Z",
+      "title_original": "Teams PowerShell Embraces Web Account Manager and Imposes Control Over Federated Chat",
+      "headline": "Teams PowerShell 7.9 adopts WAM and adds federated chat controls",
+      "topic": "identity",
+      "score": 51,
+      "tags": [
+        "Teams",
+        "PowerShell",
+        "WAM",
+        "federation"
+      ],
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/Microsoft-Teams-PowerShell-clash.jpg?resize=840%2C473&ssl=1",
+      "summary": "Microsoft Teams PowerShell 7.9 now uses Windows Web Account Manager for authentication and expands controls for external federation. Administrators should test automation and module compatibility because WAM can be disabled only temporarily and existing assembly conflicts remain."
+    },
+    {
+      "id": "ourcloudnetwork-93f9d9c502",
+      "source_id": "ourcloudnetwork",
+      "source_name": "Our Cloud Network (Daniel Bradley)",
+      "url": "https://ourcloudnetwork.com/microsoft-entra-to-allow-passwordless-password-changes/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-entra-to-allow-passwordless-password-changes",
+      "published": "2026-07-24T05:43:40.000Z",
+      "ingested": "2026-07-24T11:35:36.023Z",
+      "title_original": "Microsoft Entra to allow passwordless password changes",
+      "headline": "Microsoft Entra lets passwordless users change passwords without SSPR",
+      "topic": "identity",
+      "score": 46,
+      "tags": [
+        "Entra ID",
+        "passkeys",
+        "Windows Hello",
+        "SSPR"
+      ],
+      "summary": "Starting in October 2026, passwordless users will be able to change their password in My Sign-Ins by authenticating with a passkey or Windows Hello. Identity administrators should review help-desk procedures and access policies because the workflow will no longer depend on Self-Service Password Reset."
+    },
     {
       "id": "m365-roadmap-abe681c62b",
       "source_id": "m365-roadmap",
@@ -58,6 +194,25 @@
         "identity governance"
       ],
       "summary": "Microsoft Entra now supports more flexible SAP provisioning, custom user attributes, and account discovery. The integrations help administrators replace SAP IDM while automating identity lifecycles and strengthening access governance."
+    },
+    {
+      "id": "m365-copilot-b40b5e3c2c",
+      "source_id": "m365-copilot",
+      "source_name": "Microsoft 365 Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/1-million-documents-to-300-agents-building-an-enterprise-scale/ba-p/4540155",
+      "published": "2026-07-23T18:57:12.000Z",
+      "ingested": "2026-07-24T11:35:36.023Z",
+      "title_original": "1 million documents to 300+agents: Building an enterprise-scale Microsoft 365 Copilot connector",
+      "headline": "Microsoft shares lessons from scaling a Copilot connector to one million documents",
+      "topic": "ai",
+      "score": 44,
+      "tags": [
+        "Copilot",
+        "connectors",
+        "grounding",
+        "governance"
+      ],
+      "summary": "Microsoft detailed the architecture, governance, schema, and retrieval practices behind a production Microsoft 365 Copilot connector serving more than 300 agents. Platform teams can use these lessons to improve secure knowledge grounding and retrieval quality at enterprise scale."
     },
     {
       "id": "core-infra-security-7518dd1f45",
@@ -1095,6 +1250,25 @@
         "Windows 365"
       ],
       "summary": "Windows 11 Insider Build 28120.2546 lets administrators automatically disconnect Azure Virtual Desktop and Windows 365 sessions when a redirected smart card is removed. The change extends smart card removal policies to Entra-authenticated remote sessions, helping organizations enforce security and compliance requirements."
+    },
+    {
+      "id": "copilot-studio-561713cc0d",
+      "source_id": "copilot-studio",
+      "source_name": "Microsoft Copilot Studio Blog",
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/extending-agentic-microsoft-dynamics-365-sales-with-mcp/",
+      "published": "2026-07-21T19:20:00.000Z",
+      "ingested": "2026-07-24T11:35:36.023Z",
+      "title_original": "Extending agentic Microsoft Dynamics 365 Sales with MCP",
+      "headline": "Dynamics 365 Sales agents connect to external systems through MCP",
+      "topic": "ai",
+      "score": 49,
+      "tags": [
+        "Copilot Studio",
+        "Dynamics 365",
+        "MCP",
+        "agents"
+      ],
+      "summary": "Microsoft described how Dynamics 365 Sales agents built with Copilot Studio can access external tools and trusted data through Model Context Protocol. Administrators and developers can reduce custom integration work, but must govern which systems and actions agents can access."
     },
     {
       "id": "entra-blog-e817c093d6",
@@ -9146,174 +9320,6 @@
       ],
       "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/Picture1-4-1024x576.webp",
       "summary": "Microsoft’s monthly security update introduces “MDASH” in private preview, an agent-based AI system that scans complex code to find and validate vulnerabilities and route them directly into Defender workflows, while Defender is also extending endpoint protection to local AI agents. These developments give IT admins new vulnerability tools but also reflect a growing attack surface as AI agents are adopted."
-    },
-    {
-      "id": "msrc-blog-075d2f7a3a",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/30/securing-ai-agents-ai-tools-move-from-reading-acting/",
-      "published": "2026-06-30T15:57:11.000Z",
-      "ingested": "2026-06-30T17:20:15.493Z",
-      "title_original": "Securing AI agents: When AI tools move from reading to acting",
-      "headline": "Securing AI agents: When AI tools move from reading to acting",
-      "topic": "security",
-      "score": 64,
-      "tags": [
-        "mcp",
-        "ai-agenter",
-        "copilot",
-        "tool-poisoning"
-      ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-62.webp",
-      "summary": "Microsoft Incident Response describes an attack pattern in which malicious Model Context Protocol (MCP) tools manipulate AI agents that can not only read content but also perform actions such as sending email or changing systems, and provides a practical playbook for detecting, containing, and preventing these attacks with Microsoft security controls. As agents in Microsoft 365 Copilot, Copilot Studio, and Azure AI Foundry gain write access, the attack surface grows and IT admins need to understand the risk."
-    },
-    {
-      "id": "m365-copilot-750d8d40c2",
-      "source_id": "m365-copilot",
-      "source_name": "Microsoft 365 Copilot Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/the-workflow-is-the-product-copilot-cowork-plugins-change-what/ba-p/4531933",
-      "published": "2026-06-30T15:30:00.000Z",
-      "ingested": "2026-06-30T18:35:28.316Z",
-      "title_original": "The workflow is the product: Copilot Cowork plugins change what AI can do for businesses",
-      "headline": "The workflow is the product: Copilot Cowork plugins change what AI can do for businesses",
-      "topic": "ai",
-      "score": 65,
-      "tags": [
-        "copilot",
-        "cowork",
-        "plugins",
-        "marketplace",
-        "ga"
-      ]
-    },
-    {
-      "id": "m365-copilot-d09dec5304",
-      "source_id": "m365-copilot",
-      "source_name": "Microsoft 365 Copilot Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/what-s-new-in-microsoft-365-copilot-june-2026/ba-p/4529572",
-      "published": "2026-06-30T15:30:00.000Z",
-      "ingested": "2026-06-30T18:35:28.319Z",
-      "title_original": "What’s New in Microsoft 365 Copilot | June 2026",
-      "headline": "What’s New in Microsoft 365 Copilot | June 2026",
-      "topic": "ai",
-      "score": 50,
-      "tags": [
-        "copilot",
-        "purview",
-        "dlp",
-        "admin-center",
-        "cowork"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-b46e68626a",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42910",
-      "published": "2026-06-30T14:00:00.000Z",
-      "ingested": "2026-06-30T14:26:10.491Z",
-      "title_original": "CVE-2026-42910 Windows Hotpatch Monitoring Service Elevation of Privilege Vulnerability",
-      "headline": "CVE-2026-42910 Windows Hotpatch Monitoring Service Elevation of Privilege Vulnerability",
-      "topic": "security",
-      "score": 9,
-      "tags": [
-        "cve-2026-42910",
-        "windows",
-        "hotpatch",
-        "rettighetseskalering",
-        "msrc"
-      ]
-    },
-    {
-      "id": "o365reports-fa8f0cf335",
-      "source_id": "o365reports",
-      "source_name": "Office 365 Reports (AdminDroid)",
-      "url": "https://o365reports.com/cleanup-inactive-active-directory-user-accounts-using-powershell/?utm_source=rss&utm_medium=rss&utm_campaign=cleanup-inactive-active-directory-user-accounts-using-powershell",
-      "published": "2026-06-30T10:28:10.000Z",
-      "ingested": "2026-06-30T10:30:33.524Z",
-      "title_original": "Cleanup Inactive Active Directory User Accounts Using PowerShell",
-      "headline": "Cleanup Inactive Active Directory User Accounts Using PowerShell",
-      "topic": "identity",
-      "score": 27,
-      "tags": [
-        "active-directory",
-        "powershell",
-        "inaktive-kontoer",
-        "opprydding"
-      ],
-      "hero_image": "https://o365reports.com/wp-content/uploads/2026/06/Cleanup-inactive-user-accounts-in-Active-Directory-Sample-Output-300x75.png",
-      "summary": "AdminDroid has published a PowerShell script that finds inactive Active Directory accounts and automates cleanup in a controlled workflow by disabling them, moving them to a dedicated OU, and deleting them after a defined retention period. Forgotten accounts retain unnecessary access and increase the attack surface, while the script reduces the time and errors associated with manual cleanup and accounts for lastLogonTimestamp lagging by up to 14 days."
-    },
-    {
-      "id": "msrc-update-guide-0c9904f53a",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-11979",
-      "published": "2026-06-30T08:02:15.000Z",
-      "ingested": "2026-06-30T07:32:19.736Z",
-      "title_original": "CVE-2026-11979 Stack-Based Buffer Overflow in libxml2",
-      "headline": "CVE-2026-11979 Stack-Based Buffer Overflow in libxml2",
-      "topic": "security",
-      "score": 43,
-      "tags": [
-        "libxml2",
-        "buffer-overflow",
-        "cve-2026-11979",
-        "xml"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-c7a608159a",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53325",
-      "published": "2026-06-30T08:02:09.000Z",
-      "ingested": "2026-06-30T07:32:19.736Z",
-      "title_original": "CVE-2026-53325 agp/amd64: Fix broken error propagation in agp_amd64_probe()",
-      "headline": "CVE-2026-53325 agp/amd64: Fix broken error propagation in agp_amd64_probe()",
-      "topic": "security",
-      "score": 23,
-      "tags": [
-        "linux-kernel",
-        "agp",
-        "cve-2026-53325"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-c58a557dba",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41992",
-      "published": "2026-06-30T08:02:02.000Z",
-      "ingested": "2026-06-30T07:32:19.736Z",
-      "title_original": "CVE-2026-41992 Global Buffer Overflow in GNU gzip",
-      "headline": "CVE-2026-41992 Global Buffer Overflow in GNU gzip",
-      "topic": "security",
-      "score": 40,
-      "tags": [
-        "gzip",
-        "buffer-overflow",
-        "cve-2026-41992",
-        "linux"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-731aece5da",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41991",
-      "published": "2026-06-30T08:01:56.000Z",
-      "ingested": "2026-06-30T07:32:19.736Z",
-      "title_original": "CVE-2026-41991 Predictable Temporary File in GNU gzip",
-      "headline": "CVE-2026-41991 Predictable Temporary File in GNU gzip",
-      "topic": "security",
-      "score": 29,
-      "tags": [
-        "gzip",
-        "symlink",
-        "cve-2026-41991",
-        "linux"
-      ]
     }
   ]
 }
