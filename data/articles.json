@@ -1,6 +1,25 @@
 {
-  "generated_at": "2026-07-23T21:33:04.798Z",
+  "generated_at": "2026-07-24T04:34:48.293Z",
   "articles": [
+    {
+      "id": "m365-roadmap-abe681c62b",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=568073",
+      "published": "2026-07-23T23:27:16.000Z",
+      "ingested": "2026-07-24T04:34:09.251Z",
+      "title_original": "Microsoft Viva: Campaigns in SharePoint",
+      "headline": "SharePoint Adds Viva Amplify Campaign Management and Analytics",
+      "topic": "endpoint",
+      "score": 25,
+      "tags": [
+        "SharePoint",
+        "Viva Amplify",
+        "campaigns",
+        "analytics"
+      ],
+      "summary": "Microsoft is bringing Viva Amplify campaign creation, distribution, and analytics directly into SharePoint in August 2026. Administrators should review licensing and governance because the capability initially applies only to Amplify users."
+    },
     {
       "id": "office365-itpros-01e9d2297d",
       "source_id": "office365-itpros",
@@ -41,6 +60,25 @@
       "summary": "Microsoft Entra now supports more flexible SAP provisioning, custom user attributes, and account discovery. The integrations help administrators replace SAP IDM while automating identity lifecycles and strengthening access governance."
     },
     {
+      "id": "core-infra-security-7518dd1f45",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/understanding-microsoft-365-copilot-risk-surface-and-mitigations/ba-p/4538712",
+      "published": "2026-07-23T15:37:20.000Z",
+      "ingested": "2026-07-24T04:34:48.221Z",
+      "title_original": "Understanding Microsoft 365 Copilot Risk Surface and Mitigations",
+      "headline": "Microsoft 365 Copilot expands the enterprise data risk surface",
+      "topic": "ai",
+      "score": 44,
+      "tags": [
+        "Microsoft 365 Copilot",
+        "Zero Trust",
+        "data governance",
+        "permissions"
+      ],
+      "summary": "The analysis explains how Copilot can rapidly discover and combine Microsoft 365 data that users already have permission to access. Administrators should review oversharing, identity controls, data governance, and Zero Trust readiness before expanding deployments."
+    },
+    {
       "id": "msrc-blog-90ed2eac0b",
       "source_id": "msrc-blog",
       "source_name": "Microsoft Security Blog",
@@ -59,6 +97,291 @@
       ],
       "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/Figure-1.-Tycoon2FA-monthly-malicious-messages-volume-July-2025&ndash;June-2026-scaled.webp",
       "summary": "Microsoft reports that Tycoon2FA-linked phishing volume fell 92% after its disruption operation, while malicious Teams calls rose to nearly ten times the mid-2025 baseline. Security teams should adjust detection and training as attackers shift from email toward trusted collaboration channels."
+    },
+    {
+      "id": "msrc-update-guide-7066796335",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56167",
+      "published": "2026-07-23T14:00:00.000Z",
+      "ingested": "2026-07-24T04:34:09.251Z",
+      "title_original": "CVE-2026-56167 Azure AI Search Elevation of Privilege Vulnerability",
+      "headline": "Azure AI Search SSRF Flaw Enables Privilege Escalation",
+      "topic": "security",
+      "score": 65,
+      "tags": [
+        "Azure AI Search",
+        "SSRF",
+        "privilege escalation",
+        "CVE-2026-56167"
+      ],
+      "summary": "An SSRF vulnerability in Azure AI Search allows an authenticated attacker to elevate privileges remotely. Administrators should apply Microsoft's remediation and review access to affected search services."
+    },
+    {
+      "id": "msrc-update-guide-e76545abd3",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56163",
+      "published": "2026-07-23T14:00:00.000Z",
+      "ingested": "2026-07-24T04:34:09.251Z",
+      "title_original": "CVE-2026-56163 Microsoft Azure Kubernetes Service Elevation of Privilege Vulnerability",
+      "headline": "AKS Authentication Flaw Allows Remote Privilege Escalation",
+      "topic": "security",
+      "score": 71,
+      "tags": [
+        "AKS",
+        "authentication",
+        "privilege escalation",
+        "CVE-2026-56163"
+      ],
+      "summary": "A missing authentication check in Azure Kubernetes Service allows an unauthenticated attacker to elevate privileges remotely. AKS administrators should prioritize remediation and inspect exposed clusters for suspicious activity."
+    },
+    {
+      "id": "msrc-update-guide-42ed867583",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56165",
+      "published": "2026-07-23T14:00:00.000Z",
+      "ingested": "2026-07-24T04:34:09.251Z",
+      "title_original": "CVE-2026-56165 Microsoft Account Remote Code Execution Vulnerability",
+      "headline": "Microsoft Account Buffer Overflow Enables Remote Code Execution",
+      "topic": "identity",
+      "score": 71,
+      "tags": [
+        "Microsoft Account",
+        "buffer overflow",
+        "remote code execution",
+        "CVE-2026-56165"
+      ],
+      "summary": "A heap-based buffer overflow in Microsoft Account allows an unauthenticated attacker to execute code remotely. Administrators should prioritize Microsoft's remediation and monitor account infrastructure for signs of exploitation."
+    },
+    {
+      "id": "msrc-update-guide-1c9921dfa6",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54120",
+      "published": "2026-07-23T14:00:00.000Z",
+      "ingested": "2026-07-24T04:34:09.251Z",
+      "title_original": "CVE-2026-54120 Microsoft Surface Remote Code Execution Vulnerability",
+      "headline": "Microsoft Surface Input Validation Flaw Enables Remote Code Execution",
+      "topic": "endpoint",
+      "score": 67,
+      "tags": [
+        "Microsoft Surface",
+        "input validation",
+        "remote code execution",
+        "CVE-2026-54120"
+      ],
+      "summary": "Improper input validation in Microsoft Surface allows an authenticated attacker to execute code remotely. Endpoint administrators should deploy Microsoft's remediation and identify affected Surface devices in their fleet."
+    },
+    {
+      "id": "msrc-update-guide-458c369745",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56160",
+      "published": "2026-07-23T14:00:00.000Z",
+      "ingested": "2026-07-24T04:34:09.251Z",
+      "title_original": "CVE-2026-56160 Azure Red Hat OpenShift (ARO) Elevation of Privilege Vulnerability",
+      "headline": "Azure Red Hat OpenShift Flaw Enables Remote Privilege Escalation",
+      "topic": "security",
+      "score": 66,
+      "tags": [
+        "Azure Red Hat OpenShift",
+        "authorization",
+        "privilege escalation",
+        "CVE-2026-56160"
+      ],
+      "summary": "Improper authorization in Azure Red Hat OpenShift allows an authenticated attacker to elevate privileges remotely. Administrators should remediate affected clusters and review privileged activity for evidence of abuse."
+    },
+    {
+      "id": "msrc-update-guide-27bc58ab07",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35425",
+      "published": "2026-07-23T14:00:00.000Z",
+      "ingested": "2026-07-24T04:34:30.353Z",
+      "title_original": "CVE-2026-35425 Azure API Management (APIM) Remote Code Execution Vulnerability",
+      "headline": "Azure API Management Flaw Enables Remote Code Execution",
+      "topic": "security",
+      "score": 70,
+      "tags": [
+        "Azure APIM",
+        "RCE",
+        "access control",
+        "CVE"
+      ],
+      "summary": "CVE-2026-35425 lets an authorized network attacker exploit improper access controls in Azure API Management to execute code. Administrators should review affected APIM deployments, restrict privileged access, and apply Microsoft’s recommended mitigations or updates."
+    },
+    {
+      "id": "msrc-update-guide-2efb481833",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49159",
+      "published": "2026-07-23T14:00:00.000Z",
+      "ingested": "2026-07-24T04:34:30.353Z",
+      "title_original": "CVE-2026-49159 Microsoft Graph Information Disclosure Vulnerability",
+      "headline": "Microsoft Graph Flaw Exposes Sensitive Information",
+      "topic": "security",
+      "score": 61,
+      "tags": [
+        "Microsoft Graph",
+        "information disclosure",
+        "permissions",
+        "CVE"
+      ],
+      "summary": "CVE-2026-49159 lets an authorized network attacker disclose sensitive information through Microsoft Graph. Administrators should assess affected applications, review Graph permissions, and apply Microsoft’s recommended mitigations or updates."
+    },
+    {
+      "id": "msrc-update-guide-d9b0d8fa41",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50517",
+      "published": "2026-07-23T14:00:00.000Z",
+      "ingested": "2026-07-24T04:34:30.353Z",
+      "title_original": "CVE-2026-50517 Microsoft M365 Copilot Remote Code Execution Vulnerability",
+      "headline": "Microsoft 365 Copilot Flaw Enables Remote Code Execution",
+      "topic": "ai",
+      "score": 71,
+      "tags": [
+        "M365 Copilot",
+        "RCE",
+        "deserialization",
+        "CVE"
+      ],
+      "summary": "CVE-2026-50517 lets an authorized network attacker execute code by exploiting unsafe deserialization in Microsoft 365 Copilot. Administrators should review Copilot access, monitor suspicious activity, and apply Microsoft’s recommended mitigations or updates."
+    },
+    {
+      "id": "msrc-update-guide-27e4611e42",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56191",
+      "published": "2026-07-23T14:00:00.000Z",
+      "ingested": "2026-07-24T04:34:30.353Z",
+      "title_original": "CVE-2026-56191 Microsoft Exchange Online Tampering Vulnerability",
+      "headline": "Exchange Online Authentication Flaw Enables Remote Tampering",
+      "topic": "security",
+      "score": 74,
+      "tags": [
+        "Exchange Online",
+        "authentication",
+        "tampering",
+        "CVE"
+      ],
+      "summary": "CVE-2026-56191 lets an unauthenticated network attacker tamper with Microsoft Exchange Online through improper authentication. Administrators should review Exchange audit activity and follow Microsoft’s recommended mitigations or service guidance."
+    },
+    {
+      "id": "msrc-update-guide-d2adb10cc4",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57106",
+      "published": "2026-07-23T14:00:00.000Z",
+      "ingested": "2026-07-24T04:34:30.353Z",
+      "title_original": "CVE-2026-57106 Data Quality Elevation of Privilege Vulnerability",
+      "headline": "Data Quality SSRF Flaw Enables Privilege Escalation",
+      "topic": "security",
+      "score": 74,
+      "tags": [
+        "Data Quality",
+        "SSRF",
+        "privilege escalation",
+        "CVE"
+      ],
+      "summary": "CVE-2026-57106 lets an unauthenticated network attacker exploit server-side request forgery in Data Quality to elevate privileges. Administrators should limit service exposure, monitor outbound requests, and apply Microsoft’s recommended mitigations or updates."
+    },
+    {
+      "id": "msrc-update-guide-3591a0cb49",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62825",
+      "published": "2026-07-23T14:00:00.000Z",
+      "ingested": "2026-07-24T04:34:30.353Z",
+      "title_original": "CVE-2026-62825 Azure Key Vault Elevation of Privilege Vulnerability",
+      "headline": "Azure Key Vault Authentication Flaw Enables Privilege Escalation",
+      "topic": "identity",
+      "score": 76,
+      "tags": [
+        "Azure Key Vault",
+        "authentication",
+        "privilege escalation",
+        "CVE"
+      ],
+      "summary": "CVE-2026-62825 lets an unauthenticated network attacker exploit improper authentication in Azure Key Vault to elevate privileges. Administrators should review vault access logs and policies and apply Microsoft’s recommended mitigations or updates."
+    },
+    {
+      "id": "msrc-update-guide-fe4a78c1ac",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58630",
+      "published": "2026-07-23T14:00:00.000Z",
+      "ingested": "2026-07-24T04:34:48.221Z",
+      "title_original": "CVE-2026-58630 Azure App Service on Azure Stack Hub Elevation of Privilege Vulnerability",
+      "headline": "Azure App Service flaw enables privilege escalation on Azure Stack Hub",
+      "topic": "security",
+      "score": 70,
+      "tags": [
+        "Azure App Service",
+        "Azure Stack Hub",
+        "privilege escalation",
+        "CVE"
+      ],
+      "summary": "Microsoft disclosed an improper access control vulnerability in Azure App Service on Azure Stack Hub. An unauthorized network attacker could elevate privileges, so administrators should review affected deployments and apply Microsoft's remediation promptly."
+    },
+    {
+      "id": "msrc-update-guide-6d8ada7c12",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58275",
+      "published": "2026-07-23T14:00:00.000Z",
+      "ingested": "2026-07-24T04:34:48.221Z",
+      "title_original": "CVE-2026-58275 Azure DNS Elevation of Privilege Vulnerability",
+      "headline": "Azure DNS authorization flaw allows privilege escalation",
+      "topic": "security",
+      "score": 70,
+      "tags": [
+        "Azure DNS",
+        "authorization",
+        "privilege escalation",
+        "CVE"
+      ],
+      "summary": "Microsoft disclosed a missing authorization vulnerability in Azure DNS that permits privilege escalation over a network. Azure administrators should identify affected resources and prioritize Microsoft's recommended remediation."
+    },
+    {
+      "id": "msrc-update-guide-7ace1995aa",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62835",
+      "published": "2026-07-23T14:00:00.000Z",
+      "ingested": "2026-07-24T04:34:48.221Z",
+      "title_original": "CVE-2026-62835 Online Services Information Disclosure Vulnerability",
+      "headline": "Microsoft Online Services flaw exposes information over the network",
+      "topic": "security",
+      "score": 65,
+      "tags": [
+        "Online Services",
+        "information disclosure",
+        "authorization",
+        "CVE"
+      ],
+      "summary": "Microsoft disclosed an improper authorization vulnerability affecting its online services. An unauthorized network attacker could access information, so administrators should assess exposure and follow Microsoft's mitigation guidance."
+    },
+    {
+      "id": "core-infra-security-d3d985cacc",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/should-you-use-the-new-microsoft-entra-tenant-governance-or/ba-p/4532297",
+      "published": "2026-07-23T12:00:00.000Z",
+      "ingested": "2026-07-24T04:34:48.221Z",
+      "title_original": "Should You Use the New Microsoft Entra Tenant Governance or Azure Lighthouse? (part 3 of 3)",
+      "headline": "Compare Entra Tenant Governance with Azure Lighthouse delegation",
+      "topic": "identity",
+      "score": 47,
+      "tags": [
+        "Entra",
+        "Azure Lighthouse",
+        "tenant governance",
+        "delegation"
+      ],
+      "summary": "The article compares Microsoft Entra Tenant Governance with Azure Lighthouse and explains how their delegation models operate across different boundaries. Administrators and service providers can use the guidance to choose between tenant-level governance and Azure resource management without creating unnecessary identities."
     },
     {
       "id": "oofhours-fe96db160a",
@@ -8990,321 +9313,6 @@
         "symlink",
         "cve-2026-41991",
         "linux"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-5a99fcfed5",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54371",
-      "published": "2026-06-30T08:01:49.000Z",
-      "ingested": "2026-06-30T07:32:19.736Z",
-      "title_original": "CVE-2026-54371 attr < 2.6.0 Symlink Traversal Privilege Escalation via getfattr/setfattr",
-      "headline": "CVE-2026-54371 attr < 2.6.0 Symlink Traversal Privilege Escalation via getfattr/setfattr",
-      "topic": "security",
-      "score": 36,
-      "tags": [
-        "attr",
-        "privilege-escalation",
-        "cve-2026-54371",
-        "linux"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-7ffac6a2bb",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54369",
-      "published": "2026-06-30T08:01:43.000Z",
-      "ingested": "2026-06-30T07:32:19.734Z",
-      "title_original": "CVE-2026-54369 acl < 2.4.0 Symlink Traversal Privilege Escalation via libacl Functions",
-      "headline": "CVE-2026-54369 acl < 2.4.0 Symlink Traversal Privilege Escalation via libacl Functions",
-      "topic": "security",
-      "score": 36,
-      "tags": [
-        "acl",
-        "libacl",
-        "privilege-escalation",
-        "cve-2026-54369",
-        "linux"
-      ]
-    },
-    {
-      "id": "office365-itpros-79370d182a",
-      "source_id": "office365-itpros",
-      "source_name": "Office 365 for IT Pros (Tony Redmond)",
-      "url": "https://office365itpros.com/2026/06/30/incoming-teams-call-window/?utm_source=rss&utm_medium=rss&utm_campaign=incoming-teams-call-window",
-      "published": "2026-06-30T07:00:00.000Z",
-      "ingested": "2026-06-30T07:05:36.041Z",
-      "title_original": "Use the Small Window for Incoming Teams Calls",
-      "headline": "Use the Small Window for Incoming Teams Calls",
-      "topic": "endpoint",
-      "score": 32,
-      "tags": [
-        "teams",
-        "anrop",
-        "brukeropplevelse",
-        "mc1045221"
-      ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Teams-Call-Small-Window.jpg?resize=840%2C365&ssl=1",
-      "summary": "A Teams setting allows incoming calls to appear in a small window instead of the large default window, reducing disruption and letting users see what they were doing without switching windows. The optional feature is controlled under Calls in Teams settings and is described in Message Center notice MC1045221."
-    },
-    {
-      "id": "m365-roadmap-eaf30ae1ca",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566701",
-      "published": "2026-06-29T23:02:39.000Z",
-      "ingested": "2026-06-29T23:57:41.881Z",
-      "title_original": "Microsoft Copilot (Microsoft 365): Edit your document with Copilot in PowerPoint in Government Clouds",
-      "headline": "Microsoft Copilot (Microsoft 365): Edit your document with Copilot in PowerPoint in Government Clouds",
-      "topic": "ai",
-      "score": 36,
-      "tags": [
-        "copilot",
-        "powerpoint",
-        "government-cloud",
-        "m365"
-      ]
-    },
-    {
-      "id": "m365-roadmap-1d08372014",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566702",
-      "published": "2026-06-29T23:02:39.000Z",
-      "ingested": "2026-06-29T23:41:08.845Z",
-      "title_original": "Microsoft Copilot (Microsoft 365): Edit your document with Copilot in PowerPoint in Government Clouds",
-      "headline": "Microsoft Copilot (Microsoft 365): Edit your document with Copilot in PowerPoint in Government Clouds",
-      "topic": "ai",
-      "score": 35,
-      "tags": [
-        "copilot",
-        "powerpoint",
-        "government-cloud",
-        "m365"
-      ]
-    },
-    {
-      "id": "m365-roadmap-c84fe5cf7e",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566700",
-      "published": "2026-06-29T23:02:39.000Z",
-      "ingested": "2026-06-29T23:41:08.847Z",
-      "title_original": "Microsoft Teams: IntelliFrame people labels in Teams Rooms on Windows",
-      "headline": "Microsoft Teams: IntelliFrame people labels in Teams Rooms on Windows",
-      "topic": "endpoint",
-      "score": 31,
-      "tags": [
-        "teams",
-        "teams-rooms",
-        "intelliframe",
-        "møterom"
-      ]
-    },
-    {
-      "id": "security-community-ab1d21c572",
-      "source_id": "security-community",
-      "source_name": "Microsoft Security Community Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/understand-your-sentinel-tables-at-a-glance-monitor-with-table/ba-p/4530738",
-      "published": "2026-06-29T17:48:32.000Z",
-      "ingested": "2026-06-29T22:05:16.535Z",
-      "title_original": "Understand your Sentinel tables at a glance: Monitor with table insights",
-      "headline": "Understand your Sentinel tables at a glance: Monitor with table insights",
-      "topic": "security",
-      "score": 48,
-      "tags": [
-        "sentinel",
-        "soc",
-        "table-insights",
-        "logging",
-        "kostnad"
-      ]
-    },
-    {
-      "id": "petervanderwoude-b39c7ccef8",
-      "source_id": "petervanderwoude",
-      "source_name": "All about Microsoft Intune (Peter van der Woude)",
-      "url": "https://petervanderwoude.nl/post/getting-started-with-android-enterprise-personally-owned-devices-with-work-profile/",
-      "published": "2026-06-29T17:45:00.000Z",
-      "ingested": "2026-06-29T18:00:29.794Z",
-      "title_original": "Getting started with Android Enterprise personally owned devices with work profile",
-      "headline": "Getting started with Android Enterprise personally owned devices with work profile",
-      "topic": "endpoint",
-      "score": 45,
-      "tags": [
-        "intune",
-        "android-enterprise",
-        "byod",
-        "amapi",
-        "work-profile"
-      ]
-    },
-    {
-      "id": "msrc-blog-dc401e0641",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/29/chromium-extension-uses-airelated-branding-redirect-browser-search/",
-      "published": "2026-06-29T16:27:46.000Z",
-      "ingested": "2026-06-29T18:00:29.792Z",
-      "title_original": "Chromium extension uses AI‑related branding to redirect browser search",
-      "headline": "Chromium extension uses AI‑related branding to redirect browser search",
-      "topic": "security",
-      "score": 55,
-      "tags": [
-        "chromium",
-        "nettleserutvidelse",
-        "mv3",
-        "perplexity"
-      ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/image-56.webp",
-      "summary": "Microsoft Threat Intelligence uncovered a Chromium extension impersonating Perplexity AI that secretly redirects address-bar searches using Manifest V3 and declarativeNetRequest rules to capture search traffic and collect data for profiling or advertising. Google removed it after notification, but organizations should consider allowlisting browser extensions because they remain an underestimated attack surface."
-    },
-    {
-      "id": "sentinel-blog-1fb6e495cd",
-      "source_id": "sentinel-blog",
-      "source_name": "Microsoft Sentinel Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/your-readiness-playbook-adoption-helper-costs-apis-and-the/ba-p/4528608",
-      "published": "2026-06-29T16:00:00.000Z",
-      "ingested": "2026-06-29T17:48:59.896Z",
-      "title_original": "Your readiness playbook: adoption helper, costs, APIs, and the checklist",
-      "headline": "Your readiness playbook: adoption helper, costs, APIs, and the checklist",
-      "topic": "security",
-      "score": 47,
-      "tags": [
-        "sentinel",
-        "defender",
-        "soc",
-        "migrering",
-        "siem"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-b3a6beab6e",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58058",
-      "published": "2026-06-29T08:06:47.000Z",
-      "ingested": "2026-06-29T07:16:27.373Z",
-      "title_original": "CVE-2026-58058 Nmap - Integer Underflow in IPv6 Extension Header Parsing",
-      "headline": "CVE-2026-58058 Nmap - Integer Underflow in IPv6 Extension Header Parsing",
-      "topic": "security",
-      "score": 33,
-      "tags": [
-        "cve-2026-58058",
-        "nmap",
-        "ipv6",
-        "scanning"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-69f7f6713c",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58055",
-      "published": "2026-06-29T08:06:34.000Z",
-      "ingested": "2026-06-29T07:17:09.459Z",
-      "title_original": "CVE-2026-58055 nghttp2 nghttpx - HTTP Request/Response Smuggling via Upgrade Request with Content-Length",
-      "headline": "CVE-2026-58055 nghttp2 nghttpx - HTTP Request/Response Smuggling via Upgrade Request with Content-Length",
-      "topic": "security",
-      "score": 59,
-      "tags": [
-        "cve-2026-58055",
-        "request-smuggling",
-        "nghttp2",
-        "nghttpx",
-        "http2"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-8a5e787601",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58051",
-      "published": "2026-06-29T08:06:18.000Z",
-      "ingested": "2026-06-29T07:16:27.373Z",
-      "title_original": "CVE-2026-58051 libssh2 - Free of Uninitialized Pointer in publickey List Cleanup",
-      "headline": "CVE-2026-58051 libssh2 - Free of Uninitialized Pointer in publickey List Cleanup",
-      "topic": "security",
-      "score": 37,
-      "tags": [
-        "cve-2026-58051",
-        "libssh2",
-        "ssh",
-        "memory-safety"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-4316ed597d",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58050",
-      "published": "2026-06-29T08:05:57.000Z",
-      "ingested": "2026-06-29T07:16:27.373Z",
-      "title_original": "CVE-2026-58050 libssh2 - Integer Overflow in publickey Subsystem Attribute Allocation",
-      "headline": "CVE-2026-58050 libssh2 - Integer Overflow in publickey Subsystem Attribute Allocation",
-      "topic": "security",
-      "score": 37,
-      "tags": [
-        "cve-2026-58050",
-        "libssh2",
-        "ssh",
-        "integer-overflow"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-cb381d28c2",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-52908",
-      "published": "2026-06-29T08:05:37.000Z",
-      "ingested": "2026-06-29T07:16:27.373Z",
-      "title_original": "CVE-2026-52908 RDMA: During rereg_mr ensure that REREG_ACCESS is compatible",
-      "headline": "CVE-2026-52908 RDMA: During rereg_mr ensure that REREG_ACCESS is compatible",
-      "topic": "security",
-      "score": 27,
-      "tags": [
-        "cve-2026-52908",
-        "linux-kjerne",
-        "rdma",
-        "azure"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-1be2fb2662",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-52909",
-      "published": "2026-06-29T08:05:23.000Z",
-      "ingested": "2026-06-29T07:16:27.373Z",
-      "title_original": "CVE-2026-52909 ip6_vti: set netns_immutable on the fallback device.",
-      "headline": "CVE-2026-52909 ip6_vti: set netns_immutable on the fallback device.",
-      "topic": "security",
-      "score": 27,
-      "tags": [
-        "cve-2026-52909",
-        "linux-kjerne",
-        "ipv6",
-        "netns"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-69450a8298",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-52910",
-      "published": "2026-06-29T08:05:09.000Z",
-      "ingested": "2026-06-29T07:16:27.371Z",
-      "title_original": "CVE-2026-52910 bpf: Free reuseport cBPF prog after RCU grace period.",
-      "headline": "CVE-2026-52910 bpf: Free reuseport cBPF prog after RCU grace period.",
-      "topic": "security",
-      "score": 32,
-      "tags": [
-        "cve-2026-52910",
-        "linux-kjerne",
-        "bpf",
-        "azure"
       ]
     }
   ]
