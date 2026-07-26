@@ -1,6 +1,199 @@
 {
-  "generated_at": "2026-07-24T11:35:55.606Z",
+  "generated_at": "2026-07-26T11:07:28.628Z",
   "articles": [
+    {
+      "id": "vasil-michev-fd04648e4a",
+      "source_id": "vasil-michev",
+      "source_name": "Vasil Michev — Michev.info",
+      "url": "https://michev.info/blog/post/8129/sharepoint-online-throttling-report",
+      "published": "2026-07-26T08:33:34.000Z",
+      "ingested": "2026-07-26T11:06:39.904Z",
+      "title_original": "SharePoint Online throttling report",
+      "headline": "SharePoint Online adds API throttling reports for bulk operations",
+      "topic": "endpoint",
+      "score": 39,
+      "tags": [
+        "SharePoint Online",
+        "Microsoft Graph",
+        "API throttling",
+        "reporting"
+      ],
+      "hero_image": "https://michev.info/wp-content/uploads/2026/07/SPOThrottlingReport.png",
+      "summary": "A new SharePoint Online report exposes throttling data through Microsoft Graph after administrators explicitly enable collection. Teams running bulk API operations can use the data to identify constrained workloads and improve retry and capacity strategies."
+    },
+    {
+      "id": "vasil-michev-ec7dc9e66e",
+      "source_id": "vasil-michev",
+      "source_name": "Vasil Michev — Michev.info",
+      "url": "https://michev.info/blog/post/8089/the-sad-state-of-governance-apis-for-copilot-and-agent-365",
+      "published": "2026-07-25T12:48:34.000Z",
+      "ingested": "2026-07-26T11:06:39.904Z",
+      "title_original": "The sad state of governance APIs for Copilot and Agent 365",
+      "headline": "Agent 365 APIs reach GA with major governance gaps",
+      "topic": "ai",
+      "score": 43,
+      "tags": [
+        "Agent 365",
+        "Microsoft Graph",
+        "Copilot governance",
+        "application permissions"
+      ],
+      "hero_image": "https://michev.info/wp-content/uploads/2026/07/CopilotPolicy.png",
+      "summary": "Microsoft has moved Agent 365 read-only APIs to v1.0 and added application permissions for non-interactive agent inventory. Write operations remain in beta and query limitations persist, leaving administrators without complete automation for Copilot agent governance."
+    },
+    {
+      "id": "msrc-update-guide-9a16526142",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-16807",
+      "published": "2026-07-25T07:29:54.000Z",
+      "ingested": "2026-07-26T11:07:28.490Z",
+      "title_original": "Chromium: CVE-2026-16807 Out of bounds write in Codecs",
+      "headline": "Microsoft Edge fixes out-of-bounds write flaw in codecs",
+      "topic": "security",
+      "score": 68,
+      "tags": [
+        "Microsoft Edge",
+        "Chromium",
+        "CVE-2026-16807",
+        "codecs"
+      ],
+      "summary": "Microsoft Edge ingests Chromium's fix for CVE-2026-16807, an out-of-bounds write vulnerability in codec handling. Administrators should prioritize browser updates because crafted media could expose endpoints to attack."
+    },
+    {
+      "id": "msrc-update-guide-831b98bd1f",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-16806",
+      "published": "2026-07-25T07:29:52.000Z",
+      "ingested": "2026-07-26T11:07:28.490Z",
+      "title_original": "Chromium: CVE-2026-16806 Use after free in WebMCP",
+      "headline": "Microsoft Edge fixes use-after-free flaw in WebMCP",
+      "topic": "security",
+      "score": 65,
+      "tags": [
+        "Microsoft Edge",
+        "Chromium",
+        "CVE-2026-16806",
+        "WebMCP"
+      ],
+      "summary": "Microsoft Edge ingests Chromium's fix for CVE-2026-16806, a use-after-free vulnerability in WebMCP. Administrators should deploy the updated Edge build across managed endpoints."
+    },
+    {
+      "id": "msrc-update-guide-dc701226e6",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-16805",
+      "published": "2026-07-25T07:29:51.000Z",
+      "ingested": "2026-07-26T11:07:28.490Z",
+      "title_original": "Chromium: CVE-2026-16805 Use after free in Blink",
+      "headline": "Microsoft Edge fixes use-after-free flaw in Blink",
+      "topic": "security",
+      "score": 65,
+      "tags": [
+        "Microsoft Edge",
+        "Chromium",
+        "CVE-2026-16805",
+        "Blink"
+      ],
+      "summary": "Microsoft Edge ingests Chromium's fix for CVE-2026-16805, a use-after-free vulnerability in Blink. Administrators should update managed Edge installations to reduce exposure to browser-based attacks."
+    },
+    {
+      "id": "msrc-update-guide-0ebaf78126",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-16804",
+      "published": "2026-07-25T07:29:49.000Z",
+      "ingested": "2026-07-26T11:06:39.904Z",
+      "title_original": "Chromium: CVE-2026-16804 Use after free in Input",
+      "headline": "Microsoft Edge fixes Chromium use-after-free vulnerability CVE-2026-16804",
+      "topic": "security",
+      "score": 63,
+      "tags": [
+        "Microsoft Edge",
+        "Chromium",
+        "CVE-2026-16804",
+        "use-after-free"
+      ],
+      "summary": "Microsoft Edge incorporates Chromium's fix for a use-after-free vulnerability in input handling. Administrators should deploy the latest Edge security update to reduce exposure on managed Windows endpoints."
+    },
+    {
+      "id": "m365-copilot-670f5637d2",
+      "source_id": "m365-copilot",
+      "source_name": "Microsoft 365 Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/available-today-anthropic-claude-opus-5-in-microsoft-365-copilot/ba-p/4540524",
+      "published": "2026-07-24T21:11:08.000Z",
+      "ingested": "2026-07-26T11:06:39.904Z",
+      "title_original": "Available today: Anthropic Claude Opus 5 in Microsoft 365 Copilot",
+      "headline": "Microsoft 365 Copilot adds Claude Opus 5 for complex enterprise tasks",
+      "topic": "ai",
+      "score": 72,
+      "tags": [
+        "Microsoft 365 Copilot",
+        "Claude Opus 5",
+        "Copilot Studio",
+        "AI governance"
+      ],
+      "summary": "Microsoft 365 Copilot now offers Claude Opus 5 across productivity apps, Copilot Chat, Cowork, and the Copilot Studio preview orchestrator. Administrators should assess model availability, governance controls, data protections, and licensing before enabling it for users and agents."
+    },
+    {
+      "id": "oofhours-8fe93f224b",
+      "source_id": "oofhours",
+      "source_name": "Out of Office Hours (Michael Niehaus)",
+      "url": "https://oofhours.com/2026/07/24/still-using-wsus-patch-tuesday-broke-it/",
+      "published": "2026-07-24T19:43:58.000Z",
+      "ingested": "2026-07-26T11:07:28.490Z",
+      "title_original": "Still using WSUS?  Patch Tuesday broke it…",
+      "headline": "July cumulative updates overwhelm some WSUS deployments",
+      "topic": "endpoint",
+      "score": 63,
+      "tags": [
+        "WSUS",
+        "Patch Tuesday",
+        "Windows Update",
+        "cumulative updates"
+      ],
+      "hero_image": "https://oofhours.com/wp-content/uploads/2026/07/image-5.png",
+      "summary": "Large Windows cumulative updates are causing WSUS synchronization and processing failures in some environments. Administrators relying on WSUS should validate July update workflows and prepare alternative deployment paths to avoid patching delays."
+    },
+    {
+      "id": "entra-blog-e58e7cb74f",
+      "source_id": "entra-blog",
+      "source_name": "Microsoft Entra Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/what-s-new-in-microsoft-entra-july-2026/ba-p/4534631",
+      "published": "2026-07-24T17:47:47.000Z",
+      "ingested": "2026-07-26T11:06:39.904Z",
+      "title_original": "What's New in Microsoft Entra: July 2026",
+      "headline": "Microsoft Entra adds tenant backup and recovery with seven-day retention",
+      "topic": "identity",
+      "score": 81,
+      "tags": [
+        "Entra ID",
+        "tenant recovery",
+        "Conditional Access",
+        "identity governance"
+      ],
+      "summary": "Microsoft Entra Backup and Recovery now automatically protects critical directory objects and lets administrators compare snapshots and restore known-good states. The service can reduce downtime after malicious changes, configuration errors, or failed policy updates."
+    },
+    {
+      "id": "prajwal-desai-99d363b6f5",
+      "source_id": "prajwal-desai",
+      "source_name": "Prajwal Desai",
+      "url": "https://www.prajwaldesai.com/fix-wsus-sync-delays-and-timeout-issues/",
+      "published": "2026-07-24T13:29:07.000Z",
+      "ingested": "2026-07-26T11:07:28.490Z",
+      "title_original": "Microsoft Shares Fix for WSUS Sync Delays and Timeout Issues",
+      "headline": "Microsoft provides fix for WSUS synchronization delays",
+      "topic": "endpoint",
+      "score": 53,
+      "tags": [
+        "WSUS",
+        "Windows Server",
+        "synchronization",
+        "patch management"
+      ],
+      "summary": "Microsoft has confirmed a WSUS issue that causes slow synchronization and timeout failures and has shared remediation guidance. Administrators should apply the fix to restore reliable update synchronization and reduce patch deployment delays."
+    },
     {
       "id": "andrew-taylor-a9faf804b7",
       "source_id": "andrew-taylor",
@@ -4131,6 +4324,25 @@
       ],
       "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image-57.png",
       "summary": "Rudy Ooms explains how Intune’s improved on-demand sync can now wake sleeping Windows devices, preventing manual sync requests from having no effect while a device is asleep. This enables faster, more reliable deployment of policies and apps to devices in the field."
+    },
+    {
+      "id": "m365-copilot-d09dec5304",
+      "source_id": "m365-copilot",
+      "source_name": "Microsoft 365 Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/what-s-new-in-microsoft-365-copilot-june-2026/ba-p/4529572",
+      "published": "2026-07-14T17:07:56.000Z",
+      "ingested": "2026-07-26T11:06:39.904Z",
+      "title_original": "What’s New in Microsoft 365 Copilot | June 2026",
+      "headline": "Microsoft launches Copilot Cowork and expands administrative controls",
+      "topic": "ai",
+      "score": 76,
+      "tags": [
+        "Copilot Cowork",
+        "Purview DLP",
+        "Microsoft 365",
+        "AI administration"
+      ],
+      "summary": "Copilot Cowork is now generally available worldwide, while Microsoft has expanded Copilot features across Office apps, agents, and the Microsoft 365 admin center. Administrators should review usage-based billing, adoption controls, and new Purview DLP restrictions before deployment."
     },
     {
       "id": "core-infra-security-e114bfd1e2",
@@ -9118,208 +9330,6 @@
         "onenote",
         "m365"
       ]
-    },
-    {
-      "id": "m365-roadmap-90a0010e7e",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566314",
-      "published": "2026-06-30T22:57:58.000Z",
-      "ingested": "2026-06-30T23:41:20.949Z",
-      "title_original": "Planner: Save AI-generated filters in Planner Agent chat",
-      "headline": "Planner: Save AI-generated filters in Planner Agent chat",
-      "topic": "ai",
-      "score": 29,
-      "tags": [
-        "planner",
-        "copilot",
-        "ai"
-      ]
-    },
-    {
-      "id": "m365-roadmap-a5e943588a",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=562534",
-      "published": "2026-06-30T22:57:58.000Z",
-      "ingested": "2026-06-30T23:41:20.949Z",
-      "title_original": "Microsoft Teams: Front-of-room view control for Town Hall\r\nand Webinar in Teams Rooms on Android",
-      "headline": "Microsoft Teams: Front-of-room view control for Town Hall\r\nand Webinar in Teams Rooms on Android",
-      "topic": "endpoint",
-      "score": 29,
-      "tags": [
-        "teams",
-        "teams-rooms",
-        "android"
-      ]
-    },
-    {
-      "id": "security-community-1959280b1f",
-      "source_id": "security-community",
-      "source_name": "Microsoft Security Community Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/introducing-a-unified-alert-experience-for-microsoft-purview/ba-p/4530714",
-      "published": "2026-06-30T19:00:00.000Z",
-      "ingested": "2026-07-02T19:39:27.352Z",
-      "title_original": "Introducing a unified alert experience for Microsoft Purview Insider Risk Management",
-      "headline": "Introducing a unified alert experience for Microsoft Purview Insider Risk Management",
-      "topic": "security",
-      "score": 46,
-      "tags": [
-        "purview",
-        "insider-risk",
-        "gransking",
-        "preview"
-      ]
-    },
-    {
-      "id": "msrc-blog-e3c87d41eb",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/30/microsoft-advances-quantum-safe-security-as-the-risk-timeline-shifts/",
-      "published": "2026-06-30T19:00:00.000Z",
-      "ingested": "2026-06-30T19:13:04.737Z",
-      "title_original": "Accelerating the quantum-safe timeline",
-      "headline": "Accelerating the quantum-safe timeline",
-      "topic": "security",
-      "score": 61,
-      "tags": [
-        "pqc",
-        "kvantekryptografi",
-        "kryptografi",
-        "compliance"
-      ]
-    },
-    {
-      "id": "entra-blog-ace17dcb8b",
-      "source_id": "entra-blog",
-      "source_name": "Microsoft Entra Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/microsoft-entra-backup-and-recovery-is-now-generally-available/ba-p/4521997",
-      "published": "2026-06-30T18:27:57.000Z",
-      "ingested": "2026-06-30T18:46:27.328Z",
-      "title_original": "Microsoft Entra Backup and Recovery is now generally available",
-      "headline": "Microsoft Entra Backup and Recovery is now generally available",
-      "topic": "identity",
-      "score": 78,
-      "tags": [
-        "entra-id",
-        "backup",
-        "disaster-recovery",
-        "conditional-access",
-        "ga"
-      ]
-    },
-    {
-      "id": "prajwal-desai-00020b7c67",
-      "source_id": "prajwal-desai",
-      "source_name": "Prajwal Desai",
-      "url": "https://www.prajwaldesai.com/configmgr-upgrade-fails-with-asset-intelligence-role-installed/",
-      "published": "2026-06-30T18:21:51.000Z",
-      "ingested": "2026-06-30T18:23:46.002Z",
-      "title_original": "ConfigMgr Upgrade fails with Asset Intelligence Role Installed",
-      "headline": "ConfigMgr Upgrade fails with Asset Intelligence Role Installed",
-      "topic": "endpoint",
-      "score": 31,
-      "tags": [
-        "configmgr",
-        "sccm",
-        "asset-intelligence",
-        "oppgradering"
-      ]
-    },
-    {
-      "id": "defender-cloud-086247ea0f",
-      "source_id": "defender-cloud",
-      "source_name": "Microsoft Defender for Cloud Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/microsoft-defender-for-cloud-expands-multicloud-coverage-across/ba-p/4532200",
-      "published": "2026-06-30T17:36:56.000Z",
-      "ingested": "2026-06-30T21:14:42.147Z",
-      "title_original": "Microsoft Defender for Cloud expands multicloud coverage across AWS and Google Cloud",
-      "headline": "Microsoft Defender for Cloud expands multicloud coverage across AWS and Google Cloud",
-      "topic": "security",
-      "score": 65,
-      "tags": [
-        "defender for cloud",
-        "multicloud",
-        "aws",
-        "gcp",
-        "cspm"
-      ]
-    },
-    {
-      "id": "sentinel-blog-5d4b25aed2",
-      "source_id": "sentinel-blog",
-      "source_name": "Microsoft Sentinel Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-in-microsoft-sentinel-june-2026/ba-p/4531902",
-      "published": "2026-06-30T16:43:18.000Z",
-      "ingested": "2026-06-30T19:35:26.904Z",
-      "title_original": "What’s new in Microsoft Sentinel: June 2026",
-      "headline": "What’s new in Microsoft Sentinel: June 2026",
-      "topic": "security",
-      "score": 53,
-      "tags": [
-        "sentinel",
-        "asim",
-        "data-lake",
-        "mcp",
-        "ai-agenter"
-      ]
-    },
-    {
-      "id": "sentinel-blog-9479d7ef23",
-      "source_id": "sentinel-blog",
-      "source_name": "Microsoft Sentinel Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/behind-the-build-with-gigamon-enriching-microsoft-sentinel-with/ba-p/4530360",
-      "published": "2026-06-30T16:00:00.000Z",
-      "ingested": "2026-06-30T19:35:26.902Z",
-      "title_original": "Behind the Build with Gigamon: Enriching Microsoft Sentinel with Network-Derived Telemetry",
-      "headline": "Behind the Build with Gigamon: Enriching Microsoft Sentinel with Network-Derived Telemetry",
-      "topic": "security",
-      "score": 34,
-      "tags": [
-        "sentinel",
-        "gigamon",
-        "nettverkstelemetri",
-        "soc"
-      ]
-    },
-    {
-      "id": "sentinel-blog-2f40ece585",
-      "source_id": "sentinel-blog",
-      "source_name": "Microsoft Sentinel Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/the-ai-first-soc-copilot-ueba-threat-intelligence-and-soc/ba-p/4528609",
-      "published": "2026-06-30T16:00:00.000Z",
-      "ingested": "2026-06-30T19:35:26.904Z",
-      "title_original": "The AI-first SOC: Copilot, UEBA, threat intelligence, and SOC optimization",
-      "headline": "The AI-first SOC: Copilot, UEBA, threat intelligence, and SOC optimization",
-      "topic": "security",
-      "score": 47,
-      "tags": [
-        "sentinel",
-        "defender",
-        "security-copilot",
-        "ueba",
-        "soc"
-      ]
-    },
-    {
-      "id": "msrc-blog-8db4e54de5",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/30/whats-new-in-microsoft-security-june-2026/",
-      "published": "2026-06-30T16:00:00.000Z",
-      "ingested": "2026-06-30T17:20:15.491Z",
-      "title_original": "​​What’s new in Microsoft Security: June 2026",
-      "headline": "​​What’s new in Microsoft Security: June 2026",
-      "topic": "security",
-      "score": 52,
-      "tags": [
-        "defender",
-        "mdash",
-        "ai-agenter",
-        "sårbarheter"
-      ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/06/Picture1-4-1024x576.webp",
-      "summary": "Microsoft’s monthly security update introduces “MDASH” in private preview, an agent-based AI system that scans complex code to find and validate vulnerabilities and route them directly into Defender workflows, while Defender is also extending endpoint protection to local AI agents. These developments give IT admins new vulnerability tools but also reflect a growing attack surface as AI agents are adopted."
     }
   ]
 }
