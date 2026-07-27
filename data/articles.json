@@ -1,6 +1,44 @@
 {
-  "generated_at": "2026-07-27T11:10:28.919Z",
+  "generated_at": "2026-07-27T17:11:34.703Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-38f3379e72",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50333",
+      "published": "2026-07-27T14:00:00.000Z",
+      "ingested": "2026-07-27T17:11:34.639Z",
+      "title_original": "CVE-2026-50333 Windows Spaceport.sys Elevation of Privilege Vulnerability",
+      "headline": "Microsoft Updates Acknowledgment for Windows Spaceport.sys CVE-2026-50333",
+      "topic": "security",
+      "score": 18,
+      "tags": [
+        "CVE-2026-50333",
+        "Spaceport.sys",
+        "Windows",
+        "privilege escalation"
+      ],
+      "summary": "Microsoft updated an acknowledgment for the Windows Spaceport.sys elevation-of-privilege vulnerability. The change is informational only and requires no new action from administrators."
+    },
+    {
+      "id": "prajwal-desai-8b9a8cf2a1",
+      "source_id": "prajwal-desai",
+      "source_name": "Prajwal Desai",
+      "url": "https://www.prajwaldesai.com/kb5099536-resolves-recycle-bin-dialog-showing-internal-filenames/",
+      "published": "2026-07-27T12:16:34.000Z",
+      "ingested": "2026-07-27T17:11:34.639Z",
+      "title_original": "KB5099536 Resolves Recycle Bin Confirmation Dialog Showing Internal Filenames ($Rxxxxx.ext)",
+      "headline": "KB5099536 Fixes Recycle Bin Dialog Exposing Internal Filenames",
+      "topic": "endpoint",
+      "score": 31,
+      "tags": [
+        "KB5099536",
+        "Windows",
+        "Recycle Bin",
+        "regression"
+      ],
+      "summary": "Microsoft released KB5099536 to fix a Windows regression that caused Recycle Bin confirmation dialogs to display internal $R filenames. Administrators should deploy the update to restore user-friendly filenames on systems affected by the June 9, 2026 security update."
+    },
     {
       "id": "msrc-update-guide-c4520b9ccd",
       "source_id": "msrc-update-guide",
@@ -9298,42 +9336,6 @@
         "cve-2026-58012",
         "sårbarhet",
         "minnelekkasje"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-1cabb658cb",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58016",
-      "published": "2026-07-01T08:01:55.000Z",
-      "ingested": "2026-07-01T07:25:29.198Z",
-      "title_original": "CVE-2026-58016 Glib: integer underflow in gio/gdbusintrospection.c via \"g_dbus_node_info_new_for_xml\"",
-      "headline": "CVE-2026-58016 Glib: integer underflow in gio/gdbusintrospection.c via \"g_dbus_node_info_new_for_xml\"",
-      "topic": "security",
-      "score": 32,
-      "tags": [
-        "glib",
-        "cve-2026-58016",
-        "integer-underflow",
-        "dbus"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-8989f12374",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58015",
-      "published": "2026-07-01T08:01:49.000Z",
-      "ingested": "2026-07-01T07:25:29.198Z",
-      "title_original": "CVE-2026-58015 Glib: path traversal in glib/gio/gdbusauthmechanismsha1.c via keyring_lookup_entry and mechanism_client_data_receive",
-      "headline": "CVE-2026-58015 Glib: path traversal in glib/gio/gdbusauthmechanismsha1.c via keyring_lookup_entry and mechanism_client_data_receive",
-      "topic": "security",
-      "score": 36,
-      "tags": [
-        "glib",
-        "cve-2026-58015",
-        "path-traversal",
-        "dbus"
       ]
     }
   ]
