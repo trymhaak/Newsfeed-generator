@@ -1,6 +1,138 @@
 {
-  "generated_at": "2026-07-27T17:11:34.703Z",
+  "generated_at": "2026-07-27T23:13:10.311Z",
   "articles": [
+    {
+      "id": "windows-insider-16c4c3e1ab",
+      "source_id": "windows-insider",
+      "source_name": "Windows Insider Blog",
+      "url": "https://blogs.windows.com/windows-insider/2026/07/27/announcing-windows-11-insider-preview-build-29634-1000-for-experimental-future-platforms/",
+      "published": "2026-07-27T21:01:05.000Z",
+      "ingested": "2026-07-27T23:13:10.237Z",
+      "title_original": "Announcing Windows 11 Insider Preview Build 29634.1000 for Experimental (Future Platforms)",
+      "headline": "Windows 11 Experimental Build Renews Flight Certificate and Adds Voice Isolation",
+      "topic": "endpoint",
+      "score": 50,
+      "tags": [
+        "Windows 11",
+        "Windows Insider",
+        "flight certificate",
+        "Voice Access"
+      ],
+      "summary": "Microsoft released Windows 11 Insider Preview Build 29634.1000 with a renewed flight certificate and completed the channel's transition to the updated Windows Insider UI. Administrators managing Experimental devices must update before the current certificate expires on August 11, 2026, while testers can also evaluate the new Voice Isolation option for Voice Access."
+    },
+    {
+      "id": "security-community-b38601cd1b",
+      "source_id": "security-community",
+      "source_name": "Microsoft Security Community Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/securing-ai-agents-at-runtime-real-time-protection-and-threat/ba-p/4541255",
+      "published": "2026-07-27T17:37:49.000Z",
+      "ingested": "2026-07-27T23:12:53.757Z",
+      "title_original": "Securing AI Agents at Runtime: Real-Time Protection and Threat Detection for Microsoft Agent 365",
+      "headline": "Microsoft Defender adds runtime protection for Agent 365 tooling servers",
+      "topic": "security",
+      "score": 66,
+      "tags": [
+        "Microsoft Defender",
+        "Agent 365",
+        "runtime protection",
+        "threat detection"
+      ],
+      "summary": "Microsoft made real-time protection for Microsoft Agent 365 tooling servers generally available and introduced agent threat detection in public preview. Security teams can now block runtime attacks and investigate suspicious agent interactions, tool calls, and execution patterns through Defender."
+    },
+    {
+      "id": "security-community-da1257f7ee",
+      "source_id": "security-community",
+      "source_name": "Microsoft Security Community Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/level-up-your-security-skills-this-august-with-the-microsoft/ba-p/4541235",
+      "published": "2026-07-27T16:47:02.000Z",
+      "ingested": "2026-07-27T23:12:53.757Z",
+      "title_original": "Level Up Your Security Skills This August with the Microsoft Defender Challenge and Learn Live",
+      "headline": "Microsoft opens August Defender training challenge for security teams",
+      "topic": "security",
+      "score": 20,
+      "tags": [
+        "Defender XDR",
+        "Microsoft Sentinel",
+        "Defender for Cloud",
+        "Microsoft Learn"
+      ],
+      "summary": "Microsoft announced a training challenge covering Defender XDR, Sentinel, Defender for Cloud, and security for AI workloads. Administrators and SOC practitioners can use the guided Microsoft Learn material to strengthen operational skills, but the announcement introduces no product changes."
+    },
+    {
+      "id": "msrc-blog-321b693c0c",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/",
+      "published": "2026-07-27T16:40:00.000Z",
+      "ingested": "2026-07-27T23:12:53.757Z",
+      "title_original": "Rethinking security for the age of AI",
+      "headline": "Microsoft unveils Project Perception for machine-speed AI defense",
+      "topic": "ai",
+      "score": 68,
+      "tags": [
+        "Project Perception",
+        "agentic security",
+        "threat detection",
+        "AI defense"
+      ],
+      "hero_image": "https://blogs.microsoft.com/wp-content/uploads/2026/07/Slide1-Final.jpg",
+      "summary": "Microsoft introduced Project Perception, an agentic security system that continuously correlates signals, reasons over risk, and turns findings into real-time protections. Security teams should assess how this emerging architecture could improve defense against autonomous, machine-speed attacks."
+    },
+    {
+      "id": "msrc-blog-c7e71e255b",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/27/enhancing-ai-security-through-global-ai-red-teaming/",
+      "published": "2026-07-27T16:25:00.000Z",
+      "ingested": "2026-07-27T23:12:53.757Z",
+      "title_original": "Enhancing AI security through global AI red teaming",
+      "headline": "Microsoft launches global alliance to expand AI red teaming",
+      "topic": "ai",
+      "score": 49,
+      "tags": [
+        "AI red teaming",
+        "EXTRA",
+        "model safety",
+        "risk assessment"
+      ],
+      "summary": "Microsoft announced the External Red Team Alliance to fund independent AI safety assessments across six continents. The initiative should give security teams broader evidence about multilingual, regional, and domain-specific risks that internal testing can miss."
+    },
+    {
+      "id": "msrc-update-guide-e3e7ef3691",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50697",
+      "published": "2026-07-27T14:00:00.000Z",
+      "ingested": "2026-07-27T23:12:53.757Z",
+      "title_original": "CVE-2026-50697 Windows Common Log File System Driver Elevation of Privilege Vulnerability",
+      "headline": "Microsoft updates credit for CVE-2026-50697 without changing protections",
+      "topic": "security",
+      "score": 11,
+      "tags": [
+        "CVE-2026-50697",
+        "Windows CLFS",
+        "elevation of privilege"
+      ],
+      "summary": "Microsoft updated an acknowledgement for the Windows Common Log File System Driver elevation-of-privilege vulnerability. This informational revision does not change the vulnerability, remediation guidance, or required administrator action."
+    },
+    {
+      "id": "msrc-update-guide-92b5c78a89",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50343",
+      "published": "2026-07-27T14:00:00.000Z",
+      "ingested": "2026-07-27T23:12:53.757Z",
+      "title_original": "CVE-2026-50343 Microsoft Install Service Elevation of Privilege Vulnerability",
+      "headline": "Microsoft updates credit for CVE-2026-50343 without changing protections",
+      "topic": "security",
+      "score": 11,
+      "tags": [
+        "CVE-2026-50343",
+        "Install Service",
+        "elevation of privilege"
+      ],
+      "summary": "Microsoft updated an acknowledgement for the Microsoft Install Service elevation-of-privilege vulnerability. This informational revision does not change the vulnerability, remediation guidance, or required administrator action."
+    },
     {
       "id": "msrc-update-guide-38f3379e72",
       "source_id": "msrc-update-guide",
@@ -19,6 +151,25 @@
         "privilege escalation"
       ],
       "summary": "Microsoft updated an acknowledgment for the Windows Spaceport.sys elevation-of-privilege vulnerability. The change is informational only and requires no new action from administrators."
+    },
+    {
+      "id": "security-community-50103fc1aa",
+      "source_id": "security-community",
+      "source_name": "Microsoft Security Community Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/how-nationwide-stays-ahead-of-attackers-with-project-perception/ba-p/4540534",
+      "published": "2026-07-27T12:30:00.000Z",
+      "ingested": "2026-07-27T23:13:10.237Z",
+      "title_original": "How Nationwide stays ahead of attackers with Project Perception",
+      "headline": "Nationwide Accelerates Threat Response with Microsoft's Project Perception",
+      "topic": "security",
+      "score": 30,
+      "tags": [
+        "Project Perception",
+        "security agents",
+        "threat response",
+        "multi-agent defense"
+      ],
+      "summary": "Nationwide is piloting Project Perception, Microsoft's agentic security system, to coordinate red, blue, and green agents under human oversight. The organization reports compressing some threat detection and remediation work from weeks into hours, but Microsoft presents the results as a customer case study rather than a general release."
     },
     {
       "id": "prajwal-desai-8b9a8cf2a1",
@@ -9193,149 +9344,6 @@
         "cve-2026-57062",
         "kryptering",
         "aes-gcm"
-      ]
-    },
-    {
-      "id": "goodworkaround-9302f39d60",
-      "source_id": "goodworkaround",
-      "source_name": "Good Workaround! (Marius Solbakken)",
-      "url": "https://goodworkaround.com/2026/07/01/adding-custom-attributes-to-entra-cloud-sync-from-ad/",
-      "published": "2026-07-01T08:31:13.000Z",
-      "ingested": "2026-07-01T09:02:03.642Z",
-      "title_original": "Adding custom attributes to Entra Cloud Sync from AD",
-      "headline": "Adding custom attributes to Entra Cloud Sync from AD",
-      "topic": "identity",
-      "score": 35,
-      "tags": [
-        "entra-id",
-        "cloud-sync",
-        "hybrid-identitet",
-        "active-directory"
-      ],
-      "hero_image": "https://0.gravatar.com/avatar/653b94bfdefd1283bc049c2805c386b666c42454eec9db823172ba03b94c42b6?s=96&d=identicon&r=G",
-      "summary": "Marius Solbakken shows how to map custom AD attributes such as employee ID, cost center, and start and end dates into Entra ID with Cloud Sync. Unlike the older Connect Sync, this has no user interface, so attributes must be stored as extension properties on an app with an identifier URI in the format API://<tenantid>/CloudSyncCustomExtensionsApp, which is useful for hybrid identity environments needing additional attributes for automation, provisioning, and identity governance."
-    },
-    {
-      "id": "msrc-update-guide-9f0286b385",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13218",
-      "published": "2026-07-01T08:02:59.000Z",
-      "ingested": "2026-07-01T07:28:45.421Z",
-      "title_original": "CVE-2026-13218 Kubevirt: kubevirt: symlink following in writetocachedfile allows host file overwrite from virt-launcher",
-      "headline": "CVE-2026-13218 Kubevirt: kubevirt: symlink following in writetocachedfile allows host file overwrite from virt-launcher",
-      "topic": "security",
-      "score": 29,
-      "tags": [
-        "kubevirt",
-        "cve-2026-13218",
-        "kubernetes",
-        "container-escape"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-26a39d38e9",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13208",
-      "published": "2026-07-01T08:02:53.000Z",
-      "ingested": "2026-07-01T07:41:07.003Z",
-      "title_original": "CVE-2026-13208 Kubevirt: virt-handler-rhel9: kubevirt: virt-handler notify server trusts vmi identity from unauthenticated grpc request body",
-      "headline": "CVE-2026-13208 Kubevirt: virt-handler-rhel9: kubevirt: virt-handler notify server trusts vmi identity from unauthenticated grpc request body",
-      "topic": "security",
-      "score": 27,
-      "tags": [
-        "kubevirt",
-        "cve-2026-13208",
-        "kubernetes",
-        "autentisering"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-61aca326e3",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13322",
-      "published": "2026-07-01T08:02:40.000Z",
-      "ingested": "2026-07-01T07:41:07.003Z",
-      "title_original": "CVE-2026-13322 Kubevirt: virt-handler-rhel9: kubevirt: unbounded virtio-serial readline in virt-handler causes oom denial of service",
-      "headline": "CVE-2026-13322 Kubevirt: virt-handler-rhel9: kubevirt: unbounded virtio-serial readline in virt-handler causes oom denial of service",
-      "topic": "security",
-      "score": 22,
-      "tags": [
-        "kubevirt",
-        "cve-2026-13322",
-        "dos",
-        "kubernetes"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-62e9e0fc33",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58014",
-      "published": "2026-07-01T08:02:21.000Z",
-      "ingested": "2026-07-01T07:41:07.003Z",
-      "title_original": "CVE-2026-58014 Glib: off-by-one error in glib/gkeyfile.c via \"g_key_file_get_locale_string_list\"",
-      "headline": "CVE-2026-58014 Glib: off-by-one error in glib/gkeyfile.c via \"g_key_file_get_locale_string_list\"",
-      "topic": "security",
-      "score": 13,
-      "tags": [
-        "glib",
-        "cve-2026-58014",
-        "sårbarhet"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-209328ce4d",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58013",
-      "published": "2026-07-01T08:02:15.000Z",
-      "ingested": "2026-07-01T07:41:07.003Z",
-      "title_original": "CVE-2026-58013 Glib: buffer over-read in glib/giochannel.c via \"g_io_channel_read_line_backend\"",
-      "headline": "CVE-2026-58013 Glib: buffer over-read in glib/giochannel.c via \"g_io_channel_read_line_backend\"",
-      "topic": "security",
-      "score": 14,
-      "tags": [
-        "glib",
-        "cve-2026-58013",
-        "sårbarhet"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-67712f7687",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58011",
-      "published": "2026-07-01T08:02:07.000Z",
-      "ingested": "2026-07-01T07:41:07.003Z",
-      "title_original": "CVE-2026-58011 Glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid gdatetime",
-      "headline": "CVE-2026-58011 Glib: out-of-bounds read in glib/gdatetime.c:g_date_time_get_ymd via invalid gdatetime",
-      "topic": "security",
-      "score": 14,
-      "tags": [
-        "glib",
-        "cve-2026-58011",
-        "sårbarhet"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-c0de765f75",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58012",
-      "published": "2026-07-01T08:02:01.000Z",
-      "ingested": "2026-07-01T07:41:07.001Z",
-      "title_original": "CVE-2026-58012 Glib: buffer over-read in g_regex_replace() via glib/gregex.c:string_append() and g_utf8_next_char()",
-      "headline": "CVE-2026-58012 Glib: buffer over-read in g_regex_replace() via glib/gregex.c:string_append() and g_utf8_next_char()",
-      "topic": "security",
-      "score": 14,
-      "tags": [
-        "glib",
-        "cve-2026-58012",
-        "sårbarhet",
-        "minnelekkasje"
       ]
     }
   ]
