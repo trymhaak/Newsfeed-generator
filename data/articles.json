@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-07-28T11:15:19.333Z",
+  "generated_at": "2026-07-28T17:16:30.347Z",
   "articles": [
+    {
+      "id": "vasil-michev-61104b20b2",
+      "source_id": "vasil-michev",
+      "source_name": "Vasil Michev — Michev.info",
+      "url": "https://michev.info/blog/post/8152/working-with-the-group-insights-analytics-graph-api",
+      "published": "2026-07-28T14:20:22.000Z",
+      "ingested": "2026-07-28T17:16:30.254Z",
+      "title_original": "Working with the group insights (analytics) Graph API",
+      "headline": "Microsoft Documents Entra Group Insights APIs in Microsoft Graph Beta",
+      "topic": "identity",
+      "score": 39,
+      "tags": [
+        "Entra ID",
+        "Microsoft Graph",
+        "group analytics",
+        "API"
+      ],
+      "summary": "Microsoft has documented the Graph beta endpoints that expose Entra ID Group Insights analytics. Administrators can now retrieve supported group metrics programmatically for reporting and governance workflows, although the preview still lacks usage and dependency insights."
+    },
+    {
+      "id": "o365reports-c13129d941",
+      "source_id": "o365reports",
+      "source_name": "Office 365 Reports (AdminDroid)",
+      "url": "https://o365reports.com/apply-sensitivity-labels-to-microsoft-entra-security-groups/?utm_source=rss&utm_medium=rss&utm_campaign=apply-sensitivity-labels-to-microsoft-entra-security-groups",
+      "published": "2026-07-28T12:16:12.000Z",
+      "ingested": "2026-07-28T17:16:30.254Z",
+      "title_original": "Apply Sensitivity Labels to Microsoft Entra Security Groups",
+      "headline": "Microsoft Purview Labels Extend Governance to Entra Security Groups",
+      "topic": "identity",
+      "score": 41,
+      "tags": [
+        "Microsoft Purview",
+        "Entra ID",
+        "sensitivity labels",
+        "group governance",
+        "guest access"
+      ],
+      "hero_image": "https://o365reports.com/wp-content/uploads/2026/07/define_the_scope_for_this_label_in_purview-300x127.png",
+      "summary": "Microsoft is previewing Purview sensitivity labels for Entra cloud security groups. Administrators can classify critical groups and consistently enforce guest-access policies, reducing manual configuration and unmanaged access risk."
+    },
     {
       "id": "office365-itpros-18de3cbd6b",
       "source_id": "office365-itpros",
@@ -9312,42 +9352,6 @@
         "intune-suite",
         "lisensiering",
         "m365"
-      ]
-    },
-    {
-      "id": "msrc-blog-b4b95d203c",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/01/microsoft-named-a-leader-in-the-frost-radar-for-cloud-and-application-runtime-security/",
-      "published": "2026-07-01T16:00:00.000Z",
-      "ingested": "2026-07-01T16:29:39.275Z",
-      "title_original": "Microsoft named a leader in the Frost Radar for cloud and application runtime security",
-      "headline": "Microsoft named a leader in the Frost Radar for cloud and application runtime security",
-      "topic": "security",
-      "score": 24,
-      "tags": [
-        "defender-for-cloud",
-        "cnapp",
-        "skysikkerhet",
-        "frost-radar"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-599c318bb5",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32208",
-      "published": "2026-07-01T14:00:00.000Z",
-      "ingested": "2026-07-01T21:19:29.623Z",
-      "title_original": "CVE-2026-32208 Microsoft Entra ID Spoofing Vulnerability",
-      "headline": "CVE-2026-32208 Microsoft Entra ID Spoofing Vulnerability",
-      "topic": "security",
-      "score": 18,
-      "tags": [
-        "cve-2026-32208",
-        "entra-id",
-        "msrc",
-        "spoofing"
       ]
     }
   ]
