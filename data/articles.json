@@ -1,6 +1,85 @@
 {
-  "generated_at": "2026-07-28T17:16:30.347Z",
+  "generated_at": "2026-07-28T23:17:39.349Z",
   "articles": [
+    {
+      "id": "msrc-update-guide-664d0593da",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13037",
+      "published": "2026-07-28T22:03:49.000Z",
+      "ingested": "2026-07-28T23:17:39.262Z",
+      "title_original": "Chromium: CVE-2026-13037 Use after free in WebView",
+      "headline": "Chromium Fixes Use-After-Free Vulnerability Affecting Microsoft Edge WebView",
+      "topic": "security",
+      "score": 61,
+      "tags": [
+        "CVE-2026-13037",
+        "Microsoft Edge",
+        "Chromium",
+        "WebView"
+      ],
+      "summary": "Chromium addressed CVE-2026-13037, a use-after-free vulnerability in WebView that also affects Chromium-based Microsoft Edge. Administrators should deploy current Edge updates to reduce exposure in applications that embed web content."
+    },
+    {
+      "id": "msrc-update-guide-1b2a481807",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13032",
+      "published": "2026-07-28T22:03:48.000Z",
+      "ingested": "2026-07-28T23:17:25.556Z",
+      "title_original": "Chromium: CVE-2026-13032 Use after free in WebGL",
+      "headline": "Microsoft Edge Ingests Fix for WebGL Use-After-Free Flaw CVE-2026-13032",
+      "topic": "security",
+      "score": 61,
+      "tags": [
+        "Microsoft Edge",
+        "Chromium",
+        "WebGL",
+        "use-after-free",
+        "CVE"
+      ],
+      "summary": "Chromium addressed a use-after-free vulnerability in WebGL, and Microsoft Edge inherits the fix through its Chromium base. Administrators should update managed Edge installations to reduce the risk of browser-based exploitation."
+    },
+    {
+      "id": "msrc-update-guide-7a748fc527",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13030",
+      "published": "2026-07-28T22:03:47.000Z",
+      "ingested": "2026-07-28T23:17:25.556Z",
+      "title_original": "Chromium: CVE-2026-13030 Uninitialized Use in GPU",
+      "headline": "Microsoft Edge Ingests Fix for GPU Flaw CVE-2026-13030",
+      "topic": "security",
+      "score": 61,
+      "tags": [
+        "Microsoft Edge",
+        "Chromium",
+        "GPU",
+        "memory safety",
+        "CVE"
+      ],
+      "summary": "Chromium addressed an uninitialized-use vulnerability in its GPU component, and Microsoft Edge inherits the fix. Administrators should update managed Edge installations to limit exposure to potentially malicious web content."
+    },
+    {
+      "id": "msrc-update-guide-1ac5df5a54",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13028",
+      "published": "2026-07-28T22:03:44.000Z",
+      "ingested": "2026-07-28T23:17:25.556Z",
+      "title_original": "Chromium: CVE-2026-13028 Use after free in WebGL",
+      "headline": "Microsoft Edge Ingests Fix for WebGL Use-After-Free Flaw CVE-2026-13028",
+      "topic": "security",
+      "score": 61,
+      "tags": [
+        "Microsoft Edge",
+        "Chromium",
+        "WebGL",
+        "use-after-free",
+        "CVE"
+      ],
+      "summary": "Chromium addressed a use-after-free vulnerability in WebGL, and Microsoft Edge inherits the fix through its Chromium base. Administrators should update managed Edge installations to reduce the risk of browser-based exploitation."
+    },
     {
       "id": "vasil-michev-61104b20b2",
       "source_id": "vasil-michev",
@@ -19,6 +98,63 @@
         "API"
       ],
       "summary": "Microsoft has documented the Graph beta endpoints that expose Entra ID Group Insights analytics. Administrators can now retrieve supported group metrics programmatically for reporting and governance workflows, although the preview still lacks usage and dependency insights."
+    },
+    {
+      "id": "msrc-update-guide-225ead5fb1",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50422",
+      "published": "2026-07-28T14:00:00.000Z",
+      "ingested": "2026-07-28T23:17:25.556Z",
+      "title_original": "CVE-2026-50422 Windows NTFS Elevation of Privilege Vulnerability",
+      "headline": "Microsoft Updates Acknowledgement for Windows NTFS CVE-2026-50422",
+      "topic": "security",
+      "score": 14,
+      "tags": [
+        "Windows",
+        "NTFS",
+        "CVE",
+        "privilege escalation"
+      ],
+      "summary": "Microsoft updated the acknowledgement for the Windows NTFS elevation-of-privilege vulnerability. The change is informational and does not require administrators to alter remediation plans."
+    },
+    {
+      "id": "msrc-update-guide-e9f1dff085",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47301",
+      "published": "2026-07-28T14:00:00.000Z",
+      "ingested": "2026-07-28T23:17:25.556Z",
+      "title_original": "CVE-2026-47301 Configuration Manager Elevation of Privilege Vulnerability",
+      "headline": "Microsoft Corrects Build Number for Configuration Manager CVE-2026-47301",
+      "topic": "endpoint",
+      "score": 18,
+      "tags": [
+        "Configuration Manager",
+        "CVE",
+        "build number",
+        "privilege escalation"
+      ],
+      "summary": "Microsoft corrected a build number in the security updates table for this Configuration Manager vulnerability. The revision is informational, but administrators should verify that deployment records reference the corrected build."
+    },
+    {
+      "id": "msrc-update-guide-5113730830",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-59117",
+      "published": "2026-07-28T14:00:00.000Z",
+      "ingested": "2026-07-28T23:17:25.556Z",
+      "title_original": "CVE-2026-59117 Windows Terminal Remote Code Execution Vulnerability",
+      "headline": "Microsoft Corrects Affected Product Name in CVE-2026-59117",
+      "topic": "security",
+      "score": 18,
+      "tags": [
+        "Power Apps",
+        "desktop client",
+        "CVE",
+        "RCE"
+      ],
+      "summary": "Microsoft changed the affected product name from Microsoft Power Apps to Microsoft Power Apps Desktop Client. This metadata-only correction helps administrators identify the relevant software but does not change remediation guidance."
     },
     {
       "id": "o365reports-c13129d941",
@@ -9223,135 +9359,6 @@
         "sensitivitetsmerking",
         "mip",
         "skjermdump"
-      ]
-    },
-    {
-      "id": "m365-roadmap-0278c79d64",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566528",
-      "published": "2026-07-01T23:03:18.000Z",
-      "ingested": "2026-07-01T23:55:48.998Z",
-      "title_original": "Microsoft Purview: Data Loss Prevention - Extend Purview data security to the network layer via Entra GSA integration",
-      "headline": "Microsoft Purview: Data Loss Prevention - Extend Purview data security to the network layer via Entra GSA integration",
-      "topic": "security",
-      "score": 50,
-      "tags": [
-        "purview",
-        "dlp",
-        "entra",
-        "global-secure-access",
-        "ai"
-      ]
-    },
-    {
-      "id": "windows-it-pro-63fdf59378",
-      "source_id": "windows-it-pro",
-      "source_name": "Windows IT Pro Blog",
-      "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-news-you-can-use-june-2026/ba-p/4532288",
-      "published": "2026-07-01T22:00:00.000Z",
-      "ingested": "2026-07-03T00:56:41.961Z",
-      "title_original": "Windows news you can use: June 2026",
-      "headline": "Windows news you can use: June 2026",
-      "topic": "endpoint",
-      "score": 54,
-      "tags": [
-        "windows-11",
-        "26h2",
-        "windows-365",
-        "recovery",
-        "ready-print"
-      ]
-    },
-    {
-      "id": "entra-blog-f19ee40d87",
-      "source_id": "entra-blog",
-      "source_name": "Microsoft Entra Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/bring-business-logic-into-pim-role-activation-workflows/ba-p/4531380",
-      "published": "2026-07-01T16:35:45.000Z",
-      "ingested": "2026-07-01T18:49:11.752Z",
-      "title_original": "Bring business logic into PIM role activation workflows",
-      "headline": "Bring business logic into PIM role activation workflows",
-      "topic": "identity",
-      "score": 68,
-      "tags": [
-        "pim",
-        "entra",
-        "privileged-access",
-        "preview"
-      ]
-    },
-    {
-      "id": "entra-blog-f97f6738c0",
-      "source_id": "entra-blog",
-      "source_name": "Microsoft Entra Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/protect-sensitive-data-in-motion-across-saas-and-ai-apps-with/ba-p/4529310",
-      "published": "2026-07-01T16:32:24.000Z",
-      "ingested": "2026-07-01T18:49:11.754Z",
-      "title_original": "Protect sensitive data in motion across SaaS and AI apps with Microsoft Purview and Microsoft Entra",
-      "headline": "Protect sensitive data in motion across SaaS and AI apps with Microsoft Purview and Microsoft Entra",
-      "topic": "security",
-      "score": 70,
-      "tags": [
-        "purview",
-        "dlp",
-        "ai",
-        "preview"
-      ]
-    },
-    {
-      "id": "defender-cloud-db3786699f",
-      "source_id": "defender-cloud",
-      "source_name": "Microsoft Defender for Cloud Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/now-generally-available-serverless-posture-coverage-in-microsoft/ba-p/4532353",
-      "published": "2026-07-01T16:00:48.000Z",
-      "ingested": "2026-07-01T22:02:08.642Z",
-      "title_original": "Now generally available: Serverless posture coverage in Microsoft Defender CSPM",
-      "headline": "Now generally available: Serverless posture coverage in Microsoft Defender CSPM",
-      "topic": "security",
-      "score": 59,
-      "tags": [
-        "defender-cspm",
-        "serverless",
-        "azure",
-        "aws"
-      ]
-    },
-    {
-      "id": "security-community-53f679c049",
-      "source_id": "security-community",
-      "source_name": "Microsoft Security Community Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/extend-data-security-to-the-network-with-microsoft-purview-and/ba-p/4531929",
-      "published": "2026-07-01T16:00:00.000Z",
-      "ingested": "2026-07-02T19:39:27.350Z",
-      "title_original": "Extend data security to the network with Microsoft Purview and Microsoft Entra",
-      "headline": "Extend data security to the network with Microsoft Purview and Microsoft Entra",
-      "topic": "security",
-      "score": 56,
-      "tags": [
-        "purview",
-        "entra",
-        "dlp",
-        "ai",
-        "datasikkerhet"
-      ]
-    },
-    {
-      "id": "intune-blog-985a1e0a27",
-      "source_id": "intune-blog",
-      "source_name": "Microsoft Intune Customer Success Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-intune-blog/advanced-microsoft-intune-capabilities-now-available-in/ba-p/4529335",
-      "published": "2026-07-01T16:00:00.000Z",
-      "ingested": "2026-07-01T21:19:29.621Z",
-      "title_original": "Advanced Microsoft Intune capabilities now available in Microsoft 365 E3 and E5",
-      "headline": "Advanced Microsoft Intune capabilities now available in Microsoft 365 E3 and E5",
-      "topic": "endpoint",
-      "score": 68,
-      "tags": [
-        "intune",
-        "intune-suite",
-        "lisensiering",
-        "m365"
       ]
     }
   ]
