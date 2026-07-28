@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-07-27T23:13:10.311Z",
+  "generated_at": "2026-07-28T11:15:19.333Z",
   "articles": [
+    {
+      "id": "office365-itpros-18de3cbd6b",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/28/planner-tasks-retention/?utm_source=rss&utm_medium=rss&utm_campaign=planner-tasks-retention",
+      "published": "2026-07-28T07:00:00.000Z",
+      "ingested": "2026-07-28T11:15:19.119Z",
+      "title_original": "Data Lifecycle Management Adds Support for Planner Retention Policies",
+      "headline": "Microsoft Purview Adds Retention Policies for Planner Tasks",
+      "topic": "security",
+      "score": 51,
+      "tags": [
+        "Microsoft Purview",
+        "Planner",
+        "retention policies",
+        "data lifecycle"
+      ],
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/Planner-Tasks-Report.jpg?resize=840%2C391&ssl=1",
+      "summary": "Microsoft Purview Data Lifecycle Management can now retain or delete Planner tasks based on creation or modification dates. The general availability rollout begins in mid-July 2026, giving administrators compliance controls for personal and Microsoft 365 group-backed plans."
+    },
     {
       "id": "windows-insider-16c4c3e1ab",
       "source_id": "windows-insider",
@@ -344,6 +364,26 @@
         "least privilege"
       ],
       "summary": "Microsoft modified four built-in Entra ID roles without announcing the permission changes. Identity administrators should review role definitions and assignments to ensure least-privilege controls still match their expectations."
+    },
+    {
+      "id": "core-infra-security-3221350b86",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/device-code-flow-the-gift-that-keeps-on-giving-to-attackers/ba-p/4540949",
+      "published": "2026-07-27T00:46:16.000Z",
+      "ingested": "2026-07-28T11:15:19.119Z",
+      "title_original": "Device Code Flow: The Gift That Keeps on Giving — To Attackers",
+      "headline": "Attackers Abuse Entra Device Code Flow to Obtain Valid Tokens",
+      "topic": "identity",
+      "score": 48,
+      "tags": [
+        "Microsoft Entra ID",
+        "Device Code Flow",
+        "OAuth",
+        "Conditional Access",
+        "token theft"
+      ],
+      "summary": "Attackers can initiate OAuth Device Code Flow and trick users into authorizing valid tokens through Microsoft's legitimate sign-in experience, even when MFA succeeds. Entra administrators should restrict the flow to documented scenarios and migrate workloads to managed identities, brokered sign-in, or certificate-based service principals."
     },
     {
       "id": "vasil-michev-fd04648e4a",
@@ -9308,42 +9348,6 @@
         "entra-id",
         "msrc",
         "spoofing"
-      ]
-    },
-    {
-      "id": "defender-xdr-b50e7e64ac",
-      "source_id": "defender-xdr",
-      "source_name": "Microsoft Defender XDR Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/monthly-news-july-2026/ba-p/4532402",
-      "published": "2026-07-01T09:30:09.000Z",
-      "ingested": "2026-07-01T21:19:29.623Z",
-      "title_original": "Monthly news - July 2026",
-      "headline": "Monthly news - July 2026",
-      "topic": "security",
-      "score": 45,
-      "tags": [
-        "defender",
-        "xdr",
-        "månedsnytt",
-        "advanced-hunting"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-1f5e92f2f3",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57062",
-      "published": "2026-07-01T08:40:05.000Z",
-      "ingested": "2026-07-01T07:25:29.196Z",
-      "title_original": "CVE-2026-57062 CMS (Cryptographic Message Syntax) parsing in gpgsm in GnuPG through 2.5.20 mishandles the CMS format for AES-GCM because aes-ICVlen is supposed to be 12 bytes but 4 bytes is accepted. NOTE: this is related to CVE-2026-34182.",
-      "headline": "CVE-2026-57062 CMS (Cryptographic Message Syntax) parsing in gpgsm in GnuPG through 2.5.20 mishandles the CMS format for AES-GCM because aes-ICVlen is supposed to be 12 bytes but 4 bytes is accepted. NOTE: this is related to CVE-2026-34182.",
-      "topic": "security",
-      "score": 32,
-      "tags": [
-        "gnupg",
-        "cve-2026-57062",
-        "kryptering",
-        "aes-gcm"
       ]
     }
   ]
