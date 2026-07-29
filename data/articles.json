@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-07-29T05:18:50.549Z",
+  "generated_at": "2026-07-29T11:19:33.942Z",
   "articles": [
+    {
+      "id": "office365-itpros-2d92e55ea5",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/29/dlp-external-email-copilot/?utm_source=rss&utm_medium=rss&utm_campaign=dlp-external-email-copilot",
+      "published": "2026-07-29T07:00:00.000Z",
+      "ingested": "2026-07-29T11:19:33.877Z",
+      "title_original": "DLP Prevents Microsoft 365 Copilot from Processing External Email",
+      "headline": "Microsoft DLP Blocks Copilot from Grounding Responses in External Email",
+      "topic": "security",
+      "score": 51,
+      "tags": [
+        "Microsoft Purview",
+        "DLP",
+        "Microsoft 365 Copilot",
+        "email security"
+      ],
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/DLP-Block-access-to-external-domains-and-users-rule.jpg?resize=840%2C375&ssl=1",
+      "summary": "Microsoft introduced a public-preview DLP action that prevents Microsoft 365 Copilot and Copilot Chat from using externally received email to ground responses. Administrators can reduce the risk of misleading content and prompt-injection attacks influencing Copilot, with general availability planned for January 2027."
+    },
     {
       "id": "m365-roadmap-505e5aa9ac",
       "source_id": "m365-roadmap",
@@ -9349,24 +9369,6 @@
       ],
       "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Teams-external-chat-warning.jpg?resize=840%2C604&ssl=1",
       "summary": "The removeAllAccessForUser Graph API, which Teams documentation recommends for removing external chats containing malicious content, does not remove the user from the chat as its name suggests and only partially hides the messages. Admins relying on it for content moderation should know that it provides much weaker control than expected."
-    },
-    {
-      "id": "m365-roadmap-8f56e606f0",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566998",
-      "published": "2026-07-01T23:03:18.000Z",
-      "ingested": "2026-07-01T23:54:35.330Z",
-      "title_original": "Microsoft Copilot Studio: Invoke agents as workflow steps with the agent node",
-      "headline": "Microsoft Copilot Studio: Invoke agents as workflow steps with the agent node",
-      "topic": "ai",
-      "score": 43,
-      "tags": [
-        "copilot-studio",
-        "agenter",
-        "automatisering",
-        "ai"
-      ]
     }
   ]
 }
