@@ -1,6 +1,44 @@
 {
-  "generated_at": "2026-07-29T17:20:56.865Z",
+  "generated_at": "2026-07-29T23:22:14.606Z",
   "articles": [
+    {
+      "id": "prajwal-desai-43efd535a4",
+      "source_id": "prajwal-desai",
+      "source_name": "Prajwal Desai",
+      "url": "https://www.prajwaldesai.com/kb5101684-update-for-windows-11-24h2-and-25h2/",
+      "published": "2026-07-29T18:29:42.000Z",
+      "ingested": "2026-07-29T23:22:14.547Z",
+      "title_original": "Microsoft releases KB5101684 Update for Windows 11 24H2 and 25H2",
+      "headline": "Microsoft Releases KB5101684 Preview for Windows 11 24H2 and 25H2",
+      "topic": "endpoint",
+      "score": 40,
+      "tags": [
+        "Windows 11",
+        "KB5101684",
+        "cumulative update",
+        "24H2",
+        "25H2"
+      ],
+      "summary": "Microsoft has released the KB5101684 preview cumulative update for Windows 11 versions 24H2 and 25H2. Administrators can evaluate the non-security fixes before they enter a future mandatory cumulative update."
+    },
+    {
+      "id": "msrc-blog-1bf2aca513",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/29/better-security-starts-with-better-questions/",
+      "published": "2026-07-29T16:00:00.000Z",
+      "ingested": "2026-07-29T23:22:14.547Z",
+      "title_original": "​​Better security starts with better questions",
+      "headline": "Microsoft Urges Security Leaders to Pair AI Innovation with Strong Governance",
+      "topic": "ai",
+      "score": 25,
+      "tags": [
+        "AI governance",
+        "risk management",
+        "data protection"
+      ],
+      "summary": "Microsoft outlines how organizations can combine AI-driven security insights with data protection, governance, and resilience. The article offers strategic guidance but does not announce new products or technical changes for administrators."
+    },
     {
       "id": "call4cloud-5f6d488c5b",
       "source_id": "call4cloud",
@@ -9325,48 +9363,6 @@
         "eop",
         "msrc"
       ]
-    },
-    {
-      "id": "smbtothecloud-31cd4bcb03",
-      "source_id": "smbtothecloud",
-      "source_name": "SMBtotheCloud",
-      "url": "https://smbtothecloud.com/win32-app-deep-dive-whats-inside-an-intunewin-file-and-how-it-gets-into-intune/?utm_source=rss&utm_medium=rss&utm_campaign=win32-app-deep-dive-whats-inside-an-intunewin-file-and-how-it-gets-into-intune",
-      "published": "2026-07-02T13:37:47.000Z",
-      "ingested": "2026-07-02T13:42:31.477Z",
-      "title_original": "Win32 App Deep Dive – What’s Inside an intunewin File and How it Gets Into Intune?",
-      "headline": "Win32 App Deep Dive – What’s Inside an intunewin File and How it Gets Into Intune?",
-      "topic": "endpoint",
-      "score": 31,
-      "tags": [
-        "intune",
-        "win32",
-        "intunewin",
-        "app-distribusjon",
-        "msp"
-      ],
-      "hero_image": "https://smbtothecloud.com/wp-content/uploads/2026/06/image-1024x296.png",
-      "summary": "This detailed technical guide explains how Win32 apps work in Intune, including what an .intunewin file contains, how IntuneWinAppUtil packages it, and how it is uploaded to the service. It also shows how Win32 apps can support scripting and registry changes and provide an alternative to remediations for organizations without an Enterprise license, making it a useful reference for admins deploying RMM, EDR, and other agent-based apps."
-    },
-    {
-      "id": "admindroid-35237594a8",
-      "source_id": "admindroid",
-      "source_name": "AdminDroid Blog",
-      "url": "https://blog.admindroid.com/network-data-security-in-microsoft-365/",
-      "published": "2026-07-02T13:00:40.000Z",
-      "ingested": "2026-07-02T13:04:47.180Z",
-      "title_original": "Prevent Sensitive Data Leakage Across Unmanaged Apps with Purview and Entra",
-      "headline": "Prevent Sensitive Data Leakage Across Unmanaged Apps with Purview and Entra",
-      "topic": "security",
-      "score": 38,
-      "tags": [
-        "purview",
-        "entra",
-        "dlp",
-        "network-data-security",
-        "saas"
-      ],
-      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Microsoft-Extends-Data-Protection-to-the-Network-Layer-150x150.png",
-      "summary": "Microsoft is launching Network Data Security, which extends Purview DLP to the network layer through Entra and detects sensitive data in motion, including text pasted into AI chatbots, files uploaded to personal cloud storage, and traffic sent to unauthorized SaaS apps beyond the reach of Microsoft 365’s built-in controls. It gives IT admins real-time visibility and the ability to block leaks that previously might only have been discovered afterward."
     }
   ]
 }
