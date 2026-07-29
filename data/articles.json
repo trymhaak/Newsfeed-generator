@@ -1,6 +1,157 @@
 {
-  "generated_at": "2026-07-28T23:17:39.349Z",
+  "generated_at": "2026-07-29T05:18:50.549Z",
   "articles": [
+    {
+      "id": "m365-roadmap-505e5aa9ac",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=568372",
+      "published": "2026-07-28T22:43:45.000Z",
+      "ingested": "2026-07-29T05:18:33.311Z",
+      "title_original": "Microsoft Purview: Data Loss Prevention - SLA Based Alert Reporting Dashboard",
+      "headline": "Microsoft Purview DLP Adds SLA-Based Alert Reporting Dashboard",
+      "topic": "security",
+      "score": 48,
+      "tags": [
+        "Purview",
+        "DLP",
+        "SLA",
+        "alerting"
+      ],
+      "summary": "Microsoft Purview DLP will add a dashboard for tracking alert detection, acknowledgment, and resolution against customizable severity-based SLAs. Administrators can use historical trends and exposed sensitive information types to identify operational bottlenecks and improve response performance."
+    },
+    {
+      "id": "m365-roadmap-789c5a846b",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=568371",
+      "published": "2026-07-28T22:43:45.000Z",
+      "ingested": "2026-07-29T05:18:33.311Z",
+      "title_original": "Microsoft Purview: Data Loss Prevention - Rule-based tagging and auto-resolution of alerts based on business needs of the customer.",
+      "headline": "Microsoft Purview DLP Automates Alert Tagging and Resolution",
+      "topic": "security",
+      "score": 50,
+      "tags": [
+        "Purview",
+        "DLP",
+        "automation",
+        "alert triage"
+      ],
+      "summary": "Microsoft Purview DLP will let administrators create rules that automatically tag or resolve predictable alerts. This can reduce repetitive triage, suppress approved low-risk activity, and route alerts according to business context."
+    },
+    {
+      "id": "m365-roadmap-0f6d2ea063",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=568368",
+      "published": "2026-07-28T22:43:45.000Z",
+      "ingested": "2026-07-29T05:18:33.311Z",
+      "title_original": "Outlook: Copilot Chat pop-out for Outlook for Mac and iPad",
+      "headline": "Outlook Adds a Pop-Out Window for Copilot Chat on Mac and iPad",
+      "topic": "ai",
+      "score": 22,
+      "tags": [
+        "Copilot",
+        "Outlook",
+        "macOS",
+        "iPadOS"
+      ],
+      "summary": "Outlook users on Mac and iPad will be able to open Copilot Chat in a separate floating window. The change improves workspace flexibility but does not materially affect security administration."
+    },
+    {
+      "id": "m365-roadmap-b2f1a0b0ed",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=568367",
+      "published": "2026-07-28T22:43:45.000Z",
+      "ingested": "2026-07-29T05:18:33.311Z",
+      "title_original": "Outlook: Drag and Drop",
+      "headline": "Outlook Adds Drag-and-Drop Calendar Rescheduling",
+      "topic": "endpoint",
+      "score": 13,
+      "tags": [
+        "Outlook",
+        "calendar",
+        "productivity"
+      ],
+      "summary": "Outlook will let users reschedule calendar events by dragging them to another time slot in day and multi-day views. This is a minor productivity update with no meaningful impact on security or IT administration."
+    },
+    {
+      "id": "m365-roadmap-1f65eebcf7",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=568217",
+      "published": "2026-07-28T22:43:45.000Z",
+      "ingested": "2026-07-29T05:18:33.311Z",
+      "title_original": "Microsoft Purview: Information Protection - Sensitivity Labels for Microsoft Entra Security Groups",
+      "headline": "Purview Extends Sensitivity Labels to Entra Security Groups",
+      "topic": "identity",
+      "score": 57,
+      "tags": [
+        "Purview",
+        "Entra ID",
+        "sensitivity labels",
+        "governance"
+      ],
+      "summary": "Microsoft Purview will support applying existing sensitivity labels to Microsoft Entra cloud security groups. Administrators can extend consistent classification and governance controls without maintaining a separate label configuration for these groups."
+    },
+    {
+      "id": "m365-roadmap-07c3ee3884",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567886",
+      "published": "2026-07-28T22:43:45.000Z",
+      "ingested": "2026-07-29T05:18:33.311Z",
+      "title_original": "Planner: AI-generated Status Reports in Planner Agent",
+      "headline": "Planner Agent Generates Custom Status Reports from Plan Data",
+      "topic": "ai",
+      "score": 33,
+      "tags": [
+        "Planner",
+        "Copilot",
+        "AI",
+        "reporting"
+      ],
+      "summary": "Planner Agent will use AI to turn task data into customizable reports covering progress, risks, and next steps. Administrators should assess Copilot governance and data-access policies before enabling broader use, although the feature has limited direct security impact."
+    },
+    {
+      "id": "m365-roadmap-0d025c5bc3",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567008",
+      "published": "2026-07-28T22:43:45.000Z",
+      "ingested": "2026-07-29T05:18:50.491Z",
+      "title_original": "Microsoft Copilot (Microsoft 365): New Rich Answer Cards",
+      "headline": "Microsoft 365 Copilot Adds Dynamic Answer Cards Across Seven Content Categories",
+      "topic": "ai",
+      "score": 43,
+      "tags": [
+        "Microsoft 365 Copilot",
+        "answer cards",
+        "Entra ID",
+        "generative AI"
+      ],
+      "summary": "Microsoft 365 Copilot will dynamically display rich answer cards for weather, sports, finance, images, video, places, and news. Administrators should prepare for the August 2026 rollout across Entra ID and Microsoft account experiences."
+    },
+    {
+      "id": "m365-roadmap-ef749c652a",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=515145",
+      "published": "2026-07-28T22:43:45.000Z",
+      "ingested": "2026-07-29T05:18:50.491Z",
+      "title_original": "Microsoft Copilot (Microsoft 365): Workforce Insights Agent",
+      "headline": "Microsoft 365 Copilot Launches Workforce Insights Agent",
+      "topic": "ai",
+      "score": 48,
+      "tags": [
+        "Copilot agents",
+        "workforce analytics",
+        "Microsoft Teams",
+        "data governance"
+      ],
+      "summary": "Microsoft 365 Copilot will add an agent that analyzes organizational structures, skills, team composition, and flexible work patterns. Administrators should review workforce-data permissions and governance before its September 2026 general availability in Copilot and Teams."
+    },
     {
       "id": "msrc-update-guide-664d0593da",
       "source_id": "msrc-update-guide",
@@ -9215,150 +9366,6 @@
         "agenter",
         "automatisering",
         "ai"
-      ]
-    },
-    {
-      "id": "m365-roadmap-94bf27f806",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566873",
-      "published": "2026-07-01T23:03:18.000Z",
-      "ingested": "2026-07-01T23:54:35.332Z",
-      "title_original": "Microsoft Copilot Studio: Enforce safe sharing by detecting credential oversharing",
-      "headline": "Microsoft Copilot Studio: Enforce safe sharing by detecting credential oversharing",
-      "topic": "security",
-      "score": 45,
-      "tags": [
-        "copilot-studio",
-        "oversharing",
-        "credentials",
-        "governance"
-      ]
-    },
-    {
-      "id": "m365-roadmap-45874faa5b",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566872",
-      "published": "2026-07-01T23:03:18.000Z",
-      "ingested": "2026-07-01T23:54:35.332Z",
-      "title_original": "Microsoft Copilot (Microsoft 365): Complex web search with Copilot in Excel",
-      "headline": "Microsoft Copilot (Microsoft 365): Complex web search with Copilot in Excel",
-      "topic": "ai",
-      "score": 34,
-      "tags": [
-        "copilot",
-        "excel",
-        "nettsøk",
-        "ai"
-      ]
-    },
-    {
-      "id": "m365-roadmap-6e9024f315",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566871",
-      "published": "2026-07-01T23:03:18.000Z",
-      "ingested": "2026-07-01T23:54:35.332Z",
-      "title_original": "Microsoft Edge: Enhanced Security Mode Plus",
-      "headline": "Microsoft Edge: Enhanced Security Mode Plus",
-      "topic": "security",
-      "score": 43,
-      "tags": [
-        "edge",
-        "nettleser",
-        "herding",
-        "angrepsflate"
-      ]
-    },
-    {
-      "id": "m365-roadmap-1601adc4f5",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566869",
-      "published": "2026-07-01T23:03:18.000Z",
-      "ingested": "2026-07-01T23:54:35.332Z",
-      "title_original": "Microsoft Entra: Upcoming changes to federatedTokenValidationPolicy default settings",
-      "headline": "Microsoft Entra: Upcoming changes to federatedTokenValidationPolicy default settings",
-      "topic": "identity",
-      "score": 57,
-      "tags": [
-        "entra",
-        "federering",
-        "token-validering",
-        "breaking-change"
-      ]
-    },
-    {
-      "id": "m365-roadmap-bd96030f86",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566867",
-      "published": "2026-07-01T23:03:18.000Z",
-      "ingested": "2026-07-01T23:54:35.332Z",
-      "title_original": "Planner: Local Custom Fields/Columns",
-      "headline": "Planner: Local Custom Fields/Columns",
-      "topic": "endpoint",
-      "score": 14,
-      "tags": [
-        "planner",
-        "produktivitet",
-        "custom-fields"
-      ]
-    },
-    {
-      "id": "m365-roadmap-b2f7547ffc",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566865",
-      "published": "2026-07-01T23:03:18.000Z",
-      "ingested": "2026-07-01T23:55:48.998Z",
-      "title_original": "Microsoft Purview compliance portal: Admin assignment time limit",
-      "headline": "Microsoft Purview compliance portal: Admin assignment time limit",
-      "topic": "security",
-      "score": 35,
-      "tags": [
-        "purview",
-        "rollegrupper",
-        "tilgangsstyring",
-        "governance"
-      ]
-    },
-    {
-      "id": "m365-roadmap-cd3e26bd37",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566864",
-      "published": "2026-07-01T23:03:18.000Z",
-      "ingested": "2026-07-01T23:55:48.998Z",
-      "title_original": "Microsoft Edge: Ask Copilot about an image",
-      "headline": "Microsoft Edge: Ask Copilot about an image",
-      "topic": "ai",
-      "score": 34,
-      "tags": [
-        "copilot",
-        "edge",
-        "bilde",
-        "policy"
-      ]
-    },
-    {
-      "id": "m365-roadmap-e0a9a4fbc9",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566695",
-      "published": "2026-07-01T23:03:18.000Z",
-      "ingested": "2026-07-01T23:55:48.998Z",
-      "title_original": "OneDrive: Block screen capture for sensitivity-labeled PDFs in the OneDrive and SharePoint web viewer",
-      "headline": "OneDrive: Block screen capture for sensitivity-labeled PDFs in the OneDrive and SharePoint web viewer",
-      "topic": "security",
-      "score": 41,
-      "tags": [
-        "onedrive",
-        "sharepoint",
-        "sensitivitetsmerking",
-        "mip",
-        "skjermdump"
       ]
     }
   ]
