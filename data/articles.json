@@ -1,6 +1,47 @@
 {
-  "generated_at": "2026-07-29T11:19:33.942Z",
+  "generated_at": "2026-07-29T17:20:56.865Z",
   "articles": [
+    {
+      "id": "call4cloud-5f6d488c5b",
+      "source_id": "call4cloud",
+      "source_name": "Call4Cloud (Rudy Ooms)",
+      "url": "https://patchmypc.com/blog/why-intune-devices-became-noncompliant-after-the-july-windows-update/",
+      "published": "2026-07-29T13:38:05.000Z",
+      "ingested": "2026-07-29T17:20:56.654Z",
+      "title_original": "Why Intune Devices Became Noncompliant After the July Windows Update",
+      "headline": "July Windows update triggers false Intune compliance failures",
+      "topic": "endpoint",
+      "score": 52,
+      "tags": [
+        "Intune",
+        "Windows Update",
+        "TPM",
+        "BitLocker",
+        "compliance"
+      ],
+      "hero_image": "https://call4cloud.nl/wp-content/uploads/2026/07/image-131-1024x211.png",
+      "summary": "Some healthy Windows devices began reporting BitLocker, Secure Boot, and Code Integrity failures in Intune after the July update enabled a new TPM and AIK v2 path. Administrators should investigate error 2016345708 before treating affected devices as genuinely noncompliant or restricting their access."
+    },
+    {
+      "id": "vasil-michev-c7b4a40f5f",
+      "source_id": "vasil-michev",
+      "source_name": "Vasil Michev — Michev.info",
+      "url": "https://michev.info/blog/post/8174/quick-look-at-the-sponsorof-property-in-the-graph-api",
+      "published": "2026-07-29T13:23:33.000Z",
+      "ingested": "2026-07-29T17:20:56.654Z",
+      "title_original": "Quick look at the sponsorOf property in the Graph API",
+      "headline": "Microsoft Graph adds sponsorOf queries for Entra users and agents",
+      "topic": "identity",
+      "score": 41,
+      "tags": [
+        "Microsoft Graph",
+        "Entra ID",
+        "sponsorOf",
+        "agent identity"
+      ],
+      "hero_image": "https://michev.info/wp-content/uploads/2026/07/GraphSponsorOf.png",
+      "summary": "The Microsoft Graph beta API now exposes a sponsorOf relationship for finding directory objects sponsored by a user. It simplifies governance reporting for guests and AI-related identities, although administrators should avoid production dependencies while the API remains in beta."
+    },
     {
       "id": "office365-itpros-2d92e55ea5",
       "source_id": "office365-itpros",
@@ -250,6 +291,44 @@
         "CVE"
       ],
       "summary": "Chromium addressed a use-after-free vulnerability in WebGL, and Microsoft Edge inherits the fix through its Chromium base. Administrators should update managed Edge installations to reduce the risk of browser-based exploitation."
+    },
+    {
+      "id": "intune-blog-535beaf169",
+      "source_id": "intune-blog",
+      "source_name": "Microsoft Intune Customer Success Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-intune-blog/what-s-new-in-microsoft-intune-july/ba-p/4537392",
+      "published": "2026-07-28T22:03:17.000Z",
+      "ingested": "2026-07-29T17:20:56.654Z",
+      "title_original": "What’s new in Microsoft Intune – July",
+      "headline": "Intune adds live Windows sync status and combines device check-ins",
+      "topic": "endpoint",
+      "score": 65,
+      "tags": [
+        "Intune",
+        "Windows",
+        "device sync",
+        "MDM"
+      ],
+      "summary": "Intune now displays per-device sync progress and triggers both MDM and Intune Management Extension check-ins through one action. Administrators can retrieve policies, apps, and scripts together while gaining clearer troubleshooting and compliance visibility."
+    },
+    {
+      "id": "m365-copilot-4a7e55edd6",
+      "source_id": "m365-copilot",
+      "source_name": "Microsoft 365 Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/more-control-over-web-grounding-with-domain-exclusion-for/ba-p/4540151",
+      "published": "2026-07-28T15:50:14.000Z",
+      "ingested": "2026-07-29T17:20:56.654Z",
+      "title_original": "More control over web grounding with Domain Exclusion for Microsoft 365 Copilot",
+      "headline": "Microsoft 365 Copilot lets admins exclude domains from web grounding",
+      "topic": "ai",
+      "score": 60,
+      "tags": [
+        "Microsoft 365 Copilot",
+        "web grounding",
+        "domain exclusion",
+        "compliance"
+      ],
+      "summary": "Administrators can now prevent Microsoft 365 Copilot and Copilot Chat from using specified websites for web-grounded responses. Organizations can exclude up to 1,000 domains to align AI output with compliance policies and trusted-source requirements."
     },
     {
       "id": "vasil-michev-61104b20b2",
@@ -9288,87 +9367,6 @@
       ],
       "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Microsoft-Extends-Data-Protection-to-the-Network-Layer-150x150.png",
       "summary": "Microsoft is launching Network Data Security, which extends Purview DLP to the network layer through Entra and detects sensitive data in motion, including text pasted into AI chatbots, files uploaded to personal cloud storage, and traffic sent to unauthorized SaaS apps beyond the reach of Microsoft 365’s built-in controls. It gives IT admins real-time visibility and the ability to block leaks that previously might only have been discovered afterward."
-    },
-    {
-      "id": "handsontek-f257bd472d",
-      "source_id": "handsontek",
-      "source_name": "HANDS ON tek (João Ferreira)",
-      "url": "https://handsontek.net/hands-microsoft-365-pulse-weekly-updates-week-26/",
-      "published": "2026-07-02T12:15:51.000Z",
-      "ingested": "2026-07-14T18:18:17.784Z",
-      "title_original": "Hands-On Microsoft 365 Pulse – Weekly Updates (Week 26)",
-      "headline": "Hands-On Microsoft 365 Pulse – Weekly Updates (Week 26)",
-      "topic": "ai",
-      "score": 30,
-      "tags": [
-        "sharepoint",
-        "copilot",
-        "teams",
-        "deprecation",
-        "event-receivers"
-      ],
-      "hero_image": "https://handsontek.net//images/hot2/Week%2026%202026/hero.png",
-      "summary": "The month’s first Pulse summarizes June updates across SharePoint, Teams, and Copilot, with the retirement of Remote Event Receivers in SharePoint Online being the most important change for admins because dependent custom solutions must now plan their transition. Custom domains can also be excluded from Copilot web grounding, while a new Recap app in Teams brings all meeting recaps together in one place."
-    },
-    {
-      "id": "goodworkaround-63bcad3034",
-      "source_id": "goodworkaround",
-      "source_name": "Good Workaround! (Marius Solbakken)",
-      "url": "https://goodworkaround.com/2026/07/02/mass-convert-groups-from-ad-to-entra-id-using-powershell/",
-      "published": "2026-07-02T08:27:32.000Z",
-      "ingested": "2026-07-02T09:01:39.677Z",
-      "title_original": "Mass convert groups from AD to Entra ID using PowerShell",
-      "headline": "Mass convert groups from AD to Entra ID using PowerShell",
-      "topic": "identity",
-      "score": 42,
-      "tags": [
-        "entra-id",
-        "powershell",
-        "grupper",
-        "group-soa",
-        "ad-migrering"
-      ],
-      "hero_image": "https://0.gravatar.com/avatar/653b94bfdefd1283bc049c2805c386b666c42454eec9db823172ba03b94c42b6?s=96&d=identicon&r=G",
-      "summary": "Entra’s new Group Source of Authority conversion allows synchronized AD groups to move to Entra ID management without losing their identity, membership, or access. Marius Solbakken provides a PowerShell script for bulk conversion with error handling and logging, saving admins from manually processing hundreds of groups during a cloud migration."
-    },
-    {
-      "id": "core-infra-security-f112247b42",
-      "source_id": "core-infra-security",
-      "source_name": "Core Infrastructure and Security Blog",
-      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/building-c-and-c-apps-with-github-copilot-cli-and-visual-studio/ba-p/4531648",
-      "published": "2026-07-02T08:00:00.000Z",
-      "ingested": "2026-07-02T11:18:58.647Z",
-      "title_original": "Building C# and C++ Apps with GitHub Copilot CLI and Visual Studio 2026",
-      "headline": "Building C# and C++ Apps with GitHub Copilot CLI and Visual Studio 2026",
-      "topic": "ai",
-      "score": 36,
-      "tags": [
-        "copilot",
-        "github-copilot-cli",
-        "visual-studio-2026",
-        "vibe-coding",
-        "utvikling"
-      ]
-    },
-    {
-      "id": "office365-itpros-c52369a93a",
-      "source_id": "office365-itpros",
-      "source_name": "Office 365 for IT Pros (Tony Redmond)",
-      "url": "https://office365itpros.com/2026/07/02/external-chat-api/?utm_source=rss&utm_medium=rss&utm_campaign=external-chat-api",
-      "published": "2026-07-02T07:00:00.000Z",
-      "ingested": "2026-07-02T09:01:39.675Z",
-      "title_original": "The Misleading Teams Remove External Chat from User View API",
-      "headline": "The Misleading Teams Remove External Chat from User View API",
-      "topic": "identity",
-      "score": 36,
-      "tags": [
-        "teams",
-        "graph-api",
-        "ekstern-chat",
-        "moderering"
-      ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/06/Teams-external-chat-warning.jpg?resize=840%2C604&ssl=1",
-      "summary": "The removeAllAccessForUser Graph API, which Teams documentation recommends for removing external chats containing malicious content, does not remove the user from the chat as its name suggests and only partially hides the messages. Admins relying on it for content moderation should know that it provides much weaker control than expected."
     }
   ]
 }
