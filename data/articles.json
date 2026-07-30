@@ -1,6 +1,101 @@
 {
-  "generated_at": "2026-07-30T11:23:54.118Z",
+  "generated_at": "2026-07-30T17:24:45.361Z",
   "articles": [
+    {
+      "id": "msrc-blog-d21e7341a1",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/30/whats-new-in-microsoft-security-july-2026/",
+      "published": "2026-07-30T16:00:00.000Z",
+      "ingested": "2026-07-30T17:24:45.288Z",
+      "title_original": "​​​​What’s new in Microsoft Security: July 2026",
+      "headline": "Microsoft previews autonomous agents and expanded Defender AI protections",
+      "topic": "security",
+      "score": 68,
+      "tags": [
+        "Microsoft Defender",
+        "Project Perception",
+        "prompt injection",
+        "agentic security"
+      ],
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/image-18-1.webp",
+      "summary": "Microsoft introduced Project Perception, a coordinated system of autonomous agents for continuous security operations. New Defender capabilities also detect prompt injection in email and protect AI workloads, giving security teams broader coverage across the AI attack surface."
+    },
+    {
+      "id": "msrc-update-guide-819f8fc53e",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56197",
+      "published": "2026-07-30T14:00:00.000Z",
+      "ingested": "2026-07-30T17:24:45.288Z",
+      "title_original": "CVE-2026-56197 Windows Admin Center (WAC) Remote Code Execution Vulnerability",
+      "headline": "Microsoft updates acknowledgement for Windows Admin Center CVE-2026-56197",
+      "topic": "security",
+      "score": 11,
+      "tags": [
+        "CVE-2026-56197",
+        "Windows Admin Center",
+        "remote code execution"
+      ],
+      "summary": "Microsoft updated only the acknowledgement associated with the Windows Admin Center remote code execution advisory. The change adds no technical details or remediation requirements, so administrators do not need to alter their response."
+    },
+    {
+      "id": "msrc-update-guide-1453fdc5e2",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54128",
+      "published": "2026-07-30T14:00:00.000Z",
+      "ingested": "2026-07-30T17:24:45.288Z",
+      "title_original": "CVE-2026-54128 Windows DHCP Client Remote Code Execution Vulnerability",
+      "headline": "Microsoft updates acknowledgement for Windows DHCP Client CVE-2026-54128",
+      "topic": "security",
+      "score": 11,
+      "tags": [
+        "CVE-2026-54128",
+        "Windows DHCP Client",
+        "remote code execution"
+      ],
+      "summary": "Microsoft updated only the acknowledgement associated with the Windows DHCP Client remote code execution advisory. The informational change introduces no new technical guidance or administrator action."
+    },
+    {
+      "id": "admindroid-cb8749f544",
+      "source_id": "admindroid",
+      "source_name": "AdminDroid Blog",
+      "url": "https://blog.admindroid.com/configure-device-sync-in-microsoft-entra-cloud-sync/",
+      "published": "2026-07-30T13:18:39.000Z",
+      "ingested": "2026-07-30T17:24:45.288Z",
+      "title_original": "Microsoft Entra Cloud Sync Now Supports Device Sync for Hybrid Devices",
+      "headline": "Microsoft Entra Cloud Sync adds support for hybrid device synchronization",
+      "topic": "identity",
+      "score": 43,
+      "tags": [
+        "Entra Cloud Sync",
+        "hybrid devices",
+        "Active Directory",
+        "device synchronization"
+      ],
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Configure-Device-Sync-in-Microsoft-Entra-Cloud-Sync-150x150.png",
+      "summary": "Microsoft Entra Cloud Sync can now synchronize on-premises Active Directory computer objects for hybrid device scenarios. Administrators can reduce their dependence on Entra Connect Sync servers and simplify synchronization infrastructure and maintenance."
+    },
+    {
+      "id": "admindroid-bc9c820093",
+      "source_id": "admindroid",
+      "source_name": "AdminDroid Blog",
+      "url": "https://blog.admindroid.com/sysadmin-day-2026/",
+      "published": "2026-07-30T12:32:38.000Z",
+      "ingested": "2026-07-30T17:24:45.288Z",
+      "title_original": "A Letter to Syadmins…from AI  | Sysadmin Day 2026",
+      "headline": "Sysadmin Day essay highlights administrators' role in governing AI",
+      "topic": "ai",
+      "score": 11,
+      "tags": [
+        "AI governance",
+        "sysadmin",
+        "automation"
+      ],
+      "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Sysadmin-2026-150x150.png",
+      "summary": "AdminDroid published a Sysadmin Day reflection on how operational knowledge powers AI assistants. It contains no product change, but reinforces that administrators remain responsible for governing AI access and actions."
+    },
     {
       "id": "msendpointmgr-8a2be1751c",
       "source_id": "msendpointmgr",
@@ -175,6 +270,25 @@
         "25H2"
       ],
       "summary": "Microsoft has released the KB5101684 preview cumulative update for Windows 11 versions 24H2 and 25H2. Administrators can evaluate the non-security fixes before they enter a future mandatory cumulative update."
+    },
+    {
+      "id": "security-community-1fbe4a3d37",
+      "source_id": "security-community",
+      "source_name": "Microsoft Security Community Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-security-community/the-microsoft-ai-and-agent-platform-the-platform-behind/ba-p/4539060",
+      "published": "2026-07-29T18:05:42.000Z",
+      "ingested": "2026-07-30T17:24:45.288Z",
+      "title_original": "The Microsoft AI and Agent Platform — The Platform Behind Intelligent Agents",
+      "headline": "Microsoft outlines its enterprise platform for governed AI agents",
+      "topic": "ai",
+      "score": 26,
+      "tags": [
+        "AI agents",
+        "Azure AI Foundry",
+        "governance",
+        "enterprise security"
+      ],
+      "summary": "Microsoft describes how its AI and agent platform combines models, data, tools, runtimes, identity, and governance controls. The overview helps architects assess Microsoft's approach to operating enterprise agents securely, but announces no specific product release."
     },
     {
       "id": "defender-xdr-3074fbbdb5",
@@ -9264,115 +9378,6 @@
         "rbac",
         "compliance"
       ]
-    },
-    {
-      "id": "m365-roadmap-1e25d7c022",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567006",
-      "published": "2026-07-02T23:12:48.000Z",
-      "ingested": "2026-07-03T00:12:34.208Z",
-      "title_original": "Outlook: Improvements to Save Contacts on iPhone and iPad",
-      "headline": "Outlook: Improvements to Save Contacts on iPhone and iPad",
-      "topic": "endpoint",
-      "score": 32,
-      "tags": [
-        "outlook",
-        "ios",
-        "byod",
-        "kontakter"
-      ]
-    },
-    {
-      "id": "m365-roadmap-510c07322e",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566997",
-      "published": "2026-07-02T23:12:48.000Z",
-      "ingested": "2026-07-03T00:12:34.211Z",
-      "title_original": "Microsoft Copilot Studio: Block the use of maker-provided credentials for authentication",
-      "headline": "Microsoft Copilot Studio: Block the use of maker-provided credentials for authentication",
-      "topic": "ai",
-      "score": 45,
-      "tags": [
-        "copilot-studio",
-        "ai-agenter",
-        "iam",
-        "governance"
-      ]
-    },
-    {
-      "id": "m365-roadmap-95e28a6f61",
-      "source_id": "m365-roadmap",
-      "source_name": "Microsoft 365 Roadmap",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=566866",
-      "published": "2026-07-02T23:12:48.000Z",
-      "ingested": "2026-07-03T00:12:34.211Z",
-      "title_original": "Planner: Task Details Sidecar experience",
-      "headline": "Planner: Task Details Sidecar experience",
-      "topic": "endpoint",
-      "score": 29,
-      "tags": [
-        "planner",
-        "m365",
-        "produktivitet"
-      ]
-    },
-    {
-      "id": "jeffrey-appel-ffa8775f73",
-      "source_id": "jeffrey-appel",
-      "source_name": "Jeffrey Appel — Microsoft Security",
-      "url": "https://jeffreyappel.nl/defender-for-endpoint-performance-troubleshooting-on-linux/",
-      "published": "2026-07-02T20:28:36.000Z",
-      "ingested": "2026-07-03T00:14:10.900Z",
-      "title_original": "Defender for Endpoint performance troubleshooting on Linux",
-      "headline": "Defender for Endpoint performance troubleshooting on Linux",
-      "topic": "security",
-      "score": 38,
-      "tags": [
-        "defender-for-endpoint",
-        "linux",
-        "mde",
-        "ytelse"
-      ]
-    },
-    {
-      "id": "defender-cloud-10134ff6b1",
-      "source_id": "defender-cloud",
-      "source_name": "Microsoft Defender for Cloud Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/microsoft-defender-for-cloud-customer-newsletter/ba-p/4533200",
-      "published": "2026-07-02T18:11:31.000Z",
-      "ingested": "2026-07-04T00:58:01.625Z",
-      "title_original": "Microsoft Defender for Cloud Customer Newsletter",
-      "headline": "Microsoft Defender for Cloud Customer Newsletter",
-      "topic": "security",
-      "score": 54,
-      "tags": [
-        "defender-for-cloud",
-        "multisky",
-        "aws-rds",
-        "database"
-      ]
-    },
-    {
-      "id": "msrc-blog-f92fb00d54",
-      "source_id": "msrc-blog",
-      "source_name": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/02/improving-security-posture-across-the-microsoft-partner-ecosystem/",
-      "published": "2026-07-02T16:00:00.000Z",
-      "ingested": "2026-07-02T19:15:45.834Z",
-      "title_original": "Improving security posture across the Microsoft partner ecosystem",
-      "headline": "Improving security posture across the Microsoft partner ecosystem",
-      "topic": "security",
-      "score": 40,
-      "tags": [
-        "csp",
-        "partner",
-        "governance",
-        "ciso"
-      ],
-      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2025/10/thumbnail_image.webp",
-      "summary": "Microsoft’s deputy CISO explains how the company manages risks associated with Cloud Solution Providers (CSPs), which many organizations use to purchase and operate Microsoft 365 and Azure. The post offers organizations working with CSPs a framework for controls and expectations around partner access, focusing more on principles than concrete news but providing useful guidance for third-party access governance."
     }
   ]
 }
