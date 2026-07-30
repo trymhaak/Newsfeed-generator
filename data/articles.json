@@ -1,6 +1,64 @@
 {
-  "generated_at": "2026-07-30T05:23:03.033Z",
+  "generated_at": "2026-07-30T11:23:54.118Z",
   "articles": [
+    {
+      "id": "msendpointmgr-8a2be1751c",
+      "source_id": "msendpointmgr",
+      "source_name": "MSEndpointMgr",
+      "url": "https://msendpointmgr.com/2026/07/30/is-winget-enterprise-ready/",
+      "published": "2026-07-30T09:19:19.000Z",
+      "ingested": "2026-07-30T11:23:54.034Z",
+      "title_original": "Is WinGet Enterprise Ready? A Deep Dive Into the Evidence",
+      "headline": "Analysis Exposes WinGet Gaps for Enterprise Intune App Management",
+      "topic": "endpoint",
+      "score": 43,
+      "tags": [
+        "WinGet",
+        "Microsoft Intune",
+        "app management",
+        "package validation"
+      ],
+      "hero_image": "https://msendpointmgr.com/wp-content/uploads/2026/07/2026-07-30_09-56-17.jpg",
+      "summary": "A detailed assessment examines WinGet repository manifests, validation, package freshness, and limitations that can affect Intune deployments. Endpoint administrators can use the findings to weigh WinGet against curated catalogs and identify where additional testing or packaging controls remain necessary."
+    },
+    {
+      "id": "jeffrey-appel-5fb5e12f78",
+      "source_id": "jeffrey-appel",
+      "source_name": "Jeffrey Appel — Microsoft Security",
+      "url": "https://jeffreyappel.nl/how-to-collect-microsoft-defender-client-analyzer-files-via-mde-live-response/",
+      "published": "2026-07-30T08:26:11.000Z",
+      "ingested": "2026-07-30T11:23:54.034Z",
+      "title_original": "How to collect Microsoft Defender Client Analyzer Files via MDE Live Response",
+      "headline": "Collect Defender Client Analyzer Logs Remotely with Live Response",
+      "topic": "security",
+      "score": 37,
+      "tags": [
+        "Defender for Endpoint",
+        "Live Response",
+        "Client Analyzer",
+        "diagnostics"
+      ],
+      "summary": "Administrators can use Microsoft Defender for Endpoint Live Response to run Defender Client Analyzer and retrieve its diagnostic files remotely. The approach accelerates troubleshooting and support investigations by removing the need for local endpoint access."
+    },
+    {
+      "id": "ourcloudnetwork-54a770e43c",
+      "source_id": "ourcloudnetwork",
+      "source_name": "Our Cloud Network (Daniel Bradley)",
+      "url": "https://ourcloudnetwork.com/how-to-disable-group-nesting-in-microsoft-entra-id/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-disable-group-nesting-in-microsoft-entra-id",
+      "published": "2026-07-30T06:23:17.000Z",
+      "ingested": "2026-07-30T11:23:54.034Z",
+      "title_original": "How to disable group nesting in Microsoft Entra ID",
+      "headline": "Disable Group Nesting in Microsoft Entra ID with Microsoft Graph",
+      "topic": "identity",
+      "score": 33,
+      "tags": [
+        "Microsoft Entra ID",
+        "Microsoft Graph",
+        "PowerShell",
+        "access control"
+      ],
+      "summary": "Administrators can create Entra security groups that block group nesting by using the Microsoft Graph beta API and PowerShell. This community technique can simplify access evaluation and reduce unintended permissions, but reliance on a beta API requires careful testing."
+    },
     {
       "id": "office365-itpros-882d62fd08",
       "source_id": "office365-itpros",
@@ -117,6 +175,25 @@
         "25H2"
       ],
       "summary": "Microsoft has released the KB5101684 preview cumulative update for Windows 11 versions 24H2 and 25H2. Administrators can evaluate the non-security fixes before they enter a future mandatory cumulative update."
+    },
+    {
+      "id": "defender-xdr-3074fbbdb5",
+      "source_id": "defender-xdr",
+      "source_name": "Microsoft Defender XDR Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/mdti-convergence-in-microsoft-sentinel-and-defender-xdr-is/ba-p/4541279",
+      "published": "2026-07-29T16:00:00.000Z",
+      "ingested": "2026-07-30T11:23:54.034Z",
+      "title_original": "MDTI convergence in Microsoft Sentinel and Defender XDR is complete",
+      "headline": "Microsoft Completes MDTI Integration in Sentinel and Defender XDR",
+      "topic": "security",
+      "score": 76,
+      "tags": [
+        "MDTI",
+        "Defender XDR",
+        "Microsoft Sentinel",
+        "threat intelligence"
+      ],
+      "summary": "Microsoft is making the final phase of MDTI convergence generally available in the Defender portal on August 1. Administrators gain integrated threat intelligence across investigations, hunting, automation, and Sentinel connectors at no additional cost, reducing tool switching and licensing complexity."
     },
     {
       "id": "msrc-blog-1bf2aca513",
@@ -9296,80 +9373,6 @@
       ],
       "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2025/10/thumbnail_image.webp",
       "summary": "Microsoft’s deputy CISO explains how the company manages risks associated with Cloud Solution Providers (CSPs), which many organizations use to purchase and operate Microsoft 365 and Azure. The post offers organizations working with CSPs a framework for controls and expectations around partner access, focusing more on principles than concrete news but providing useful guidance for third-party access governance."
-    },
-    {
-      "id": "m365-copilot-f177638bbe",
-      "source_id": "m365-copilot",
-      "source_name": "Microsoft 365 Copilot Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/available-today-anthropic-s-claude-sonnet-5-in-microsoft-365/ba-p/4532188",
-      "published": "2026-07-02T15:55:25.000Z",
-      "ingested": "2026-07-02T19:22:25.761Z",
-      "title_original": "Available today: Anthropic’s Claude Sonnet 5 in Microsoft 365 Copilot",
-      "headline": "Available today: Anthropic’s Claude Sonnet 5 in Microsoft 365 Copilot",
-      "topic": "ai",
-      "score": 65,
-      "tags": [
-        "copilot",
-        "anthropic",
-        "claude-sonnet-5",
-        "m365-copilot"
-      ]
-    },
-    {
-      "id": "handsontek-09f151aa8f",
-      "source_id": "handsontek",
-      "source_name": "HANDS ON tek (João Ferreira)",
-      "url": "https://handsontek.net/whats-new-copilot-june-2026/",
-      "published": "2026-07-02T15:18:37.000Z",
-      "ingested": "2026-07-02T19:15:45.836Z",
-      "title_original": "What’s new for Copilot – June 2026",
-      "headline": "What’s new for Copilot – June 2026",
-      "topic": "ai",
-      "score": 48,
-      "tags": [
-        "copilot",
-        "copilot-cowork",
-        "billing",
-        "m365"
-      ],
-      "hero_image": "https://handsontek.net/images/hot2/Whats%20new%20Copilot/hero.png",
-      "summary": "Copilot Cowork reached general availability in June but is not included in existing licenses and is billed per use through Copilot Credits, so admins must configure billing and consumption controls before it can be used. Other updates include curated organizational prompts in Copilot Chat, AI editing suggestions in Copilot Pages, more voice styles in Microsoft 365 Copilot, and usage-based billing for the Work IQ APIs."
-    },
-    {
-      "id": "m365-copilot-7f2f41f3ae",
-      "source_id": "m365-copilot",
-      "source_name": "Microsoft 365 Copilot Blog",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/sales-agent-is-now-generally-available-bringing-customer-and/ba-p/4532629",
-      "published": "2026-07-02T15:00:00.000Z",
-      "ingested": "2026-07-02T19:22:25.763Z",
-      "title_original": "Sales Agent is now generally available: Bringing customer and deal intelligence into the flow of work",
-      "headline": "Sales Agent is now generally available: Bringing customer and deal intelligence into the flow of work",
-      "topic": "ai",
-      "score": 59,
-      "tags": [
-        "copilot",
-        "sales-agent",
-        "crm",
-        "m365-copilot"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-53807d8f62",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50521",
-      "published": "2026-07-02T14:00:00.000Z",
-      "ingested": "2026-07-03T00:12:34.211Z",
-      "title_original": "CVE-2026-50521 Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-      "headline": "CVE-2026-50521 Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-      "topic": "security",
-      "score": 65,
-      "tags": [
-        "cve-2026-50521",
-        "edge",
-        "rce",
-        "patch"
-      ]
     }
   ]
 }
