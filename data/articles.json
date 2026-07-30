@@ -1,6 +1,103 @@
 {
-  "generated_at": "2026-07-29T23:22:14.606Z",
+  "generated_at": "2026-07-30T05:23:03.033Z",
   "articles": [
+    {
+      "id": "office365-itpros-882d62fd08",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/30/fy26-q4-microsoft-results/?utm_source=rss&utm_medium=rss&utm_campaign=fy26-q4-microsoft-results",
+      "published": "2026-07-30T00:34:28.000Z",
+      "ingested": "2026-07-30T05:23:02.964Z",
+      "title_original": "Azure Tops $100 Billion As Microsoft Reports FY26 Q4 Results",
+      "headline": "Microsoft Reports 30 Million Paid Microsoft 365 Copilot Seats",
+      "topic": "ai",
+      "score": 21,
+      "tags": [
+        "Microsoft 365 Copilot",
+        "Azure",
+        "cloud infrastructure",
+        "AI adoption"
+      ],
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/Microsoft-FY26-Q4-Results.jpg?resize=840%2C434&ssl=1",
+      "summary": "Microsoft reported strong FY26 cloud growth, with Azure revenue exceeding $100 billion and Microsoft 365 Copilot reaching 30 million paid seats. The results indicate continued investment in AI infrastructure but introduce no immediate administrative or product changes."
+    },
+    {
+      "id": "m365-roadmap-73bc906b7d",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=568365",
+      "published": "2026-07-29T23:07:26.000Z",
+      "ingested": "2026-07-30T05:23:02.964Z",
+      "title_original": "Microsoft Edge: Import Google account data anytime from Settings",
+      "headline": "Edge Adds Anytime Google Account Data Import in Settings",
+      "topic": "endpoint",
+      "score": 31,
+      "tags": [
+        "Microsoft Edge",
+        "data import",
+        "passwords",
+        "browser migration"
+      ],
+      "summary": "Microsoft Edge will let users import Google account passwords, bookmarks, history, and autofill data after initial setup. Administrators should review browser migration policies and data-handling requirements before the August 2026 rollout."
+    },
+    {
+      "id": "m365-roadmap-283ab0d2e4",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=568364",
+      "published": "2026-07-29T23:07:26.000Z",
+      "ingested": "2026-07-30T05:23:02.964Z",
+      "title_original": "Microsoft Viva: Rolling out Custom branding in Engage",
+      "headline": "Viva Engage Adds Tenant-Wide Custom Branding",
+      "topic": "endpoint",
+      "score": 29,
+      "tags": [
+        "Viva Engage",
+        "custom branding",
+        "Brand Center",
+        "tenant administration"
+      ],
+      "summary": "Viva Engage administrators will be able to configure a tenant-wide brand name, logos, and theme color through a new Brand Center. Organizations should prepare approved branding assets and update administrative guidance before the August 2026 rollout."
+    },
+    {
+      "id": "m365-roadmap-6aca0de49c",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=568072",
+      "published": "2026-07-29T23:07:26.000Z",
+      "ingested": "2026-07-30T05:23:02.964Z",
+      "title_original": "Microsoft Viva: Copilot Dashboard - Targeted Audience Surveys",
+      "headline": "Copilot Dashboard Adds Targeted Employee Surveys",
+      "topic": "ai",
+      "score": 43,
+      "tags": [
+        "Microsoft Copilot",
+        "Pulse surveys",
+        "adoption analytics",
+        "employee sentiment"
+      ],
+      "summary": "The Copilot Dashboard will let change leaders send Pulse surveys to dynamic groups of licensed or active users. Administrators can combine adoption metrics with privacy-protected sentiment data to evaluate Copilot deployments more effectively."
+    },
+    {
+      "id": "m365-roadmap-e8c07b112e",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=567887",
+      "published": "2026-07-29T23:07:26.000Z",
+      "ingested": "2026-07-30T05:23:02.964Z",
+      "title_original": "SharePoint: Viva Connections multi-home site management moving to SharePoint admin center",
+      "headline": "Microsoft Moves Viva Connections Management to SharePoint Admin Center",
+      "topic": "endpoint",
+      "score": 48,
+      "tags": [
+        "SharePoint",
+        "Viva Connections",
+        "Home sites",
+        "admin center",
+        "deprecation"
+      ],
+      "summary": "Microsoft is moving multi-home site management into the SharePoint admin center and deprecating legacy Viva Connections management concepts. Administrators should update operating procedures and prepare existing Viva Connections experiences for conversion to full Home sites."
+    },
     {
       "id": "prajwal-desai-43efd535a4",
       "source_id": "prajwal-desai",
@@ -9272,96 +9369,6 @@
         "edge",
         "rce",
         "patch"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-0615a142d8",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57100",
-      "published": "2026-07-02T14:00:00.000Z",
-      "ingested": "2026-07-03T00:12:34.211Z",
-      "title_original": "CVE-2026-57100 Microsoft Entra Provisioning Service Elevation of Privilege Vulnerability",
-      "headline": "CVE-2026-57100 Microsoft Entra Provisioning Service Elevation of Privilege Vulnerability",
-      "topic": "security",
-      "score": 67,
-      "tags": [
-        "cve-2026-57100",
-        "entra",
-        "ssrf",
-        "eop"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-e51d891cb4",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45499",
-      "published": "2026-07-02T14:00:00.000Z",
-      "ingested": "2026-07-03T00:12:34.211Z",
-      "title_original": "CVE-2026-45499 Azure OpenAI Elevation of Privilege Vulnerability",
-      "headline": "CVE-2026-45499 Azure OpenAI Elevation of Privilege Vulnerability",
-      "topic": "security",
-      "score": 63,
-      "tags": [
-        "cve-2026-45499",
-        "azure-openai",
-        "ssrf",
-        "eop"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-a4909852b0",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26145",
-      "published": "2026-07-02T14:00:00.000Z",
-      "ingested": "2026-07-03T00:14:10.900Z",
-      "title_original": "CVE-2026-26145 Microsoft Azure Synapse Elevation of Privilege Vulnerability",
-      "headline": "CVE-2026-26145 Microsoft Azure Synapse Elevation of Privilege Vulnerability",
-      "topic": "security",
-      "score": 57,
-      "tags": [
-        "cve-2026-26145",
-        "azure-synapse",
-        "eop",
-        "msrc"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-0f974e1c70",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41106",
-      "published": "2026-07-02T14:00:00.000Z",
-      "ingested": "2026-07-03T00:14:10.900Z",
-      "title_original": "CVE-2026-41106 Microsoft 365 Copilot Elevation of Privilege Vulnerability",
-      "headline": "CVE-2026-41106 Microsoft 365 Copilot Elevation of Privilege Vulnerability",
-      "topic": "security",
-      "score": 64,
-      "tags": [
-        "cve-2026-41106",
-        "m365-copilot",
-        "open-redirect",
-        "eop"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-a25379dad3",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54998",
-      "published": "2026-07-02T14:00:00.000Z",
-      "ingested": "2026-07-03T00:14:10.900Z",
-      "title_original": "CVE-2026-54998 Microsoft Exchange Online Elevation of Privilege Vulnerability",
-      "headline": "CVE-2026-54998 Microsoft Exchange Online Elevation of Privilege Vulnerability",
-      "topic": "security",
-      "score": 60,
-      "tags": [
-        "cve-2026-54998",
-        "exchange-online",
-        "eop",
-        "msrc"
       ]
     }
   ]
