@@ -2,8 +2,10 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { test } from 'node:test';
 import { buildPublicFeed } from '../src/lib/feed.ts';
-import { loadStore, mergeArticles } from '../src/lib/store.ts';
+import { deduplicateRawArticlesById } from '../src/lib/raw.ts';
 import { validatePublicFeed } from '../src/lib/schema.ts';
+import { loadStore, mergeArticles } from '../src/lib/store.ts';
+import type { RawArticle } from '../src/lib/types.ts';
 
 test('canonical store and public feed contain 500 English-schema records', async () => {
   const store = await loadStore();
@@ -48,6 +50,24 @@ test('no-new-article merge is byte-semantic idempotent', async () => {
   const merged = mergeArticles(store, [duplicate]);
   assert.equal(merged.added, 0);
   assert.deepEqual(merged.store, store);
+});
+
+test('raw feed items are unique by stable article id before enrichment', () => {
+  const first: RawArticle = {
+    id: 'msrc-update-guide-be1215e082',
+    source_id: 'msrc-update-guide',
+    source_name: 'MSRC Security Update Guide (RSS)',
+    title: 'First item for the shared URL',
+    url: 'https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24304',
+    content: 'First content wins deterministically.',
+    published: '2026-07-30T14:00:00.000Z',
+    default_topic: 'security',
+    source_weight: 0.9,
+  };
+  const duplicate = { ...first, title: 'Duplicate item for the shared URL' };
+  const distinct = { ...first, id: 'msrc-update-guide-4102b429b6', url: `${first.url}-distinct` };
+
+  assert.deepEqual(deduplicateRawArticlesById([first, duplicate, distinct]), [first, distinct]);
 });
 
 test('old human routes retire to Trym Cloud while feed stays public', async () => {

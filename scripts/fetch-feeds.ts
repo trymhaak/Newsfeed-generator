@@ -2,6 +2,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { parse as parseYaml } from 'yaml';
 import Parser from 'rss-parser';
+import { deduplicateRawArticlesById } from '../src/lib/raw.ts';
 import { loadStore } from '../src/lib/store.ts';
 import type { FeedSource, RawArticle, Topic } from '../src/lib/types.ts';
 
@@ -167,10 +168,16 @@ async function main() {
     }
   }
 
-  await mkdir('data', { recursive: true });
-  await writeFile(RAW_OUT, JSON.stringify(raw, null, 2) + '\n', 'utf8');
+  const uniqueRaw = deduplicateRawArticlesById(raw);
+  const duplicateCount = raw.length - uniqueRaw.length;
+  if (duplicateCount > 0) {
+    console.warn(`dropped ${duplicateCount} duplicate raw article id(s)`);
+  }
 
-  console.log(`\nfetched ${raw.length} new articles from ${okCount}/${sources.length} feeds`);
+  await mkdir('data', { recursive: true });
+  await writeFile(RAW_OUT, JSON.stringify(uniqueRaw, null, 2) + '\n', 'utf8');
+
+  console.log(`\nfetched ${uniqueRaw.length} new articles from ${okCount}/${sources.length} feeds`);
   console.log(`wrote ${RAW_OUT}`);
 
   // Fail loudly on mass source death: if fewer than half the feeds responded,
