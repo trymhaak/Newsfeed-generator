@@ -1,6 +1,45 @@
 {
-  "generated_at": "2026-07-30T17:24:45.361Z",
+  "generated_at": "2026-07-31T05:44:09.447Z",
   "articles": [
+    {
+      "id": "fasttrack-6172da1379",
+      "source_id": "fasttrack",
+      "source_name": "Microsoft FastTrack Blog",
+      "url": "https://techcommunity.microsoft.com/t5/fasttrack-blog/agent-governance-is-organizational-readiness/ba-p/4542517",
+      "published": "2026-07-30T20:15:22.000Z",
+      "ingested": "2026-07-31T05:44:09.383Z",
+      "title_original": "Agent governance is organizational readiness",
+      "headline": "Microsoft Outlines Governance Practices for Deploying Copilot Agents at Scale",
+      "topic": "ai",
+      "score": 30,
+      "tags": [
+        "Copilot",
+        "AI agents",
+        "governance",
+        "identity"
+      ],
+      "hero_image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/dS0yMDE4MTgteTNoRWFa?image-coordinates=0%2C0%2C1500%2C1500&image-dimensions=120x120",
+      "summary": "Microsoft argues that agent governance must evaluate how AI changes real clinical and operational workflows, not only whether an agent works technically. IT leaders should establish ownership, identity controls, and user-impact reviews before scaling Copilot agents."
+    },
+    {
+      "id": "niallbrady-b1d7b1036d",
+      "source_id": "niallbrady",
+      "source_name": "Just Another Windows Noob (Niall Brady)",
+      "url": "https://www.niallbrady.com/2026/07/30/following-up-on-windows-365-reserve/",
+      "published": "2026-07-30T18:19:42.000Z",
+      "ingested": "2026-07-31T05:44:09.383Z",
+      "title_original": "Following up on Windows 365 Reserve",
+      "headline": "Windows 365 Reserve Follow-Up Examines Enablement and Provisioning Delays",
+      "topic": "endpoint",
+      "score": 31,
+      "tags": [
+        "Windows 365",
+        "Cloud PC",
+        "provisioning",
+        "endpoint management"
+      ],
+      "summary": "A community follow-up revisits how to enable Windows 365 Reserve and what administrators should expect after activation. The analysis may help endpoint teams account for provisioning delays and validate the resulting configuration."
+    },
     {
       "id": "msrc-blog-d21e7341a1",
       "source_id": "msrc-blog",
@@ -20,6 +59,61 @@
       ],
       "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/image-18-1.webp",
       "summary": "Microsoft introduced Project Perception, a coordinated system of autonomous agents for continuous security operations. New Defender capabilities also detect prompt injection in email and protect AI workloads, giving security teams broader coverage across the AI attack surface."
+    },
+    {
+      "id": "msrc-update-guide-4102b429b6",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55129",
+      "published": "2026-07-30T14:00:00.000Z",
+      "ingested": "2026-07-31T05:44:09.383Z",
+      "title_original": "CVE-2026-55129 Microsoft Office Remote Code Execution Vulnerability",
+      "headline": "Microsoft Updates Credit for Office RCE Vulnerability CVE-2026-55129",
+      "topic": "security",
+      "score": 23,
+      "tags": [
+        "Microsoft Office",
+        "CVE",
+        "remote code execution"
+      ],
+      "summary": "Microsoft updated the acknowledgement for an Office remote code execution vulnerability. The change adds no new technical or remediation guidance for administrators."
+    },
+    {
+      "id": "msrc-update-guide-1b8382dfda",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66803",
+      "published": "2026-07-30T14:00:00.000Z",
+      "ingested": "2026-07-31T05:44:09.383Z",
+      "title_original": "CVE-2026-66803 Azure Cosmos DB Remote Code Execution Vulnerability",
+      "headline": "Azure Cosmos DB Flaw Allows Remote Code Execution Without Authorization",
+      "topic": "security",
+      "score": 81,
+      "tags": [
+        "Azure Cosmos DB",
+        "CVE",
+        "remote code execution",
+        "access control"
+      ],
+      "summary": "Improper access control in Azure Cosmos DB allows an unauthorized network attacker to execute code remotely. Administrators should review affected deployments and apply Microsoft’s recommended mitigations or updates immediately."
+    },
+    {
+      "id": "msrc-update-guide-be1215e082",
+      "source_id": "msrc-update-guide",
+      "source_name": "MSRC Security Update Guide (RSS)",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24304",
+      "published": "2026-07-30T14:00:00.000Z",
+      "ingested": "2026-07-31T05:44:09.383Z",
+      "title_original": "CVE-2026-24304 Azure Resource Manager Elevation of Privilege Vulnerability",
+      "headline": "Microsoft Revises Details for Azure Resource Manager Privilege Flaw",
+      "topic": "security",
+      "score": 23,
+      "tags": [
+        "Azure Resource Manager",
+        "CVE",
+        "privilege escalation"
+      ],
+      "summary": "Microsoft published an informational change for the Azure Resource Manager elevation-of-privilege vulnerability while retaining the same CVE identifier. Administrators do not need to track a replacement CVE, but should review the revised advisory details."
     },
     {
       "id": "msrc-update-guide-819f8fc53e",
@@ -9285,98 +9379,6 @@
         "elasticsearch",
         "dos",
         "cve-2026-56149"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-db7518842c",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53010",
-      "published": "2026-07-03T08:02:03.000Z",
-      "ingested": "2026-07-03T07:22:59.278Z",
-      "title_original": "CVE-2026-53010 ksmbd: fix use-after-free in smb2_open during durable reconnect",
-      "headline": "CVE-2026-53010 ksmbd: fix use-after-free in smb2_open during durable reconnect",
-      "topic": "security",
-      "score": 27,
-      "tags": [
-        "cve-2026-53010",
-        "ksmbd",
-        "smb",
-        "use-after-free"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-5940bce86e",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49090",
-      "published": "2026-07-03T08:01:57.000Z",
-      "ingested": "2026-07-03T10:18:59.757Z",
-      "title_original": "CVE-2026-49090 Uncontrolled Resource Consumption in Elasticsearch Leading to Denial of Service",
-      "headline": "CVE-2026-49090 Uncontrolled Resource Consumption in Elasticsearch Leading to Denial of Service",
-      "topic": "security",
-      "score": 46,
-      "tags": [
-        "elasticsearch",
-        "dos",
-        "cve-2026-49090"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-3d4aa77614",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53097",
-      "published": "2026-07-03T08:01:57.000Z",
-      "ingested": "2026-07-03T07:22:59.278Z",
-      "title_original": "CVE-2026-53097 wifi: mt76: mt7996: fix use-after-free bugs in mt7996_mac_dump_work()",
-      "headline": "CVE-2026-53097 wifi: mt76: mt7996: fix use-after-free bugs in mt7996_mac_dump_work()",
-      "topic": "security",
-      "score": 16,
-      "tags": [
-        "cve-2026-53097",
-        "linux-kernel",
-        "wifi",
-        "use-after-free"
-      ]
-    },
-    {
-      "id": "office365-itpros-87812b98e6",
-      "source_id": "office365-itpros",
-      "source_name": "Office 365 for IT Pros (Tony Redmond)",
-      "url": "https://office365itpros.com/2026/07/03/teams-membership-snapshot/?utm_source=rss&utm_medium=rss&utm_campaign=teams-membership-snapshot",
-      "published": "2026-07-03T07:00:00.000Z",
-      "ingested": "2026-07-03T07:03:34.583Z",
-      "title_original": "How to Record Snapshots for Teams Memberships",
-      "headline": "How to Record Snapshots for Teams Memberships",
-      "topic": "identity",
-      "score": 35,
-      "tags": [
-        "teams",
-        "powershell",
-        "medlemskap",
-        "etterlevelse",
-        "revisjon"
-      ],
-      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/02/Teams-memberships-report.jpg?resize=840%2C544&ssl=1",
-      "summary": "Tony Redmond shows how to use PowerShell to save periodic snapshots of a team’s membership so organizations can later prove who had access to channels, files, and SharePoint content at a given time. Team membership effectively grants broad access to sensitive content, making this useful for legal recordkeeping requirements, while membership changes can also be tracked in the audit log."
-    },
-    {
-      "id": "ourcloudnetwork-d51af1d7d8",
-      "source_id": "ourcloudnetwork",
-      "source_name": "Our Cloud Network (Daniel Bradley)",
-      "url": "https://ourcloudnetwork.com/microsoft-purview-adds-native-role-assignment-time-limits/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-purview-adds-native-role-assignment-time-limits",
-      "published": "2026-07-03T06:40:44.000Z",
-      "ingested": "2026-07-03T06:46:40.775Z",
-      "title_original": "Microsoft Purview Adds Native Role Assignment Time Limits",
-      "headline": "Microsoft Purview Adds Native Role Assignment Time Limits",
-      "topic": "identity",
-      "score": 44,
-      "tags": [
-        "purview",
-        "pim",
-        "rbac",
-        "compliance"
       ]
     }
   ]
