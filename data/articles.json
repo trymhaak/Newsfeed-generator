@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-07-31T11:44:56.507Z",
+  "generated_at": "2026-07-31T17:46:01.972Z",
   "articles": [
+    {
+      "id": "windows-insider-159e44819f",
+      "source_id": "windows-insider",
+      "source_name": "Windows Insider Blog",
+      "url": "https://blogs.windows.com/windows-insider/2026/07/31/announcing-new-builds-for-31-july-2026/",
+      "published": "2026-07-31T17:01:56.000Z",
+      "ingested": "2026-07-31T17:46:01.914Z",
+      "title_original": "Announcing new builds for 31 July 2026",
+      "headline": "Microsoft renews flight certificates in new Windows 11 Insider builds",
+      "topic": "endpoint",
+      "score": 55,
+      "tags": [
+        "Windows 11",
+        "Windows Insider",
+        "certificates",
+        "preview builds"
+      ],
+      "hero_image": "https://winblogs.thesourcemediaassets.com/sites/44/2026/05/1-1024x693.png",
+      "summary": "Microsoft released new Windows 11 Insider builds with renewed flight certificates and several experimental platform changes. Administrators must update Insider devices before the current certificate expires on August 11, 2026, to preserve access to future preview builds."
+    },
+    {
+      "id": "vasil-michev-69f29ae847",
+      "source_id": "vasil-michev",
+      "source_name": "Vasil Michev — Michev.info",
+      "url": "https://michev.info/blog/post/8197/psa-duplicate-dynamic-distribution-group-detection-in-exchange-online",
+      "published": "2026-07-31T13:36:54.000Z",
+      "ingested": "2026-07-31T17:46:01.914Z",
+      "title_original": "PSA: Duplicate Dynamic Distribution Group detection in Exchange Online",
+      "headline": "Exchange Online starts blocking duplicate dynamic distribution groups",
+      "topic": "identity",
+      "score": 48,
+      "tags": [
+        "Exchange Online",
+        "dynamic groups",
+        "provisioning",
+        "Microsoft 365"
+      ],
+      "hero_image": "https://michev.info/wp-content/uploads/2026/07/DuplicateDDGs.png",
+      "summary": "Microsoft is changing Exchange Online provisioning to detect duplicate dynamic distribution groups and reuse existing groups. Administrators should review automated provisioning workflows because duplicate creation attempts may now fail with an error."
+    },
     {
       "id": "andrew-taylor-527405fdc8",
       "source_id": "andrew-taylor",
@@ -1694,6 +1734,26 @@
         "permissions"
       ],
       "summary": "The analysis explains how Copilot can rapidly discover and combine Microsoft 365 data that users already have permission to access. Administrators should review oversharing, identity controls, data governance, and Zero Trust readiness before expanding deployments."
+    },
+    {
+      "id": "handsontek-9d1792e292",
+      "source_id": "handsontek",
+      "source_name": "HANDS ON tek (João Ferreira)",
+      "url": "https://handsontek.net/hands-microsoft-365-pulse-weekly-updates-week-29/",
+      "published": "2026-07-23T15:14:54.000Z",
+      "ingested": "2026-07-31T17:46:01.914Z",
+      "title_original": "Hands-On Microsoft 365 Pulse – Weekly Updates (Week 29)",
+      "headline": "Microsoft 365 weekly recap covers Copilot licensing and SharePoint controls",
+      "topic": "ai",
+      "score": 20,
+      "tags": [
+        "Microsoft 365",
+        "Copilot",
+        "SharePoint",
+        "weekly recap"
+      ],
+      "hero_image": "https://handsontek.net/images/hot2/Week%2029%202026/hero.png",
+      "summary": "This community roundup highlights recent Microsoft 365 developments, including Copilot licensing, SharePoint restricted access controls, and service updates. Administrators may find useful pointers to individual changes, but the article primarily serves as a podcast and weekly recap."
     },
     {
       "id": "msrc-blog-90ed2eac0b",
@@ -9330,60 +9390,6 @@
         "linux-kernel",
         "ksmbd",
         "smb"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-ff888a310b",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14258",
-      "published": "2026-07-03T08:03:50.000Z",
-      "ingested": "2026-07-03T10:18:59.757Z",
-      "title_original": "CVE-2026-14258 Dhcpcd: dhcpcd infinite loop and out-of-bounds read via zero-length ipv6 nd option in router advertisement handling",
-      "headline": "CVE-2026-14258 Dhcpcd: dhcpcd infinite loop and out-of-bounds read via zero-length ipv6 nd option in router advertisement handling",
-      "topic": "security",
-      "score": 41,
-      "tags": [
-        "dhcpcd",
-        "ipv6",
-        "dos",
-        "cve-2026-14258"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-06caadf38a",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53043",
-      "published": "2026-07-03T08:03:26.000Z",
-      "ingested": "2026-07-03T07:20:44.440Z",
-      "title_original": "CVE-2026-53043 ocfs2/dlm: validate qr_numregions in dlm_match_regions()",
-      "headline": "CVE-2026-53043 ocfs2/dlm: validate qr_numregions in dlm_match_regions()",
-      "topic": "security",
-      "score": 38,
-      "tags": [
-        "cve-2026-53043",
-        "linux-kernel",
-        "ocfs2",
-        "sårbarhet"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-99096d31e7",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53357",
-      "published": "2026-07-03T08:02:18.000Z",
-      "ingested": "2026-07-03T10:18:59.757Z",
-      "title_original": "CVE-2026-53357 Bluetooth: fix UAF in l2cap_sock_cleanup_listen() vs l2cap_conn_del()",
-      "headline": "CVE-2026-53357 Bluetooth: fix UAF in l2cap_sock_cleanup_listen() vs l2cap_conn_del()",
-      "topic": "security",
-      "score": 51,
-      "tags": [
-        "linux-kernel",
-        "bluetooth",
-        "use-after-free",
-        "cve-2026-53357"
       ]
     }
   ]
