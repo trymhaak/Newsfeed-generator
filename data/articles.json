@@ -1,6 +1,86 @@
 {
-  "generated_at": "2026-07-31T17:46:01.972Z",
+  "generated_at": "2026-07-31T23:47:05.719Z",
   "articles": [
+    {
+      "id": "m365-roadmap-2fd80cdf48",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=568370",
+      "published": "2026-07-31T21:54:12.000Z",
+      "ingested": "2026-07-31T23:47:05.675Z",
+      "title_original": "Microsoft 365: Control access to Learning Activities and Teach",
+      "headline": "Microsoft 365 adds admin controls for Learning Activities and Teach",
+      "topic": "ai",
+      "score": 43,
+      "tags": [
+        "Microsoft 365",
+        "admin center",
+        "AI governance",
+        "education"
+      ],
+      "summary": "Microsoft 365 administrators will be able to control Learning Activities separately for educators and students aged 13 or older, while managing Teach access for educators. The September 2026 release helps organizations align education-focused AI experiences with governance policies and deployment readiness."
+    },
+    {
+      "id": "m365-roadmap-645939afd2",
+      "source_id": "m365-roadmap",
+      "source_name": "Microsoft 365 Roadmap",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=568369",
+      "published": "2026-07-31T21:54:12.000Z",
+      "ingested": "2026-07-31T23:47:05.675Z",
+      "title_original": "Microsoft 365: Assign Different Content to Learning Groups in a Single Assignment",
+      "headline": "Microsoft 365 assignments add group-specific learning content",
+      "topic": "endpoint",
+      "score": 13,
+      "tags": [
+        "Microsoft 365",
+        "Assignments",
+        "education",
+        "content management"
+      ],
+      "summary": "Educators will be able to assign different resources and instructions to individual groups within one assignment. The September 2026 release simplifies differentiated teaching but has limited relevance for enterprise security administrators."
+    },
+    {
+      "id": "msrc-blog-9a096844f3",
+      "source_id": "msrc-blog",
+      "source_name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
+      "published": "2026-07-31T21:01:37.000Z",
+      "ingested": "2026-07-31T23:47:05.675Z",
+      "title_original": "CaptiveCrunch: Midnight Blizzard targets travelers worldwide for malware delivery and credential theft",
+      "headline": "Midnight Blizzard hijacks captive portals to steal credentials and deliver malware",
+      "topic": "security",
+      "score": 78,
+      "tags": [
+        "Midnight Blizzard",
+        "Entra ID",
+        "AitM phishing",
+        "Defender XDR",
+        "device code"
+      ],
+      "hero_image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/07/image-43.webp",
+      "summary": "Microsoft identified an active Midnight Blizzard campaign manipulating hospitality captive portals to deliver malware and conduct adversary-in-the-middle phishing. Administrators should review Entra ID device-code authentication controls, Defender detections, hunting guidance, and published indicators of compromise."
+    },
+    {
+      "id": "windows-insider-b05bf6f25c",
+      "source_id": "windows-insider",
+      "source_name": "Windows Insider Blog",
+      "url": "https://blogs.windows.com/windows-insider/2026/07/31/windows-quality-an-update-on-the-commitment-we-made-in-march/",
+      "published": "2026-07-31T18:05:18.000Z",
+      "ingested": "2026-07-31T23:47:05.675Z",
+      "title_original": "Windows quality: an update on the commitment we made in March",
+      "headline": "Microsoft prepares broader Windows 11 quality improvements for fall rollout",
+      "topic": "endpoint",
+      "score": 46,
+      "tags": [
+        "Windows 11",
+        "Windows Insider",
+        "File Explorer",
+        "Windows Update",
+        "endpoint management"
+      ],
+      "hero_image": "https://winblogs.thesourcemediaassets.com/sites/44/2026/03/PBS2.png",
+      "summary": "Microsoft says Windows 11 improvements tested through the Insider Program will begin reaching more PCs this fall. Administrators should anticipate changes to updates, File Explorer, search, taskbar customization, widgets, performance, and reliability when planning endpoint validation."
+    },
     {
       "id": "windows-insider-159e44819f",
       "source_id": "windows-insider",
@@ -79,6 +159,26 @@
       ],
       "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/Message-Center-with-new-items.jpg?resize=840%2C477&ssl=1",
       "summary": "Microsoft 365 now spans hundreds of annual updates, interconnected services, fragmented settings, and additional AI controls. IT leaders need cross-workload governance and broader expertise to identify risks and understand how tenant-wide changes affect security."
+    },
+    {
+      "id": "core-infra-security-85daddae30",
+      "source_id": "core-infra-security",
+      "source_name": "Core Infrastructure and Security Blog",
+      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/securing-enterprise-ai-agents-with-microsoft-sentinel/ba-p/4542583",
+      "published": "2026-07-31T02:30:39.000Z",
+      "ingested": "2026-07-31T23:47:05.675Z",
+      "title_original": "Securing Enterprise AI Agents with Microsoft Sentinel",
+      "headline": "Microsoft Sentinel architecture brings AI agent activity into SOC monitoring",
+      "topic": "ai",
+      "score": 46,
+      "tags": [
+        "Microsoft Sentinel",
+        "AI agents",
+        "Defender XDR",
+        "MCP",
+        "Copilot"
+      ],
+      "summary": "A new reference architecture explains how Microsoft Sentinel can combine agent identities, Copilot logs, Defender telemetry, and Agent 365 observability. Security teams can use the design to investigate prompt injection, malicious tool calls, excessive access, and data exfiltration involving enterprise AI agents."
     },
     {
       "id": "fasttrack-6172da1379",
@@ -9302,94 +9402,6 @@
         "libexpat",
         "use-after-free",
         "sårbarhet"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-4e3f840813",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53046",
-      "published": "2026-07-03T08:04:36.000Z",
-      "ingested": "2026-07-03T07:22:59.278Z",
-      "title_original": "CVE-2026-53046 ksmbd: fix use-after-free from async crypto on Qualcomm crypto engine",
-      "headline": "CVE-2026-53046 ksmbd: fix use-after-free from async crypto on Qualcomm crypto engine",
-      "topic": "security",
-      "score": 23,
-      "tags": [
-        "cve-2026-53046",
-        "ksmbd",
-        "smb",
-        "use-after-free"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-cba5571ad3",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53039",
-      "published": "2026-07-03T08:04:26.000Z",
-      "ingested": "2026-07-03T07:22:59.278Z",
-      "title_original": "CVE-2026-53039 ocfs2: validate group add input before caching",
-      "headline": "CVE-2026-53039 ocfs2: validate group add input before caching",
-      "topic": "security",
-      "score": 14,
-      "tags": [
-        "cve-2026-53039",
-        "linux-kernel",
-        "ocfs2"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-47ae492210",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53045",
-      "published": "2026-07-03T08:04:20.000Z",
-      "ingested": "2026-07-03T07:22:59.278Z",
-      "title_original": "CVE-2026-53045 memory: tegra124-emc: Fix dll_change check",
-      "headline": "CVE-2026-53045 memory: tegra124-emc: Fix dll_change check",
-      "topic": "security",
-      "score": 14,
-      "tags": [
-        "cve-2026-53045",
-        "linux-kernel",
-        "tegra"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-68fa73b999",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53049",
-      "published": "2026-07-03T08:04:14.000Z",
-      "ingested": "2026-07-03T07:20:44.440Z",
-      "title_original": "CVE-2026-53049 gfs2: add some missing log locking",
-      "headline": "CVE-2026-53049 gfs2: add some missing log locking",
-      "topic": "security",
-      "score": 36,
-      "tags": [
-        "cve-2026-53049",
-        "linux-kernel",
-        "gfs2",
-        "sårbarhet"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-319a9f3d1b",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-52911",
-      "published": "2026-07-03T08:04:01.000Z",
-      "ingested": "2026-07-03T07:20:44.440Z",
-      "title_original": "CVE-2026-52911 ksmbd: scope conn->binding slowpath to bound sessions only",
-      "headline": "CVE-2026-52911 ksmbd: scope conn->binding slowpath to bound sessions only",
-      "topic": "security",
-      "score": 42,
-      "tags": [
-        "cve-2026-52911",
-        "linux-kernel",
-        "ksmbd",
-        "smb"
       ]
     }
   ]
