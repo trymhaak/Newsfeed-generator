@@ -1,6 +1,45 @@
 {
-  "generated_at": "2026-07-31T05:44:09.447Z",
+  "generated_at": "2026-07-31T11:44:56.507Z",
   "articles": [
+    {
+      "id": "andrew-taylor-527405fdc8",
+      "source_id": "andrew-taylor",
+      "source_name": "Andrew Taylor (andrewstaylor.com)",
+      "url": "https://andrewstaylor.com/2026/07/31/intune-newsletter-31st-july-2026/",
+      "published": "2026-07-31T10:48:08.000Z",
+      "ingested": "2026-07-31T11:44:56.422Z",
+      "title_original": "Intune Newsletter – 31st July 2026",
+      "headline": "Intune Community Adds Android Enrollment and Conditional Access Tools",
+      "topic": "endpoint",
+      "score": 22,
+      "tags": [
+        "Intune",
+        "Android enrollment",
+        "Conditional Access",
+        "Device Control"
+      ],
+      "summary": "This weekly roundup highlights Android web-based enrollment guidance, removable-storage controls, and new Conditional Access visualization and deployment tools. Intune administrators can use these community resources to strengthen device governance and accelerate secure policy deployment."
+    },
+    {
+      "id": "office365-itpros-5fc1eaeae2",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/07/31/microsoft-365-too-complex/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-365-too-complex",
+      "published": "2026-07-31T07:00:00.000Z",
+      "ingested": "2026-07-31T11:44:56.422Z",
+      "title_original": "Is Microsoft 365 Too Complex for Humans to Understand?",
+      "headline": "Microsoft 365 Complexity Challenges Tenant-Wide Security Oversight",
+      "topic": "security",
+      "score": 36,
+      "tags": [
+        "Microsoft 365",
+        "tenant governance",
+        "security posture",
+        "administration"
+      ],
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/Message-Center-with-new-items.jpg?resize=840%2C477&ssl=1",
+      "summary": "Microsoft 365 now spans hundreds of annual updates, interconnected services, fragmented settings, and additional AI controls. IT leaders need cross-workload governance and broader expertise to identify risks and understand how tenant-wide changes affect security."
+    },
     {
       "id": "fasttrack-6172da1379",
       "source_id": "fasttrack",
@@ -9345,40 +9384,6 @@
         "bluetooth",
         "use-after-free",
         "cve-2026-53357"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-49c4541eec",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-53048",
-      "published": "2026-07-03T08:02:17.000Z",
-      "ingested": "2026-07-03T07:22:59.278Z",
-      "title_original": "CVE-2026-53048 gfs2: prevent NULL pointer dereference during unmount",
-      "headline": "CVE-2026-53048 gfs2: prevent NULL pointer dereference during unmount",
-      "topic": "security",
-      "score": 14,
-      "tags": [
-        "cve-2026-53048",
-        "linux-kernel",
-        "gfs2"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-62a0e5d039",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56149",
-      "published": "2026-07-03T08:02:04.000Z",
-      "ingested": "2026-07-03T10:18:59.754Z",
-      "title_original": "CVE-2026-56149 Allocation of Resources Without Limits or Throttling in Elasticsearch Leading to Denial of Service",
-      "headline": "CVE-2026-56149 Allocation of Resources Without Limits or Throttling in Elasticsearch Leading to Denial of Service",
-      "topic": "security",
-      "score": 47,
-      "tags": [
-        "elasticsearch",
-        "dos",
-        "cve-2026-56149"
       ]
     }
   ]
