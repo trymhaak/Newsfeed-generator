@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T23:47:05.719Z",
+  "generated_at": "2026-08-01T11:48:11.420Z",
   "articles": [
     {
       "id": "m365-roadmap-2fd80cdf48",
@@ -82,6 +82,25 @@
       "summary": "Microsoft says Windows 11 improvements tested through the Insider Program will begin reaching more PCs this fall. Administrators should anticipate changes to updates, File Explorer, search, taskbar customization, widgets, performance, and reliability when planning endpoint validation."
     },
     {
+      "id": "defender-xdr-a54ee9b813",
+      "source_id": "defender-xdr",
+      "source_name": "Microsoft Defender XDR Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/detecting-cve-2026-54121-certighost-with-microsoft-defender/ba-p/4542861",
+      "published": "2026-07-31T17:41:07.000Z",
+      "ingested": "2026-08-01T11:48:11.372Z",
+      "title_original": "Detecting CVE-2026-54121 (Certighost) with Microsoft Defender",
+      "headline": "Defender Detects Certighost AD CS Authentication Bypass",
+      "topic": "identity",
+      "score": 79,
+      "tags": [
+        "AD CS",
+        "CVE-2026-54121",
+        "Kerberos",
+        "Defender XDR"
+      ],
+      "summary": "CVE-2026-54121 lets attackers abuse vulnerable AD CS configurations to obtain certificates for domain controllers and potentially compromise an entire domain. Administrators should install the July 14 security update, identify exposed certificate authorities, and use Defender detections to investigate exploitation attempts."
+    },
+    {
       "id": "windows-insider-159e44819f",
       "source_id": "windows-insider",
       "source_name": "Windows Insider Blog",
@@ -100,6 +119,45 @@
       ],
       "hero_image": "https://winblogs.thesourcemediaassets.com/sites/44/2026/05/1-1024x693.png",
       "summary": "Microsoft released new Windows 11 Insider builds with renewed flight certificates and several experimental platform changes. Administrators must update Insider devices before the current certificate expires on August 11, 2026, to preserve access to future preview builds."
+    },
+    {
+      "id": "sentinel-blog-b5d2cf3a07",
+      "source_id": "sentinel-blog",
+      "source_name": "Microsoft Sentinel Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-in-microsoft-sentinel-july-2026/ba-p/4542130",
+      "published": "2026-07-31T16:00:00.000Z",
+      "ingested": "2026-08-01T11:48:11.372Z",
+      "title_original": "What’s new in Microsoft Sentinel: July 2026",
+      "headline": "Sentinel Adds Detection-as-Code and Data Lake Table Insights",
+      "topic": "security",
+      "score": 59,
+      "tags": [
+        "Microsoft Sentinel",
+        "detections as code",
+        "SIEM",
+        "CI/CD",
+        "data lake"
+      ],
+      "summary": "Microsoft Sentinel now previews repository support for custom detections, enabling teams to review and deploy detection content through GitHub and CI/CD pipelines. New table insights and connectors also help administrators monitor ingestion health and expand security-signal coverage."
+    },
+    {
+      "id": "m365-copilot-1dbf046327",
+      "source_id": "m365-copilot",
+      "source_name": "Microsoft 365 Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-365-copilot-blog/what-s-new-in-microsoft-365-copilot-july-2026/ba-p/4538332",
+      "published": "2026-07-31T15:30:00.000Z",
+      "ingested": "2026-08-01T11:48:11.372Z",
+      "title_original": "What’s New in Microsoft 365 Copilot | July 2026",
+      "headline": "Microsoft 365 Copilot Adds GPT-5.6, App Agents, and Admin Controls",
+      "topic": "ai",
+      "score": 67,
+      "tags": [
+        "Microsoft 365 Copilot",
+        "GPT-5.6",
+        "Copilot agents",
+        "admin controls"
+      ],
+      "summary": "Microsoft rolled out GPT-5.6 models, in-chat Office agents, expanded app capabilities, and new administrative controls across Microsoft 365 Copilot. IT teams should review feature availability, governance settings, connector access, and reporting before enabling the expanded capabilities broadly."
     },
     {
       "id": "vasil-michev-69f29ae847",
@@ -199,6 +257,25 @@
       ],
       "hero_image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/dS0yMDE4MTgteTNoRWFa?image-coordinates=0%2C0%2C1500%2C1500&image-dimensions=120x120",
       "summary": "Microsoft argues that agent governance must evaluate how AI changes real clinical and operational workflows, not only whether an agent works technically. IT leaders should establish ownership, identity controls, and user-impact reviews before scaling Copilot agents."
+    },
+    {
+      "id": "defender-cloud-99bc4b4a60",
+      "source_id": "defender-cloud",
+      "source_name": "Microsoft Defender for Cloud Blog",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/built-to-protect-the-architecture-behind-codename-mdash/ba-p/4541662",
+      "published": "2026-07-30T18:45:00.000Z",
+      "ingested": "2026-08-01T11:48:11.372Z",
+      "title_original": "Built to Protect: The Architecture Behind Codename MDASH",
+      "headline": "Microsoft Details the Security Architecture Behind MDASH",
+      "topic": "ai",
+      "score": 32,
+      "tags": [
+        "MDASH",
+        "vulnerability scanning",
+        "agentic AI",
+        "data containment"
+      ],
+      "summary": "Microsoft explains how its agentic MDASH vulnerability scanner contains source code, findings, and security data within controlled service boundaries. The architecture offers useful context for teams evaluating AI-assisted vulnerability discovery, but the announcement provides limited new deployment detail."
     },
     {
       "id": "niallbrady-b1d7b1036d",
@@ -349,6 +426,24 @@
       ],
       "hero_image": "https://blog.admindroid.com/wp-content/uploads/2026/07/Configure-Device-Sync-in-Microsoft-Entra-Cloud-Sync-150x150.png",
       "summary": "Microsoft Entra Cloud Sync can now synchronize on-premises Active Directory computer objects for hybrid device scenarios. Administrators can reduce their dependence on Entra Connect Sync servers and simplify synchronization infrastructure and maintenance."
+    },
+    {
+      "id": "m365-blog-91267fa377",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog (official)",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/07/30/the-next-measure-of-ai-momentum-is-work-transformed/",
+      "published": "2026-07-30T13:00:00.000Z",
+      "ingested": "2026-08-01T11:48:11.372Z",
+      "title_original": "The next measure of AI momentum is work transformed",
+      "headline": "Microsoft 365 Copilot Surpasses 30 Million Paid Seats",
+      "topic": "ai",
+      "score": 18,
+      "tags": [
+        "Microsoft 365 Copilot",
+        "adoption",
+        "licensing"
+      ],
+      "summary": "Microsoft reports that Microsoft 365 Copilot has exceeded 30 million paid seats, with quarterly net additions more than doubling. The figures indicate accelerating adoption but do not introduce a product, security, or administrative change."
     },
     {
       "id": "admindroid-bc9c820093",
@@ -9310,99 +9405,6 @@
       ],
       "hero_image": "https://michev.info/wp-content/uploads/2026/07/DLPGranularActions.png",
       "summary": "Microsoft is rolling out two new DLP actions for SharePoint Online and OneDrive that can block access by external domains and users or move files to a quarantine location. The feature (MC1338823, roadmap 557191) remains in preview and appears only when a policy is scoped to SharePoint or OneDrive, giving IT admins more precise control over external sharing directly in SPO/ODFB DLP policies."
-    },
-    {
-      "id": "andrew-taylor-d00ac40b97",
-      "source_id": "andrew-taylor",
-      "source_name": "Andrew Taylor (andrewstaylor.com)",
-      "url": "https://andrewstaylor.com/2026/07/03/intune-newsletter-3rd-july-2026/",
-      "published": "2026-07-03T10:58:01.000Z",
-      "ingested": "2026-07-03T11:01:20.201Z",
-      "title_original": "Intune Newsletter – 3rd July 2026",
-      "headline": "Intune Newsletter – 3rd July 2026",
-      "topic": "endpoint",
-      "score": 29,
-      "tags": [
-        "intune",
-        "windows-365",
-        "multi-admin-approval",
-        "remote-help",
-        "nyhetsbrev"
-      ]
-    },
-    {
-      "id": "msendpointmgr-0fb35de478",
-      "source_id": "msendpointmgr",
-      "source_name": "MSEndpointMgr",
-      "url": "https://msendpointmgr.com/2026/07/03/epm-part-3-writing-intune-endpoint-privilege-management-rules-for-the-real-world-file-hash-certificate-and-when-each-one-is-the-wrong-choice/",
-      "published": "2026-07-03T09:00:39.000Z",
-      "ingested": "2026-07-03T10:11:52.831Z",
-      "title_original": "EPM Part 3: Writing Intune Endpoint Privilege Management rules for the real world: File hash, certificate, and when each one is the wrong choice",
-      "headline": "EPM Part 3: Writing Intune Endpoint Privilege Management rules for the real world: File hash, certificate, and when each one is the wrong choice",
-      "topic": "endpoint",
-      "score": 38,
-      "tags": [
-        "intune",
-        "epm",
-        "privilege-management",
-        "elevation"
-      ],
-      "hero_image": "https://msendpointmgr.com/wp-content/uploads/2026/06/Designer-14.png",
-      "summary": "Part three of MSEndpointMgr’s EPM series shows how to turn a prioritized rule backlog into elevation rules that hold up in production, explaining when to use file hashes, certificates, or product versions as detection criteria and when each is the wrong choice. It is useful for Intune admins who want to prevent EPM rules from breaking after the next vendor update or elevating unintended files."
-    },
-    {
-      "id": "msrc-update-guide-1510175b44",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56405",
-      "published": "2026-07-03T08:07:08.000Z",
-      "ingested": "2026-07-03T07:20:44.437Z",
-      "title_original": "CVE-2026-56405 libexpat before 2.8.2 has an integer overflow in getAttributeId.",
-      "headline": "CVE-2026-56405 libexpat before 2.8.2 has an integer overflow in getAttributeId.",
-      "topic": "security",
-      "score": 43,
-      "tags": [
-        "cve-2026-56405",
-        "libexpat",
-        "xml",
-        "sårbarhet"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-4a0e9b9070",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56406",
-      "published": "2026-07-03T08:06:23.000Z",
-      "ingested": "2026-07-03T07:20:44.440Z",
-      "title_original": "CVE-2026-56406 libexpat before 2.8.2 has an integer overflow in XML_ParseBuffer because it lacked a check that was present in XML_Parse.",
-      "headline": "CVE-2026-56406 libexpat before 2.8.2 has an integer overflow in XML_ParseBuffer because it lacked a check that was present in XML_Parse.",
-      "topic": "security",
-      "score": 43,
-      "tags": [
-        "cve-2026-56406",
-        "libexpat",
-        "xml",
-        "sårbarhet"
-      ]
-    },
-    {
-      "id": "msrc-update-guide-90f0133069",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56131",
-      "published": "2026-07-03T08:05:57.000Z",
-      "ingested": "2026-07-03T07:20:44.440Z",
-      "title_original": "CVE-2026-56131 libexpat before 2.8.2 lacks handler call depth tracking for calls to XML_ResumeParser from within handlers in cases of a policy violation. Thus, a use-after-free can occur (similar to the CVE-2026-50219 situation).",
-      "headline": "CVE-2026-56131 libexpat before 2.8.2 lacks handler call depth tracking for calls to XML_ResumeParser from within handlers in cases of a policy violation. Thus, a use-after-free can occur (similar to the CVE-2026-50219 situation).",
-      "topic": "security",
-      "score": 50,
-      "tags": [
-        "cve-2026-56131",
-        "libexpat",
-        "use-after-free",
-        "sårbarhet"
-      ]
     }
   ]
 }
