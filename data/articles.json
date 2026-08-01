@@ -1,6 +1,47 @@
 {
-  "generated_at": "2026-08-01T11:48:11.420Z",
+  "generated_at": "2026-08-01T17:48:53.056Z",
   "articles": [
+    {
+      "id": "msendpointmgr-a51aae94ff",
+      "source_id": "msendpointmgr",
+      "source_name": "MSEndpointMgr",
+      "url": "https://msendpointmgr.com/2026/08/01/intune-assignment-filters-windows-builds/",
+      "published": "2026-08-01T17:18:44.000Z",
+      "ingested": "2026-08-01T17:48:53.020Z",
+      "title_original": "Intune assignment filters for every in-support Windows build",
+      "headline": "Script Standardizes Intune Filters Across Supported Windows Builds",
+      "topic": "endpoint",
+      "score": 39,
+      "tags": [
+        "Intune",
+        "Windows",
+        "assignment filters",
+        "Microsoft Graph",
+        "PowerShell"
+      ],
+      "hero_image": "https://msendpointmgr.com/wp-content/uploads/2026/08/image-20.png",
+      "summary": "A community script defines and deploys consistent Intune assignment filters for every supported Windows build through Microsoft Graph. Administrators and managed service providers can replace error-prone manual creation with reusable, reviewable filter definitions across tenants."
+    },
+    {
+      "id": "office365-itpros-0118fe2b08",
+      "source_id": "office365-itpros",
+      "source_name": "Office 365 for IT Pros (Tony Redmond)",
+      "url": "https://office365itpros.com/2026/08/01/microsoft-365-for-it-pros-134/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-365-for-it-pros-134",
+      "published": "2026-08-01T07:00:00.000Z",
+      "ingested": "2026-08-01T17:48:53.020Z",
+      "title_original": "Microsoft 365 for IT Pros August 2026 Update",
+      "headline": "Microsoft 365 for IT Pros Updates Four 2027 Edition Books",
+      "topic": "ai",
+      "score": 21,
+      "tags": [
+        "Microsoft 365",
+        "Purview",
+        "PowerShell",
+        "AI agents"
+      ],
+      "hero_image": "https://i0.wp.com/office365itpros.com/wp-content/uploads/2026/07/Book-in-Edge-with-headers-as-book-marks-1.jpg?resize=840%2C704&ssl=1",
+      "summary": "The August 2026 release updates all four Microsoft 365 for IT Pros books with editorial refinements and new material, particularly on AI and agents. IT administrators can use the revised guidance to keep operational knowledge current across Microsoft 365, Purview, PowerShell, and Power Platform."
+    },
     {
       "id": "m365-roadmap-2fd80cdf48",
       "source_id": "m365-roadmap",
@@ -9366,45 +9407,6 @@
         "spoofing",
         "informasjonslekkasje"
       ]
-    },
-    {
-      "id": "msrc-update-guide-437fb136fc",
-      "source_id": "msrc-update-guide",
-      "source_name": "MSRC Security Update Guide (RSS)",
-      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58282",
-      "published": "2026-07-03T14:00:00.000Z",
-      "ingested": "2026-07-03T20:42:40.097Z",
-      "title_original": "CVE-2026-58282 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
-      "headline": "CVE-2026-58282 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
-      "topic": "security",
-      "score": 55,
-      "tags": [
-        "edge",
-        "cve-2026-58282",
-        "spoofing",
-        "tilgangskontroll"
-      ]
-    },
-    {
-      "id": "vasil-michev-ca1e494993",
-      "source_id": "vasil-michev",
-      "source_name": "Vasil Michev — Michev.info",
-      "url": "https://michev.info/blog/post/8025/more-robust-external-sharing-controls-now-available-for-spo-odfb-dlp-policies",
-      "published": "2026-07-03T13:06:47.000Z",
-      "ingested": "2026-07-03T15:12:37.695Z",
-      "title_original": "More robust external sharing controls now available for SPO/ODFB DLP policies",
-      "headline": "More robust external sharing controls now available for SPO/ODFB DLP policies",
-      "topic": "security",
-      "score": 47,
-      "tags": [
-        "dlp",
-        "sharepoint",
-        "onedrive",
-        "purview",
-        "ekstern-deling"
-      ],
-      "hero_image": "https://michev.info/wp-content/uploads/2026/07/DLPGranularActions.png",
-      "summary": "Microsoft is rolling out two new DLP actions for SharePoint Online and OneDrive that can block access by external domains and users or move files to a quarantine location. The feature (MC1338823, roadmap 557191) remains in preview and appears only when a policy is scoped to SharePoint or OneDrive, giving IT admins more precise control over external sharing directly in SPO/ODFB DLP policies."
     }
   ]
 }
